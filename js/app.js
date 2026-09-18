@@ -16,7 +16,7 @@
         naturales: '#22c55e'
     };
 
-    const GOOGLE_SCRIPT_URL = '';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzsvZXaPsLkPpl4njnMmWOue6qo98jktNqv4z_4MtJDcEB28OpJ1Xdz7ugBp_RBp9T3/exec';
 
     let student = { name: '', email: '' };
     let quizQuestions = [];
