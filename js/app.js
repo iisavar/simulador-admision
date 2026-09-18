@@ -146,9 +146,9 @@
         $('#btn-prev').disabled = currentIndex === 0;
         if (currentIndex === TOTAL_QUIZ - 1) {
             $('#btn-next').style.display = 'none';
-            $('#btn-finish').style.display = 'inline-block';
+            $('#btn-finish').style.display = 'inline-flex';
         } else {
-            $('#btn-next').style.display = 'inline-block';
+            $('#btn-next').style.display = 'inline-flex';
             $('#btn-finish').style.display = 'none';
         }
 
@@ -208,9 +208,9 @@
         const circumference = 2 * Math.PI * 54;
         ring.style.strokeDashoffset = circumference - (percent / 100) * circumference;
 
-        if (percent >= 70) ring.style.stroke = '#2c5f2e';
-        else if (percent >= 50) ring.style.stroke = '#d4a843';
-        else ring.style.stroke = '#c0392b';
+        if (percent >= 70) ring.style.stroke = 'var(--success)';
+        else if (percent >= 50) ring.style.stroke = 'var(--warning)';
+        else ring.style.stroke = 'var(--error)';
 
         $('#student-result-name').textContent = student.name + ' — ' + student.email;
         $('#stat-correct').textContent = correct;

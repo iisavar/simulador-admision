@@ -1,121 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prueba de Diagnóstico</title>
-<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Admisión 2S-2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div id="app">
+    <div id="app">
+        <!-- PANTALLA 1: BIENVENIDA -->
+        <section id="screen-welcome" class="screen active">
+            <div class="welcome-container">
+                <div class="welcome-header">
+                    <div class="logo-area">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" rx="12" fill="var(--primary)"/>
+                                <path d="M14 34V16h4v14h12v4H14z" fill="white"/>
+                                <path d="M24 10l8 6-8 6-8-6 8-6z" fill="var(--accent)"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="logo-title">Simulador</h1>
+                            <p class="logo-subtitle">Examen de Admisión</p>
+                        </div>
+                    </div>
+                    <span class="badge">Admisión 2S-2026</span>
+                </div>
 
-<!-- PANTALLA 1: BIENVENIDA -->
-<section id="screen-welcome" class="screen active">
-  <div class="portada">
-    <p class="etiq">Ignacio Isa</p>
-    <h1>Prueba de <em>Diagnóstico</em></h1>
-    <p class="sub">50 preguntas · Opción múltiple · 60 minutos</p>
-    <form id="registration-form" class="form" autocomplete="off">
-      <input type="text" id="student-name" placeholder="Nombre completo" required minlength="5">
-      <input type="email" id="student-email" placeholder="Correo electrónico" required>
-      <p class="err" id="form-error"></p>
-      <button type="submit" class="btn-p">Comenzar</button>
-    </form>
-  </div>
-</section>
+                <div class="welcome-hero">
+                    <h2>Simulador de Examen de Ingreso</h2>
+                    <p>Prepárate para tu examen de admisión con este simulador que replica las condiciones reales del test. Evalúa tus conocimientos en las 4 áreas del temario oficial.</p>
 
-<!-- PANTALLA 2: QUIZ -->
-<section id="screen-quiz" class="screen">
-  <div class="wrap">
-    <div class="quiz-hdr">
-      <div class="quiz-hdr-left">
-        <span class="fnum">Pregunta <strong id="current-q">1</strong> / 50</span>
-      </div>
-      <div class="timer" id="timer">
-        <span id="timer-display">60:00</span>
-      </div>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div>
+                                <strong>60 minutos</strong>
+                                <span>Tiempo límite</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+                            </div>
+                            <div>
+                                <strong>50 preguntas</strong>
+                                <span>Opción múltiple</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                            </div>
+                            <div>
+                                <strong>4 áreas</strong>
+                                <span>Del temario oficial</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            </div>
+                            <div>
+                                <strong>Retroalimentación</strong>
+                                <span>Al finalizar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="welcome-form">
+                    <h3>Regístrate para comenzar</h3>
+                    <form id="registration-form" autocomplete="off">
+                        <div class="form-group">
+                            <label for="student-name">Nombres y Apellidos completos</label>
+                            <input type="text" id="student-name" placeholder="Ej: María Fernanda López García" required minlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label for="student-email">Correo electrónico</label>
+                            <input type="email" id="student-email" placeholder="Ej: maria.lopez@gmail.com" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            Comenzar Simulacro
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="areas-preview">
+                    <h3>Áreas del examen</h3>
+                    <div class="areas-grid">
+                        <div class="area-tag" data-area="matematicas">
+                            <span class="area-dot"></span>
+                            Matemáticas y Lógica
+                        </div>
+                        <div class="area-tag" data-area="lenguaje">
+                            <span class="area-dot"></span>
+                            Lenguaje y Comunicación
+                        </div>
+                        <div class="area-tag" data-area="sociales">
+                            <span class="area-dot"></span>
+                            Ciencias Sociales e Historia
+                        </div>
+                        <div class="area-tag" data-area="naturales">
+                            <span class="area-dot"></span>
+                            Ciencias Naturales
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PANTALLA 2: QUIZ -->
+        <section id="screen-quiz" class="screen">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <div class="quiz-header-left">
+                        <span class="quiz-logo">Simulador</span>
+                        <span class="quiz-label">Examen de Admisión</span>
+                    </div>
+                    <div class="quiz-header-right">
+                        <div class="timer" id="timer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <span id="timer-display">60:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span>Pregunta <strong id="current-q">1</strong> de <strong>50</strong></span>
+                        <span id="area-label" class="area-badge">Matemáticas y Lógica</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="question-card" id="question-card">
+                    <div class="question-reading" id="question-reading"></div>
+                    <p class="question-text" id="question-text"></p>
+                    <div class="options-list" id="options-list"></div>
+                </div>
+
+                <div class="quiz-nav">
+                    <button class="btn btn-outline" id="btn-prev" disabled>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        Anterior
+                    </button>
+                    <div class="quiz-dots" id="quiz-dots"></div>
+                    <button class="btn btn-primary" id="btn-next">
+                        Siguiente
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                    <button class="btn btn-accent" id="btn-finish" style="display:none;">
+                        Finalizar Examen
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PANTALLA 3: RESULTADOS -->
+        <section id="screen-results" class="screen">
+            <div class="results-container">
+                <div class="results-header">
+                    <div class="results-score-circle" id="score-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="var(--border)" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="var(--accent)" stroke-width="8" stroke-dasharray="339.29" stroke-dashoffset="339.29" stroke-linecap="round" id="score-ring" transform="rotate(-90 60 60)"/>
+                        </svg>
+                        <div class="score-value">
+                            <span id="score-percent">0</span><small>%</small>
+                        </div>
+                    </div>
+                    <div class="results-summary">
+                        <h2>Resultados del Simulacro</h2>
+                        <p id="student-result-name"></p>
+                        <div class="results-stats">
+                            <div class="stat">
+                                <span class="stat-value" id="stat-correct">0</span>
+                                <span class="stat-label">Correctas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="stat-incorrect">0</span>
+                                <span class="stat-label">Incorrectas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="stat-unanswered">0</span>
+                                <span class="stat-label">Sin responder</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="stat-time">00:00</span>
+                                <span class="stat-label">Tiempo usado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-breakdown">
+                    <h3>Desglose por área</h3>
+                    <div class="breakdown-grid" id="breakdown-grid"></div>
+                </div>
+
+                <div class="results-feedback">
+                    <h3>Retroalimentación detallada</h3>
+                    <div class="feedback-filters">
+                        <button class="filter-btn active" data-filter="all">Todas</button>
+                        <button class="filter-btn" data-filter="incorrect">Incorrectas</button>
+                        <button class="filter-btn" data-filter="correct">Correctas</button>
+                        <button class="filter-btn" data-filter="unanswered">Sin responder</button>
+                    </div>
+                    <div class="feedback-list" id="feedback-list"></div>
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn-primary btn-lg" id="btn-retry">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+                        Intentar de nuevo
+                    </button>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
-    <span id="area-label" class="area-badge">Matemáticas y Lógica</span>
 
-    <div class="question-card" id="question-card">
-      <div class="question-reading" id="question-reading"></div>
-      <p class="question-text" id="question-text"></p>
-      <div class="options-list" id="options-list"></div>
-    </div>
-
-    <div class="quiz-dots" id="quiz-dots"></div>
-
-    <nav class="nav">
-      <button class="bn" id="btn-prev" disabled>← Anterior</button>
-      <button class="bn sig" id="btn-next">Siguiente →</button>
-      <button class="bn fin" id="btn-finish" style="display:none;">Finalizar ✓</button>
-    </nav>
-  </div>
-</section>
-
-<!-- PANTALLA 3: RESULTADOS -->
-<section id="screen-results" class="screen">
-  <div class="wrap">
-    <div class="results-top">
-      <p class="etiq">Resultados</p>
-      <div class="score-circle" id="score-circle">
-        <svg viewBox="0 0 120 120">
-          <circle cx="60" cy="60" r="54" fill="none" stroke="#e8e8e8" stroke-width="8"/>
-          <circle cx="60" cy="60" r="54" fill="none" stroke="#2c5f2e" stroke-width="8" stroke-dasharray="339.29" stroke-dashoffset="339.29" stroke-linecap="round" id="score-ring" transform="rotate(-90 60 60)"/>
-        </svg>
-        <div class="score-value">
-          <span id="score-percent">0</span><small>%</small>
+    <!-- Modal de confirmación -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <h3>¿Finalizar el examen?</h3>
+            <p id="modal-message">Tienes preguntas sin responder. ¿Estás seguro de que deseas finalizar?</p>
+            <div class="modal-actions">
+                <button class="btn btn-outline" id="modal-cancel">Seguir respondiendo</button>
+                <button class="btn btn-accent" id="modal-confirm">Sí, finalizar</button>
+            </div>
         </div>
-      </div>
-      <p id="student-result-name" class="sub"></p>
-      <div class="results-stats">
-        <div class="stat"><span class="stat-val" id="stat-correct">0</span><span class="stat-lbl">Correctas</span></div>
-        <div class="stat"><span class="stat-val" id="stat-incorrect">0</span><span class="stat-lbl">Incorrectas</span></div>
-        <div class="stat"><span class="stat-val" id="stat-unanswered">0</span><span class="stat-lbl">Sin responder</span></div>
-        <div class="stat"><span class="stat-val" id="stat-time">00:00</span><span class="stat-lbl">Tiempo</span></div>
-      </div>
     </div>
 
-    <div class="results-breakdown">
-      <h3>Desglose por área</h3>
-      <div class="breakdown-grid" id="breakdown-grid"></div>
-    </div>
-
-    <div class="results-feedback">
-      <h3>Retroalimentación</h3>
-      <div class="feedback-filters">
-        <button class="filter-btn active" data-filter="all">Todas</button>
-        <button class="filter-btn" data-filter="incorrect">Incorrectas</button>
-        <button class="filter-btn" data-filter="correct">Correctas</button>
-        <button class="filter-btn" data-filter="unanswered">Sin responder</button>
-      </div>
-      <div class="feedback-list" id="feedback-list"></div>
-    </div>
-
-    <div class="results-actions">
-      <button class="btn-p" id="btn-retry">Intentar de nuevo</button>
-    </div>
-
-    <p class="marca">Ignacio Isa</p>
-  </div>
-</section>
-
-</div>
-
-<!-- Modal -->
-<div class="modal-overlay" id="modal-overlay">
-  <div class="modal">
-    <h3>¿Finalizar?</h3>
-    <p id="modal-message">Tienes preguntas sin responder. ¿Estás seguro?</p>
-    <div class="modal-actions">
-      <button class="bn" id="modal-cancel">Seguir respondiendo</button>
-      <button class="btn-p" id="modal-confirm">Sí, finalizar</button>
-    </div>
-  </div>
-</div>
-
-<script src="js/preguntas.js"></script>
-<script src="js/app.js"></script>
+    <script src="js/preguntas.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
