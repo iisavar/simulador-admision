@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase de Matemáticas — Ignacio Isa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0f1829;
+            --bg2: #1B2A4A;
+            --gold: #D4A843;
+            --gold-light: #f0d68a;
+            --text: #ffffff;
+            --text-dim: #8899bb;
+            --font: 'Inter', sans-serif;
+        }
+        html, body { height: 100%; overflow: hidden; font-family: var(--font); background: var(--bg); color: var(--text); }
+        .deck { position: relative; width: 100%; height: 100%; }
+        .slide {
+            position: absolute; inset: 0;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            padding: 60px 80px;
+            opacity: 0; transform: translateX(60px);
+            transition: opacity .5s ease, transform .5s ease;
+            pointer-events: none;
+        }
+        .slide.active { opacity: 1; transform: translateX(0); pointer-events: auto; }
+        .slide.exit-left { opacity: 0; transform: translateX(-60px); }
+
+        /* Decorative math symbols */
+        .math-bg {
+            position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0;
+        }
+        .math-bg span {
+            position: absolute; font-size: 120px; font-weight: 900; opacity: .04; color: var(--gold);
+        }
+        .slide > * { position: relative; z-index: 1; }
+
+        /* SLIDE 1: Cover */
+        .cover-icon {
+            width: 100px; height: 100px; border-radius: 24px;
+            background: linear-gradient(135deg, var(--gold), var(--gold-light));
+            display: flex; align-items: center; justify-content: center;
+            font-size: 48px; font-weight: 900; color: var(--bg);
+            margin-bottom: 32px;
+            box-shadow: 0 20px 60px rgba(212, 168, 67, .3);
+        }
+        .cover-name {
+            font-size: 64px; font-weight: 900; letter-spacing: -2px;
+            background: linear-gradient(135deg, #fff 60%, var(--gold-light));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .cover-title {
+            font-size: 22px; font-weight: 400; color: var(--gold); margin-top: 8px;
+            letter-spacing: 4px; text-transform: uppercase;
+        }
+        .cover-role {
+            font-size: 18px; color: var(--text-dim); margin-top: 16px; font-weight: 300;
+        }
+        .cover-line {
+            width: 80px; height: 3px; background: var(--gold); border-radius: 2px;
+            margin: 28px 0;
+        }
+
+        /* SLIDE 2: Quotes */
+        .quotes-title {
+            font-size: 40px; font-weight: 800; margin-bottom: 48px; text-align: center;
+            letter-spacing: -1px;
+        }
+        .quotes-title span { color: var(--gold); }
+        .quote-card {
+            max-width: 720px; padding: 28px 36px; margin-bottom: 24px;
+            border-left: 4px solid var(--gold);
+            background: rgba(255,255,255,.04); border-radius: 0 12px 12px 0;
+        }
+        .quote-text {
+            font-size: 20px; font-style: italic; line-height: 1.6; font-weight: 300;
+            color: rgba(255,255,255,.9);
+        }
+        .quote-author {
+            font-size: 14px; color: var(--gold); margin-top: 12px; font-weight: 600;
+        }
+
+        /* SLIDE 3: Temario */
+        .temario-title {
+            font-size: 40px; font-weight: 800; margin-bottom: 40px; text-align: center;
+            letter-spacing: -1px;
+        }
+        .temario-title span { color: var(--gold); }
+        .temario-grid {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 16px 40px; max-width: 900px;
+        }
+        .temario-item {
+            display: flex; align-items: center; gap: 14px;
+            padding: 14px 20px; border-radius: 12px;
+            background: rgba(255,255,255,.04);
+            transition: background .2s;
+        }
+        .temario-item:hover { background: rgba(255,255,255,.08); }
+        .temario-num {
+            width: 36px; height: 36px; border-radius: 10px;
+            background: var(--gold); color: var(--bg); font-weight: 800; font-size: 15px;
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+        }
+        .temario-label { font-size: 15px; font-weight: 500; line-height: 1.3; }
+
+        /* SLIDE 4: Diagnóstico */
+        .diag-badge {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 8px 20px; border-radius: 20px;
+            background: rgba(212,168,67,.15); color: var(--gold);
+            font-size: 14px; font-weight: 600; text-transform: uppercase;
+            letter-spacing: 2px; margin-bottom: 24px;
+        }
+        .diag-title {
+            font-size: 52px; font-weight: 900; text-align: center; letter-spacing: -2px;
+            line-height: 1.1;
+        }
+        .diag-title span { color: var(--gold); }
+        .diag-stats {
+            display: flex; gap: 48px; margin-top: 36px;
+        }
+        .diag-stat { text-align: center; }
+        .diag-stat-value {
+            font-size: 48px; font-weight: 900; color: var(--gold);
+        }
+        .diag-stat-label { font-size: 15px; color: var(--text-dim); margin-top: 4px; }
+        .diag-desc {
+            max-width: 560px; text-align: center; color: var(--text-dim);
+            font-size: 17px; line-height: 1.7; margin-top: 32px; font-weight: 300;
+        }
+        .diag-cta {
+            margin-top: 36px; padding: 16px 40px; border-radius: 14px;
+            background: var(--gold); color: var(--bg); font-family: var(--font);
+            font-size: 18px; font-weight: 700; border: none; cursor: pointer;
+            box-shadow: 0 12px 40px rgba(212,168,67,.3);
+            transition: transform .2s, box-shadow .2s;
+        }
+        .diag-cta:hover { transform: translateY(-2px); box-shadow: 0 16px 50px rgba(212,168,67,.4); }
+
+        /* Controls */
+        .slide-controls {
+            position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%);
+            display: flex; align-items: center; gap: 20px; z-index: 100;
+        }
+        .slide-dots { display: flex; gap: 8px; }
+        .slide-dot {
+            width: 10px; height: 10px; border-radius: 50%;
+            background: rgba(255,255,255,.2); border: none; cursor: pointer;
+            transition: all .3s;
+        }
+        .slide-dot.active { background: var(--gold); transform: scale(1.3); }
+        .slide-counter {
+            font-size: 13px; color: var(--text-dim); font-weight: 500;
+            min-width: 40px; text-align: center;
+        }
+        .nav-btn {
+            width: 40px; height: 40px; border-radius: 50%;
+            background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.1);
+            color: #fff; font-size: 18px; cursor: pointer; display: flex;
+            align-items: center; justify-content: center; transition: all .2s;
+        }
+        .nav-btn:hover { background: rgba(255,255,255,.15); }
+        .nav-btn:disabled { opacity: .3; cursor: default; }
+
+        @media (max-width: 768px) {
+            .slide { padding: 40px 28px; }
+            .cover-name { font-size: 36px; }
+            .cover-title { font-size: 16px; letter-spacing: 2px; }
+            .quotes-title, .temario-title, .diag-title { font-size: 28px; }
+            .temario-grid { grid-template-columns: 1fr; }
+            .quote-text { font-size: 16px; }
+            .diag-stats { gap: 24px; }
+            .diag-stat-value { font-size: 36px; }
+            .math-bg span { font-size: 60px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="deck">
+        <!-- SLIDE 1: Cover -->
+        <div class="slide active" id="slide-1">
+            <div class="math-bg">
+                <span style="top:5%;left:5%">∑</span>
+                <span style="top:15%;right:8%">π</span>
+                <span style="bottom:20%;left:10%">∫</span>
+                <span style="bottom:10%;right:5%">√</span>
+                <span style="top:50%;left:2%">∞</span>
+                <span style="top:40%;right:3%">Δ</span>
+            </div>
+            <div class="cover-icon">π</div>
+            <h1 class="cover-name">Ignacio Isa</h1>
+            <p class="cover-title">Ingeniero en Biotecnología</p>
+            <div class="cover-line"></div>
+            <p class="cover-role">Tu profesor de Matemáticas</p>
+        </div>
+
+        <!-- SLIDE 2: Quotes -->
+        <div class="slide" id="slide-2">
+            <div class="math-bg">
+                <span style="top:8%;right:10%">φ</span>
+                <span style="bottom:15%;left:5%">λ</span>
+                <span style="top:60%;right:2%">θ</span>
+            </div>
+            <h2 class="quotes-title">¿Por qué <span>Matemáticas</span>?</h2>
+            <div class="quote-card">
+                <p class="quote-text">"Las matemáticas son el lenguaje con el que Dios ha escrito el universo."</p>
+                <p class="quote-author">— Galileo Galilei</p>
+            </div>
+            <div class="quote-card">
+                <p class="quote-text">"La esencia de las matemáticas no es hacer las cosas simples complicadas, sino hacer las cosas complicadas simples."</p>
+                <p class="quote-author">— Stan Gudder</p>
+            </div>
+            <div class="quote-card">
+                <p class="quote-text">"Las matemáticas son la reina de las ciencias y la aritmética es la reina de las matemáticas."</p>
+                <p class="quote-author">— Carl Friedrich Gauss</p>
+            </div>
+        </div>
+
+        <!-- SLIDE 3: Temario -->
+        <div class="slide" id="slide-3">
+            <div class="math-bg">
+                <span style="top:5%;left:8%">∂</span>
+                <span style="bottom:8%;right:6%">∮</span>
+            </div>
+            <h2 class="temario-title">Lo que <span>aprenderemos</span></h2>
+            <div class="temario-grid">
+                <div class="temario-item"><span class="temario-num">1</span><span class="temario-label">Operaciones y álgebra básica</span></div>
+                <div class="temario-item"><span class="temario-num">2</span><span class="temario-label">Ecuaciones y factorización</span></div>
+                <div class="temario-item"><span class="temario-num">3</span><span class="temario-label">Funciones y modelos matemáticos</span></div>
+                <div class="temario-item"><span class="temario-num">4</span><span class="temario-label">Sucesiones y proporcionalidad</span></div>
+                <div class="temario-item"><span class="temario-num">5</span><span class="temario-label">Geometría analítica básica</span></div>
+                <div class="temario-item"><span class="temario-num">6</span><span class="temario-label">Matemáticas financieras</span></div>
+                <div class="temario-item"><span class="temario-num">7</span><span class="temario-label">Estadística y probabilidad</span></div>
+                <div class="temario-item"><span class="temario-num">8</span><span class="temario-label">Lógica proposicional</span></div>
+                <div class="temario-item"><span class="temario-num">9</span><span class="temario-label">Inferencias y análisis lógico</span></div>
+                <div class="temario-item"><span class="temario-num">10</span><span class="temario-label">Pensamiento computacional</span></div>
+            </div>
+        </div>
+
+        <!-- SLIDE 4: Diagnóstico -->
+        <div class="slide" id="slide-4">
+            <div class="math-bg">
+                <span style="top:10%;left:5%">∑</span>
+                <span style="bottom:12%;right:8%">∞</span>
+                <span style="top:30%;right:2%">≡</span>
+            </div>
+            <div class="diag-badge">HOY</div>
+            <h2 class="diag-title">Prueba de<br><span>Diagnóstico</span></h2>
+            <div class="diag-stats">
+                <div class="diag-stat">
+                    <div class="diag-stat-value">60</div>
+                    <div class="diag-stat-label">preguntas</div>
+                </div>
+                <div class="diag-stat">
+                    <div class="diag-stat-value">60</div>
+                    <div class="diag-stat-label">minutos</div>
+                </div>
+            </div>
+            <p class="diag-desc">Evaluaremos tu nivel actual en cada tema para diseñar la mejor estrategia de preparación hacia tu examen de admisión.</p>
+            <button class="diag-cta" onclick="window.open('diagnostico.html','_blank')">Ir a la prueba</button>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="slide-controls">
+        <button class="nav-btn" id="btn-prev-slide" disabled>‹</button>
+        <div class="slide-dots" id="slide-dots"></div>
+        <span class="slide-counter" id="slide-counter">1 / 4</span>
+        <button class="nav-btn" id="btn-next-slide">›</button>
+    </div>
+
+    <script>
+        (function() {
+            const TOTAL = 4;
+            let current = 0;
+
+            function goTo(idx) {
+                if (idx < 0 || idx >= TOTAL) return;
+                const slides = document.querySelectorAll('.slide');
+                slides[current].classList.remove('active');
+                slides[current].classList.add('exit-left');
+                setTimeout(() => slides[current === idx ? current : (current < idx ? current : current)].classList.remove('exit-left'), 500);
+                slides.forEach(s => { s.classList.remove('active', 'exit-left'); });
+                slides[idx].classList.add('active');
+                current = idx;
+                updateUI();
+            }
+
+            function updateUI() {
+                document.getElementById('slide-counter').textContent = (current + 1) + ' / ' + TOTAL;
+                document.getElementById('btn-prev-slide').disabled = current === 0;
+                document.getElementById('btn-next-slide').disabled = current === TOTAL - 1;
+                document.querySelectorAll('.slide-dot').forEach((d, i) => {
+                    d.classList.toggle('active', i === current);
+                });
+            }
+
+            const dotsContainer = document.getElementById('slide-dots');
+            for (let i = 0; i < TOTAL; i++) {
+                const dot = document.createElement('button');
+                dot.className = 'slide-dot' + (i === 0 ? ' active' : '');
+                dot.addEventListener('click', () => goTo(i));
+                dotsContainer.appendChild(dot);
+            }
+
+            document.getElementById('btn-prev-slide').addEventListener('click', () => goTo(current - 1));
+            document.getElementById('btn-next-slide').addEventListener('click', () => goTo(current + 1));
+
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight' || e.key === ' ') goTo(current + 1);
+                if (e.key === 'ArrowLeft') goTo(current - 1);
+            });
+        })();
+    </script>
+</body>
+</html>
