@@ -101,7 +101,7 @@
     });
   }
   function est(n, t, s) {
-    return '<li class="estacion" style="padding:10px 12px"><span class="est-ico">' + n + '</span><span class="est-txt"><b>' + t + '</b><span>' + s + '</span></span></li>';
+    return '<li class="estacion hecha" style="padding:10px 12px"><span class="est-ico">' + n + '</span><span class="est-txt"><b>' + t + '</b><span>' + s + '</span></span></li>';
   }
 
   // ---------- Mapa general (regreso) ----------
