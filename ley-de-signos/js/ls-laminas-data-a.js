@@ -1,12 +1,12 @@
-/* Láminas 1 a 19 (+ cierre del capítulo 2): Inicio, Capítulo 1 y Capítulo 2.
-   Solo datos: el motor que las pinta es ls-carrusel.js. Estilos propios en css/ls-laminas-a.css (prefijo lsa-). */
+/* Láminas 1 a 19 (+ 7.5 y el cierre 19.5): Inicio, Capítulo 1 y Capítulo 2.
+   Solo datos: el motor que las pinta es ls-carrusel.js. Estilos propios en css/ls-laminas-a.css (prefijo lsa-).
+   Formato fijo de las láminas de regla: LS.ui.regla, LS.ui.ejemplo (3 pasos), dibujo compacto, LS.ui.ojo. */
 (function () {
   'use strict';
   const LS = window.LS = window.LS || {};
 
   // ---------- Ayudas ----------
   const fx = (s, o) => LS.ui.fx(s, o);
-  const fxG = (s) => LS.ui.fx(s, { clase: 'fx-grande' });
   const fxM = (s) => LS.ui.fx(s, { clase: 'fx-medio' });
   // expresión equivocada, tachada en gris (mal:true = no la comprueba el validador)
   const fxMal = (s) => '<span class="tachado">' + LS.ui.fx(s, { mal: true }) + '</span>';
@@ -14,6 +14,11 @@
   const nP = (v) => LS.ui.num(v, { plus: true });
   const esc = (s) => LS.ui.esc(s);
   const chip = (s) => LS.ui.chip(s);
+  // formato fijo (llamadas perezosas: así el validador puede envolverlas)
+  const regla = (h, n) => LS.ui.regla(h, n);
+  const ejemplo = (o) => LS.ui.ejemplo(o);
+  const ojo = (h) => LS.ui.ojo(h);
+  const metodo = (n) => LS.ui.metodo(n);
   const visto = () => '<svg class="lsa-visto" aria-label="hecho" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" style="stroke:var(--ok)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   // burbuja de LECTURA: el número con su signo (el positivo muestra su +)
   const burb = (v) => '<span class="lsa-burbuja">' + num(v, { plus: v > 0 }) + '</span>';
@@ -22,14 +27,23 @@
   // fichas de plata a escala 1:1 (sin esto, con pocas fichas el dibujo se estira a todo el ancho)
   const dibFichas = (o) => {
     const n = Math.max(o.tengo || 0, o.debo || 0, 1), W = Math.max(120, 40 + Math.min(32, 300 / n) * n);
-    return '<div class="dibujo"><div style="width:100%;max-width:' + Math.round(W * 1.1) + 'px">' + LS.svg.fichas(o) + '</div></div>';
+    return '<div class="dibujo lsa-dib-compacto"><div style="width:100%;max-width:' + Math.round(W * 1.1) + 'px">' + LS.svg.fichas(o) + '</div></div>';
   };
-  const fichaIco =(tipo) => '<svg class="lsa-ficha-ico" viewBox="0 0 30 30" aria-hidden="true">' + LS.svg.ficha(15, 15, tipo) + '</svg>';
+  const fichaIco = (tipo) => '<svg class="lsa-ficha-ico" viewBox="0 0 30 30" aria-hidden="true">' + LS.svg.ficha(15, 15, tipo) + '</svg>';
   const hecho = (c, id) => { try { const r = c.st.laminas.respuestas[id]; return !!(r && r.hecho); } catch (e) { return false; } };
   const MENOS = '−';
   const F = (v) => (v < 0 ? MENOS : '') + Math.abs(v);
   const colTxt = (v) => v === 0 ? 'var(--ink)' : v < 0 ? 'var(--neg-text)' : 'var(--pos-text)';
   const colRel = (v) => v === 0 ? 'var(--ink)' : v < 0 ? 'var(--neg)' : 'var(--pos)';
+
+  // ---------- Textos exactos de las reglas (iguales en láminas, juego y test) ----------
+  const R = {
+    LECTURA: 'Cada número se lleva el signo que tiene a su izquierda. Si no tiene signo, es positivo.',
+    JUNTAN: 'Si los dos signos son iguales, suma los tamaños y deja ese signo.',
+    CANCELAN: 'Si los signos son distintos, resta los tamaños (grande menos chico) y deja el signo del que tiene más tamaño.'
+  };
+  // nombres de los 3 pasos del método (los mismos de LS.ui.PASOS)
+  const P1 = 'Mira los signos', P2 = 'Elige la regla', P3 = 'Calcula';
 
   // ---------- Dibujos propios (SVG plano, trazo 2,5, tokens de color) ----------
 
@@ -175,39 +189,49 @@
       '</div>';
   }
 
-  // Viñeta: dibujo a la izquierda y texto a la derecha
-  const vineta = (svg, txt) => '<div class="lsa-vineta"><div class="lsa-vineta-dib">' + svg + '</div><p>' + txt + '</p></div>';
+  // Mini tarjeta de la vida real (lámina 4): dibujo pequeño arriba y 2 líneas de texto
+  const mini = (svg, txt) => '<div class="lsa-mini"><div class="lsa-mini-dib">' + svg + '</div><p>' + txt + '</p></div>';
 
-  // ---------- Recuadros de las láminas 12 y 13 ----------
+  // Paso ya resuelto (lámina 16): número, nombre del paso y lo hecho
+  const hechoLi = (n, nombre, html) => '<li><span class="lsa-pn">' + n + '</span><span><b>' + nombre + ':</b> ' + html + '</span>' + visto() + '</li>';
+
+  // ---------- Láminas 12 y 13: lo que se revela después de la predicción ----------
   function cajaGancho(c) {
     const g = c.gancho;
     let t = null;
     if (g === '-14') t = 'Al inicio pusiste ' + num(-14) + '. ¡Le atinaste! Ahora ya sabes por qué.';
-    else if (g === '14') t = 'Al inicio pusiste ' + num(14) + '. Es el error más común: casi todo el mundo cae ahí. Pero aquí nadie te regala plata: debes 5, debes 9 más → ' + num(-14) + '.';
-    else if (g === '-4' || g === '4') t = 'Al inicio pusiste ' + num(+g) + ': restaste ' + fx('9 − 5') + '. Pero aquí son dos deudas: no se restan, se juntan.';
+    else if (g === '14') t = 'Al inicio pusiste ' + num(14) + '. Es el error más común. Pero nadie te regaló plata: debes 5 y 9 más, o sea ' + num(-14) + '.';
+    else if (g === '-4' || g === '4') t = 'Al inicio pusiste ' + num(+g) + ': restaste ' + fx('9 − 5') + '. Pero son dos deudas: no se restan, se juntan.';
     else if (g === 'nose') t = 'Al inicio no lo sabías. Ahora sí: ' + num(-14) + '.';
     return t ? '<div class="caja-nota lsa-gancho">' + t + '</div>' : '';
   }
 
   function reglaL12(c) {
-    return '<div class="regla-caja"><p>Si los números tienen el <b>mismo signo</b>, SE JUNTAN:</p>' +
-      '<ol class="lista-num"><li>Suma los tamaños: ' + fx('5 + 9 = 14') + '.</li><li>Deja el mismo signo.</li></ol></div>' +
-      fxG('−5 − 9 = −14') +
-      '<p>Con positivos es igual: ' + fx('3 + 4 = 7') + '.</p>' +
-      dib(montones([{ n: 7, etiqueta: 'Ahora' }, { n: 7, etiqueta: 'debes 14' }], 'neg', 'Las 14 fichas de deber juntas en un solo montón')) +
-      '<p class="centro lsa-igual">Debes 14 → ' + num(-14) + '</p>' +
-      dib(rectaEtiq({ min: -15, max: 1, etiquetas: [-14, -5], puntos: [-5, -14], salto: { de: -5, a: -14, etiqueta: F(-9) }, titulo: 'En la recta: de menos 5, 9 lugares a la izquierda, hasta menos 14' })) +
+    return regla(R.JUNTAN, 'SE JUNTAN') +
+      ejemplo({
+        expr: '−5 − 9',
+        pasos: [
+          { t: P1, html: burbs(-5, -9) + ' Dos deudas.' },
+          { t: P2, html: 'Los dos signos son iguales.', regla: 'SE JUNTAN' },
+          { t: P3, html: 'Suma los tamaños: ' + fx('5 + 9 = 14') + '. Deja el signo −.' }
+        ],
+        resultado: '−5 − 9 = −14'
+      }) +
+      dib(montones([{ n: 7, etiqueta: 'Ahora' }, { n: 7, etiqueta: 'debes 14' }], 'neg', 'Las 14 fichas de deber juntas en un solo montón'), 'lsa-dib-compacto') +
       cajaGancho(c);
   }
 
   function reglaL13() {
-    return '<div class="regla-caja"><p>Si los signos son <b>distintos</b>, SE CANCELAN:</p>' +
-      '<ol class="lista-num"><li>Resta los tamaños, el grande menos el chico: ' + fx('9 − 5 = 4') + '.</li>' +
-      '<li>Pon el signo del que tenía <b>más tamaño</b>. Aquí es la deuda de 9 → ' + num(-4) + '.</li></ol></div>' +
-      fxG('−9 + 5 = −4') +
-      dibFichas({ tengo: 5, debo: 9, cancelar: true }) +
-      '<p class="centro lsa-igual">5 parejas se cancelan. Quedan 4 de deuda → ' + num(-4) + '</p>' +
-      '<div class="caja-ojo"><b>Ojo:</b> aquí no importa cuál es mayor. ' + num(5) + ' es mayor que ' + num(-9) + ' (lámina 6), pero gana la deuda de 9 porque tiene más <b>tamaño</b>.</div>';
+    return regla(R.CANCELAN, 'SE CANCELAN') +
+      ejemplo({
+        expr: '−9 + 5',
+        pasos: [
+          { t: P1, html: burbs(-9, 5) + ' Debes 9 y tienes 5.' },
+          { t: P2, html: 'Los signos son distintos.', regla: 'SE CANCELAN' },
+          { t: P3, html: 'Resta los tamaños: ' + fx('9 − 5 = 4') + '. Tiene más tamaño la deuda de 9: queda negativo.' + dibFichas({ tengo: 5, debo: 9, cancelar: true }) }
+        ],
+        resultado: '−9 + 5 = −4'
+      });
   }
 
   // ---------- Lámina 5: tocar el −3 en la recta ----------
@@ -234,7 +258,7 @@
       const v = +g.getAttribute('data-v');
       if (v === -3) {
         listo = true; g.classList.add('lsa-ok'); punto(g, -3);
-        zfb.innerHTML = api.fb('ok', '¡Bien! ' + num(-3) + ' está 3 lugares a la izquierda del 0.');
+        zfb.innerHTML = api.fb('ok', '¡Bien! ' + num(-3) + ' está 3 saltos a la izquierda del 0.');
         LS.ui.sonido('ok');
         api.completar(intentos === 0);
         return;
@@ -242,13 +266,13 @@
       intentos++; api.fallo();
       g.classList.add('lsa-miss');
       const msg = v === 3
-        ? 'Casi. Ese es el ' + num(3) + ' positivo, a la <b>derecha</b> del 0. El ' + num(-3) + ' está a la misma distancia, pero a la <b>izquierda</b>.'
-        : 'Casi. Cuenta 3 saltos desde el 0 hacia la <b>izquierda</b>.';
+        ? 'Casi. Ese es el ' + num(3) + ', a la <b>derecha</b> del 0. El ' + num(-3) + ' está a la <b>izquierda</b>.'
+        : 'Casi. Desde el 0, cuenta 3 saltos hacia la <b>izquierda</b>.';
       if (intentos >= 2) {
         listo = true;
         const bien = el.querySelector('.tick[data-v="-3"]');
         if (bien) { bien.classList.add('lsa-ok'); punto(bien, -3); }
-        zfb.innerHTML = api.fb('miss', msg) + api.fb('info', '<b>Así se hace:</b> desde el 0 cuenta 3 saltos hacia la izquierda: ahí está el ' + num(-3) + '.');
+        zfb.innerHTML = api.fb('miss', msg) + api.fb('info', '<b>Así se hace:</b> desde el 0, cuenta 3 saltos a la izquierda. Ahí está el ' + num(-3) + '.');
         api.completar(false);
       } else {
         zfb.innerHTML = api.fb('miss', msg + '<br><span class="peq tinta-2">Puedes intentar otra vez.</span>');
@@ -270,8 +294,8 @@
       id: 'L1', num: 1, cap: 0, desliza: true,
       titulo: c => 'Hola, ' + esc(c.nombre) + '.',
       html: '<div class="sin-color lsa-portada">' + fx('−5 − 9', { clase: 'fx-enorme' }) + '</div>' +
-        '<p>Esto sale <b>siempre</b> en el examen de admisión, y mucha gente lo responde mal.</p>' +
-        '<p>Al terminar, tú lo vas a resolver solo, paso a paso. Nadie nace sabiendo esto: se aprende.</p>' +
+        '<p>Esto sale <b>siempre</b> en el examen de admisión. Mucha gente lo responde mal.</p>' +
+        '<p>Al terminar, lo vas a resolver solo, paso a paso.</p>' +
         '<p class="peq tinta-2">Láminas ≈ 25 min · Juego ≈ 30 min · Test ≈ 25 min. Tu avance se guarda solo.</p>' +
         dib(manoDesliza(), 'lsa-dib-mano'),
       bloques: [{ tipo: 'boton', texto: 'Empezar' }]
@@ -283,15 +307,14 @@
         '<li>Lee con calma. Cada lámina tiene una sola idea.</li>' +
         '<li>Pasa con <b>Siguiente</b> o deslizando.</li>' +
         '<li>¿No entendiste? Toca <b>«Explícame más despacio»</b>.</li>' +
-        '<li>Puedes volver atrás cuando quieras. Nadie te apura.</li>' +
-        '<li>Si hay una pregunta, respóndela para seguir. Equivocarte aquí no resta nada.</li></ol>' +
+        '<li>Responde la pregunta para seguir. Equivocarte aquí no resta nada.</li></ol>' +
         dib(miniLamina()),
       bloques: [{ tipo: 'boton', texto: 'Entendido' }]
     },
     {
       id: 'L3', num: 3, cap: 0,
       titulo: 'Adivina primero',
-      html: '<p>Todavía no te hemos explicado nada. <b>Solo adivina: no cuenta para nada.</b></p>',
+      html: '<p>Aún no te explicamos nada. <b>Solo adivina: no cuenta para nada.</b></p>',
       bloques: [{
         tipo: 'opciones', prediccion: true, guardar: 'gancho',
         enunciado: '¿Cuánto es <span class="sin-color">' + fx('−5 − 9') + '</span>?',
@@ -302,7 +325,7 @@
           { t: num(14), valor: '14' },
           { t: 'No tengo idea', valor: 'nose' }
         ],
-        fbComun: 'Guardado. Más adelante lo resolvemos juntos y vas a ver por qué.'
+        fbComun: 'Guardado. Más adelante lo resolvemos y verás por qué.'
       }]
     },
 
@@ -311,58 +334,60 @@
       id: 'L4', num: 4, cap: 1,
       entrada: 'Capítulo 1 de 4 · ¿Qué es un número negativo? · unos 4 minutos',
       titulo: 'Los números negativos existen',
-      html: c => '<p>Los números <b>negativos</b> sirven para contar lo que está <b>por debajo de cero</b> o lo que <b>falta</b>.</p>' +
-        '<div class="lsa-vinetas">' +
-        vineta(termometro(), 'Congelador de tu refri: <b>' + num(-18) + ' °C</b> → 18 grados bajo cero.') +
-        vineta(ascensor(), 'Ascensor del mall: botón ' + num(-2) + ' → 2 pisos bajo la planta baja.') +
-        vineta(cuadernoFiado(c.nombre), 'La señora de la tienda te fió $2 → tu plata es ' + num(-2) + ': le debes 2 dólares.') +
+      html: c => '<p>Los <b>negativos</b> cuentan lo que está <b>bajo cero</b> o lo que <b>falta</b>.</p>' +
+        '<div class="lsa-minis">' +
+        mini(termometro(), '<b>' + num(-18) + ' °C</b><br>18 grados bajo cero') +
+        mini(ascensor(), 'Piso <b>' + num(-2) + '</b><br>2 pisos bajo la planta baja') +
+        mini(cuadernoFiado(c.nombre), '<b>' + num(-2) + ' dólares</b><br>le debes $2 a la tienda') +
         '</div>',
-      mas: '<p>Hasta ahora usabas números como 0, 1, 2, 3… Pero hay cosas que no se cuentan así.</p>' +
-        '<p>Si el congelador está 18 grados más frío que el cero, escribimos ' + num(-18) + '. Si debes plata, estás por debajo de cero.</p>' +
-        '<p>El signo − pegado a un número dice que ese número está <b>al otro lado del cero</b>. Estos números se llaman <b>negativos</b>.</p>' +
-        '<p>Los de siempre (1, 2, 3…) se llaman <b>positivos</b>, y a veces se escriben con un + delante: ' + nP(3) + ' es lo mismo que ' + num(3) + '.</p>',
+      mas: '<p><b>Otro ejemplo:</b> un buzo está 5 metros bajo el mar. El nivel del mar es el 0, así que el buzo está en ' + num(-5) + ' m.</p>' +
+        '<p>El signo − dice que el número está <b>al otro lado del cero</b>. Los números de siempre (1, 2, 3…) son <b>positivos</b>. A veces llevan un + delante: ' + nP(3) + ' es lo mismo que ' + num(3) + '.</p>',
       bloques: [{
         tipo: 'opciones',
         enunciado: 'El ascensor está en el piso ' + num(-1) + '. ¿Dónde está?',
         opciones: [
-          { t: '1 piso arriba de la planta baja', fb: 'Casi. El signo − dice «por debajo de cero». En el ascensor el 0 es la planta baja, así que ' + num(-1) + ' está un piso <b>abajo</b>.' },
-          { t: 'En la planta baja', fb: 'Casi. La planta baja es el 0. El ' + num(-1) + ' está un piso más abajo que el 0.' },
-          { t: '1 piso abajo de la planta baja', ok: true, fb: '¡Eso! ' + num(-1) + ' está un piso por debajo de la planta baja.' }
+          { t: '1 piso arriba de la planta baja', fb: 'Casi. El − dice «bajo cero». La planta baja es el 0, así que ' + num(-1) + ' está un piso <b>abajo</b>.' },
+          { t: 'En la planta baja', fb: 'Casi. La planta baja es el 0. El ' + num(-1) + ' está un piso más abajo.' },
+          { t: '1 piso abajo de la planta baja', ok: true, fb: '¡Eso! El − dice que está bajo el 0.' }
         ]
       }]
     },
     {
       id: 'L5', num: 5, cap: 1,
       titulo: 'La recta numérica',
-      html: '<p>Todos los números caben en una línea: la <b>recta numérica</b>.</p>' +
-        '<ul class="lsa-lista">' +
-        '<li>A la derecha del 0: los <b>positivos</b> (azul).</li>' +
-        '<li>A la izquierda del 0: los <b>negativos</b> (naranja).</li>' +
-        '<li>El <b>0</b> no es positivo ni negativo.</li></ul>' +
-        '<p class="caja-nota">El color solo te ayuda. Lo que manda es el <b>signo escrito</b>: en tu examen todo sale en negro.</p>',
-      mas: '<p>Imagina una regla muy larga con el 0 en el centro.</p>' +
-        '<p>Cada paso hacia la derecha es un positivo: 1, 2, 3… Cada paso hacia la izquierda es un negativo: ' + num(-1) + ', ' + num(-2) + ', ' + num(-3) + '…</p>' +
-        '<p>El ' + num(-3) + ' está a 3 pasos del 0, pero del lado izquierdo.</p>' +
-        '<p>Aquí pintamos los positivos de azul y los negativos de naranja para que los veas rápido. Al final del curso quitamos los colores, como en el examen de verdad.</p>',
+      html: regla('A la derecha del 0 van los positivos. A la izquierda, los negativos. El 0 no es ni uno ni otro.') +
+        '<p><b>Ejemplo:</b> el ' + num(-4) + ' está 4 saltos a la izquierda del 0.</p>' +
+        dib(LS.svg.recta({ min: -6, max: 6, puntos: [{ v: -4 }], saltos: [{ de: 0, a: -4, etiqueta: '4 saltos' }], titulo: 'Desde el 0, 4 saltos a la izquierda hasta menos 4' }), 'lsa-dib-compacto') +
+        '<p class="caja-nota">El color solo ayuda. Manda el <b>signo escrito</b>: en el examen todo sale en negro.</p>',
+      mas: '<p><b>Otro ejemplo:</b> el ' + num(5) + ' está 5 saltos a la <b>derecha</b> del 0. El ' + num(-5) + ' también está a 5 saltos, pero a la <b>izquierda</b>.</p>' +
+        '<p>¿Por qué? La recta es como una regla larga con el 0 en el centro. Cuenta siempre los saltos desde el 0.</p>',
       bloques: [{ tipo: 'custom', render: tocarRecta }]
     },
     {
       id: 'L6', num: 6, cap: 1,
       titulo: '¿Cuál es mayor?',
-      html: '<p>En la recta, el que está <b>más a la derecha es el mayor</b>.</p>' +
-        dib(rectaEtiq({ min: -10, max: 6, etiquetas: [-9, -5, 5], puntos: [-9, -5, 5], flecha: 'más a la derecha = mayor', titulo: 'Recta con menos 9, menos 5 y 5 marcados. Más a la derecha es mayor' })) +
-        '<p>' + num(5) + ' es mayor que ' + num(-9) + '.<br>' + num(-5) + ' es mayor que ' + num(-9) + '.</p>' +
-        '<p>Piensa en plata: deber 9 es <b>peor</b> que deber 5. Por eso ' + num(-9) + ' es <b>menor</b> que ' + num(-5) + '.</p>',
-      mas: '<p>Con los positivos ya sabes que 8 es mayor que 3.</p>' +
-        '<p>Con los negativos pasa algo raro: ' + num(-9) + ' tiene un 9, pero es <b>menor</b> que ' + num(-5) + ', porque está más lejos del 0 hacia la izquierda.</p>' +
-        '<p>En plata, ' + num(-9) + ' es deber 9 dólares y ' + num(-5) + ' es deber 5: debiendo 9 estás peor.</p>' +
-        '<p>La regla que nunca falla: en la recta, el de la derecha es el mayor.</p>',
+      html: regla('En la recta, el que está más a la derecha es el mayor.') +
+        ejemplo({
+          titulo: 'Ejemplo: ¿cuál es mayor?',
+          pasos: [
+            { t: 'Ubícalos en la recta', html: num(-9) + ' y ' + num(-5) + dib(rectaEtiq({ min: -10, max: 1, etiquetas: [-9, -5], puntos: [-9, -5], flecha: 'más a la derecha = mayor', titulo: 'Recta con menos 9 y menos 5. Más a la derecha es mayor' }), 'lsa-dib-compacto') },
+            { t: 'Elige el de más a la derecha', html: num(-5) + ' es mayor que ' + num(-9) + '. En plata: deber 9 es peor que deber 5.' }
+          ]
+        }),
+      mas: ejemplo({
+        titulo: 'Otro ejemplo: ¿cuál es mayor?',
+        pasos: [
+          { t: 'Ubícalos en la recta', html: num(-1) + ' está a 1 salto del 0. ' + num(6) + ' está a 6 saltos, a la derecha.' },
+          { t: 'Elige el de más a la derecha', html: num(6) + ' es mayor que ' + num(-1) + '.' }
+        ]
+      }) +
+        '<p>¿Por qué? Ir a la derecha es tener más plata o deber menos. Todo positivo es mayor que cualquier negativo.</p>',
       bloques: [
         {
           tipo: 'opciones', columnas: 2,
           enunciado: '¿Cuál es mayor: ' + num(-2) + ' o ' + num(-7) + '?',
           opciones: [
-            { t: num(-7), fb: 'Casi. El 7 se ve más grande, pero ' + num(-7) + ' es deber 7, y eso es peor que deber 2. En la recta, ' + num(-2) + ' está más a la derecha: <b>' + num(-2) + ' es mayor</b>.' },
+            { t: num(-7), fb: 'Casi. El 7 se ve grande, pero ' + num(-7) + ' es deber 7. ' + num(-2) + ' está más a la derecha: es mayor.' },
             { t: num(-2), ok: true, fb: '¡Exacto! ' + num(-2) + ' está más a la derecha.' }
           ]
         },
@@ -370,71 +395,96 @@
           tipo: 'opciones', columnas: 2,
           enunciado: '¿Cuál es mayor: ' + num(-4) + ' o ' + num(0) + '?',
           opciones: [
-            { t: num(-4), fb: 'Casi. Todo negativo es menor que 0, porque está a su izquierda. Tener 0 es mejor que deber 4.' },
-            { t: num(0), ok: true, fb: '¡Bien! Cualquier negativo es menor que 0.' }
+            { t: num(-4), fb: 'Casi. Todo negativo está a la izquierda del 0. Tener 0 es mejor que deber 4.' },
+            { t: num(0), ok: true, fb: '¡Bien! Todo negativo es menor que 0.' }
           ]
         }
       ]
     },
     {
       id: 'L7', num: 7, cap: 1,
-      titulo: 'Tamaño y opuestos',
-      html: '<p>El <b>TAMAÑO</b> de un número es el número <b>sin su signo</b>: ' + num(-9) + ' tiene tamaño <b>9</b>.</p>' +
-        '<p>' + num(3) + ' y ' + num(-3) + ' tienen el mismo tamaño y están a cada lado del 0. Se llaman <b>opuestos</b>.</p>' +
-        dib(LS.svg.recta({ min: -4, max: 4, espejo: true, puntos: [{ v: -3 }, { v: 3 }], saltos: [{ de: 0, a: -3, etiqueta: '3 pasos' }, { de: 0, a: 3, etiqueta: '3 pasos' }], titulo: '3 y menos 3 están a 3 pasos del 0, cada uno a un lado' })) +
-        '<p>Juntos dan 0: tener $3 y deber $3 = <b>$0</b>.</p>' +
-        dibFichas({ tengo: 3, debo: 3, cancelar: true }) +
-        '<p class="centro lsa-igual">Cada par se cancela → ' + num(0) + '</p>',
-      mas: '<p>El tamaño es cuántos pasos hay desde el 0, sin importar el lado.</p>' +
-        '<p>En los libros lo llaman «valor absoluto» y lo escriben |' + num(-9) + '| = 9; tú puedes decirle tamaño.</p>' +
-        '<p>Dos números con el mismo tamaño y signos distintos, como ' + num(7) + ' y ' + num(-7) + ', son opuestos.</p>' +
-        '<p>Si tienes 7 dólares y debes 7, pagas todo y te queda 0. Por eso un número más su opuesto siempre da 0. Esto lo vas a usar en el capítulo 2.</p>',
-      bloques: [
-        {
-          tipo: 'opciones', columnas: 2,
-          enunciado: '¿Cuál tiene <b>más tamaño</b>: ' + num(-9) + ' o ' + num(5) + '?',
-          opciones: [
-            { t: num(-9), ok: true, fb: '¡Bien! Ojo: ' + num(-9) + ' tiene más tamaño que ' + num(5) + ', pero es <b>menor</b> que ' + num(5) + '. Son dos preguntas distintas.' },
-            { t: num(5), fb: 'Casi. No preguntamos cuál es mayor, sino cuál tiene más <b>tamaño</b>. Quita los signos: 9 y 5. Gana el 9, o sea ' + num(-9) + '.' }
+      titulo: 'El tamaño de un número',
+      html: regla('El tamaño de un número es el número sin su signo. Dice a cuántos saltos está del 0.') +
+        ejemplo({
+          titulo: 'Ejemplo: ¿cuál tiene más tamaño?',
+          pasos: [
+            { t: 'Quita los signos', html: num(-9) + ' queda 9. ' + num(5) + ' queda 5.' },
+            { t: 'Compara', html: '9 es más que 5. Tiene más tamaño el ' + num(-9) + '.' }
           ]
-        },
-        {
-          tipo: 'opciones',
-          enunciado: '¿Cuál es el opuesto de ' + num(-6) + '?',
-          opciones: [
-            { t: num(-6), fb: 'Casi. El opuesto está al <b>otro lado</b> del 0, con el mismo tamaño: es ' + num(6) + '.' },
-            { t: num(0), fb: 'Casi. 0 es lo que da al <b>juntar</b> un número con su opuesto. El opuesto de ' + num(-6) + ' es ' + num(6) + '.' },
-            { t: num(6), ok: true, fb: '¡Eso! ' + num(6) + ' y ' + num(-6) + ' son opuestos.' }
+        }) +
+        ojo('Tamaño y mayor son preguntas distintas. ' + num(-9) + ' tiene más tamaño que ' + num(5) + ', pero es menor.'),
+      mas: ejemplo({
+        titulo: 'Otro ejemplo: ¿cuál tiene más tamaño?',
+        pasos: [
+          { t: 'Quita los signos', html: num(-2) + ' queda 2. ' + num(6) + ' queda 6.' },
+          { t: 'Compara', html: '6 es más que 2. Tiene más tamaño el ' + num(6) + '.' }
+        ]
+      }) +
+        '<p>¿Por qué sirve? Para sumar y restar vas a comparar tamaños. En los libros el tamaño se llama «valor absoluto»: |' + num(-9) + '| = 9.</p>',
+      bloques: [{
+        tipo: 'opciones', columnas: 2,
+        enunciado: '¿Cuál tiene <b>más tamaño</b>: ' + num(-7) + ' o ' + num(4) + '?',
+        opciones: [
+          { t: num(-7), ok: true, fb: '¡Bien! Sin signos queda 7 y 4. Gana el 7.' },
+          { t: num(4), fb: 'Casi. No preguntamos cuál es mayor. Quita los signos: 7 y 4. Gana el ' + num(-7) + '.' }
+        ]
+      }]
+    },
+    {
+      id: 'L7b', num: 7.5, cap: 1,
+      titulo: 'Opuestos: juntos dan 0',
+      html: regla('Dos números con el mismo tamaño y signos distintos son opuestos. Juntos dan 0.') +
+        ejemplo({
+          titulo: 'Ejemplo: ' + num(3) + ' y ' + num(-3),
+          pasos: [
+            { t: 'Mira tamaño y signo', html: 'Los dos tienen tamaño 3. Uno es +, el otro es −. Son opuestos.' },
+            { t: 'Júntalos', html: 'Tienes $3 y debes $3. Cada ficha azul paga una naranja.' + dibFichas({ tengo: 3, debo: 3, cancelar: true }) + 'Pagas todo y quedas en ' + num(0) + '.' }
           ]
-        }
-      ]
+        }),
+      mas: ejemplo({
+        titulo: 'Otro ejemplo: ' + num(7) + ' y ' + num(-7),
+        pasos: [
+          { t: 'Mira tamaño y signo', html: 'Tamaño 7 los dos. Signos distintos. Son opuestos.' },
+          { t: 'Júntalos', html: 'Tienes $7 y debes $7. Pagas los 7 y quedas en ' + num(0) + '.' }
+        ]
+      }) +
+        '<p>¿Por qué? En la recta, los opuestos están a la misma distancia del 0, uno a cada lado.</p>',
+      bloques: [{
+        tipo: 'opciones',
+        enunciado: '¿Cuál es el opuesto de ' + num(-6) + '?',
+        opciones: [
+          { t: num(-6), fb: 'Casi. Ese es el mismo número. El opuesto tiene el signo contrario: ' + num(6) + '.' },
+          { t: num(0), fb: 'Casi. 0 es lo que dan <b>juntos</b>. El opuesto de ' + num(-6) + ' es ' + num(6) + '.' },
+          { t: num(6), ok: true, fb: '¡Eso! Mismo tamaño, signo contrario.' }
+        ]
+      }]
     },
     {
       id: 'L8', num: 8, cap: 1,
       titulo: 'Minichequeo 1',
-      html: '<p>Dos preguntas rápidas para ver cómo vas. Equivocarte aquí no resta nada.</p>',
+      html: '<p>Dos preguntas rápidas. Equivocarte aquí no resta nada.</p>',
       bloques: [{
         tipo: 'chequeo',
-        repaso: [6, 7],
+        repaso: [6, 7.5],
         preguntas: [
           {
             tipo: 'opciones', columnas: 2,
             enunciado: '¿Qué número es el <b>menor</b>?',
             opciones: [
               { t: num(-8), ok: true, fb: '¡Bien! ' + num(-8) + ' es el que está más a la izquierda.' },
-              { t: num(-1), fb: 'Casi. ' + num(-1) + ' está muy cerca del 0. ' + num(-8) + ' está más a la izquierda: es el menor. (Lámina 6)' },
+              { t: num(-1), fb: 'Casi. ' + num(-1) + ' está muy cerca del 0. ' + num(-8) + ' está más a la izquierda: es el menor.' },
               { t: num(0), fb: 'Casi. Todo negativo es menor que 0. El menor es ' + num(-8) + '.' },
-              { t: num(3), fb: 'Casi. ' + num(3) + ' es positivo y está a la derecha: es el <b>mayor</b>. El menor es ' + num(-8) + '.' }
+              { t: num(3), fb: 'Casi. ' + num(3) + ' está a la derecha: es el <b>mayor</b>. El menor es ' + num(-8) + '.' }
             ]
           },
           {
             tipo: 'opciones', columnas: 2,
             enunciado: 'Tienes $4 y debes $4. ¿Cómo quedas?',
             opciones: [
-              { t: num(-4), fb: 'Casi. Todavía tienes los $4 para pagar. Pagas todo y quedas en 0.' },
-              { t: num(0), ok: true, fb: '¡Bien! Un número más su opuesto da 0.' },
-              { t: num(4), fb: 'Casi. Esos $4 los usas para pagar lo que debes. Quedas en 0.' },
-              { t: num(8), fb: 'Casi. No se juntan: una es plata que tienes y la otra plata que debes. Pagas y quedas en 0.' }
+              { t: num(-4), fb: 'Casi. Tienes $4 para pagar. Pagas todo y quedas en 0.' },
+              { t: num(0), ok: true, fb: '¡Bien! Son opuestos: juntos dan 0.' },
+              { t: num(4), fb: 'Casi. Esos $4 los usas para pagar. Quedas en 0.' },
+              { t: num(8), fb: 'Casi. Una es plata que tienes y otra que debes. Pagas y quedas en 0.' }
             ]
           }
         ],
@@ -446,7 +496,7 @@
               { t: num(-6), ok: true, fb: '¡Bien! ' + num(-6) + ' es el que está más a la izquierda.' },
               { t: num(-2), fb: 'Casi. ' + num(-2) + ' está cerca del 0. ' + num(-6) + ' está más a la izquierda: es el menor.' },
               { t: num(0), fb: 'Casi. Todo negativo es menor que 0. El menor es ' + num(-6) + '.' },
-              { t: num(4), fb: 'Casi. ' + num(4) + ' es positivo: es el <b>mayor</b>. El menor es ' + num(-6) + '.' }
+              { t: num(4), fb: 'Casi. ' + num(4) + ' está a la derecha: es el <b>mayor</b>. El menor es ' + num(-6) + '.' }
             ]
           },
           {
@@ -454,9 +504,9 @@
             enunciado: 'Tienes $7 y debes $7. ¿Cómo quedas?',
             opciones: [
               { t: num(-7), fb: 'Casi. Tienes $7 para pagar. Pagas todo y quedas en 0.' },
-              { t: num(0), ok: true, fb: '¡Bien! Un número más su opuesto da 0.' },
-              { t: num(7), fb: 'Casi. Esos $7 los usas para pagar lo que debes. Quedas en 0.' },
-              { t: num(14), fb: 'Casi. No se juntan: una es plata que tienes y la otra plata que debes. Quedas en 0.' }
+              { t: num(0), ok: true, fb: '¡Bien! Son opuestos: juntos dan 0.' },
+              { t: num(7), fb: 'Casi. Esos $7 los usas para pagar. Quedas en 0.' },
+              { t: num(14), fb: 'Casi. Una es plata que tienes y otra que debes. Pagas y quedas en 0.' }
             ]
           }
         ],
@@ -467,8 +517,8 @@
       id: 'L9', num: 9, cap: 1,
       titulo: c => '¡Capítulo 1 listo, ' + esc(c.nombre) + '!',
       html: '<div class="sello">' + LS.svg.sello('Capítulo 1 superado') + '</div>' +
-        '<p>Ya sabes qué es un negativo, cómo ordenarlos y qué es el tamaño.</p>' +
-        '<p><b>Lo que viene:</b> la regla de la plata, para sumar y restar cualquier número.</p>' +
+        '<p>Ya sabes qué es un negativo, cuál es mayor, qué es el tamaño y qué son los opuestos.</p>' +
+        '<p><b>Lo que viene:</b> sumar y restar con la regla de la plata.</p>' +
         '<p class="caja-nota">Puedes parar aquí: tu avance quedó guardado.</p>'
     },
 
@@ -476,24 +526,32 @@
     {
       id: 'L10', num: 10, cap: 2, chip: 'LECTURA', masAlFallar: true,
       entrada: 'Capítulo 2 de 4 · Sumar y restar: la regla de la plata · unos 7 minutos',
-      titulo: 'Paso 0: cómo leer un ejercicio',
-      html: '<p>Antes de calcular, encierra cada número <b>con el signo que tiene a su izquierda</b>. Ese signo es suyo.</p>' +
-        '<p>Si un número no tiene signo delante, es <b>positivo</b>.</p>' +
-        '<div class="lsa-lectura">' +
-        '<div class="lsa-lectura-fila"><span class="sin-color">' + fxM('−5 − 9') + '</span><span class="lsa-flecha">→</span>' + burbs(-5, -9) + '</div>' +
-        '<div class="lsa-lectura-fila"><span class="sin-color">' + fxM('8 − 5') + '</span><span class="lsa-flecha">→</span>' + burbs(8, -5) + '</div>' +
-        '</div>',
-      mas: '<p>En ' + fx('−5 − 9') + ' hay dos signos menos.</p>' +
-        '<p>El primero está pegado al 5, así que es del 5. El segundo está pegado al 9, así que es del 9. Entonces tienes dos números: ' + num(-5) + ' y ' + num(-9) + '.</p>' +
-        '<p>En ' + fx('8 − 5') + ', el 8 no tiene nada delante, así que es ' + nP(8) + ', y el − antes del 5 lo vuelve ' + num(-5) + '.</p>' +
-        '<p><b>Truco:</b> pon el dedo sobre el ejercicio y encierra cada número con el signo que tiene justo antes. Esto lo vas a hacer en <b>todos</b> los ejercicios de sumar y restar.</p>',
+      titulo: 'Paso 1: mira los signos',
+      html: '<p>Para sumar y restar usarás siempre estos 3 pasos:</p>' + metodo(1) +
+        regla(R.LECTURA, 'LECTURA') +
+        ejemplo({
+          expr: '8 − 5',
+          pasos: [
+            { t: 'Encierra cada número con su signo', html: burbs(8, -5) },
+            { t: 'Léelos', html: 'El 8 no tiene signo: es ' + nP(8) + '. El − es del 5: ' + num(-5) + '.' }
+          ]
+        }),
+      mas: ejemplo({
+        titulo: 'Otro ejemplo',
+        expr: '−5 − 9',
+        pasos: [
+          { t: 'Encierra cada número con su signo', html: burbs(-5, -9) },
+          { t: 'Léelos', html: 'El primer − es del 5: ' + num(-5) + '. El segundo − es del 9: ' + num(-9) + '.' }
+        ]
+      }) +
+        '<p>¿Por qué? Cada signo va pegado al número que tiene a su derecha. Por eso ese número se lo lleva.</p>',
       bloques: [{
         tipo: 'opciones',
         enunciado: '¿Cuáles son los números de <span class="sin-color">' + fx('7 − 10') + '</span>?',
         opciones: [
           { t: num(7) + ' y ' + num(10), fb: 'Casi. El − que está antes del 10 es del 10. Los números son ' + nP(7) + ' y ' + num(-10) + '.' },
-          { t: num(-7) + ' y ' + num(-10), fb: 'Casi. El 7 no tiene signo delante, así que es positivo: ' + nP(7) + '. El − es del 10.' },
-          { t: num(-7) + ' y ' + num(10), fb: 'Casi. Cada signo es del número que está a su <b>derecha</b>. El − va pegado al 10: ' + nP(7) + ' y ' + num(-10) + '.' },
+          { t: num(-7) + ' y ' + num(-10), fb: 'Casi. El 7 no tiene signo a su izquierda: es positivo. El − es del 10.' },
+          { t: num(-7) + ' y ' + num(10), fb: 'Casi. Cada número se lleva el signo de su <b>izquierda</b>. El − es del 10: ' + nP(7) + ' y ' + num(-10) + '.' },
           { t: nP(7) + ' y ' + num(-10), ok: true, fb: '¡Bien! Siempre empieza así: ' + burbs(7, -10) }
         ]
       }]
@@ -501,47 +559,57 @@
     {
       id: 'L11', num: 11, cap: 2, chip: 'PLATA',
       titulo: 'Todo es plata',
-      html: '<p>Piensa que cada número es plata:</p>' +
-        '<div class="lsa-plata">' +
-        '<p>' + fichaIco('pos') + '<span><b>Positivo</b> = plata que <b>tienes</b>. ' + nP(8) + ' → tienes 8 dólares.</span></p>' +
-        '<p>' + fichaIco('neg') + '<span><b>Negativo</b> = plata que <b>debes</b>. ' + num(-5) + ' → le debes 5 dólares a alguien.</span></p>' +
+      html: '<div class="lsa-plata">' +
+        '<p>' + fichaIco('pos') + '<span><b>Positivo</b> = plata que <b>tienes</b>. ' + nP(8) + ' es tener $8.</span></p>' +
+        '<p>' + fichaIco('neg') + '<span><b>Negativo</b> = plata que <b>debes</b>. ' + num(-5) + ' es deber $5.</span></p>' +
         '</div>' +
-        '<p>Sumar y restar es juntar todo y ver cómo quedas.</p>' +
+        '<p>Una ficha que tienes paga una que debes: las dos se cancelan.</p>' +
         dibFichas({ tengo: 8, debo: 5, cancelar: true }) +
-        '<p class="centro lsa-igual">5 parejas se cancelan. Quedan 3 que tienes → ' + num(3) + '</p>' +
-        '<p><span class="sin-color">' + fx('−5 − 9') + '</span> se lee: «menos cinco menos nueve».</p>',
-      mas: '<p>Si tienes $8 en el bolsillo y le debes $5 a un pana, en realidad solo son tuyos $3: pagas y te quedan 3. Por eso ' + fx('8 − 5 = 3') + '.</p>' +
-        '<p>Cada ficha azul es un dólar que tienes y cada ficha naranja es un dólar que debes.</p>' +
-        '<p>Una azul y una naranja juntas se <b>cancelan</b>: pagas ese dólar y quedan en 0.</p>' +
-        '<p>Con esta idea vas a sumar y restar cualquier número.</p>',
+        '<p class="centro lsa-igual">Quedan 3 que tienes: ' + num(3) + '</p>',
+      mas: ejemplo({
+        titulo: 'Otro ejemplo: tienes $2 y debes $6',
+        pasos: [
+          { t: 'Pon las fichas', html: '2 azules y 6 naranjas.' },
+          { t: 'Cancela', html: 'Cada azul paga una naranja. Se van 2 parejas.' },
+          { t: 'Mira qué queda', html: 'Quedan 4 naranjas: debes 4, o sea ' + num(-4) + '.' }
+        ]
+      }) +
+        '<p>¿Por qué sirve? Sumar y restar es juntar lo que tienes con lo que debes y ver cómo quedas.</p>',
       bloques: [{
         tipo: 'opciones',
         enunciado: '¿Qué significa ' + num(-4) + '?',
         opciones: [
-          { t: 'Tienes 4 dólares', fb: 'Casi. El signo − significa plata que <b>debes</b>: debes 4 dólares.' },
-          { t: 'Debes 4 dólares', ok: true, fb: '¡Eso!' },
-          { t: 'No tienes nada', fb: 'Casi. No tener nada es 0. ' + num(-4) + ' es peor que 0: debes 4 dólares.' }
+          { t: 'Tienes 4 dólares', fb: 'Casi. El − es plata que <b>debes</b>: debes 4 dólares.' },
+          { t: 'Debes 4 dólares', ok: true, fb: '¡Eso! El − es plata que debes.' },
+          { t: 'No tienes nada', fb: 'Casi. No tener nada es 0. ' + num(-4) + ' es deber 4 dólares.' }
         ]
       }]
     },
     {
       id: 'L12', num: 12, cap: 2, chip: 'SE JUNTAN', masAlFallar: true,
       titulo: 'Mismo signo: SE JUNTAN',
-      html: c => '<p>Primero, una predicción.</p>' +
+      html: c => '<p>Primero, predice.</p>' +
         '<p>En ' + fx('−5 − 9') + ' debes 5 y luego debes 9 más.</p>' +
-        dib(montones([{ n: 5, etiqueta: 'Debes 5' }, { n: 9, etiqueta: 'y 9 más' }], 'neg', 'Un montón de 5 fichas de deber y otro de 9')) +
+        dib(montones([{ n: 5, etiqueta: 'Debes 5' }, { n: 9, etiqueta: 'y 9 más' }], 'neg', 'Un montón de 5 fichas de deber y otro de 9'), 'lsa-dib-compacto') +
         (hecho(c, 'L12') ? reglaL12(c) : ''),
-      mas: '<p>Paso 0: ' + burbs(-5, -9) + '. Los dos son naranjas, o sea los dos son deudas.</p>' +
-        '<p>Si debes 5 dólares y pides 9 más, ahora debes ' + fx('5 + 9 = 14') + '.</p>' +
-        '<p>Como es deuda, el resultado es negativo: ' + num(-14) + '.</p>' +
-        '<p><b>Ojo:</b> aquí no hay multiplicación. La regla de multiplicar la verás en el capítulo 3 y aquí no se usa.</p>',
+      mas: ejemplo({
+        titulo: 'Otro ejemplo',
+        expr: '−3 − 4',
+        pasos: [
+          { t: P1, html: burbs(-3, -4) + ' Debes 3 y luego 4 más.' },
+          { t: P2, html: 'Los dos signos son iguales.', regla: 'SE JUNTAN' },
+          { t: P3, html: 'Suma los tamaños: ' + fx('3 + 4 = 7') + '. Deja el signo −.' }
+        ],
+        resultado: '−3 − 4 = −7'
+      }) +
+        '<p>¿Por qué? Dos deudas no se pagan entre sí: solo crecen. Con plata que tienes pasa igual: ' + fx('3 + 4 = 7') + '.</p>',
       bloques: [
         {
           tipo: 'opciones',
           enunciado: '¿Cómo quedas?',
           opciones: [
             { t: 'Debo menos', fb: 'Casi. Si a una deuda le sumas otra, debes <b>más</b>.' },
-            { t: 'Ya no debo nada', fb: 'Casi. No has pagado nada: solo tienes otra deuda más.' },
+            { t: 'Ya no debo nada', fb: 'Casi. No pagaste nada: solo tienes otra deuda.' },
             { t: 'Debo más', ok: true, fb: '¡Eso! Mira cuánto:' }
           ],
           solucion: 'Debes 5 y pides 9 más: debes más. Mira cuánto:'
@@ -552,13 +620,20 @@
     {
       id: 'L13', num: 13, cap: 2, chip: 'SE CANCELAN', masAlFallar: true,
       titulo: 'Signos distintos: SE CANCELAN',
-      html: c => '<p>Primero, una predicción.</p>' +
+      html: c => '<p>Primero, predice.</p>' +
         '<p>En ' + fx('−9 + 5') + ' debes 9 y tienes 5. Pagas lo que puedes.</p>' +
         (hecho(c, 'L13') ? reglaL13() : dibFichas({ tengo: 5, debo: 9 })),
-      mas: '<p>Pon 9 fichas naranjas (debes 9) y 5 azules (tienes 5).</p>' +
-        '<p>Cada azul paga una naranja y las dos desaparecen.</p>' +
-        '<p>Después de 5 parejas ya no quedan azules y sobran 4 naranjas: sigues debiendo 4, o sea ' + num(-4) + '.</p>' +
-        '<p><b>El atajo sin dibujar:</b> resta los tamaños (' + fx('9 − 5 = 4') + ') y ponle el signo del que tenía más tamaño.</p>',
+      mas: ejemplo({
+        titulo: 'Otro ejemplo',
+        expr: '−2 + 7',
+        pasos: [
+          { t: P1, html: burbs(-2, 7) + ' Debes 2 y tienes 7.' },
+          { t: P2, html: 'Los signos son distintos.', regla: 'SE CANCELAN' },
+          { t: P3, html: 'Resta los tamaños: ' + fx('7 − 2 = 5') + '. Tiene más tamaño el ' + nP(7) + ': queda positivo.' }
+        ],
+        resultado: '−2 + 7 = 5'
+      }) +
+        '<p>¿Por qué? Cada dólar que tienes paga un dólar que debes. Lo que sobra decide el signo.</p>',
       bloques: [
         {
           tipo: 'opciones',
@@ -575,73 +650,85 @@
           enunciado: 'Ahora tú: ' + fx('−3 + 10') + ' = ?',
           correcta: 7,
           errores: {
-            '-7': 'Casi. El número está bien, revisa el signo. ¿Quién tenía más tamaño, la deuda de 3 o los 10 que tienes? Ganan los 10: positivo.',
-            '13': 'Casi. Con signos distintos no se juntan: se cancelan. Resta ' + fx('10 − 3') + '.',
-            '-13': 'Casi. Con signos distintos no se juntan: se cancelan. Resta ' + fx('10 − 3') + '.'
+            '-7': 'Casi. El tamaño está bien, revisa el signo. Tiene más tamaño el ' + nP(10) + ': queda positivo.',
+            '13': 'Casi. Juntaste, pero los signos son distintos: SE CANCELAN. Resta ' + fx('10 − 3') + '.',
+            '-13': 'Casi. Juntaste, pero los signos son distintos: SE CANCELAN. Resta ' + fx('10 − 3') + '.'
           },
           okFb: '¡Bien! ' + fx('10 − 3 = 7') + ', y gana el ' + nP(10) + '.',
-          solucion: burbs(-3, 10) + ': signos distintos, SE CANCELAN. ' + fx('10 − 3 = 7') + ' y gana el ' + nP(10) + ' → ' + num(7) + '.'
+          solucion: burbs(-3, 10) + ' Signos distintos: SE CANCELAN. ' + fx('10 − 3 = 7') + '. Gana el ' + nP(10) + ': queda ' + num(7) + '.'
         }
       ]
     },
     {
       id: 'L14', num: 14, cap: 2, chip: 'SE CANCELAN',
       titulo: 'El caso más tramposo: <span class="sin-color">' + fx('3 − 8') + '</span>',
-      html: '<div class="lsa-lectura"><div class="lsa-lectura-fila"><span class="sin-color">' + fxM('3 − 8') + '</span><span class="lsa-flecha">→</span>' + burbs(3, -8) + '</div></div>' +
-        '<p>Tienes 3 y gastas 8. No te alcanza: te quedas debiendo 5.</p>' +
-        '<p>' + fxG('3 − 8 = −5') + '</p><p class="centro">no ' + num(5) + '.</p>' +
-        '<div class="lsa-junto">' + dibFichas({ tengo: 3, debo: 8, cancelar: true }) +
-        '<p class="centro lsa-mal">' + fxMal('3 − 8 = 5') + ' <span class="lsa-x" aria-label="mal">✗</span></p></div>',
-      mas: '<p>Este es el error que más se repite: ver ' + fx('3 − 8') + ' y escribir 5 porque «al grande le quito el chico».</p>' +
-        '<p>Pero el 3 está primero: tienes 3 dólares y luego te cobran 8. Pagas 3 y te faltan 5, así que debes 5.</p>' +
-        '<p>Usa siempre el Paso 0: ' + burbs(3, -8) + '. Como los signos son distintos, se cancelan: ' + fx('8 − 3 = 5') + ', y gana el 8, que era negativo → ' + num(-5) + '.</p>',
+      html: ejemplo({
+        expr: '3 − 8',
+        pasos: [
+          { t: P1, html: burbs(3, -8) + ' Tienes 3 y debes 8.' },
+          { t: P2, html: 'Los signos son distintos.', regla: 'SE CANCELAN' },
+          { t: P3, html: 'Resta los tamaños: ' + fx('8 − 3 = 5') + '. Tiene más tamaño la deuda de 8: queda negativo.' }
+        ],
+        resultado: '3 − 8 = −5'
+      }) +
+        dibFichas({ tengo: 3, debo: 8, cancelar: true }) +
+        ojo('No escribas ' + fxMal('3 − 8 = 5') + '. Tienes 3 y gastas 8: te faltan 5.'),
+      mas: ejemplo({
+        titulo: 'Otro ejemplo',
+        expr: '6 − 10',
+        pasos: [
+          { t: P1, html: burbs(6, -10) + ' Tienes 6 y debes 10.' },
+          { t: P2, html: 'Los signos son distintos.', regla: 'SE CANCELAN' },
+          { t: P3, html: 'Resta los tamaños: ' + fx('10 − 6 = 4') + '. Tiene más tamaño la deuda de 10: queda negativo.' }
+        ],
+        resultado: '6 − 10 = −4'
+      }) +
+        '<p>¿Por qué engaña? El 6 va primero, pero no decide. Decide el que tiene más tamaño.</p>',
       bloques: [{
         tipo: 'teclado', cuenta: '4 − 11',
         enunciado: fx('4 − 11') + ' = ?',
         correcta: -7,
         errores: {
-          '7': 'Casi. El número está bien, pero el signo no. Tienes 4 y debes 11: no te alcanza y sigues debiendo 7 → ' + num(-7) + '.',
-          '15': 'Casi. ' + nP(4) + ' y ' + num(-11) + ' tienen signos distintos: se cancelan. ' + fx('11 − 4 = 7') + ' y gana el 11 → ' + num(-7) + '.',
-          '-15': 'Casi. ' + nP(4) + ' y ' + num(-11) + ' tienen signos distintos: se cancelan. ' + fx('11 − 4 = 7') + ' y gana el 11 → ' + num(-7) + '.'
+          '7': 'Casi. El tamaño está bien, pero el signo no. Tienes 4 y debes 11: sigues debiendo 7.',
+          '15': 'Casi. Juntaste, pero ' + nP(4) + ' y ' + num(-11) + ' tienen signos distintos: SE CANCELAN. Resta ' + fx('11 − 4') + '.',
+          '-15': 'Casi. Juntaste, pero ' + nP(4) + ' y ' + num(-11) + ' tienen signos distintos: SE CANCELAN. Resta ' + fx('11 − 4') + '.'
         },
         okFb: '¡Bien! Tienes 4 y debes 11: sigues debiendo 7.',
-        solucion: burbs(4, -11) + ': signos distintos, SE CANCELAN. ' + fx('11 − 4 = 7') + ' y gana la deuda de 11 → ' + num(-7) + '.'
+        solucion: burbs(4, -11) + ' Signos distintos: SE CANCELAN. ' + fx('11 − 4 = 7') + '. Gana la deuda de 11: queda ' + num(-7) + '.'
       }]
     },
     {
       id: 'L15', num: 15, cap: 2,
       titulo: 'Ejemplos resueltos',
-      html: '<p>Mira cómo se resuelve. Toca <b>Ver siguiente paso</b>.</p>',
+      html: '<p>Mira los 3 pasos en acción. Toca <b>Ver siguiente paso</b>.</p>' + metodo(0),
       bloques: [
         {
           tipo: 'pasos',
           titulo: 'Ejemplo 1: ' + fxM('−8 + 13'),
           filas: [
-            { n: 'Paso 0', html: burbs(-8, 13) + ': debes 8 y tienes 13.', regla: 'LECTURA' },
-            { n: 'Paso 1', html: 'Signos distintos → se cancelan.', regla: 'SE CANCELAN' },
-            { n: 'Paso 2', html: 'Resta los tamaños: ' + fx('13 − 8 = 5') + '.' },
-            { n: 'Paso 3', html: 'Tenía más tamaño el ' + nP(13) + ' → el resultado es positivo.' },
-            { n: 'Resultado', html: fxM('−8 + 13 = 5') }
+            { n: '1', html: '<b>' + P1 + '</b><br>' + burbs(-8, 13) + ' Debes 8 y tienes 13.' },
+            { n: '2', html: '<b>' + P2 + '</b><br>Los signos son distintos.', regla: 'SE CANCELAN' },
+            { n: '3', html: '<b>' + P3 + '</b><br>Resta los tamaños: ' + fx('13 − 8 = 5') + '.' },
+            { n: 'Resultado', html: 'Tiene más tamaño el ' + nP(13) + ': queda positivo.<br>' + fxM('−8 + 13 = 5') }
           ],
           pregunta: {
             despuesDe: 2, tipoPreg: 'opciones',
             enunciado: 'El resultado sale positivo. ¿Por qué?',
             opciones: [
-              { t: 'Porque hay un signo +', fb: 'Casi. El + solo no decide. Decide quién tiene más tamaño: el 13, que es positivo.' },
-              { t: 'Porque dos signos dan más', fb: 'Casi. Aquí no hay signos pegados ni multiplicación. Decide el que tiene más tamaño: ' + nP(13) + '.' },
+              { t: 'Porque hay un signo +', fb: 'Casi. El + solo no decide. Decide el que tiene más tamaño: el ' + nP(13) + '.' },
+              { t: 'Porque el 13 va al final', fb: 'Casi. El orden no decide. Decide el que tiene más tamaño: el ' + nP(13) + '.' },
               { t: 'Porque 13 tiene más tamaño y es positivo', ok: true, fb: '¡Exacto! Decide el que tiene más tamaño.' }
             ],
-            solucion: 'Decide el que tiene más tamaño: ' + nP(13) + '.'
+            solucion: 'Decide el que tiene más tamaño: el ' + nP(13) + '.'
           }
         },
         {
           tipo: 'pasos',
           titulo: 'Ejemplo 2: ' + fxM('−6 − 7'),
           filas: [
-            { n: 'Paso 0', html: burbs(-6, -7) + ': dos deudas.', regla: 'LECTURA' },
-            { n: 'Paso 1', html: 'Mismo signo → se juntan.', regla: 'SE JUNTAN' },
-            { n: 'Paso 2', html: fx('6 + 7 = 13') },
-            { n: 'Paso 3', html: 'Se deja el signo −.' },
+            { n: '1', html: '<b>' + P1 + '</b><br>' + burbs(-6, -7) + ' Dos deudas.' },
+            { n: '2', html: '<b>' + P2 + '</b><br>Los dos signos son iguales.', regla: 'SE JUNTAN' },
+            { n: '3', html: '<b>' + P3 + '</b><br>Suma los tamaños: ' + fx('6 + 7 = 13') + '. Deja el signo −.' },
             { n: 'Resultado', html: fxM('−6 − 7 = −13') }
           ]
         }
@@ -650,101 +737,109 @@
     {
       id: 'L16', num: 16, cap: 2,
       titulo: 'Te toca terminar',
-      html: '<p>Los primeros pasos ya están hechos. Tú terminas.</p>',
+      html: '<p>Algunos pasos ya están hechos. Tú terminas.</p>',
       bloques: [
         {
           tipo: 'revelar',
-          html: '<div class="lsa-resuelto"><p class="lsa-resuelto-tit"><b>Ejercicio A:</b> ' + fxM('−11 + 4') + ' <span class="peq tinta-2">(solo falta el último paso)</span></p>' +
+          html: '<div class="lsa-resuelto"><p class="lsa-resuelto-tit"><b>Ejercicio A:</b> ' + fxM('−11 + 4') + ' <span class="peq tinta-2">(falta el signo)</span></p>' +
             '<ul class="lsa-hechos">' +
-            '<li><span class="lsa-pn">Paso 0</span>' + burbs(-11, 4) + visto() + '</li>' +
-            '<li><span class="lsa-pn">Paso 1</span>Signos distintos → ' + chip('SE CANCELAN') + visto() + '</li>' +
-            '<li><span class="lsa-pn">Paso 2</span>' + fx('11 − 4 = 7') + visto() + '</li></ul></div>'
+            hechoLi(1, P1, burbs(-11, 4)) +
+            hechoLi(2, P2, 'signos distintos, ' + chip('SE CANCELAN')) +
+            hechoLi(3, P3, fx('11 − 4 = 7')) + '</ul></div>'
         },
         {
           tipo: 'opciones', columnas: 2, cuenta: '−11 + 4',
-          enunciado: 'Paso 3, <b>tú</b>: ¿qué signo lleva?',
+          enunciado: '<b>Tú</b> terminas el paso 3: ¿qué signo lleva?',
           opciones: [
-            { t: num(-7), ok: true, fb: '¡Bien! Gana la deuda de 11: ' + fx('−11 + 4 = −7') + '.' },
-            { t: num(7), fb: 'Casi. ¿Quién tiene más tamaño, 11 o 4? El 11, que era deuda: ' + num(-7) + '.' }
+            { t: num(-7), ok: true, fb: '¡Bien! Tiene más tamaño la deuda de 11: ' + fx('−11 + 4 = −7') + '.' },
+            { t: num(7), fb: 'Casi. El 4 no decide. Tiene más tamaño el 11, que es deuda: ' + num(-7) + '.' }
           ]
         },
         {
           tipo: 'revelar',
-          html: '<div class="lsa-resuelto"><p class="lsa-resuelto-tit"><b>Ejercicio B:</b> ' + fxM('−6 − 9') + ' <span class="peq tinta-2">(faltan los dos últimos pasos)</span></p>' +
-            '<ul class="lsa-hechos"><li><span class="lsa-pn">Paso 0</span>' + burbs(-6, -9) + visto() + '</li></ul></div>'
+          html: '<div class="lsa-resuelto"><p class="lsa-resuelto-tit"><b>Ejercicio B:</b> ' + fxM('−6 − 9') + ' <span class="peq tinta-2">(faltan los pasos 2 y 3)</span></p>' +
+            '<ul class="lsa-hechos">' + hechoLi(1, P1, burbs(-6, -9)) + '</ul></div>'
         },
         {
           tipo: 'opciones', columnas: 2,
-          enunciado: '<b>Tú</b>: ¿qué regla toca?',
+          enunciado: 'Paso 2, <b>tú</b>: ¿qué regla toca?',
           opciones: [
-            { t: chip('SE CANCELAN'), fb: 'Casi. Los dos son deudas (mismo signo): se juntan.' },
-            { t: chip('SE JUNTAN'), ok: true, fb: '¡Eso! Dos deudas: mismo signo, se juntan.' }
+            { t: chip('SE CANCELAN'), fb: 'Casi. Los dos son deudas: signos iguales. Toca SE JUNTAN.' },
+            { t: chip('SE JUNTAN'), ok: true, fb: '¡Eso! Signos iguales: SE JUNTAN.' }
           ]
         },
         {
           tipo: 'teclado', cuenta: '−6 − 9',
-          enunciado: '<b>Tú</b>: ' + fx('−6 − 9') + ' = ?',
+          enunciado: 'Paso 3, <b>tú</b>: ' + fx('−6 − 9') + ' = ?',
           correcta: -15,
           errores: {
-            '15': 'Casi. El tamaño está bien. Pero son dos deudas, así que el resultado también es deuda: ' + num(-15) + '.',
-            '3': 'Casi. Mismo signo → se juntan: suma ' + fx('6 + 9') + '.',
-            '-3': 'Casi. Mismo signo → se juntan: suma ' + fx('6 + 9') + '.'
+            '15': 'Casi. El tamaño está bien. Son dos deudas: el resultado también es deuda.',
+            '3': 'Casi. Restaste, pero los signos son iguales: SE JUNTAN. Suma ' + fx('6 + 9') + '.',
+            '-3': 'Casi. Restaste, pero los signos son iguales: SE JUNTAN. Suma ' + fx('6 + 9') + '.'
           },
-          okFb: '¡Bien! Debes 6 y debes 9 más: ' + fx('−6 − 9 = −15') + '.',
-          solucion: 'Dos deudas: SE JUNTAN. ' + fx('6 + 9 = 15') + ' y se deja el signo − → ' + num(-15) + '.'
+          okFb: '¡Bien! Debes 6 y 9 más: ' + fx('−6 − 9 = −15') + '.',
+          solucion: 'Signos iguales: SE JUNTAN. ' + fx('6 + 9 = 15') + ' y deja el signo −: ' + num(-15) + '.'
         }
       ]
     },
     {
       id: 'L17', num: 17, cap: 2, chip: 'PLATA',
       titulo: 'Tres o más números',
-      html: '<p>Con muchos números, usa la plata:</p>' +
-        '<ol class="lista-num"><li>Junta todo lo que <b>tienes</b>.</li><li>Junta todo lo que <b>debes</b>.</li><li>Cancela.</li></ol>' +
-        '<div class="lsa-lectura"><div class="lsa-lectura-fila"><span class="sin-color">' + fxM('3 − 7 + 2 − 5') + '</span><span class="lsa-flecha">→</span>' + burbs(3, -7, 2, -5) + '</div></div>' +
-        '<div class="lsa-cols">' +
-        '<div><span class="lsa-col-tit">Tienes</span>' + fx('3 + 2 = 5') + '</div>' +
-        '<div><span class="lsa-col-tit">Debes</span>' + fx('7 + 5 = 12') + '</div></div>' +
-        dibFichas({ tengo: 5, debo: 12, cancelar: true }) +
-        '<p class="centro lsa-igual">5 contra 12 → ' + num(-7) + '</p>',
-      mas: '<p>Primero haz el Paso 0: ' + burbs(3, -7, 2, -5) + '.</p>' +
-        '<p>Pon los positivos en una columna: 3 y 2, o sea tienes 5.</p>' +
-        '<p>Pon los negativos en otra: 7 y 5, o sea debes 12.</p>' +
-        '<p>Ahora cancela: ' + fx('12 − 5 = 7') + ', y gana la deuda → ' + num(-7) + '.</p>' +
-        '<p>También puedes ir de izquierda a derecha (' + fx('3 − 7 = −4') + '; ' + fx('−4 + 2 = −2') + '; ' + fx('−2 − 5 = −7') + ') y te da lo mismo.</p>',
+      html: regla('Con tres o más números, junta lo que tienes, junta lo que debes y cancela.') +
+        ejemplo({
+          expr: '3 − 7 + 2 − 5',
+          pasos: [
+            { t: P1, html: burbs(3, -7, 2, -5) },
+            { t: P2, html: 'Hay signos iguales y distintos: primero ' + chip('SE JUNTAN') + ' y luego ' + chip('SE CANCELAN') + '.' },
+            { t: P3, html: 'Tienes ' + fx('3 + 2 = 5') + '. Debes ' + fx('7 + 5 = 12') + '.<br>Cancela: ' + fx('12 − 5 = 7') + '. Gana la deuda: queda negativo.' }
+          ],
+          resultado: '3 − 7 + 2 − 5 = −7'
+        }),
+      mas: ejemplo({
+        titulo: 'Otro ejemplo',
+        expr: '−2 + 6 − 1 + 3',
+        pasos: [
+          { t: P1, html: burbs(-2, 6, -1, 3) },
+          { t: P2, html: 'Primero ' + chip('SE JUNTAN') + ' y luego ' + chip('SE CANCELAN') + '.' },
+          { t: P3, html: 'Tienes ' + fx('6 + 3 = 9') + '. Debes ' + fx('2 + 1 = 3') + '.<br>Cancela: ' + fx('9 − 3 = 6') + '. Gana lo que tienes: queda positivo.' }
+        ],
+        resultado: '−2 + 6 − 1 + 3 = 6'
+      }) +
+        '<p>¿Por qué? Da lo mismo que ir de izquierda a derecha, de dos en dos. Pero separar lo que tienes y lo que debes es más fácil.</p>',
       bloques: [{
         tipo: 'teclado', cuenta: '−4 + 10 − 3',
         enunciado: fx('−4 + 10 − 3') + ' = ?',
         correcta: 3,
         errores: {
-          '-3': 'Casi. Revisa el signo. Tienes 10 y debes ' + fx('4 + 3 = 7') + '. Te alcanza y te sobran 3 → ' + nP(3) + '.',
-          '9': 'Casi. El 3 tiene un − delante: es deuda. Debes ' + fx('4 + 3 = 7') + ', y ' + fx('10 − 7 = 3') + '.',
-          '17': 'Casi. No sumes todo junto. Separa: tienes 10 y debes 7. Luego cancela.',
-          '-17': 'Casi. No sumes todo junto. Separa: tienes 10 y debes 7. Luego cancela.'
+          '-3': 'Casi. Revisa el signo. Tienes 10 y debes 7: te alcanza y te sobran 3.',
+          '9': 'Casi. El 3 tiene un − a su izquierda: es deuda. Debes ' + fx('4 + 3 = 7') + ' y tienes 10.',
+          '17': 'Casi. Juntaste todo. Separa: tienes 10 y debes 7. Luego cancela.',
+          '-17': 'Casi. Juntaste todo. Separa: tienes 10 y debes 7. Luego cancela.'
         },
         okFb: '¡Bien! Tienes 10 y debes 7: te sobran 3.',
-        solucion: burbs(-4, 10, -3) + '. Tienes 10. Debes ' + fx('4 + 3 = 7') + '. Cancela: ' + fx('10 − 7 = 3') + ', y gana lo que tienes → ' + num(3) + '.'
+        solucion: burbs(-4, 10, -3) + ' Tienes 10. Debes ' + fx('4 + 3 = 7') + '. Cancela: ' + fx('10 − 7 = 3') + '. Gana lo que tienes: ' + num(3) + '.'
       }]
     },
     {
       id: 'L18', num: 18, cap: 2,
       titulo: 'Encuentra el error',
-      html: '<p>Mateo resolvió esto: ' + LS.ui.fx('−5 − 9 = 14', { mal: true }) + '. ¿Qué hizo mal?</p>' + cuadernoMateo(),
+      html: '<p>Mateo resolvió esto. ¿Qué hizo mal?</p>' + cuadernoMateo(),
       bloques: [{
         tipo: 'opciones',
         enunciado: '¿Qué hizo mal Mateo?',
         opciones: [
-          { t: 'Sumó mal: ' + fx('5 + 9') + ' no es ' + num(14), fb: 'Casi. ' + fx('5 + 9 = 14') + ' está bien. El problema es el signo: son dos deudas → ' + num(-14) + '.' },
-          { t: 'No hay error', fb: 'Casi. Sí hay error: debe 5 y debe 9 más → ' + num(-14) + ', no ' + num(14) + '.' },
-          { t: 'Debió restar: da ' + num(-4), fb: 'Casi. Los dos son negativos: mismo signo → se juntan, no se restan. Es ' + num(-14) + '.' },
-          { t: 'Usó «negativo por negativo da positivo», pero aquí no hay multiplicación', ok: true, fb: '¡Exacto! «Negativo por negativo da positivo» es solo para multiplicar y dividir. En ' + fx('−5 − 9') + ' se juntan deudas: ' + num(-14) + '.' }
+          { t: 'Sumó mal: ' + fx('5 + 9') + ' no es ' + num(14), fb: 'Casi. ' + fx('5 + 9 = 14') + ' está bien. Falla el signo: son dos deudas, así que da ' + num(-14) + '.' },
+          { t: 'No hay error', fb: 'Casi. Debe 5 y debe 9 más: el resultado es deuda. Da ' + num(-14) + ', no ' + num(14) + '.' },
+          { t: 'Debió restar: da ' + num(-4), fb: 'Casi. Los signos son iguales: SE JUNTAN, no se restan. Da ' + num(-14) + '.' },
+          { t: 'Usó una regla de multiplicar, pero aquí no hay multiplicación', ok: true, fb: '¡Exacto! Aquí no se multiplica. Son dos deudas: SE JUNTAN y da ' + num(-14) + '.' }
         ],
-        solucion: 'Mateo usó una regla de multiplicar, pero aquí no hay multiplicación. En ' + fx('−5 − 9') + ' se juntan deudas: ' + fx('−5 − 9 = −14') + '.'
+        solucion: 'Mateo usó una regla de multiplicar. Aquí no se multiplica: son dos deudas y ' + fx('−5 − 9 = −14') + '.'
       }]
     },
     {
       id: 'L19', num: 19, cap: 2,
       titulo: 'Minichequeo 2',
-      html: '<p>Tres preguntas para ver cómo vas. Recuerda el Paso 0: cada número con su signo.</p>',
+      html: '<p>Tres preguntas para ver cómo vas. Usa los 3 pasos:</p>' + metodo(0),
       bloques: [{
         tipo: 'chequeo',
         repaso: [12, 13],
@@ -753,20 +848,20 @@
             tipo: 'opciones', columnas: 2, cuenta: '−6 + 2',
             enunciado: fx('−6 + 2') + ' = ?',
             opciones: [
-              { t: num(-8), fb: 'Casi. Con signos distintos no se juntan, se cancelan: ' + fx('6 − 2 = 4') + ', y gana la deuda → ' + num(-4) + '.' },
+              { t: num(-8), fb: 'Casi. Juntaste, pero los signos son distintos: SE CANCELAN. ' + fx('6 − 2 = 4') + ' y gana la deuda.' },
               { t: num(-4), ok: true, fb: '¡Bien! Debes 6 y tienes 2: sigues debiendo 4.' },
-              { t: num(4), fb: 'Casi. El 4 está bien, pero falta el signo: debes 6 y tienes 2, así que sigues debiendo → ' + num(-4) + '.' },
-              { t: num(8), fb: 'Casi. Se cancelan: ' + fx('6 − 2 = 4') + ', y sigues debiendo → ' + num(-4) + '.' }
+              { t: num(4), fb: 'Casi. El tamaño está bien, falta el signo. Debes 6 y tienes 2: sigues debiendo.' },
+              { t: num(8), fb: 'Casi. Los signos son distintos: SE CANCELAN. Resta ' + fx('6 − 2') + ' y gana la deuda.' }
             ]
           },
           {
             tipo: 'opciones', columnas: 2, cuenta: '−3 − 8',
             enunciado: fx('−3 − 8') + ' = ?',
             opciones: [
-              { t: num(-11), ok: true, fb: '¡Bien! Dos deudas se juntan: ' + num(-11) + '.' },
-              { t: num(-5), fb: 'Casi. Son dos deudas: mismo signo → se juntan: ' + fx('3 + 8 = 11') + ' → ' + num(-11) + '.' },
-              { t: num(5), fb: 'Casi. Son dos deudas: mismo signo → se juntan: ' + fx('3 + 8 = 11') + ' → ' + num(-11) + '.' },
-              { t: num(11), fb: 'Casi. Dos deudas dan una deuda más grande: ' + num(-11) + '. Aquí no hay multiplicación.' }
+              { t: num(-11), ok: true, fb: '¡Bien! Dos deudas: SE JUNTAN.' },
+              { t: num(-5), fb: 'Casi. Restaste, pero son dos deudas: SE JUNTAN. Suma ' + fx('3 + 8') + '.' },
+              { t: num(5), fb: 'Casi. Restaste, pero son dos deudas: SE JUNTAN. Suma ' + fx('3 + 8') + ' y deja el −.' },
+              { t: num(11), fb: 'Casi. El tamaño está bien. Dos deudas dan una deuda más grande: lleva −.' }
             ]
           },
           {
@@ -774,12 +869,12 @@
             enunciado: fx('7 − 15') + ' = ?',
             correcta: -8,
             errores: {
-              '8': 'Casi. Revisa el signo: tienes 7 y gastas 15. No alcanza: debes 8 → ' + num(-8) + '.',
-              '22': 'Casi. ' + nP(7) + ' y ' + num(-15) + ' tienen signos distintos: se cancelan. ' + fx('15 − 7 = 8') + ' y gana el 15 → ' + num(-8) + '.',
-              '-22': 'Casi. ' + nP(7) + ' y ' + num(-15) + ' tienen signos distintos: se cancelan. ' + fx('15 − 7 = 8') + ' y gana el 15 → ' + num(-8) + '.'
+              '8': 'Casi. El tamaño está bien, revisa el signo. Tienes 7 y gastas 15: te faltan 8.',
+              '22': 'Casi. Juntaste, pero los signos son distintos: SE CANCELAN. Resta ' + fx('15 − 7') + '.',
+              '-22': 'Casi. Juntaste, pero los signos son distintos: SE CANCELAN. Resta ' + fx('15 − 7') + '.'
             },
             okFb: '¡Bien! Tienes 7 y gastas 15: debes 8.',
-            solucion: burbs(7, -15) + ': SE CANCELAN. ' + fx('15 − 7 = 8') + ' y gana la deuda de 15 → ' + num(-8) + '.'
+            solucion: burbs(7, -15) + ' SE CANCELAN. ' + fx('15 − 7 = 8') + '. Gana la deuda de 15: ' + num(-8) + '.'
           }
         ],
         segundo: [
@@ -787,20 +882,20 @@
             tipo: 'opciones', columnas: 2, cuenta: '−8 + 3',
             enunciado: fx('−8 + 3') + ' = ?',
             opciones: [
-              { t: num(-11), fb: 'Casi. Con signos distintos no se juntan, se cancelan: ' + fx('8 − 3 = 5') + ', y gana la deuda → ' + num(-5) + '.' },
+              { t: num(-11), fb: 'Casi. Juntaste, pero los signos son distintos: SE CANCELAN. ' + fx('8 − 3 = 5') + ' y gana la deuda.' },
               { t: num(-5), ok: true, fb: '¡Bien! Debes 8 y tienes 3: sigues debiendo 5.' },
-              { t: num(5), fb: 'Casi. El 5 está bien, pero falta el signo: debes 8 y tienes 3, así que sigues debiendo → ' + num(-5) + '.' },
-              { t: num(11), fb: 'Casi. Se cancelan: ' + fx('8 − 3 = 5') + ', y sigues debiendo → ' + num(-5) + '.' }
+              { t: num(5), fb: 'Casi. El tamaño está bien, falta el signo. Debes 8 y tienes 3: sigues debiendo.' },
+              { t: num(11), fb: 'Casi. Los signos son distintos: SE CANCELAN. Resta ' + fx('8 − 3') + ' y gana la deuda.' }
             ]
           },
           {
             tipo: 'opciones', columnas: 2, cuenta: '−4 − 9',
             enunciado: fx('−4 − 9') + ' = ?',
             opciones: [
-              { t: num(-13), ok: true, fb: '¡Bien! Dos deudas se juntan: ' + num(-13) + '.' },
-              { t: num(-5), fb: 'Casi. Son dos deudas: mismo signo → se juntan: ' + fx('4 + 9 = 13') + ' → ' + num(-13) + '.' },
-              { t: num(5), fb: 'Casi. Son dos deudas: mismo signo → se juntan: ' + fx('4 + 9 = 13') + ' → ' + num(-13) + '.' },
-              { t: num(13), fb: 'Casi. Dos deudas dan una deuda más grande: ' + num(-13) + '. Aquí no hay multiplicación.' }
+              { t: num(-13), ok: true, fb: '¡Bien! Dos deudas: SE JUNTAN.' },
+              { t: num(-5), fb: 'Casi. Restaste, pero son dos deudas: SE JUNTAN. Suma ' + fx('4 + 9') + '.' },
+              { t: num(5), fb: 'Casi. Restaste, pero son dos deudas: SE JUNTAN. Suma ' + fx('4 + 9') + ' y deja el −.' },
+              { t: num(13), fb: 'Casi. El tamaño está bien. Dos deudas dan una deuda más grande: lleva −.' }
             ]
           },
           {
@@ -808,12 +903,12 @@
             enunciado: fx('5 − 12') + ' = ?',
             correcta: -7,
             errores: {
-              '7': 'Casi. Revisa el signo: tienes 5 y gastas 12. No alcanza: debes 7 → ' + num(-7) + '.',
-              '17': 'Casi. ' + nP(5) + ' y ' + num(-12) + ' tienen signos distintos: se cancelan. ' + fx('12 − 5 = 7') + ' y gana el 12 → ' + num(-7) + '.',
-              '-17': 'Casi. ' + nP(5) + ' y ' + num(-12) + ' tienen signos distintos: se cancelan. ' + fx('12 − 5 = 7') + ' y gana el 12 → ' + num(-7) + '.'
+              '7': 'Casi. El tamaño está bien, revisa el signo. Tienes 5 y gastas 12: te faltan 7.',
+              '17': 'Casi. Juntaste, pero los signos son distintos: SE CANCELAN. Resta ' + fx('12 − 5') + '.',
+              '-17': 'Casi. Juntaste, pero los signos son distintos: SE CANCELAN. Resta ' + fx('12 − 5') + '.'
             },
             okFb: '¡Bien! Tienes 5 y gastas 12: debes 7.',
-            solucion: burbs(5, -12) + ': SE CANCELAN. ' + fx('12 − 5 = 7') + ' y gana la deuda de 12 → ' + num(-7) + '.'
+            solucion: burbs(5, -12) + ' SE CANCELAN. ' + fx('12 − 5 = 7') + '. Gana la deuda de 12: ' + num(-7) + '.'
           }
         ],
         salida: '¡Muy bien! Ya sabes sumar y restar con la regla de la plata.'
@@ -823,7 +918,7 @@
       id: 'L19b', num: 19.5, cap: 2,
       titulo: c => '¡Capítulo 2 listo, ' + esc(c.nombre) + '!',
       html: '<div class="sello">' + LS.svg.sello('Capítulo 2 superado') + '</div>' +
-        '<p>Ya sabes leer cada número con su signo, juntar y cancelar.</p>' +
+        '<p>Ya sabes mirar los signos, juntar y cancelar.</p>' +
         '<p><b>Lo que viene:</b> la trampa en la que cae casi todo el mundo.</p>' +
         '<p class="caja-nota">Puedes parar aquí: tu avance quedó guardado.</p>'
     }

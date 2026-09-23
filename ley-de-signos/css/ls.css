@@ -150,7 +150,34 @@ p + p{ margin-top:8px; }
 .caja-nota{ background:var(--zero-soft); border-radius:var(--r-md); padding:12px 14px; font-size:1rem; }
 .caja-ojo{ border:2px dashed var(--ink-3); border-radius:var(--r-md); padding:12px 14px; font-size:1rem; }
 .lista-num{ padding-left:1.3em; } .lista-num li + li{ margin-top:4px; }
-.regla-caja{ border-left:0; background:var(--surface); border:2px solid var(--ink); border-radius:var(--r-md); padding:12px 14px; }
+.regla-caja{ background:var(--surface); border:2px solid var(--primary); border-bottom-width:4px; border-radius:var(--r-md); padding:12px 14px; }
+.regla-caja .regla-et{ display:block; margin-bottom:6px; color:var(--primary-shade); font-size:.875rem; letter-spacing:.04em; text-transform:uppercase; }
+.regla-caja p{ font-size:1.125rem; font-weight:800; line-height:1.4; }
+.caja-ojo{ background:var(--prize); background:color-mix(in srgb, var(--prize) 22%, var(--surface)); border:2px solid var(--prize); border-radius:var(--r-md); padding:10px 14px; font-size:1rem; }
+.caja-ojo b{ margin-right:4px; }
+.metodo{ list-style:none; display:flex; gap:6px; flex-wrap:wrap; }
+.metodo li{ display:inline-flex; align-items:center; gap:6px; font-size:.875rem; font-weight:800; color:var(--ink-2); background:var(--surface); border:2px solid var(--line); border-radius:var(--r-pill); padding:3px 10px 3px 4px; }
+.metodo li span{ width:22px; height:22px; border-radius:50%; background:var(--line); color:var(--ink); display:inline-flex; align-items:center; justify-content:center; font-size:.8rem; }
+.metodo li.on{ border-color:var(--primary); color:var(--ink); }
+.metodo li.on span{ background:var(--primary); color:#fff; }
+.ejemplo{ background:var(--surface); border:2px solid var(--line); border-bottom-width:4px; border-radius:var(--r-md); overflow:hidden; }
+.ej-cab{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; padding:10px 14px; background:var(--zero-soft); border-bottom:2px solid var(--line); }
+.ej-et{ font-size:.8rem; font-weight:900; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-2); }
+.ej-pasos{ list-style:none; padding:6px 14px; }
+.ej-pasos li{ display:flex; gap:10px; padding:8px 0; border-bottom:1px dashed var(--line); }
+.ej-pasos li:last-child{ border-bottom:0; }
+.ej-n{ width:26px; height:26px; flex-shrink:0; border-radius:50%; background:var(--primary); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:.9rem; margin-top:1px; }
+.ej-c{ flex:1; min-width:0; font-size:1.0625rem; }
+.ej-c > b{ display:block; font-size:.9rem; color:var(--ink-2); }
+.ej-c .chip{ margin-top:4px; }
+.ej-res{ padding:10px 14px; background:var(--ok-soft); border-top:2px solid var(--line); font-weight:900; }
+.tabla-cuenta{ border-spacing:0 4px; font-size:1rem; }
+.tabla-cuenta td{ padding:6px 10px; border-radius:0; border-width:2px 0; }
+.tabla-cuenta td:first-child{ border-left-width:2px; border-radius:10px 0 0 10px; }
+.tabla-cuenta td:last-child{ border-right-width:2px; border-radius:0 10px 10px 0; }
+.tabla-cuenta tr.hl td{ background:var(--prize); border-color:var(--ink); color:var(--on-prize); }
+.pista-abajo{ position:absolute; left:50%; bottom:calc(100% + 8px); transform:translateX(-50%); background:var(--ink); color:var(--bg); border-radius:var(--r-pill); padding:8px 16px; font-weight:800; font-size:.95rem; white-space:nowrap; box-shadow:0 3px 0 rgba(0,0,0,.25); animation:rebote 1.2s ease-in-out infinite; }
+@keyframes rebote{ 50%{ transform:translate(-50%, 4px); } }
 
 /* ============ OPCIONES ============ */
 .opciones{ display:flex; flex-direction:column; gap:10px; margin-top:12px; }
@@ -272,7 +299,7 @@ p + p{ margin-top:8px; }
 .bloque-preg .enunciado{ font-weight:800; font-size:1.125rem; }
 .bloque-preg .enunciado .fx{ font-size:1.6rem; }
 .lam-nav{
-  position:sticky; bottom:0; z-index:5; background:var(--bg); border-top:2px solid var(--line);
+  position:sticky; bottom:0; z-index:5; position:sticky; background:var(--bg); border-top:2px solid var(--line);
   padding:10px 16px calc(10px + env(safe-area-inset-bottom)); display:grid; grid-template-columns:auto 1fr; gap:10px;
 }
 .lam-nav .btn-sec{ min-width:56px; padding:0 14px; }

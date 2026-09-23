@@ -253,7 +253,7 @@
     E4: { txt: 'El tamaño está bien, pero el signo quedó al revés.', lamina: 13, tema: 'A' },
     E5: { txt: 'Restaste al revés (3 − 8 = 5). Tienes 3 y pagas 8: te faltan 5 → −5.', lamina: 14, tema: 'A' },
     E6: { txt: 'No usaste los signos pegados en −(−): quitar una deuda es ganar.', lamina: 21, tema: 'B' },
-    E6b: { txt: 'Lo contrario de un negativo es positivo: −(−a) = a.', lamina: 20, tema: 'B' },
+    E6b: { txt: 'Un menos pegado a un paréntesis con negativo: − y − dan +, así que −(−a) = a.', lamina: 21, tema: 'B' },
     E7: { txt: 'Tomaste +(−) como si sumara. Te dan una deuda: pierdes.', lamina: 21, tema: 'B' },
     E7b: { txt: 'Tomaste −(+) como si sumara. Te quitan plata: pierdes.', lamina: 21, tema: 'B' },
     E8: { txt: 'Con una cantidad PAR de negativos al multiplicar o dividir, el resultado es positivo.', lamina: 26, tema: 'C' },

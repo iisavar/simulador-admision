@@ -11,12 +11,12 @@
 
   // ---------- Paradas ----------
   const NIV = {
-    1: { nombre: 'Se juntan', chip: 'SE JUNTAN', que: 'Mismo signo: −5 − 9', lam: [12], regla: 'Mismo signo: se suman los tamaños y se deja el signo.', bien: 'Juntaste bien las deudas y la plata.' },
-    2: { nombre: 'Se cancelan', chip: 'SE CANCELAN', que: 'Signos distintos: pagas lo que puedes', lam: [13, 14, 17], regla: 'Signos distintos: se resta grande menos chico y se pone el signo del que tiene más tamaño.', bien: 'Cancelaste bien la plata y las deudas.' },
-    3: { nombre: 'Signos pegados', chip: 'SIGNOS PEGADOS', que: '5 − (−2) y sus primos', lam: [21], regla: 'Dos signos sin número en medio: iguales dan +, distintos dan −.', bien: 'Fundiste bien los signos pegados.' },
-    4: { nombre: 'Cuenta los negativos', chip: 'CUENTA LOS NEGATIVOS', que: 'Multiplicar y dividir', lam: [26], regla: 'Negativos en número par dan +; en número impar dan −. Luego se multiplican o dividen los tamaños.', bien: 'Contaste bien los negativos.' },
-    5: { nombre: 'Potencia', chip: 'POTENCIA', que: '(−3)² no es lo mismo que −3²', lam: [31, 32], regla: 'El exponente solo toca lo que está pegado a él.', bien: 'Viste bien hasta dónde llega el exponente.' },
-    6: { nombre: 'Jefe final', chip: 'ESCALERA', que: 'Operaciones combinadas por pasos', lam: [34, 35], regla: 'Paréntesis → potencias → · y ÷ → + y −. En el mismo escalón, de izquierda a derecha.', bien: 'Subiste la ESCALERA en orden.' }
+    1: { nombre: 'Se juntan', chip: 'SE JUNTAN', que: 'Mismo signo: −5 − 9', lam: [12], regla: 'Si los dos signos son iguales, suma los tamaños y deja ese signo.', bien: 'Juntaste bien las deudas y la plata.' },
+    2: { nombre: 'Se cancelan', chip: 'SE CANCELAN', que: 'Signos distintos: pagas lo que puedes', lam: [13, 14, 17], regla: 'Si los signos son distintos, resta los tamaños (grande menos chico) y deja el signo del que tiene más tamaño.', bien: 'Cancelaste bien la plata y las deudas.' },
+    3: { nombre: 'Signos pegados', chip: 'SIGNOS PEGADOS', que: '5 − (−2) y sus primos', lam: [21], regla: 'Si dos signos quedan pegados, júntalos en uno: iguales dan +, distintos dan −.', bien: 'Fundiste bien los signos pegados.' },
+    4: { nombre: 'Cuenta los negativos', chip: 'CUENTA LOS NEGATIVOS', que: 'Multiplicar y dividir', lam: [26], regla: 'Cuenta los negativos: si son par (2, 4…) el resultado es positivo; si son impar (1, 3…) es negativo. Luego multiplica o divide los tamaños.', bien: 'Contaste bien los negativos.' },
+    5: { nombre: 'Potencia', chip: 'POTENCIA', que: '(−3)² no es lo mismo que −3²', lam: [31, 32], regla: 'El exponente solo multiplica lo que tiene pegado. Con paréntesis el menos entra; sin paréntesis el menos espera afuera.', bien: 'Viste bien hasta dónde llega el exponente.' },
+    6: { nombre: 'Jefe final', chip: 'ESCALERA', que: 'Operaciones combinadas por pasos', lam: [34, 35], regla: 'Primero paréntesis, luego potencias, luego · y ÷, al final + y −. Si están en el mismo escalón, de izquierda a derecha.', bien: 'Subiste la ESCALERA en orden.' }
   };
   const LAM_PUERTA = [28, 29], LAM_RESUMEN = 40;
   const ELOGIO_NIV = {

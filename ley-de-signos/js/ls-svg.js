@@ -101,17 +101,21 @@
       s += '<text x="' + (x + (w - 4) / 2) + '" y="' + (y + 15) + '" text-anchor="middle" font-size="12" font-weight="900" style="fill:' + (on ? 'var(--on-prize)' : 'var(--ink-2)') + '">' + p[0] + '.º</text>';
       s += '<text x="' + (x + (w - 4) / 2) + '" y="' + (y + 29) + '" text-anchor="middle" font-size="' + (i === 1 ? 12 : 16) + '" font-weight="900" style="fill:' + (on ? 'var(--on-prize)' : 'var(--ink)') + '">' + p[1] + '</text>';
     });
-    s += '<text x="' + (W / 2) + '" y="' + (H - 2) + '" text-anchor="middle" font-size="12" font-weight="800" style="fill:var(--ink-2)">mismo escalón → de izquierda a derecha</text>';
+    s += '<text x="' + (W / 2) + '" y="' + (H - 2) + '" text-anchor="middle" font-size="12" font-weight="800" style="fill:var(--ink-2)">mismo escalón: de izquierda a derecha</text>';
     return s + '</svg>';
   }
 
-  // ---------- Tabla de signos (HTML) ----------
-  // hl: índice 0..3 de la celda iluminada (+·+, −·−, +·−, −·+)
-  function tablaSignos(hl, titulo) {
-    const celdas = [['+', '+', '+'], [MENOS, MENOS, '+'], ['+', MENOS, MENOS], [MENOS, '+', MENOS]];
-    const c = (i) => { const k = celdas[i]; const col = k[2] === '+' ? 'var(--pos-text)' : 'var(--neg-text)'; return '<td class="' + (hl === i ? 'hl' : '') + '">' + k[0] + ' con ' + k[1] + ' → <span style="color:' + (hl === i ? 'inherit' : col) + '">' + k[2] + '</span></td>'; };
-    return '<table class="tabla-signos" aria-label="' + (titulo || 'Tabla de signos') + '"><tr>' + c(0) + c(1) + '</tr><tr>' + c(2) + c(3) + '</tr></table>';
+  // ---------- CUENTA LOS NEGATIVOS (HTML) ----------
+  // negativos: cuántos factores negativos hay (se ilumina esa fila).
+  // Por compatibilidad, tablaSignos(hl) recibe la celda vieja: 0 (+·+), 1 (−·−), 2 (+·−), 3 (−·+).
+  function cuentaNegativos(negativos) {
+    const filas = [[0, 'ningún negativo'], [1, '1 negativo'], [2, '2 negativos'], [3, '3 negativos']];
+    return '<table class="tabla-signos tabla-cuenta" aria-label="Cuenta los negativos"><tbody>' + filas.map(f => {
+      const par = f[0] % 2 === 0, hl = negativos === f[0];
+      return '<tr class="' + (hl ? 'hl' : '') + '"><td>' + f[1] + '</td><td>' + (f[0] === 0 ? '—' : f[0] % 2 === 0 ? 'par' : 'impar') + '</td><td><span class="num ' + (par ? 'pos' : 'neg') + '">' + (par ? 'positivo' : 'negativo') + '</span></td></tr>';
+    }).join('') + '</tbody></table>';
   }
+  function tablaSignos(hl) { return cuentaNegativos(hl == null ? null : [0, 2, 1, 1][hl]); }
 
   // ---------- Sello de logro ----------
   function sello(texto) {
@@ -127,5 +131,5 @@
     return s + '</span>';
   }
 
-  LS.svg = { recta, fichas, ficha, escalera, tablaSignos, sello, estrellas, F };
+  LS.svg = { recta, fichas, ficha, escalera, tablaSignos, cuentaNegativos, sello, estrellas, F };
 })();

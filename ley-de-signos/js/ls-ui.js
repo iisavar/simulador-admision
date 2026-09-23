@@ -66,6 +66,29 @@
     return '<span class="chip">' + icon(REGLAS[nombre] || 'foco') + esc(nombre) + '</span>';
   }
 
+  // ---------- Formato fijo de las láminas ----------
+  // regla('Si los dos signos son iguales, …', 'SE JUNTAN')
+  function regla(html, nombre) {
+    return '<div class="regla-caja"><span class="regla-et">' + (nombre ? chip(nombre) : '<b>Regla</b>') + '</span><p>' + html + '</p></div>';
+  }
+  function ojo(html) { return '<div class="caja-ojo"><b>Ojo:</b> ' + html + '</div>'; }
+  // Los 3 pasos que se usan en TODOS los cálculos
+  const PASOS = ['Mira los signos', 'Elige la regla', 'Calcula'];
+  function metodo(activo) {
+    return '<ol class="metodo" aria-label="Los 3 pasos">' + PASOS.map((p, i) => '<li class="' + (activo === i + 1 ? 'on' : '') + '"><span>' + (i + 1) + '</span>' + p + '</li>').join('') + '</ol>';
+  }
+  // ejemplo({ expr:'−5 − 9', pasos:[{t:'Mira los signos', html:'…', regla:'SE JUNTAN'}, …], resultado:'−5 − 9 = −14', titulo:'Ejemplo' })
+  // Si un paso no trae t, se usa el nombre del método según su posición.
+  function ejemplo(o) {
+    const pasos = (o.pasos || []).map((p, i) =>
+      '<li><span class="ej-n">' + (i + 1) + '</span><div class="ej-c"><b>' + (p.t || PASOS[i] || '') + '</b>' +
+      (p.html ? '<div>' + p.html + '</div>' : '') + (p.regla ? '<div>' + chip(p.regla) + '</div>' : '') + '</div></li>').join('');
+    return '<div class="ejemplo"><div class="ej-cab"><span class="ej-et">' + (o.titulo || 'Ejemplo resuelto') + '</span>' +
+      (o.expr ? fx(o.expr, { clase: 'fx-medio' }) : '') + '</div>' +
+      (pasos ? '<ol class="ej-pasos">' + pasos + '</ol>' : '') +
+      (o.resultado ? '<div class="ej-res">' + fx(o.resultado, { clase: 'fx-medio' }) + '</div>' : '') + '</div>';
+  }
+
   function el(html) { const t = document.createElement('template'); t.innerHTML = html.trim(); return t.content.firstElementChild; }
 
   // ---------- Hoja inferior ----------
@@ -255,5 +278,5 @@
   let iElogio = 0;
   function elogio() { return ELOGIOS[(iElogio++) % ELOGIOS.length]; }
 
-  LS.ui = { esc, icon, num, fx, chip, el, hoja, cerrarHoja, hayHoja, teclado, vibrar, sonido, confeti, hayVoz, hablar, callar, textoDe, elogio, REGLAS };
+  LS.ui = { esc, icon, num, fx, chip, regla, ojo, metodo, ejemplo, PASOS, el, hoja, cerrarHoja, hayHoja, teclado, vibrar, sonido, confeti, hayVoz, hablar, callar, textoDe, elogio, REGLAS };
 })();

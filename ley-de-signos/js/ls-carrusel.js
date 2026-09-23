@@ -49,6 +49,7 @@
       segs += '<span class="seg"><i style="width:' + w + '%"></i></span>';
     }
     return segs + '</div><div class="fila"><span class="progreso-txt">' + txt + '</span>' +
+      (ui().hayVoz() ? '<button class="btn-ico" data-acc="escuchar" aria-label="Escuchar la lámina">' + ui().icon('altavoz') + '</button>' : '') +
       '<button class="btn-ico" data-acc="glosario" aria-label="Glosario de palabras">' + ui().icon('ayuda') + '</button>' +
       '<button class="btn-ico" data-acc="ajustes" aria-label="Ajustes">' + ui().icon('ajustes') + '</button>' +
       '<button class="btn-ico" data-acc="mapa" aria-label="Ir al mapa">' + ui().icon('mapa') + '</button></div>';
@@ -65,20 +66,22 @@
     const r = resp(lam.id);
     hechoActual = !necesitaResponder(lam) || !!r.hecho || idx < LS.st.laminas.maxAlcanzada;
     const total = L().length;
+    const htmlLam = val(lam.html, c);
+    const chipArriba = lam.chip && htmlLam.indexOf('regla-caja') < 0;
     root.innerHTML =
       '<div class="lam" role="group" aria-roledescription="lámina" aria-label="Lámina ' + (idx + 1) + ' de ' + total + '">' +
       '<header class="lam-top">' + progreso(lam) + '</header>' +
       '<div class="lam-body ' + (dir > 0 ? 'lam-anim-der' : dir < 0 ? 'lam-anim-izq' : '') + '">' +
       (lam.entrada ? '<div class="lam-entrada">' + val(lam.entrada, c) + '</div>' : '') +
-      (lam.chip ? '<div class="lam-chip">' + ui().chip(lam.chip) + '</div>' : '') +
+      (chipArriba ? '<div class="lam-chip">' + ui().chip(lam.chip) + '</div>' : '') +
       '<h2 class="lam-titulo" tabindex="-1">' + val(lam.titulo, c) + '</h2>' +
-      '<div class="lam-contenido">' + val(lam.html, c) + '</div>' +
-      (lam.mas ? '<details class="lam-mas"><summary>Explícame más despacio</summary><div class="mas-cuerpo">' + val(lam.mas, c) + '</div></details>' : '') +
-      '<div class="lam-herr">' + (ui().hayVoz() ? '<button class="btn-txt" data-acc="escuchar">' + ui().icon('altavoz') + ' Escuchar</button>' : '') + '</div>' +
+      '<div class="lam-contenido">' + htmlLam + '</div>' +
       (lam.desliza ? '<p class="desliza" aria-hidden="true">Desliza →</p>' : '') +
       '<div class="lam-inter"></div>' +
+      (lam.mas ? '<details class="lam-mas"><summary>Explícame más despacio</summary><div class="mas-cuerpo">' + val(lam.mas, c) + '</div></details>' : '') +
       '</div>' +
       '<footer class="lam-nav">' +
+      '<button class="pista-abajo" data-acc="bajar" hidden>↓ Responde aquí abajo</button>' +
       '<button class="btn btn-sec" data-acc="atras" aria-label="Lámina anterior"' + (idx === 0 ? ' disabled' : '') + '>' + ui().icon('atras') + '</button>' +
       '<button class="btn btn-pri" data-acc="sig">' + (idx === total - 1 ? 'Terminar' : 'Siguiente') + ui().icon('sig') + '</button>' +
       '<p class="motivo" aria-live="polite"></p>' +
@@ -105,8 +108,26 @@
     if (!sig) return;
     sig.classList.toggle('desact', !hechoActual);
     sig.setAttribute('aria-disabled', hechoActual ? 'false' : 'true');
-    mot.textContent = hechoActual ? '' : 'Responde para seguir';
+    mot.textContent = hechoActual ? '' : 'Responde la pregunta para seguir';
+    revisarPista();
   }
+
+  // Si la pregunta quedó debajo de la pantalla, avisa con «↓ Responde aquí abajo»
+  function preguntaPendiente() {
+    const bs = root && root.querySelectorAll('.lam-inter > .bloque');
+    return bs && bs.length ? bs[bs.length - 1] : null;
+  }
+  function revisarPista() {
+    const p = root && root.querySelector('.pista-abajo');
+    if (!p) return;
+    const q = preguntaPendiente();
+    if (hechoActual || !q) { p.hidden = true; return; }
+    const nav = root.querySelector('.lam-nav');
+    const limite = (nav ? nav.getBoundingClientRect().top : innerHeight) - 60;
+    p.hidden = q.getBoundingClientRect().top < limite;
+  }
+  window.addEventListener('scroll', () => { if (root && root.querySelector('.lam')) revisarPista(); }, { passive: true });
+  window.addEventListener('resize', () => { if (root && root.querySelector('.lam')) revisarPista(); });
 
   // ---------- Navegación ----------
   function ir(nuevo, d) {
@@ -143,7 +164,8 @@
     root.querySelector('.lam').addEventListener('click', e => {
       const a = e.target.closest('[data-acc]'); if (!a) return;
       const acc = a.getAttribute('data-acc');
-      if (acc === 'sig') siguiente();
+      if (acc === 'bajar') { const q = preguntaPendiente(); if (q) q.scrollIntoView({ behavior: LS.menosMovimiento() ? 'auto' : 'smooth', block: 'center' }); }
+      else if (acc === 'sig') siguiente();
       else if (acc === 'atras') anterior();
       else if (acc === 'glosario') LS.app.glosario();
       else if (acc === 'ajustes') LS.app.ajustes();
@@ -186,6 +208,7 @@
       const el = document.createElement('div');
       el.className = 'bloque';
       cont.appendChild(el);
+      setTimeout(revisarPista, 60);
       pintarBloque(el, b, lam, (ok1) => { resultados.push(ok1 !== false); if (recoger) recoger(ok1); siguienteBloque(); });
     })();
   }
