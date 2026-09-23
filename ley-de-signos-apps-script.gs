@@ -421,15 +421,13 @@ function htmlPdf_(d) {
 
   // ---- Página 2: Tu resumen en una foto ----
   h += '<div class="pag"><h2>Tu resumen en una foto</h2>' +
-    '<div class="regla"><span class="chip">LECTURA</span> Cada número se lleva el signo de su izquierda. Sin signo significa positivo: ' + expr_('8 − 5') + ' son ' + n_(8) + ' y ' + n_(-5) + '.</div>' +
-    '<div class="regla"><span class="chip">SE JUNTAN</span> Mismo signo: se suman los tamaños y se deja el signo. ' + expr_('−5 − 9') + ' = ' + n_(-14) + '</div>' +
-    '<div class="regla"><span class="chip">SE CANCELAN</span> Signos distintos: grande menos chico y el signo del que tiene más tamaño. ' + expr_('−9 + 5') + ' = ' + n_(-4) + '</div>' +
-    '<div class="regla"><span class="chip">SIGNOS PEGADOS</span> Dos signos sin número en medio: iguales dan +, distintos dan −.' +
-    '<table style="width:60%;margin-top:6px"><tr><td>+ con + → <b style="color:' + C_POS + '">+</b></td><td>− con − → <b style="color:' + C_POS + '">+</b></td></tr><tr><td>+ con − → <b style="color:' + C_NEG + '">−</b></td><td>− con + → <b style="color:' + C_NEG + '">−</b></td></tr></table>' +
-    '<div style="margin-top:4px">' + expr_('5 − (−2)') + ' = ' + expr_('5 + 2') + ' = ' + n_(7) + '</div></div>' +
-    '<div class="regla"><span class="chip">CUENTA LOS NEGATIVOS (· ÷)</span> Negativos en número par dan +; en número impar dan −. Luego se multiplican o dividen los tamaños. ' + expr_('(−3) · (−4)') + ' = ' + n_(12) + ' · ' + expr_('(−1)(−2)(−3)') + ' = ' + n_(-6) + '</div>' +
-    '<div class="regla"><span class="chip">POTENCIA</span> El exponente solo toca lo que está pegado a él. ' + expr_('(−3)²') + ' = ' + n_(9) + ', pero ' + expr_('−3²') + ' = ' + n_(-9) + '. Base negativa: exponente par da +, impar da −.</div>' +
-    '<div class="regla"><span class="chip">ESCALERA</span> 1.º paréntesis ( ) [ ] → 2.º potencias → 3.º · y ÷ → 4.º + y −. En el mismo escalón, de izquierda a derecha.' +
+    '<div class="regla"><span class="chip">LECTURA</span> Cada número se lleva el signo que tiene a su izquierda. Si no tiene signo, es positivo. En ' + expr_('8 − 5') + ' los números son ' + n_(8) + ' y ' + n_(-5) + '.</div>' +
+    '<div class="regla"><span class="chip">SE JUNTAN</span> Si los dos signos son iguales, suma los tamaños y deja ese signo. ' + expr_('−5 − 9') + ' = ' + n_(-14) + '</div>' +
+    '<div class="regla"><span class="chip">SE CANCELAN</span> Si los signos son distintos, resta los tamaños (grande menos chico) y deja el signo del que tiene más tamaño. ' + expr_('−9 + 5') + ' = ' + n_(-4) + '</div>' +
+    '<div class="regla"><span class="chip">SIGNOS PEGADOS</span> Si dos signos quedan pegados, júntalos en uno: iguales dan +, distintos dan −. ' + expr_('5 − (−2)') + ' = ' + expr_('5 + 2') + ' = ' + n_(7) + '</div>' +
+    '<div class="regla"><span class="chip">CUENTA LOS NEGATIVOS (· ÷)</span> Cuenta los negativos: si son par (2, 4…), el resultado es positivo; si son impar (1, 3…), es negativo. Luego multiplica o divide los tamaños. ' + expr_('(−3) · (−4)') + ' = ' + n_(12) + ' · ' + expr_('(−1)(−2)(−3)') + ' = ' + n_(-6) + '</div>' +
+    '<div class="regla"><span class="chip">POTENCIA</span> El exponente solo multiplica lo que tiene pegado. Con paréntesis el menos entra; sin paréntesis el menos espera afuera. ' + expr_('(−3)²') + ' = ' + n_(9) + ', pero ' + expr_('−3²') + ' = ' + n_(-9) + '.</div>' +
+    '<div class="regla"><span class="chip">ESCALERA</span> Primero paréntesis, luego potencias, luego · y ÷, al final + y −. Si están en el mismo escalón, de izquierda a derecha.' +
     '<div style="margin-top:4px">' + expr_('2 + 3 · (−4)') + ' = ' + expr_('2 + (−12)') + ' = ' + n_(-10) + '</div></div>' +
     '<div class="caja ind"><b>La trampa:</b> ' + expr_('−5 − 9') + ' = ' + n_(-14) + ' (se juntan deudas), pero ' + expr_('(−5)(−9)') + ' = ' + n_(45) + ' (se multiplica). «Menos por menos da más» solo vale con ·, ÷ o signos pegados.</div>' +
     '</div>';
