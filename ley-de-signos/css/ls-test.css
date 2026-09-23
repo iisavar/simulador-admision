@@ -21,7 +21,7 @@
 .ts-top{ position:sticky; top:0; z-index:5; background:var(--bg); margin:-16px -16px 0; padding:10px 16px 8px; }
 .ts-prog{ font-weight:800; color:var(--ink-2); display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
 .ts-barra{ height:5px; background:var(--line); border-radius:3px; overflow:hidden; margin-top:6px; }
-.ts-barra > i{ display:block; height:100%; background:var(--ink); border-radius:3px; transition:width .3s; }
+.ts-barra > i{ display:block; height:100%; background:var(--primary); border-radius:3px; transition:width .3s; }
 .ts-card{ padding:18px 16px; }
 .ts-enun{ font-weight:800; font-size:1.125rem; }
 .ts-expr{ text-align:center; margin:10px 0 6px; }
@@ -66,7 +66,7 @@
 .ts-tema + .ts-tema{ border-top:2px solid var(--line); padding-top:10px; }
 .ts-tema-n{ font-weight:900; }
 .ts-bar{ height:12px; background:var(--line); border-radius:6px; overflow:hidden; margin:6px 0 4px; }
-.ts-bar > i{ display:block; height:100%; background:var(--ink); border-radius:6px; }
+.ts-bar > i{ display:block; height:100%; background:var(--primary); border-radius:6px; }
 .ts-estado{ display:inline-flex; align-items:center; gap:4px; font-size:.9375rem; font-weight:800; }
 .ts-estado svg{ width:18px; height:18px; color:var(--ok); }
 .ts-estado.dom{ color:var(--ok); }

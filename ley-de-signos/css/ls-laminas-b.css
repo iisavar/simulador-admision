@@ -94,7 +94,7 @@
 .lsb-distinto .fx{ font-size:1.2rem; }
 .lsb-nota{ margin-top:8px; }
 .lsb-foto{ margin-top:12px; text-align:center; }
-.lsb-foto img{ width:100%; height:auto; border:2px solid var(--line); border-radius:var(--r-md); background:#FFF8EE; -webkit-touch-callout:default; }
+.lsb-foto img{ width:100%; height:auto; border:2px solid var(--line); border-radius:var(--r-md); background:#FFFFFF; -webkit-touch-callout:default; }
 .lsb-foto figcaption{ margin-top:6px; }
 
 /* Cierre de capítulo */

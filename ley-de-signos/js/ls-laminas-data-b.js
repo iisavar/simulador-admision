@@ -1001,9 +1001,9 @@
   LS.resumen = (function () {
     const W = 1080, H = 1350, MX = 60;
     const C = {
-      bg: '#FFF8EE', ink: '#1E1B4B', ink2: '#4B4870', ink3: '#6D6A8F', neg: '#C2410C', pos: '#1D4ED8',
-      negFill: '#EA580C', posFill: '#2563EB', negSoft: '#FFEDD5', posSoft: '#DBEAFE', chip: '#EEF2FF',
-      line: '#E9DFD0', prize: '#FACC15', surface: '#FFFFFF'
+      bg: '#FFFFFF', ink: '#3C3C3C', ink2: '#6F6F6F', ink3: '#8A8A8A', neg: '#B35C00', pos: '#0A76B3',
+      negFill: '#FF9600', posFill: '#1CB0F6', negSoft: '#FFF0D6', posSoft: '#DDF4FF', chip: '#F6EAFF',
+      line: '#E5E5E5', prize: '#FFC800', surface: '#FFFFFF'
     };
     function familia() {
       try { if (document.fonts && document.fonts.check('800 30px Nunito')) return 'Nunito, Arial, sans-serif'; } catch (e) { }

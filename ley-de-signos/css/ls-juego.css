@@ -36,9 +36,10 @@
 .jg-reforzar{ display:inline-block; align-self:flex-start; border:2px dashed var(--miss); border-radius:var(--r-pill); padding:0 10px; color:var(--ink) !important; }
 .est-bloqueado .jg-circ{ background:var(--line); border-color:var(--line); color:var(--ink-3); }
 .est-bloqueado .jg-nodo-txt b{ color:var(--ink-3); }
-.est-superado .jg-circ{ background:var(--ink); border-color:var(--ink); color:var(--bg); }
+.est-superado .jg-circ{ background:var(--primary); border-color:var(--primary-shade); color:#fff; box-shadow:0 4px 0 var(--primary-shade); }
 .est-reforzar .jg-circ{ border-style:dashed; border-color:var(--miss); }
-.jg-paso.actual .jg-circ{ animation:jgPulso .6s ease-out 1; }
+.jg-paso.actual .jg-circ{ animation:jgPulso .6s ease-out 1; background:var(--primary); border-color:var(--primary-shade); color:#fff; box-shadow:0 5px 0 var(--primary-shade), 0 0 0 6px var(--ok-soft); }
+.est-superado .jg-circ svg{ color:#fff; }
 .jg-paso.actual .jg-nodo-txt b{ text-decoration:underline; text-decoration-thickness:3px; text-underline-offset:4px; }
 @keyframes jgPulso{ 50%{ transform:scale(1.08); } }
 .jg-esp .jg-circ{ width:64px; height:64px; }
@@ -53,7 +54,7 @@
 .jg-criterio .estrellas{ flex-shrink:0; }
 .jg-criterio .estrella{ width:16px; height:16px; }
 .jg-dom-mini{ display:inline-flex; gap:3px; flex-shrink:0; padding-top:6px; }
-.jg-dom-mini i{ width:9px; height:10px; border-radius:3px; background:var(--ink); }
+.jg-dom-mini i{ width:9px; height:10px; border-radius:3px; background:var(--primary); }
 .jg-tecla-demo{ display:inline-flex; gap:2px; border:2px solid var(--line); border-radius:8px; padding:0 8px; background:var(--surface); font-weight:900; }
 
 /* ---------- Solución en una línea y dibujos ---------- */
@@ -82,7 +83,7 @@
 .jg-estado{ display:flex; align-items:center; gap:10px; min-height:40px; }
 .jg-dom{ display:inline-flex; gap:5px; }
 .jg-dom i{ width:28px; height:12px; border-radius:6px; background:var(--line); transition:background .2s; }
-.jg-dom i.llena{ background:var(--ink); }
+.jg-dom i.llena{ background:var(--primary); }
 .jg-escudo{ display:inline-flex; position:relative; }
 .jg-escudo svg{ width:26px; height:26px; fill:var(--zero-soft); stroke:var(--ink); stroke-width:2; }
 .jg-escudo.roto svg{ opacity:.45; }
@@ -115,7 +116,7 @@
 .jg-fb{ border-radius:var(--r-lg); padding:14px; display:flex; flex-direction:column; gap:8px; animation:subir var(--t) cubic-bezier(.2,.8,.2,1); }
 .jg-fb.ok{ background:var(--ok-soft); border-top:4px solid var(--ok); }
 .jg-fb.miss{ background:var(--miss-soft); border:2px solid var(--miss); border-top-width:4px; }
-.jg-fb.info{ background:var(--zero-soft); border-top:4px solid var(--ink); }
+.jg-fb.info{ background:var(--accent-soft); border-top:4px solid var(--accent); }
 .jg-fb-cab{ display:flex; align-items:center; gap:8px; font-size:1.25rem; }
 .jg-fb-cab svg{ width:28px; height:28px; flex-shrink:0; }
 .jg-fb.ok .jg-fb-cab svg{ color:var(--ok); }
