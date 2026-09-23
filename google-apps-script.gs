@@ -1,235 +1,85 @@
 /**
- * INSTRUCCIONES:
+ * INSTRUCCIONES (3 pasos):
  *
- * 1. Abre tu Google Sheet existente (la del simulador)
+ * 1. Ve a https://sheets.google.com y crea una nueva hoja de cálculo vacía
  * 2. Ve a Extensiones > Apps Script
- * 3. BORRA todo el código viejo y pega TODO este código
- * 4. Ejecuta la función "inicializar" (botón ▶) para crear la hoja de Diagnóstico
- * 5. Ve a Implementar > Administrar implementaciones
- * 6. Edita la implementación existente:
- *    - Versión: "Nueva versión"
- *    - Clic en "Implementar"
- *    (NO crees una nueva implementación, actualiza la existente para mantener la misma URL)
+ * 3. Borra todo el código que aparece y pega TODO este código
+ * 4. En el menú de arriba, selecciona la función "inicializar" y dale clic al botón ▶ Ejecutar
+ *    (Esto crea automáticamente los encabezados y formatea la hoja)
+ * 5. Haz clic en "Implementar" > "Nueva implementación"
+ *    - Tipo: "Aplicación web"
+ *    - Ejecutar como: "Yo"
+ *    - Quién tiene acceso: "Cualquier persona"
+ * 6. Haz clic en "Implementar", autoriza los permisos y copia la URL que te da
+ * 7. Pásame esa URL y yo la configuro en el simulador
  */
 
 function inicializar() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  sheet.setName("Resultados Simulador");
 
-  // Hoja Resultados (simulador principal)
-  var sheet1 = ss.getSheetByName('Resultados') || ss.getSheets()[0];
-  sheet1.setName('Resultados');
-  if (sheet1.getLastRow() === 0) {
-    var enc1 = ['Fecha', 'Nombre', 'Email', 'Puntaje', 'Correctas', 'Total', 'Tiempo', 'Matemáticas', 'Lenguaje', 'Sociales', 'Naturales'];
-    sheet1.appendRow(enc1);
-    var h1 = sheet1.getRange(1, 1, 1, enc1.length);
-    h1.setFontWeight('bold').setBackground('#1B2A4A').setFontColor('#FFFFFF').setHorizontalAlignment('center');
-    sheet1.setFrozenRows(1);
-  }
+  var encabezados = [
+    "Fecha", "Nombre", "Email", "Puntaje", "Correctas",
+    "Total", "Tiempo", "Matemáticas", "Lenguaje", "Sociales", "Naturales"
+  ];
 
-  // Hoja Diagnóstico
-  var sheet2 = ss.getSheetByName('Diagnóstico');
-  if (!sheet2) {
-    sheet2 = ss.insertSheet('Diagnóstico');
-    var enc2 = ['Fecha', 'Nombre', 'Email', 'Puntaje', 'Correctas', 'Total', 'Tiempo', 'Email Enviado'];
-    sheet2.appendRow(enc2);
-    var h2 = sheet2.getRange(1, 1, 1, enc2.length);
-    h2.setFontWeight('bold').setBackground('#1B2A4A').setFontColor('#FFFFFF').setHorizontalAlignment('center');
-    sheet2.setFrozenRows(1);
-    sheet2.setColumnWidth(1, 160);
-    sheet2.setColumnWidth(2, 250);
-    sheet2.setColumnWidth(3, 250);
-    sheet2.setColumnWidth(8, 120);
-  }
+  var headerRange = sheet.getRange(1, 1, 1, encabezados.length);
+  headerRange.setValues([encabezados]);
+  headerRange.setFontWeight("bold");
+  headerRange.setBackground("#1B2A4A");
+  headerRange.setFontColor("#FFFFFF");
+  headerRange.setHorizontalAlignment("center");
+
+  sheet.setFrozenRows(1);
+  sheet.setColumnWidth(1, 160);
+  sheet.setColumnWidth(2, 250);
+  sheet.setColumnWidth(3, 250);
+  sheet.setColumnWidth(4, 90);
+  sheet.setColumnWidth(5, 90);
+  sheet.setColumnWidth(6, 70);
+  sheet.setColumnWidth(7, 90);
+  sheet.setColumnWidth(8, 110);
+  sheet.setColumnWidth(9, 110);
+  sheet.setColumnWidth(10, 110);
+  sheet.setColumnWidth(11, 110);
 
   SpreadsheetApp.getUi().alert(
-    '✅ ¡Listo!\n\n' +
-    'Hojas configuradas: "Resultados" y "Diagnóstico".\n' +
-    'Ahora actualiza la implementación (Implementar > Administrar implementaciones > editar > Nueva versión).'
+    "✅ ¡Hoja configurada!\n\n" +
+    "Ahora ve a Implementar > Nueva implementación para obtener la URL."
   );
 }
 
 function doPost(e) {
   try {
+    var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
     var data = JSON.parse(e.postData.contents);
 
-    if (data.tipo === 'diagnostico_matematicas') {
-      guardarDiagnostico_(data);
-      var emailOk = enviarCorreoDiagnostico_(data);
-      return ContentService.createTextOutput(JSON.stringify({ status: 'ok', email: emailOk }))
-        .setMimeType(ContentService.MimeType.JSON);
-    }
+    sheet.appendRow([
+      data.fecha || new Date().toLocaleString('es-EC'),
+      data.nombre || '',
+      data.email || '',
+      data.puntaje || '',
+      data.correctas || 0,
+      data.total || 50,
+      data.tiempo || '',
+      data.matematicas || '',
+      data.lenguaje || '',
+      data.sociales || '',
+      data.naturales || ''
+    ]);
 
-    // Simulador principal
-    guardarSimulador_(data);
-    return ContentService.createTextOutput(JSON.stringify({ status: 'ok' }))
+    return ContentService
+      .createTextOutput(JSON.stringify({ status: 'ok' }))
       .setMimeType(ContentService.MimeType.JSON);
   } catch (error) {
-    return ContentService.createTextOutput(JSON.stringify({ status: 'error', message: error.toString() }))
+    return ContentService
+      .createTextOutput(JSON.stringify({ status: 'error', message: error.toString() }))
       .setMimeType(ContentService.MimeType.JSON);
   }
 }
 
 function doGet(e) {
-  return ContentService.createTextOutput(JSON.stringify({ status: 'ok', message: 'Endpoint funcionando.' }))
+  return ContentService
+    .createTextOutput(JSON.stringify({ status: 'ok', message: 'El endpoint está funcionando.' }))
     .setMimeType(ContentService.MimeType.JSON);
-}
-
-// ─── Simulador principal ───
-
-function guardarSimulador_(data) {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName('Resultados') || ss.getSheets()[0];
-  sheet.appendRow([
-    data.fecha || new Date().toLocaleString('es-EC'),
-    data.nombre || '', data.email || '', data.puntaje || '',
-    data.correctas || 0, data.total || 50, data.tiempo || '',
-    data.matematicas || '', data.lenguaje || '',
-    data.sociales || '', data.naturales || ''
-  ]);
-}
-
-// ─── Diagnóstico ───
-
-function guardarDiagnostico_(data) {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = ss.getSheetByName('Diagnóstico');
-  if (!sheet) {
-    sheet = ss.insertSheet('Diagnóstico');
-    sheet.appendRow(['Fecha', 'Nombre', 'Email', 'Puntaje', 'Correctas', 'Total', 'Tiempo', 'Email Enviado']);
-    sheet.getRange(1, 1, 1, 8).setFontWeight('bold').setBackground('#1B2A4A').setFontColor('#FFFFFF');
-    sheet.setFrozenRows(1);
-  }
-  sheet.appendRow([
-    data.fecha, data.nombre, data.email,
-    data.puntaje, data.correctas, data.total,
-    data.tiempo, 'Pendiente'
-  ]);
-}
-
-function enviarCorreoDiagnostico_(data) {
-  try {
-    var htmlReporte = generarReporteHTML_(data);
-    var pdfBlob = HtmlService.createHtmlOutput(htmlReporte)
-      .getBlob()
-      .getAs('application/pdf')
-      .setName('Diagnostico Matematicas - ' + data.nombre + '.pdf');
-
-    var emailHtml = '<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;">' +
-      '<div style="background:#1B2A4A;color:white;padding:24px;border-radius:12px 12px 0 0;text-align:center;">' +
-        '<h2 style="margin:0;font-size:20px;">Resultados del Diagnóstico</h2>' +
-        '<p style="margin:6px 0 0;opacity:.7;font-size:14px;">Prueba de Matemáticas</p>' +
-      '</div>' +
-      '<div style="padding:24px;border:1px solid #e2e8f0;border-top:none;border-radius:0 0 12px 12px;">' +
-        '<p>Hola <strong>' + data.nombre + '</strong>,</p>' +
-        '<p>Aquí tienes los resultados de tu prueba de diagnóstico:</p>' +
-        '<div style="text-align:center;padding:20px;background:#f8fafc;border-radius:8px;margin:16px 0;">' +
-          '<div style="font-size:48px;font-weight:bold;color:#D4A843;">' + data.puntaje + '</div>' +
-          '<p style="margin:8px 0 0;color:#64748b;">' + data.correctas + ' de ' + data.total + ' preguntas correctas</p>' +
-          '<p style="margin:4px 0 0;color:#64748b;">Tiempo: ' + data.tiempo + '</p>' +
-        '</div>' +
-        '<p>Revisa el <strong>PDF adjunto</strong> para ver el detalle completo de cada pregunta con las respuestas correctas y explicaciones.</p>' +
-        '<hr style="border:none;border-top:1px solid #e2e8f0;margin:20px 0;">' +
-        '<p style="color:#94a3b8;font-size:13px;">Saludos,<br><strong>Ignacio Isa</strong><br>Profesor de Matemáticas</p>' +
-      '</div>' +
-    '</div>';
-
-    MailApp.sendEmail({
-      to: data.email,
-      subject: 'Diagnóstico de Matemáticas — ' + data.puntaje + ' — ' + data.nombre,
-      htmlBody: emailHtml,
-      attachments: [pdfBlob],
-      name: 'Ignacio Isa'
-    });
-
-    // Actualizar la última fila con "Sí"
-    var ss = SpreadsheetApp.getActiveSpreadsheet();
-    var sheet = ss.getSheetByName('Diagnóstico');
-    if (sheet) {
-      var lastRow = sheet.getLastRow();
-      sheet.getRange(lastRow, 8).setValue('Sí ✓');
-    }
-
-    return true;
-  } catch (err) {
-    // Actualizar con error
-    var ss = SpreadsheetApp.getActiveSpreadsheet();
-    var sheet = ss.getSheetByName('Diagnóstico');
-    if (sheet) {
-      var lastRow = sheet.getLastRow();
-      sheet.getRange(lastRow, 8).setValue('Error: ' + err.message);
-    }
-    return false;
-  }
-}
-
-function generarReporteHTML_(data) {
-  var html = '<!DOCTYPE html><html><head>' +
-    '<style>' +
-      'body{font-family:Arial,Helvetica,sans-serif;margin:30px;color:#333;font-size:12px;}' +
-      'h1{color:#1B2A4A;font-size:22px;margin:0 0 4px;}' +
-      'h2{color:#1B2A4A;font-size:15px;margin-top:24px;border-bottom:2px solid #D4A843;padding-bottom:4px;}' +
-      '.hdr{background:#1B2A4A;color:white;padding:20px;border-radius:8px;margin-bottom:20px;}' +
-      '.hdr h1{color:white;}' +
-      '.hdr p{margin:3px 0;font-size:13px;}' +
-      '.sc{font-size:36px;font-weight:bold;color:#D4A843;margin:8px 0;}' +
-      'table{border-collapse:collapse;width:100%;margin:8px 0 16px;}' +
-      'th{background:#1B2A4A;color:white;padding:7px 10px;text-align:left;font-size:11px;}' +
-      'td{border:1px solid #ddd;padding:5px 8px;font-size:11px;}' +
-      'tr:nth-child(even){background:#f9f9f9;}' +
-      '.q{margin-bottom:8px;padding:10px;border-radius:6px;border:1px solid #ddd;page-break-inside:avoid;}' +
-      '.qc{border-left:4px solid #22c55e;}' +
-      '.qi{border-left:4px solid #ef4444;}' +
-      '.qu{border-left:4px solid #94a3b8;}' +
-      '.qh{display:flex;justify-content:space-between;margin-bottom:4px;font-size:11px;color:#555;}' +
-      '.qt{font-size:13px;font-weight:600;margin-bottom:6px;}' +
-      '.qa{font-size:11px;margin:2px 0;}' +
-      '.qe{background:#f5f5f5;padding:7px;border-radius:4px;font-size:11px;color:#555;margin-top:5px;}' +
-      '.tc{color:#22c55e;font-weight:bold;}' +
-      '.ti{color:#ef4444;font-weight:bold;}' +
-      '.tu{color:#94a3b8;font-weight:bold;}' +
-    '</style></head><body>';
-
-  html += '<div class="hdr">' +
-    '<h1>Prueba de Diagnóstico — Matemáticas</h1>' +
-    '<p><strong>' + data.nombre + '</strong> — ' + data.email + '</p>' +
-    '<p>Fecha: ' + data.fecha + ' | Tiempo: ' + data.tiempo + '</p>' +
-    '<p class="sc">' + data.puntaje + '</p>' +
-    '<p>' + data.correctas + ' de ' + data.total + ' preguntas correctas</p>' +
-  '</div>';
-
-  // Desglose por subtema
-  if (data.desglose) {
-    var desglose = typeof data.desglose === 'string' ? JSON.parse(data.desglose) : data.desglose;
-    html += '<h2>Desglose por tema</h2><table><tr><th>Tema</th><th>Resultado</th></tr>';
-    for (var tema in desglose) {
-      if (desglose.hasOwnProperty(tema)) {
-        html += '<tr><td>' + tema + '</td><td>' + desglose[tema] + '</td></tr>';
-      }
-    }
-    html += '</table>';
-  }
-
-  // Detalle de preguntas
-  html += '<h2>Detalle de preguntas</h2>';
-  if (data.detalle && Array.isArray(data.detalle)) {
-    for (var i = 0; i < data.detalle.length; i++) {
-      var q = data.detalle[i];
-      var cls = q.estado === 'correct' ? 'qc' : q.estado === 'incorrect' ? 'qi' : 'qu';
-      var tag = q.estado === 'correct' ? '<span class="tc">✓ Correcta</span>'
-              : q.estado === 'incorrect' ? '<span class="ti">✗ Incorrecta</span>'
-              : '<span class="tu">— Sin responder</span>';
-
-      html += '<div class="q ' + cls + '">' +
-        '<div class="qh"><strong>Pregunta ' + (i + 1) + ' — ' + q.subtema + '</strong>' + tag + '</div>' +
-        '<div class="qt">' + q.pregunta + '</div>' +
-        '<p class="qa"><strong>Tu respuesta:</strong> ' + q.tu_respuesta + '</p>' +
-        '<p class="qa"><strong>Correcta:</strong> ' + q.respuesta_correcta + '</p>' +
-        '<div class="qe"><strong>Explicación:</strong> ' + q.explicacion + '</div>' +
-      '</div>';
-    }
-  }
-
-  html += '<p style="text-align:center;color:#aaa;margin-top:30px;font-size:10px;">Generado automáticamente — Ignacio Isa</p>';
-  html += '</body></html>';
-  return html;
 }

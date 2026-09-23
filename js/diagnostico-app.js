@@ -3,7 +3,7 @@
 
     const TOTAL = DIAGNOSTICO_PREGUNTAS.length;
     const TIME_LIMIT = 60 * 60;
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzsvZXaPsLkPpl4njnMmWOue6qo98jktNqv4z_4MtJDcEB28OpJ1Xdz7ugBp_RBp9T3/exec';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbycef2CKJMEPKq_W_MfnvjRaOtrDneuzB7xQR-MZvfNxUoHyth8vDWhvz-rgPdjtkdhGA/exec';
 
     let student = { name: '', email: '' };
     let questions = [];
