@@ -4,7 +4,7 @@
   const LS = window.LS = window.LS || {};
 
   // Pega aquí la URL de la implementación web de ley-de-signos-apps-script.gs
-  const URL_SCRIPT = '';
+  const URL_SCRIPT = 'https://script.google.com/macros/s/AKfycby5ZWTS6aoA85LeRhHzAaTvD8j4hCRrO9HZ99tnr1Jebfj1fNfSgdoOvSESh5jbSoh8/exec';
 
   const oyentes = [];
   function id() { return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10); }
