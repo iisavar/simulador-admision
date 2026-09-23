@@ -405,6 +405,37 @@
         container.innerHTML = html || '<p style="color:#8899bb;text-align:center;padding:20px;">No hay preguntas en esta categoría.</p>';
     }
 
+    function buildAnswerText(q, i) {
+        const letters = ['A', 'B', 'C', 'D'];
+        let userAns = '—', correctAns = '';
+        switch (q.tipo) {
+            case 'opcion_multiple':
+                if (answers[i] !== null && answers[i] !== undefined)
+                    userAns = letters[answers[i]] + ') ' + q.opciones[answers[i]];
+                correctAns = letters[q.respuesta] + ') ' + q.opciones[q.respuesta];
+                break;
+            case 'seleccion_multiple':
+                if (Array.isArray(answers[i]) && answers[i].length > 0)
+                    userAns = answers[i].map(j => letters[j] + ') ' + q.opciones[j]).join(', ');
+                correctAns = q.respuestas.map(j => letters[j] + ') ' + q.opciones[j]).join(', ');
+                break;
+            case 'emparejamiento':
+                if (answers[i] && typeof answers[i] === 'object')
+                    userAns = q.columna_a.map((item, j) => {
+                        const s = answers[i][j];
+                        return item + ' → ' + (s !== null && s !== undefined ? q.columna_b[s] : '?');
+                    }).join(' | ');
+                correctAns = q.columna_a.map((item, j) => item + ' → ' + q.columna_b[q.pares[j]]).join(' | ');
+                break;
+            case 'completar_numero':
+                if (answers[i] !== null && answers[i] !== undefined && answers[i] !== '')
+                    userAns = String(answers[i]);
+                correctAns = String(q.respuesta);
+                break;
+        }
+        return { userAns, correctAns };
+    }
+
     function sendResults(elapsed) {
         if (!GOOGLE_SCRIPT_URL) return;
         const correct = questions.filter((_, i) => isCorrect(i)).length;
@@ -414,7 +445,19 @@
         [...new Set(questions.map(q => q.subtema))].forEach(sub => {
             const qs = questions.filter(q => q.subtema === sub);
             const c = qs.filter(q => isCorrect(questions.indexOf(q))).length;
-            subtemaBreakdown[sub] = `${c}/${qs.length}`;
+            subtemaBreakdown[sub] = c + '/' + qs.length;
+        });
+
+        const detalle = questions.map((q, i) => {
+            const { userAns, correctAns } = buildAnswerText(q, i);
+            return {
+                pregunta: q.pregunta,
+                subtema: q.subtema,
+                tu_respuesta: userAns,
+                respuesta_correcta: correctAns,
+                estado: !isAnswered(i) ? 'unanswered' : isCorrect(i) ? 'correct' : 'incorrect',
+                explicacion: q.explicacion
+            };
         });
 
         fetch(GOOGLE_SCRIPT_URL, {
@@ -422,6 +465,7 @@
             mode: 'no-cors',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
+                tipo: 'diagnostico_matematicas',
                 nombre: student.name,
                 email: student.email,
                 puntaje: percent + '%',
@@ -429,8 +473,8 @@
                 total: TOTAL,
                 tiempo: formatTime(elapsed),
                 fecha: new Date().toLocaleString('es-EC'),
-                tipo: 'diagnostico_matematicas',
-                desglose: JSON.stringify(subtemaBreakdown)
+                desglose: JSON.stringify(subtemaBreakdown),
+                detalle: detalle
             })
         }).catch(() => {});
     }
