@@ -1,0 +1,102 @@
+/* Estilos propios de las láminas 20–41 (prefijo lsb-). Azul y naranja solo llegan por las fichas .num y los dibujos. */
+
+/* Revelado por toques: dentro de la lámina se oculta hasta tocar; en la hoja de repaso se ve todo. */
+.lam-body .lsb-oc{ display:none !important; }
+.lsb-solo-lam{ display:none; }
+.lam-body .lsb-solo-lam{ display:inline; }
+
+/* Líneas de expresión */
+.lsb-linea{ text-align:center; font-size:1.45rem; line-height:1.6; }
+.lsb-lineas p{ font-size:1.05rem; }
+.lsb-lineas .fx{ font-size:1.35rem; }
+.lsb-lista-fx{ line-height:2; }
+.lsb-expr{ font-size:1.3rem; font-weight:800; }
+.lsb-marco{ display:inline-block; outline:2.5px solid var(--ink); outline-offset:2px; border-radius:8px; background:var(--zero-soft); padding:0 2px; }
+.lsb-sub{ margin-top:4px; font-size:1rem; }
+.lsb-queda{ margin-top:4px; font-size:1.2rem; font-weight:800; }
+.lsb-visto{ color:var(--ok); font-weight:900; }
+.lsb-frase{ text-align:center; font-size:1.3rem; font-weight:900; padding:10px 12px; border:2.5px solid var(--ink); border-radius:var(--r-md); background:var(--surface); }
+
+/* L21: regla y cuadrícula 2×2 */
+.lsb-regla{ display:flex; justify-content:space-around; gap:12px; flex-wrap:wrap; text-align:center; font-size:1.15rem; }
+.lsb-grid2{ display:grid; grid-template-columns:1fr 1fr; gap:8px; width:100%; }
+.lsb-celda{ background:var(--surface); border:2px solid var(--line); border-radius:var(--r-md); padding:10px 8px; text-align:center; display:flex; flex-direction:column; gap:2px; }
+.lsb-celda-expr .fx{ font-size:1.35rem; }
+.lsb-celda-sig{ font-weight:900; color:var(--ink); }
+.lsb-celda-res .fx{ font-size:1.1rem; }
+
+/* L25: patrón */
+.lsb-patron{ display:grid; grid-template-columns:1fr 104px; gap:8px; align-items:center; }
+.lsb-filas{ display:flex; flex-direction:column; gap:4px; }
+.lsb-fila{ font-size:1.25rem; font-weight:800; }
+.lsb-preg{ font-weight:900; font-size:1.4rem; padding:0 .3em; border:2px dashed var(--ink-3); border-radius:8px; }
+.lsb-patron-svg svg{ max-height:200px; }
+
+/* L26: ejemplos y tabla */
+.lsb-ejemplos{ display:flex; flex-direction:column; align-items:center; gap:2px; }
+.lsb-ejemplos .fx{ font-size:1.3rem; }
+.lsb-tabla{ flex-direction:column; align-items:center; gap:4px; }
+.lsb-tabla-ico{ align-self:flex-end; font-weight:900; font-size:1.1rem; background:var(--zero-soft); color:var(--ink); border-radius:var(--r-pill); padding:2px 12px; }
+
+/* L28: las 3 columnas con lupa */
+.lsb-trampa{ display:grid; grid-template-columns:repeat(3,1fr); gap:6px; width:100%; }
+.lsb-col{ background:var(--surface); border:2px solid var(--line); border-radius:var(--r-md); padding:8px 4px; text-align:center; display:flex; flex-direction:column; align-items:center; gap:4px; min-width:0; }
+.lsb-lupa svg{ width:72px; height:auto; }
+.lsb-etq{ font-size:.8rem; font-weight:900; background:var(--zero-soft); border-radius:var(--r-pill); padding:1px 8px; }
+.lsb-col-expr .fx{ font-size:.95rem; white-space:nowrap; }
+.lsb-col-res{ font-size:1.5rem; font-weight:900; }
+.lsb-col-por{ font-size:.8rem; line-height:1.3; color:var(--ink-2); }
+.lsb-col-por .fx{ font-size:.85rem; }
+@media (max-width:370px){ .lsb-col-expr .fx{ font-size:.82rem; } .lsb-lupa svg{ width:60px; } }
+
+/* L29 / L40: árbol «¿qué regla uso?» */
+.lsb-arbol{ list-style:none; counter-reset:arb; display:flex; flex-direction:column; gap:8px; }
+.lsb-arbol li{ counter-increment:arb; background:var(--surface); border:2px solid var(--line); border-radius:var(--r-md); padding:8px 10px 8px 40px; position:relative; display:flex; flex-direction:column; gap:4px; font-size:1rem; }
+.lsb-arbol li::before{ content:counter(arb); position:absolute; left:10px; top:9px; width:22px; height:22px; border-radius:50%; background:var(--ink); color:var(--bg); font-weight:900; font-size:.85rem; display:flex; align-items:center; justify-content:center; }
+.lsb-arbol-r{ display:flex; align-items:center; gap:6px; flex-wrap:wrap; font-weight:800; }
+.lsb-arbol-caja .lsb-arbol li{ border-color:var(--line); }
+
+/* L31: tabla de potencias + parejas */
+.lsb-dos{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:center; }
+.lsb-dos > svg{ flex:1 1 200px; max-width:320px; }
+.lsb-tabla-pot td{ font-size:1.25rem; padding:2px 6px; }
+
+/* L34/L35: escalera */
+.lsb-esc svg{ max-width:320px; }
+.lsb-paso{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; }
+.lsb-paso-txt{ flex:1 1 200px; min-width:0; }
+.lsb-esc-mini{ width:96px; flex-shrink:0; }
+.lsb-esc-mini svg{ width:100%; height:auto; display:block; }
+.paso:not(.actual) .lsb-paso, .paso:not(.actual) .lsb-expr{ opacity:.55; }
+
+/* L36: tarjetas de trampas */
+.lsb-tarjetas{ display:flex; flex-direction:column; gap:10px; }
+.lsb-tj{ padding:12px 14px; font-size:1rem; }
+.lsb-tj .fx{ font-size:1.15rem; }
+.lsb-malrow{ color:var(--ink-3); }
+
+/* L39: antes / ahora */
+.lsb-antes-ahora{ display:flex; align-items:center; justify-content:center; gap:10px; }
+.lsb-aa{ display:flex; flex-direction:column; align-items:center; gap:4px; font-weight:800; }
+.lsb-aa-antes{ color:var(--ink-3); }
+.lsb-antes .num{ color:var(--ink-3) !important; background:transparent !important; border-color:var(--line) !important; font-size:1.8rem; }
+.lsb-antes-txt{ font-size:1rem; color:var(--ink-3); }
+.lsb-ahora .num{ font-size:2.2rem; }
+.lsb-aa-sello svg{ width:84px; height:84px; }
+
+/* L40: resumen legible */
+.lsb-resumen{ padding-left:1.4em; display:flex; flex-direction:column; gap:8px; font-size:1rem; }
+.lsb-resumen .chip{ vertical-align:middle; margin-right:2px; }
+.lsb-resumen .fx{ font-size:1.05rem; }
+.lsb-fin40{ align-items:stretch; }
+.lsb-fin40 .lsb-esc{ flex:1 1 220px; }
+.lsb-distinto{ flex:1 1 140px; text-align:center; padding:10px; }
+.lsb-distinto .fx{ font-size:1.2rem; }
+.lsb-nota{ margin-top:8px; }
+.lsb-foto{ margin-top:12px; text-align:center; }
+.lsb-foto img{ width:100%; height:auto; border:2px solid var(--line); border-radius:var(--r-md); background:#FFF8EE; -webkit-touch-callout:default; }
+.lsb-foto figcaption{ margin-top:6px; }
+
+/* Cierre de capítulo */
+.lsb-cierre{ display:flex; flex-direction:column; gap:12px; text-align:center; }
+.lsb-cierre .caja-nota{ text-align:center; }

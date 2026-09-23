@@ -1,0 +1,78 @@
+/* Estilos propios de las láminas 1–19 (ls-laminas-data-a.js). Prefijo lsa- para no chocar con otras partes. */
+
+/* Lámina 1: portada */
+.lsa-portada{ margin:8px 0 4px; }
+.lsa-dib-mano svg{ max-width:170px; }
+.lsa-mano{ animation:lsaDesliza 1.2s ease-in-out 2; transform-box:fill-box; }
+@keyframes lsaDesliza{ 50%{ transform:translateX(-14px); } }
+
+/* Lámina 2: el botón «Explícame más despacio» parpadea una vez */
+.lsa-parpadea{ animation:lsaParpadea 1s ease-in-out .6s 1; }
+@keyframes lsaParpadea{ 30%,70%{ opacity:.25; } }
+
+/* Lámina 4: viñetas (dibujo + texto) */
+.lsa-vinetas{ display:flex; flex-direction:column; gap:10px; }
+.lsa-vineta{ display:grid; grid-template-columns:84px 1fr; gap:12px; align-items:center; background:var(--surface); border:2px solid var(--line); border-radius:var(--r-md); padding:8px 12px 8px 8px; }
+.lsa-vineta-dib svg{ width:84px; height:auto; display:block; }
+.lsa-vineta p{ font-size:1rem; }
+
+/* Lámina 5: recta para tocar */
+.lsa-recta-toca .tick{ outline:none; }
+.lsa-recta-toca .tick:focus-visible line{ stroke-width:5; }
+.lsa-recta-toca .tick.lsa-miss text{ opacity:.35; }
+.lsa-recta-toca .tick.lsa-ok line{ stroke-width:5; }
+
+/* Listas cortas */
+.lsa-lista{ padding-left:1.2em; }
+.lsa-lista li + li{ margin-top:4px; }
+
+/* Resultado bajo un dibujo */
+.lsa-igual{ font-weight:800; margin-top:-4px; }
+
+/* LECTURA: burbujas alrededor de cada número con su signo */
+.lsa-lectura{ display:flex; flex-direction:column; gap:10px; background:var(--surface); border:2px solid var(--line); border-radius:var(--r-md); padding:10px 12px; }
+.lsa-lectura-fila{ display:flex; align-items:center; flex-wrap:wrap; gap:10px; }
+.lsa-flecha{ font-weight:900; color:var(--ink-2); }
+.lsa-burbujas{ display:inline-flex; gap:6px; flex-wrap:wrap; vertical-align:middle; }
+.lsa-burbuja{ display:inline-flex; align-items:center; padding:3px; border:2.5px solid var(--ink); border-radius:var(--r-pill); animation:lsaBurbuja .35s cubic-bezier(.2,.8,.2,1) both; }
+.lsa-burbuja + .lsa-burbuja{ animation-delay:.2s; }
+.lsa-burbuja + .lsa-burbuja + .lsa-burbuja{ animation-delay:.4s; }
+.lsa-burbuja + .lsa-burbuja + .lsa-burbuja + .lsa-burbuja{ animation-delay:.6s; }
+.lsa-burbuja .num{ font-size:1.15em; }
+@keyframes lsaBurbuja{ from{ transform:scale(.6); opacity:0; } }
+/* dentro de las opciones sin revelar, la burbuja también queda en tinta */
+.opciones:not(.revelada) .lsa-burbuja{ border-color:var(--ink-3); }
+
+/* Lámina 11: fichas como íconos en el texto */
+.lsa-plata{ display:flex; flex-direction:column; gap:8px; }
+.lsa-plata p{ display:flex; gap:10px; align-items:center; margin:0; }
+.lsa-ficha-ico{ width:30px; height:30px; flex-shrink:0; }
+
+/* Recuadro que cambia según el gancho (lámina 12) */
+.lsa-gancho{ border:2px solid var(--ink); }
+
+/* Lámina 14: dibujo + cuenta tachada */
+.lsa-mal{ font-size:1.4rem; font-weight:800; }
+.lsa-x{ color:var(--miss); font-weight:900; margin-left:6px; }
+
+/* Lámina 16: pasos ya resueltos */
+.lsa-resuelto{ background:var(--surface); border:2px solid var(--line); border-radius:var(--r-lg); padding:12px 14px; }
+.lsa-resuelto-tit{ margin-bottom:8px; }
+.lsa-hechos{ list-style:none; display:flex; flex-direction:column; gap:8px; }
+.lsa-hechos li{ display:flex; align-items:center; flex-wrap:wrap; gap:8px; color:var(--ink-2); }
+.lsa-pn{ font-size:.875rem; font-weight:900; color:var(--ink-2); min-width:54px; }
+.lsa-visto{ width:22px; height:22px; flex-shrink:0; }
+
+/* Lámina 17: columnas Tienes / Debes */
+.lsa-cols{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+.lsa-cols > div{ background:var(--surface); border:2px solid var(--line); border-radius:var(--r-md); padding:8px 10px; text-align:center; }
+.lsa-col-tit{ display:block; font-size:.875rem; font-weight:900; color:var(--ink-2); }
+
+/* Lámina 18: cuaderno de Mateo */
+.lsa-cuaderno{ position:relative; background:var(--surface); border:2.5px solid var(--ink); border-radius:12px; padding:22px 14px 18px; margin-top:6px; }
+.lsa-cuaderno-anillos{ position:absolute; top:-9px; left:0; right:0; display:flex; justify-content:space-evenly; }
+.lsa-cuaderno-anillos i{ width:14px; height:14px; border-radius:50%; background:var(--bg); border:2.5px solid var(--ink); }
+.lsa-cuaderno-nombre{ font-size:.875rem; font-weight:900; color:var(--ink-2); border-bottom:2px solid var(--line); padding-bottom:6px; margin-bottom:12px; }
+.lsa-cuaderno-linea{ display:flex; align-items:center; justify-content:center; gap:12px; }
+.lsa-circulo{ border:3px solid var(--miss); border-radius:999px; padding:4px 14px; }
+.lsa-pregunta{ font-size:2.25rem; font-weight:900; color:var(--ink); line-height:1; }
