@@ -60,7 +60,7 @@
   function pintarRegistro(r) {
     const u = LS.st.usuario;
     r.innerHTML =
-      '<div class="pantalla">' +
+      '<div class="pantalla"><div class="reg"><div class="reg-izq">' +
       '<div class="marca"><div class="marca-logo">±</div><div class="marca-txt"><b>Ley de signos</b><span>y operaciones combinadas</span></div></div>' +
       '<div style="margin:22px 0 18px">' +
       '<h1>Aprende a tu ritmo, paso a paso</h1>' +
@@ -72,12 +72,13 @@
       est('3', 'Test de 25', 'Demuestras lo que sabes · unos 25 min') +
       '</ol>' +
       '<p class="peq tinta-2" style="margin-bottom:14px">Se guarda solo: puedes dejarlo y seguir mañana.</p>' +
+      '</div><div class="reg-der">' +
       '<form class="col" id="f-reg" novalidate>' +
       '<div class="campo"><label for="r-nombre">Tus nombres y apellidos</label><input id="r-nombre" autocomplete="name" required minlength="3" value="' + ui().esc(u.nombre) + '" placeholder="María Fernanda López"></div>' +
       '<div class="campo"><label for="r-correo">Tu correo</label><input id="r-correo" type="email" autocomplete="email" inputmode="email" required value="' + ui().esc(u.correo) + '" placeholder="maria.lopez@gmail.com">' +
       '<p class="sugerencia" hidden></p><p class="error" hidden></p><p class="peq tinta-3">Aquí te llegarán tus resultados y un PDF.</p></div>' +
       '<button class="btn btn-pri btn-ancho" type="submit">Empezar ' + ui().icon('sig') + '</button>' +
-      '</form></div>';
+      '</form></div></div></div>';
     const f = r.querySelector('#f-reg'), inN = r.querySelector('#r-nombre'), inC = r.querySelector('#r-correo');
     const sug = r.querySelector('.sugerencia'), err = r.querySelector('.error');
     function revisar() {
@@ -120,7 +121,7 @@
     const destino = !lamHecha ? 'laminas' : !juegoHecho ? 'juego' : !testHecho ? 'test' : 'test';
     const pctL = totalL ? Math.round((lamHecha ? totalL : lam.maxAlcanzada) / totalL * 100) : 0;
     r.innerHTML =
-      '<div class="pantalla">' +
+      '<div class="pantalla hub">' +
       '<div class="fila"><div class="marca esp"><div class="marca-logo">±</div><div class="marca-txt"><b>Ley de signos</b><span>' + ui().esc(st.usuario.nombre) + '</span></div></div>' +
       '<button class="btn-ico" data-a="glosario" aria-label="Glosario">' + ui().icon('ayuda') + '</button>' +
       '<button class="btn-ico" data-a="ajustes" aria-label="Ajustes">' + ui().icon('ajustes') + '</button></div>' +
