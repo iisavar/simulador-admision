@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Diagnóstico — Química</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #1B2A4A;
+            --primary-light: #243656;
+            --accent: #D4A843;
+            --accent-hover: #c49a3a;
+            --bg: #f0f2f5;
+            --surface: #ffffff;
+            --text: #1a1a2e;
+            --text-secondary: #64748b;
+            --border: #e2e8f0;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --radius: 12px;
+            --shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.04);
+            --shadow-lg: 0 4px 16px rgba(0,0,0,.1), 0 12px 40px rgba(0,0,0,.06);
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f1829;
+                --surface: #1a2744;
+                --text: #e8ecf4;
+                --text-secondary: #8899bb;
+                --border: #2a3a5a;
+                --primary-light: #1e3355;
+            }
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.5; }
+        .screen { display: none; min-height: 100vh; }
+        .screen.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+        /* ── Buttons ── */
+        .btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 10px 20px; border-radius: 10px; font-family: var(--font);
+            font-size: 14px; font-weight: 600; cursor: pointer; border: none;
+            transition: all .2s;
+        }
+        .btn-primary { background: var(--primary); color: #fff; }
+        .btn-primary:hover { background: var(--primary-light); }
+        .btn-outline { background: transparent; color: var(--text); border: 1.5px solid var(--border); }
+        .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+        .btn-accent { background: var(--accent); color: var(--primary); }
+        .btn-accent:hover { background: var(--accent-hover); }
+        .btn-lg { padding: 14px 28px; font-size: 16px; border-radius: 12px; }
+        .btn:disabled { opacity: .4; cursor: not-allowed; }
+        .btn svg { flex-shrink: 0; }
+
+        /* ── Welcome ── */
+        .welcome-container { max-width: 640px; margin: 0 auto; padding: 40px 20px 60px; }
+        .welcome-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 36px; flex-wrap: wrap; gap: 12px; }
+        .logo-area { display: flex; align-items: center; gap: 14px; }
+        .logo-icon { width: 48px; height: 48px; }
+        .logo-icon svg { width: 100%; height: 100%; }
+        .logo-title { font-size: 22px; font-weight: 800; color: var(--primary); line-height: 1.1; }
+        @media (prefers-color-scheme: dark) { .logo-title { color: #fff; } }
+        .logo-subtitle { font-size: 12px; color: var(--text-secondary); font-weight: 500; }
+        .badge { padding: 6px 14px; border-radius: 20px; font-size: 12px; font-weight: 700; background: rgba(212,168,67,.12); color: var(--accent); letter-spacing: .5px; }
+
+        .welcome-hero { text-align: center; margin-bottom: 36px; }
+        .welcome-hero h2 { font-size: 28px; font-weight: 800; margin-bottom: 12px; letter-spacing: -.5px; }
+        .welcome-hero p { color: var(--text-secondary); font-size: 15px; max-width: 500px; margin: 0 auto; }
+
+        .info-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; text-align: left; }
+        .info-card {
+            display: flex; align-items: center; gap: 12px;
+            padding: 14px 16px; background: var(--surface);
+            border-radius: var(--radius); border: 1px solid var(--border);
+        }
+        .info-icon { width: 36px; height: 36px; background: rgba(27,42,74,.06); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--primary); flex-shrink: 0; }
+        @media (prefers-color-scheme: dark) { .info-icon { background: rgba(255,255,255,.06); color: var(--accent); } }
+        .info-icon svg { width: 18px; height: 18px; }
+        .info-card strong { display: block; font-size: 14px; font-weight: 700; }
+        .info-card span { font-size: 12px; color: var(--text-secondary); }
+
+        .welcome-form { background: var(--surface); border-radius: var(--radius); padding: 28px; border: 1px solid var(--border); margin-bottom: 28px; }
+        .welcome-form h3 { font-size: 18px; font-weight: 700; margin-bottom: 20px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; color: var(--text-secondary); }
+        .form-group input {
+            width: 100%; padding: 12px 14px; border-radius: 10px;
+            border: 1.5px solid var(--border); font-family: var(--font);
+            font-size: 15px; background: var(--bg); color: var(--text);
+            transition: border-color .2s;
+        }
+        .form-group input:focus { outline: none; border-color: var(--accent); }
+        .welcome-form .btn { width: 100%; justify-content: center; }
+
+        .type-legend { margin-top: 20px; }
+        .type-legend h4 { font-size: 14px; font-weight: 700; margin-bottom: 12px; color: var(--text-secondary); }
+        .type-legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .type-legend-item { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+        .type-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+        .type-dot.mc { background: #3b82f6; }
+        .type-dot.cb { background: #8b5cf6; }
+        .type-dot.mt { background: #f59e0b; }
+        .type-dot.fn { background: #22c55e; }
+
+        /* ── Quiz ── */
+        .quiz-container { max-width: 720px; margin: 0 auto; padding: 16px 20px 100px; }
+        .quiz-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 12px 0; margin-bottom: 12px; border-bottom: 1px solid var(--border);
+        }
+        .quiz-header-left { display: flex; align-items: center; gap: 10px; }
+        .quiz-logo { font-size: 16px; font-weight: 800; color: var(--primary); }
+        @media (prefers-color-scheme: dark) { .quiz-logo { color: #fff; } }
+        .quiz-label { font-size: 12px; color: var(--text-secondary); font-weight: 500; }
+        .timer {
+            display: flex; align-items: center; gap: 6px;
+            padding: 6px 14px; border-radius: 20px;
+            background: var(--surface); border: 1px solid var(--border);
+            font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums;
+        }
+        .timer.warning { background: #fef3c7; color: #92400e; border-color: #f59e0b; }
+        .timer.danger { background: #fee2e2; color: #991b1b; border-color: #ef4444; animation: pulse 1s infinite; }
+        @keyframes pulse { 50% { opacity: .7; } }
+
+        .progress-section { margin-bottom: 16px; }
+        .progress-info { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; font-size: 13px; color: var(--text-secondary); }
+        .progress-info strong { color: var(--text); }
+        .subtema-badge { font-size: 12px; font-weight: 600; color: var(--accent); max-width: 50%; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .progress-bar { height: 4px; background: var(--border); border-radius: 2px; overflow: hidden; }
+        .progress-fill { height: 100%; background: var(--accent); border-radius: 2px; transition: width .3s; }
+
+        .type-badges { display: flex; gap: 8px; margin-bottom: 12px; }
+        .type-badge {
+            display: inline-block; padding: 4px 12px; border-radius: 6px;
+            font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px;
+        }
+        .type-opcion_multiple { background: rgba(59,130,246,.1); color: #3b82f6; }
+        .type-seleccion_multiple { background: rgba(139,92,246,.1); color: #8b5cf6; }
+        .type-emparejamiento { background: rgba(245,158,11,.1); color: #d97706; }
+        .type-completar_numero { background: rgba(34,197,94,.1); color: #16a34a; }
+
+        .question-card {
+            background: var(--surface); border-radius: var(--radius);
+            padding: 24px; border: 1px solid var(--border);
+            box-shadow: var(--shadow); margin-bottom: 16px;
+        }
+        .question-text { font-size: 17px; font-weight: 600; line-height: 1.6; margin-bottom: 20px; }
+
+        /* ── Option Buttons ── */
+        .option-btn {
+            display: flex; align-items: center; gap: 12px; width: 100%;
+            padding: 14px 16px; margin-bottom: 8px; border-radius: 10px;
+            border: 1.5px solid var(--border); background: var(--surface);
+            cursor: pointer; font-family: var(--font); font-size: 15px;
+            text-align: left; transition: all .15s; color: var(--text);
+        }
+        .option-btn:hover { border-color: var(--accent); background: rgba(212,168,67,.04); }
+        .option-btn.selected { border-color: var(--accent); background: rgba(212,168,67,.08); }
+        .option-letter {
+            width: 32px; height: 32px; border-radius: 8px;
+            background: var(--bg); display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 13px; flex-shrink: 0; color: var(--text-secondary);
+        }
+        .option-btn.selected .option-letter { background: var(--accent); color: var(--primary); }
+        .option-check { font-size: 20px; flex-shrink: 0; color: var(--text-secondary); }
+        .option-btn.selected .option-check { color: var(--accent); }
+
+        /* ── Matching ── */
+        .matching-container { display: flex; flex-direction: column; gap: 12px; }
+        .matching-row {
+            display: flex; align-items: center; gap: 12px;
+            padding: 12px 16px; border-radius: 10px;
+            background: var(--bg); border: 1px solid var(--border);
+        }
+        .matching-item { flex: 1; font-size: 14px; font-weight: 500; min-width: 0; }
+        .matching-arrow { color: var(--accent); font-size: 18px; font-weight: 700; flex-shrink: 0; }
+        .matching-select {
+            flex: 1; padding: 10px 12px; border-radius: 8px;
+            border: 1.5px solid var(--border); background: var(--surface);
+            font-family: var(--font); font-size: 13px; color: var(--text);
+            cursor: pointer; min-width: 0;
+        }
+        .matching-select:focus { outline: none; border-color: var(--accent); }
+
+        /* ── Fill Number ── */
+        .fill-container { text-align: center; padding: 20px 0; }
+        .fill-label { display: block; font-size: 14px; color: var(--text-secondary); margin-bottom: 16px; font-weight: 500; }
+        .fill-input {
+            width: 200px; padding: 16px 20px; border-radius: 12px;
+            border: 2px solid var(--border); background: var(--bg);
+            font-family: var(--font); font-size: 28px; font-weight: 700;
+            text-align: center; color: var(--text); transition: border-color .2s;
+        }
+        .fill-input:focus { outline: none; border-color: var(--accent); }
+        .fill-input::placeholder { font-size: 16px; font-weight: 400; }
+
+        /* ── Quiz Nav ── */
+        .quiz-nav {
+            display: flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center;
+        }
+        .quiz-dots {
+            display: flex; flex-wrap: wrap; gap: 4px;
+            max-width: 400px; justify-content: center;
+        }
+        .quiz-dot {
+            width: 12px; height: 12px; border-radius: 50%;
+            border: 1.5px solid var(--border); background: transparent;
+            cursor: pointer; transition: all .2s; padding: 0;
+        }
+        .quiz-dot.current { border-color: var(--accent); background: var(--accent); transform: scale(1.2); }
+        .quiz-dot.answered { background: var(--primary); border-color: var(--primary); }
+
+        /* ── Results ── */
+        .results-container { max-width: 720px; margin: 0 auto; padding: 40px 20px 60px; }
+        .results-header {
+            display: flex; align-items: center; gap: 32px;
+            background: var(--surface); border-radius: var(--radius);
+            padding: 32px; border: 1px solid var(--border); margin-bottom: 24px;
+            flex-wrap: wrap; justify-content: center;
+        }
+        .results-score-circle { position: relative; width: 130px; height: 130px; flex-shrink: 0; }
+        .results-score-circle svg { width: 100%; height: 100%; }
+        .score-value {
+            position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+            font-weight: 900; font-size: 36px;
+        }
+        .score-value small { font-size: 18px; font-weight: 600; }
+        .results-summary { flex: 1; min-width: 240px; }
+        .results-summary h2 { font-size: 22px; font-weight: 800; margin-bottom: 4px; }
+        .results-summary p { font-size: 13px; color: var(--text-secondary); margin-bottom: 16px; }
+        .results-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+        .stat { text-align: center; }
+        .stat-value { display: block; font-size: 22px; font-weight: 800; }
+        .stat-label { font-size: 11px; color: var(--text-secondary); font-weight: 500; }
+
+        .results-breakdown, .results-feedback { background: var(--surface); border-radius: var(--radius); padding: 24px; border: 1px solid var(--border); margin-bottom: 24px; }
+        .results-breakdown h3, .results-feedback h3 { font-size: 17px; font-weight: 700; margin-bottom: 16px; }
+        .breakdown-grid { display: grid; gap: 12px; }
+        .breakdown-card {
+            display: grid; grid-template-columns: 1fr auto auto;
+            align-items: center; gap: 8px 16px; padding: 10px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .breakdown-card:last-child { border-bottom: none; }
+        .breakdown-card-header { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; grid-column: 1 / -1; }
+        .breakdown-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+        .breakdown-bar { grid-column: 1; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+        .breakdown-bar-fill { height: 100%; border-radius: 3px; transition: width .5s; }
+        .breakdown-score { font-size: 14px; font-weight: 700; }
+        .breakdown-detail { font-size: 12px; color: var(--text-secondary); }
+
+        .feedback-filters { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+        .filter-btn {
+            padding: 6px 16px; border-radius: 8px; border: 1px solid var(--border);
+            background: transparent; font-family: var(--font); font-size: 13px;
+            font-weight: 500; cursor: pointer; color: var(--text-secondary); transition: all .2s;
+        }
+        .filter-btn.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+        .feedback-list { display: grid; gap: 8px; }
+        .feedback-item {
+            border-radius: 10px; border: 1px solid var(--border);
+            overflow: hidden; cursor: pointer; transition: all .2s;
+        }
+        .feedback-item:hover { border-color: var(--accent); }
+        .feedback-item.correct { border-left: 3px solid var(--success); }
+        .feedback-item.incorrect { border-left: 3px solid var(--error); }
+        .feedback-item.unanswered { border-left: 3px solid var(--text-secondary); }
+        .feedback-header {
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 12px 16px; gap: 8px; flex-wrap: wrap;
+        }
+        .feedback-number { font-size: 12px; font-weight: 600; color: var(--text-secondary); }
+        .feedback-badge { font-size: 10px; padding: 2px 8px; border-radius: 4px; font-weight: 600; }
+        .feedback-status { font-size: 12px; font-weight: 700; margin-left: auto; }
+        .feedback-item.correct .feedback-status { color: var(--success); }
+        .feedback-item.incorrect .feedback-status { color: var(--error); }
+        .feedback-item.unanswered .feedback-status { color: var(--text-secondary); }
+        .feedback-question { padding: 0 16px 12px; font-size: 14px; font-weight: 500; line-height: 1.5; }
+        .feedback-detail { display: none; padding: 12px 16px; background: var(--bg); border-top: 1px solid var(--border); }
+        .feedback-item.open .feedback-detail { display: block; }
+        .feedback-answer { font-size: 13px; margin-bottom: 8px; line-height: 1.5; }
+        .feedback-explanation { font-size: 13px; color: var(--text-secondary); padding: 10px; background: var(--surface); border-radius: 8px; line-height: 1.6; }
+
+        .results-actions { text-align: center; margin-top: 24px; }
+
+        /* ── Modal ── */
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(0,0,0,.5);
+            display: none; align-items: center; justify-content: center;
+            z-index: 1000; padding: 20px; backdrop-filter: blur(4px);
+        }
+        .modal-overlay.visible { display: flex; }
+        .modal {
+            background: var(--surface); border-radius: 16px;
+            padding: 28px; max-width: 420px; width: 100%;
+            box-shadow: var(--shadow-lg); text-align: center;
+        }
+        .modal h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+        .modal p { font-size: 14px; color: var(--text-secondary); margin-bottom: 20px; }
+        .modal-actions { display: flex; gap: 10px; justify-content: center; }
+
+        @media (max-width: 640px) {
+            .info-cards { grid-template-columns: 1fr; }
+            .results-stats { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+            .matching-row { flex-direction: column; align-items: stretch; gap: 8px; }
+            .matching-arrow { text-align: center; }
+            .quiz-dots { max-width: 280px; }
+            .quiz-dot { width: 10px; height: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!-- PANTALLA 1: BIENVENIDA -->
+        <section id="screen-welcome" class="screen active">
+            <div class="welcome-container">
+                <div class="welcome-header">
+                    <div class="logo-area">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="48" height="48" rx="12" fill="var(--primary)"/>
+                                <text x="24" y="30" text-anchor="middle" fill="var(--accent)" font-size="15" font-weight="900" font-family="Inter, sans-serif">H₂O</text>
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="logo-title">Diagnóstico</h1>
+                            <p class="logo-subtitle">Química</p>
+                        </div>
+                    </div>
+                    <span class="badge">Diagnóstico</span>
+                </div>
+
+                <div class="welcome-hero">
+                    <h2>Prueba de Diagnóstico de Química</h2>
+                    <p>Evalúa tu nivel actual en los temas de Química General del temario de admisión UNEMI (carreras de salud). Esta prueba incluye diferentes tipos de preguntas para una evaluación completa.</p>
+
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div>
+                                <strong>60 minutos</strong>
+                                <span>Tiempo límite</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+                            </div>
+                            <div>
+                                <strong>60 preguntas</strong>
+                                <span>4 tipos diferentes</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>
+                            </div>
+                            <div>
+                                <strong>10 temas</strong>
+                                <span>Del temario oficial</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                            </div>
+                            <div>
+                                <strong>Retroalimentación</strong>
+                                <span>Al finalizar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="welcome-form">
+                    <h3>Regístrate para comenzar</h3>
+                    <form id="registration-form" autocomplete="off">
+                        <div class="form-group">
+                            <label for="student-name">Nombres y Apellidos completos</label>
+                            <input type="text" id="student-name" placeholder="Ej: María Fernanda López García" required minlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label for="student-email">Correo electrónico</label>
+                            <input type="email" id="student-email" placeholder="Ej: maria.lopez@gmail.com" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            Comenzar Diagnóstico
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                    </form>
+
+                    <div class="type-legend">
+                        <h4>Tipos de preguntas que encontrarás:</h4>
+                        <div class="type-legend-grid">
+                            <div class="type-legend-item"><span class="type-dot mc"></span> Opción múltiple</div>
+                            <div class="type-legend-item"><span class="type-dot cb"></span> Selección múltiple</div>
+                            <div class="type-legend-item"><span class="type-dot mt"></span> Emparejamiento</div>
+                            <div class="type-legend-item"><span class="type-dot fn"></span> Completar número</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PANTALLA 2: QUIZ -->
+        <section id="screen-quiz" class="screen">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <div class="quiz-header-left">
+                        <span class="quiz-logo">Diagnóstico</span>
+                        <span class="quiz-label">Química</span>
+                    </div>
+                    <div class="quiz-header-right">
+                        <div class="timer" id="timer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            <span id="timer-display">60:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-section">
+                    <div class="progress-info">
+                        <span>Pregunta <strong id="current-q">1</strong> de <strong>60</strong></span>
+                        <span id="subtema-label" class="subtema-badge">Subtema</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div class="type-badges">
+                    <span id="type-label" class="type-badge">Tipo</span>
+                </div>
+
+                <div class="question-card" id="question-card">
+                    <p class="question-text" id="question-text"></p>
+                    <div id="options-area"></div>
+                </div>
+
+                <div class="quiz-nav">
+                    <button class="btn btn-outline" id="btn-prev" disabled>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                        Anterior
+                    </button>
+                    <div class="quiz-dots" id="quiz-dots"></div>
+                    <button class="btn btn-primary" id="btn-next">
+                        Siguiente
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                    <button class="btn btn-accent" id="btn-finish" style="display:none;">
+                        Finalizar
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PANTALLA 3: RESULTADOS -->
+        <section id="screen-results" class="screen">
+            <div class="results-container">
+                <div class="results-header">
+                    <div class="results-score-circle">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="var(--border)" stroke-width="8"/>
+                            <circle cx="60" cy="60" r="54" fill="none" stroke="var(--accent)" stroke-width="8" stroke-dasharray="339.29" stroke-dashoffset="339.29" stroke-linecap="round" id="score-ring" transform="rotate(-90 60 60)"/>
+                        </svg>
+                        <div class="score-value">
+                            <span id="score-percent">0</span><small>%</small>
+                        </div>
+                    </div>
+                    <div class="results-summary">
+                        <h2>Resultados del Diagnóstico</h2>
+                        <p id="student-result-name"></p>
+                        <div class="results-stats">
+                            <div class="stat"><span class="stat-value" id="stat-correct">0</span><span class="stat-label">Correctas</span></div>
+                            <div class="stat"><span class="stat-value" id="stat-incorrect">0</span><span class="stat-label">Incorrectas</span></div>
+                            <div class="stat"><span class="stat-value" id="stat-unanswered">0</span><span class="stat-label">Sin responder</span></div>
+                            <div class="stat"><span class="stat-value" id="stat-time">00:00</span><span class="stat-label">Tiempo usado</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-breakdown">
+                    <h3>Desglose por tema</h3>
+                    <div class="breakdown-grid" id="breakdown-grid"></div>
+                </div>
+
+                <div class="results-feedback">
+                    <h3>Retroalimentación detallada</h3>
+                    <div class="feedback-filters">
+                        <button class="filter-btn active" data-filter="all">Todas</button>
+                        <button class="filter-btn" data-filter="incorrect">Incorrectas</button>
+                        <button class="filter-btn" data-filter="correct">Correctas</button>
+                        <button class="filter-btn" data-filter="unanswered">Sin responder</button>
+                    </div>
+                    <div class="feedback-list" id="feedback-list"></div>
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn-primary btn-lg" id="btn-retry">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 102.13-9.36L1 10"/></svg>
+                        Intentar de nuevo
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+            <h3>¿Finalizar la prueba?</h3>
+            <p id="modal-message"></p>
+            <div class="modal-actions">
+                <button class="btn btn-outline" id="modal-cancel">Seguir respondiendo</button>
+                <button class="btn btn-accent" id="modal-confirm">Sí, finalizar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>window.DIAG_CONFIG = { url: '', tipo: 'diagnostico_quimica' };</script>
+    <script src="js/diagnostico-quimica-preguntas.js"></script>
+    <script src="js/diagnostico-app.js"></script>
+</body>
+</html>

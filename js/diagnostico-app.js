@@ -3,7 +3,9 @@
 
     const TOTAL = DIAGNOSTICO_PREGUNTAS.length;
     const TIME_LIMIT = 60 * 60;
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbycef2CKJMEPKq_W_MfnvjRaOtrDneuzB7xQR-MZvfNxUoHyth8vDWhvz-rgPdjtkdhGA/exec';
+    // Cada página de diagnóstico puede definir window.DIAG_CONFIG = { url, tipo } antes de cargar este archivo.
+    const CFG = window.DIAG_CONFIG || {};
+    const GOOGLE_SCRIPT_URL = CFG.url !== undefined ? CFG.url : 'https://script.google.com/macros/s/AKfycbycef2CKJMEPKq_W_MfnvjRaOtrDneuzB7xQR-MZvfNxUoHyth8vDWhvz-rgPdjtkdhGA/exec';
 
     let student = { name: '', email: '' };
     let questions = [];
@@ -465,7 +467,7 @@
             mode: 'no-cors',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
-                tipo: 'diagnostico_matematicas',
+                tipo: CFG.tipo || 'diagnostico_matematicas',
                 nombre: student.name,
                 email: student.email,
                 puntaje: percent + '%',
