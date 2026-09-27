@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="campus.css?v=1">
+<link rel="stylesheet" href="campus.css?v=2">
 <script>
   /* Aplica el tema guardado antes de pintar (evita parpadeo) */
   try {
@@ -37,7 +37,6 @@
       <a href="#ruta-sec">Mi ruta</a>
       <a href="#evaluate">Evalúate</a>
       <a href="#practica">Práctica libre</a>
-      <a href="#repasar">Repasar</a>
     </nav>
     <div class="barra-acc">
       <button type="button" class="btn-ico" id="btn-tema" aria-label="Cambiar a tema oscuro"></button>
@@ -56,9 +55,8 @@
         <section class="seccion" id="ruta-sec" aria-labelledby="t-ruta">
           <div class="sec-cab">
             <h2 id="t-ruta">Mi ruta</h2>
-            <p>Tus clases en el orden del cronograma. Cada una tiene láminas, juego y examen, y guarda tu avance sola.</p>
           </div>
-          <ol class="ruta" id="ruta"></ol>
+          <div class="rutas" id="ruta"></div>
         </section>
       </div>
 
@@ -66,18 +64,8 @@
         <section class="seccion" id="evaluate" aria-labelledby="t-evaluate">
           <div class="sec-cab">
             <h2 id="t-evaluate">Evalúate</h2>
-            <p>Mide cómo vas con diagnósticos y un simulacro del examen.</p>
           </div>
           <div class="lista-evaluate" id="lista-evaluate"></div>
-        </section>
-
-        <section class="seccion" id="repasar" aria-labelledby="t-repasar">
-          <div class="sec-cab">
-            <h2 id="t-repasar">Repasar</h2>
-            <p>Lo esencial de cada clase en una lámina, y lo que más te conviene reforzar.</p>
-          </div>
-          <div class="debil" id="debilidades"></div>
-          <div class="resumenes" id="lista-resumenes"></div>
         </section>
       </div>
     </div>
@@ -85,11 +73,10 @@
     <section class="seccion extras" id="practica" aria-labelledby="t-practica">
       <div class="sec-cab">
         <h2 id="t-practica">Práctica libre <span class="h2-opc">· opcional</span></h2>
-        <p>Para los que quieren más: practica por tema cuando quieras. No reemplaza a las clases.</p>
+        <p>Solo si quieres más. No reemplaza a las clases.</p>
       </div>
       <div class="grid-libre" id="lista-libre"></div>
-      <h3 class="sub-t" id="t-herr">Herramientas y juegos de tus clases</h3>
-      <div class="grid-practica" id="lista-practica"></div>
+      <div class="grid-chips" id="lista-practica"></div>
     </section>
   </div>
 </main>
@@ -122,8 +109,6 @@
   </form>
 </dialog>
 
-<div class="tip" id="tip" role="tooltip" hidden></div>
-
-<script src="campus.js?v=1"></script>
+<script src="campus.js?v=2"></script>
 </body>
 </html>

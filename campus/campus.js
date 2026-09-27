@@ -7,7 +7,8 @@
   // =====================================================================
   // 1. CRONOGRAMA — edita aquí
   // =====================================================================
-  // Para agregar una clase: suma un objeto (corto = nombre breve opcional) con el siguiente `n` (o cambia un «proximamente» por la clase real); `abre:'AAAA-MM-DD'` la deja con candado hasta esa fecha.
+  // La ruta se agrupa por materia y `n` cuenta DENTRO de cada materia (clase 1 de Matemática, clase 1 de Química…).
+  // Para agregar una clase: cambia el «proximamente» de su materia por la clase real y suma otro «proximamente» con el siguiente `n`; `abre:'AAAA-MM-DD'` la deja con candado hasta esa fecha.
   const CRONOGRAMA = [
     {
       n: 1, materia: 'matematica', titulo: 'Ley de signos y operaciones combinadas', corto: 'Ley de signos',
@@ -15,14 +16,14 @@
       img: 'img/aula-matematicas.webp', alt: 'Ignacio en el aula de matemáticas con un ábaco',
       resumen: '../ley-de-signos/?lamina=40', juego: '../ley-de-signos/?ir=juego', nombreJuego: 'Juego de signos'
     },
+    { n: 2, materia: 'matematica', proximamente: true, titulo: 'Próxima clase' },
     {
-      n: 2, materia: 'quimica', titulo: 'Química desde cero: materia, átomo y tabla periódica', corto: 'Química desde cero',
+      n: 1, materia: 'quimica', titulo: 'Química desde cero: materia, átomo y tabla periódica', corto: 'Química desde cero',
       url: '../quimica-materia/', clave: 'qm_v1', totalLaminas: 47, capitulos: 3,
       img: 'img/aula-ciencias.webp', alt: 'Ignacio en el laboratorio de ciencias con un matraz',
       resumen: '../quimica-materia/?lamina=71', juego: '../quimica-materia/?ir=juego', nombreJuego: 'Juego «Laboratorio»'
     },
-    { n: 3, proximamente: true, titulo: 'Próxima clase', materia: null, img: 'img/aula-cosmos.webp', alt: 'Ignacio en un aula sobre el cosmos' },
-    { n: 4, proximamente: true, titulo: 'Próxima clase', materia: null, img: 'img/aula-geografia.webp', alt: 'Ignacio con un globo terráqueo en el aula de geografía' }
+    { n: 2, materia: 'quimica', proximamente: true, titulo: 'Próxima clase' }
   ];
 
   // Evalúate: diagnósticos y simulador (leen { puntaje 0–100, fecha }). `materia` enlaza con la clase que lo refuerza.
@@ -34,17 +35,17 @@
 
   // Herramientas de la Zona de práctica (los juegos salen solos del campo `juego` del cronograma).
   const HERRAMIENTAS = [
-    { id: 'tabla', clase: 2, titulo: 'Tabla periódica interactiva', desc: 'Toca un elemento y mira su número, masa y familia.', url: '../quimica-materia/?herramienta=tabla', icono: 'tabla' },
-    { id: 'constructor', clase: 2, titulo: 'Constructor de átomos', desc: 'Suma protones, neutrones y electrones y mira qué átomo armas.', url: '../quimica-materia/?herramienta=constructor', icono: 'atomo' },
-    { id: 'estados', clase: 2, titulo: 'Estados de la materia', desc: 'Calienta o enfría y mira cómo se mueven las partículas.', url: '../quimica-materia/?herramienta=estados', icono: 'gota' }
+    { id: 'tabla', clase: 'clase-quimica-1', titulo: 'Tabla periódica', url: '../quimica-materia/?herramienta=tabla', icono: 'tabla' },
+    { id: 'constructor', clase: 'clase-quimica-1', titulo: 'Constructor de átomos', url: '../quimica-materia/?herramienta=constructor', icono: 'atomo' },
+    { id: 'estados', clase: 'clase-quimica-1', titulo: 'Estados de la materia', url: '../quimica-materia/?herramienta=estados', icono: 'gota' }
   ];
 
   // Práctica libre (opcional): app aparte ../practica/ con bancos de preguntas por materia y tema.
   const PRACTICA_LIBRE = {
     url: '../practica/', clave: 'practica_v1',
     materias: [
-      { materia: 'matematica', desc: 'Operaciones, álgebra, geometría y más, tema por tema.' },
-      { materia: 'quimica', desc: 'Materia, átomo, tabla periódica y más, tema por tema.' }
+      { materia: 'matematica', desc: 'Practica tema por tema, a tu ritmo.' },
+      { materia: 'quimica', desc: 'Practica tema por tema, a tu ritmo.' }
     ]
   };
 
@@ -132,15 +133,9 @@
     const d = new Date();
     return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
   }
-  function duracion(ms) {
-    const m = Math.round(num(ms) / 60000);
-    if (m < 1) return '0 min';
-    if (m < 60) return m + ' min';
-    const h = Math.floor(m / 60), r = m % 60;
-    return h + ' h' + (r ? ' ' + r + ' min' : '');
-  }
   function corto(cl) { return cl.corto || String(cl.titulo || '').split(':')[0]; }
   function materia(k) { return MATERIAS[k] || GENERAL; }
+  function nombreClase(cl) { return 'Clase ' + cl.n + ' de ' + materia(cl.materia).nombre; }
   function estiloMateria(k) { const m = materia(k); return '--c:' + m.color + ';--c-barra:' + (m.barra || m.color); }
 
   // =====================================================================
@@ -183,7 +178,7 @@
   // 4. Lectura del avance
   // =====================================================================
   function avanceClase(cl, abiertos) {
-    const id = 'clase-' + cl.n;
+    const id = 'clase-' + (cl.materia || 'general') + '-' + cl.n;
     const hoy = hoyYMD();
     const bloqueada = !!cl.proximamente || !cl.url || (cl.abre && cl.abre > hoy);
     const base = { cl, id, bloqueada, proximamente: !!cl.proximamente, abreFecha: !cl.proximamente && cl.abre && cl.abre > hoy ? cl.abre : null };
@@ -251,7 +246,7 @@
 
   function datos() {
     const c = campus(), abiertos = obj(c.abiertos);
-    const clases = CRONOGRAMA.slice().sort((a, b) => a.n - b.n).map(cl => avanceClase(cl, abiertos));
+    const clases = CRONOGRAMA.map(cl => avanceClase(cl, abiertos));
     const evals = EVALUACIONES.map(ev => avanceEval(ev, abiertos));
     const reales = clases.filter(a => !a.proximamente);
     const xp = clases.reduce((s, a) => s + a.xpTotal, 0) + evals.reduce((s, a) => s + a.xpTotal, 0);
@@ -278,44 +273,27 @@
     D.clases.forEach(a => {
       if (a.bloqueada || !a.empezo) return;
       const cl = a.cl, nombre = corto(cl);
-      if (a.examenHecho && a.nota < META_EXAMEN) out.push({ prio: a.nota / TOTAL_EXAMEN * 100, a, titulo: nombre, motivo: 'Sacaste ' + fmt(a.nota) + '/' + TOTAL_EXAMEN + ' en el examen de la clase ' + cl.n + ' (la meta es ' + META_EXAMEN + '). Repasa las láminas y vuelve al juego antes de intentarlo otra vez.', url: cl.url + '?ir=laminas', cta: 'Repasar la clase ' + cl.n });
+      if (a.examenHecho && a.nota < META_EXAMEN) out.push({ prio: a.nota / TOTAL_EXAMEN * 100, a, titulo: nombre, motivo: 'Sacaste ' + fmt(a.nota) + '/' + TOTAL_EXAMEN + ' en el examen (la meta es ' + META_EXAMEN + ').', url: cl.url + '?ir=laminas', cta: 'Repasar la clase' });
       else if (a.reforzar.length) out.push({ prio: 55, a, titulo: nombre, motivo: (a.reforzar.length === 1 ? 'La parada ' + a.reforzar[0] + ' del juego quedó' : 'Las paradas ' + a.reforzar.join(', ') + ' del juego quedaron') + ' «por reforzar».', url: cl.juego || cl.url, cta: 'Reforzar en el juego' });
-      else if (!a.terminado) out.push({ prio: 80 + a.pctL / 10, a, titulo: nombre, motivo: 'La clase ' + cl.n + ' quedó a medias (' + a.estado.toLowerCase() + '). Terminarla es lo que más XP te da ahora.', url: a.url, cta: 'Terminar la clase ' + cl.n });
+      else if (!a.terminado) out.push({ prio: 80 + a.pctL / 10, a, titulo: nombre, motivo: 'Quedó a medias (' + a.estado.toLowerCase() + ').', url: a.url, cta: 'Terminar la clase' });
     });
     // Un diagnóstico bajo apunta a la clase del cronograma de esa materia
     D.evals.forEach(e => {
       if (!e.empezo || e.puntaje >= META_EVAL || !e.ev.materia) return;
       const a = D.clases.find(x => !x.bloqueada && x.cl.materia === e.ev.materia);
       if (!a || out.some(o => o.a === a)) return;
-      out.push({ prio: e.puntaje, a, titulo: corto(a.cl), motivo: 'En el ' + e.ev.titulo + ' sacaste ' + e.puntaje + ' %. La clase ' + a.cl.n + ' cubre esa base.', url: a.url, cta: (a.empezo ? 'Continuar' : 'Empezar') + ' la clase ' + a.cl.n });
+      out.push({ prio: e.puntaje, a, titulo: corto(a.cl), motivo: 'En el ' + e.ev.titulo + ' sacaste ' + e.puntaje + ' %. Esta clase cubre esa base.', url: a.url, cta: (a.empezo ? 'Continuar' : 'Empezar') + ' la clase' });
     });
     return out.sort((x, y) => x.prio - y.prio);
-  }
-
-  // Resultados medidos (gráfico «Tus resultados»)
-  function resultados(D) {
-    const r = [];
-    D.clases.forEach(a => { if (a.examenHecho) r.push({ id: a.id, nombre: 'Examen · clase ' + a.cl.n, valor: Math.round(a.nota / TOTAL_EXAMEN * 100), detalle: fmt(a.nota) + '/' + TOTAL_EXAMEN, meta: Math.round(META_EXAMEN / TOTAL_EXAMEN * 100) }); });
-    D.evals.forEach(e => { if (e.empezo) r.push({ id: e.id, nombre: e.ev.titulo.replace('Simulador de admisión', 'Simulador'), valor: e.puntaje, detalle: e.puntaje + ' %' + (e.fecha ? ' · ' + fechaCorta(e.fecha) : ''), meta: META_EVAL }); });
-    return r;
   }
 
   // =====================================================================
   // 5. Pintado
   // =====================================================================
-  function meterSimple(pct, etiqueta, cls) {
-    return '<div class="meter' + (cls ? ' ' + cls : '') + '" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + pct + '" aria-label="' + esc(etiqueta) + '"><span style="width:' + pct + '%"></span></div>';
-  }
-  function pildoraMateria(k) {
-    const m = materia(k);
-    return '<span class="pildora pildora-materia" style="' + estiloMateria(k) + '"><span class="punto" aria-hidden="true"></span>' + esc(k ? m.nombre : 'Próximamente') + '</span>';
-  }
-
   function frase(D, sig) {
-    if (D.nuevo) return 'Soy Ignacio, tu tutor. Sigue la ruta clase por clase: cada una se guarda sola y puedes seguir mañana.';
-    if (!sig) return '¡Terminaste todas las clases abiertas! Repasa tus resúmenes y ponte a prueba en «Evalúate». Pronto llega la siguiente.';
-    if (D.clasesHechas > 0) return 'Ya terminaste ' + D.clasesHechas + (D.clasesHechas === 1 ? ' clase' : ' clases') + '. Sigue así: 20 minutos hoy marcan la diferencia.';
-    return 'Vas bien. Sigue donde lo dejaste: 20 minutos hoy marcan la diferencia.';
+    if (D.nuevo) return 'Soy Ignacio, tu tutor. Empieza por tu primera clase: tu avance se guarda solo.';
+    if (!sig) return '¡Terminaste todas las clases abiertas! Ponte a prueba en «Evalúate».';
+    return 'Sigue donde lo dejaste: 20 minutos hoy marcan la diferencia.';
   }
 
   function anilloNivel(D) {
@@ -338,103 +316,83 @@
 
   function pintarHero(D, u) {
     const sig = siguiente(D);
-    const nv = NIVELES[D.nivel], prox = NIVELES[D.nivel + 1];
     const deb = debilidades(D);
     let cta;
     if (sig) {
-      const etiqueta = D.nuevo ? 'Empezar la clase ' + sig.cl.n : 'Continuar donde ibas';
       cta = '<a class="btn btn-hero" href="' + esc(sig.url) + '" data-abre="' + sig.id + '">' +
         '<span class="btn-hero-ico">' + ico('play') + '</span>' +
-        '<span class="btn-hero-txt"><b>' + etiqueta + '</b><span>Clase ' + sig.cl.n + ' · ' + esc(corto(sig.cl)) + (sig.empezo ? ' · ' + esc(sig.estado) : '') + '</span></span>' +
+        '<span class="btn-hero-txt"><b>' + (D.nuevo ? 'Empezar tu primera clase' : 'Continuar donde ibas') + '</b><span>' + esc(nombreClase(sig.cl)) + ' · ' + esc(corto(sig.cl)) + '</span></span>' +
         ico('flecha', 'ico-fin') + '</a>';
     } else {
       cta = '<a class="btn btn-hero" href="#evaluate"><span class="btn-hero-ico">' + ico('trofeo') + '</span><span class="btn-hero-txt"><b>Ponte a prueba</b><span>Todas las clases abiertas están listas</span></span>' + ico('flecha', 'ico-fin') + '</a>';
     }
     const botonDebil = deb.length
-      ? '<a class="btn-debil" href="' + esc(deb[0].url) + '" data-abre="' + deb[0].a.id + '">' + ico('rayo') + '<span>Entrenar mis debilidades — empieza por <b>' + esc(deb[0].titulo) + '</b></span></a>'
+      ? '<a class="btn-debil" href="' + esc(deb[0].url) + '" data-abre="' + deb[0].a.id + '">' + ico('rayo') + '<span>Reforzar <b>' + esc(deb[0].titulo) + '</b> — ' + esc(deb[0].motivo) + '</span></a>'
       : '';
-
-    const filasNivel = NIVELES.map((n, i) => '<tr' + (i === D.nivel ? ' class="actual"' : '') + '><td>' + (i + 1) + '</td><td>' + n.nombre + (i === D.nivel ? ' <span class="tu">· tú</span>' : '') + '</td><td>' + fmt(n.desde) + ' XP</td></tr>').join('');
-    const filasXp = D.clases.filter(a => a.xpTotal > 0).map(a => '<li><span>Clase ' + a.cl.n + ' · ' + esc(corto(a.cl)) + '</span><b>' + fmt(a.xpTotal) + ' XP</b></li>').join('') +
-      D.evals.filter(a => a.xpTotal > 0).map(a => '<li><span>' + esc(a.ev.titulo) + '</span><b>' + fmt(a.xpTotal) + ' XP</b></li>').join('');
 
     $('#hero').innerHTML =
       '<div class="hero-cab">' +
-        '<div><h1 id="saludo">Hola, ' + esc(primerNombre(u)) + '</h1><p class="hero-sub">' + (D.nuevo ? 'Bienvenido a CIDEA Jóvenes. Tu ruta empieza aquí' : 'Sigue tu ruta de clases') + '</p></div>' +
+        '<div><h1 id="saludo">Hola, ' + esc(primerNombre(u)) + '</h1></div>' +
         anilloNivel(D) +
       '</div>' +
-      botonDebil +
-      '<div class="hero-grid">' +
-        '<div class="guia">' +
-          '<div class="guia-top">' +
-            '<img class="avatar" src="img/ignacio-busto.webp" width="520" height="520" alt="Ignacio, tu tutor, con buzo morado y la bandera de Ecuador">' +
-            '<div><p class="guia-eti">Tu guía · Ignacio</p><p class="guia-frase">' + frase(D, sig) + '</p></div>' +
-          '</div>' +
-          cta +
+      '<div class="guia">' +
+        '<div class="guia-top">' +
+          '<img class="avatar" src="img/ignacio-busto.webp" width="520" height="520" alt="Ignacio, tu tutor, con buzo morado y la bandera de Ecuador">' +
+          '<div><p class="guia-eti">Tu guía · Ignacio</p><p class="guia-frase">' + frase(D, sig) + '</p></div>' +
         '</div>' +
-        '<div class="progreso" aria-labelledby="t-progreso">' +
-          '<div class="progreso-cab"><h2 id="t-progreso" class="eti">Tu progreso</h2><span class="pildora pildora-morado">Nivel ' + (D.nivel + 1) + ' · ' + nv.nombre + '</span></div>' +
-          '<p class="xp-hero"><b>' + fmt(D.xp) + '</b> XP</p>' +
-          '<p class="xp-falta">' + (prox ? 'Te faltan <b>' + fmt(prox.desde - D.xp) + ' XP</b> para ser <b>' + prox.nombre + '</b>' : '¡Llegaste al nivel más alto!') + '</p>' +
-          '<ul class="tiles">' +
-            '<li class="tile">' + ico('trofeo') + '<span class="tile-eti">Clases terminadas</span><span class="tile-val">' + D.clasesHechas + '<small> de ' + D.clasesTotal + '</small></span></li>' +
-            '<li class="tile">' + ico('estrella', 'ico-oro') + '<span class="tile-eti">Estrellas</span><span class="tile-val">' + D.estrellas + '<small> de ' + D.estrellasMax + '</small></span></li>' +
-            '<li class="tile">' + ico('reloj') + '<span class="tile-eti">Tiempo de estudio</span><span class="tile-val">' + duracion(D.tiempoMs) + '</span></li>' +
-          '</ul>' +
-          '<details class="como-xp"><summary>¿Cómo gano XP?</summary>' +
-            '<ul class="reglas">' +
-              '<li><b>+' + XP.porPctLaminas + ' XP</b> por cada 1 % de láminas que avances en una clase</li>' +
-              '<li><b>+' + XP.porEstrella + ' XP</b> por cada estrella del juego (hasta 18 por clase)</li>' +
-              '<li><b>+' + XP.porPuntoExamen + ' XP</b> por cada acierto en el examen de la clase (de ' + TOTAL_EXAMEN + ')</li>' +
-              '<li><b>+' + XP.porPuntoEval + ' XP</b> por cada punto de tu puntaje en diagnósticos y simulador (último intento)</li>' +
-            '</ul>' +
-            (filasXp ? '<p class="mini-t">De dónde viene tu XP</p><ul class="xp-desglose">' + filasXp + '</ul>' : '') +
-            '<table class="tabla-niveles"><caption>Los 6 niveles</caption><thead><tr><th scope="col">#</th><th scope="col">Nivel</th><th scope="col">Desde</th></tr></thead><tbody>' + filasNivel + '</tbody></table>' +
-          '</details>' +
-        '</div>' +
-      '</div>';
+        cta +
+      '</div>' +
+      botonDebil;
   }
 
   function nodoRuta(a, sig) {
     const cl = a.cl, actual = sig && sig.id === a.id;
-    const tituloCorto = cl.titulo;
-    const img = '<div class="paso-img"><img src="' + esc(cl.img) + '" alt="' + esc(cl.alt || '') + '" width="640" height="640" loading="lazy" decoding="async"></div>';
     let estadoNodo = a.proximamente || a.bloqueada ? 'bloq' : a.terminado ? 'hecha' : actual ? 'actual' : a.empezo ? 'curso' : 'pend';
     const marcaNodo = estadoNodo === 'hecha' ? ico('check') : estadoNodo === 'bloq' ? ico('candado') : String(cl.n);
     const nodo = '<span class="nodo nodo-' + estadoNodo + '" aria-hidden="true">' + marcaNodo + '</span>';
 
     if (a.proximamente) {
       return '<li class="paso paso-bloq paso-prox">' + nodo +
-        '<article class="paso-card" aria-label="Clase ' + cl.n + ': próximamente">' + img +
-        '<div class="paso-cuerpo"><div class="paso-meta"><span class="paso-num">Clase ' + cl.n + '</span>' + pildoraMateria(null) + '</div>' +
-        '<h3>' + esc(cl.titulo) + '</h3><p class="paso-nota">' + ico('cohete') + ' Ignacio la está preparando. Aparecerá aquí.</p></div></article></li>';
+        '<div class="paso-mini" aria-label="Clase ' + cl.n + ': próximamente"><b>Clase ' + cl.n + ' · Próximamente</b><span>Ignacio la está preparando.</span></div></li>';
     }
     if (a.bloqueada) {
       return '<li class="paso paso-bloq">' + nodo +
-        '<article class="paso-card" aria-labelledby="c-' + cl.n + '">' + img +
-        '<div class="paso-cuerpo"><div class="paso-meta"><span class="paso-num">Clase ' + cl.n + '</span>' + pildoraMateria(cl.materia) + '</div>' +
-        '<h3 id="c-' + cl.n + '">' + esc(tituloCorto) + '</h3><p class="paso-nota">' + ico('candado') + ' Se abre el ' + esc(fechaLarga(cl.abre)) + '</p></div></article></li>';
+        '<div class="paso-mini"><b>Clase ' + cl.n + ' · ' + esc(corto(cl)) + '</b><span>' + ico('candado') + ' Se abre el ' + esc(fechaLarga(cl.abre)) + '</span></div></li>';
     }
-    const inds = '<ul class="inds" aria-label="Partes de la clase">' + a.ind.map(x =>
-      '<li class="ind ind-' + x.est + '"><span class="ind-cab">' + ico(x.icono) + x.n + '</span>' +
-      '<span class="meter meter-ind" aria-hidden="true"><span style="width:' + x.v + '%"></span></span>' +
-      '<span class="ind-txt">' + (x.est === 'hecho' ? ico('check') : '') + '<span>' + esc(x.txt) + '</span></span>' +
-      '<span class="sr">: ' + (x.est === 'hecho' ? 'hecho' : x.est === 'bajo' ? 'hecho, bajo la meta de ' + META_EXAMEN : x.est === 'curso' ? 'en curso' : 'pendiente') + '</span></li>').join('') + '</ul>';
-    const principal = !a.terminado;
-    return '<li class="paso paso-' + estadoNodo + '" style="' + estiloMateria(cl.materia) + '">' + nodo +
-      '<article class="paso-card" aria-labelledby="c-' + cl.n + '">' + img +
+    const partes = '<ul class="partes" aria-label="Partes de la clase">' + a.ind.map(x =>
+      '<li class="parte parte-' + x.est + '">' + (x.est === 'hecho' ? ico('check') : ico(x.icono)) + x.n + ' · ' + esc(x.txt) +
+      '<span class="sr">' + (x.est === 'hecho' ? ' (hecho)' : x.est === 'bajo' ? ' (bajo la meta de ' + META_EXAMEN + ')' : x.est === 'curso' ? ' (en curso)' : ' (pendiente)') + '</span></li>').join('') + '</ul>';
+    const img = '<div class="paso-img"><img src="' + esc(cl.img) + '" alt="' + esc(cl.alt || '') + '" width="640" height="640" loading="lazy" decoding="async"></div>';
+    const hid = 'c-' + (cl.materia || 'g') + cl.n;
+    return '<li class="paso paso-' + estadoNodo + '">' + nodo +
+      '<article class="paso-card" aria-labelledby="' + hid + '">' + img +
       '<div class="paso-cuerpo">' +
-        '<div class="paso-meta"><span class="paso-num">Clase ' + cl.n + '</span>' + pildoraMateria(cl.materia) + (actual ? '<span class="pildora pildora-aqui">Vas aquí</span>' : '') + '</div>' +
-        '<h3 id="c-' + cl.n + '">' + esc(tituloCorto) + '</h3>' +
-        '<p class="paso-estado">' + esc(a.estado) + '</p>' +
-        inds +
-        '<a class="btn ' + (principal ? 'btn-pri' : 'btn-sec') + '" href="' + esc(a.url) + '" data-abre="' + a.id + '">' + esc(a.cta) + '<span class="sr"> la clase ' + cl.n + '</span>' + ico('flecha') + '</a>' +
+        '<div class="paso-meta"><span class="paso-num">Clase ' + cl.n + '</span>' + (actual ? '<span class="pildora pildora-aqui">Vas aquí</span>' : '') + '</div>' +
+        '<h3 id="' + hid + '">' + esc(cl.titulo) + '</h3>' +
+        partes +
+        '<div class="paso-acciones">' +
+          '<a class="btn ' + (a.terminado ? 'btn-sec' : 'btn-pri') + '" href="' + esc(a.url) + '" data-abre="' + a.id + '">' + esc(a.cta) + '<span class="sr"> · ' + esc(nombreClase(cl)) + '</span>' + ico('flecha') + '</a>' +
+          (a.lamHechas && cl.resumen ? '<a class="enlace" href="' + esc(cl.resumen) + '" data-abre="' + a.id + '">Resumen en una foto</a>' : '') +
+        '</div>' +
       '</div></article></li>';
   }
 
   function pintarRuta(D) {
     const sig = siguiente(D);
-    $('#ruta').innerHTML = D.clases.map(a => nodoRuta(a, sig)).join('');
+    const grupos = [];
+    D.clases.forEach(a => {
+      const k = a.cl.materia || 'general';
+      let g = grupos.find(x => x.k === k);
+      if (!g) { g = { k, items: [] }; grupos.push(g); }
+      g.items.push(a);
+    });
+    $('#ruta').innerHTML = grupos.map(g => {
+      const m = materia(g.k);
+      return '<section class="materia" style="' + estiloMateria(g.k) + '" aria-labelledby="m-' + g.k + '">' +
+        '<h3 class="materia-cab" id="m-' + g.k + '"><span class="materia-ico">' + ico(m.icono) + '</span>' + esc(m.nombre) + '</h3>' +
+        '<ol class="ruta">' + g.items.map(a => nodoRuta(a, sig)).join('') + '</ol>' +
+      '</section>';
+    }).join('');
   }
 
   function pintarEvaluate(D) {
@@ -442,9 +400,9 @@
       const m = e.ev.materia ? materia(e.ev.materia) : GENERAL;
       return '<article class="eval" style="' + estiloMateria(e.ev.materia) + '">' +
         '<span class="eval-ico">' + ico(m.icono) + '</span>' +
-        '<div class="eval-cuerpo"><h3>' + esc(e.ev.titulo) + '</h3><p class="eval-det">' + esc(e.ev.detalle) + '</p>' +
+        '<div class="eval-cuerpo"><h3>' + esc(e.ev.titulo) + '</h3>' +
         (e.empezo
-          ? '<div class="eval-res">' + meterSimple(e.puntaje, 'Último intento ' + e.puntaje + ' %') + '<span>Último: <b>' + e.puntaje + ' %</b>' + (e.fecha ? ' · ' + fechaCorta(e.fecha) : '') + '</span></div>'
+          ? '<p class="eval-res">Último: <b>' + e.puntaje + ' %</b>' + (e.fecha ? ' · ' + fechaCorta(e.fecha) : '') + '</p>'
           : '<p class="eval-vacio">Aún no lo haces</p>') +
         '<a class="btn btn-sec btn-peq" href="' + esc(e.ev.url) + '" data-abre="' + e.id + '">' + (e.empezo ? 'Intentar de nuevo' : 'Empezar') + '<span class="sr"> · ' + esc(e.ev.titulo) + '</span>' + ico('flecha') + '</a>' +
         '</div></article>';
@@ -452,27 +410,17 @@
   }
 
   function pintarPractica(D) {
-    const porN = {}; D.clases.forEach(a => { porN[a.cl.n] = a; });
+    const porId = {}; D.clases.forEach(a => { porId[a.id] = a; });
     const items = [];
-    HERRAMIENTAS.forEach(h => items.push({ tipo: 'herr', h, a: porN[h.clase] }));
-    D.clases.forEach(a => { if (a.cl.juego && !a.proximamente) items.push({ tipo: 'juego', a }); });
+    D.clases.forEach(a => { if (a.cl.juego && !a.proximamente) items.push({ titulo: a.cl.nombreJuego || 'Juego de la clase', url: a.cl.juego, icono: 'juego', a }); });
+    HERRAMIENTAS.forEach(h => { const a = porId[h.clase]; if (a) items.push({ titulo: h.titulo, url: h.url, icono: h.icono, a, esHerr: true }); });
     $('#lista-practica').innerHTML = items.map(it => {
-      const a = it.a; if (!a) return '';
-      const cl = a.cl, origen = 'De la clase ' + cl.n + ' · ' + esc(corto(cl));
-      const titulo = it.tipo === 'juego' ? (cl.nombreJuego || 'Juego de la clase ' + cl.n) : it.h.titulo;
-      const desc = it.tipo === 'juego' ? '6 paradas para practicar lo de la clase, con estrellas.' : it.h.desc;
-      const url = it.tipo === 'juego' ? cl.juego : it.h.url;
-      const icono = it.tipo === 'juego' ? 'juego' : it.h.icono;
-      const bloqueo = a.bloqueada ? 'Se abre con la clase ' + cl.n : (it.tipo === 'juego' && !a.lamHechas) ? 'Se abre al terminar las láminas' : '';
-      if (bloqueo) {
-        return '<div class="herr herr-bloq" style="' + estiloMateria(cl.materia) + '">' +
-          '<span class="herr-ico">' + ico('candado') + '</span>' +
-          '<span class="herr-txt"><span class="herr-origen">' + origen + '</span><b>' + esc(titulo) + '</b><span>' + bloqueo + '</span>' +
-          (a.bloqueada ? '' : '<a class="enlace" href="' + esc(cl.url + (a.empezo ? '?ir=laminas' : '')) + '" data-abre="' + a.id + '">Ir a las láminas (' + a.pctL + ' %)</a>') + '</span></div>';
+      const a = it.a, cl = a.cl;
+      const bloqueado = a.bloqueada || (!it.esHerr && !a.lamHechas);
+      if (bloqueado) {
+        return '<span class="chip-herr chip-bloq" style="' + estiloMateria(cl.materia) + '" title="Se abre con ' + esc(corto(cl)) + '">' + ico('candado') + esc(it.titulo) + '</span>';
       }
-      return '<a class="herr" href="' + esc(url) + '" data-abre="' + a.id + '" style="' + estiloMateria(cl.materia) + '">' +
-        '<span class="herr-ico">' + ico(icono) + '</span>' +
-        '<span class="herr-txt"><span class="herr-origen">' + origen + '</span><b>' + esc(titulo) + '</b><span>' + esc(desc) + '</span></span>' + ico('flecha', 'ico-fin') + '</a>';
+      return '<a class="chip-herr" href="' + esc(it.url) + '" data-abre="' + a.id + '" style="' + estiloMateria(cl.materia) + '">' + ico(it.icono) + esc(it.titulo) + '</a>';
     }).join('');
   }
 
@@ -510,48 +458,6 @@
     }).join('') + resumen;
   }
 
-  function pintarRepasar(D) {
-    const conResumen = D.clases.filter(a => a.cl.resumen && !a.proximamente && !a.bloqueada);
-    // El resumen se abre al terminar las láminas: entrar antes por ?lamina= adelantaría el avance de la clase.
-    $('#lista-resumenes').innerHTML = conResumen.length ? conResumen.map(a => {
-      if (!a.lamHechas) {
-        return '<div class="herr herr-bloq" style="' + estiloMateria(a.cl.materia) + '">' +
-          '<span class="herr-ico">' + ico('candado') + '</span>' +
-          '<span class="herr-txt"><span class="herr-origen">Clase ' + a.cl.n + ' · ' + esc(materia(a.cl.materia).nombre) + '</span><b>Resumen en una foto</b><span>Se abre al terminar las láminas</span>' +
-          '<a class="enlace" href="' + esc(a.cl.url + (a.empezo ? '?ir=laminas' : '')) + '" data-abre="' + a.id + '">Ir a las láminas (' + a.pctL + ' %)</a></span></div>';
-      }
-      const nota = 'Ya viste esta clase';
-      return '<a class="herr resumen" href="' + esc(a.cl.resumen) + '" data-abre="' + a.id + '" style="' + estiloMateria(a.cl.materia) + '">' +
-        '<span class="herr-ico">' + ico('foto') + '</span>' +
-        '<span class="herr-txt"><span class="herr-origen">Clase ' + a.cl.n + ' · ' + esc(materia(a.cl.materia).nombre) + '</span><b>Resumen en una foto</b><span>' + esc(a.cl.titulo) + '</span><small>' + nota + '</small></span>' + ico('flecha', 'ico-fin') + '</a>';
-    }).join('') : '<p class="vacio">Los resúmenes aparecen cuando se abre cada clase.</p>';
-
-    const deb = debilidades(D), res = resultados(D);
-    let cab;
-    if (deb.length) {
-      const w = deb[0];
-      cab = '<p class="debil-eti">' + ico('diana') + ' Entrenar mis debilidades</p><h3>Te conviene reforzar: ' + esc(w.titulo) + '</h3><p class="debil-motivo">' + esc(w.motivo) + '</p>' +
-        '<a class="btn btn-pri btn-ancho" href="' + esc(w.url) + '" data-abre="' + w.a.id + '">' + ico('rayo') + esc(w.cta) + '</a>';
-    } else if (res.length || D.clasesHechas) {
-      cab = '<p class="debil-eti">' + ico('diana') + ' Entrenar mis debilidades</p><h3>¡Vas muy bien!</h3><p class="debil-motivo">Ninguna clase está por debajo de la meta. Repasa los resúmenes o ponte a prueba en «Evalúate».</p>';
-    } else {
-      cab = '<p class="debil-eti">' + ico('diana') + ' Entrenar mis debilidades</p><h3>Aún no hay nada que reforzar</h3><p class="debil-motivo">Cuando avances en una clase o hagas su examen, aquí te diré qué conviene repasar primero.</p>';
-    }
-    let cuerpo = '';
-    if (res.length) {
-      const peor = deb.length ? res.slice().sort((x, y) => (x.valor - x.meta) - (y.valor - y.meta))[0] : null;
-      cuerpo = '<div class="barras"><p class="mini-t" id="t-res">Tus resultados (0–100 %)</p>' +
-        '<ul class="barras-lista" aria-labelledby="t-res">' + res.map(r => {
-          const bajo = r.valor < r.meta;
-          return '<li class="barra-fila' + (peor === r && bajo ? ' foco' : '') + '" tabindex="0" data-tip="' + esc(r.nombre + ' · ' + r.detalle + ' · meta ' + r.meta + ' %') + '">' +
-            '<span class="barra-n">' + esc(r.nombre) + '</span>' +
-            '<span class="barra-pista"><span class="barra-v" style="width:' + Math.max(r.valor, 1) + '%"></span><span class="barra-meta" style="left:' + r.meta + '%" aria-hidden="true"></span></span>' +
-            '<span class="barra-num">' + r.valor + ' %' + (bajo ? '<span class="sr"> (bajo la meta de ' + r.meta + ' %)</span>' : '') + '</span></li>';
-        }).join('') + '</ul><p class="barras-ley"><span class="ley-meta" aria-hidden="true"></span> Meta: 72 % en exámenes (18/25) y 60 % en diagnósticos</p></div>';
-    }
-    $('#debilidades').innerHTML = '<div class="debil-cab">' + cab + '</div>' + cuerpo;
-  }
-
   function pintarPerfil(u) {
     $('#perfil-ini').textContent = iniciales(u);
     $('#aj-ini').textContent = iniciales(u);
@@ -563,7 +469,7 @@
     const u = usuario();
     if (!u) { mostrarRegistro(false); return; }
     const D = datos();
-    pintarHero(D, u); pintarRuta(D); pintarEvaluate(D); pintarLibre(); pintarPractica(D); pintarRepasar(D); pintarPerfil(u);
+    pintarHero(D, u); pintarRuta(D); pintarEvaluate(D); pintarLibre(); pintarPractica(D); pintarPerfil(u);
     $('#registro').hidden = true; $('#campus').hidden = false; $('#nav').hidden = false; $('#btn-ajustes').hidden = false;
   }
 
@@ -673,23 +579,6 @@
     const c = campus(); c.abiertos = obj(c.abiertos); c.abiertos[id] = new Date().toISOString(); guardarCampus(c);
   }
 
-  // Tooltip de las barras de resultados (hover y foco)
-  function tooltip() {
-    const tip = $('#tip');
-    function mostrar(el) {
-      const txt = el.getAttribute('data-tip'); if (!txt) return;
-      tip.textContent = txt; tip.hidden = false;
-      const r = el.querySelector('.barra-pista').getBoundingClientRect(), w = tip.offsetWidth;
-      const x = clamp(r.left + r.width / 2 - w / 2, 8, document.documentElement.clientWidth - w - 8);
-      tip.style.left = x + 'px'; tip.style.top = (r.top + window.scrollY - tip.offsetHeight - 8) + 'px';
-    }
-    const ocultar = () => { tip.hidden = true; };
-    document.addEventListener('pointerover', e => { const f = e.target.closest && e.target.closest('.barra-fila'); if (f) mostrar(f); });
-    document.addEventListener('pointerout', e => { const f = e.target.closest && e.target.closest('.barra-fila'); if (f && !f.contains(e.relatedTarget)) ocultar(); });
-    document.addEventListener('focusin', e => { const f = e.target.closest && e.target.closest('.barra-fila'); if (f) mostrar(f); else ocultar(); });
-    window.addEventListener('scroll', ocultar, { passive: true });
-  }
-
   function iniciar() {
     pintarBotonTema();
     $('#btn-tema').addEventListener('click', () => fijarTema(temaActual() === 'dark' ? 'light' : 'dark'));
@@ -708,7 +597,6 @@
     window.addEventListener('pageshow', e => { if (e.persisted) repintar(); });
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') repintar(); });
     window.addEventListener('storage', repintar);
-    tooltip();
     pintarCampus();
   }
 
