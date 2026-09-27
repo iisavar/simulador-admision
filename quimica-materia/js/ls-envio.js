@@ -4,7 +4,7 @@
   const LS = window.LS = window.LS || {};
 
   // Pega aquí la URL de la implementación web de quimica-materia-apps-script.gs
-  const URL_SCRIPT = '';
+  const URL_SCRIPT = 'https://script.google.com/macros/s/AKfycbwe9K11ec9TxTrQiHSAPtOWbIlq_fp_3pnzM1g4aMPVz9l3-JwO2e7xGYN9QaWcYr1k/exec';
 
   const oyentes = [];
   function id() { return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10); }
