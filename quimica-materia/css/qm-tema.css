@@ -824,3 +824,13 @@ button.qm-ley[aria-pressed="true"]{ border-color:var(--borde); box-shadow:2px 2p
 .jg-ignacio-cab{ display:flex; align-items:center; gap:12px; margin-bottom:8px; }
 .jg-ignacio-cara{ display:inline-grid; place-items:center; width:46px; height:46px; border-radius:50%; background:#FEF3C7; color:#8B5CF6; flex:none; border:2px solid #FACC15; }
 .jg-ignacio-cara svg{ width:32px; height:32px; }
+
+/* Micro-celebración: cuando la barra llega a 5/5 vibra brevemente */
+@media (prefers-reduced-motion:no-preference){
+  .jg-dom.jg-dom-lleno{ animation:labBarraLlena .55s cubic-bezier(.22,1.1,.36,1); }
+  @keyframes labBarraLlena{
+    0%{ transform:scale(1); }
+    35%{ transform:scale(1.08); filter:drop-shadow(0 0 8px rgba(43,174,102,.6)); }
+    100%{ transform:scale(1); }
+  }
+}

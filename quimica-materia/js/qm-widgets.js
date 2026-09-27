@@ -31,8 +31,8 @@
       + '.qm-atomo .qm-nuevo-e{animation:qmw-in-e .5s cubic-bezier(.2,.8,.2,1) both;transform-box:fill-box;transform-origin:center;}'
       + '@keyframes qmw-flash{0%{opacity:1;transform:none}40%{opacity:.55;transform:scale(.96)}100%{opacity:1;transform:none}}'
       + '.qm-con-dib.qm-quitar .qm-atomo{animation:qmw-flash .22s ease-out;}'
-      + '@keyframes qmw-halo{0%{box-shadow:0 0 0 0 rgba(16,185,129,0)}30%{box-shadow:0 0 0 4px rgba(16,185,129,.85),0 0 26px 8px rgba(16,185,129,.55)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}'
-      + '.qm-con-dib.qm-halo-ok{animation:qmw-halo .5s ease-out;}'
+      + '@keyframes qmw-halo{0%{box-shadow:0 0 0 0 rgba(16,185,129,0)}20%{box-shadow:0 0 0 6px rgba(16,185,129,.95),0 0 32px 10px rgba(16,185,129,.7)}60%{box-shadow:0 0 0 5px rgba(16,185,129,.6),0 0 20px 6px rgba(16,185,129,.35)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}'
+      + '.qm-con-dib.qm-halo-ok{animation:qmw-halo 1.1s ease-out;}'
       + '@media (prefers-reduced-motion: reduce){.qm-atomo .qm-orb-anim,.qm-atomo .qm-nuevo-p,.qm-atomo .qm-nuevo-n,.qm-atomo .qm-nuevo-e,.qm-con-dib.qm-quitar .qm-atomo,.qm-con-dib.qm-halo-ok{animation:none !important;}}'
       // Botones + / − del constructor: más grandes y con color por partícula
       + '.qm-con-fila .qm-pm{min-width:52px;min-height:52px;width:52px;height:52px;font-size:1.75rem;font-weight:900;border-radius:14px;border:2px solid rgba(0,0,0,.08);cursor:pointer;transition:transform .1s ease,box-shadow .12s ease,filter .12s ease;box-shadow:0 3px 0 rgba(0,0,0,.08);}'
@@ -507,7 +507,7 @@
       void dib.offsetWidth;
       dib.classList.add('qm-halo-ok');
       clearTimeout(haloTimer);
-      haloTimer = setTimeout(() => { if (dib) dib.classList.remove('qm-halo-ok'); }, 520);
+      haloTimer = setTimeout(() => { if (dib) dib.classList.remove('qm-halo-ok'); }, 1120);
     }
     function onClick(ev) {
       const b = ev.target.closest('.qm-pm');

@@ -144,7 +144,7 @@
 .qmj-cons-f.qmj-c-p output{ color:var(--pos-text); } .qmj-cons-f.qmj-c-n output{ color:var(--ink-3); } .qmj-cons-f.qmj-c-e output{ color:var(--neg-text); }
 
 /* ---------- Tarjetas de feedback ---------- */
-.jg-resp{ margin-top:auto; display:flex; flex-direction:column; gap:12px; }
+.jg-resp{ margin-top:12px; display:flex; flex-direction:column; gap:12px; }
 .jg-fb{ border-radius:var(--r-lg); padding:14px; display:flex; flex-direction:column; gap:8px; animation:subir var(--t) cubic-bezier(.2,.8,.2,1); }
 .jg-fb.ok{ background:var(--ok-soft); border-top:4px solid var(--ok); }
 .jg-fb.miss{ background:var(--miss-soft); border:2px solid var(--miss); border-top-width:4px; }

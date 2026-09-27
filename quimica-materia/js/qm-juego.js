@@ -750,7 +750,7 @@
       else if (s === '3b') o.q = 'Tienes un átomo de ' + it.iniNom + '. Conviértelo en su isótopo ' + nucNom(n) + '.';
       else if (s === '3c' || s === '3d') o.q = 'Tienes un átomo neutro de ' + it.iniNom + '. Conviértelo en el ion ' + ion + '.';
       else { o.q = 'Tienes un átomo neutro de ' + it.iniNom + '. Transfórmalo en este:'; o.nota = { A: n.A, Z: n.Z, s: n.s, q: n.q }; }
-      o.resp = C.p + ' p⁺, ' + C.n + ' n⁰, ' + C.e + ' e⁻';
+      o.resp = C.p + ' protones, ' + C.n + ' neutrones, ' + C.e + ' electrones';
       o.sol = lineasPNE(n);
       const p2 = s === '3b' ? 'Mismo elemento: no toques los protones. Cambia solo los neutrones hasta A = ' + n.A + '.'
         : s === '3c' ? 'Deja protones y neutrones como están. Quita ' + pl(n.q, 'electrón', 'electrones') + '.'
@@ -760,10 +760,10 @@
     } else if (/^4[a-e]$/.test(s)) {
       const n = it.nuc, C = pne(n);
       o.nota = { A: n.A, Z: n.Z, s: n.s, q: n.q, sinZ: !!it.sinZ };
-      o.q = it.sinZ ? 'Aquí no está escrito Z. Búscalo en la casilla y cuenta p⁺, n⁰ y e⁻.' : 'Cuenta los protones, neutrones y electrones de este ' + (s === '4b' ? 'isótopo' : tipoNuc(n)) + '.';
+      o.q = it.sinZ ? 'Aquí no está escrito Z. Búscalo en la casilla y cuenta los protones, neutrones y electrones.' : 'Cuenta los protones, neutrones y electrones de este ' + (s === '4b' ? 'isótopo' : tipoNuc(n)) + '.';
       if (it.sinZ) o.casilla = n.Z;
       o.sub = n.nota || '';
-      o.resp = C.p + ' p⁺, ' + C.n + ' n⁰, ' + C.e + ' e⁻';
+      o.resp = C.p + ' protones, ' + C.n + ' neutrones, ' + C.e + ' electrones';
       o.sol = lineasPNE(n);
       P(it.sinZ ? 'Z no está escrito, pero está en la casilla: es el número entero de arriba.' : REGLA_PNE,
         it.sinZ ? 'Para los neutrones usa A (arriba del símbolo), no la masa atómica con decimales.' : 'Aquí: ' + datosNuc(n), o.sol.join(' · '));
@@ -1233,7 +1233,7 @@
   // ---------- Piezas de la pantalla ----------
   function estadoHtml(k) {
     const nv = NV(k), j = J();
-    let dom = '<span class="jg-dom" role="img" aria-label="Barra de dominio: ' + nv.barra + ' de 5">';
+    let dom = '<span class="jg-dom' + (nv.barra >= 5 ? ' jg-dom-lleno' : '') + '" role="img" aria-label="Barra de dominio: ' + nv.barra + ' de 5">';
     for (let i = 0; i < 5; i++) dom += '<i class="' + (i < nv.barra ? 'llena' : '') + '"></i>';
     dom += '</span>';
     const es = '<span class="jg-escudo' + (nv.escudo ? '' : ' roto') + '" role="img" aria-label="' + (nv.escudo ? 'Escudo activo: te protege de 1 error' : 'Escudo usado') + '">' + ic('escudo') + '</span>';
@@ -1321,7 +1321,7 @@
     if (t === 'pne') {
       const C = G.correcta(it), vals = { p: null, n: null, e: null }, dado = {};
       if (it.facil) { vals.p = C.p; dado.p = true; }
-      const ET = { p: 'p⁺ protones', n: 'n⁰ neutrones', e: 'e⁻ electrones' };
+      const ET = { p: 'Protones', n: 'Neutrones', e: 'Electrones' };
       z.ctrl.innerHTML = '<div class="qmj-pne" role="group" aria-label="Tus tres respuestas">' + ['p', 'n', 'e'].map(c => '<button class="qmj-campo qmj-c-' + c + '" data-j="campo" data-c="' + c + '"><span class="qmj-campo-et">' + ET[c] + '</span><span class="qmj-campo-v">?</span></button>').join('') +
         '</div><div class="qmj-tec qmj-sinsigno"></div>';
       let act = null;
@@ -1392,7 +1392,7 @@
     if (v == null) return '—';
     if (t === 'opc') { const o = G.opciones(Object.assign({}, it, { facil: false })).find(x => x.v === String(v)); return o ? o.t : String(v); }
     if (t === 'num') return it.sub === '4f' && it.pide === 'carga' ? G.conSigno(v) : String(v);
-    if (t === 'pne' || t === 'cons') return 'p⁺ ' + v.p + ' · n⁰ ' + v.n + ' · e⁻ ' + v.e;
+    if (t === 'pne' || t === 'cons') return v.p + ' protones · ' + v.n + ' neutrones · ' + v.e + ' electrones';
     const e = G.elem(v); return e ? e.simbolo + ' (' + G.nomDe(e.z) + ')' : String(v);
   }
   function tarjetaBien(titulo, texto, extra, botones) {
