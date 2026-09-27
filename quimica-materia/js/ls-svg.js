@@ -131,5 +131,152 @@
     return s + '</span>';
   }
 
-  LS.svg = { recta, fichas, ficha, escalera, tablaSignos, cuentaNegativos, sello, estrellas, F };
+  // ---------- Banco de íconos SVG (química, estaciones del juego, personaje, feedback) ----------
+  // Estilo cuaderno de laboratorio: viewBox 0 0 24 24, trazo 2, redondeado, currentColor.
+  // Cada entrada guarda el interior del ícono; también se registran como <symbol id="i-<nombre>">
+  // en el sprite compartido, para que LS.ui.icon(nombre) los use igual que los originales.
+  const ICONOS = {
+    // --- Metáforas de laboratorio ---
+    probeta:
+      '<path d="M9 7v12a3 3 0 006 0V7z" fill="currentColor" fill-opacity="0.22" stroke="none"/>' +
+      '<path d="M9 3v16a3 3 0 006 0V3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+      '<path d="M8 3h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+      '<path d="M9 9.5h2.4M9 13h2M9 16.5h2.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
+    matraz:
+      '<path d="M10 8l-3.7 9.3A2 2 0 008.2 20h7.6a2 2 0 001.9-2.7L14 8z" fill="currentColor" fill-opacity="0.18" stroke="none"/>' +
+      '<path d="M9 3h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+      '<path d="M10 3v5l-3.7 9.3A2 2 0 008.2 20h7.6a2 2 0 001.9-2.7L14 8V3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<rect x="9" y="14.2" width="6" height="3.2" rx="0.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>',
+    mechero:
+      '<path d="M12 3.5c1.4 2 3 3.3 3 6a3 3 0 11-6 0c0-1.5.8-2.3 1.7-3.5.6-.8 1-1.5 1.3-2.5z" fill="currentColor" fill-opacity="0.32" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<rect x="10" y="13" width="4" height="7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<path d="M7 20h10l-1.2 1.5H8.2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>',
+    pipeta:
+      '<circle cx="12" cy="5" r="2" fill="none" stroke="currentColor" stroke-width="2"/>' +
+      '<path d="M11 7v10l1 1.5 1-1.5V7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<path d="M12 19.6c0 .5-.9 1-.9 1.7a.9 .9 0 001.8 0c0-.7-.9-1.2-.9-1.7z" fill="currentColor" stroke="none"/>',
+    microscopio:
+      '<circle cx="14" cy="5" r="1.8" fill="none" stroke="currentColor" stroke-width="2"/>' +
+      '<path d="M14 6.8v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+      '<rect x="11.5" y="10.8" width="5" height="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<path d="M8 15.2h11M12 15.2v2.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+      '<path d="M6 21h14M8 21l1.5-3h5L16 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>',
+    burbuja:
+      '<circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2"/>' +
+      '<ellipse cx="9.2" cy="9.2" rx="2" ry="1.3" fill="currentColor" fill-opacity="0.55" stroke="none" transform="rotate(-35 9.2 9.2)"/>',
+    gota:
+      '<path d="M12 3c-3 5-5 8-5 11a5 5 0 0010 0c0-3-2-6-5-11z" fill="currentColor" fill-opacity="0.25" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<path d="M9.7 14.3a2 2 0 001.6 2.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.65"/>',
+
+    // --- Estaciones del juego (una por parada) ---
+    'est-materia':
+      '<path d="M10 4v5l-3 8a2 2 0 001.9 2.7h6.2A2 2 0 0017 17l-3-8V4z" fill="currentColor" fill-opacity="0.18" stroke="none"/>' +
+      '<path d="M9 4h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+      '<path d="M10 4v5l-3 8a2 2 0 001.9 2.7h6.2A2 2 0 0017 17l-3-8V4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<circle cx="10" cy="17" r="0.9" fill="currentColor" stroke="none"/>' +
+      '<circle cx="13.5" cy="18" r="0.7" fill="currentColor" stroke="none"/>' +
+      '<circle cx="12.4" cy="15.2" r="0.6" fill="currentColor" stroke="none"/>',
+    'est-cambios':
+      '<path d="M12 7c1.2 2.3 3.8 3.5 3.8 6.5a3.8 3.8 0 11-7.6 0c0-1.5.8-2.2 1.8-3.5C10.6 8.9 11.4 8.3 12 7z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<path d="M4.5 6.5c1.4-1.6 3.4-1.6 4.8 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+      '<path d="M9.3 6.5l-1.8-1.6M9.3 6.5l-1.8 1.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>' +
+      '<path d="M19.5 17.5c-1.4 1.6-3.4 1.6-4.8 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+      '<path d="M14.7 17.5l1.8-1.6M14.7 17.5l1.8 1.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+    'est-atomo':
+      '<circle cx="12" cy="12" r="1.7" fill="currentColor" stroke="none"/>' +
+      '<ellipse cx="12" cy="12" rx="9" ry="3.5" fill="none" stroke="currentColor" stroke-width="2"/>' +
+      '<ellipse cx="12" cy="12" rx="9" ry="3.5" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(60 12 12)"/>' +
+      '<ellipse cx="12" cy="12" rx="9" ry="3.5" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(-60 12 12)"/>',
+    'est-particulas':
+      '<circle cx="8.5" cy="9.5" r="3.4" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="2"/>' +
+      '<circle cx="15.5" cy="9.5" r="3.4" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="2"/>' +
+      '<circle cx="12" cy="16" r="3.4" fill="currentColor" fill-opacity="0.15" stroke="currentColor" stroke-width="2"/>' +
+      '<text x="8.5" y="11" text-anchor="middle" font-size="4.2" font-weight="800" font-family="system-ui, sans-serif" fill="currentColor" stroke="none">p</text>' +
+      '<text x="15.5" y="11" text-anchor="middle" font-size="4.2" font-weight="800" font-family="system-ui, sans-serif" fill="currentColor" stroke="none">n</text>' +
+      '<text x="12" y="17.5" text-anchor="middle" font-size="4.2" font-weight="800" font-family="system-ui, sans-serif" fill="currentColor" stroke="none">e</text>',
+    'est-tabla':
+      '<rect x="4" y="4" width="4" height="4" fill="currentColor" fill-opacity="0.3" stroke="none"/>' +
+      '<rect x="3" y="3" width="18" height="18" rx="1.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<path d="M9 3v18M15 3v18M3 9h18M3 15h18" fill="none" stroke="currentColor" stroke-width="1.8"/>',
+    'est-jefe':
+      '<path d="M3 8l4 4 5-6 5 6 4-4v10H3z" fill="currentColor" fill-opacity="0.28" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<path d="M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+      '<circle cx="3" cy="8" r="1.3" fill="currentColor" stroke="none"/>' +
+      '<circle cx="21" cy="8" r="1.3" fill="currentColor" stroke="none"/>' +
+      '<circle cx="12" cy="6" r="1.3" fill="currentColor" stroke="none"/>',
+
+    // --- Personaje Ignacio (rostro estilizado, no retrato) ---
+    'ignacio-cara':
+      '<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>' +
+      '<circle cx="9" cy="10.6" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/>' +
+      '<circle cx="15" cy="10.6" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/>' +
+      '<path d="M11.2 10.6h1.6M6.9 10.6h-1M17.1 10.6h1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>' +
+      '<path d="M9 15.5c1 1.2 2 1.7 3 1.7s2-.5 3-1.7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+      '<circle cx="16.4" cy="14.6" r="0.75" fill="currentColor" stroke="none"/>',
+    'ignacio-piensa':
+      '<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>' +
+      '<circle cx="9" cy="10.6" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/>' +
+      '<circle cx="15" cy="10.6" r="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/>' +
+      '<path d="M11.2 10.6h1.6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>' +
+      '<path d="M6.4 8.3l1.7-1M17.6 8.3l-1.7-1" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>' +
+      '<path d="M9.6 16.4h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+      '<path d="M14.6 17c1.5 0 2.4-1 2.4-2.1v-1.2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>',
+    'ignacio-feliz':
+      '<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>' +
+      '<path d="M7 11c.8-1.3 2.2-1.3 3 0M14 11c.8-1.3 2.2-1.3 3 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' +
+      '<path d="M8 14.2c1.5 2.6 3 3.6 4 3.6s2.5-1 4-3.6z" fill="currentColor" fill-opacity="0.35" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<path d="M9.5 14.6c1 .5 4 .5 5 0" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>',
+
+    // --- Feedback / celebración ---
+    'sello-aprobado':
+      '<circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" stroke-width="2"/>' +
+      '<circle cx="12" cy="12" r="6.8" fill="none" stroke="currentColor" stroke-width="1.4"/>' +
+      '<path d="M8 12.3l2.8 2.8L16 9.6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>',
+    chispa:
+      '<path d="M12 3l1.9 6.1L20 12l-6.1 1.9L12 20l-1.9-6.1L4 12l6.1-1.9z" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<path d="M19.5 4.5v3M18 6h3" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>',
+    'corona-mini':
+      '<path d="M3 9l4 4 5-6 5 6 4-4v9H3z" fill="currentColor" fill-opacity="0.28" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>' +
+      '<path d="M3 15h18" fill="none" stroke="currentColor" stroke-width="1.6"/>' +
+      '<circle cx="12" cy="7" r="1" fill="currentColor" stroke="none"/>'
+  };
+
+  function icon(nombre, cls) {
+    const cuerpo = ICONOS[nombre];
+    if (!cuerpo) return '';
+    return '<svg class="' + (cls || '') + '" viewBox="0 0 24 24" aria-hidden="true" focusable="false">' + cuerpo + '</svg>';
+  }
+  function iconos() { return Object.keys(ICONOS); }
+
+  // Inyecta los íconos como <symbol id="i-<nombre>"> en el sprite compartido del index,
+  // para que LS.ui.icon(nombre) (basado en <use href="#i-...">) también los encuentre.
+  function inyectarSprite() {
+    try {
+      const doc = document;
+      let defs = doc.querySelector('svg > defs');
+      if (!defs) {
+        const wrap = doc.createElement('div');
+        wrap.setAttribute('aria-hidden', 'true');
+        wrap.style.cssText = 'position:absolute;width:0;height:0;overflow:hidden';
+        wrap.innerHTML = '<svg width="0" height="0"><defs></defs></svg>';
+        doc.body.appendChild(wrap);
+        defs = wrap.querySelector('defs');
+      }
+      Object.keys(ICONOS).forEach(nombre => {
+        const id = 'i-' + nombre;
+        if (doc.getElementById(id)) return;
+        const sym = doc.createElementNS('http://www.w3.org/2000/svg', 'symbol');
+        sym.setAttribute('id', id);
+        sym.setAttribute('viewBox', '0 0 24 24');
+        sym.innerHTML = ICONOS[nombre];
+        defs.appendChild(sym);
+      });
+    } catch (e) { /* silencioso: si no hay DOM listo, icon() sigue devolviendo el SVG en línea */ }
+  }
+  if (typeof document !== 'undefined') {
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', inyectarSprite, { once: true });
+    else inyectarSprite();
+  }
+
+  LS.svg = { recta, fichas, ficha, escalera, tablaSignos, cuentaNegativos, sello, estrellas, F, icon, iconos, ICONOS };
 })();

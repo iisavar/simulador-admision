@@ -256,13 +256,22 @@
     alcalinoterreo: 'un metal alcalinotérreo', transicion: 'un metal de transición', 'post-transicion': 'un metal del bloque p',
     metaloide: 'un metaloide', lantanido: 'un lantánido', actinido: 'un actínido' };
   const TIPO_NOM = { metal: 'un metal', 'no metal': 'un no metal', metaloide: 'un metaloide' };
+  // Cada familia trae un «hint» corto que se pega al enunciado la primera vez que la palabra aparece.
   const FAM = {
-    alcalino: { uno: 'metal alcalino', plural: 'metales alcalinos', g: '1 (sin el H)' },
-    alcalinoterreo: { uno: 'metal alcalinotérreo', plural: 'metales alcalinotérreos', g: '2' },
-    halogeno: { uno: 'halógeno', plural: 'halógenos', g: '17' },
-    'gas-noble': { uno: 'gas noble', plural: 'gases nobles', g: '18' },
-    transicion: { uno: 'metal de transición', plural: 'metales de transición', g: '3 al 12' }
+    alcalino: { uno: 'metal alcalino', plural: 'metales alcalinos', g: '1 (sin el H)',
+      hint: 'los del grupo 1 (sin el hidrógeno): son metales blandos y muy reactivos' },
+    alcalinoterreo: { uno: 'metal alcalinotérreo', plural: 'metales alcalinotérreos', g: '2',
+      hint: 'los del grupo 2: metales como el calcio de tus huesos o el magnesio' },
+    halogeno: { uno: 'halógeno', plural: 'halógenos', g: '17',
+      hint: 'los del grupo 17: forman sal cuando reaccionan (el cloro, el flúor…)' },
+    'gas-noble': { uno: 'gas noble', plural: 'gases nobles', g: '18',
+      hint: 'los del grupo 18: casi no reaccionan con nada (el helio, el neón…)' },
+    transicion: { uno: 'metal de transición', plural: 'metales de transición', g: '3 al 12',
+      hint: 'los metales del centro de la tabla (el hierro, el cobre, la plata, el oro…)' }
   };
+  // Recuerda qué familias ya se le presentaron al estudiante para no repetir la pista.
+  function marcarFamVista(clave) { const j = J(); j.famVistas = j.famVistas || {}; j.famVistas[clave] = true; guardar(); }
+  function famVistaYa(clave) { const j = J(); return !!(j.famVistas && j.famVistas[clave]); }
   const FAM_ITEMS = [['alcalino', 0], ['alcalino', 3], ['alcalino', 4], ['alcalinoterreo', 0], ['alcalinoterreo', 3], ['alcalinoterreo', 4],
     ['halogeno', 0], ['halogeno', 2], ['halogeno', 4], ['halogeno', 5], ['gas-noble', 0], ['gas-noble', 1], ['gas-noble', 3],
     ['transicion', 4], ['transicion', 5]];
@@ -315,9 +324,9 @@
     E_MATERIA: { txt: 'Materia es todo lo que tiene masa y ocupa un lugar. El aire sí; la luz y el sonido no.', lamina: 13 },
     E_ELEM_COMP: { txt: 'Elemento: un solo tipo de átomo (aunque vayan unidos, como O₂ u O₃). Compuesto: átomos distintos unidos.', lamina: 17 },
     E_HOMO_HET: { txt: 'Homogénea: se ve una sola fase. Heterogénea: se distinguen sus partes.', lamina: 17 },
-    E_PURA_HOMO: { txt: 'Que se vea uniforme no la hace pura: el suero, el agua de la llave y el aire son mezclas.', lamina: 17 },
-    E_COMP_MEZ: { txt: 'Compuesto y mezcla no son lo mismo: en un compuesto los átomos están unidos químicamente; en una mezcla las sustancias solo están juntas.', lamina: 17 },
-    E_PURA_MEZ: { txt: 'Sustancia pura: una sola sustancia. Si se juntan varias, es una mezcla.', lamina: 17 },
+    E_PURA_HOMO: { txt: 'Ojo con esto: que se vea toda igual no la hace pura. El suero, el agua de la llave y el aire se ven parejos, pero por dentro tienen varias cosas mezcladas.', lamina: 17 },
+    E_COMP_MEZ: { txt: 'Un compuesto tiene sus átomos UNIDOS químicamente (como el agua H₂O). Una mezcla solo tiene sustancias JUNTAS, sin unirse.', lamina: 17 },
+    E_PURA_MEZ: { txt: 'Pura = una sola cosa por dentro (como el agua destilada o el oro puro). Mezcla = dos o más cosas juntas, se distingan o no.', lamina: 17 },
     E_DISOLVER: { txt: 'Disolver es un cambio físico: el azúcar o la sal siguen ahí y se recuperan al evaporar.', lamina: 20 },
     E_BURBUJA: { txt: 'Las burbujas del agua que hierve son vapor de agua, no una sustancia nueva.', lamina: 20 },
     E_ESTADO_QUIM: { txt: 'Cambiar de estado es un cambio físico: la sustancia sigue siendo la misma.', lamina: 20 },
@@ -328,17 +337,17 @@
     E_SUBL: { txt: 'Sublimación progresiva: de sólido a gas. Regresiva: de gas a sólido (como la escarcha).', lamina: 14 },
     E_CONDEVAP: { txt: 'Vaporización: de líquido a gas. Condensación: de gas a líquido (las gotitas en el vaso frío).', lamina: 14 },
     E_FUSSOL: { txt: 'Fusión: de sólido a líquido. Solidificación: de líquido a sólido.', lamina: 14 },
-    E_P: { txt: 'Los protones son iguales a Z, el número atómico.', lamina: 34 },
-    E_P_A: { txt: 'No confundas A con Z: los protones son Z, el número de abajo.', lamina: 34 },
-    E_P_ION: { txt: 'En un ion los protones nunca cambian: solo cambian los electrones.', lamina: 38 },
-    E_P_ISO: { txt: 'Si cambian los protones, cambia el elemento. Un isótopo solo cambia los neutrones.', lamina: 37 },
-    E_N: { txt: 'Neutrones = A − Z.', lamina: 35 },
-    E_N_SUMA: { txt: 'Los neutrones se restan: n = A − Z (no A + Z).', lamina: 35 },
-    E_N_A: { txt: 'A cuenta protones y neutrones juntos: para los neutrones resta Z.', lamina: 35 },
-    E_N_Z: { txt: 'Z cuenta protones, no neutrones: n = A − Z.', lamina: 35 },
-    E_N_E: { txt: 'Los neutrones no dependen de los electrones: n = A − Z.', lamina: 35 },
-    E_N_ION: { txt: 'Para formar un ion no se tocan los neutrones.', lamina: 38 },
-    E_MASA: { txt: 'La masa atómica de la casilla (con decimales) no es A. A es entero y es el de un isótopo.', lamina: 52 },
+    E_P: { txt: 'Los protones son el número de abajo, el chiquito (Z). Ese número decide qué elemento es.', lamina: 34 },
+    E_P_A: { txt: 'Cuidado: A no son los protones. Los protones son Z (el número chico de abajo).', lamina: 34 },
+    E_P_ION: { txt: 'Al hacer un ion NUNCA se tocan los protones. Solo se ganan o pierden electrones.', lamina: 38 },
+    E_P_ISO: { txt: 'Si cambias los protones, cambias el elemento entero. Un isótopo cambia solo los neutrones (mismo elemento, más pesado).', lamina: 37 },
+    E_N: { txt: 'Para sacar los neutrones, resta A menos Z (los dos números que aparecen junto al símbolo).', lamina: 35 },
+    E_N_SUMA: { txt: 'Sumaste, pero los neutrones se sacan RESTANDO: n = A − Z.', lamina: 35 },
+    E_N_A: { txt: 'A cuenta protones Y neutrones juntos. Para los neutrones solos, réstale Z.', lamina: 35 },
+    E_N_Z: { txt: 'Z cuenta protones (no neutrones). Los neutrones son A − Z.', lamina: 35 },
+    E_N_E: { txt: 'Los neutrones no tienen que ver con los electrones. Solo dependen del núcleo: n = A − Z.', lamina: 35 },
+    E_N_ION: { txt: 'Al hacer un ion tampoco se tocan los neutrones. Solo cambian los electrones.', lamina: 38 },
+    E_MASA: { txt: 'Cuidado: el número con coma que ves grande en la casilla es la masa promedio de los isótopos. Para contar neutrones necesitas A (entero), y va arriba del símbolo.', lamina: 52 },
     E_E: { txt: 'Electrones = Z − carga. En un átomo neutro, electrones = protones.', lamina: 39 },
     E_E_CATION: { txt: 'Un catión perdió electrones: e⁻ = Z − carga (se resta, no se suma).', lamina: 38 },
     E_E_ANION: { txt: 'Un anión ganó electrones: tiene más electrones que protones.', lamina: 38 },
@@ -741,7 +750,6 @@
       else if (s === '3b') o.q = 'Tienes un átomo de ' + it.iniNom + '. Conviértelo en su isótopo ' + nucNom(n) + '.';
       else if (s === '3c' || s === '3d') o.q = 'Tienes un átomo neutro de ' + it.iniNom + '. Conviértelo en el ion ' + ion + '.';
       else { o.q = 'Tienes un átomo neutro de ' + it.iniNom + '. Transfórmalo en este:'; o.nota = { A: n.A, Z: n.Z, s: n.s, q: n.q }; }
-      if (it.experto) o.sub = 'Modo experto: el constructor no te muestra la carga ni la notación.';
       o.resp = C.p + ' p⁺, ' + C.n + ' n⁰, ' + C.e + ' e⁻';
       o.sol = lineasPNE(n);
       const p2 = s === '3b' ? 'Mismo elemento: no toques los protones. Cambia solo los neutrones hasta A = ' + n.A + '.'
@@ -790,12 +798,16 @@
       } else if (s === '5e') {
         const F = FAM[it.fam];
         o.q = it.per ? 'Toca ' + (uno ? 'el ' : 'un ') + F.uno + ' del periodo ' + it.per + '.' : 'Toca un ' + F.uno + '.';
+        // Primera vez que aparece esta familia: pegamos una definición corta bajo el enunciado.
+        if (F.hint && !famVistaYa(it.fam)) { o.sub = F.uno + ' = ' + F.hint + '.'; marcarFamVista(it.fam); }
         o.sol = ['Los ' + F.plural + ' están en el grupo ' + F.g + '. Sirve' + (uno ? '' : 'n') + ': ' + o.resp + '.'];
         P('Familias: alcalinos grupo 1 (sin el H), alcalinotérreos 2, halógenos 17, gases nobles 18, transición del 3 al 12.',
           'Los ' + F.plural + ' están en el grupo ' + F.g + (it.per ? '. Baja hasta la fila ' + it.per : '') + '.', o.sol[0]);
       } else {
         const k = COND[it.cond];
         o.q = k.t; o.sol = [k.ayuda];
+        // También los tipos «metaloide», «halGas», «noMetal16», etc. explican su palabra clave la primera vez.
+        if (!famVistaYa('cond-' + it.cond)) { o.sub = k.ayuda; marcarFamVista('cond-' + it.cond); }
         P('Metales a la izquierda y al centro; no metales arriba a la derecha; metaloides en la escalera.', k.ayuda, 'Sirve' + (uno ? '' : 'n') + ': ' + o.resp + '.');
       }
     } else if (s === '5g') {
@@ -855,32 +867,66 @@
   const ic = (id, cls) => LS.ui.icon(id, cls);
   const NP = 6; // paradas
   const NIV = {
-    1: { nombre: 'La materia', chip: 'MATERIA', que: 'Estados y clasificación', lam: [17, 13], tema: 'A',
-      regla: 'Sustancia pura: un elemento (un solo tipo de átomo) o un compuesto (átomos distintos unidos). Mezcla: varias sustancias juntas; homogénea si se ve una sola fase.',
+    1: { nombre: 'La materia', chip: 'Estación 1', ico: 'est-materia', que: 'Estados y clasificación', lam: [17, 13], tema: 'A',
+      regla: 'Una <b>sustancia pura</b> es de un solo tipo por dentro (agua destilada, oro puro). Una <b>mezcla</b> junta varias cosas: si se ve toda igual es <b>homogénea</b> (suero, aire); si se distinguen las partes es <b>heterogénea</b> (arena con agua).',
       bien: 'Separaste bien las sustancias puras de las mezclas.' },
-    2: { nombre: 'Los cambios', chip: 'CAMBIOS', que: 'Físico o químico · cambios de estado', lam: [20, 14], tema: 'A',
-      regla: 'Si se forma una sustancia nueva, el cambio es químico. Cambiar de estado o disolver es físico. Para nombrar un cambio de estado, mira de dónde sale y a dónde llega.',
+    2: { nombre: 'Los cambios', chip: 'Estación 2', ico: 'est-cambios', que: 'Físico o químico · cambios de estado', lam: [20, 14], tema: 'A',
+      regla: 'La clave es una pregunta: <b>¿apareció una sustancia nueva?</b> Si sí, cambio <b>químico</b>. Si solo cambió la forma o el estado, es <b>físico</b>. Para nombrar un cambio de estado, mira de dónde sale y a dónde llega.',
       bien: 'Reconociste bien los cambios.' },
-    3: { nombre: 'Constructor de átomos', chip: 'CONSTRUCTOR', que: 'Arma átomos, isótopos e iones', lam: [34, 37, 38], tema: 'B',
-      regla: 'Los protones dicen qué elemento es. Si cambias los neutrones, tienes otro isótopo. Si cambias los electrones, tienes un ion.',
+    3: { nombre: 'Constructor de átomos', chip: 'Estación 3', ico: 'est-atomo', que: 'Arma átomos, isótopos e iones', lam: [34, 37, 38], tema: 'B',
+      regla: 'Los <b>protones</b> son el DNI del átomo: si cambian, cambia el elemento. Si cambias los <b>neutrones</b>, tienes otro <b>isótopo</b> (mismo elemento, más pesado o liviano). Si cambias los <b>electrones</b>, tienes un <b>ion</b> (con carga).',
       bien: 'Armaste bien átomos, isótopos e iones.' },
-    4: { nombre: 'Cuenta partículas', chip: 'p · n · e', que: 'Protones, neutrones y electrones', lam: [39, 35, 38], tema: 'B',
-      regla: 'p⁺ = Z. n⁰ = A − Z. e⁻ = Z − carga: un catión perdió electrones y un anión los ganó.',
+    4: { nombre: 'Cuenta partículas', chip: 'Estación 4', ico: 'est-particulas', que: 'Protones, neutrones y electrones', lam: [39, 35, 38], tema: 'B',
+      regla: 'Truco rápido: los <b>protones</b> son el Z (número chico de abajo). Los <b>neutrones</b> = A − Z. Los <b>electrones</b> son los mismos que los protones, salvo que el átomo tenga carga (si perdió, restas; si ganó, sumas).',
       bien: 'Contaste bien las partículas.' },
-    5: { nombre: 'La tabla', chip: 'TABLA', que: 'Encuentra elementos y lee casillas', lam: [54, 52, 55, 56], tema: 'C',
-      regla: 'Grupo = columna (1 a 18). Periodo = fila (1 a 7). En la casilla, Z es el entero de arriba y la masa atómica es la que tiene decimales.',
+    5: { nombre: 'La tabla', chip: 'Estación 5', ico: 'est-tabla', que: 'Encuentra elementos y lee casillas', lam: [54, 52, 55, 56], tema: 'C',
+      regla: 'Cada elemento vive en una casilla. La <b>columna</b> se llama <b>grupo</b> (hay 18). La <b>fila</b> se llama <b>periodo</b> (hay 7). Dentro de la casilla, el número chico de arriba es <b>Z</b> (protones); el grande con coma es la <b>masa atómica</b>.',
       bien: 'Te moviste bien por la tabla.' },
-    6: { nombre: 'Jefe final', chip: 'JEFE', que: 'Todo mezclado, cada vez más difícil', lam: [17, 39, 54], tema: 'ABC',
-      regla: 'Preguntas de todas las paradas. Lee con calma, ubica qué te piden y usa la regla de esa parada.',
+    6: { nombre: 'Jefe final', chip: 'Jefe', ico: 'est-jefe', que: 'Todo mezclado, cada vez más difícil', lam: [17, 39, 54], tema: 'ABC',
+      regla: 'Preguntas de todas las paradas anteriores. Lee con calma, ubica qué te piden y aplica la regla de esa parada.',
       bien: 'Venciste al jefe del laboratorio.' }
   };
+  // Elogios por SUBTIPO de pregunta (no por parada): así el mensaje siempre coincide con lo que resolviste.
+  // Si un ejercicio no coincide, se cae al genérico ELOGIO_GEN.
+  const ELOGIO_GEN = ['¡Eso es!', 'Ahí está.', 'Bien pensado.', 'Buena.', 'Justo.'];
+  const ELOGIO_SUB = {
+    // Parada 1
+    '1a': ['Ese es el estado a temperatura ambiente.', 'Ahí lo tienes: bien clasificado.', 'Le pegaste al estado.'],
+    '1b': ['Buen ojo: eso sí (o no) tiene masa y ocupa lugar.', 'Distinguiste materia de energía. Bien.', '¡Eso! Correcto.'],
+    '1c': ['Lo clasificaste bien.', 'Distinguiste sustancia pura de mezcla, y de qué tipo.', 'Buena. Reconociste el tipo de materia.'],
+    '1d': ['Pura o mezcla: bien resuelto.', 'Miraste bien lo que tenía por dentro.', 'Ese es el detalle: bien.'],
+    // Parada 2
+    '2a': ['Buscaste si aparecía una sustancia nueva. Así se hace.', 'Físico o químico bien decidido.', 'Ahí está: leíste el cambio bien.'],
+    '2b': ['Ese es el estado de origen y llegada. Bien.', 'Viste bien de qué estado sale y a cuál llega.', 'Bien: reconociste el cambio de estado.'],
+    '2c': ['Le pusiste el nombre correcto al cambio.', 'Ese es su nombre: bien.'],
+    '2d': ['Bien pensado: cambiaste el estado en la dirección correcta.', 'Ahí está: dirección del cambio bien resuelta.'],
+    // Parada 3
+    '3a': ['Átomo neutro bien armado.', 'Protones y electrones iguales: átomo neutro.', '¡Eso! Ese es el átomo.'],
+    '3b': ['Isótopo bien armado: solo cambiaron los neutrones.', 'Bien: mantuviste los protones y cambiaste los neutrones.', 'Ahí está tu isótopo.'],
+    '3c': ['Ion bien armado: solo cambiaron los electrones.', 'Ahí está: la carga viene de los electrones.', 'Ese es el ion.'],
+    '3d': ['Ion armado: bien.', 'Reconociste que solo cambian los electrones.', 'Ahí está tu ion.'],
+    // Parada 4
+    '4a': ['Ese es el número de protones.', 'Los protones son el Z: bien.'],
+    '4b': ['Neutrones bien contados: A − Z.', 'Bien: restaste A menos Z.'],
+    '4c': ['Ese es el número de electrones.', 'Los electrones bien contados.'],
+    '4d': ['Elemento bien identificado por su Z.', 'Ese es el elemento.'],
+    '4e': ['Ese es el número de masa A.', 'Bien: sumaste protones y neutrones.'],
+    '4f': ['Bien: contaste con la carga en mente.', 'Ese dato es correcto.'],
+    '4g': ['Bien: tres números correctos.', 'Los tres datos correctos.', 'Todo cuadra: bien.'],
+    // Parada 5
+    '5a': ['Lo encontraste en la tabla.', 'Ahí está el elemento.'],
+    '5b': ['Ubicaste bien el símbolo.', 'Reconociste el símbolo.'],
+    '5c': ['Columna y fila bien leídas.', 'Ese es el grupo y periodo.'],
+    '5d': ['Ese es el grupo.', 'Bien: encontraste el grupo.'],
+    '5e': ['Reconociste bien la familia.', 'Esa es la familia.'],
+    '5f': ['Metal, no metal o metaloide: bien.', 'Distinguiste bien el tipo.'],
+    '5g': ['Leíste bien el número atómico.', 'Bien: Z reconocido.'],
+    '5h': ['Leíste bien la masa atómica.', 'Bien: la masa atómica es la que tiene coma.']
+  };
+  // Elogios genéricos por parada, usados solo cuando el subtipo no está mapeado o para variedad.
   const ELOGIO_NIV = {
-    1: ['Lo clasificaste perfecto.', 'Viste bien si era una o varias sustancias.', 'Buen ojo con las fases.'],
-    2: ['Buscaste la sustancia nueva: así es.', 'Viste de qué estado salía y a cuál llegaba.', 'Bien pensado.'],
-    3: ['Átomo bien armado.', 'Tocaste justo las partículas que había que tocar.', 'Protones, neutrones y electrones en su sitio.'],
-    4: ['Contaste bien las tres.', 'p = Z, n = A − Z y la carga bien leída.', 'Cuentas limpias.'],
-    5: ['Lo encontraste en la tabla.', 'Columna y fila bien leídas.', 'Ya te mueves por la tabla.'],
-    6: ['¡Golpe al jefe!', 'Eso es dominar el laboratorio.', 'Ni el jefe te detiene.']
+    1: ELOGIO_GEN, 2: ELOGIO_GEN, 3: ELOGIO_GEN, 4: ELOGIO_GEN, 5: ELOGIO_GEN,
+    6: ['¡Golpe al jefe!', 'Le bajaste otro punto de vida al jefe.', 'El jefe está sudando: sigue así.']
   };
   const LOGROS = {
     detective: 'Detective: corregiste tu error en el gemelo',
@@ -1119,14 +1165,22 @@
   // ---------- Tarjeta «Antes de jugar» ----------
   function antesDeJugar(k) {
     const nv = NV(k), m = NIV[k], yaHecho = hecho(k);
+    const j = J();
+    const primeraVezReglas = !j.regViste;   // Solo la primera parada muestra las 3 reglas grandes; después, un botón «Cómo se juega».
+    if (primeraVezReglas) { j.regViste = true; guardar(); }
     LS.setColor('full');
+    const reglasHtml = '<ul class="jg-criterio">' +
+      '<li>' + ic('escudo', 'jg-escudo-ico') + '<span><b>Escudo:</b> te protege de 1 error en cada parada.</span></li>' +
+      '<li><span class="jg-dom-mini" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span><b>La barra:</b> aciertas a la primera y sube; te equivocas y baja. Pasas con la barra llena y al menos ' + minItems(k) + ' ejercicios.</span></li>' +
+      '<li>' + svgs().estrellas(3, 3) + '<span><b>Estrellas:</b> 3 con 85 % o más a la primera · 2 con 65 % · 1 al superar la parada.</span></li></ul>';
+    const reglasBloque = primeraVezReglas
+      ? reglasHtml
+      : '<details class="jg-reglas-det"><summary>' + ic('foco') + ' Cómo se juega</summary>' + reglasHtml + '</details>';
     pintar('<div class="pantalla jg">' + topBar('Parada ' + k + ' de ' + NP, m.nombre) +
-      '<div class="tarjeta jg-antes"><p class="jg-kicker">Antes de jugar</p><h2>' + m.nombre + '</h2>' + chips([m.chip]) +
-      '<p class="jg-regla">' + esc(m.regla) + '</p><h3 class="jg-h3">Ejemplo resuelto</h3><div class="qmj-ej">' + ejemploHtml(k) + '</div>' +
-      '<ul class="jg-criterio">' +
-      '<li>' + ic('escudo', 'jg-escudo-ico') + '<span>Tu escudo te protege de 1 error en esta parada.</span></li>' +
-      '<li><span class="jg-dom-mini" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>Llena la barra: acierto a la primera +1, error −1 (nunca baja de 0). Pasas con la barra llena y al menos ' + minItems(k) + ' ejercicios.</span></li>' +
-      '<li>' + svgs().estrellas(3, 3) + '<span>3 estrellas con 85 % o más a la primera · 2 con 65 % · 1 al superar la parada. Nunca por tiempo.</span></li></ul></div>' +
+      '<div class="tarjeta jg-antes"><p class="jg-kicker">Antes de jugar</p>' +
+      '<div class="jg-antes-cab"><span class="jg-est-ico" aria-hidden="true">' + ic(m.ico || 'foco') + '</span><h2>' + m.nombre + '</h2></div>' + chips([m.chip]) +
+      '<p class="jg-regla">' + m.regla + '</p><h3 class="jg-h3">Ejemplo resuelto</h3><div class="qmj-ej">' + ejemploHtml(k) + '</div>' +
+      reglasBloque + '</div>' +
       '<div class="jg-acciones"><button class="btn btn-pri btn-ancho" data-j="jugar">' + (yaHecho ? 'Repetir por más estrellas' : (nv.items ? 'Seguir jugando' : 'Jugar')) + '</button>' +
       '<button class="btn btn-sec btn-ancho" data-j="lamina">Repasar la lámina</button></div></div>', 'antes');
     acc = { jugar: () => entrarNivel(k, yaHecho), lamina: () => verLamina(m.lam[0]) };
@@ -1142,6 +1196,7 @@
       if (j.itemEnCurso && j.itemEnCurso.nivel === k) j.itemEnCurso = null;
     }
     nv.escudo = true;
+    j.racha = 0;  // La racha se reinicia al entrar a otra parada: no se arrastra entre paradas.
     j.ultimaSesion = LS.hoy();
     logrosSesion = [];
     guardar();
@@ -1182,7 +1237,7 @@
     for (let i = 0; i < 5; i++) dom += '<i class="' + (i < nv.barra ? 'llena' : '') + '"></i>';
     dom += '</span>';
     const es = '<span class="jg-escudo' + (nv.escudo ? '' : ' roto') + '" role="img" aria-label="' + (nv.escudo ? 'Escudo activo: te protege de 1 error' : 'Escudo usado') + '">' + ic('escudo') + '</span>';
-    const racha = '<span class="jg-racha' + (j.racha >= 5 ? ' grande' : '') + '" aria-label="Racha de ' + j.racha + '">' + ic('rayo') + '×' + j.racha + '</span>';
+    const racha = '<span class="jg-racha' + (j.racha >= 5 ? ' grande' : '') + '" aria-label="Racha de ' + j.racha + '"><span class="jg-racha-eti">Racha</span>' + ic('rayo') + '×' + j.racha + '</span>';
     return '<div class="jg-estado">' + dom + es + '<span class="esp"></span>' + racha + '</div>';
   }
   function vidaHtml() {
@@ -1280,7 +1335,7 @@
           b.disabled = !!dado[c] || listo;
         });
         const faltan = ['p', 'n', 'e'].filter(c => vals[c] == null && c !== act).length;
-        const bt = tk.raiz && tk.raiz.querySelector('.btn-comprobar'); if (bt) bt.textContent = faltan ? 'Anotar' : 'Comprobar';
+        const bt = tk.raiz && tk.raiz.querySelector('.btn-comprobar'); if (bt) bt.textContent = faltan ? 'Guardar y seguir' : 'Comprobar';
       };
       const elegir = (c) => { act = c; vals[c] = null; tk.limpiar(); pintarC(); };
       function siguiente() {
@@ -1309,7 +1364,7 @@
         '<button class="btn btn-txt" data-j="reiniciar">' + ic('reintentar') + ' Volver a empezar</button></div>';
       acc.armar = () => { if (listo) return; listo = true; const v = cons.valores(); try { cons.bloquear(['p', 'n', 'e']); } catch (e) { } z.ctrl.innerHTML = ''; onResp({ p: v.p, n: v.n, e: v.e }); };
       acc.reiniciar = () => { if (!listo) cons.fijar({ p: it.ini.p, n: it.ini.n, e: it.ini.e }); };
-      return { marcar() { } };
+      return { marcar(d) { if (d && d.cod === 'OK') { try { if (cons.marcarOk) cons.marcarOk(); } catch (e) { } } } };
     }
     // tabla
     if (!QM().tabla || !G.elem(1)) {
@@ -1317,14 +1372,17 @@
       z.ctrl.innerHTML = '<button class="btn btn-sec btn-ancho" data-j="mapa">Volver al mapa</button>';
       return { marcar() { } };
     }
-    const tb = QM().tabla(z.obra, { modo: 'elegir', colorear: 'ninguno', mostrarNumeracion: 'ambas', leyenda: false, onElegir: (e) => { if (listo) return; listo = true; onResp(e.z); } });
+    // La tabla del juego se colorea por familia (ayuda a distinguir alcalinos, halógenos, etc.) y
+    // usa solo numeración moderna (1..18) — la doble numeración marea al principio.
+    const tb = QM().tabla(z.obra, { modo: 'elegir', colorearPorFamilia: true, mostrarNumeracion: 'iupac', leyenda: false, onElegir: (e) => { if (listo) return; listo = true; onResp(e.z); } });
     limpiezas.push(() => { try { tb.destruir(); } catch (e) { } });
     if (it.facil) { const f = zonaFacil(it); if (f) tb.resaltar(f); }
     z.ctrl.innerHTML = '<p class="qmj-toca">' + ic('foco') + ' Toca tu respuesta en la tabla.</p>';
     return {
       marcar(d, z0) {
         tb.marcar(z0, d.cod === 'OK' ? 'ok' : 'miss');
-        if (d.cod !== 'OK') { const cs = G.correctas(it); cs.slice(0, 8).forEach(e => tb.marcar(e.z, 'ok')); if (cs[0] && tb.enfocar) tb.enfocar(cs[0].z); }
+        if (d.cod === 'OK') { try { if (tb.resaltarZ) tb.resaltarZ(z0); } catch (e) { } }
+        else { const cs = G.correctas(it); cs.slice(0, 8).forEach(e => tb.marcar(e.z, 'ok')); if (cs[0] && tb.enfocar) tb.enfocar(cs[0].z); }
         z.ctrl.innerHTML = '';
       }
     };
@@ -1367,7 +1425,13 @@
     if (k) { const e = NV(k).errores; e[cod] = (e[cod] || 0) + 1; }
   }
   let iElog = 0;
-  function elogioDe(k) { const l = ELOGIO_NIV[k]; return l ? l[(iElog++) % l.length] : ui().elogio(); }
+  // Elogio contextual: usa el subtipo del ítem (así el mensaje coincide con lo que resolvió el estudiante).
+  // Si no hay elogio específico para ese subtipo, cae al genérico de la parada.
+  function elogioDe(itOk, k) {
+    const sub = itOk && itOk.sub;
+    const l = (sub && ELOGIO_SUB[sub]) || ELOGIO_NIV[k];
+    return l && l.length ? l[(iElog++) % l.length] : ui().elogio();
+  }
   function refrescarEstado(k) {
     const e = root.querySelector('.jg-estado'); if (e) e.outerHTML = estadoHtml(k);
     const v = root.querySelector('.jg-vida'); if (v && k === 6) v.outerHTML = vidaHtml();
@@ -1386,6 +1450,7 @@
     if (ec.rescate) av = '<div class="caja-nota"><b>Modo rescate.</b> Primer paso ya hecho: ' + esc(inf.pistas[1]) + '</div>';
     else if (ec.gemelo) av = '<p class="jg-etq">Uno parecido, para que lo corrijas</p>';
     else if (ec.previo) av = '<p class="jg-etq">Repaso de una parada anterior</p>';
+    else if (it.experto) av = '<p class="jg-etq">' + ic('rayo') + ' Vas tan bien que subo la dificultad: el constructor no te va a mostrar la carga ni el nombre completo. ¡A por ella!</p>';
     pintar('<div class="pantalla jg jg-ej qmj-ej' + (inf.tipo === 'tabla' ? ' qmj-ancho' : '') + '">' + topBar('Parada ' + k + ' · ' + NIV[k].nombre, NIV[k].que) +
       estadoHtml(k) + (k === 6 ? vidaHtml() : '') + herramientas(true) + '<div class="jg-aviso">' + av + '</div>' + enunHtml(inf) + HUECOS + '</div>', 'ej');
     enJuego = true; toque();
@@ -1434,12 +1499,12 @@
       ui().sonido('ok');
       const tit = ec.gemelo ? '¡Eso, ' + esc(LS.nombre()) + '! Corregiste tu error' : '¡Bien, ' + esc(LS.nombre()) + '!';
       const extra = inf.tipo === 'opc' || inf.tipo === 'tabla' ? '<p class="peq">' + esc(inf.sol[0]) + '</p>' : '';
-      z.fb.innerHTML = tarjetaBien(tit, esc(elogioDe(k)), extra, '<button class="btn btn-pri btn-ancho" data-j="sig">Siguiente' + ic('sig') + '</button>');
+      z.fb.innerHTML = tarjetaBien(tit, esc(elogioDe(it, k)), extra, '<button class="btn btn-pri btn-ancho" data-j="sig">Siguiente' + ic('sig') + '</button>');
       const en = root.querySelector('.jg-enun'); if (en && !LS.menosMovimiento()) en.classList.add('pop');
       celebrarRacha();
     } else {
       z.fb.innerHTML = (escudoUsado ? '<p class="jg-escudo-msg">' + ic('escudo') + ' Tu escudo te protegió de este error: la barra no bajó.</p>' : '') +
-        tarjetaCasi(it, inf, v, d, '<button class="btn btn-pri btn-ancho" data-j="sig">Entendido</button>');
+        tarjetaCasi(it, inf, v, d, '<button class="btn btn-pri btn-ancho" data-j="sig">Ok, seguir</button>');
       const fb = z.fb.querySelector('.jg-fb'); if (fb && !LS.menosMovimiento()) fb.classList.add('sacudir');
     }
     acc.sig = () => despuesNivel(k, ok ? null : d);
@@ -1510,15 +1575,16 @@
         '<p><b>Lo que hiciste bien:</b> «' + esc(NIV[k].bien) + '»</p>';
       ui().confeti(); ui().sonido('nivel');
     } else {
-      h += '<h2>Seguimos, ' + nom + '</h2><p>Este tema lo reforzamos juntos. Tu avance quedó guardado.</p>' +
-        '<p>Vamos a la siguiente parada. Este tema lo repasamos al final; tu profe también lo verá.</p>';
+      h += '<h2>Seguimos, ' + nom + '</h2><p>Este tema quedó marcado como «por repasar» — nada grave. Vamos a la siguiente parada y al final volvemos aquí con la lámina.</p>';
     }
     if (top && ERR[top]) h += '<p><b>Para cuidar:</b> ' + esc(ERR[top].txt) + '</p>';
     logrosSesion.forEach(id => { h += '<p class="jg-logro">' + ic('estrella') + ' Logro nuevo: ' + esc(LOGROS[id] || id) + '</p>'; });
     logrosSesion = [];
     h += '<p class="peq tinta-2">Puedes parar aquí: tu avance quedó guardado.</p></div>';
     if (k === NP) {
-      h += '<div class="tarjeta jg-ignacio"><p class="jg-kicker">Mensaje de Ignacio</p><p>Llegaste al final del laboratorio por tu cuenta. Eso ya es mucho. Ahora demuestra lo que sabes en el test (25 preguntas, sin tiempo). Puedes hacerlo ahora o mañana: se guarda solo.</p></div>' +
+      h += '<div class="tarjeta jg-ignacio">' +
+        '<div class="jg-ignacio-cab"><span class="jg-ignacio-cara" aria-hidden="true">' + ic('ignacio-feliz') + '</span><p class="jg-kicker" style="margin:0">Mensaje de Ignacio</p></div>' +
+        '<p>Llegaste al final del laboratorio por tu cuenta, ' + nom + '. Eso ya es mucho, en serio. Ahora, cuando quieras, vas al test: son 25 preguntas, sin tiempo, y puedes hacerlo hoy o mañana — se guarda solo. — Ignacio</p></div>' +
         '<div class="jg-acciones"><button class="btn btn-sec btn-ancho" data-j="calent">Calentamiento de 6 ejercicios</button>' +
         '<button class="btn btn-pri btn-ancho" data-j="test">Ir al test</button>' +
         '<button class="btn btn-premio btn-ancho" data-j="relampago">' + ic('rayo') + ' Reto relámpago</button>' +
@@ -1635,13 +1701,13 @@
         if (d.cod === 'OK') {
           j.racha++; if (j.racha > (j.mejorRachaGlobal || 0)) j.mejorRachaGlobal = j.racha;
           ui().sonido('ok');
-          z.fb.innerHTML = tarjetaBien('¡Bien, ' + esc(LS.nombre()) + '!', esc(elogioDe(c.k)), '', '<button class="btn btn-pri btn-ancho" data-j="sig">Siguiente' + ic('sig') + '</button>');
+          z.fb.innerHTML = tarjetaBien('¡Bien, ' + esc(LS.nombre()) + '!', esc(elogioDe(it, c.k)), '', '<button class="btn btn-pri btn-ancho" data-j="sig">Siguiente' + ic('sig') + '</button>');
         } else {
           contarError(d.cod, null); j.racha = 0;
           fallosNiv[c.k] = (fallosNiv[c.k] || 0) + 1;
           if (fallosNiv[c.k] === 1) { const gm = G.gemelo(it, { recientes: j.recientes }); if (gm) cola.unshift({ k: c.k, item: gm }); }
           else if (recs.indexOf(c.k) < 0) recs.push(c.k);
-          z.fb.innerHTML = tarjetaCasi(it, inf, v, d, '<button class="btn btn-pri btn-ancho" data-j="sig">Entendido</button>');
+          z.fb.innerHTML = tarjetaCasi(it, inf, v, d, '<button class="btn btn-pri btn-ancho" data-j="sig">Ok, seguir</button>');
         }
         guardar();
         acc.sig = uno;

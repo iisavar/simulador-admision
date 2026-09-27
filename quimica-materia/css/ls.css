@@ -432,11 +432,11 @@ svg .ficha.cancelar{ animation:cancelarFicha .5s ease-in forwards; animation-del
   .hub .estacion .est-ico{ width:72px; height:72px; font-size:1.6rem; }
   .hub .estacion .est-flecha{ display:none; }
   .hub > .btn-pri{ max-width:420px; align-self:center; }
-  /* Juego: ejercicio a la izquierda, teclado a la derecha */
-  #app .jg-ej{ display:grid; grid-template-columns:minmax(0,1fr) 400px; column-gap:48px; align-content:start; padding:24px 48px; }
-  #app .jg-ej > *{ grid-column:1; }
-  #app .jg-ej > .jg-resp{ grid-column:2; grid-row:1 / span 30; align-self:start; }
-  #app .jg-ej .enunciado .fx-grande{ font-size:3rem; }
+  /* Juego: pregunta arriba centrada, respuestas debajo (nada flotando a un costado). */
+  #app .jg-ej{ display:flex; flex-direction:column; align-items:stretch; gap:16px; max-width:720px; margin:0 auto; padding:24px 32px; width:100%; }
+  #app .jg-ej.qmj-ancho{ max-width:1040px; }
+  #app .jg-ej > *{ width:100%; }
+  #app .jg-ej .enunciado .fx-grande{ font-size:2.6rem; }
   #app .jg:not(.jg-ej), #app .ts{ max-width:780px; margin:0 auto; width:100%; }
 }
 @media (min-width:640px) and (prefers-color-scheme: dark){

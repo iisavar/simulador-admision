@@ -14,6 +14,43 @@
   let uid = 0;
   const nuevoId = (p) => 'qm' + (p || '') + (++uid);
 
+  // ---------- CSS extra inyectada (una sola vez) para animaciones y hovers ----------
+  function inyectarCSS() {
+    if (typeof document === 'undefined' || document.getElementById('qm-widgets-inline')) return;
+    const st = document.createElement('style');
+    st.id = 'qm-widgets-inline';
+    st.textContent = ''
+      + '.qm-con-dib{overflow:hidden;position:relative;border-radius:16px;}'
+      + '.qm-con-dib .qm-atomo{overflow:hidden !important;display:block;max-width:100%;}'
+      + '@keyframes qmw-rot{to{transform:rotate(360deg);}}'
+      + '.qm-atomo .qm-orb-anim{animation:qmw-rot 8s linear infinite;transform-box:view-box;transform-origin:50% 50%;}'
+      + '.qm-atomo .qm-orb-anim.qm-orb-inv{animation-direction:reverse;}'
+      + '@keyframes qmw-pop{0%{transform:scale(0);opacity:0}65%{transform:scale(1.35);opacity:1}100%{transform:scale(1);opacity:1}}'
+      + '.qm-atomo .qm-nuevo-p,.qm-atomo .qm-nuevo-n{animation:qmw-pop .35s cubic-bezier(.34,1.56,.64,1) both;transform-box:fill-box;transform-origin:center;}'
+      + '@keyframes qmw-in-e{0%{opacity:0;transform:scale(0) rotate(-180deg)}70%{opacity:1;transform:scale(1.15) rotate(-20deg)}100%{opacity:1;transform:scale(1) rotate(0)}}'
+      + '.qm-atomo .qm-nuevo-e{animation:qmw-in-e .5s cubic-bezier(.2,.8,.2,1) both;transform-box:fill-box;transform-origin:center;}'
+      + '@keyframes qmw-flash{0%{opacity:1;transform:none}40%{opacity:.55;transform:scale(.96)}100%{opacity:1;transform:none}}'
+      + '.qm-con-dib.qm-quitar .qm-atomo{animation:qmw-flash .22s ease-out;}'
+      + '@keyframes qmw-halo{0%{box-shadow:0 0 0 0 rgba(16,185,129,0)}30%{box-shadow:0 0 0 4px rgba(16,185,129,.85),0 0 26px 8px rgba(16,185,129,.55)}100%{box-shadow:0 0 0 0 rgba(16,185,129,0)}}'
+      + '.qm-con-dib.qm-halo-ok{animation:qmw-halo .5s ease-out;}'
+      + '@media (prefers-reduced-motion: reduce){.qm-atomo .qm-orb-anim,.qm-atomo .qm-nuevo-p,.qm-atomo .qm-nuevo-n,.qm-atomo .qm-nuevo-e,.qm-con-dib.qm-quitar .qm-atomo,.qm-con-dib.qm-halo-ok{animation:none !important;}}'
+      // Botones + / − del constructor: más grandes y con color por partícula
+      + '.qm-con-fila .qm-pm{min-width:52px;min-height:52px;width:52px;height:52px;font-size:1.75rem;font-weight:900;border-radius:14px;border:2px solid rgba(0,0,0,.08);cursor:pointer;transition:transform .1s ease,box-shadow .12s ease,filter .12s ease;box-shadow:0 3px 0 rgba(0,0,0,.08);}'
+      + '.qm-con-fila .qm-pm:hover:not(:disabled){transform:translateY(-1px);filter:brightness(1.03);}'
+      + '.qm-con-fila .qm-pm:active:not(:disabled){transform:translateY(2px);box-shadow:0 1px 0 rgba(0,0,0,.08);}'
+      + '.qm-con-fila .qm-pm:disabled{opacity:.38;cursor:not-allowed;box-shadow:none;}'
+      + '.qm-con-fila.qm-k-p .qm-pm{background:#DBEAFE;color:#1E3A8A;border-color:#93C5FD;box-shadow:0 3px 0 #93C5FD;}'
+      + '.qm-con-fila.qm-k-n .qm-pm{background:#E5E7EB;color:#374151;border-color:#9CA3AF;box-shadow:0 3px 0 #9CA3AF;}'
+      + '.qm-con-fila.qm-k-e .qm-pm{background:#FFEDD5;color:#9A3412;border-color:#FDBA74;box-shadow:0 3px 0 #FDBA74;}'
+      // Tabla periódica: hover levantado + brillo al acertar + tinte por familia (modo juego)
+      + '.qm-tabla-caja .qm-el{transition:transform .16s ease,box-shadow .16s ease,filter .16s ease;}'
+      + '.qm-tabla-caja .qm-el:hover:not(:disabled){transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.18);z-index:3;filter:brightness(1.04);}'
+      + '@keyframes qmw-brillo{0%,100%{box-shadow:0 0 0 0 rgba(250,204,21,0);transform:none}40%{box-shadow:0 0 0 4px rgba(250,204,21,.9),0 0 24px 6px rgba(250,204,21,.6);transform:translateY(-4px) scale(1.08)}}'
+      + '.qm-tabla-caja .qm-el.qm-brilla{animation:qmw-brillo .7s ease-out;z-index:5;}'
+      + '@media (prefers-reduced-motion: reduce){.qm-tabla-caja .qm-el,.qm-tabla-caja .qm-el.qm-brilla{transition:none !important;animation:none !important;}}';
+    document.head.appendChild(st);
+  }
+
   // ---------- Datos y búsqueda ----------
   const ELEM = () => QM.ELEMENTOS || [];
   let _porSim = null;
@@ -159,20 +196,50 @@
       '</dl>' + (nota ? '<p class="qm-nota">' + esc(nota) + '</p>' : '') + '</div></div>';
   }
 
-  // tabla(el, {modo, colorear, resaltar, soloResaltados, onElegir, mostrarNumeracion})
+  // Paleta suave para modo juego (colorearPorFamilia)
+  const FAM_TINTE = {
+    'alcalino': '#FDE2E4',
+    'alcalinoterreo': '#FFE8CC',
+    'transicion': '#D1FAE5',
+    'post-transicion': '#E5E7EB',
+    'metaloide': '#FEF3C7',
+    'no-metal': '#DBEAFE',
+    'halogeno': '#FEF9C3',
+    'gas-noble': '#EDE9FE',
+    'lantanido': '#F3F4F6',
+    'actinido': '#F3F4F6'
+  };
+  // tabla(el, {modo, colorear, resaltar, soloResaltados, onElegir, mostrarNumeracion, colorearPorFamilia})
   // Extra opcionales: leyenda (true), panel (true en 'explorar').
   function tabla(el, o) {
-    o = Object.assign({ modo: 'explorar', colorear: 'familia', resaltar: null, soloResaltados: false, onElegir: null, mostrarNumeracion: 'ambas', leyenda: true }, o || {});
+    const _o = o || {};
+    // Por defecto, en modo 'elegir' (juego) activamos el tinte de familias para que la tabla no se vea toda blanca.
+    const defColFam = (_o.modo === 'elegir');
+    o = Object.assign({ modo: 'explorar', colorear: 'familia', resaltar: null, soloResaltados: false, onElegir: null, mostrarNumeracion: 'ambas', leyenda: true, colorearPorFamilia: defColFam }, _o);
+    inyectarCSS();
     const explorar = o.modo !== 'elegir';
     const conPanel = o.panel != null ? !!o.panel : explorar;
     const num = o.mostrarNumeracion;
+    // Reglas de cabecera:
+    //  - 'ambas' → 1..18 + IA/VIIA/VIIIA (como antes)
+    //  - 'ab' o 'romana' → solo IA/VIIA/VIIIA
+    //  - cualquier otro (incluido 'iupac', 'moderna', undefined) → solo 1..18
+    const conRomana = num === 'ambas' || num === 'ab' || num === 'romana';
+    const conModerna = num !== 'ab' && num !== 'romana';
+    // Tinte por familia:
+    //  - Se pinta si colorearPorFamilia === true o si colorear === 'familia'.
+    //  - Excepción "no sobreescribas": si el llamador pidió EXPLÍCITAMENTE colorear:'ninguno' y colorearPorFamilia:false, no se pinta.
+    const pidioNinguno = _o.colorear === 'ninguno' && _o.colorearPorFamilia === false;
+    const pintarFam = !pidioNinguno && (o.colorearPorFamilia === true || o.colorear === 'familia');
     const fr = (f) => f <= 7 ? f + 1 : f + 2; // fila de datos → fila del grid (fila 1 = encabezado, 9 = separación)
-    let h = '<div class="qm-tabla-caja qm-col-' + esc(o.colorear) + (explorar ? '' : ' qm-modo-elegir') + '" data-noswipe>';
+    let h = '<div class="qm-tabla-caja qm-col-' + esc(o.colorear) + (explorar ? '' : ' qm-modo-elegir') + (pintarFam ? ' qm-tinte-fam' : '') + '" data-noswipe>';
     h += '<p class="qm-tabla-pista" hidden>Desliza la tabla a los lados para verla completa.</p>';
     h += '<div class="qm-tabla-marco"><div class="qm-tabla-scroll" role="region" aria-label="Tabla periódica: 7 periodos (filas) y 18 grupos (columnas)" tabindex="-1"><div class="qm-tabla qm-num-' + esc(num) + '">';
     h += '<span class="qm-esq" style="grid-row:1;grid-column:1" aria-hidden="true"><span>G</span><span>P</span></span>';
     for (let g = 1; g <= 18; g++) {
-      const t = num === 'ab' ? '<b>' + AB[g] + '</b>' : num === 'iupac' ? '<b>' + g + '</b>' : '<b>' + g + '</b><small>' + AB[g] + '</small>';
+      const t = conModerna && conRomana ? '<b>' + g + '</b><small>' + AB[g] + '</small>'
+              : conRomana ? '<b>' + AB[g] + '</b>'
+              : '<b>' + g + '</b>';
       h += '<span class="qm-th" style="grid-row:1;grid-column:' + (g + 1) + '" aria-label="Grupo ' + g + ' (' + AB[g] + ')">' + t + '</span>';
     }
     for (let p = 1; p <= 7; p++) h += '<span class="qm-tp" style="grid-row:' + (p + 1) + ';grid-column:1" aria-label="Periodo ' + p + '">' + p + '</span>';
@@ -181,7 +248,9 @@
     h += '<span class="qm-fl" style="grid-row:10;grid-column:1 / span 3">Lantánidos</span>';
     h += '<span class="qm-fl" style="grid-row:11;grid-column:1 / span 3">Actínidos</span>';
     ELEM().forEach(e => {
-      h += '<button type="button" class="qm-el ' + catClase(e) + ' ' + tipoClase(e) + '" data-z="' + e.z + '" style="grid-row:' + fr(e.fila) + ';grid-column:' + (e.col + 1) + '" aria-label="' + esc(e.nombre + ', ' + e.simbolo + ', número atómico ' + e.z) + '">' +
+      const tinte = pintarFam ? (FAM_TINTE[e.categoria] || '') : '';
+      const estilo = 'grid-row:' + fr(e.fila) + ';grid-column:' + (e.col + 1) + (tinte ? ';background-color:' + tinte : '');
+      h += '<button type="button" class="qm-el ' + catClase(e) + ' ' + tipoClase(e) + '" data-z="' + e.z + '" style="' + estilo + '" aria-label="' + esc(e.nombre + ', ' + e.simbolo + ', número atómico ' + e.z) + '">' +
         '<span class="qm-ez" aria-hidden="true">' + e.z + '</span><span class="qm-es" aria-hidden="true">' + e.simbolo + '</span><span class="qm-en" aria-hidden="true">' + esc(nombreCorto(e)) + '</span></button>';
     });
     h += '</div></div></div>';
@@ -270,12 +339,24 @@
     sombras();
     if (o.resaltar) aplicar(o.resaltar);
 
+    // Timers de brillo para poder limpiarlos al destruir
+    const brilloTimers = {};
+    function resaltarZ(z, ms) {
+      const b = btns[z]; if (!b) return;
+      b.classList.remove('qm-brilla');
+      void b.offsetWidth;
+      b.classList.add('qm-brilla');
+      clearTimeout(brilloTimers[z]);
+      brilloTimers[z] = setTimeout(() => { if (b) b.classList.remove('qm-brilla'); }, ms || 720);
+    }
+
     return {
       resaltar: (sel) => { if (vivo) aplicar(sel); },
       limpiar: () => { if (vivo) limpiar(); },
       marcar: (z, tipo) => { if (vivo) marcar(z, tipo); },
       destruir: () => {
         if (!vivo) return; vivo = false;
+        Object.keys(brilloTimers).forEach(z => clearTimeout(brilloTimers[z]));
         caja.removeEventListener('click', onClick);
         if (ro) ro.disconnect(); else window.removeEventListener('resize', sombras);
         el.innerHTML = '';
@@ -283,6 +364,7 @@
       // extras opcionales
       seleccionar: (z) => { if (vivo) seleccionar(z); },
       enfocar: (z) => { if (vivo) enfocar(z); },
+      resaltarZ: (z, ms) => { if (vivo) resaltarZ(z, ms); },
       el: caja
     };
   }
@@ -296,9 +378,11 @@
   }
   const signoMas = (x, y, a, col) => '<path d="M' + (x - a) + ' ' + y + 'h' + (2 * a) + 'M' + x + ' ' + (y - a) + 'v' + (2 * a) + '" style="stroke:' + col + '" stroke-width="1.8" stroke-linecap="round"/>';
   const signoMenos = (x, y, a, col) => '<path d="M' + (x - a) + ' ' + y + 'h' + (2 * a) + '" style="stroke:' + col + '" stroke-width="2" stroke-linecap="round"/>';
-  // Extra: dibujo del átomo como SVG suelto → LS.QM.atomoSvg(p, n, e)
+  // Extra: dibujo del átomo como SVG suelto → LS.QM.atomoSvg(p, n, e, opt)
+  // opt.nuevo: 'p' | 'n' | 'e' → marca la partícula recién agregada para animar su entrada.
   function atomoSvg(p, n, e, opt) {
     opt = opt || {};
+    const nuevo = opt.nuevo || null;
     const C = 130, tot = p + n, rp = 6, k = 6.6;
     const R = tot ? k * Math.sqrt(tot - 1) + rp : 0;
     const capas = repartir(e);
@@ -306,29 +390,47 @@
     const radios = capas.map((_, i) => ini + i * paso);
     const aria = 'Átomo con ' + p + ' protones, ' + n + ' neutrones y ' + e + ' electrones';
     const ext = Math.max(64, (capas.length ? ini + (capas.length - 1) * paso : R) + 12), vb = (C - ext).toFixed(1) + ' ' + (C - ext).toFixed(1) + ' ' + (2 * ext).toFixed(1) + ' ' + (2 * ext).toFixed(1);
-    let s = '<svg class="qm-atomo" viewBox="' + vb + '" role="img" aria-label="' + aria + '"><title>' + aria + '</title>';
+    // detectar la última partícula de cada tipo (para marcar la más reciente)
+    let lastP = -1, lastN = -1;
+    for (let i = 0; i < tot; i++) {
+      const esP = Math.floor((i + 1) * p / tot) > Math.floor(i * p / tot);
+      if (esP) lastP = i; else lastN = i;
+    }
+    let s = '<svg class="qm-atomo" viewBox="' + vb + '" preserveAspectRatio="xMidYMid meet" role="img" aria-label="' + aria + '" style="overflow:hidden"><title>' + aria + '</title>';
+    // clip por si el navegador ignora overflow:hidden en el SVG
+    s += '<defs><clipPath id="qmw-clip-' + (++uid) + '"><rect x="' + (C - ext).toFixed(1) + '" y="' + (C - ext).toFixed(1) + '" width="' + (2 * ext).toFixed(1) + '" height="' + (2 * ext).toFixed(1) + '"/></clipPath></defs>';
+    s += '<g clip-path="url(#qmw-clip-' + uid + ')">';
     radios.forEach(r => { s += '<circle cx="' + C + '" cy="' + C + '" r="' + r.toFixed(1) + '" fill="none" style="stroke:var(--ink-3)" stroke-opacity=".45" stroke-width="2"/>'; });
     // núcleo: protones y neutrones intercalados en espiral (girasol)
     for (let i = 0; i < tot; i++) {
       const esP = Math.floor((i + 1) * p / tot) > Math.floor(i * p / tot);
       const rr = k * Math.sqrt(i), a = i * 2.39996;
       const x = C + rr * Math.cos(a), y = C + rr * Math.sin(a);
+      const nuevaP = (nuevo === 'p' && i === lastP), nuevaN = (nuevo === 'n' && i === lastN);
+      const cls = nuevaP ? ' class="qm-nuevo-p"' : (nuevaN ? ' class="qm-nuevo-n"' : '');
+      s += '<g' + cls + '>';
       s += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="' + rp + '" style="fill:' + (esP ? 'var(--pos)' : 'var(--ink-3)') + ';stroke:var(--surface)" stroke-width="1.3"/>';
       if (esP) s += signoMas(x, y, 3, '#fff');
+      s += '</g>';
     }
     if (!tot) s += '<circle cx="' + C + '" cy="' + C + '" r="9" fill="none" style="stroke:var(--ink-3)" stroke-width="2" stroke-dasharray="3 3"/>';
-    // electrones (cada capa gira despacio; el retraso negativo mantiene la continuidad al redibujar)
+    // electrones (cada capa gira 6–10 s; el retraso negativo mantiene la continuidad al redibujar)
     const t = (window.performance ? performance.now() : Date.now()) / 1000;
+    const ultimaCapa = capas.length - 1;
     capas.forEach((cnt, i) => {
-      const r = radios[i], dur = 14 + i * 6, off = i * 0.6;
-      s += '<g class="qm-orb' + (i % 2 ? ' qm-orb-inv' : '') + '" style="animation-duration:' + dur + 's;animation-delay:-' + (t % dur).toFixed(2) + 's">';
+      const r = radios[i], dur = 6 + i * 2, off = i * 0.6;
+      s += '<g class="qm-orb qm-orb-anim' + (i % 2 ? ' qm-orb-inv' : '') + '" style="animation-duration:' + dur + 's;animation-delay:-' + (t % dur).toFixed(2) + 's">';
       for (let j = 0; j < cnt; j++) {
         const a = off + j * 2 * Math.PI / cnt - Math.PI / 2;
         const x = C + r * Math.cos(a), y = C + r * Math.sin(a);
+        const nuevaE = (nuevo === 'e' && i === ultimaCapa && j === cnt - 1);
+        s += '<g' + (nuevaE ? ' class="qm-nuevo-e"' : '') + '>';
         s += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="7" style="fill:var(--neg);stroke:var(--surface)" stroke-width="1.5"/>' + signoMenos(x, y, 3.2, '#fff');
+        s += '</g>';
       }
       s += '</g>';
     });
+    s += '</g>';
     return s + '</svg>';
   }
 
@@ -337,13 +439,16 @@
     n: { nom: 'Neutrones', uno: 'neutrón', carga: '0', cls: 'qm-k-n' },
     e: { nom: 'Electrones', uno: 'electrón', carga: MENOS + '1', cls: 'qm-k-e' }
   };
-  // constructor(el, {p, n, e, max:{p,n,e}, mostrar:{elemento, carga, A, notacion}, onCambio(estado)})
+  // constructor(el, {p, n, e, max:{p,n,e}, mostrar:{elemento, carga, A, notacion}, onCambio(estado), onValido(estado), objetivo:{p,n,e}})
   function constructor(el, o) {
     o = o || {};
+    inyectarCSS();
     const max = Object.assign({ p: 20, n: 24, e: 20 }, o.max || {});
     const mostrar = Object.assign({ elemento: true, carga: true, A: true, notacion: true }, o.mostrar || {});
     const lim = (k, v) => Math.max(0, Math.min(max[k], Math.round(+v || 0)));
     const st = { p: lim('p', o.p), n: lim('n', o.n), e: lim('e', o.e) };
+    let objetivo = o.objetivo || null;
+    let quitarTimer = 0, haloTimer = 0;
     const bloq = new Set();
     let vivo = true;
     let h = '<div class="qm-con" data-noswipe><div class="qm-con-in"><div class="qm-con-dib"></div><div class="qm-con-lect" aria-live="polite"></div><div class="qm-con-ctrl">';
@@ -363,9 +468,9 @@
       const Z = st.p, A = st.p + st.n, carga = st.p - st.e, elem = st.p ? porZ(st.p) : null;
       return { p: st.p, n: st.n, e: st.e, Z, A, carga, elemento: elem, simbolo: elem ? elem.simbolo : null, nombre: elem ? elem.nombre : null };
     }
-    function pintar() {
+    function pintar(nuevoTipo) {
       const v = valores();
-      dib.innerHTML = atomoSvg(v.p, v.n, v.e);
+      dib.innerHTML = atomoSvg(v.p, v.n, v.e, { nuevo: nuevoTipo || null });
       let l = '';
       if (mostrar.elemento) {
         if (!v.p) l += '<div class="qm-con-el qm-con-nada"><b>Sin protones no hay elemento.</b><span>Agrega protones: su número decide qué elemento es.</span></div>';
@@ -391,14 +496,39 @@
       });
       raiz.querySelectorAll('.qm-con-fila').forEach(f => f.classList.toggle('qm-bloq', bloq.has(f.querySelector('.qm-pm').dataset.k)));
     }
+    function coincideObj() {
+      if (!objetivo) return false;
+      return ['p', 'n', 'e'].every(k => objetivo[k] == null || objetivo[k] === st[k]);
+    }
+    function brillarOk() {
+      if (!vivo || !dib) return;
+      dib.classList.remove('qm-halo-ok');
+      // reflow para reiniciar la animación
+      void dib.offsetWidth;
+      dib.classList.add('qm-halo-ok');
+      clearTimeout(haloTimer);
+      haloTimer = setTimeout(() => { if (dib) dib.classList.remove('qm-halo-ok'); }, 520);
+    }
     function onClick(ev) {
       const b = ev.target.closest('.qm-pm');
       if (!b || b.disabled) return;
-      const k = b.dataset.k, nv = lim(k, st[k] + (+b.dataset.d));
-      if (nv === st[k]) return;
+      const k = b.dataset.k, antes = st[k], nv = lim(k, antes + (+b.dataset.d));
+      if (nv === antes) return;
+      const subio = nv > antes;
       st[k] = nv;
-      pintar();
-      if (typeof o.onCambio === 'function') o.onCambio(valores());
+      if (!subio) {
+        // fade-out corto: parpadea el átomo justo antes/durante el redibujado
+        dib.classList.add('qm-quitar');
+        clearTimeout(quitarTimer);
+        quitarTimer = setTimeout(() => { if (dib) dib.classList.remove('qm-quitar'); }, 240);
+      }
+      pintar(subio ? k : null);
+      const v = valores();
+      if (typeof o.onCambio === 'function') o.onCambio(v);
+      if (coincideObj()) {
+        brillarOk();
+        if (typeof o.onValido === 'function') o.onValido(v);
+      }
     }
     raiz.addEventListener('click', onClick);
     pintar();
@@ -406,7 +536,9 @@
       valores,
       fijar: (v) => { if (!vivo || !v) return; ['p', 'n', 'e'].forEach(k => { if (v[k] != null) st[k] = lim(k, v[k]); }); pintar(); },
       bloquear: (lista) => { if (!vivo) return; bloq.clear(); (lista || []).forEach(k => bloq.add(k)); pintar(); },
-      destruir: () => { if (!vivo) return; vivo = false; raiz.removeEventListener('click', onClick); el.innerHTML = ''; },
+      objetivo: (v) => { if (!vivo) return; objetivo = v || null; },
+      marcarOk: () => { if (vivo) brillarOk(); },
+      destruir: () => { if (!vivo) return; vivo = false; clearTimeout(quitarTimer); clearTimeout(haloTimer); raiz.removeEventListener('click', onClick); el.innerHTML = ''; },
       el: raiz
     };
   }
