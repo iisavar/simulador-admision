@@ -1,0 +1,1012 @@
+{
+  "id": "matematica-mcm-mcd",
+  "materia": "matematica",
+  "tema": "Números primos, MCM y MCD",
+  "bloque": "Aritmética",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "Descompón cada número en factores primos. El MCD toma solo los factores comunes con el MENOR exponente; el MCM toma todos los factores con el MAYOR exponente. Además, MCD × MCM = producto de los dos números.",
+    "ejemplo": {
+      "enunciado": "Halla el MCD y el MCM de 24 y 36.",
+      "pasos": [
+        "24 = 2³ · 3 y 36 = 2² · 3².",
+        "MCD: comunes con menor exponente → 2² · 3 = 12.",
+        "MCM: todos con mayor exponente → 2³ · 3² = 72."
+      ],
+      "resultado": "MCD = 12 y MCM = 72"
+    },
+    "ojo": "Confundirlos: si el problema pide «repartir en partes iguales lo más grandes posible» es MCD; si pide «cuándo vuelven a coincidir» es MCM."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál de los siguientes números es primo?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "7 solo es divisible por 1 y por sí mismo; 4, 6 y 9 tienen otros divisores."
+    },
+    {
+      "enunciado": "¿Cuál es el único número primo que es par?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 2 es el único primo par; cualquier otro número par tiene al menos los divisores 1, 2 y él mismo."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es divisible por 3?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "22",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": true
+        },
+        {
+          "texto": "31",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es divisible por 3 si la suma de sus cifras lo es; 2+7=9, múltiplo de 3."
+    },
+    {
+      "enunciado": "El máximo común divisor (MCD) de 8 y 12 es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los divisores comunes de 8 y 12 son 1, 2 y 4; el mayor es 4."
+    },
+    {
+      "enunciado": "El mínimo común múltiplo (MCM) de 4 y 6 es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El menor múltiplo común de 4 y 6 es 12."
+    },
+    {
+      "enunciado": "¿Cuántos divisores tiene el número 6?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los divisores de 6 son 1, 2, 3 y 6, en total 4."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números NO es primo?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": true
+        }
+      ],
+      "explicacion": "9 = 3 × 3, por lo que tiene un divisor distinto de 1 y de sí mismo."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es múltiplo de 7?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "32",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        },
+        {
+          "texto": "21",
+          "correcta": true
+        }
+      ],
+      "explicacion": "21 = 7 × 3, por lo que es múltiplo de 7."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes es un divisor común de 10 y 15?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "5 divide a 10 y a 15; el 2 solo divide a 10."
+    },
+    {
+      "enunciado": "El máximo común divisor (MCD) de 6 y 9 es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El mayor divisor común de 6 y 9 es 3."
+    },
+    {
+      "enunciado": "El mínimo común múltiplo (MCM) de 3 y 5 es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": true
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "45",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 3 y 5 no tienen factores comunes, su MCM es su producto: 15."
+    },
+    {
+      "enunciado": "¿Cuál es el menor número primo?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 1 no se considera primo; el menor número primo es 2."
+    },
+    {
+      "enunciado": "La descomposición en factores primos de 12 es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2 · 6",
+          "correcta": false
+        },
+        {
+          "texto": "2² · 3",
+          "correcta": true
+        },
+        {
+          "texto": "3 · 4",
+          "correcta": false
+        },
+        {
+          "texto": "2 · 3²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "12 = 2 × 2 × 3 = 2² · 3; las otras incluyen factores no primos o un valor distinto."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es divisible por 11?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "221",
+          "correcta": false
+        },
+        {
+          "texto": "213",
+          "correcta": false
+        },
+        {
+          "texto": "217",
+          "correcta": false
+        },
+        {
+          "texto": "209",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por el criterio de las cifras alternadas: 9 − 0 + 2 = 11, múltiplo de 11 (209 = 11 × 19)."
+    },
+    {
+      "enunciado": "El máximo común divisor (MCD) de 24 y 36 es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "72",
+          "correcta": false
+        }
+      ],
+      "explicacion": "24 = 2³·3 y 36 = 2²·3²; el MCD toma los factores comunes con menor exponente: 2²·3 = 12."
+    },
+    {
+      "enunciado": "El mínimo común múltiplo (MCM) de 12 y 18 es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "72",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": true
+        },
+        {
+          "texto": "216",
+          "correcta": false
+        }
+      ],
+      "explicacion": "12 = 2²·3 y 18 = 2·3²; el MCM toma cada factor con mayor exponente: 2²·3² = 36."
+    },
+    {
+      "enunciado": "El máximo común divisor (MCD) de 45 y 60 es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "180",
+          "correcta": false
+        }
+      ],
+      "explicacion": "45 = 3²·5 y 60 = 2²·3·5; factores comunes con menor exponente: 3·5 = 15."
+    },
+    {
+      "enunciado": "El mínimo común múltiplo (MCM) de 8 y 10 es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "80",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "8 = 2³ y 10 = 2·5; el MCM es 2³·5 = 40."
+    },
+    {
+      "enunciado": "¿Cuántos números primos hay entre 10 y 20?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los primos entre 10 y 20 son 11, 13, 17 y 19, en total 4."
+    },
+    {
+      "enunciado": "La descomposición en factores primos de 60 es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2 · 3 · 5",
+          "correcta": false
+        },
+        {
+          "texto": "2² · 3 · 5",
+          "correcta": true
+        },
+        {
+          "texto": "2³ · 3 · 5",
+          "correcta": false
+        },
+        {
+          "texto": "2² · 15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "60 = 4 × 15 = 2² · 3 · 5; las otras dan un valor distinto o incluyen factores no primos."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es divisible por 8?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1112",
+          "correcta": true
+        },
+        {
+          "texto": "1340",
+          "correcta": false
+        },
+        {
+          "texto": "1230",
+          "correcta": false
+        },
+        {
+          "texto": "1450",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es divisible por 8 si sus tres últimas cifras lo son; 112 = 8 × 14, así que 1112 lo es."
+    },
+    {
+      "enunciado": "Dos buses salen de una terminal: uno cada 15 minutos y otro cada 20 minutos. Si salen juntos, ¿en cuántos minutos volverán a coincidir?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        },
+        {
+          "texto": "300",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La próxima coincidencia ocurre en el MCM(15, 20) = 60 minutos."
+    },
+    {
+      "enunciado": "Se desean repartir 18 lápices y 24 cuadernos en grupos iguales (todos con la misma cantidad de lápices y la misma de cuadernos) sin que sobre nada. ¿Cuál es el mayor número de grupos posible?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número de grupos debe dividir a 18 y a 24; el mayor es MCD(18, 24) = 6 (cada grupo: 3 lápices y 4 cuadernos)."
+    },
+    {
+      "enunciado": "¿Cuál es el máximo común divisor de los números primos 7 y 13?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "91",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dos primos distintos no comparten factores, por lo que su MCD es 1 (son coprimos)."
+    },
+    {
+      "enunciado": "¿Cuál es el mínimo común múltiplo de 7 y 13?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "91",
+          "correcta": true
+        },
+        {
+          "texto": "84",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 7 y 13 son coprimos, su MCM es el producto: 7 × 13 = 91."
+    },
+    {
+      "enunciado": "¿Cuántos divisores tiene el número 36?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "36 = 2²·3², así que el número de divisores es (2+1)(2+1) = 9."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es divisible por 15?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "125",
+          "correcta": false
+        },
+        {
+          "texto": "260",
+          "correcta": false
+        },
+        {
+          "texto": "220",
+          "correcta": false
+        },
+        {
+          "texto": "195",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Debe ser divisible por 3 y por 5; 195 termina en 5 y 1+9+5=15 es múltiplo de 3 (195 = 15 × 13)."
+    },
+    {
+      "enunciado": "¿Por cuáles de estos números es divisible todo número natural que termina en cero?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Solo por 2",
+          "correcta": false
+        },
+        {
+          "texto": "Solo por 5",
+          "correcta": false
+        },
+        {
+          "texto": "Por 3",
+          "correcta": false
+        },
+        {
+          "texto": "Por 2 y por 5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Terminar en 0 implica ser divisible por 2 y por 5 a la vez, pero no garantiza la divisibilidad por 3."
+    },
+    {
+      "enunciado": "El máximo común divisor (MCD) de 84 y 120 es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "840",
+          "correcta": false
+        }
+      ],
+      "explicacion": "84 = 2²·3·7 y 120 = 2³·3·5; factores comunes con menor exponente: 2²·3 = 12."
+    },
+    {
+      "enunciado": "El mínimo común múltiplo (MCM) de 84 y 120 es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "420",
+          "correcta": false
+        },
+        {
+          "texto": "840",
+          "correcta": true
+        },
+        {
+          "texto": "10080",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tomando cada factor con mayor exponente: 2³·3·5·7 = 840."
+    },
+    {
+      "enunciado": "El producto de dos números es 240 y su MCD es 4. ¿Cuál es su MCM?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "960",
+          "correcta": false
+        },
+        {
+          "texto": "120",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como producto = MCD × MCM, se tiene MCM = 240 ÷ 4 = 60."
+    },
+    {
+      "enunciado": "El MCM de dos números es 72 y su MCD es 6. Si uno de los números es 24, ¿cuál es el otro?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "48",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El producto de ambos es 72 × 6 = 432; entonces el otro es 432 ÷ 24 = 18."
+    },
+    {
+      "enunciado": "¿Cuántos divisores tiene el número 720?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": true
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "720 = 2⁴·3²·5, así que el número de divisores es (4+1)(2+1)(1+1) = 30."
+    },
+    {
+      "enunciado": "¿Cuál es la suma de todos los divisores de 28?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "28",
+          "correcta": false
+        },
+        {
+          "texto": "56",
+          "correcta": true
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "84",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los divisores de 28 son 1, 2, 4, 7, 14 y 28; su suma es 56 (28 es un número perfecto)."
+    },
+    {
+      "enunciado": "¿Cuál es el menor número, distinto de cero, que es divisible a la vez por 4, 6 y 9?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "36",
+          "correcta": true
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "72",
+          "correcta": false
+        },
+        {
+          "texto": "216",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es el MCM(4, 6, 9) = 2²·3² = 36."
+    },
+    {
+      "enunciado": "¿Cuál es el menor número que dividido entre 5, 6 y 8 deja residuo 1 en cada caso?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "121",
+          "correcta": true
+        },
+        {
+          "texto": "119",
+          "correcta": false
+        },
+        {
+          "texto": "41",
+          "correcta": false
+        },
+        {
+          "texto": "241",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número es MCM(5, 6, 8) + 1 = 120 + 1 = 121, que deja residuo 1 al dividir entre 5, 6 y 8."
+    },
+    {
+      "enunciado": "Tres luces parpadean cada 6, 8 y 12 segundos. Si parpadean juntas ahora, ¿en cuántos segundos volverán a hacerlo simultáneamente?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "576",
+          "correcta": false
+        },
+        {
+          "texto": "48",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Coincidirán en el MCM(6, 8, 12) = 24 segundos."
+    },
+    {
+      "enunciado": "Se tienen tres cuerdas de 36 m, 48 m y 60 m. Se quieren cortar en trozos iguales lo más largos posible sin desperdicio. ¿Cuánto mide cada trozo?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6 m",
+          "correcta": false
+        },
+        {
+          "texto": "12 m",
+          "correcta": true
+        },
+        {
+          "texto": "24 m",
+          "correcta": false
+        },
+        {
+          "texto": "144 m",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El mayor trozo que divide exactamente a las tres es el MCD(36, 48, 60) = 12 m."
+    },
+    {
+      "enunciado": "¿Cuántos números primos hay entre 1 y 30?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Son 2, 3, 5, 7, 11, 13, 17, 19, 23 y 29; en total 10 primos."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es divisible por 7?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "161",
+          "correcta": true
+        },
+        {
+          "texto": "163",
+          "correcta": false
+        },
+        {
+          "texto": "162",
+          "correcta": false
+        },
+        {
+          "texto": "164",
+          "correcta": false
+        }
+      ],
+      "explicacion": "161 = 7 × 23; en cambio 162, 163 y 164 dejan residuo 1, 2 y 3 al dividir entre 7."
+    },
+    {
+      "enunciado": "Dos números tienen MCD igual a 9 y MCM igual a 270. Si uno de ellos es 45, ¿cuál es el otro?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "54",
+          "correcta": true
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El producto es 9 × 270 = 2430; entonces el otro es 2430 ÷ 45 = 54 (54 = 2·3³, y MCD con 45 es 9)."
+    },
+    {
+      "enunciado": "La descomposición en factores primos de 2310 es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2 · 3 · 5 · 77",
+          "correcta": false
+        },
+        {
+          "texto": "2 · 3 · 5 · 7 · 11",
+          "correcta": true
+        },
+        {
+          "texto": "2 · 3 · 5 · 7 · 13",
+          "correcta": false
+        },
+        {
+          "texto": "2² · 3 · 5 · 7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2310 = 2 · 3 · 5 · 7 · 11; las otras incluyen un factor no primo o dan un valor distinto."
+    },
+    {
+      "enunciado": "Si un número natural tiene exactamente 3 divisores, ¿cuál de estos puede ser ese número?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "49",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un número con exactamente 3 divisores es el cuadrado de un primo; 49 = 7² tiene los divisores 1, 7 y 49."
+    }
+  ]
+}

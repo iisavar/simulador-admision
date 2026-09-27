@@ -1,0 +1,1128 @@
+{
+  "id": "matematica-sucesiones",
+  "materia": "matematica",
+  "tema": "Sucesiones y progresiones",
+  "bloque": "Álgebra",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "En una progresión aritmética cada término se obtiene SUMANDO la misma diferencia d: aₙ = a₁ + (n − 1)·d. En una geométrica se obtiene MULTIPLICANDO por la misma razón r: aₙ = a₁ · rⁿ⁻¹.",
+    "ejemplo": {
+      "enunciado": "En la progresión 5, 9, 13, 17, … ¿cuánto vale el término 20 y cuánto suman los 20 primeros términos?",
+      "pasos": [
+        "Es aritmética: la diferencia es d = 9 − 5 = 4 y a₁ = 5.",
+        "Término 20: a₂₀ = 5 + (20 − 1)·4 = 5 + 76 = 81.",
+        "Suma: S₂₀ = 20·(a₁ + a₂₀)/2 = 20·(5 + 81)/2 = 10·86.",
+        "S₂₀ = 860."
+      ],
+      "resultado": "a₂₀ = 81 y S₂₀ = 860"
+    },
+    "ojo": "En la fórmula se usa (n − 1), no n: para llegar al término 20 desde el primero solo se dan 19 saltos."
+  },
+  "preguntas": [
+    {
+      "enunciado": "En la progresión aritmética 2, 5, 8, 11, … ¿cuál es el término que sigue?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La diferencia común es 3, así que 11 + 3 = 14."
+    },
+    {
+      "enunciado": "¿Cuál es la diferencia común de la progresión aritmética 7, 12, 17, 22, …?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada término aumenta de forma constante: 12 − 7 = 5."
+    },
+    {
+      "enunciado": "En la progresión geométrica 3, 6, 12, 24, … ¿cuál es el término siguiente?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "96",
+          "correcta": false
+        },
+        {
+          "texto": "48",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La razón es 2, entonces 24 · 2 = 48."
+    },
+    {
+      "enunciado": "¿Cuál es la razón común de la progresión geométrica 5, 15, 45, 135, …?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La razón se obtiene dividiendo: 15 / 5 = 3."
+    },
+    {
+      "enunciado": "Una progresión aritmética tiene primer término 4 y diferencia común 3. ¿Cuál es el segundo término?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El segundo término es 4 + 3 = 7."
+    },
+    {
+      "enunciado": "En la sucesión 10, 8, 6, 4, … ¿cuál es el término que sigue?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La diferencia común es −2, entonces 4 − 2 = 2."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes sucesiones es una progresión aritmética?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2, 4, 8, 16",
+          "correcta": false
+        },
+        {
+          "texto": "1, 3, 5, 7",
+          "correcta": true
+        },
+        {
+          "texto": "1, 2, 4, 7",
+          "correcta": false
+        },
+        {
+          "texto": "3, 9, 27, 81",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En 1, 3, 5, 7 la diferencia entre términos consecutivos es constante e igual a 2."
+    },
+    {
+      "enunciado": "Si el primer término es 2 y la diferencia común es 5, ¿cuál es el tercer término de la progresión aritmética?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "17",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El tercer término es 2 + 2(5) = 12."
+    },
+    {
+      "enunciado": "En la sucesión 100, 90, 80, … ¿cuál es el término siguiente?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "70",
+          "correcta": true
+        },
+        {
+          "texto": "75",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": false
+        },
+        {
+          "texto": "85",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La diferencia común es −10, así que 80 − 10 = 70."
+    },
+    {
+      "enunciado": "Una progresión geométrica tiene primer término 2 y razón 3. ¿Cuál es el tercer término?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "54",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El tercer término es 2 · 3² = 18."
+    },
+    {
+      "enunciado": "¿Cuánto vale la suma 1 + 2 + 3 + 4 + 5?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Al sumar los cinco primeros naturales se obtiene 15."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes sucesiones es una progresión geométrica?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2, 5, 8, 11",
+          "correcta": false
+        },
+        {
+          "texto": "5, 10, 15, 20",
+          "correcta": false
+        },
+        {
+          "texto": "4, 8, 16, 32",
+          "correcta": true
+        },
+        {
+          "texto": "1, 4, 9, 16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En 4, 8, 16, 32 cada término se obtiene multiplicando por la razón constante 2."
+    },
+    {
+      "enunciado": "Una progresión aritmética empieza en 1 con diferencia común 2. ¿Cuál es el quinto término?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El quinto término es 1 + 4(2) = 9."
+    },
+    {
+      "enunciado": "En la progresión geométrica 81, 27, 9, 3, … ¿cuál es el término siguiente?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La razón es 1/3, entonces 3 · (1/3) = 1."
+    },
+    {
+      "enunciado": "En la progresión aritmética 4, 9, __, 19, 24 falta un término. ¿Cuál es?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": true
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La diferencia común es 5, por lo que 9 + 5 = 14."
+    },
+    {
+      "enunciado": "En una progresión aritmética con primer término 3 y diferencia común 4, ¿cuánto vale el décimo término?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "43",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": false
+        },
+        {
+          "texto": "39",
+          "correcta": true
+        },
+        {
+          "texto": "37",
+          "correcta": false
+        }
+      ],
+      "explicacion": "a₁₀ = 3 + (10 − 1)(4) = 3 + 36 = 39."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del término enésimo de la progresión aritmética 5, 8, 11, 14, …?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3n + 5",
+          "correcta": false
+        },
+        {
+          "texto": "5n + 3",
+          "correcta": false
+        },
+        {
+          "texto": "2n + 3",
+          "correcta": false
+        },
+        {
+          "texto": "3n + 2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "aₙ = 5 + (n − 1)(3) = 3n + 2."
+    },
+    {
+      "enunciado": "¿Cuál es la suma de los primeros 20 términos de la progresión 2, 4, 6, 8, …?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "400",
+          "correcta": false
+        },
+        {
+          "texto": "420",
+          "correcta": true
+        },
+        {
+          "texto": "410",
+          "correcta": false
+        },
+        {
+          "texto": "440",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El término 20 es 40 y S₂₀ = 20(2 + 40)/2 = 420."
+    },
+    {
+      "enunciado": "En la progresión geométrica con primer término 2 y razón 3, ¿cuánto vale el quinto término?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "486",
+          "correcta": false
+        },
+        {
+          "texto": "54",
+          "correcta": false
+        },
+        {
+          "texto": "162",
+          "correcta": true
+        },
+        {
+          "texto": "96",
+          "correcta": false
+        }
+      ],
+      "explicacion": "a₅ = 2 · 3⁴ = 2 · 81 = 162."
+    },
+    {
+      "enunciado": "¿Cuánto vale la suma 2 + 6 + 18 + 54 + 162?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "242",
+          "correcta": true
+        },
+        {
+          "texto": "240",
+          "correcta": false
+        },
+        {
+          "texto": "162",
+          "correcta": false
+        },
+        {
+          "texto": "364",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es una progresión geométrica de razón 3: S = 2(3⁵ − 1)/(3 − 1) = 242."
+    },
+    {
+      "enunciado": "En una progresión aritmética el primer término es 1 y el quinto término es 17. ¿Cuál es la diferencia común?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "d = (17 − 1)/(5 − 1) = 16/4 = 4."
+    },
+    {
+      "enunciado": "¿Cuántos términos tiene la progresión aritmética 3, 7, 11, …, 99?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "25",
+          "correcta": true
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "26",
+          "correcta": false
+        },
+        {
+          "texto": "96",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = (99 − 3)/4 + 1 = 24 + 1 = 25."
+    },
+    {
+      "enunciado": "¿Cuánto vale la suma 1 + 2 + 3 + … + 100?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5000",
+          "correcta": false
+        },
+        {
+          "texto": "5050",
+          "correcta": true
+        },
+        {
+          "texto": "5500",
+          "correcta": false
+        },
+        {
+          "texto": "10100",
+          "correcta": false
+        }
+      ],
+      "explicacion": "S = 100(100 + 1)/2 = 5050."
+    },
+    {
+      "enunciado": "En una progresión geométrica el primer término es 3 y el cuarto es 24. ¿Cuál es la razón?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "r³ = 24/3 = 8, de donde r = 2."
+    },
+    {
+      "enunciado": "¿Cuál es la media aritmética entre 8 y 14 (el término que va entre ambos en una progresión aritmética)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "22",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La media aritmética es (8 + 14)/2 = 11."
+    },
+    {
+      "enunciado": "¿Cuál es la media geométrica entre 4 y 9?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6,5",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La media geométrica es la raíz cuadrada del producto: √(4 · 9) = √36 = 6."
+    },
+    {
+      "enunciado": "¿Cuánto vale la suma de los primeros 10 números impares (1 + 3 + 5 + … + 19)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "100",
+          "correcta": true
+        },
+        {
+          "texto": "90",
+          "correcta": false
+        },
+        {
+          "texto": "110",
+          "correcta": false
+        },
+        {
+          "texto": "55",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La suma de los primeros n impares es n²; con n = 10 da 100."
+    },
+    {
+      "enunciado": "En la progresión geométrica 5, 10, 20, … ¿cuánto vale el octavo término?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "320",
+          "correcta": false
+        },
+        {
+          "texto": "1280",
+          "correcta": false
+        },
+        {
+          "texto": "640",
+          "correcta": true
+        },
+        {
+          "texto": "256",
+          "correcta": false
+        }
+      ],
+      "explicacion": "a₈ = 5 · 2⁷ = 5 · 128 = 640."
+    },
+    {
+      "enunciado": "¿Cuánto vale la suma de los términos (2k + 1) para k = 1, 2, 3, 4 y 5?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "35",
+          "correcta": true
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "45",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los términos son 3, 5, 7, 9, 11, cuya suma es 35."
+    },
+    {
+      "enunciado": "¿Cuánto vale la suma de los cuadrados k² para k = 1, 2, 3 y 4, es decir, 1² + 2² + 3² + 4²?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": true
+        }
+      ],
+      "explicacion": "1 + 4 + 9 + 16 = 30."
+    },
+    {
+      "enunciado": "En un teatro la primera fila tiene 20 asientos y cada fila siguiente tiene 2 más. ¿Cuántos asientos tiene la fila 10?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "38",
+          "correcta": true
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es una progresión aritmética: a₁₀ = 20 + (10 − 1)(2) = 38."
+    },
+    {
+      "enunciado": "En una progresión aritmética el décimo término es 30 y la diferencia común es 3. ¿Cuál es el primer término?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        }
+      ],
+      "explicacion": "a₁ = 30 − (10 − 1)(3) = 30 − 27 = 3."
+    },
+    {
+      "enunciado": "¿Cuál es la suma de la progresión geométrica infinita con primer término 8 y razón 1/2?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como |r| < 1, S = 8/(1 − 1/2) = 16."
+    },
+    {
+      "enunciado": "¿A cuánto tiende la suma 1 + 1/3 + 1/9 + 1/27 + …?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4/3",
+          "correcta": false
+        },
+        {
+          "texto": "3/2",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es geométrica con razón 1/3: S = 1/(1 − 1/3) = 3/2."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de la suma infinita 1/2 + 1/4 + 1/8 + 1/16 + …?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3/2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "S = (1/2)/(1 − 1/2) = 1."
+    },
+    {
+      "enunciado": "La suma de los primeros n términos de una progresión aritmética es Sₙ = 3n² + 2n. ¿Cuál es el término enésimo?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6n + 1",
+          "correcta": false
+        },
+        {
+          "texto": "6n − 1",
+          "correcta": true
+        },
+        {
+          "texto": "3n + 2",
+          "correcta": false
+        },
+        {
+          "texto": "6n − 5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "aₙ = Sₙ − Sₙ₋₁ = (3n² + 2n) − (3n² − 4n + 1) = 6n − 1 (comprueba: a₁ = S₁ = 5 = 6·1 − 1)."
+    },
+    {
+      "enunciado": "En una progresión aritmética el primer término es 7, el último es 43 y hay 10 términos. ¿Cuál es la suma?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "250",
+          "correcta": true
+        },
+        {
+          "texto": "500",
+          "correcta": false
+        },
+        {
+          "texto": "225",
+          "correcta": false
+        },
+        {
+          "texto": "200",
+          "correcta": false
+        }
+      ],
+      "explicacion": "S = n(a₁ + aₙ)/2 = 10(7 + 43)/2 = 250."
+    },
+    {
+      "enunciado": "En una progresión geométrica el segundo término es 6 y el quinto es 48. ¿Cuál es el primer término?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "r³ = 48/6 = 8, así que r = 2 y a₁ = 6/2 = 3."
+    },
+    {
+      "enunciado": "¿Para qué valor de n se cumple que 1 + 2 + 3 + … + n = 210?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "19",
+          "correcta": false
+        },
+        {
+          "texto": "21",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": true
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n(n + 1)/2 = 210, es decir n(n + 1) = 420; como 20 · 21 = 420, n = 20."
+    },
+    {
+      "enunciado": "Una pelota se deja caer desde 16 m y en cada rebote sube la mitad de la altura anterior. ¿Qué distancia total recorre (bajando y subiendo) hasta detenerse?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "32 m",
+          "correcta": false
+        },
+        {
+          "texto": "64 m",
+          "correcta": false
+        },
+        {
+          "texto": "16 m",
+          "correcta": false
+        },
+        {
+          "texto": "48 m",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Bajadas: 16 + 8 + 4 + … = 16/(1 − 1/2) = 32 m; subidas: 8 + 4 + 2 + … = 8/(1 − 1/2) = 16 m; total 48 m."
+    },
+    {
+      "enunciado": "Tres números en progresión aritmética suman 18 y su producto es 192. ¿Cuál es el mayor de ellos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El término central es 18/3 = 6; con 6(36 − d²) = 192 se obtiene d = 2, dando 4, 6 y 8."
+    },
+    {
+      "enunciado": "En una progresión aritmética el primer término es 2 y el término 15 es 44. ¿Cuál es la suma de los 15 primeros términos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "330",
+          "correcta": false
+        },
+        {
+          "texto": "360",
+          "correcta": false
+        },
+        {
+          "texto": "345",
+          "correcta": true
+        },
+        {
+          "texto": "300",
+          "correcta": false
+        }
+      ],
+      "explicacion": "S = 15(2 + 44)/2 = 15 · 23 = 345."
+    },
+    {
+      "enunciado": "¿Cuál es la suma de los primeros 6 términos de la progresión geométrica con primer término 1 y razón 2?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "31",
+          "correcta": false
+        },
+        {
+          "texto": "63",
+          "correcta": true
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        },
+        {
+          "texto": "127",
+          "correcta": false
+        }
+      ],
+      "explicacion": "S = (2⁶ − 1)/(2 − 1) = 63."
+    },
+    {
+      "enunciado": "Una persona ahorra 1 dólar el primer día y cada día ahorra el doble que el día anterior, durante 10 días. ¿Cuánto ahorra en total?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1023 dólares",
+          "correcta": true
+        },
+        {
+          "texto": "512 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "1024 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "2047 dólares",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es geométrica con a₁ = 1 y razón 2: S₁₀ = (2¹⁰ − 1)/(2 − 1) = 1024 − 1 = 1023 dólares."
+    },
+    {
+      "enunciado": "En una progresión aritmética el tercer término es 5 y el séptimo es 21. ¿Cuánto vale el décimo término?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "29",
+          "correcta": false
+        },
+        {
+          "texto": "37",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "33",
+          "correcta": true
+        }
+      ],
+      "explicacion": "d = (21 − 5)/(7 − 3) = 4; a₁₀ = 5 + 7(4) = 33."
+    },
+    {
+      "enunciado": "¿Cuánto vale la suma de los números pares 2 + 4 + 6 + … + 100?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2550",
+          "correcta": true
+        },
+        {
+          "texto": "2500",
+          "correcta": false
+        },
+        {
+          "texto": "5050",
+          "correcta": false
+        },
+        {
+          "texto": "2600",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 50 términos: S = 50(2 + 100)/2 = 2550."
+    },
+    {
+      "enunciado": "En una progresión aritmética el cuarto término es 13 y el noveno es 28. ¿Cuál es la suma de los primeros 12 términos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "240",
+          "correcta": false
+        },
+        {
+          "texto": "246",
+          "correcta": true
+        },
+        {
+          "texto": "252",
+          "correcta": false
+        },
+        {
+          "texto": "234",
+          "correcta": false
+        }
+      ],
+      "explicacion": "d = (28 − 13)/5 = 3 y a₁ = 4; S₁₂ = 12(2(4) + 11(3))/2 = 6(41) = 246."
+    },
+    {
+      "enunciado": "Si 2, x, 18 son términos consecutivos de una progresión geométrica de términos positivos, ¿cuál es el valor de x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En una progresión geométrica x/2 = 18/x, así que x² = 2 · 18 = 36 y x = 6 (positivo)."
+    }
+  ]
+}

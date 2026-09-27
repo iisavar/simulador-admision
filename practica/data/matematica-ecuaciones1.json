@@ -1,0 +1,1129 @@
+{
+  "id": "matematica-ecuaciones1",
+  "materia": "matematica",
+  "tema": "Ecuaciones de primer grado",
+  "bloque": "Ecuaciones y funciones",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "Resolver una ecuación es encontrar el valor de x que hace verdadera la igualdad. Lo que haces a un lado lo haces al otro: lo que suma pasa restando, lo que multiplica pasa dividiendo, hasta dejar la x sola.",
+    "ejemplo": {
+      "enunciado": "Resuelve 3(x − 2) = x + 8.",
+      "pasos": [
+        "Quita el paréntesis: 3x − 6 = x + 8.",
+        "Junta las x a la izquierda y los números a la derecha: 3x − x = 8 + 6.",
+        "Simplifica: 2x = 14.",
+        "Divide entre 2: x = 7.",
+        "Comprueba: 3(7 − 2) = 15 y 7 + 8 = 15. ¡Cumple!"
+      ],
+      "resultado": "x = 7"
+    },
+    "ojo": "Al pasar un término al otro lado cambia su signo, y un signo − delante de un paréntesis cambia el signo de TODO lo de adentro: −(x − 3) = −x + 3."
+  },
+  "preguntas": [
+    {
+      "enunciado": "Resuelve la ecuación: x + 5 = 12.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "17",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "−7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se resta 5 a ambos lados: x = 12 − 5 = 7."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: x − 3 = 8.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": true
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "−11",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suma 3 a ambos lados: x = 8 + 3 = 11."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 2x = 14.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "28",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se divide entre 2: x = 14 / 2 = 7."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: x/3 = 4.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "4/3",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se multiplica por 3: x = 4 · 3 = 12."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: x + 9 = 4.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "−5",
+          "correcta": true
+        },
+        {
+          "texto": "−13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se resta 9 a ambos lados: x = 4 − 9 = −5."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 2x + 1 = 9.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se pasa el 1: 2x = 8, luego x = 8 / 2 = 4."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 5x − 2 = 13.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2,2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suma 2: 5x = 15, luego x = 15 / 5 = 3."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: x/2 + 1 = 5.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se resta 1: x/2 = 4, luego x = 4 · 2 = 8."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 4x = −16.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−4",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "−12",
+          "correcta": false
+        },
+        {
+          "texto": "−64",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se divide entre 4: x = −16 / 4 = −4."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 7 − x = 2.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "−5",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se despeja: x = 7 − 2 = 5."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 3x + 6 = 0.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "−18",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se resta 6: 3x = −6, luego x = −6 / 3 = −2."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: x + 0,5 = 1,5.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "0,5",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se resta 0,5: x = 1,5 − 0,5 = 1."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: x − 7 = −7.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−14",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suma 7: x = −7 + 7 = 0."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 10 = 2x.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se divide entre 2: x = 10 / 2 = 5."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: x/5 = −2.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−0,4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−10",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se multiplica por 5: x = −2 · 5 = −10."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 2x + 3 = x + 10.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "−7",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se agrupa: 2x − x = 10 − 3, de donde x = 7."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 3x − 4 = x + 6.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se agrupa: 2x = 10, luego x = 5."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 5(x − 2) = 15.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "17",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se divide entre 5: x − 2 = 3, luego x = 5."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 4x + 7 = 2x + 19.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "26",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se agrupa: 2x = 12, luego x = 6."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 2(x + 3) = 4x − 2.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se desarrolla: 2x + 6 = 4x − 2, de donde 8 = 2x y x = 4."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: (x + 1)/2 = 3.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "2,5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se multiplica por 2: x + 1 = 6, luego x = 5."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 3(2x − 1) = 2(x + 5).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "13/6",
+          "correcta": false
+        },
+        {
+          "texto": "7/4",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "13/4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se desarrolla: 6x − 3 = 2x + 10, luego 4x = 13 y x = 13/4."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: x/3 + x/6 = 3.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con denominador común: (2x + x)/6 = 3, es decir x/2 = 3 y x = 6."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 7x − 5 = 3x + 11.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "1,5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se agrupa: 4x = 16, luego x = 4."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 2x − (x − 3) = 8.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "−5",
+          "correcta": false
+        },
+        {
+          "texto": "2,75",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al quitar el paréntesis: 2x − x + 3 = 8, es decir x + 3 = 8 y x = 5."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 0,5x + 2 = 0,2x + 5.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0,1",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se agrupa: 0,3x = 3, luego x = 10."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: (2x − 1)/3 = (x + 1)/2.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−5",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando en cruz: 2(2x − 1) = 3(x + 1), es decir 4x − 2 = 3x + 3 y x = 5."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 6 − 2(x − 1) = 0.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "−4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se desarrolla: 6 − 2x + 2 = 0, es decir 8 = 2x y x = 4."
+    },
+    {
+      "enunciado": "Un número aumentado en 12 es igual al triple del mismo número. ¿Cuál es el número?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación es x + 12 = 3x, de donde 12 = 2x y x = 6."
+    },
+    {
+      "enunciado": "La suma de dos números enteros consecutivos es 27. ¿Cuál es el menor de ellos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": true
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "13,5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con n + (n + 1) = 27 se obtiene 2n + 1 = 27, luego n = 13."
+    },
+    {
+      "enunciado": "El doble de un número, disminuido en 7, es 19. ¿Cuál es el número?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "26",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación es 2x − 7 = 19, de donde 2x = 26 y x = 13."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 4(x + 2) − 3 = 2x + 9.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se desarrolla: 4x + 5 = 2x + 9, luego 2x = 4 y x = 2."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: x/2 + x/3 + x/6 = 12.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con denominador común 6: (3x + 2x + x)/6 = 12, es decir x = 12."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: (x + 4)/2 = (2x − 1)/3.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando en cruz: 3(x + 4) = 2(2x − 1), es decir 3x + 12 = 4x − 2 y x = 14."
+    },
+    {
+      "enunciado": "La edad de Ana es el triple de la de su hijo. Dentro de 10 años, la edad de Ana será el doble de la de su hijo. ¿Cuántos años tiene el hijo actualmente?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "30 años",
+          "correcta": false
+        },
+        {
+          "texto": "5 años",
+          "correcta": false
+        },
+        {
+          "texto": "20 años",
+          "correcta": false
+        },
+        {
+          "texto": "10 años",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Si el hijo tiene x, Ana tiene 3x; entonces 3x + 10 = 2(x + 10), de donde x = 10."
+    },
+    {
+      "enunciado": "Un padre tiene 40 años y su hijo 10. ¿Dentro de cuántos años la edad del padre será el triple de la del hijo?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5 años",
+          "correcta": true
+        },
+        {
+          "texto": "10 años",
+          "correcta": false
+        },
+        {
+          "texto": "15 años",
+          "correcta": false
+        },
+        {
+          "texto": "3 años",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se plantea 40 + t = 3(10 + t), es decir 40 + t = 30 + 3t, de donde t = 5."
+    },
+    {
+      "enunciado": "La suma de tres números pares consecutivos es 72. ¿Cuál es el mayor de ellos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "28",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "22",
+          "correcta": false
+        },
+        {
+          "texto": "26",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con n + (n + 2) + (n + 4) = 72 se obtiene n = 22; los números son 22, 24 y 26, y el mayor es 26."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: 2(x − 3) − 3(x − 2) = −4.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "−8",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se desarrolla: 2x − 6 − 3x + 6 = −4, es decir −x = −4 y x = 4."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: (2x + 3)/5 = (x + 4)/3.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "−11",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando en cruz: 3(2x + 3) = 5(x + 4), es decir 6x + 9 = 5x + 20 y x = 11."
+    },
+    {
+      "enunciado": "El perímetro de un rectángulo es 54 cm. El largo mide 3 cm más que el doble del ancho. ¿Cuánto mide el ancho?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "19 cm",
+          "correcta": false
+        },
+        {
+          "texto": "9 cm",
+          "correcta": false
+        },
+        {
+          "texto": "8 cm",
+          "correcta": true
+        },
+        {
+          "texto": "6 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con ancho a y largo 2a + 3: 2(a + 2a + 3) = 54, es decir 6a + 6 = 54 y a = 8 cm."
+    },
+    {
+      "enunciado": "Un número, su mitad y su tercera parte suman 22. ¿Cuál es el número?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación x + x/2 + x/3 = 22 equivale a 11x/6 = 22, de donde x = 12."
+    },
+    {
+      "enunciado": "El 15% de un número, aumentado en 8, es 23. ¿Cuál es el número?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "100",
+          "correcta": true
+        },
+        {
+          "texto": "50",
+          "correcta": false
+        },
+        {
+          "texto": "150",
+          "correcta": false
+        },
+        {
+          "texto": "200",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se plantea 0,15x + 8 = 23, es decir 0,15x = 15 y x = 100."
+    },
+    {
+      "enunciado": "Las edades de tres hermanos suman 47 años. El segundo tiene 3 años más que el primero y el tercero el doble de la edad del primero. ¿Cuántos años tiene el primero?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "14 años",
+          "correcta": false
+        },
+        {
+          "texto": "22 años",
+          "correcta": false
+        },
+        {
+          "texto": "8 años",
+          "correcta": false
+        },
+        {
+          "texto": "11 años",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con x + (x + 3) + 2x = 47 se obtiene 4x + 3 = 47, luego x = 11."
+    },
+    {
+      "enunciado": "Si a ≠ 0, ¿cuál es el valor de x en la ecuación ax + b = c?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = (c + b)/a",
+          "correcta": false
+        },
+        {
+          "texto": "x = (b − c)/a",
+          "correcta": false
+        },
+        {
+          "texto": "x = (c − b)/a",
+          "correcta": true
+        },
+        {
+          "texto": "x = a(c − b)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se resta b y se divide entre a: x = (c − b)/a."
+    },
+    {
+      "enunciado": "En la fórmula del área de un triángulo, A = (b·h)/2, ¿cómo se despeja la base b?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "b = A/(2h)",
+          "correcta": false
+        },
+        {
+          "texto": "b = 2Ah",
+          "correcta": false
+        },
+        {
+          "texto": "b = Ah/2",
+          "correcta": false
+        },
+        {
+          "texto": "b = 2A/h",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se multiplica por 2 y se divide entre h: b = 2A/h."
+    },
+    {
+      "enunciado": "En un corral hay gallinas y conejos. En total se cuentan 35 cabezas y 94 patas. ¿Cuántos conejos hay?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "23",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si hay c conejos, las gallinas son 35 − c; entonces 4c + 2(35 − c) = 94, de donde 2c = 24 y c = 12."
+    },
+    {
+      "enunciado": "Resuelve la ecuación: (x + 1)/2 − (2x − 3)/5 = (x − 4)/10.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 11",
+          "correcta": false
+        },
+        {
+          "texto": "x = −4",
+          "correcta": false
+        },
+        {
+          "texto": "No tiene solución",
+          "correcta": true
+        },
+        {
+          "texto": "Infinitas soluciones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando por 10: 5(x + 1) − 2(2x − 3) = x − 4 da x + 11 = x − 4, es decir 11 = −4, lo cual es falso; la ecuación no tiene solución."
+    },
+    {
+      "enunciado": "¿Cuántas soluciones tiene la ecuación 2(3x − 4) = 6x − 8?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Una sola solución: x = 0",
+          "correcta": false
+        },
+        {
+          "texto": "Infinitas soluciones",
+          "correcta": true
+        },
+        {
+          "texto": "No tiene solución",
+          "correcta": false
+        },
+        {
+          "texto": "Dos soluciones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al desarrollar queda 6x − 8 = 6x − 8, una igualdad que se cumple para todo x (identidad); por eso tiene infinitas soluciones, no solo x = 0."
+    }
+  ]
+}

@@ -1,0 +1,1150 @@
+{
+  "id": "matematica-probabilidad",
+  "materia": "matematica",
+  "tema": "Probabilidad y técnicas de conteo",
+  "bloque": "Estadística y probabilidad",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Si todos los resultados son igual de probables, P(A) = casos favorables / casos posibles. Siempre 0 ≤ P ≤ 1 y P(no A) = 1 − P(A). Para contar: si el orden importa, usa permutaciones; si no importa, combinaciones.",
+    "ejemplo": {
+      "enunciado": "Se lanzan dos dados. ¿Cuál es la probabilidad de que la suma sea 8?",
+      "pasos": [
+        "Casos posibles: 6 × 6 = 36.",
+        "Casos favorables (suma 8): (2,6), (3,5), (4,4), (5,3), (6,2) → 5 casos.",
+        "P = favorables / posibles = 5/36."
+      ],
+      "resultado": "5/36"
+    },
+    "ojo": "Confundir «y» con «o»: en eventos independientes, «A y B» se multiplica; en «A o B» se suma y se resta lo que tienen en común."
+  },
+  "preguntas": [
+    {
+      "enunciado": "Se lanza un dado de seis caras. ¿Cuál es la probabilidad de obtener un 4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/6",
+          "correcta": true
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay un solo resultado favorable (el 4) entre 6 posibles, por lo que la probabilidad es 1/6."
+    },
+    {
+      "enunciado": "Al lanzar una moneda equilibrada, ¿cuál es la probabilidad de que salga cara?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Una moneda tiene dos resultados igualmente probables (cara y sello), así que P(cara)=1/2."
+    },
+    {
+      "enunciado": "Se lanza un dado de seis caras. ¿Cuál es la probabilidad de obtener un número par?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los pares son 2, 4 y 6: tres casos favorables entre seis, es decir 3/6 = 1/2."
+    },
+    {
+      "enunciado": "De una baraja estándar de 52 cartas se extrae una al azar. ¿Cuál es la probabilidad de que sea de color rojo?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "1/13",
+          "correcta": false
+        },
+        {
+          "texto": "1/26",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 26 cartas rojas (corazones y diamantes) entre 52, por lo que 26/52 = 1/2."
+    },
+    {
+      "enunciado": "Una bolsa contiene 3 bolas rojas y 2 azules. Si se extrae una al azar, ¿cuál es la probabilidad de que sea roja?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2/5",
+          "correcta": false
+        },
+        {
+          "texto": "1/5",
+          "correcta": false
+        },
+        {
+          "texto": "3/2",
+          "correcta": false
+        },
+        {
+          "texto": "3/5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Hay 3 rojas de un total de 5 bolas, por lo que la probabilidad es 3/5."
+    },
+    {
+      "enunciado": "¿Cuál es la probabilidad de un evento imposible?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0,5",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Un evento imposible no tiene casos favorables, por lo que su probabilidad es exactamente 0."
+    },
+    {
+      "enunciado": "¿Cuál es la probabilidad de un evento seguro?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "0,5",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un evento seguro ocurre siempre, así que su probabilidad es 1."
+    },
+    {
+      "enunciado": "Se lanza un dado de seis caras. ¿Cuál es la probabilidad de obtener un número mayor que 4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": true
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los números mayores que 4 son 5 y 6: dos casos entre seis, es decir 2/6 = 1/3."
+    },
+    {
+      "enunciado": "De una baraja estándar de 52 cartas se extrae una al azar. ¿Cuál es la probabilidad de que sea un as?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/13",
+          "correcta": true
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "4/13",
+          "correcta": false
+        },
+        {
+          "texto": "1/52",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 4 ases entre 52 cartas, por lo que 4/52 = 1/13."
+    },
+    {
+      "enunciado": "Una ruleta está dividida en 8 sectores iguales numerados del 1 al 8. ¿Cuál es la probabilidad de que la flecha caiga en el 5?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/8",
+          "correcta": true
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "5/8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay un sector favorable entre 8 sectores iguales, por lo que la probabilidad es 1/8."
+    },
+    {
+      "enunciado": "Si la probabilidad de que llueva mañana es 0,3, ¿cuál es la probabilidad de que NO llueva?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,3",
+          "correcta": false
+        },
+        {
+          "texto": "1,3",
+          "correcta": false
+        },
+        {
+          "texto": "0,7",
+          "correcta": true
+        },
+        {
+          "texto": "0,5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La probabilidad del complemento es 1 − 0,3 = 0,7."
+    },
+    {
+      "enunciado": "De una baraja estándar de 52 cartas, ¿cuál es la probabilidad de extraer una figura (J, Q o K)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/13",
+          "correcta": false
+        },
+        {
+          "texto": "3/13",
+          "correcta": true
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "12/13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 12 figuras (3 por cada uno de los 4 palos) entre 52 cartas: 12/52 = 3/13."
+    },
+    {
+      "enunciado": "Se lanzan dos monedas equilibradas. ¿Cuál es la probabilidad de obtener dos caras?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "3/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los resultados posibles son CC, CS, SC, SS; solo uno es CC, por lo que la probabilidad es 1/4."
+    },
+    {
+      "enunciado": "Una urna contiene 5 bolas blancas y 5 negras. ¿Cuál es la probabilidad de extraer una bola blanca?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "1/5",
+          "correcta": false
+        },
+        {
+          "texto": "1/10",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 5 blancas entre 10 bolas, por lo que 5/10 = 1/2."
+    },
+    {
+      "enunciado": "Se elige al azar una letra de la palabra CASA. ¿Cuál es la probabilidad de que sea una vocal?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "3/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La palabra CASA tiene 4 letras y 2 son vocales (las dos A), por lo que 2/4 = 1/2."
+    },
+    {
+      "enunciado": "Se elige al azar un día de la semana. ¿Cuál es la probabilidad de que sea fin de semana (sábado o domingo)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2/7",
+          "correcta": true
+        },
+        {
+          "texto": "1/7",
+          "correcta": false
+        },
+        {
+          "texto": "5/7",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 2 días de fin de semana entre 7, por lo que la probabilidad es 2/7."
+    },
+    {
+      "enunciado": "Se lanzan dos dados de seis caras. ¿Cuál es la probabilidad de que la suma de los puntos sea 7?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/12",
+          "correcta": false
+        },
+        {
+          "texto": "5/36",
+          "correcta": false
+        },
+        {
+          "texto": "7/36",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Hay 6 combinaciones que suman 7 entre 36 resultados posibles: 6/36 = 1/6."
+    },
+    {
+      "enunciado": "Se lanzan dos dados de seis caras. ¿Cuál es la probabilidad de que la suma sea 12?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/12",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": false
+        },
+        {
+          "texto": "1/36",
+          "correcta": true
+        },
+        {
+          "texto": "2/36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Solo el resultado (6,6) suma 12, por lo que la probabilidad es 1/36."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de 5! (cinco factorial)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": false
+        },
+        {
+          "texto": "120",
+          "correcta": true
+        },
+        {
+          "texto": "720",
+          "correcta": false
+        }
+      ],
+      "explicacion": "5! = 5·4·3·2·1 = 120."
+    },
+    {
+      "enunciado": "¿De cuántas maneras distintas se pueden ordenar 4 libros diferentes en un estante?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Es una permutación de 4 elementos: 4! = 24."
+    },
+    {
+      "enunciado": "¿Cuántas palabras de 3 letras distintas se pueden formar con las letras A, B, C, D, E sin repetir letras?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "125",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es una permutación de 5 tomadas de 3: P(5,3) = 5·4·3 = 60."
+    },
+    {
+      "enunciado": "¿Cuántos subconjuntos de 2 elementos se pueden formar a partir de un conjunto de 5 elementos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es una combinación: C(5,2) = 10, ya que el orden no importa."
+    },
+    {
+      "enunciado": "¿De cuántas maneras se puede elegir un comité de 3 personas entre 10 candidatos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "120",
+          "correcta": true
+        },
+        {
+          "texto": "720",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "1000",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El orden no importa: C(10,3) = 120."
+    },
+    {
+      "enunciado": "Dos eventos A y B son independientes con P(A)=0,5 y P(B)=0,4. ¿Cuál es P(A y B)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,9",
+          "correcta": false
+        },
+        {
+          "texto": "0,2",
+          "correcta": true
+        },
+        {
+          "texto": "0,1",
+          "correcta": false
+        },
+        {
+          "texto": "0,45",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para eventos independientes, P(A y B) = P(A)·P(B) = 0,5·0,4 = 0,2."
+    },
+    {
+      "enunciado": "Dos eventos A y B son mutuamente excluyentes con P(A)=0,3 y P(B)=0,5. ¿Cuál es P(A o B)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,15",
+          "correcta": false
+        },
+        {
+          "texto": "0,8",
+          "correcta": true
+        },
+        {
+          "texto": "0,65",
+          "correcta": false
+        },
+        {
+          "texto": "0,2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para eventos mutuamente excluyentes, P(A o B) = P(A) + P(B) = 0,3 + 0,5 = 0,8."
+    },
+    {
+      "enunciado": "De una baraja estándar de 52 cartas, ¿cuál es la probabilidad de extraer un corazón o un rey?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "17/52",
+          "correcta": false
+        },
+        {
+          "texto": "4/13",
+          "correcta": true
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "3/13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "P = 13/52 + 4/52 − 1/52 (el rey de corazones se cuenta una vez) = 16/52 = 4/13."
+    },
+    {
+      "enunciado": "Una bolsa tiene 4 bolas rojas y 6 azules. Se extraen 2 sin reposición. ¿Cuál es la probabilidad de que ambas sean rojas?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2/15",
+          "correcta": true
+        },
+        {
+          "texto": "4/25",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": false
+        },
+        {
+          "texto": "12/100",
+          "correcta": false
+        }
+      ],
+      "explicacion": "P = (4/10)·(3/9) = 12/90 = 2/15, porque la segunda extracción depende de la primera."
+    },
+    {
+      "enunciado": "Se lanza una moneda equilibrada 3 veces. ¿Cuál es la probabilidad de obtener exactamente 2 caras?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/8",
+          "correcta": false
+        },
+        {
+          "texto": "3/8",
+          "correcta": true
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es binomial: C(3,2)·(1/2)³ = 3·(1/8) = 3/8."
+    },
+    {
+      "enunciado": "¿Cuántas ordenaciones distintas de las letras de la palabra CASA existen?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Hay 4 letras con la A repetida dos veces: 4!/2! = 24/2 = 12."
+    },
+    {
+      "enunciado": "¿Cuántas claves de 3 dígitos se pueden formar con los dígitos del 0 al 9 si se permite repetir dígitos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "720",
+          "correcta": false
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        },
+        {
+          "texto": "1000",
+          "correcta": true
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por el principio multiplicativo, 10·10·10 = 1000."
+    },
+    {
+      "enunciado": "Se lanza una moneda equilibrada 2 veces. ¿Cuál es la probabilidad de obtener al menos una cara?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "3/4",
+          "correcta": true
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "P(al menos una cara) = 1 − P(ninguna cara) = 1 − 1/4 = 3/4."
+    },
+    {
+      "enunciado": "Se lanzan dos dados de seis caras. ¿Cuál es la probabilidad de obtener un doble (ambos dados con el mismo número)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/12",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": true
+        },
+        {
+          "texto": "1/36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 6 dobles, (1,1), (2,2), …, (6,6), entre 36 resultados posibles: 6/36 = 1/6."
+    },
+    {
+      "enunciado": "En un grupo de 12 niños y 8 niñas se eligen 2 estudiantes al azar. ¿Cuál es la probabilidad de que ambos sean niñas?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2/25",
+          "correcta": false
+        },
+        {
+          "texto": "16/100",
+          "correcta": false
+        },
+        {
+          "texto": "7/50",
+          "correcta": false
+        },
+        {
+          "texto": "14/95",
+          "correcta": true
+        }
+      ],
+      "explicacion": "P = C(8,2)/C(20,2) = 28/190 = 14/95."
+    },
+    {
+      "enunciado": "Se lanza un dado de seis caras 4 veces. ¿Cuál es la probabilidad de obtener exactamente dos veces el número 6?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "25/1296",
+          "correcta": false
+        },
+        {
+          "texto": "25/216",
+          "correcta": true
+        },
+        {
+          "texto": "1/36",
+          "correcta": false
+        },
+        {
+          "texto": "5/216",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Binomial: C(4,2)·(1/6)²·(5/6)² = 6·(1/36)·(25/36) = 150/1296 = 25/216."
+    },
+    {
+      "enunciado": "Se lanza una moneda equilibrada 5 veces. ¿Cuál es la probabilidad de obtener exactamente 3 caras?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5/16",
+          "correcta": true
+        },
+        {
+          "texto": "3/16",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "10/16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Binomial: C(5,3)·(1/2)⁵ = 10/32 = 5/16."
+    },
+    {
+      "enunciado": "En una distribución binomial con n=20 ensayos y probabilidad de éxito p=0,3, ¿cuál es el número esperado de éxitos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La media de una binomial es n·p = 20·0,3 = 6."
+    },
+    {
+      "enunciado": "Un experimento se repite 4 veces de forma independiente, con probabilidad de éxito 0,2 en cada ensayo. ¿Cuál es la probabilidad de al menos un éxito?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,5904",
+          "correcta": true
+        },
+        {
+          "texto": "0,4096",
+          "correcta": false
+        },
+        {
+          "texto": "0,2",
+          "correcta": false
+        },
+        {
+          "texto": "0,8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "P(al menos uno) = 1 − (0,8)⁴ = 1 − 0,4096 = 0,5904."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de la combinación C(8,3)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "336",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "56",
+          "correcta": true
+        },
+        {
+          "texto": "512",
+          "correcta": false
+        }
+      ],
+      "explicacion": "C(8,3) = 8!/(3!·5!) = (8·7·6)/(3·2·1) = 336/6 = 56."
+    },
+    {
+      "enunciado": "¿De cuántas maneras distintas pueden sentarse 5 personas alrededor de una mesa redonda?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "120",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En una permutación circular se fija una persona: (5−1)! = 4! = 24."
+    },
+    {
+      "enunciado": "La caja A tiene 2 bolas rojas y 3 azules; la caja B tiene 4 rojas y 1 azul. Se elige una caja al azar y se extrae una bola que resulta roja. ¿Cuál es la probabilidad de que provenga de la caja A?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2/5",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por Bayes: P(A|rojo) = (1/2·2/5) / (1/2·2/5 + 1/2·4/5) = (1/5)/(3/5) = 1/3."
+    },
+    {
+      "enunciado": "¿Cuántas ordenaciones distintas se pueden formar con todas las letras de la palabra BANANA?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "120",
+          "correcta": false
+        },
+        {
+          "texto": "720",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": true
+        },
+        {
+          "texto": "180",
+          "correcta": false
+        }
+      ],
+      "explicacion": "BANANA tiene 6 letras con A repetida 3 veces y N repetida 2: 6!/(3!·2!) = 720/12 = 60."
+    },
+    {
+      "enunciado": "En una lotería se eligen 6 números distintos entre 49. ¿Cuál es la probabilidad de acertar los 6 con un solo boleto?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/13 983 816",
+          "correcta": true
+        },
+        {
+          "texto": "1/49",
+          "correcta": false
+        },
+        {
+          "texto": "6/49",
+          "correcta": false
+        },
+        {
+          "texto": "1/720",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay C(49, 6) = 13 983 816 combinaciones posibles y solo una gana, así que P = 1/13 983 816."
+    },
+    {
+      "enunciado": "Un jugador de baloncesto encesta el 80% de sus tiros libres. ¿Cuál es la probabilidad de que enceste 5 tiros consecutivos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,8",
+          "correcta": false
+        },
+        {
+          "texto": "0,4",
+          "correcta": false
+        },
+        {
+          "texto": "0,2",
+          "correcta": false
+        },
+        {
+          "texto": "0,32768",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por independencia, P = (0,8)⁵ = 0,32768."
+    },
+    {
+      "enunciado": "Se lanza un dado de seis caras. ¿Cuál es el valor esperado del resultado?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3,5",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "E = (1+2+3+4+5+6)/6 = 21/6 = 3,5."
+    },
+    {
+      "enunciado": "Se desea formar un comité de 2 hombres y 2 mujeres elegidos entre 5 hombres y 4 mujeres. ¿De cuántas maneras es posible?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "60",
+          "correcta": true
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "120",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se multiplican las combinaciones: C(5,2)·C(4,2) = 10·6 = 60."
+    },
+    {
+      "enunciado": "Se lanza un dado de seis caras 3 veces. ¿Cuál es la probabilidad de obtener exactamente un 6?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/6",
+          "correcta": false
+        },
+        {
+          "texto": "25/216",
+          "correcta": false
+        },
+        {
+          "texto": "25/72",
+          "correcta": true
+        },
+        {
+          "texto": "5/72",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Binomial: C(3,1)·(1/6)·(5/6)² = 3·(1/6)·(25/36) = 75/216 = 25/72."
+    },
+    {
+      "enunciado": "Una máquina produce piezas con un 5% de defectuosas. Si se seleccionan 3 piezas al azar, ¿cuál es la probabilidad de que ninguna sea defectuosa?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,15",
+          "correcta": false
+        },
+        {
+          "texto": "0,857375",
+          "correcta": true
+        },
+        {
+          "texto": "0,05",
+          "correcta": false
+        },
+        {
+          "texto": "0,95",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por independencia, P(ninguna defectuosa) = (0,95)³ = 0,857375."
+    },
+    {
+      "enunciado": "En una distribución binomial con n=10 y p=0,5, ¿cuál es la varianza?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "1,58",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "2,5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La varianza de una binomial es n·p·(1−p) = 10·0,5·0,5 = 2,5."
+    },
+    {
+      "enunciado": "En un curso de 30 estudiantes, a 18 les gusta Matemática, a 12 les gusta Física y a 7 les gustan ambas materias. Si se elige un estudiante al azar, ¿cuál es la probabilidad de que le guste Matemática o Física?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "23/30",
+          "correcta": true
+        },
+        {
+          "texto": "7/30",
+          "correcta": false
+        },
+        {
+          "texto": "5/6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por inclusión-exclusión, a 18 + 12 − 7 = 23 les gusta al menos una; P = 23/30."
+    }
+  ]
+}

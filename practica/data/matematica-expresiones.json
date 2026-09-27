@@ -1,0 +1,1151 @@
+{
+  "id": "matematica-expresiones",
+  "materia": "matematica",
+  "tema": "Expresiones algebraicas: términos semejantes y valor numérico",
+  "bloque": "Álgebra",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "Solo se pueden sumar o restar términos semejantes, es decir, los que tienen exactamente la misma parte literal (mismas letras con los mismos exponentes): se operan los coeficientes y la parte literal se copia igual. Para hallar el valor numérico, reemplaza cada letra por su número (entre paréntesis) y respeta la jerarquía de operaciones.",
+    "ejemplo": {
+      "enunciado": "Calcula el valor numérico de x² − 2x cuando x = −3.",
+      "pasos": [
+        "Reemplaza x por (−3): (−3)² − 2·(−3).",
+        "Primero la potencia: (−3)² = 9.",
+        "Luego la multiplicación: −2·(−3) = +6.",
+        "Suma: 9 + 6 = 15."
+      ],
+      "resultado": "15"
+    },
+    "ojo": "3a + 5a = 8a, no 8a² ni 15a: al reducir, los exponentes NO cambian. Y x² con x = −3 se escribe (−3)² = 9; sin paréntesis te saldría −9."
+  },
+  "preguntas": [
+    {
+      "enunciado": "En el término algebraico 7x, ¿cuál es el coeficiente numérico?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "x",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El coeficiente es el número que multiplica a la parte literal; en 7x ese número es 7."
+    },
+    {
+      "enunciado": "¿Cuál es la parte literal del término −3a²b?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "a²b",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "ab",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La parte literal está formada por las letras con sus exponentes: a²b. El −3 es el coeficiente."
+    },
+    {
+      "enunciado": "Calcula el valor numérico de la expresión 2x cuando x = 5.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "52",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se sustituye x por 5: 2·5 = 10."
+    },
+    {
+      "enunciado": "Los términos 5x y −2x se clasifican como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Términos sin relación",
+          "correcta": false
+        },
+        {
+          "texto": "Términos no semejantes",
+          "correcta": false
+        },
+        {
+          "texto": "Términos semejantes",
+          "correcta": true
+        },
+        {
+          "texto": "Términos iguales",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tienen la misma parte literal (x), por lo que son términos semejantes y pueden reducirse."
+    },
+    {
+      "enunciado": "Reduce la expresión 3a + 5a.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "15a",
+          "correcta": false
+        },
+        {
+          "texto": "8a²",
+          "correcta": false
+        },
+        {
+          "texto": "2a",
+          "correcta": false
+        },
+        {
+          "texto": "8a",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Al ser términos semejantes se suman los coeficientes: 3 + 5 = 8, por lo que el resultado es 8a."
+    },
+    {
+      "enunciado": "Reduce la expresión 9m − 4m.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "13m",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "5m",
+          "correcta": true
+        },
+        {
+          "texto": "36m",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se restan los coeficientes de términos semejantes: 9 − 4 = 5, conservando la letra: 5m."
+    },
+    {
+      "enunciado": "Halla el valor numérico de x + 3 cuando x = 4.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "34",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sustituyendo x por 4: 4 + 3 = 7."
+    },
+    {
+      "enunciado": "¿Cuál es el coeficiente del término −x?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−1",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "−x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cuando una letra aparece con signo negativo y sin número visible, su coeficiente es −1."
+    },
+    {
+      "enunciado": "¿Cuál es el grado del monomio 4x³?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El grado de un monomio de una variable es el exponente de la letra: en 4x³ es 3."
+    },
+    {
+      "enunciado": "Reduce la expresión 2x + 3y + 4x.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9xy",
+          "correcta": false
+        },
+        {
+          "texto": "2x + 7y",
+          "correcta": false
+        },
+        {
+          "texto": "6x + 3y",
+          "correcta": true
+        },
+        {
+          "texto": "6xy",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Solo se reducen los términos semejantes: 2x + 4x = 6x; el término 3y se mantiene, dando 6x + 3y."
+    },
+    {
+      "enunciado": "¿Los términos 4x² y 7x² son semejantes?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "No, porque los coeficientes son distintos",
+          "correcta": false
+        },
+        {
+          "texto": "Sí, porque tienen la misma parte literal",
+          "correcta": true
+        },
+        {
+          "texto": "No, porque uno es mayor que el otro",
+          "correcta": false
+        },
+        {
+          "texto": "Solo si x = 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dos términos son semejantes si tienen idéntica parte literal; ambos tienen x², por lo tanto sí lo son."
+    },
+    {
+      "enunciado": "Reduce la expresión 7b − b.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7b",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "6b",
+          "correcta": true
+        },
+        {
+          "texto": "b",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El término b equivale a 1b, así que 7b − 1b = 6b."
+    },
+    {
+      "enunciado": "Halla el valor numérico de 5 − x cuando x = 2.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Sustituyendo x por 2: 5 − 2 = 3."
+    },
+    {
+      "enunciado": "¿Cuál es el coeficiente del término (2/3)x?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3/2",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El coeficiente es el factor que acompaña a la letra: 2/3."
+    },
+    {
+      "enunciado": "Reduce la expresión −3x + 8x.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5x",
+          "correcta": true
+        },
+        {
+          "texto": "−5x",
+          "correcta": false
+        },
+        {
+          "texto": "11x",
+          "correcta": false
+        },
+        {
+          "texto": "−24x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suman los coeficientes considerando los signos: −3 + 8 = 5, por lo que queda 5x."
+    },
+    {
+      "enunciado": "Calcula el valor numérico de x² cuando x = 3.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "23",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "32",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Elevar al cuadrado significa multiplicar el número por sí mismo: 3² = 3·3 = 9."
+    },
+    {
+      "enunciado": "Reduce la expresión 5x − 3y + 2x − y.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "7x − 2y",
+          "correcta": false
+        },
+        {
+          "texto": "7x − 4y",
+          "correcta": true
+        },
+        {
+          "texto": "3x + 4y",
+          "correcta": false
+        },
+        {
+          "texto": "7x + 4y",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se agrupan semejantes: 5x + 2x = 7x y −3y − y = −4y, resultando 7x − 4y."
+    },
+    {
+      "enunciado": "Halla el valor numérico de 2x + 3 cuando x = −4.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "−5",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "−11",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sustituyendo: 2·(−4) + 3 = −8 + 3 = −5."
+    },
+    {
+      "enunciado": "Reduce la expresión 3a²b + 5a²b − 2a²b.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6a⁶b³",
+          "correcta": false
+        },
+        {
+          "texto": "6a²b",
+          "correcta": true
+        },
+        {
+          "texto": "10a²b",
+          "correcta": false
+        },
+        {
+          "texto": "6ab",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Son términos semejantes; se operan los coeficientes 3 + 5 − 2 = 6 y se conserva la parte literal a²b."
+    },
+    {
+      "enunciado": "Calcula el valor numérico de x² − 2x cuando x = 3.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Sustituyendo: 3² − 2·3 = 9 − 6 = 3."
+    },
+    {
+      "enunciado": "Reduce la expresión 4xy − 7xy + xy.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "12xy",
+          "correcta": false
+        },
+        {
+          "texto": "2xy",
+          "correcta": false
+        },
+        {
+          "texto": "−3xy",
+          "correcta": false
+        },
+        {
+          "texto": "−2xy",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los coeficientes son 4, −7 y 1: 4 − 7 + 1 = −2, dando −2xy."
+    },
+    {
+      "enunciado": "Halla el valor numérico de (a + b)/2 cuando a = 6 y b = 8.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "3,5",
+          "correcta": false
+        },
+        {
+          "texto": "48",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se reemplaza y se opera: (6 + 8)/2 = 14/2 = 7."
+    },
+    {
+      "enunciado": "Reduce la expresión 6m − 4n + 3m + 7n.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "9m − 3n",
+          "correcta": false
+        },
+        {
+          "texto": "12mn",
+          "correcta": false
+        },
+        {
+          "texto": "9m + 11n",
+          "correcta": false
+        },
+        {
+          "texto": "9m + 3n",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Agrupando semejantes: 6m + 3m = 9m y −4n + 7n = 3n, lo que da 9m + 3n."
+    },
+    {
+      "enunciado": "Calcula el valor numérico de 3x² cuando x = 2.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Primero se eleva al cuadrado y luego se multiplica: 3·(2²) = 3·4 = 12."
+    },
+    {
+      "enunciado": "Halla el valor numérico de x² + y² cuando x = 3 y además y = 4.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "49",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se calcula cada cuadrado por separado: 3² + 4² = 9 + 16 = 25."
+    },
+    {
+      "enunciado": "¿Cuál es el grado del polinomio 5x³ − 2x² + 7?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El grado de un polinomio es el mayor exponente presente: aquí es 3."
+    },
+    {
+      "enunciado": "Reduce la expresión (1/2)x + (1/4)x.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2/6)x",
+          "correcta": false
+        },
+        {
+          "texto": "(3/4)x",
+          "correcta": true
+        },
+        {
+          "texto": "(1/6)x",
+          "correcta": false
+        },
+        {
+          "texto": "(1/8)x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suman las fracciones con común denominador 4: 2/4 + 1/4 = 3/4, resultando (3/4)x."
+    },
+    {
+      "enunciado": "Calcula el valor numérico de −x² cuando x = 4.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−16",
+          "correcta": true
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "−8",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La expresión −x² indica el opuesto del cuadrado: −(4²) = −16."
+    },
+    {
+      "enunciado": "Reduce la expresión 8a − 5 − 3a + 2.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5a + 3",
+          "correcta": false
+        },
+        {
+          "texto": "11a − 7",
+          "correcta": false
+        },
+        {
+          "texto": "5a − 7",
+          "correcta": false
+        },
+        {
+          "texto": "5a − 3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se agrupan términos con letra y términos independientes: 8a − 3a = 5a y −5 + 2 = −3, dando 5a − 3."
+    },
+    {
+      "enunciado": "Halla el valor numérico de 2(x + 3) cuando x = 5.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": true
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "28",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se opera primero el paréntesis: 2·(5 + 3) = 2·8 = 16."
+    },
+    {
+      "enunciado": "Calcula el valor numérico de a² − b² cuando a = 5 y b = 3.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": true
+        },
+        {
+          "texto": "34",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se evalúa cada cuadrado: 5² − 3² = 25 − 9 = 16."
+    },
+    {
+      "enunciado": "Reduce la expresión 0,5x + 1,5x − 0,2x.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2,2x",
+          "correcta": false
+        },
+        {
+          "texto": "1,2x",
+          "correcta": false
+        },
+        {
+          "texto": "2x",
+          "correcta": false
+        },
+        {
+          "texto": "1,8x",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se operan los coeficientes decimales: 0,5 + 1,5 − 0,2 = 1,8, resultando 1,8x."
+    },
+    {
+      "enunciado": "Halla el valor numérico de (2x − 1)/3 cuando x = 5.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "11/3",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se sustituye y se opera: (2·5 − 1)/3 = (10 − 1)/3 = 9/3 = 3."
+    },
+    {
+      "enunciado": "Reduce la expresión 3x²y − x²y + 2xy².",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2x²y + 2xy²",
+          "correcta": true
+        },
+        {
+          "texto": "4x²y²",
+          "correcta": false
+        },
+        {
+          "texto": "4xy³",
+          "correcta": false
+        },
+        {
+          "texto": "2x³y + 2xy²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Solo 3x²y y −x²y son semejantes: 3x²y − x²y = 2x²y; el término 2xy² tiene otra parte literal y se queda igual: 2x²y + 2xy²."
+    },
+    {
+      "enunciado": "Calcula el valor numérico de x³ − 2x² + x cuando x = −2.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−18",
+          "correcta": true
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "−14",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sustituyendo: (−2)³ − 2·(−2)² + (−2) = −8 − 8 − 2 = −18."
+    },
+    {
+      "enunciado": "Reduce la expresión 2(3x − 4) − 3(x − 5).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3x − 23",
+          "correcta": false
+        },
+        {
+          "texto": "3x + 7",
+          "correcta": true
+        },
+        {
+          "texto": "3x + 23",
+          "correcta": false
+        },
+        {
+          "texto": "9x + 7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Aplicando la distributiva: 6x − 8 − 3x + 15 = 3x + 7."
+    },
+    {
+      "enunciado": "Halla el valor numérico de (x² − y²)/(x − y) cuando x = 7 y además y = 3.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        },
+        {
+          "texto": "21",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(7² − 3²)/(7 − 3) = (49 − 9)/4 = 40/4 = 10, que coincide con x + y."
+    },
+    {
+      "enunciado": "Reduce la expresión 5a − {2a − [3a − (a − b)]}.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5a + b",
+          "correcta": true
+        },
+        {
+          "texto": "5a − b",
+          "correcta": false
+        },
+        {
+          "texto": "3a + b",
+          "correcta": false
+        },
+        {
+          "texto": "7a − b",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se quitan signos de adentro hacia afuera: 3a−(a−b)=2a+b; 2a−(2a+b)=−b; 5a−(−b)=5a+b."
+    },
+    {
+      "enunciado": "Calcula el valor numérico de 2x² − 3xy + y² cuando x = 2 y además y = −1.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": true
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sustituyendo: 2·(2²) − 3·2·(−1) + (−1)² = 8 + 6 + 1 = 15."
+    },
+    {
+      "enunciado": "Reduce la expresión (3x² − 5x + 2) + (−x² + 4x − 7).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2x² − 9x + 9",
+          "correcta": false
+        },
+        {
+          "texto": "2x² − x − 9",
+          "correcta": false
+        },
+        {
+          "texto": "2x² − x − 5",
+          "correcta": true
+        },
+        {
+          "texto": "4x² − x − 5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sumando semejantes: 3x² − x² = 2x²; −5x + 4x = −x; 2 − 7 = −5, lo que da 2x² − x − 5."
+    },
+    {
+      "enunciado": "Halla el valor numérico de √(x² + y²) cuando x = 6 y además y = 8.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        },
+        {
+          "texto": "48",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Primero el radicando: 6² + 8² = 36 + 64 = 100; luego √100 = 10."
+    },
+    {
+      "enunciado": "Reduce la expresión (1/2)x + (2/3)x − (1/6)x.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(5/6)x",
+          "correcta": false
+        },
+        {
+          "texto": "(2/11)x",
+          "correcta": false
+        },
+        {
+          "texto": "(7/6)x",
+          "correcta": false
+        },
+        {
+          "texto": "x",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con común denominador 6: 3/6 + 4/6 − 1/6 = 6/6 = 1, por lo que el resultado es x."
+    },
+    {
+      "enunciado": "Calcula el valor numérico de a³ − b³ cuando a = 3 y b = 2.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "19",
+          "correcta": true
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se evalúa cada cubo: 3³ − 2³ = 27 − 8 = 19."
+    },
+    {
+      "enunciado": "Reduce la expresión 4a²b − 3ab² + 2a²b + 5ab².",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8a³b³",
+          "correcta": false
+        },
+        {
+          "texto": "6a²b − 2ab²",
+          "correcta": false
+        },
+        {
+          "texto": "6a²b + 2ab²",
+          "correcta": true
+        },
+        {
+          "texto": "6a²b² + 2ab",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se agrupan según parte literal: 4a²b + 2a²b = 6a²b y −3ab² + 5ab² = 2ab², dando 6a²b + 2ab²."
+    },
+    {
+      "enunciado": "Calcula el valor numérico de x⁻² + x⁻¹ cuando x = 2.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3/2",
+          "correcta": false
+        },
+        {
+          "texto": "3/4",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "−6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los exponentes negativos indican inversos: 2⁻² = 1/4 y 2⁻¹ = 1/2; su suma es 1/4 + 1/2 = 3/4."
+    },
+    {
+      "enunciado": "Reduce la expresión 2[x − 3(x − 1)].",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−4x − 6",
+          "correcta": false
+        },
+        {
+          "texto": "2x + 6",
+          "correcta": false
+        },
+        {
+          "texto": "−6x + 6",
+          "correcta": false
+        },
+        {
+          "texto": "−4x + 6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Dentro del corchete: x − 3x + 3 = −2x + 3; al multiplicar por 2 se obtiene −4x + 6."
+    },
+    {
+      "enunciado": "Calcula el valor numérico de (2a − b)² cuando a = 3 y b = 4.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "−10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Primero el paréntesis: 2·3 − 4 = 2; luego se eleva al cuadrado: 2² = 4."
+    },
+    {
+      "enunciado": "Reduce la expresión −(2x − 3) − (4 − x) + 5x.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4x + 7",
+          "correcta": false
+        },
+        {
+          "texto": "4x − 1",
+          "correcta": true
+        },
+        {
+          "texto": "6x − 1",
+          "correcta": false
+        },
+        {
+          "texto": "4x − 7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Quitando paréntesis: −2x + 3 − 4 + x + 5x = 4x − 1."
+    },
+    {
+      "enunciado": "Halla el valor numérico de x + 1/x cuando x = 3.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "10/3",
+          "correcta": true
+        },
+        {
+          "texto": "4/3",
+          "correcta": false
+        },
+        {
+          "texto": "3/4",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sustituyendo: 3 + 1/3 = 9/3 + 1/3 = 10/3."
+    }
+  ]
+}

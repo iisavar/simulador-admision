@@ -1,0 +1,467 @@
+{
+  "generado": "2026-09-27T03:18:31.813Z",
+  "materias": [
+    {
+      "id": "matematica",
+      "nombre": "Matemática",
+      "color": "#F4A124",
+      "temas": [
+        {
+          "id": "matematica-suma-resta",
+          "tema": "Suma y resta de números enteros",
+          "bloque": "Aritmética",
+          "nivel": "basico",
+          "n": 46,
+          "clase": {
+            "titulo": "Ley de signos y operaciones combinadas",
+            "url": "../ley-de-signos/",
+            "lamina": 12
+          }
+        },
+        {
+          "id": "matematica-multiplicacion",
+          "tema": "Multiplicación de números naturales",
+          "bloque": "Aritmética",
+          "nivel": "basico",
+          "n": 46,
+          "clase": null
+        },
+        {
+          "id": "matematica-division",
+          "tema": "División y divisibilidad",
+          "bloque": "Aritmética",
+          "nivel": "basico",
+          "n": 44,
+          "clase": null
+        },
+        {
+          "id": "matematica-mcm-mcd",
+          "tema": "Números primos, MCM y MCD",
+          "bloque": "Aritmética",
+          "nivel": "basico",
+          "n": 43,
+          "clase": null
+        },
+        {
+          "id": "matematica-fracciones-basico",
+          "tema": "Fracciones: concepto, equivalencia y comparación",
+          "bloque": "Aritmética",
+          "nivel": "basico",
+          "n": 47,
+          "clase": null
+        },
+        {
+          "id": "matematica-fracciones-operaciones",
+          "tema": "Operaciones con fracciones",
+          "bloque": "Aritmética",
+          "nivel": "basico",
+          "n": 49,
+          "clase": null
+        },
+        {
+          "id": "matematica-decimales",
+          "tema": "Números decimales",
+          "bloque": "Aritmética",
+          "nivel": "basico",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "matematica-proporcionalidad",
+          "tema": "Razones, proporciones y regla de tres",
+          "bloque": "Aritmética",
+          "nivel": "basico",
+          "n": 46,
+          "clase": null
+        },
+        {
+          "id": "matematica-porcentajes",
+          "tema": "Porcentajes e interés",
+          "bloque": "Aritmética",
+          "nivel": "basico",
+          "n": 42,
+          "clase": null
+        },
+        {
+          "id": "matematica-conjuntos",
+          "tema": "Conjuntos y sus operaciones",
+          "bloque": "Aritmética",
+          "nivel": "basico",
+          "n": 47,
+          "clase": null
+        },
+        {
+          "id": "matematica-potenciacion",
+          "tema": "Potenciación y sus propiedades",
+          "bloque": "Potencias y raíces",
+          "nivel": "basico",
+          "n": 47,
+          "clase": {
+            "titulo": "Ley de signos y operaciones combinadas",
+            "url": "../ley-de-signos/",
+            "lamina": 30
+          }
+        },
+        {
+          "id": "matematica-notacion",
+          "tema": "Notación científica y cifras significativas",
+          "bloque": "Potencias y raíces",
+          "nivel": "basico",
+          "n": 46,
+          "clase": null
+        },
+        {
+          "id": "matematica-radicacion",
+          "tema": "Radicación y simplificación de radicales",
+          "bloque": "Potencias y raíces",
+          "nivel": "intermedio",
+          "n": 43,
+          "clase": null
+        },
+        {
+          "id": "matematica-logaritmos",
+          "tema": "Logaritmos y ecuaciones exponenciales",
+          "bloque": "Potencias y raíces",
+          "nivel": "intermedio",
+          "n": 45,
+          "clase": null
+        },
+        {
+          "id": "matematica-expresiones",
+          "tema": "Expresiones algebraicas: términos semejantes y valor numérico",
+          "bloque": "Álgebra",
+          "nivel": "basico",
+          "n": 49,
+          "clase": null
+        },
+        {
+          "id": "matematica-productos",
+          "tema": "Productos notables",
+          "bloque": "Álgebra",
+          "nivel": "intermedio",
+          "n": 46,
+          "clase": null
+        },
+        {
+          "id": "matematica-factorizacion",
+          "tema": "Factorización de polinomios",
+          "bloque": "Álgebra",
+          "nivel": "intermedio",
+          "n": 46,
+          "clase": null
+        },
+        {
+          "id": "matematica-sucesiones",
+          "tema": "Sucesiones y progresiones",
+          "bloque": "Álgebra",
+          "nivel": "intermedio",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "matematica-ecuaciones1",
+          "tema": "Ecuaciones de primer grado",
+          "bloque": "Ecuaciones y funciones",
+          "nivel": "basico",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "matematica-ecuaciones2",
+          "tema": "Ecuaciones de segundo grado",
+          "bloque": "Ecuaciones y funciones",
+          "nivel": "intermedio",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "matematica-sistemas",
+          "tema": "Sistemas de ecuaciones lineales",
+          "bloque": "Ecuaciones y funciones",
+          "nivel": "intermedio",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "matematica-desigualdades",
+          "tema": "Desigualdades e inecuaciones",
+          "bloque": "Ecuaciones y funciones",
+          "nivel": "intermedio",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "matematica-funciones",
+          "tema": "Funciones: lineal, cuadrática y exponencial",
+          "bloque": "Ecuaciones y funciones",
+          "nivel": "intermedio",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "matematica-geometria-basica",
+          "tema": "Ángulos, triángulos y cuadriláteros",
+          "bloque": "Geometría y trigonometría",
+          "nivel": "basico",
+          "n": 49,
+          "clase": null
+        },
+        {
+          "id": "matematica-areas",
+          "tema": "Perímetros y áreas de figuras planas",
+          "bloque": "Geometría y trigonometría",
+          "nivel": "basico",
+          "n": 46,
+          "clase": null
+        },
+        {
+          "id": "matematica-volumenes",
+          "tema": "Volúmenes de cuerpos geométricos",
+          "bloque": "Geometría y trigonometría",
+          "nivel": "intermedio",
+          "n": 46,
+          "clase": null
+        },
+        {
+          "id": "matematica-trigonometria",
+          "tema": "Trigonometría",
+          "bloque": "Geometría y trigonometría",
+          "nivel": "intermedio",
+          "n": 49,
+          "clase": null
+        },
+        {
+          "id": "matematica-analitica",
+          "tema": "Geometría analítica: rectas y cónicas",
+          "bloque": "Geometría y trigonometría",
+          "nivel": "intermedio",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "matematica-estadistica",
+          "tema": "Estadística descriptiva",
+          "bloque": "Estadística y probabilidad",
+          "nivel": "intermedio",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "matematica-probabilidad",
+          "tema": "Probabilidad y técnicas de conteo",
+          "bloque": "Estadística y probabilidad",
+          "nivel": "intermedio",
+          "n": 49,
+          "clase": null
+        },
+        {
+          "id": "matematica-limites",
+          "tema": "Límites y continuidad",
+          "bloque": "Cálculo (preuniversitario)",
+          "nivel": "avanzado",
+          "n": 47,
+          "clase": null
+        },
+        {
+          "id": "matematica-derivadas",
+          "tema": "Derivadas y sus aplicaciones",
+          "bloque": "Cálculo (preuniversitario)",
+          "nivel": "avanzado",
+          "n": 49,
+          "clase": null
+        },
+        {
+          "id": "matematica-integrales",
+          "tema": "Integrales indefinidas y definidas",
+          "bloque": "Cálculo (preuniversitario)",
+          "nivel": "avanzado",
+          "n": 47,
+          "clase": null
+        }
+      ]
+    },
+    {
+      "id": "quimica",
+      "nombre": "Química",
+      "color": "#2BAE66",
+      "temas": [
+        {
+          "id": "quimica-materia",
+          "tema": "La materia: clasificación, propiedades y mezclas",
+          "bloque": "Materia y átomo",
+          "nivel": "basico",
+          "n": 50,
+          "clase": {
+            "titulo": "Química desde cero",
+            "url": "../quimica-materia/",
+            "lamina": 17
+          }
+        },
+        {
+          "id": "quimica-estados",
+          "tema": "Estados de la materia y cambios de estado",
+          "bloque": "Materia y átomo",
+          "nivel": "basico",
+          "n": 49,
+          "clase": {
+            "titulo": "Química desde cero",
+            "url": "../quimica-materia/",
+            "lamina": 14
+          }
+        },
+        {
+          "id": "quimica-atomo",
+          "tema": "El átomo: modelos, partículas, isótopos e iones",
+          "bloque": "Materia y átomo",
+          "nivel": "basico",
+          "n": 49,
+          "clase": {
+            "titulo": "Química desde cero",
+            "url": "../quimica-materia/",
+            "lamina": 34
+          }
+        },
+        {
+          "id": "quimica-configuracion",
+          "tema": "Configuración electrónica y números cuánticos",
+          "bloque": "Materia y átomo",
+          "nivel": "intermedio",
+          "n": 47,
+          "clase": null
+        },
+        {
+          "id": "quimica-periodica",
+          "tema": "La tabla periódica y sus propiedades",
+          "bloque": "Tabla periódica y enlaces",
+          "nivel": "basico",
+          "n": 49,
+          "clase": {
+            "titulo": "Química desde cero",
+            "url": "../quimica-materia/",
+            "lamina": 54
+          }
+        },
+        {
+          "id": "quimica-enlaces",
+          "tema": "Enlace químico, geometría molecular y fuerzas intermoleculares",
+          "bloque": "Tabla periódica y enlaces",
+          "nivel": "intermedio",
+          "n": 47,
+          "clase": null
+        },
+        {
+          "id": "quimica-nomenclatura-inorganica",
+          "tema": "Nomenclatura inorgánica: óxidos, hidróxidos, ácidos y sales",
+          "bloque": "Nomenclatura",
+          "nivel": "intermedio",
+          "n": 49,
+          "clase": null
+        },
+        {
+          "id": "quimica-reacciones",
+          "tema": "Tipos de reacciones químicas",
+          "bloque": "Reacciones y estequiometría",
+          "nivel": "basico",
+          "n": 47,
+          "clase": null
+        },
+        {
+          "id": "quimica-balanceo",
+          "tema": "Balanceo de ecuaciones y redox",
+          "bloque": "Reacciones y estequiometría",
+          "nivel": "intermedio",
+          "n": 50,
+          "clase": null
+        },
+        {
+          "id": "quimica-estequiometria",
+          "tema": "El mol y la estequiometría",
+          "bloque": "Reacciones y estequiometría",
+          "nivel": "intermedio",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "quimica-electroquimica",
+          "tema": "Electroquímica: pilas y electrólisis",
+          "bloque": "Reacciones y estequiometría",
+          "nivel": "avanzado",
+          "n": 46,
+          "clase": null
+        },
+        {
+          "id": "quimica-gases",
+          "tema": "Leyes de los gases",
+          "bloque": "Soluciones y gases",
+          "nivel": "intermedio",
+          "n": 49,
+          "clase": null
+        },
+        {
+          "id": "quimica-soluciones",
+          "tema": "Soluciones y concentración",
+          "bloque": "Soluciones y gases",
+          "nivel": "intermedio",
+          "n": 50,
+          "clase": null
+        },
+        {
+          "id": "quimica-ph",
+          "tema": "Ácidos, bases y pH",
+          "bloque": "Soluciones y gases",
+          "nivel": "intermedio",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "quimica-termoquimica",
+          "tema": "Termoquímica: entalpía, entropía y espontaneidad",
+          "bloque": "Termoquímica, cinética y equilibrio",
+          "nivel": "intermedio",
+          "n": 49,
+          "clase": null
+        },
+        {
+          "id": "quimica-cinetica",
+          "tema": "Cinética química: velocidad de reacción",
+          "bloque": "Termoquímica, cinética y equilibrio",
+          "nivel": "avanzado",
+          "n": 46,
+          "clase": null
+        },
+        {
+          "id": "quimica-equilibrio",
+          "tema": "Equilibrio químico",
+          "bloque": "Termoquímica, cinética y equilibrio",
+          "nivel": "avanzado",
+          "n": 45,
+          "clase": null
+        },
+        {
+          "id": "quimica-organica-estructura",
+          "tema": "El carbono: hibridación, enlaces e isomería",
+          "bloque": "Química orgánica",
+          "nivel": "intermedio",
+          "n": 43,
+          "clase": null
+        },
+        {
+          "id": "quimica-nomenclatura-organica",
+          "tema": "Nomenclatura orgánica",
+          "bloque": "Química orgánica",
+          "nivel": "intermedio",
+          "n": 48,
+          "clase": null
+        },
+        {
+          "id": "quimica-organica-funciones",
+          "tema": "Funciones orgánicas y biomoléculas",
+          "bloque": "Química orgánica",
+          "nivel": "intermedio",
+          "n": 46,
+          "clase": null
+        }
+      ]
+    }
+  ]
+}

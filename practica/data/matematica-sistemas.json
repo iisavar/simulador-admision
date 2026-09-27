@@ -1,0 +1,1128 @@
+{
+  "id": "matematica-sistemas",
+  "materia": "matematica",
+  "tema": "Sistemas de ecuaciones lineales",
+  "bloque": "Ecuaciones y funciones",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Un sistema 2×2 son dos ecuaciones con dos incógnitas; su solución es el par (x, y) que cumple las DOS a la vez (el punto donde se cortan las rectas). Se resuelve eliminando una incógnita: por sustitución, igualación o reducción (sumar o restar las ecuaciones).",
+    "ejemplo": {
+      "enunciado": "Resuelve el sistema: 2x + y = 11;  x − y = 1.",
+      "pasos": [
+        "Suma las dos ecuaciones para eliminar la y: (2x + x) + (y − y) = 11 + 1, es decir 3x = 12.",
+        "Despeja: x = 4.",
+        "Reemplaza x = 4 en la segunda ecuación: 4 − y = 1, de donde y = 3.",
+        "Comprueba en la primera: 2·4 + 3 = 11. ¡Cumple!"
+      ],
+      "resultado": "(x, y) = (4, 3)"
+    },
+    "ojo": "El par ordenado va (x, y): (4, 3) no es lo mismo que (3, 4). Y comprueba siempre en las DOS ecuaciones, no solo en una."
+  },
+  "preguntas": [
+    {
+      "enunciado": "En un sistema de dos ecuaciones lineales con dos incógnitas, ¿qué representa geométricamente la solución?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La pendiente común de ambas rectas",
+          "correcta": false
+        },
+        {
+          "texto": "El punto medio entre los cortes con los ejes",
+          "correcta": false
+        },
+        {
+          "texto": "El punto de intersección de las dos rectas",
+          "correcta": true
+        },
+        {
+          "texto": "El área encerrada por las rectas",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La solución de un sistema 2×2 es el par (x, y) donde ambas rectas se cortan."
+    },
+    {
+      "enunciado": "Resuelve el sistema: x + y = 5; x − y = 1.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(3, 2)",
+          "correcta": true
+        },
+        {
+          "texto": "(2, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sumando las ecuaciones: 2x = 6, x = 3; luego y = 2."
+    },
+    {
+      "enunciado": "Resuelve el sistema: x = 2; x + y = 7.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(7, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 5)",
+          "correcta": true
+        },
+        {
+          "texto": "(5, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 7)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como x = 2, al sustituir en x + y = 7 se obtiene y = 5."
+    },
+    {
+      "enunciado": "Resuelve el sistema: y = 3; 2x + y = 11.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(3, 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 11)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 3)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con y = 3, 2x + 3 = 11 da 2x = 8, x = 4."
+    },
+    {
+      "enunciado": "Despejar una incógnita en una ecuación y reemplazarla en la otra es el método de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Reducción",
+          "correcta": false
+        },
+        {
+          "texto": "Igualación",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución",
+          "correcta": true
+        },
+        {
+          "texto": "Cramer",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Reemplazar una incógnita despejada en la otra ecuación es el método de sustitución."
+    },
+    {
+      "enunciado": "Igualar las expresiones obtenidas al despejar la misma incógnita en ambas ecuaciones es el método de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Igualación",
+          "correcta": true
+        },
+        {
+          "texto": "Sustitución",
+          "correcta": false
+        },
+        {
+          "texto": "Reducción",
+          "correcta": false
+        },
+        {
+          "texto": "Gráfico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Igualar dos expresiones despejadas de una misma incógnita es el método de igualación."
+    },
+    {
+      "enunciado": "Sumar o restar las ecuaciones para cancelar una incógnita es el método de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Igualación",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución",
+          "correcta": false
+        },
+        {
+          "texto": "Determinantes",
+          "correcta": false
+        },
+        {
+          "texto": "Reducción",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Combinar las ecuaciones para eliminar una incógnita es el método de reducción o eliminación."
+    },
+    {
+      "enunciado": "Resuelve por reducción: x + y = 10; x − y = 2.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(4, 6)",
+          "correcta": false
+        },
+        {
+          "texto": "(6, 4)",
+          "correcta": true
+        },
+        {
+          "texto": "(5, 5)",
+          "correcta": false
+        },
+        {
+          "texto": "(8, 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sumando: 2x = 12, x = 6; restando: 2y = 8, y = 4."
+    },
+    {
+      "enunciado": "¿El par (1, 2) es solución del sistema x + y = 3; 2x − y = 0?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "No, falla en la primera ecuación",
+          "correcta": false
+        },
+        {
+          "texto": "Sí, satisface ambas ecuaciones",
+          "correcta": true
+        },
+        {
+          "texto": "No, falla en la segunda ecuación",
+          "correcta": false
+        },
+        {
+          "texto": "Solo satisface la segunda ecuación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1 + 2 = 3 y 2(1) − 2 = 0; cumple ambas, por lo que es solución."
+    },
+    {
+      "enunciado": "Resuelve el sistema: 2x + 3y = 12; y = 2.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(2, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(6, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 12)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 2)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con y = 2, 2x + 6 = 12 da x = 3."
+    },
+    {
+      "enunciado": "Dos rectas paralelas distintas en un sistema 2×2 tienen:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Ninguna solución (sistema incompatible)",
+          "correcta": true
+        },
+        {
+          "texto": "Una solución única",
+          "correcta": false
+        },
+        {
+          "texto": "Infinitas soluciones",
+          "correcta": false
+        },
+        {
+          "texto": "Exactamente dos soluciones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Rectas paralelas distintas no se cortan, así que el sistema no tiene solución."
+    },
+    {
+      "enunciado": "Si ambas ecuaciones representan la misma recta, el sistema tiene:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Ninguna solución",
+          "correcta": false
+        },
+        {
+          "texto": "Una solución",
+          "correcta": false
+        },
+        {
+          "texto": "Infinitas soluciones",
+          "correcta": true
+        },
+        {
+          "texto": "Dos soluciones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si las dos ecuaciones son la misma recta, todo punto de ella es solución: hay infinitas."
+    },
+    {
+      "enunciado": "Resuelve el sistema: x − y = 0; x + y = 8.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(4, 4)",
+          "correcta": true
+        },
+        {
+          "texto": "(8, 0)",
+          "correcta": false
+        },
+        {
+          "texto": "(0, 8)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x − y = 0 implica x = y; con x + y = 8, 2x = 8, x = y = 4."
+    },
+    {
+      "enunciado": "Resuelve por igualación: y = x + 1; y = 2x − 1.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(3, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(2, 1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Igualando: x + 1 = 2x − 1 da x = 2; luego y = 3."
+    },
+    {
+      "enunciado": "Resuelve por sustitución: x = y + 2; x + y = 8.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(3, 5)",
+          "correcta": false
+        },
+        {
+          "texto": "(5, 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(2, 6)",
+          "correcta": false
+        },
+        {
+          "texto": "(5, 8)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sustituyendo x = y + 2 en x + y = 8: 2y + 2 = 8, y = 3, x = 5."
+    },
+    {
+      "enunciado": "Resuelve el sistema: 2x + 3y = 13; 4x − y = 5.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(3, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 5)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 3)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "De 4x − y = 5, y = 4x − 5; sustituyendo: 14x − 15 = 13, x = 2, y = 3."
+    },
+    {
+      "enunciado": "Resuelve el sistema: 3x + 2y = 16; 5x − 2y = 0.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(5, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(0, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 0)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 5)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Sumando: 8x = 16, x = 2; luego 6 + 2y = 16, y = 5."
+    },
+    {
+      "enunciado": "Para el sistema 2x + y = 5; x + 3y = 10, el determinante de la matriz de coeficientes vale:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "−5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El determinante es 2·3 − 1·1 = 6 − 1 = 5."
+    },
+    {
+      "enunciado": "Usando la regla de Cramer en 2x + y = 5; x + 3y = 10, el valor de x es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "D = 2·3 − 1·1 = 5 y Dx = 5·3 − 1·10 = 5; por tanto x = Dx/D = 5/5 = 1."
+    },
+    {
+      "enunciado": "La suma de dos números es 24 y su diferencia es 6. ¿Cuáles son los números?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "12 y 12",
+          "correcta": false
+        },
+        {
+          "texto": "18 y 6",
+          "correcta": false
+        },
+        {
+          "texto": "15 y 9",
+          "correcta": true
+        },
+        {
+          "texto": "10 y 14",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De x + y = 24 y x − y = 6 se obtiene x = 15, y = 9."
+    },
+    {
+      "enunciado": "Dos lápices y tres cuadernos cuestan 13 USD; un lápiz y un cuaderno cuestan 5 USD. ¿Cuánto cuesta un cuaderno?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2 USD",
+          "correcta": false
+        },
+        {
+          "texto": "3 USD",
+          "correcta": true
+        },
+        {
+          "texto": "5 USD",
+          "correcta": false
+        },
+        {
+          "texto": "4 USD",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con p = 5 − c, 2(5 − c) + 3c = 13 da c = 3 (y p = 2)."
+    },
+    {
+      "enunciado": "Resuelve el sistema: 4x + 3y = 18; 2x − y = 4.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 2)",
+          "correcta": true
+        },
+        {
+          "texto": "(3, 4)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "y = 2x − 4; 4x + 3(2x − 4) = 18 da 10x = 30, x = 3, y = 2."
+    },
+    {
+      "enunciado": "Resuelve el sistema: (x/2) + y = 5; x − y = 1.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(3, 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(6, 5)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 3)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Multiplicando la primera por 2: x + 2y = 10; restando x − y = 1 da 3y = 9, y = 3, x = 4."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes sistemas NO tiene solución?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x + y = 2; x + y = 5",
+          "correcta": true
+        },
+        {
+          "texto": "x + y = 2; x − y = 0",
+          "correcta": false
+        },
+        {
+          "texto": "2x + y = 3; x − y = 1",
+          "correcta": false
+        },
+        {
+          "texto": "x + 2y = 4; 3x − y = 2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x + y no puede valer 2 y 5 a la vez: son rectas paralelas que no se cortan, así que no hay solución."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes sistemas tiene infinitas soluciones?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x + y = 3; 2x + 2y = 8",
+          "correcta": false
+        },
+        {
+          "texto": "x + y = 3; x − y = 1",
+          "correcta": false
+        },
+        {
+          "texto": "x + y = 3; 2x + 2y = 6",
+          "correcta": true
+        },
+        {
+          "texto": "x + y = 3; 2x + y = 5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La segunda ecuación es el doble de la primera: ambas representan la misma recta."
+    },
+    {
+      "enunciado": "Resuelve el sistema: 3x − 2y = 4; 5x + 2y = 28.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(8, 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 8)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 4)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Sumando: 8x = 32, x = 4; luego 12 − 2y = 4, y = 4."
+    },
+    {
+      "enunciado": "Por la regla de Cramer, en el sistema 3x + 2y = 7; x + y = 3, ¿cuánto vale y?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "D = 3·1 − 2·1 = 1 y Dy = 3·3 − 7·1 = 2; por tanto y = Dy/D = 2."
+    },
+    {
+      "enunciado": "Un padre tiene el triple de la edad de su hijo y juntos suman 48 años. ¿Qué edad tiene el hijo?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "16 años",
+          "correcta": false
+        },
+        {
+          "texto": "12 años",
+          "correcta": true
+        },
+        {
+          "texto": "24 años",
+          "correcta": false
+        },
+        {
+          "texto": "36 años",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De p = 3h y p + h = 48 resulta 4h = 48, h = 12."
+    },
+    {
+      "enunciado": "Resuelve el sistema: 2x + 5y = 16; 3x − 2y = 5.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 2)",
+          "correcta": true
+        },
+        {
+          "texto": "(1, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 5)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Eliminando y se obtiene 19x = 57, x = 3; luego 6 + 5y = 16, y = 2."
+    },
+    {
+      "enunciado": "En el sistema x = 1; x + y = 4; x + y + z = 9, el valor de z es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x = 1, y = 3; entonces 4 + z = 9, z = 5."
+    },
+    {
+      "enunciado": "Resuelve el sistema: x + y = 3; 2x + y = 1.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(−2, 5)",
+          "correcta": true
+        },
+        {
+          "texto": "(2, 5)",
+          "correcta": false
+        },
+        {
+          "texto": "(−2, −5)",
+          "correcta": false
+        },
+        {
+          "texto": "(5, −2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Restando las ecuaciones: x = −2; luego −2 + y = 3, y = 5."
+    },
+    {
+      "enunciado": "En un corral hay gallinas y conejos: en total 20 cabezas y 56 patas. ¿Cuántos conejos hay?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "De g + c = 20 y 2g + 4c = 56 (que se simplifica a g + 2c = 28), al restar se obtiene c = 8."
+    },
+    {
+      "enunciado": "Resuelve el sistema: x + y + z = 6; x − y + z = 2; x + y − z = 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(3, 2, 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 2, 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(2, 2, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 3, 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Ecuación 1 menos ecuación 2: 2y = 4, y = 2; ecuación 1 menos ecuación 3: 2z = 6, z = 3; luego x = 6 − 2 − 3 = 1."
+    },
+    {
+      "enunciado": "¿Cuánto vale el determinante de la matriz 3×3 cuyas filas son (1, 2, 0), (3, −1, 2) y (1, 0, 1)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Desarrollando por la primera fila: 1·(−1·1 − 2·0) − 2·(3·1 − 2·1) + 0 = −1 − 2 = −3."
+    },
+    {
+      "enunciado": "Resuelve el sistema: x + y + z = 6; 2x + y + z = 8; x + 2y + z = 9.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(1, 2, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 2, 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 1, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 3, 1)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Restando la primera de la segunda: x = 2; restando la primera de la tercera: y = 3; luego z = 6 − 2 − 3 = 1."
+    },
+    {
+      "enunciado": "¿Para qué valor de k el sistema 2x + 3y = 5; 4x + ky = 7 NO tiene solución única?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−6",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El determinante 2k − 12 se anula cuando k = 6; entonces las rectas son paralelas y se pierde la solución única."
+    },
+    {
+      "enunciado": "Por la regla de Cramer, en x + y + z = 6; x + 2y + 3z = 13; 2x + y − z = 2, el valor de x es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El determinante del sistema es D = −1 y Dx = −2, por lo que x = Dx/D = 2 (la solución es (2, 1, 3))."
+    },
+    {
+      "enunciado": "En una cafetería: 1 café + 1 té + 1 jugo = 6 USD; 2 cafés + 1 té = 7 USD; 1 café + 2 jugos = 4 USD. ¿Cuánto cuesta el té?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2 USD",
+          "correcta": false
+        },
+        {
+          "texto": "3 USD",
+          "correcta": true
+        },
+        {
+          "texto": "1 USD",
+          "correcta": false
+        },
+        {
+          "texto": "4 USD",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Resolviendo el sistema se obtiene café = 2, té = 3 y jugo = 1 (comprueba: 2 + 3 + 1 = 6; 4 + 3 = 7; 2 + 2 = 4)."
+    },
+    {
+      "enunciado": "¿Para qué valor de m el sistema x − 2y = 3; 2x − 4y = m tiene infinitas soluciones?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−6",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La segunda debe ser el doble de la primera: 2x − 4y = 6, así que m = 6."
+    },
+    {
+      "enunciado": "Resuelve el sistema: (x/3) + (y/2) = 4; (x/2) − (y/4) = 2.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(4, 6)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(6, 4)",
+          "correcta": true
+        },
+        {
+          "texto": "(6, 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando se obtiene 2x + 3y = 24 y 2x − y = 8; restando, y = 4 y x = 6."
+    },
+    {
+      "enunciado": "El sistema 6x − 9y = 12; 2x − 3y = 5 es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Compatible determinado (solución única)",
+          "correcta": false
+        },
+        {
+          "texto": "Incompatible (sin solución)",
+          "correcta": true
+        },
+        {
+          "texto": "Compatible indeterminado (infinitas soluciones)",
+          "correcta": false
+        },
+        {
+          "texto": "Resoluble con la solución (2, −1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los coeficientes de x e y son proporcionales (factor 3), pero los términos independientes no (12 ≠ 3·5): rectas paralelas, no hay solución."
+    },
+    {
+      "enunciado": "Resuelve el sistema: 2x + y − z = 3; x − y + 2z = 1; 3x + 2y + z = 8.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(2, 1, 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 1, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 2, 1)",
+          "correcta": true
+        },
+        {
+          "texto": "(2, 2, 1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sumando las dos primeras: 3x + z = 4. Multiplicando la segunda por 2 y sumándole la tercera: 5x + 5z = 10, o sea x + z = 2. Restando: 2x = 2, x = 1, z = 1 y, de la primera, y = 2."
+    },
+    {
+      "enunciado": "La suma de tres números es 12. El segundo es el doble del primero y el tercero es la suma de los otros dos. ¿Cuál es el tercer número?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con b = 2a y c = 3a, de a + 2a + 3a = 12 sale a = 2 y el tercero c = 6."
+    },
+    {
+      "enunciado": "Un sistema 2×2 tiene como matriz de coeficientes la de filas (a, 2) y (3, 4). ¿Para qué valor de a el sistema NO tiene solución única?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3/2",
+          "correcta": true
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "−3/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El determinante 4a − 6 se anula en a = 3/2, donde se pierde la solución única."
+    },
+    {
+      "enunciado": "Un cajero tiene 30 billetes, unos de 5 USD y otros de 10 USD, que suman 220 USD en total. ¿Cuántos billetes de 10 USD hay?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": true
+        }
+      ],
+      "explicacion": "De x + y = 30 y 5x + 10y = 220 resulta y = 14 billetes de 10 (y 16 de 5)."
+    },
+    {
+      "enunciado": "Resuelve el sistema: 5x + 4y = 22; 7x − 3y = 5.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(2, 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(3, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 5)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando la primera por 3 y la segunda por 4 y sumando: 15x + 28x = 66 + 20, es decir 43x = 86, x = 2; luego 10 + 4y = 22, y = 3."
+    },
+    {
+      "enunciado": "Por la regla de Cramer, la solución x del sistema 2x + y = a; x − y = b es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(a − b)/3",
+          "correcta": false
+        },
+        {
+          "texto": "(b − a)/3",
+          "correcta": false
+        },
+        {
+          "texto": "(a + b)/3",
+          "correcta": true
+        },
+        {
+          "texto": "(a + 2b)/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "D = 2·(−1) − 1·1 = −3 y Dx = a·(−1) − 1·b = −a − b, por lo que x = (−a − b)/(−3) = (a + b)/3."
+    },
+    {
+      "enunciado": "Resuelve el sistema: x + 2y + 3z = 11; 2x − y + z = 7; 3x + y − z = 8.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(1, 2, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 1, 2)",
+          "correcta": true
+        },
+        {
+          "texto": "(2, 1, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 2, 1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sumando las dos últimas: 5x = 15, x = 3; luego y = 1 y z = 2."
+    }
+  ]
+}

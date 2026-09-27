@@ -1,0 +1,1105 @@
+{
+  "id": "quimica-configuracion",
+  "materia": "quimica",
+  "tema": "Configuración electrónica y números cuánticos",
+  "bloque": "Materia y átomo",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Los electrones llenan los subniveles de menor a mayor energía siguiendo el diagrama de Möller: 1s 2s 2p 3s 3p 4s 3d 4p 5s… Un subnivel s admite 2 electrones, p admite 6, d admite 10 y f admite 14.",
+    "ejemplo": {
+      "enunciado": "Escribe la configuración electrónica del azufre (Z = 16) y di cuántos electrones de valencia tiene.",
+      "pasos": [
+        "Reparte 16 electrones en orden: 1s² (2), 2s² (4), 2p⁶ (10), 3s² (12).",
+        "Faltan 16 − 12 = 4 electrones, que van al 3p: 3p⁴.",
+        "Comprueba sumando los superíndices: 2 + 2 + 6 + 2 + 4 = 16.",
+        "El último nivel es n = 3: 3s² 3p⁴ suman 2 + 4 = 6 electrones de valencia."
+      ],
+      "resultado": "1s² 2s² 2p⁶ 3s² 3p⁴; 6 electrones de valencia."
+    },
+    "ojo": "El 4s se llena antes que el 3d; y en un ion positivo de un metal de transición se quitan primero los electrones 4s, no los 3d."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuántos electrones como máximo puede contener un orbital atómico?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por el principio de exclusión de Pauli, cada orbital admite a lo sumo dos electrones con espines opuestos."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica del átomo de hidrógeno (Z = 1)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1s²",
+          "correcta": false
+        },
+        {
+          "texto": "2s¹",
+          "correcta": false
+        },
+        {
+          "texto": "1s¹",
+          "correcta": true
+        },
+        {
+          "texto": "1p¹",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El hidrógeno tiene un solo electrón, que ocupa el orbital de menor energía: 1s¹."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica del helio (Z = 2)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1s¹ 2s¹",
+          "correcta": false
+        },
+        {
+          "texto": "2s²",
+          "correcta": false
+        },
+        {
+          "texto": "1s¹",
+          "correcta": false
+        },
+        {
+          "texto": "1s²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Sus dos electrones se aparean en el orbital 1s, dando 1s²."
+    },
+    {
+      "enunciado": "¿Cuántos electrones puede albergar como máximo un subnivel s?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El subnivel s tiene un solo orbital, por lo que admite 2 electrones."
+    },
+    {
+      "enunciado": "¿Cuántos electrones puede albergar como máximo un subnivel p?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El subnivel p posee 3 orbitales y cada uno admite 2 electrones: 3 × 2 = 6."
+    },
+    {
+      "enunciado": "¿Cuántos orbitales contiene un subnivel p?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El subnivel p está formado por tres orbitales (pₓ, py y pz)."
+    },
+    {
+      "enunciado": "¿Qué valor del número cuántico principal (n) corresponde al nivel de energía más cercano al núcleo?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El primer nivel, el más cercano al núcleo, tiene n = 1."
+    },
+    {
+      "enunciado": "Según el principio de Aufbau, ¿qué afirmación es correcta sobre el llenado de orbitales?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El 2s se llena antes que el 1s",
+          "correcta": false
+        },
+        {
+          "texto": "El 2p se llena antes que el 2s",
+          "correcta": false
+        },
+        {
+          "texto": "El 1s se llena antes que el 2s",
+          "correcta": true
+        },
+        {
+          "texto": "El 3s se llena antes que el 2p",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El principio de Aufbau indica que los electrones ocupan primero los orbitales de menor energía; el 1s se llena antes que el 2s."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica del litio (Z = 3)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1s³",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2p¹",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s¹",
+          "correcta": true
+        },
+        {
+          "texto": "2s² 2p¹",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con 3 electrones: dos en 1s y uno en 2s, dando 1s² 2s¹."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica del berilio (Z = 4)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1s² 2s²",
+          "correcta": true
+        },
+        {
+          "texto": "1s² 2p²",
+          "correcta": false
+        },
+        {
+          "texto": "1s⁴",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s¹ 2p¹",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sus 4 electrones llenan los orbitales 1s y 2s: 1s² 2s²."
+    },
+    {
+      "enunciado": "¿Cuántos electrones puede albergar como máximo un subnivel d?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El subnivel d tiene 5 orbitales: 5 × 2 = 10 electrones."
+    },
+    {
+      "enunciado": "¿Cuántos electrones puede albergar como máximo un subnivel f?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": true
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El subnivel f posee 7 orbitales: 7 × 2 = 14 electrones."
+    },
+    {
+      "enunciado": "¿Cuál es el número máximo de electrones en el primer nivel de energía (n = 1)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En n = 1 solo existe el subnivel 1s, que admite 2 electrones (2n² = 2)."
+    },
+    {
+      "enunciado": "¿Cuál es el número máximo de electrones en el segundo nivel de energía (n = 2)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En n = 2 hay subniveles 2s y 2p: 2 + 6 = 8 electrones (2n² = 8)."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica del carbono (Z = 6)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1s² 2s⁴",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2p⁴",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s² 2p²",
+          "correcta": true
+        },
+        {
+          "texto": "1s² 2s² 2p⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con 6 electrones la distribución es 1s² 2s² 2p²."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica del oxígeno (Z = 8)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1s² 2s² 2p⁶",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s² 2p⁴",
+          "correcta": true
+        },
+        {
+          "texto": "1s² 2s⁴ 2p²",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s² 2p²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con 8 electrones la distribución es 1s² 2s² 2p⁴."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica del neón (Z = 10)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1s² 2s² 2p⁸",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s⁸",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s² 2p⁶",
+          "correcta": true
+        },
+        {
+          "texto": "1s² 2s² 2p⁴ 3s²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El neón completa el segundo nivel de energía: 1s² 2s² 2p⁶."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica del sodio (Z = 11)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1s² 2s² 2p⁹",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s² 2p⁶ 2d¹",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s² 2p⁶ 3p¹",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s² 2p⁶ 3s¹",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Tras llenar el segundo nivel, el undécimo electrón entra en 3s: 1s² 2s² 2p⁶ 3s¹."
+    },
+    {
+      "enunciado": "¿Cuántos electrones de valencia tiene el nitrógeno (Z = 7)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Su configuración es 1s² 2s² 2p³; los electrones del nivel externo (2s² 2p³) suman 5."
+    },
+    {
+      "enunciado": "El principio de exclusión de Pauli establece que:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Todos los electrones de un átomo tienen el mismo espín",
+          "correcta": false
+        },
+        {
+          "texto": "Dos electrones de un mismo átomo no pueden tener los cuatro números cuánticos iguales",
+          "correcta": true
+        },
+        {
+          "texto": "Los orbitales se llenan siempre de mayor a menor energía",
+          "correcta": false
+        },
+        {
+          "texto": "Cada orbital debe llenarse con espines paralelos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Según Pauli, no pueden existir en un átomo dos electrones con idéntico conjunto de los cuatro números cuánticos."
+    },
+    {
+      "enunciado": "En el nitrógeno, los tres electrones 2p ocupan orbitales distintos con espines paralelos. ¿Qué regla lo justifica?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Principio de Aufbau",
+          "correcta": false
+        },
+        {
+          "texto": "Principio de incertidumbre",
+          "correcta": false
+        },
+        {
+          "texto": "Principio de exclusión de Pauli",
+          "correcta": false
+        },
+        {
+          "texto": "Regla de Hund",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La regla de Hund indica que los orbitales de igual energía se ocupan primero con un electrón cada uno y espines paralelos."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica abreviada (con gas noble) del calcio (Z = 20)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "[Ar]4s²",
+          "correcta": true
+        },
+        {
+          "texto": "[Ne]4s²",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d²",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]4s² 3d²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tras el argón (Z = 18), los dos electrones restantes ocupan 4s: [Ar]4s²."
+    },
+    {
+      "enunciado": "¿Cuántos orbitales contiene un subnivel d?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El subnivel d está formado por cinco orbitales."
+    },
+    {
+      "enunciado": "¿Cuántos electrones desapareados tiene el átomo de nitrógeno (Z = 7) en su estado fundamental?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En 2p³ cada uno de los tres orbitales p aloja un electrón desapareado (regla de Hund)."
+    },
+    {
+      "enunciado": "¿Qué valor del número cuántico secundario o azimutal (l) corresponde a un subnivel p?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para el subnivel p, l = 1 (s = 0, p = 1, d = 2, f = 3)."
+    },
+    {
+      "enunciado": "¿Qué valores puede tomar el número cuántico magnético (mₗ) cuando l = 1?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Solo 0",
+          "correcta": false
+        },
+        {
+          "texto": "−2, −1, 0, +1, +2",
+          "correcta": false
+        },
+        {
+          "texto": "−1, 0, +1",
+          "correcta": true
+        },
+        {
+          "texto": "+1, +2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número cuántico magnético va de −l a +l; para l = 1 los valores son −1, 0 y +1."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica abreviada del cloro (Z = 17)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "[Ne]3s² 3p⁶",
+          "correcta": false
+        },
+        {
+          "texto": "[Ne]3s² 3p⁵",
+          "correcta": true
+        },
+        {
+          "texto": "[Ar]3s² 3p⁵",
+          "correcta": false
+        },
+        {
+          "texto": "[Ne]3s² 3p⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tras el neón (Z = 10), 7 electrones se distribuyen como 3s² 3p⁵: [Ne]3s² 3p⁵."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica del fósforo (Z = 15)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1s² 2s² 2p⁶ 3s² 3p⁵",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s² 2p⁶ 3s² 3d³",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s² 2p⁶ 3p⁵",
+          "correcta": false
+        },
+        {
+          "texto": "1s² 2s² 2p⁶ 3s² 3p³",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con 15 electrones la distribución es 1s² 2s² 2p⁶ 3s² 3p³."
+    },
+    {
+      "enunciado": "¿Cuántos electrones desapareados tiene el átomo de oxígeno (Z = 8) en su estado fundamental?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En 2p⁴ un orbital se completa con dos electrones y los otros dos quedan con un electrón desapareado cada uno: 2 desapareados."
+    },
+    {
+      "enunciado": "¿Qué valores puede tomar el número cuántico de espín (mₛ) de un electrón?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0 y 1",
+          "correcta": false
+        },
+        {
+          "texto": "+1/2 y −1/2",
+          "correcta": true
+        },
+        {
+          "texto": "−1, 0, +1",
+          "correcta": false
+        },
+        {
+          "texto": "Solo +1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El espín del electrón solo puede valer +1/2 o −1/2."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica abreviada del magnesio (Z = 12)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "[Ne]3s²",
+          "correcta": true
+        },
+        {
+          "texto": "[Ne]3s¹",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3s²",
+          "correcta": false
+        },
+        {
+          "texto": "[Ne]2s²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tras el neón, los dos electrones restantes ocupan 3s: [Ne]3s²."
+    },
+    {
+      "enunciado": "¿Cuál es el número máximo de electrones que admite el tercer nivel de energía (n = 3)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "32",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El máximo es 2n² = 2 × 3² = 18 electrones (3s² 3p⁶ 3d¹⁰)."
+    },
+    {
+      "enunciado": "Según el orden de llenado (Aufbau), ¿qué subnivel se llena inmediatamente después del 4s?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4p",
+          "correcta": false
+        },
+        {
+          "texto": "3d",
+          "correcta": true
+        },
+        {
+          "texto": "4d",
+          "correcta": false
+        },
+        {
+          "texto": "3p",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Según el orden creciente de energía (diagrama de Möller), tras el 4s se llena el 3d."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica abreviada del hierro (Z = 26)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "[Ar]3d⁶ 4s²",
+          "correcta": true
+        },
+        {
+          "texto": "[Ar]3d⁸",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]4s² 4p⁶",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d⁷ 4s¹",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tras el argón, 8 electrones se reparten como 4s² 3d⁶: [Ar]3d⁶ 4s²."
+    },
+    {
+      "enunciado": "La configuración electrónica del cromo (Z = 24) constituye una excepción al orden de Aufbau. ¿Cuál es la correcta?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "[Ar]3d⁴ 4s²",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d⁶",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d⁵ 4s¹",
+          "correcta": true
+        },
+        {
+          "texto": "[Ar]4s² 4p⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cromo adopta [Ar]3d⁵ 4s¹ por la estabilidad adicional del subnivel d semilleno."
+    },
+    {
+      "enunciado": "La configuración electrónica del cobre (Z = 29) es una excepción al orden esperado. ¿Cuál es la correcta?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "[Ar]3d⁹ 4s²",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d¹⁰ 4s²",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d⁷ 4s²",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d¹⁰ 4s¹",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El cobre adopta [Ar]3d¹⁰ 4s¹ por la estabilidad del subnivel d completamente lleno."
+    },
+    {
+      "enunciado": "¿Cuántos electrones desapareados tiene el átomo de hierro (Z = 26), [Ar]3d⁶ 4s², en su estado fundamental?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En 3d⁶, uno de los cinco orbitales d se aparea y quedan cuatro electrones desapareados."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica del ion Fe³⁺ (Z del hierro = 26)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "[Ar]3d⁶",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d⁵",
+          "correcta": true
+        },
+        {
+          "texto": "[Ar]3d³ 4s²",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d⁴ 4s¹",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Del Fe ([Ar]3d⁶ 4s²) se retiran primero los 4s² y luego un electrón 3d, quedando [Ar]3d⁵."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes conjuntos de números cuánticos (n, l, mₗ, mₛ) NO está permitido?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(3, 2, −2, +1/2)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 0, 0, +1/2)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 2, 0, −1/2)",
+          "correcta": true
+        },
+        {
+          "texto": "(4, 3, 2, −1/2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número l debe ser menor que n; con n = 2 no es posible l = 2."
+    },
+    {
+      "enunciado": "¿Cuántos electrones desapareados tiene el manganeso (Z = 25), [Ar]3d⁵ 4s², en su estado fundamental?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En 3d⁵ cada uno de los cinco orbitales d aloja un electrón desapareado (regla de Hund)."
+    },
+    {
+      "enunciado": "¿Cuántos electrones con número cuántico azimutal l = 1 hay en un átomo de cloro (Z = 17)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "17",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los electrones con l = 1 son los de los subniveles p: 2p⁶ + 3p⁵ = 11."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica abreviada del cinc (Z = 30)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "[Ar]3d⁹ 4s²",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d¹⁰ 4s² 4p²",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d¹⁰ 4s²",
+          "correcta": true
+        },
+        {
+          "texto": "[Ar]3d⁸ 4s²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tras el argón, 12 electrones llenan 4s² 3d¹⁰: [Ar]3d¹⁰ 4s²."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes conjuntos de números cuánticos (n, l, mₗ, mₛ) es válido?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(3, 3, 0, +1/2)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 1, −1, +1/2)",
+          "correcta": true
+        },
+        {
+          "texto": "(2, 0, 1, −1/2)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 1, 0, −1/2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Debe cumplirse 0 ≤ l < n y −l ≤ mₗ ≤ +l; solo (2, 1, −1, +1/2) cumple todas las condiciones."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica del ion Cu⁺ (Z del cobre = 29)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "[Ar]3d¹⁰",
+          "correcta": true
+        },
+        {
+          "texto": "[Ar]3d⁹",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d⁸ 4s¹",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d¹⁰ 4s¹",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Del Cu ([Ar]3d¹⁰ 4s¹) se retira el electrón 4s¹, quedando [Ar]3d¹⁰."
+    },
+    {
+      "enunciado": "¿Cuántos orbitales hay en total en el tercer nivel de energía (n = 3)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 3 contiene 3s (1) + 3p (3) + 3d (5) = 9 orbitales (n² = 9)."
+    },
+    {
+      "enunciado": "¿Cuál es la configuración electrónica abreviada del bromo (Z = 35)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "[Ar]3d¹⁰ 4s² 4p⁶",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]4s² 4p⁵",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d¹⁰ 4s² 4p³",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]3d¹⁰ 4s² 4p⁵",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Tras el argón se llenan 4s² 3d¹⁰ 4p⁵, es decir [Ar]3d¹⁰ 4s² 4p⁵."
+    },
+    {
+      "enunciado": "¿Cuántos electrones desapareados tiene el cromo (Z = 24), [Ar]3d⁵ 4s¹, en su estado fundamental?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los cinco electrones 3d y el único electrón 4s están todos desapareados: 5 + 1 = 6."
+    }
+  ]
+}

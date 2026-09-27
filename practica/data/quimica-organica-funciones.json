@@ -1,0 +1,1081 @@
+{
+  "id": "quimica-organica-funciones",
+  "materia": "quimica",
+  "tema": "Funciones orgánicas y biomoléculas",
+  "bloque": "Química orgánica",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "El grupo funcional es la parte de la molécula que decide sus propiedades y su nombre: –OH alcohol (-ol), –CHO aldehído (-al), C=O entre dos carbonos cetona (-ona), –COOH ácido carboxílico (ácido …-oico), –COO– éster, R–O–R éter y –NH₂ amina.",
+    "ejemplo": {
+      "enunciado": "Identifica la función y nombra el compuesto CH₃–CH₂–CH₂–COOH.",
+      "pasos": [
+        "Busca el grupo funcional: –COOH es el carboxilo, así que es un ácido carboxílico.",
+        "Cuenta los carbonos, incluido el del –COOH: son 4, prefijo but-.",
+        "Arma el nombre: «ácido» + but + -anoico."
+      ],
+      "resultado": "Ácido butanoico (un ácido carboxílico)"
+    },
+    "ojo": "No confundas aldehído y cetona: en el aldehído el C=O está al final de la cadena (–CHO); en la cetona está en medio, unido a dos carbonos."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el elemento que constituye el esqueleto de todos los compuestos orgánicos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Carbono",
+          "correcta": true
+        },
+        {
+          "texto": "Oxígeno",
+          "correcta": false
+        },
+        {
+          "texto": "Nitrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "Silicio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbono forma cadenas estables porque puede establecer cuatro enlaces covalentes, lo que da origen a la enorme variedad de compuestos orgánicos."
+    },
+    {
+      "enunciado": "¿Qué grupo funcional caracteriza a los alcoholes?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Formilo (–CHO)",
+          "correcta": false
+        },
+        {
+          "texto": "Carboxilo (–COOH)",
+          "correcta": false
+        },
+        {
+          "texto": "Hidroxilo (–OH)",
+          "correcta": true
+        },
+        {
+          "texto": "Amino (–NH₂)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los alcoholes se identifican por el grupo hidroxilo (–OH) unido a un átomo de carbono saturado."
+    },
+    {
+      "enunciado": "¿Qué grupo funcional caracteriza a los ácidos carboxílicos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "–OH",
+          "correcta": false
+        },
+        {
+          "texto": "–CHO",
+          "correcta": false
+        },
+        {
+          "texto": "–CO–",
+          "correcta": false
+        },
+        {
+          "texto": "–COOH",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El grupo carboxilo (–COOH) combina un carbonilo y un hidroxilo y es propio de los ácidos carboxílicos."
+    },
+    {
+      "enunciado": "¿Qué grupo funcional poseen los aldehídos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "–OH",
+          "correcta": false
+        },
+        {
+          "texto": "–CHO",
+          "correcta": true
+        },
+        {
+          "texto": "–COOH",
+          "correcta": false
+        },
+        {
+          "texto": "–O–",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los aldehídos presentan el grupo –CHO, es decir, un carbonilo en el extremo de la cadena unido a un hidrógeno."
+    },
+    {
+      "enunciado": "¿Cuál es el hidrocarburo más simple?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Etano",
+          "correcta": false
+        },
+        {
+          "texto": "Propano",
+          "correcta": false
+        },
+        {
+          "texto": "Metano",
+          "correcta": true
+        },
+        {
+          "texto": "Butano",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El metano (CH₄) es el hidrocarburo más simple, con un solo átomo de carbono."
+    },
+    {
+      "enunciado": "Un hidrocarburo que solo posee enlaces simples entre carbonos se denomina:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Alqueno",
+          "correcta": false
+        },
+        {
+          "texto": "Alcano",
+          "correcta": true
+        },
+        {
+          "texto": "Alquino",
+          "correcta": false
+        },
+        {
+          "texto": "Aromático",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los alcanos son hidrocarburos saturados: solo tienen enlaces simples carbono-carbono."
+    },
+    {
+      "enunciado": "El etanol pertenece a la familia de los:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Ácidos carboxílicos",
+          "correcta": false
+        },
+        {
+          "texto": "Ésteres",
+          "correcta": false
+        },
+        {
+          "texto": "Cetonas",
+          "correcta": false
+        },
+        {
+          "texto": "Alcoholes",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El etanol (CH₃–CH₂–OH) posee un grupo hidroxilo, por lo que es un alcohol."
+    },
+    {
+      "enunciado": "El ácido acético, principal componente del vinagre, es un:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Ácido carboxílico",
+          "correcta": true
+        },
+        {
+          "texto": "Aldehído",
+          "correcta": false
+        },
+        {
+          "texto": "Alcohol",
+          "correcta": false
+        },
+        {
+          "texto": "Éter",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El ácido acético (CH₃–COOH) contiene el grupo carboxilo, característico de los ácidos carboxílicos."
+    },
+    {
+      "enunciado": "El doble enlace carbono-carbono (C=C) es característico de los:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Alcanos",
+          "correcta": false
+        },
+        {
+          "texto": "Alquinos",
+          "correcta": false
+        },
+        {
+          "texto": "Alquenos",
+          "correcta": true
+        },
+        {
+          "texto": "Alcoholes",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los alquenos son hidrocarburos insaturados que contienen al menos un doble enlace C=C."
+    },
+    {
+      "enunciado": "El triple enlace carbono-carbono (C≡C) es característico de los:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Alquenos",
+          "correcta": false
+        },
+        {
+          "texto": "Alquinos",
+          "correcta": true
+        },
+        {
+          "texto": "Alcanos",
+          "correcta": false
+        },
+        {
+          "texto": "Aldehídos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los alquinos poseen al menos un triple enlace carbono-carbono."
+    },
+    {
+      "enunciado": "¿A qué grupo funcional corresponde un grupo carbonilo (C=O) unido a dos átomos de carbono?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Aldehído",
+          "correcta": false
+        },
+        {
+          "texto": "Alcohol",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido carboxílico",
+          "correcta": false
+        },
+        {
+          "texto": "Cetona",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Cuando el carbonilo está unido a dos carbonos se trata de una cetona; si estuviera en el extremo sería un aldehído."
+    },
+    {
+      "enunciado": "¿Qué grupo funcional caracteriza a las aminas?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "–NH₂",
+          "correcta": true
+        },
+        {
+          "texto": "–COOH",
+          "correcta": false
+        },
+        {
+          "texto": "–CHO",
+          "correcta": false
+        },
+        {
+          "texto": "–OH",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las aminas contienen el grupo amino (–NH₂), derivado del amoníaco."
+    },
+    {
+      "enunciado": "La glucosa es un ejemplo de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Lípido",
+          "correcta": false
+        },
+        {
+          "texto": "Proteína",
+          "correcta": false
+        },
+        {
+          "texto": "Carbohidrato",
+          "correcta": true
+        },
+        {
+          "texto": "Ácido nucleico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La glucosa es un monosacárido, es decir, un carbohidrato simple."
+    },
+    {
+      "enunciado": "Las proteínas están formadas por unidades llamadas:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Nucleótidos",
+          "correcta": false
+        },
+        {
+          "texto": "Monosacáridos",
+          "correcta": false
+        },
+        {
+          "texto": "Ácidos grasos",
+          "correcta": false
+        },
+        {
+          "texto": "Aminoácidos",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Las proteínas son polímeros de aminoácidos unidos por enlaces peptídicos."
+    },
+    {
+      "enunciado": "La celulosa es un ejemplo de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Polímero natural",
+          "correcta": true
+        },
+        {
+          "texto": "Polímero sintético",
+          "correcta": false
+        },
+        {
+          "texto": "Monómero",
+          "correcta": false
+        },
+        {
+          "texto": "Hidrocarburo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La celulosa es un polímero natural formado por unidades de glucosa."
+    },
+    {
+      "enunciado": "¿Cuál es la terminación (sufijo) que se usa para nombrar los alcoholes?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "-al",
+          "correcta": false
+        },
+        {
+          "texto": "-ol",
+          "correcta": true
+        },
+        {
+          "texto": "-oico",
+          "correcta": false
+        },
+        {
+          "texto": "-ona",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la nomenclatura IUPAC los alcoholes terminan en -ol, como en metanol o etanol."
+    },
+    {
+      "enunciado": "¿Cuál es la terminación (sufijo) que se usa para nombrar los alquenos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "-ano",
+          "correcta": false
+        },
+        {
+          "texto": "-ino",
+          "correcta": false
+        },
+        {
+          "texto": "-eno",
+          "correcta": true
+        },
+        {
+          "texto": "-ol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los alquenos terminan en -eno, como eteno o propeno; los alcanos en -ano y los alquinos en -ino."
+    },
+    {
+      "enunciado": "¿Qué grupo funcional caracteriza a los ésteres?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "–COO–",
+          "correcta": true
+        },
+        {
+          "texto": "–O–",
+          "correcta": false
+        },
+        {
+          "texto": "–CO–",
+          "correcta": false
+        },
+        {
+          "texto": "–COOH",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los ésteres presentan el grupo –COO–, resultado de la unión de un ácido carboxílico con un alcohol."
+    },
+    {
+      "enunciado": "La reacción entre un ácido carboxílico y un alcohol que produce un éster y agua se llama:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Saponificación",
+          "correcta": false
+        },
+        {
+          "texto": "Esterificación",
+          "correcta": true
+        },
+        {
+          "texto": "Hidrogenación",
+          "correcta": false
+        },
+        {
+          "texto": "Combustión",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La esterificación combina un ácido carboxílico y un alcohol para dar un éster y agua; la saponificación, en cambio, es la hidrólisis de un éster con una base."
+    },
+    {
+      "enunciado": "¿Cuáles son los productos de la combustión completa de un hidrocarburo?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "CO₂ + H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "C + H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "CO + H₂",
+          "correcta": false
+        },
+        {
+          "texto": "CO₂ + H₂",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la combustión completa, todo el carbono pasa a CO₂ y el hidrógeno a H₂O; la combustión incompleta produciría CO o carbono."
+    },
+    {
+      "enunciado": "Dos compuestos con la misma fórmula molecular pero distinta estructura se denominan:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Alótropos",
+          "correcta": false
+        },
+        {
+          "texto": "Isótopos",
+          "correcta": false
+        },
+        {
+          "texto": "Homólogos",
+          "correcta": false
+        },
+        {
+          "texto": "Isómeros",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los isómeros comparten fórmula molecular pero difieren en su estructura; los isótopos varían en el número de neutrones de un mismo elemento."
+    },
+    {
+      "enunciado": "¿Cuál es la terminación (sufijo) que se usa para nombrar las cetonas?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "-al",
+          "correcta": false
+        },
+        {
+          "texto": "-oico",
+          "correcta": false
+        },
+        {
+          "texto": "-ona",
+          "correcta": true
+        },
+        {
+          "texto": "-ol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las cetonas terminan en -ona, como la propanona (acetona); los aldehídos en -al."
+    },
+    {
+      "enunciado": "¿Cuál es la terminación que se usa para nombrar los ácidos carboxílicos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "-al",
+          "correcta": false
+        },
+        {
+          "texto": "-ona",
+          "correcta": false
+        },
+        {
+          "texto": "-oico",
+          "correcta": true
+        },
+        {
+          "texto": "-ilo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los ácidos carboxílicos se nombran con la palabra ácido y la terminación -oico, como ácido etanoico."
+    },
+    {
+      "enunciado": "¿Cuál es el monómero a partir del cual se obtiene el polietileno?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Etano",
+          "correcta": false
+        },
+        {
+          "texto": "Estireno",
+          "correcta": false
+        },
+        {
+          "texto": "Propeno",
+          "correcta": false
+        },
+        {
+          "texto": "Eteno",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El polietileno se forma por polimerización de adición del eteno (etileno), que contiene un doble enlace C=C."
+    },
+    {
+      "enunciado": "¿Cuál es el monosacárido que constituye la unidad del almidón y la celulosa?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Glucosa",
+          "correcta": true
+        },
+        {
+          "texto": "Fructosa",
+          "correcta": false
+        },
+        {
+          "texto": "Sacarosa",
+          "correcta": false
+        },
+        {
+          "texto": "Galactosa",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tanto el almidón como la celulosa son polímeros de glucosa; la sacarosa es un disacárido, no un monómero."
+    },
+    {
+      "enunciado": "Una característica común de los lípidos es que:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "son solubles en agua",
+          "correcta": false
+        },
+        {
+          "texto": "son insolubles en agua",
+          "correcta": true
+        },
+        {
+          "texto": "son polímeros de aminoácidos",
+          "correcta": false
+        },
+        {
+          "texto": "son fuertemente polares",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los lípidos son apolares, por lo que resultan insolubles en agua y solubles en disolventes orgánicos."
+    },
+    {
+      "enunciado": "El prefijo «but-» en la nomenclatura orgánica indica cuántos átomos de carbono:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los prefijos met-, et-, prop- y but- corresponden a 1, 2, 3 y 4 carbonos respectivamente."
+    },
+    {
+      "enunciado": "La saponificación de una grasa con hidróxido de sodio produce:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "éster y agua",
+          "correcta": false
+        },
+        {
+          "texto": "alcohol y ácido",
+          "correcta": false
+        },
+        {
+          "texto": "jabón y glicerol",
+          "correcta": true
+        },
+        {
+          "texto": "CO₂ y agua",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La saponificación hidroliza los triglicéridos con una base, generando sales de ácidos grasos (jabón) y glicerol."
+    },
+    {
+      "enunciado": "¿Qué estructura general corresponde a un éter?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "R–O–R",
+          "correcta": true
+        },
+        {
+          "texto": "R–OH",
+          "correcta": false
+        },
+        {
+          "texto": "R–COOH",
+          "correcta": false
+        },
+        {
+          "texto": "R–CO–R",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los éteres tienen un átomo de oxígeno unido a dos radicales (R–O–R); R–OH sería un alcohol y R–CO–R una cetona."
+    },
+    {
+      "enunciado": "La hidrogenación (adición de H₂) de un alqueno produce un:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "alquino",
+          "correcta": false
+        },
+        {
+          "texto": "alcano",
+          "correcta": true
+        },
+        {
+          "texto": "alcohol",
+          "correcta": false
+        },
+        {
+          "texto": "ácido carboxílico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al añadir H₂ al doble enlace de un alqueno, este se satura y se obtiene un alcano."
+    },
+    {
+      "enunciado": "¿Cuál es el primer miembro (más simple) de la serie de los alquinos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Metino",
+          "correcta": false
+        },
+        {
+          "texto": "Etino",
+          "correcta": true
+        },
+        {
+          "texto": "Eteno",
+          "correcta": false
+        },
+        {
+          "texto": "Propino",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El etino (acetileno, C₂H₂) es el alquino más simple, pues el triple enlace exige al menos dos carbonos."
+    },
+    {
+      "enunciado": "¿Cuántos grados de insaturación (índice de deficiencia de hidrógeno) tiene el benceno, C₆H₆?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El índice se calcula como (2·6+2−6)/2 = 4, que corresponde a un anillo y tres dobles enlaces del benceno."
+    },
+    {
+      "enunciado": "¿Cuál es la masa molar de la glucosa, C₆H₁₂O₆? (C=12, H=1, O=16)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "162 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "150 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "180 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "200 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "6·12 + 12·1 + 6·16 = 72 + 12 + 96 = 180 g/mol."
+    },
+    {
+      "enunciado": "¿Cuántos isómeros estructurales (de cadena) tiene el compuesto de fórmula C₄H₁₀?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El C₄H₁₀ tiene dos isómeros: el butano de cadena lineal y el isobutano (2-metilpropano)."
+    },
+    {
+      "enunciado": "¿Cuántos isómeros estructurales tiene el alcano de fórmula C₅H₁₂?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El C₅H₁₂ presenta tres isómeros: pentano, isopentano (2-metilbutano) y neopentano (2,2-dimetilpropano)."
+    },
+    {
+      "enunciado": "La oxidación suave de un alcohol primario produce inicialmente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Cetona",
+          "correcta": false
+        },
+        {
+          "texto": "Alcano",
+          "correcta": false
+        },
+        {
+          "texto": "Éter",
+          "correcta": false
+        },
+        {
+          "texto": "Aldehído",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Un alcohol primario se oxida primero a aldehído y, si la oxidación continúa, a ácido carboxílico; los secundarios dan cetonas."
+    },
+    {
+      "enunciado": "La oxidación de un alcohol secundario produce:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Aldehído",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido carboxílico",
+          "correcta": false
+        },
+        {
+          "texto": "Cetona",
+          "correcta": true
+        },
+        {
+          "texto": "Éster",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbono del alcohol secundario está unido a otros dos carbonos, por lo que su oxidación genera una cetona."
+    },
+    {
+      "enunciado": "¿Cuál es la unidad monomérica (monómero) del ADN?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Nucleótido",
+          "correcta": true
+        },
+        {
+          "texto": "Glucosa",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido graso",
+          "correcta": false
+        },
+        {
+          "texto": "Aminoácido",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El ADN es un polímero de nucleótidos, cada uno formado por una base nitrogenada, una desoxirribosa y un grupo fosfato."
+    },
+    {
+      "enunciado": "¿Cómo se llama el enlace que une dos aminoácidos en una proteína?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Peptídico",
+          "correcta": true
+        },
+        {
+          "texto": "Glucosídico",
+          "correcta": false
+        },
+        {
+          "texto": "Éster",
+          "correcta": false
+        },
+        {
+          "texto": "Disulfuro",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El enlace peptídico es un enlace amida que se forma entre el grupo carboxilo de un aminoácido y el amino del siguiente."
+    },
+    {
+      "enunciado": "Según la regla de Markovnikov, en la adición de HBr a un alqueno asimétrico, el hidrógeno se une al carbono que:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "tiene menos hidrógenos",
+          "correcta": false
+        },
+        {
+          "texto": "forma el carbocatión menos estable",
+          "correcta": false
+        },
+        {
+          "texto": "está más sustituido",
+          "correcta": false
+        },
+        {
+          "texto": "tiene más hidrógenos",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La regla de Markovnikov establece que el H se añade al carbono con más hidrógenos, favoreciendo el carbocatión más estable."
+    },
+    {
+      "enunciado": "El nylon se obtiene mediante un proceso de polimerización por:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "adición",
+          "correcta": false
+        },
+        {
+          "texto": "condensación",
+          "correcta": true
+        },
+        {
+          "texto": "radicales libres",
+          "correcta": false
+        },
+        {
+          "texto": "coordinación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El nylon es una poliamida formada por condensación, donde cada unión libera una molécula pequeña como agua."
+    },
+    {
+      "enunciado": "La hidratación (adición de agua) de un alqueno en medio ácido produce un:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "aldehído",
+          "correcta": false
+        },
+        {
+          "texto": "cetona",
+          "correcta": false
+        },
+        {
+          "texto": "alcohol",
+          "correcta": true
+        },
+        {
+          "texto": "ácido carboxílico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al adicionarse agua al doble enlace, el grupo –OH se incorpora a la cadena y se obtiene un alcohol."
+    },
+    {
+      "enunciado": "En la combustión completa del metano, CH₄ + x O₂ → CO₂ + 2 H₂O, ¿cuál es el valor del coeficiente x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación balanceada es CH₄ + 2 O₂ → CO₂ + 2 H₂O, ya que se requieren 4 oxígenos (2 + 2) en total."
+    },
+    {
+      "enunciado": "Al balancear la combustión completa del propano, C₃H₈ + x O₂ → 3 CO₂ + 4 H₂O, ¿cuál es el valor del coeficiente x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En los productos hay 3·2 + 4 = 10 átomos de O, lo que equivale a 5 moléculas de O₂."
+    },
+    {
+      "enunciado": "La hidrólisis ácida de un éster regenera:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "un éster y agua",
+          "correcta": false
+        },
+        {
+          "texto": "un ácido carboxílico y un alcohol",
+          "correcta": true
+        },
+        {
+          "texto": "jabón y glicerol",
+          "correcta": false
+        },
+        {
+          "texto": "un aldehído y agua",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La hidrólisis en medio ácido es la reacción inversa de la esterificación: rompe el éster en su ácido carboxílico y su alcohol."
+    },
+    {
+      "enunciado": "¿Cuántos grados de insaturación tiene un compuesto de fórmula C₆H₁₂?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El índice es (2·6+2−12)/2 = 1, que corresponde a un doble enlace o a un anillo."
+    }
+  ]
+}

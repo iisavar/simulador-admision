@@ -1,0 +1,1127 @@
+{
+  "id": "quimica-nomenclatura-organica",
+  "materia": "quimica",
+  "tema": "Nomenclatura orgánica",
+  "bloque": "Química orgánica",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "El nombre de un compuesto orgánico tiene un prefijo que dice cuántos carbonos tiene la cadena (met- 1, et- 2, prop- 3, but- 4, pent- 5, hex- 6) y un sufijo que dice su función (-ano, -eno, -ino, -ol, -al, -ona, ácido …-oico). Los números (localizadores) indican dónde está el enlace doble, el grupo o la ramificación.",
+    "ejemplo": {
+      "enunciado": "Nombra el compuesto CH₃–CH₂–CH₂–CO–CH₃.",
+      "pasos": [
+        "Cuenta los carbonos de la cadena: son 5, así que el prefijo es pent-.",
+        "El grupo C=O está en medio de la cadena (unido a dos carbonos): es una cetona, sufijo -ona.",
+        "Numera desde el extremo más cercano al C=O: queda en el carbono 2."
+      ],
+      "resultado": "Pentan-2-ona"
+    },
+    "ojo": "Numera la cadena desde el extremo más cercano al grupo funcional (o al enlace doble o triple), no siempre desde la izquierda."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el nombre del alcano más sencillo, cuya fórmula es CH₄?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Metano",
+          "correcta": true
+        },
+        {
+          "texto": "Etano",
+          "correcta": false
+        },
+        {
+          "texto": "Propano",
+          "correcta": false
+        },
+        {
+          "texto": "Butano",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El CH₄ es el metano, primer miembro de la serie de los alcanos, con un solo átomo de carbono."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula general de los alcanos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "CₙH₂ₙ",
+          "correcta": false
+        },
+        {
+          "texto": "CₙHₙ",
+          "correcta": false
+        },
+        {
+          "texto": "CₙH₂ₙ₋₂",
+          "correcta": false
+        },
+        {
+          "texto": "CₙH₂ₙ₊₂",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los alcanos son hidrocarburos saturados y responden a la fórmula general CₙH₂ₙ₊₂."
+    },
+    {
+      "enunciado": "¿Cuántos átomos de carbono tiene una molécula de etano?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El prefijo «et-» indica dos átomos de carbono, por lo que el etano es C₂H₆."
+    },
+    {
+      "enunciado": "¿Qué terminación o sufijo caracteriza a los alcanos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "-eno",
+          "correcta": false
+        },
+        {
+          "texto": "-ano",
+          "correcta": true
+        },
+        {
+          "texto": "-ino",
+          "correcta": false
+        },
+        {
+          "texto": "-ol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los alcanos, hidrocarburos con solo enlaces simples, se nombran con el sufijo -ano."
+    },
+    {
+      "enunciado": "El sufijo que identifica a un hidrocarburo con un doble enlace (alqueno) es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "-ano",
+          "correcta": false
+        },
+        {
+          "texto": "-eno",
+          "correcta": true
+        },
+        {
+          "texto": "-ino",
+          "correcta": false
+        },
+        {
+          "texto": "-al",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los alquenos presentan al menos un doble enlace carbono-carbono y se nombran con el sufijo -eno."
+    },
+    {
+      "enunciado": "¿Qué sufijo se utiliza para nombrar a los alquinos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "-eno",
+          "correcta": false
+        },
+        {
+          "texto": "-ano",
+          "correcta": false
+        },
+        {
+          "texto": "-ona",
+          "correcta": false
+        },
+        {
+          "texto": "-ino",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los alquinos poseen un triple enlace carbono-carbono y se nombran con el sufijo -ino."
+    },
+    {
+      "enunciado": "¿Cuál es el grupo funcional característico de los alcoholes?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Formilo (aldehído), –CHO",
+          "correcta": false
+        },
+        {
+          "texto": "Carboxilo, –COOH",
+          "correcta": false
+        },
+        {
+          "texto": "Hidroxilo, –OH",
+          "correcta": true
+        },
+        {
+          "texto": "Amino, –NH₂",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los alcoholes se caracterizan por el grupo hidroxilo –OH unido a un carbono saturado."
+    },
+    {
+      "enunciado": "Para nombrar un alcohol, el nombre del hidrocarburo correspondiente termina en:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "-ol",
+          "correcta": true
+        },
+        {
+          "texto": "-ona",
+          "correcta": false
+        },
+        {
+          "texto": "-al",
+          "correcta": false
+        },
+        {
+          "texto": "-oico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los alcoholes se nombran sustituyendo la terminación del hidrocarburo por el sufijo -ol."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre del compuesto CH₃–CH₂–OH?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Metanol",
+          "correcta": false
+        },
+        {
+          "texto": "Etanol",
+          "correcta": true
+        },
+        {
+          "texto": "Propanol",
+          "correcta": false
+        },
+        {
+          "texto": "Etanal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es una cadena de dos carbonos con un grupo –OH, por lo que se llama etanol."
+    },
+    {
+      "enunciado": "El grupo funcional carboxilo se representa como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "–CHO",
+          "correcta": false
+        },
+        {
+          "texto": "–OH",
+          "correcta": false
+        },
+        {
+          "texto": "–COOH",
+          "correcta": true
+        },
+        {
+          "texto": "–CO–",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El grupo carboxilo –COOH es propio de los ácidos carboxílicos."
+    },
+    {
+      "enunciado": "Los ácidos carboxílicos se nombran anteponiendo la palabra «ácido» y con la terminación:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "-ol",
+          "correcta": false
+        },
+        {
+          "texto": "-al",
+          "correcta": false
+        },
+        {
+          "texto": "-ona",
+          "correcta": false
+        },
+        {
+          "texto": "-oico",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los ácidos carboxílicos usan el formato «ácido ...oico», por ejemplo ácido etanoico."
+    },
+    {
+      "enunciado": "¿Cómo se llama el alcano de cadena lineal que contiene 3 átomos de carbono?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Propano",
+          "correcta": true
+        },
+        {
+          "texto": "Butano",
+          "correcta": false
+        },
+        {
+          "texto": "Pentano",
+          "correcta": false
+        },
+        {
+          "texto": "Metano",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El prefijo «prop-» designa tres carbonos, por lo que el alcano es el propano (C₃H₈)."
+    },
+    {
+      "enunciado": "¿Cuál es el grupo funcional de los aldehídos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "–CHO",
+          "correcta": true
+        },
+        {
+          "texto": "–CO– entre dos carbonos",
+          "correcta": false
+        },
+        {
+          "texto": "–COOH",
+          "correcta": false
+        },
+        {
+          "texto": "–OH",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los aldehídos tienen el grupo carbonilo en un extremo de la cadena, escrito como –CHO."
+    },
+    {
+      "enunciado": "El sufijo que se emplea para nombrar a las cetonas es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "-al",
+          "correcta": false
+        },
+        {
+          "texto": "-ol",
+          "correcta": false
+        },
+        {
+          "texto": "-ona",
+          "correcta": true
+        },
+        {
+          "texto": "-oico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las cetonas presentan el grupo carbonilo dentro de la cadena y se nombran con el sufijo -ona."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre del alqueno más sencillo, de fórmula C₂H₄?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Etano",
+          "correcta": false
+        },
+        {
+          "texto": "Eteno",
+          "correcta": true
+        },
+        {
+          "texto": "Etino",
+          "correcta": false
+        },
+        {
+          "texto": "Etanol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El C₂H₄ posee un doble enlace entre sus dos carbonos, por lo que es el eteno (etileno)."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula general de los alquenos con un solo doble enlace?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "CₙH₂ₙ₊₂",
+          "correcta": false
+        },
+        {
+          "texto": "CₙH₂ₙ₊₁",
+          "correcta": false
+        },
+        {
+          "texto": "CₙH₂ₙ₋₂",
+          "correcta": false
+        },
+        {
+          "texto": "CₙH₂ₙ",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Un doble enlace resta dos hidrógenos respecto al alcano, dando la fórmula CₙH₂ₙ."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula general de los alquinos con un solo triple enlace?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "CₙH₂ₙ",
+          "correcta": false
+        },
+        {
+          "texto": "CₙH₂ₙ₋₂",
+          "correcta": true
+        },
+        {
+          "texto": "CₙH₂ₙ₊₂",
+          "correcta": false
+        },
+        {
+          "texto": "CₙH₂ₙ₋₁",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El triple enlace resta cuatro hidrógenos respecto al alcano, dando la fórmula CₙH₂ₙ₋₂."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del compuesto CH₃–CH₂–CH₂–CH₃?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Butano",
+          "correcta": true
+        },
+        {
+          "texto": "Propano",
+          "correcta": false
+        },
+        {
+          "texto": "Isobutano",
+          "correcta": false
+        },
+        {
+          "texto": "Pentano",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es una cadena lineal de cuatro carbonos con enlaces simples, es decir, butano."
+    },
+    {
+      "enunciado": "El compuesto CH₃–CO–CH₃ corresponde a:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Propanal",
+          "correcta": false
+        },
+        {
+          "texto": "Propanol",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido propanoico",
+          "correcta": false
+        },
+        {
+          "texto": "Propanona",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Tiene el carbonilo en el carbono central de una cadena de tres carbonos: propanona (acetona)."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del compuesto CH₃–CHO?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Etanol",
+          "correcta": false
+        },
+        {
+          "texto": "Metanal",
+          "correcta": false
+        },
+        {
+          "texto": "Etanal",
+          "correcta": true
+        },
+        {
+          "texto": "Etanona",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es un aldehído de dos carbonos, por lo que su nombre IUPAC es etanal (acetaldehído)."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del ácido de fórmula CH₃–COOH?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Ácido etanoico",
+          "correcta": true
+        },
+        {
+          "texto": "Etanol",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido metanoico",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido propanoico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tiene dos carbonos y un grupo carboxilo, por lo que es el ácido etanoico (ácido acético)."
+    },
+    {
+      "enunciado": "¿Cuál es el grupo funcional característico de las aminas?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "–OH",
+          "correcta": false
+        },
+        {
+          "texto": "–NH₂",
+          "correcta": true
+        },
+        {
+          "texto": "–CONH₂",
+          "correcta": false
+        },
+        {
+          "texto": "–NO₂",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las aminas derivan del amoníaco y se caracterizan por el grupo amino –NH₂."
+    },
+    {
+      "enunciado": "¿Qué nombre recibe el compuesto CH₂=CH–CH₃?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Propano",
+          "correcta": false
+        },
+        {
+          "texto": "Propino",
+          "correcta": false
+        },
+        {
+          "texto": "Propanol",
+          "correcta": false
+        },
+        {
+          "texto": "Propeno",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Es una cadena de tres carbonos con un doble enlace, por lo que se llama propeno."
+    },
+    {
+      "enunciado": "¿Cuántos átomos de carbono contiene una molécula de pentano?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El prefijo «pent-» indica cinco átomos de carbono, por lo que el pentano es C₅H₁₂."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del compuesto CH≡CH?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Eteno",
+          "correcta": false
+        },
+        {
+          "texto": "Etano",
+          "correcta": false
+        },
+        {
+          "texto": "Etanol",
+          "correcta": false
+        },
+        {
+          "texto": "Etino",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Es un hidrocarburo de dos carbonos con triple enlace, por lo que es el etino (acetileno)."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del alcohol CH₃–CH₂–CH₂–OH?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Propanal",
+          "correcta": false
+        },
+        {
+          "texto": "Propan-1-ol",
+          "correcta": true
+        },
+        {
+          "texto": "Propanona",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido propanoico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es un alcohol con el –OH en el carbono 1 de una cadena de tres carbonos: propan-1-ol."
+    },
+    {
+      "enunciado": "En el nombre «but-2-eno», ¿qué indica el número 2?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "La posición del doble enlace",
+          "correcta": true
+        },
+        {
+          "texto": "El número total de carbonos",
+          "correcta": false
+        },
+        {
+          "texto": "El número de hidrógenos",
+          "correcta": false
+        },
+        {
+          "texto": "La posición de un grupo metilo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El localizador 2 señala que el doble enlace comienza en el segundo carbono de la cadena."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del hidrocarburo ramificado (CH₃)₂CH–CH₃?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Butano",
+          "correcta": false
+        },
+        {
+          "texto": "Pentano",
+          "correcta": false
+        },
+        {
+          "texto": "2-metilpropano",
+          "correcta": true
+        },
+        {
+          "texto": "2-metilbutano",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La cadena más larga tiene tres carbonos con un metilo en el carbono 2: 2-metilpropano (isobutano)."
+    },
+    {
+      "enunciado": "¿Cuál es el grupo funcional característico de los ésteres?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "–COOH",
+          "correcta": false
+        },
+        {
+          "texto": "–COO– (R–COO–R′)",
+          "correcta": true
+        },
+        {
+          "texto": "–CHO",
+          "correcta": false
+        },
+        {
+          "texto": "–CO–",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los ésteres provienen de un ácido y un alcohol y contienen el grupo –COO– entre dos restos."
+    },
+    {
+      "enunciado": "El aldehído más sencillo, HCHO (metanal), se conoce comúnmente como:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Formaldehído",
+          "correcta": true
+        },
+        {
+          "texto": "Acetaldehído",
+          "correcta": false
+        },
+        {
+          "texto": "Acetona",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido fórmico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El metanal (HCHO) recibe el nombre común de formaldehído."
+    },
+    {
+      "enunciado": "Un dieno es un hidrocarburo que contiene:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Un doble enlace",
+          "correcta": false
+        },
+        {
+          "texto": "Tres dobles enlaces",
+          "correcta": false
+        },
+        {
+          "texto": "Un triple enlace",
+          "correcta": false
+        },
+        {
+          "texto": "Dos dobles enlaces",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El prefijo «di-» en dieno indica la presencia de dos dobles enlaces carbono-carbono."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre del compuesto CH₃–NH₂?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Dimetilamina",
+          "correcta": false
+        },
+        {
+          "texto": "Etilamina",
+          "correcta": false
+        },
+        {
+          "texto": "Metilamina",
+          "correcta": true
+        },
+        {
+          "texto": "Metanol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es un grupo metilo unido a –NH₂, por lo que se llama metilamina (metanamina)."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del compuesto (CH₃)₂CH–CH₂–CH₃?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2-metilbutano",
+          "correcta": true
+        },
+        {
+          "texto": "Pentano",
+          "correcta": false
+        },
+        {
+          "texto": "2-metilpropano",
+          "correcta": false
+        },
+        {
+          "texto": "3-metilbutano",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La cadena más larga tiene cuatro carbonos con un metilo en el carbono 2: 2-metilbutano."
+    },
+    {
+      "enunciado": "¿Cuántos isómeros estructurales de cadena existen para la fórmula molecular C₄H₁₀?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El C₄H₁₀ admite dos estructuras: el butano lineal y el 2-metilpropano (isobutano)."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del compuesto CH₃–CH=CH–CH₃?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "But-1-eno",
+          "correcta": false
+        },
+        {
+          "texto": "But-2-eno",
+          "correcta": true
+        },
+        {
+          "texto": "But-1-ino",
+          "correcta": false
+        },
+        {
+          "texto": "Butano",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay cuatro carbonos con el doble enlace entre el segundo y el tercero: but-2-eno."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre del éster que se forma entre el ácido etanoico y el metanol?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Metanoato de metilo",
+          "correcta": false
+        },
+        {
+          "texto": "Metanoato de etilo",
+          "correcta": false
+        },
+        {
+          "texto": "Etanoato de etilo",
+          "correcta": false
+        },
+        {
+          "texto": "Etanoato de metilo",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El ácido aporta la parte «etanoato» y el alcohol metanol aporta el «de metilo»: etanoato de metilo."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del ácido CH₃–CH₂–COOH?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Ácido etanoico",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido butanoico",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido propanoico",
+          "correcta": true
+        },
+        {
+          "texto": "Propanal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Son tres carbonos en total, incluido el del carboxilo, por lo que es el ácido propanoico."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del alcohol CH₃–CH(OH)–CH₃?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Propan-1-ol",
+          "correcta": false
+        },
+        {
+          "texto": "Propanal",
+          "correcta": false
+        },
+        {
+          "texto": "Propanona",
+          "correcta": false
+        },
+        {
+          "texto": "Propan-2-ol",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El –OH está unido al carbono central de una cadena de tres carbonos: propan-2-ol (isopropanol)."
+    },
+    {
+      "enunciado": "En una molécula que posee a la vez un grupo –OH y un grupo –COOH, ¿cuál determina el sufijo principal del nombre?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "El grupo –OH (sufijo -ol)",
+          "correcta": false
+        },
+        {
+          "texto": "El grupo –COOH (sufijo -oico)",
+          "correcta": true
+        },
+        {
+          "texto": "Ambos grupos con igual jerarquía",
+          "correcta": false
+        },
+        {
+          "texto": "El grupo con el localizador más alto",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El ácido carboxílico tiene mayor prioridad que el alcohol, así que impone el sufijo -oico."
+    },
+    {
+      "enunciado": "¿Cuántos átomos de carbono tiene en total la molécula de ácido hexanoico?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El prefijo «hex-» indica seis carbonos, e incluye el carbono del grupo carboxilo."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del alcano CH₃–CH₂–CH₂–CH₂–CH₂–CH₃?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Hexano",
+          "correcta": true
+        },
+        {
+          "texto": "Pentano",
+          "correcta": false
+        },
+        {
+          "texto": "Heptano",
+          "correcta": false
+        },
+        {
+          "texto": "Butano",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La cadena tiene seis carbonos unidos por enlaces simples, por lo que es el hexano."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del compuesto CH₃–CH₂–CO–CH₂–CH₃?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Pentan-2-ona",
+          "correcta": false
+        },
+        {
+          "texto": "Pentanal",
+          "correcta": false
+        },
+        {
+          "texto": "Pentan-3-ona",
+          "correcta": true
+        },
+        {
+          "texto": "Ácido pentanoico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbonilo está en el carbono central de una cadena de cinco carbonos: pentan-3-ona."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del alcohol CH₃–CH(CH₃)–CH₂–OH?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Butan-1-ol",
+          "correcta": false
+        },
+        {
+          "texto": "Propan-1-ol",
+          "correcta": false
+        },
+        {
+          "texto": "2-metilbutan-1-ol",
+          "correcta": false
+        },
+        {
+          "texto": "2-metilpropan-1-ol",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La cadena principal con el –OH tiene tres carbonos y un metilo en el carbono 2: 2-metilpropan-1-ol."
+    },
+    {
+      "enunciado": "Los ésteres de olor agradable se obtienen por la reacción entre un ácido carboxílico y un:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Aldehído",
+          "correcta": false
+        },
+        {
+          "texto": "Alcohol",
+          "correcta": true
+        },
+        {
+          "texto": "Amina",
+          "correcta": false
+        },
+        {
+          "texto": "Alcano",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La esterificación combina un ácido carboxílico con un alcohol, liberando agua."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula molecular del propino?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "C₃H₆",
+          "correcta": false
+        },
+        {
+          "texto": "C₃H₄",
+          "correcta": true
+        },
+        {
+          "texto": "C₃H₆O",
+          "correcta": false
+        },
+        {
+          "texto": "C₃H₈",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Aplicando CₙH₂ₙ₋₂ con n = 3 se obtiene C₃H₄ para el propino."
+    },
+    {
+      "enunciado": "Según la fórmula general de los alquinos, ¿cuántos átomos de hidrógeno tiene el butino (4 carbonos)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con la fórmula CₙH₂ₙ₋₂ y n = 4 resulta C₄H₆, es decir, 6 átomos de hidrógeno."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre del compuesto (CH₃)₂NH?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Metilamina",
+          "correcta": false
+        },
+        {
+          "texto": "Trimetilamina",
+          "correcta": false
+        },
+        {
+          "texto": "Etilamina",
+          "correcta": false
+        },
+        {
+          "texto": "Dimetilamina",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El nitrógeno está unido a dos grupos metilo, por lo que es una amina secundaria: dimetilamina."
+    },
+    {
+      "enunciado": "¿Cuál es el nombre IUPAC del alcohol CH₃–CH(OH)–CH₂–CH₃?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Butan-2-ol",
+          "correcta": true
+        },
+        {
+          "texto": "Butan-1-ol",
+          "correcta": false
+        },
+        {
+          "texto": "Butanal",
+          "correcta": false
+        },
+        {
+          "texto": "Butanona",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El –OH está en el carbono 2 de una cadena de cuatro carbonos, por lo que es butan-2-ol."
+    }
+  ]
+}

@@ -1,0 +1,1085 @@
+{
+  "id": "matematica-suma-resta",
+  "materia": "matematica",
+  "tema": "Suma y resta de números enteros",
+  "bloque": "Aritmética",
+  "nivel": "basico",
+  "clase": {
+    "titulo": "Ley de signos y operaciones combinadas",
+    "url": "../ley-de-signos/",
+    "lamina": 12
+  },
+  "repaso": {
+    "idea": "Con signos iguales se suman los valores y se conserva el signo. Con signos distintos se restan los valores y se pone el signo del número de mayor valor absoluto. Restar un número es sumar su opuesto.",
+    "ejemplo": {
+      "enunciado": "Calcula: −8 − (−5) + 3",
+      "pasos": [
+        "Restar −5 es sumar su opuesto: −8 − (−5) = −8 + 5.",
+        "−8 + 5: signos distintos, 8 − 5 = 3 y gana el signo del 8 → −3.",
+        "−3 + 3 = 0, porque son opuestos."
+      ],
+      "resultado": "0"
+    },
+    "ojo": "Olvidar que «menos por menos» en − (−5) se convierte en + 5."
+  },
+  "preguntas": [
+    {
+      "enunciado": "Calcula: 6 + 7",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": true
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        }
+      ],
+      "explicacion": "6 + 7 = 13; al pasar de 9 se reagrupa una decena."
+    },
+    {
+      "enunciado": "Calcula: 14 − 6",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "14 − 6 = 8; se toma prestada la decena para restar las unidades."
+    },
+    {
+      "enunciado": "Calcula: 25 + 13",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "28",
+          "correcta": false
+        },
+        {
+          "texto": "48",
+          "correcta": false
+        },
+        {
+          "texto": "37",
+          "correcta": false
+        },
+        {
+          "texto": "38",
+          "correcta": true
+        }
+      ],
+      "explicacion": "5+3=8 unidades y 2+1=3 decenas, dando 38 sin reagrupar."
+    },
+    {
+      "enunciado": "Calcula: 47 − 5",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "52",
+          "correcta": false
+        },
+        {
+          "texto": "43",
+          "correcta": false
+        },
+        {
+          "texto": "41",
+          "correcta": false
+        },
+        {
+          "texto": "42",
+          "correcta": true
+        }
+      ],
+      "explicacion": "47 − 5 = 42; se restan solo las unidades, sin préstamo."
+    },
+    {
+      "enunciado": "Calcula: 56 + 27",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "73",
+          "correcta": false
+        },
+        {
+          "texto": "93",
+          "correcta": false
+        },
+        {
+          "texto": "83",
+          "correcta": true
+        },
+        {
+          "texto": "72",
+          "correcta": false
+        }
+      ],
+      "explicacion": "6+7=13: se escribe 3 y se reagrupa 1; 5+2+1=8, total 83."
+    },
+    {
+      "enunciado": "Calcula: 62 − 28",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "44",
+          "correcta": false
+        },
+        {
+          "texto": "34",
+          "correcta": true
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "46",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 2 < 8 se pide prestado: 12−8=4 y 5−2=3, total 34."
+    },
+    {
+      "enunciado": "Calcula: 35 + 35",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "60",
+          "correcta": false
+        },
+        {
+          "texto": "70",
+          "correcta": true
+        },
+        {
+          "texto": "65",
+          "correcta": false
+        },
+        {
+          "texto": "71",
+          "correcta": false
+        }
+      ],
+      "explicacion": "5+5=10: se reagrupa una decena; 3+3+1=7, total 70."
+    },
+    {
+      "enunciado": "Calcula: 80 − 35",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "45",
+          "correcta": true
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        },
+        {
+          "texto": "55",
+          "correcta": false
+        },
+        {
+          "texto": "44",
+          "correcta": false
+        }
+      ],
+      "explicacion": "80 − 35 = 45; se pide prestado para restar las unidades."
+    },
+    {
+      "enunciado": "Calcula: 100 − 1",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "98",
+          "correcta": false
+        },
+        {
+          "texto": "90",
+          "correcta": false
+        },
+        {
+          "texto": "101",
+          "correcta": false
+        },
+        {
+          "texto": "99",
+          "correcta": true
+        }
+      ],
+      "explicacion": "100 − 1 = 99; se pide prestado a través de los ceros."
+    },
+    {
+      "enunciado": "Calcula: 73 + 19",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "92",
+          "correcta": true
+        },
+        {
+          "texto": "93",
+          "correcta": false
+        },
+        {
+          "texto": "91",
+          "correcta": false
+        },
+        {
+          "texto": "82",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3+9=12: se reagrupa 1; 7+1+1=9, total 92."
+    },
+    {
+      "enunciado": "Calcula: 90 − 45",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "35",
+          "correcta": false
+        },
+        {
+          "texto": "45",
+          "correcta": true
+        },
+        {
+          "texto": "55",
+          "correcta": false
+        },
+        {
+          "texto": "44",
+          "correcta": false
+        }
+      ],
+      "explicacion": "90 − 45 = 45; se toma prestada una decena para las unidades."
+    },
+    {
+      "enunciado": "Calcula: 28 + 14",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "32",
+          "correcta": false
+        },
+        {
+          "texto": "43",
+          "correcta": false
+        },
+        {
+          "texto": "41",
+          "correcta": false
+        },
+        {
+          "texto": "42",
+          "correcta": true
+        }
+      ],
+      "explicacion": "8+4=12: se reagrupa 1; 2+1+1=4, total 42."
+    },
+    {
+      "enunciado": "Calcula: 64 − 27",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "47",
+          "correcta": false
+        },
+        {
+          "texto": "33",
+          "correcta": false
+        },
+        {
+          "texto": "43",
+          "correcta": false
+        },
+        {
+          "texto": "37",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como 4 < 7 se pide prestado: 14−7=7 y 5−2=3, total 37."
+    },
+    {
+      "enunciado": "Calcula: 234 + 158",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "382",
+          "correcta": false
+        },
+        {
+          "texto": "492",
+          "correcta": false
+        },
+        {
+          "texto": "393",
+          "correcta": false
+        },
+        {
+          "texto": "392",
+          "correcta": true
+        }
+      ],
+      "explicacion": "4+8=12 (llevo 1); 3+5+1=9; 2+1=3, total 392."
+    },
+    {
+      "enunciado": "Calcula: 506 − 248",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "258",
+          "correcta": true
+        },
+        {
+          "texto": "358",
+          "correcta": false
+        },
+        {
+          "texto": "262",
+          "correcta": false
+        },
+        {
+          "texto": "248",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se pide prestado a través del 0: 506 − 248 = 258."
+    },
+    {
+      "enunciado": "Calcula: 1000 − 375",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "725",
+          "correcta": false
+        },
+        {
+          "texto": "635",
+          "correcta": false
+        },
+        {
+          "texto": "685",
+          "correcta": false
+        },
+        {
+          "texto": "625",
+          "correcta": true
+        }
+      ],
+      "explicacion": "1000 − 375 = 625; el préstamo se propaga por los tres ceros."
+    },
+    {
+      "enunciado": "La temperatura era de 8 °C y bajó 12 °C. ¿Qué temperatura final se registra?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−4 °C",
+          "correcta": true
+        },
+        {
+          "texto": "4 °C",
+          "correcta": false
+        },
+        {
+          "texto": "−20 °C",
+          "correcta": false
+        },
+        {
+          "texto": "20 °C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "8 − 12 = −4: la bajada supera el valor inicial, quedando bajo cero."
+    },
+    {
+      "enunciado": "Calcula: −5 + 8",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "−13",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con signos distintos se resta 8−5=3 y se conserva el signo del mayor (+)."
+    },
+    {
+      "enunciado": "Calcula: 4 + (−9)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−5",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "−13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "9−4=5 y predomina el signo negativo del 9, así que el resultado es −5."
+    },
+    {
+      "enunciado": "Calcula: −7 − 3",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−4",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "−10",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Restar 3 a −7 equivale a sumar negativos: −7−3 = −10."
+    },
+    {
+      "enunciado": "Calcula: 15 + (−20)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "−5",
+          "correcta": true
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        },
+        {
+          "texto": "−35",
+          "correcta": false
+        }
+      ],
+      "explicacion": "20−15=5 y domina el signo negativo, por lo que da −5."
+    },
+    {
+      "enunciado": "Calcula: −8 − (−5)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−13",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": true
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Restar −5 es sumar 5: −8 + 5 = −3."
+    },
+    {
+      "enunciado": "Un buzo está a −18 m respecto al nivel del mar y sube 7 m. ¿A qué altura queda respecto al nivel del mar?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−11 m",
+          "correcta": true
+        },
+        {
+          "texto": "−25 m",
+          "correcta": false
+        },
+        {
+          "texto": "11 m",
+          "correcta": false
+        },
+        {
+          "texto": "−21 m",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Subir 7 m se suma: −18 + 7 = −11 m."
+    },
+    {
+      "enunciado": "Calcula: 125 + 89 + 46",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "250",
+          "correcta": false
+        },
+        {
+          "texto": "260",
+          "correcta": true
+        },
+        {
+          "texto": "270",
+          "correcta": false
+        },
+        {
+          "texto": "261",
+          "correcta": false
+        }
+      ],
+      "explicacion": "125 + 89 = 214 y 214 + 46 = 260."
+    },
+    {
+      "enunciado": "Calcula: 745 − 389",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "356",
+          "correcta": true
+        },
+        {
+          "texto": "456",
+          "correcta": false
+        },
+        {
+          "texto": "366",
+          "correcta": false
+        },
+        {
+          "texto": "346",
+          "correcta": false
+        }
+      ],
+      "explicacion": "745 − 389 = 356, usando préstamo en unidades y decenas."
+    },
+    {
+      "enunciado": "Calcula: −25 + 40 − 10",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−5",
+          "correcta": false
+        },
+        {
+          "texto": "55",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "−25 + 40 = 15 y 15 − 10 = 5."
+    },
+    {
+      "enunciado": "Un ascensor sube desde el piso −3 (subsuelo) hasta el piso 9. ¿Cuántos pisos asciende?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "−12",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La distancia es 9 − (−3) = 9 + 3 = 12 pisos."
+    },
+    {
+      "enunciado": "Calcula: 6 − 10",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "−4",
+          "correcta": true
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "−16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 10 > 6, el resultado es negativo: 6 − 10 = −4."
+    },
+    {
+      "enunciado": "Calcula: −3 + (−4) + 7",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "−14",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "−3 + (−4) = −7 y −7 + 7 = 0."
+    },
+    {
+      "enunciado": "Marta tenía $50 en su cuenta (que permite sobregiro) y pagó $65 con ella. ¿Cuál es su saldo?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "$15",
+          "correcta": false
+        },
+        {
+          "texto": "−$15",
+          "correcta": true
+        },
+        {
+          "texto": "$115",
+          "correcta": false
+        },
+        {
+          "texto": "−$115",
+          "correcta": false
+        }
+      ],
+      "explicacion": "50 − 65 = −15: el pago supera lo que tenía, así que la cuenta queda en −$15 (debe $15)."
+    },
+    {
+      "enunciado": "Calcula: −45 − 67",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "112",
+          "correcta": false
+        },
+        {
+          "texto": "−22",
+          "correcta": false
+        },
+        {
+          "texto": "−112",
+          "correcta": true
+        },
+        {
+          "texto": "22",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Ambos son negativos: se suman magnitudes 45+67=112 con signo −, da −112."
+    },
+    {
+      "enunciado": "Calcula: −120 + 85 − 60",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−35",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "−175",
+          "correcta": false
+        },
+        {
+          "texto": "−95",
+          "correcta": true
+        }
+      ],
+      "explicacion": "−120 + 85 = −35 y −35 − 60 = −95."
+    },
+    {
+      "enunciado": "Calcula: 18 − (−24) − 30",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−36",
+          "correcta": false
+        },
+        {
+          "texto": "72",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "−12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "18 − (−24) = 42 y 42 − 30 = 12."
+    },
+    {
+      "enunciado": "¿Qué número sumado a −17 da como resultado 5?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−12",
+          "correcta": false
+        },
+        {
+          "texto": "−22",
+          "correcta": false
+        },
+        {
+          "texto": "22",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si el número es x: x + (−17) = 5, entonces x = 5 + 17 = 22. Comprobación: 22 − 17 = 5."
+    },
+    {
+      "enunciado": "Calcula: 3500 − 1875",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2375",
+          "correcta": false
+        },
+        {
+          "texto": "1725",
+          "correcta": false
+        },
+        {
+          "texto": "1625",
+          "correcta": true
+        },
+        {
+          "texto": "1635",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3500 − 1875 = 1625, con préstamos sucesivos."
+    },
+    {
+      "enunciado": "Calcula: −8 + 15 − 20 + 6",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−7",
+          "correcta": true
+        },
+        {
+          "texto": "−13",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "−49",
+          "correcta": false
+        }
+      ],
+      "explicacion": "−8+15=7; 7−20=−13; −13+6=−7."
+    },
+    {
+      "enunciado": "Un termómetro marca −6 °C de madrugada, sube 11 °C al mediodía y luego baja 4 °C en la tarde. ¿Cuál es la temperatura final?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−1 °C",
+          "correcta": false
+        },
+        {
+          "texto": "21 °C",
+          "correcta": false
+        },
+        {
+          "texto": "9 °C",
+          "correcta": false
+        },
+        {
+          "texto": "1 °C",
+          "correcta": true
+        }
+      ],
+      "explicacion": "−6 + 11 − 4 = 1 °C."
+    },
+    {
+      "enunciado": "Calcula: −(−(−9)) + 4",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "−13",
+          "correcta": false
+        },
+        {
+          "texto": "−5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Tres signos menos dan negativo: −(−(−9)) = −9, y −9 + 4 = −5."
+    },
+    {
+      "enunciado": "Calcula: 10000 − 6789",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3211",
+          "correcta": true
+        },
+        {
+          "texto": "3311",
+          "correcta": false
+        },
+        {
+          "texto": "4211",
+          "correcta": false
+        },
+        {
+          "texto": "3221",
+          "correcta": false
+        }
+      ],
+      "explicacion": "10000 − 6789 = 3211; el préstamo se propaga por los ceros."
+    },
+    {
+      "enunciado": "Calcula: (−15 + 8) − (−12 + 4)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−15",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "−15+8=−7 y −12+4=−8; luego −7 − (−8) = −7 + 8 = 1."
+    },
+    {
+      "enunciado": "Una empresa tuvo ganancias de $4200, pérdidas de $5600 y luego ganancias de $1800. ¿Cuál es el resultado neto?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "$400",
+          "correcta": true
+        },
+        {
+          "texto": "−$400",
+          "correcta": false
+        },
+        {
+          "texto": "$11600",
+          "correcta": false
+        },
+        {
+          "texto": "−$11600",
+          "correcta": false
+        }
+      ],
+      "explicacion": "4200 − 5600 + 1800 = 400; el resultado neto es una ganancia de $400."
+    },
+    {
+      "enunciado": "Calcula: |−13| + (−13)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "−26",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "26",
+          "correcta": false
+        }
+      ],
+      "explicacion": "|−13| = 13, y 13 + (−13) = 0 por ser opuestos."
+    },
+    {
+      "enunciado": "¿Qué número falta? 56 − ___ = −8",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "48",
+          "correcta": false
+        },
+        {
+          "texto": "64",
+          "correcta": true
+        },
+        {
+          "texto": "−64",
+          "correcta": false
+        },
+        {
+          "texto": "−48",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si el número que falta es x: 56 − x = −8, entonces x = 56 + 8 = 64. Comprobación: 56 − 64 = −8."
+    },
+    {
+      "enunciado": "Calcula: −250 − (−380) + (−90)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−40",
+          "correcta": false
+        },
+        {
+          "texto": "720",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": true
+        },
+        {
+          "texto": "−720",
+          "correcta": false
+        }
+      ],
+      "explicacion": "−250 + 380 − 90 = 40."
+    },
+    {
+      "enunciado": "En un juego, Ana gana 150 puntos, pierde 220, gana 75 y pierde 40. ¿Cuál es su puntaje final?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "35",
+          "correcta": false
+        },
+        {
+          "texto": "−35",
+          "correcta": true
+        },
+        {
+          "texto": "−485",
+          "correcta": false
+        },
+        {
+          "texto": "485",
+          "correcta": false
+        }
+      ],
+      "explicacion": "150 − 220 + 75 − 40 = −35 puntos."
+    },
+    {
+      "enunciado": "Calcula: −1 + 2 − 3 + 4 − 5 + 6",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "21",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Agrupando: (−1+2)+(−3+4)+(−5+6) = 1+1+1 = 3."
+    }
+  ]
+}

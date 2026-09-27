@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Práctica libre · CIDEA Jóvenes</title>
+<meta name="description" content="Práctica libre de CIDEA Jóvenes: practica por materia y tema, a tu ritmo, con un mini repaso y preguntas revisadas por tu tutor.">
+<meta name="theme-color" content="#8854d0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16131f" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%238854d0'/%3E%3Cpath d='M32 14 8 25l24 11 24-11z' fill='%23fff'/%3E%3Cpath d='M18 31v10c0 4 6 8 14 8s14-4 14-8V31l-14 6.5z' fill='%23fff' opacity='.85'/%3E%3Cpath d='M53 26v13' stroke='%23f4a124' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="practica.css?v=1">
+<script>
+  /* Mismo tema que el Campus, aplicado antes de pintar (evita parpadeo) */
+  try {
+    var c0 = JSON.parse(localStorage.getItem('campus_v1') || 'null');
+    var t0 = c0 && c0.ajustes && c0.ajustes.tema;
+    if (t0 === 'light' || t0 === 'dark') document.documentElement.setAttribute('data-theme', t0);
+  } catch (e) { }
+</script>
+</head>
+<body>
+<a class="saltar" href="#vista">Saltar al contenido</a>
+
+<header class="barra">
+  <div class="barra-in">
+    <a class="btn-campus" href="../campus/" aria-label="Volver al Campus">
+      <svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      <span>Campus</span>
+    </a>
+    <a class="marca" href="#/" aria-label="Práctica libre, inicio">
+      <span class="marca-logo" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M32 14 8 25l24 11 24-11z" fill="currentColor"/><path d="M18 31v10c0 4 6 8 14 8s14-4 14-8V31l-14 6.5z" fill="currentColor" opacity=".8"/><path d="M53 26v13" stroke="#f4a124" stroke-width="3.5" stroke-linecap="round"/></svg>
+      </span>
+      <span class="marca-txt"><b>Práctica libre</b><small>CIDEA Jóvenes</small></span>
+    </a>
+    <div class="barra-acc">
+      <a class="btn-ico btn-boveda" id="btn-boveda" href="#/boveda" aria-label="Bóveda de errores" hidden></a>
+      <button type="button" class="btn-ico" id="btn-tema" aria-label="Cambiar a tema oscuro"></button>
+    </div>
+  </div>
+</header>
+
+<main id="vista" class="vista" tabindex="-1" aria-busy="true">
+  <div class="cargando"><span class="giro" aria-hidden="true"></span><p>Cargando la práctica…</p></div>
+</main>
+
+<div id="anuncio" class="sr" aria-live="polite" aria-atomic="true"></div>
+
+<footer class="pie">
+  <p><b>CIDEA Jóvenes</b> · Práctica libre</p>
+  <p class="pie-sub">por Ignacio Isa · Tu práctica se guarda en este dispositivo.</p>
+</footer>
+
+<noscript><p class="noscript">Para practicar necesitas activar JavaScript en tu navegador.</p></noscript>
+<script src="practica.js?v=1"></script>
+</body>
+</html>

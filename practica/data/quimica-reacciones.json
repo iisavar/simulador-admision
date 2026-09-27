@@ -1,0 +1,1105 @@
+{
+  "id": "quimica-reacciones",
+  "materia": "quimica",
+  "tema": "Tipos de reacciones químicas",
+  "bloque": "Reacciones y estequiometría",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "En una reacción química los reactivos se transforman en productos. Según cómo se reorganizan, las clasificamos en síntesis (A + B → AB), descomposición (AB → A + B), sustitución simple (A + BC → AC + B), sustitución doble (AB + CD → AD + CB) y combustión (combustible + O₂ → CO₂ + H₂O + energía).",
+    "ejemplo": {
+      "enunciado": "Clasifica la reacción Zn + CuSO₄ → ZnSO₄ + Cu.",
+      "pasos": [
+        "Mira los reactivos: un elemento solo (Zn) y un compuesto (CuSO₄).",
+        "Mira los productos: un compuesto nuevo (ZnSO₄) y un elemento solo (Cu).",
+        "El Zn tomó el lugar del Cu dentro del compuesto: es el patrón A + BC → AC + B.",
+        "La reacción sí ocurre porque el Zn es más reactivo que el Cu en la serie de actividad."
+      ],
+      "resultado": "Es una sustitución simple (desplazamiento simple)."
+    },
+    "ojo": "No confundas sustitución simple con doble: en la simple participa un elemento solo (sin combinar); en la doble, dos compuestos intercambian sus iones."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la forma general de una reacción de síntesis o combinación?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "A + B → AB",
+          "correcta": true
+        },
+        {
+          "texto": "AB → A + B",
+          "correcta": false
+        },
+        {
+          "texto": "A + BC → AC + B",
+          "correcta": false
+        },
+        {
+          "texto": "AB + CD → AD + CB",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En una síntesis dos o más reactivos se combinan para formar un único producto, según el esquema A + B → AB."
+    },
+    {
+      "enunciado": "En una combustión común, ¿qué sustancia actúa como comburente, es decir, el reactivo que reacciona con el combustible?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Oxígeno",
+          "correcta": true
+        },
+        {
+          "texto": "Nitrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "Hidrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "Agua",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La combustión es la reacción de un combustible con el oxígeno, que actúa como comburente y permite liberar energía."
+    },
+    {
+      "enunciado": "La reacción representada por AB → A + B corresponde a una reacción de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Combustión",
+          "correcta": false
+        },
+        {
+          "texto": "Descomposición",
+          "correcta": true
+        },
+        {
+          "texto": "Sustitución simple",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la descomposición un solo compuesto se separa en dos o más sustancias más simples."
+    },
+    {
+      "enunciado": "La reacción 2Na + Cl₂ → 2NaCl es un ejemplo de reacción de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Descomposición",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución doble",
+          "correcta": false
+        },
+        {
+          "texto": "Combustión",
+          "correcta": false
+        },
+        {
+          "texto": "Síntesis",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Dos elementos (sodio y cloro) se combinan para formar un único compuesto (NaCl), lo que define una síntesis."
+    },
+    {
+      "enunciado": "En una reacción de sustitución simple (desplazamiento simple), un elemento:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Se combina con otro elemento para formar un único compuesto",
+          "correcta": false
+        },
+        {
+          "texto": "Se separa en sus componentes más simples",
+          "correcta": false
+        },
+        {
+          "texto": "Reemplaza a otro elemento dentro de un compuesto",
+          "correcta": true
+        },
+        {
+          "texto": "Intercambia iones con otra sal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la sustitución simple un elemento libre desplaza a otro que estaba combinado en un compuesto."
+    },
+    {
+      "enunciado": "La combustión completa de un hidrocarburo produce como productos principales:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Monóxido de carbono e hidrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "Carbono y agua",
+          "correcta": false
+        },
+        {
+          "texto": "Dióxido de carbono e hidrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "Dióxido de carbono y agua",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con oxígeno suficiente, un hidrocarburo se quema por completo produciendo CO₂ y H₂O."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes es una reacción de descomposición?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2H₂ + O₂ → 2H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "2H₂O → 2H₂ + O₂",
+          "correcta": true
+        },
+        {
+          "texto": "Zn + 2HCl → ZnCl₂ + H₂",
+          "correcta": false
+        },
+        {
+          "texto": "NaOH + HCl → NaCl + H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El agua (un solo compuesto) se separa en hidrógeno y oxígeno, lo que es una descomposición."
+    },
+    {
+      "enunciado": "Como característica típica, ¿cuántos productos se forman en una reacción de síntesis?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Tres",
+          "correcta": false
+        },
+        {
+          "texto": "Cuatro",
+          "correcta": false
+        },
+        {
+          "texto": "Uno",
+          "correcta": true
+        },
+        {
+          "texto": "Dos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la síntesis varios reactivos se unen para dar un único producto."
+    },
+    {
+      "enunciado": "La forma general AB + CD → AD + CB corresponde a una reacción de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Sustitución simple",
+          "correcta": false
+        },
+        {
+          "texto": "Síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución doble (doble desplazamiento)",
+          "correcta": true
+        },
+        {
+          "texto": "Descomposición",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la sustitución doble dos compuestos intercambian sus iones o radicales formando dos nuevos compuestos."
+    },
+    {
+      "enunciado": "La oxidación rápida de una sustancia con liberación de luz y calor se denomina:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Descomposición",
+          "correcta": false
+        },
+        {
+          "texto": "Combustión",
+          "correcta": true
+        },
+        {
+          "texto": "Síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Precipitación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La combustión es una oxidación rápida que desprende energía en forma de calor y luz."
+    },
+    {
+      "enunciado": "La reacción CaCO₃ → CaO + CO₂, producida al calentar, es de tipo:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Descomposición",
+          "correcta": true
+        },
+        {
+          "texto": "Combustión",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución doble",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbonato de calcio se descompone por el calor en óxido de calcio y dióxido de carbono."
+    },
+    {
+      "enunciado": "La reacción Zn + 2HCl → ZnCl₂ + H₂ es de tipo:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Sustitución doble",
+          "correcta": false
+        },
+        {
+          "texto": "Síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución simple",
+          "correcta": true
+        },
+        {
+          "texto": "Descomposición",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El zinc desplaza al hidrógeno del ácido, característico de una sustitución simple."
+    },
+    {
+      "enunciado": "La síntesis industrial del amoníaco corresponde a la ecuación:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2NH₃ → N₂ + 3H₂",
+          "correcta": false
+        },
+        {
+          "texto": "N₂ + O₂ → 2NO",
+          "correcta": false
+        },
+        {
+          "texto": "N₂ + 3H₂ → 2NH₃",
+          "correcta": true
+        },
+        {
+          "texto": "NH₃ + HCl → NH₄Cl",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El nitrógeno y el hidrógeno se combinan para formar amoníaco, una reacción de síntesis."
+    },
+    {
+      "enunciado": "Durante una combustión se libera principalmente:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Energía en forma de calor y luz",
+          "correcta": true
+        },
+        {
+          "texto": "Únicamente oxígeno",
+          "correcta": false
+        },
+        {
+          "texto": "Un metal puro",
+          "correcta": false
+        },
+        {
+          "texto": "Energía eléctrica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La combustión es exotérmica: libera energía manifestada como calor y, a menudo, luz (llama)."
+    },
+    {
+      "enunciado": "La reacción CaO + H₂O → Ca(OH)₂ se clasifica como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Descomposición",
+          "correcta": false
+        },
+        {
+          "texto": "Combustión",
+          "correcta": false
+        },
+        {
+          "texto": "Síntesis",
+          "correcta": true
+        },
+        {
+          "texto": "Sustitución simple",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un óxido y el agua se combinan para formar un único compuesto (hidróxido), lo que es una síntesis."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes ecuaciones representa una reacción de combustión?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "NaCl + AgNO₃ → AgCl + NaNO₃",
+          "correcta": false
+        },
+        {
+          "texto": "CH₄ + 2O₂ → CO₂ + 2H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "CaCO₃ → CaO + CO₂",
+          "correcta": false
+        },
+        {
+          "texto": "Fe + S → FeS",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El metano reacciona con oxígeno produciendo CO₂ y H₂O, característico de la combustión."
+    },
+    {
+      "enunciado": "La descomposición de un compuesto provocada por la acción del calor se denomina:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Descomposición térmica",
+          "correcta": true
+        },
+        {
+          "texto": "Electrólisis",
+          "correcta": false
+        },
+        {
+          "texto": "Fotólisis",
+          "correcta": false
+        },
+        {
+          "texto": "Hidrólisis",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cuando el agente que rompe el compuesto es el calor se habla de descomposición térmica; la electrólisis usa corriente eléctrica y la fotólisis, luz."
+    },
+    {
+      "enunciado": "Para la combustión completa del metano CH₄ + 2O₂ → CO₂ + 2H₂O, ¿cuántos moles de O₂ se requieren por cada mol de CH₄?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La estequiometría muestra una relación 1:2 entre CH₄ y O₂, es decir, 2 moles de O₂ por mol de CH₄."
+    },
+    {
+      "enunciado": "En la descomposición del peróxido de hidrógeno 2H₂O₂ → 2H₂O + O₂, ¿cuántos moles de O₂ se producen por cada 2 moles de H₂O₂?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,5",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La estequiometría indica que 2 moles de H₂O₂ generan 1 mol de O₂."
+    },
+    {
+      "enunciado": "Al balancear la ecuación de síntesis H₂ + Cl₂ → HCl, ¿cuál es el coeficiente del HCl?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación balanceada es H₂ + Cl₂ → 2HCl, por lo que el coeficiente del HCl es 2."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes reacciones de sustitución doble forma un precipitado?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "NaOH + HCl → NaCl + H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "KNO₃ + NaCl → KCl + NaNO₃",
+          "correcta": false
+        },
+        {
+          "texto": "AgNO₃ + NaCl → AgCl↓ + NaNO₃",
+          "correcta": true
+        },
+        {
+          "texto": "HNO₃ + KOH → KNO₃ + H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cloruro de plata (AgCl) es insoluble en agua, por lo que precipita como sólido."
+    },
+    {
+      "enunciado": "En una sustitución simple, un metal desplaza a otro de su sal solo si:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Es menos reactivo que el metal al que desplaza",
+          "correcta": false
+        },
+        {
+          "texto": "Tiene mayor masa atómica",
+          "correcta": false
+        },
+        {
+          "texto": "Tiene menor punto de fusión",
+          "correcta": false
+        },
+        {
+          "texto": "Es más reactivo que el metal al que desplaza (serie de actividad)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Un metal solo desplaza a otro si lo supera en la serie de actividad (es más reactivo)."
+    },
+    {
+      "enunciado": "La reacción de neutralización HCl + NaOH → NaCl + H₂O es un caso particular de:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Sustitución simple",
+          "correcta": false
+        },
+        {
+          "texto": "Síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Combustión",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución doble",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En la neutralización el ácido y la base intercambian iones formando sal y agua, una sustitución doble."
+    },
+    {
+      "enunciado": "La reacción Fe + CuSO₄ → FeSO₄ + Cu es de tipo:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Sustitución doble",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución simple",
+          "correcta": true
+        },
+        {
+          "texto": "Síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Descomposición",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El hierro, más reactivo que el cobre, desplaza al Cu de su sal: es una sustitución simple."
+    },
+    {
+      "enunciado": "La combustión incompleta de un hidrocarburo, por falta de oxígeno, produce además de agua:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Solo dióxido de carbono",
+          "correcta": false
+        },
+        {
+          "texto": "Oxígeno e hidrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "Ozono",
+          "correcta": false
+        },
+        {
+          "texto": "Monóxido de carbono y/o carbono (hollín)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Sin oxígeno suficiente, la combustión es incompleta y genera CO y/o carbono además de agua."
+    },
+    {
+      "enunciado": "Según la serie de actividad (K > Na > Ca > Mg > Al > Zn > Fe > Cu > Ag), ¿cuál metal puede desplazar al cobre de una solución de CuSO₄?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Plata",
+          "correcta": false
+        },
+        {
+          "texto": "Mercurio",
+          "correcta": false
+        },
+        {
+          "texto": "Oro",
+          "correcta": false
+        },
+        {
+          "texto": "Zinc",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El zinc está por encima del cobre en la serie de actividad, por lo que puede desplazarlo de su sal."
+    },
+    {
+      "enunciado": "Al balancear la combustión del propano C₃H₈ + O₂ → CO₂ + H₂O, el coeficiente del O₂ es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación balanceada es C₃H₈ + 5O₂ → 3CO₂ + 4H₂O; se necesitan 5 moléculas de O₂."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes reacciones de sustitución doble libera un gas?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "NaOH + HCl → NaCl + H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "AgNO₃ + NaCl → AgCl + NaNO₃",
+          "correcta": false
+        },
+        {
+          "texto": "Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑",
+          "correcta": true
+        },
+        {
+          "texto": "KOH + HNO₃ → KNO₃ + H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbonato con el ácido produce CO₂ gaseoso, que se desprende de la mezcla."
+    },
+    {
+      "enunciado": "La reacción 2KClO₃ → 2KCl + 3O₂, producida con calor, es de tipo:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Descomposición",
+          "correcta": true
+        },
+        {
+          "texto": "Combustión",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución simple",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El clorato de potasio se descompone por el calor en cloruro de potasio y oxígeno."
+    },
+    {
+      "enunciado": "Al balancear la combustión completa del etanol C₂H₅OH + O₂ → CO₂ + H₂O, ¿cuál es el coeficiente del O₂?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación balanceada es C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O: a la derecha hay 7 O, y el etanol aporta 1, así que faltan 6 O = 3 moléculas de O₂."
+    },
+    {
+      "enunciado": "La reacción entre un carbonato y un ácido, CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂, se clasifica principalmente como:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Sustitución simple",
+          "correcta": false
+        },
+        {
+          "texto": "Síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución doble",
+          "correcta": true
+        },
+        {
+          "texto": "Combustión",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los reactivos intercambian iones (doble desplazamiento); el ácido carbónico inestable se descompone en H₂O y CO₂."
+    },
+    {
+      "enunciado": "En la combustión CH₄ + 2O₂ → CO₂ + 2H₂O, ¿cuántos gramos de CO₂ se producen al quemar 1 mol de CH₄? (CO₂ = 44 g/mol)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "22",
+          "correcta": false
+        },
+        {
+          "texto": "44",
+          "correcta": true
+        },
+        {
+          "texto": "88",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1 mol de CH₄ produce 1 mol de CO₂; 1 × 44 g/mol = 44 g de CO₂."
+    },
+    {
+      "enunciado": "En la descomposición CaCO₃ → CaO + CO₂, ¿cuántos gramos de CaO se obtienen de 100 g de CaCO₃? (CaCO₃ = 100 g/mol; CaO = 56 g/mol)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "28",
+          "correcta": false
+        },
+        {
+          "texto": "44",
+          "correcta": false
+        },
+        {
+          "texto": "56",
+          "correcta": true
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        }
+      ],
+      "explicacion": "100 g de CaCO₃ son 1 mol, que producen 1 mol de CaO; 1 × 56 g = 56 g de CaO."
+    },
+    {
+      "enunciado": "Al balancear la combustión del butano C₄H₁₀ + O₂ → CO₂ + H₂O, ¿cuál es el conjunto de coeficientes (C₄H₁₀, O₂, CO₂, H₂O)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1, 5, 4, 5",
+          "correcta": false
+        },
+        {
+          "texto": "2, 13, 8, 10",
+          "correcta": true
+        },
+        {
+          "texto": "2, 12, 8, 10",
+          "correcta": false
+        },
+        {
+          "texto": "1, 6, 4, 5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación balanceada es 2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O (C: 8, H: 20, O: 26 en ambos lados)."
+    },
+    {
+      "enunciado": "En la combustión 2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O, ¿cuántos moles de O₂ se necesitan para quemar 4 moles de butano?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "52",
+          "correcta": false
+        },
+        {
+          "texto": "26",
+          "correcta": true
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "6,5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La relación es 2 mol butano : 13 mol O₂; para 4 mol de butano se requieren 4 × 13/2 = 26 mol de O₂."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes NO es una reacción de descomposición?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "N₂ + 3H₂ → 2NH₃",
+          "correcta": true
+        },
+        {
+          "texto": "2HgO → 2Hg + O₂",
+          "correcta": false
+        },
+        {
+          "texto": "CaCO₃ → CaO + CO₂",
+          "correcta": false
+        },
+        {
+          "texto": "2H₂O → 2H₂ + O₂",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La formación de amoníaco combina dos reactivos en uno solo: es una síntesis, no una descomposición."
+    },
+    {
+      "enunciado": "Según la serie de actividad (Mg > Zn > Fe > Cu), ¿en cuál de los siguientes casos NO ocurre una reacción de sustitución simple?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Cu + ZnSO₄",
+          "correcta": true
+        },
+        {
+          "texto": "Zn + CuSO₄",
+          "correcta": false
+        },
+        {
+          "texto": "Fe + CuSO₄",
+          "correcta": false
+        },
+        {
+          "texto": "Mg + ZnSO₄",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cobre es menos reactivo que el zinc, por lo que no puede desplazarlo de su sal; en los otros casos el metal libre es más reactivo y sí desplaza al otro."
+    },
+    {
+      "enunciado": "Al balancear la combustión del octano 2C₈H₁₈ + O₂ → CO₂ + H₂O, el coeficiente del O₂ es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La ecuación balanceada es 2C₈H₁₈ + 25O₂ → 16CO₂ + 18H₂O; el oxígeno suma 50 átomos en cada lado."
+    },
+    {
+      "enunciado": "Para la reacción AgNO₃ + NaCl → AgCl + NaNO₃, la ecuación iónica neta es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Na⁺ + NO₃⁻ → NaNO₃",
+          "correcta": false
+        },
+        {
+          "texto": "Ag⁺ + NO₃⁻ → AgNO₃",
+          "correcta": false
+        },
+        {
+          "texto": "Na⁺ + Cl⁻ → NaCl",
+          "correcta": false
+        },
+        {
+          "texto": "Ag⁺ + Cl⁻ → AgCl(s)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Solo el Ag⁺ y el Cl⁻ forman el precipitado; el Na⁺ y el NO₃⁻ son iones espectadores."
+    },
+    {
+      "enunciado": "En la síntesis 2Mg + O₂ → 2MgO, si reaccionan 48 g de Mg (masa atómica Mg = 24; MgO = 40), ¿cuántos gramos de MgO se forman?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "40",
+          "correcta": false
+        },
+        {
+          "texto": "48",
+          "correcta": false
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        },
+        {
+          "texto": "80",
+          "correcta": true
+        }
+      ],
+      "explicacion": "48 g de Mg son 2 mol, que producen 2 mol de MgO; 2 × 40 g = 80 g de MgO."
+    },
+    {
+      "enunciado": "La reacción Pb(NO₃)₂ + 2KI → PbI₂ + 2KNO₃ forma un precipitado amarillo de PbI₂. Este tipo de reacción es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Sustitución doble",
+          "correcta": true
+        },
+        {
+          "texto": "Sustitución simple",
+          "correcta": false
+        },
+        {
+          "texto": "Síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Descomposición",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los dos compuestos intercambian sus iones formando dos nuevos compuestos: es una sustitución doble."
+    },
+    {
+      "enunciado": "La reacción de la termita 2Al + Fe₂O₃ → Al₂O₃ + 2Fe es de tipo:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Sustitución doble",
+          "correcta": false
+        },
+        {
+          "texto": "Síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Combustión",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución simple",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El aluminio, más reactivo, desplaza al hierro de su óxido: es una sustitución simple."
+    },
+    {
+      "enunciado": "La reacción C + O₂ → CO₂ puede clasificarse simultáneamente como:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Descomposición y combustión",
+          "correcta": false
+        },
+        {
+          "texto": "Síntesis y combustión",
+          "correcta": true
+        },
+        {
+          "texto": "Sustitución simple y síntesis",
+          "correcta": false
+        },
+        {
+          "texto": "Sustitución doble y descomposición",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dos reactivos forman un solo producto (síntesis) y el carbono reacciona con O₂ liberando energía (combustión)."
+    },
+    {
+      "enunciado": "Al balancear la síntesis del óxido de aluminio Al + O₂ → Al₂O₃, el conjunto de coeficientes (Al, O₂, Al₂O₃) es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2, 3, 1",
+          "correcta": false
+        },
+        {
+          "texto": "4, 3, 2",
+          "correcta": true
+        },
+        {
+          "texto": "2, 1, 1",
+          "correcta": false
+        },
+        {
+          "texto": "4, 6, 2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación balanceada es 4Al + 3O₂ → 2Al₂O₃ (4 Al y 6 O en cada lado)."
+    },
+    {
+      "enunciado": "En la reacción Zn + 2HCl → ZnCl₂ + H₂, si se dispone de 1 mol de Zn y 1 mol de HCl, ¿cuál es el reactivo limitante?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "HCl",
+          "correcta": true
+        },
+        {
+          "texto": "Zn",
+          "correcta": false
+        },
+        {
+          "texto": "ZnCl₂",
+          "correcta": false
+        },
+        {
+          "texto": "H₂",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada mol de Zn requiere 2 mol de HCl; con solo 1 mol de HCl, este se agota primero y limita la reacción."
+    },
+    {
+      "enunciado": "Dada la serie de actividad de los halógenos (F₂ > Cl₂ > Br₂ > I₂), ¿cuál reacción de sustitución simple SÍ ocurre?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "I₂ + 2NaCl → 2NaI + Cl₂",
+          "correcta": false
+        },
+        {
+          "texto": "Cl₂ + 2NaBr → 2NaCl + Br₂",
+          "correcta": true
+        },
+        {
+          "texto": "Br₂ + 2NaCl → 2NaBr + Cl₂",
+          "correcta": false
+        },
+        {
+          "texto": "I₂ + 2NaBr → 2NaI + Br₂",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cloro es más reactivo que el bromo, por lo que puede desplazarlo de su sal; los demás casos no ocurren."
+    },
+    {
+      "enunciado": "¿Cuántos gramos de agua se producen en la combustión completa de 1 mol de propano? C₃H₈ + 5O₂ → 3CO₂ + 4H₂O (H₂O = 18 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "72",
+          "correcta": true
+        },
+        {
+          "texto": "54",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1 mol de propano produce 4 mol de H₂O; 4 × 18 g/mol = 72 g de agua."
+    }
+  ]
+}

@@ -1,0 +1,1173 @@
+{
+  "id": "quimica-balanceo",
+  "materia": "quimica",
+  "tema": "Balanceo de ecuaciones y redox",
+  "bloque": "Reacciones y estequiometría",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Balancear es poner coeficientes delante de las fórmulas para que haya el mismo número de átomos de cada elemento a ambos lados (ley de conservación de la masa). En una reacción redox, además, los electrones que pierde la especie que se oxida deben ser iguales a los que gana la que se reduce.",
+    "ejemplo": {
+      "enunciado": "Balancea Al + O₂ → Al₂O₃.",
+      "pasos": [
+        "Oxígeno: hay 2 a la izquierda y 3 a la derecha; el mínimo común múltiplo es 6, así que pon 3 O₂ y 2 Al₂O₃.",
+        "Aluminio: ahora hay 2 × 2 = 4 Al a la derecha, así que pon 4 Al a la izquierda.",
+        "Comprueba: Al 4 = 4 y O 6 = 6."
+      ],
+      "resultado": "4Al + 3O₂ → 2Al₂O₃"
+    },
+    "ojo": "Nunca cambies los subíndices de una fórmula (el H₂O no puede volverse H₂O₂): solo se cambian los coeficientes."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el número de oxidación del oxígeno en la mayoría de sus compuestos, como en el agua (H₂O)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−2",
+          "correcta": true
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "+2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El oxígeno actúa con número de oxidación −2 en casi todos sus compuestos; solo cambia en los peróxidos (−1) y frente al flúor."
+    },
+    {
+      "enunciado": "En la mayoría de los compuestos (excepto los hidruros metálicos), ¿cuál es el número de oxidación del hidrógeno?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "+1",
+          "correcta": true
+        },
+        {
+          "texto": "+2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El hidrógeno presenta número de oxidación +1 al unirse a no metales; solo es −1 en hidruros metálicos como el NaH."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación de cualquier elemento en su forma libre, como O₂, N₂ o el hierro metálico?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "+1",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "Depende del elemento",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Todo elemento en estado libre o sin combinar tiene número de oxidación igual a 0."
+    },
+    {
+      "enunciado": "Balancear una ecuación química consiste fundamentalmente en:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Cambiar los subíndices de las fórmulas hasta que coincidan",
+          "correcta": false
+        },
+        {
+          "texto": "Igualar el número de átomos de cada elemento en reactivos y productos",
+          "correcta": true
+        },
+        {
+          "texto": "Sumar los coeficientes de ambos lados de la ecuación",
+          "correcta": false
+        },
+        {
+          "texto": "Igualar el número total de moléculas en cada lado",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Balancear es ajustar los coeficientes para que haya el mismo número de átomos de cada elemento en ambos lados, cumpliendo la conservación de la masa."
+    },
+    {
+      "enunciado": "Al balancear la reacción H₂ + O₂ → H₂O, ¿cuáles son los coeficientes correctos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1, 1, 1",
+          "correcta": false
+        },
+        {
+          "texto": "1, 2, 2",
+          "correcta": false
+        },
+        {
+          "texto": "2, 1, 2",
+          "correcta": true
+        },
+        {
+          "texto": "2, 2, 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2 H₂ + O₂ → 2 H₂O iguala 4 átomos de H y 2 de O en cada lado."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del sodio (Na) en el cloruro de sodio (NaCl)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "+1",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El sodio, metal alcalino del grupo 1, actúa siempre con número de oxidación +1."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del cloro (Cl) en el cloruro de sodio (NaCl)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−2",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "+1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como el sodio es +1 y la molécula es neutra, el cloro debe ser −1 para que la suma sea cero."
+    },
+    {
+      "enunciado": "El balanceo de ecuaciones se fundamenta en la ley de conservación de la masa, enunciada por:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Lavoisier",
+          "correcta": true
+        },
+        {
+          "texto": "Dalton",
+          "correcta": false
+        },
+        {
+          "texto": "Avogadro",
+          "correcta": false
+        },
+        {
+          "texto": "Proust",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Lavoisier estableció que en una reacción química la masa se conserva: la materia no se crea ni se destruye."
+    },
+    {
+      "enunciado": "En una molécula neutra, la suma de los números de oxidación de todos sus átomos es igual a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "La carga del catión",
+          "correcta": false
+        },
+        {
+          "texto": "+1",
+          "correcta": false
+        },
+        {
+          "texto": "El número de átomos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En toda especie neutra la suma algebraica de los números de oxidación es cero."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del oxígeno en el peróxido de hidrógeno (H₂O₂)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "+1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": true
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En los peróxidos el oxígeno actúa de forma excepcional con número de oxidación −1."
+    },
+    {
+      "enunciado": "Para balancear N₂ + H₂ → NH₃, ¿qué coeficiente debe llevar el H₂?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación balanceada es N₂ + 3 H₂ → 2 NH₃; por tanto el H₂ lleva coeficiente 3."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del hidrógeno en el hidruro de sodio (NaH)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "+1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En los hidruros metálicos el hidrógeno actúa con −1, porque el metal es más electropositivo."
+    },
+    {
+      "enunciado": "El proceso de oxidación se define como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Ganancia de electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Ganancia de protones",
+          "correcta": false
+        },
+        {
+          "texto": "Pérdida de neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "Pérdida de electrones",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Oxidarse es perder electrones, lo que implica un aumento del número de oxidación."
+    },
+    {
+      "enunciado": "El proceso de reducción se define como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Pérdida de electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Pérdida de protones",
+          "correcta": false
+        },
+        {
+          "texto": "Ganancia de electrones",
+          "correcta": true
+        },
+        {
+          "texto": "Aumento del número de oxidación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Reducirse es ganar electrones, lo que disminuye el número de oxidación."
+    },
+    {
+      "enunciado": "¿Cuáles son los coeficientes que balancean la reacción C + O₂ → CO₂?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2, 1, 1",
+          "correcta": false
+        },
+        {
+          "texto": "1, 1, 1",
+          "correcta": true
+        },
+        {
+          "texto": "1, 2, 1",
+          "correcta": false
+        },
+        {
+          "texto": "1, 1, 2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación ya está balanceada: hay 1 átomo de C y 2 de O en cada lado, con coeficientes 1, 1, 1."
+    },
+    {
+      "enunciado": "En el ion sulfato, SO₄²⁻, la suma de los números de oxidación de todos sus átomos es igual a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En un ion poliatómico la suma de los números de oxidación es igual a la carga del ion, en este caso −2."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del azufre (S) en el ácido sulfúrico (H₂SO₄)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−2",
+          "correcta": false
+        },
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "+4",
+          "correcta": false
+        },
+        {
+          "texto": "+6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con H = +1 (total +2) y O = −2 (total −8), el azufre debe ser +6 para que la suma sea 0."
+    },
+    {
+      "enunciado": "¿Cuáles son los coeficientes correctos para balancear Fe + O₂ → Fe₂O₃?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2, 3, 1",
+          "correcta": false
+        },
+        {
+          "texto": "2, 1, 1",
+          "correcta": false
+        },
+        {
+          "texto": "3, 2, 1",
+          "correcta": false
+        },
+        {
+          "texto": "4, 3, 2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "4 Fe + 3 O₂ → 2 Fe₂O₃ iguala 4 átomos de Fe y 6 de O en cada lado."
+    },
+    {
+      "enunciado": "Al balancear la descomposición 2 KClO₃ → 2 KCl + ? O₂, ¿qué coeficiente lleva el O₂?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2 KClO₃ → 2 KCl + 3 O₂: los 6 oxígenos de la izquierda forman 3 moléculas de O₂."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del manganeso (Mn) en el permanganato de potasio (KMnO₄)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "+4",
+          "correcta": false
+        },
+        {
+          "texto": "+6",
+          "correcta": false
+        },
+        {
+          "texto": "+7",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El K aporta +1 y los 4 oxígenos aportan 4 × (−2) = −8; el manganeso debe ser +7 para que la suma sea cero."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del cromo (Cr) en el dicromato de potasio (K₂Cr₂O₇)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "+3",
+          "correcta": false
+        },
+        {
+          "texto": "+6",
+          "correcta": true
+        },
+        {
+          "texto": "+7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los 2 potasios aportan +2 y los 7 oxígenos −14; los dos cromos deben sumar +12, así que cada Cr es +6."
+    },
+    {
+      "enunciado": "¿Cuáles son los coeficientes que balancean la combustión CH₄ + O₂ → CO₂ + H₂O?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1, 1, 1, 2",
+          "correcta": false
+        },
+        {
+          "texto": "1, 2, 1, 2",
+          "correcta": true
+        },
+        {
+          "texto": "2, 3, 2, 4",
+          "correcta": false
+        },
+        {
+          "texto": "1, 2, 2, 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "CH₄ + 2 O₂ → CO₂ + 2 H₂O equilibra 1 C, 4 H y 4 O en cada lado."
+    },
+    {
+      "enunciado": "Al balancear la combustión del propano C₃H₈ + O₂ → CO₂ + H₂O, ¿qué coeficiente lleva el O₂?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O: los productos contienen 10 átomos de O, que provienen de 5 moléculas de O₂."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del nitrógeno (N) en el ácido nítrico (HNO₃)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "+5",
+          "correcta": true
+        },
+        {
+          "texto": "+4",
+          "correcta": false
+        },
+        {
+          "texto": "+3",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El H aporta +1 y los 3 oxígenos −6; el nitrógeno debe ser +5 para que la suma sea cero."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del nitrógeno (N) en el ion amonio, NH₄⁺?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−3",
+          "correcta": true
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "+3",
+          "correcta": false
+        },
+        {
+          "texto": "+5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los 4 hidrógenos aportan +4; para que la suma sea +1 (la carga del ion), el nitrógeno debe ser −3."
+    },
+    {
+      "enunciado": "¿Cuáles son los coeficientes que balancean Al + HCl → AlCl₃ + H₂?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1, 3, 1, 1",
+          "correcta": false
+        },
+        {
+          "texto": "2, 3, 2, 3",
+          "correcta": false
+        },
+        {
+          "texto": "1, 6, 2, 3",
+          "correcta": false
+        },
+        {
+          "texto": "2, 6, 2, 3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "2 Al + 6 HCl → 2 AlCl₃ + 3 H₂ iguala 2 Al, 6 Cl y 6 H en cada lado."
+    },
+    {
+      "enunciado": "Al balancear Na + H₂O → NaOH + H₂, ¿qué conjunto de coeficientes resulta?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2, 2, 2, 1",
+          "correcta": true
+        },
+        {
+          "texto": "1, 1, 1, 1",
+          "correcta": false
+        },
+        {
+          "texto": "2, 1, 2, 1",
+          "correcta": false
+        },
+        {
+          "texto": "2, 2, 1, 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2 Na + 2 H₂O → 2 NaOH + H₂ equilibra 2 Na, 2 O y 4 H en cada lado."
+    },
+    {
+      "enunciado": "En la reacción Zn + Cu²⁺ → Zn²⁺ + Cu, ¿cuál especie es el agente oxidante?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Zn",
+          "correcta": false
+        },
+        {
+          "texto": "Zn²⁺",
+          "correcta": false
+        },
+        {
+          "texto": "Cu²⁺",
+          "correcta": true
+        },
+        {
+          "texto": "Cu",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El agente oxidante es el que se reduce; el ion Cu²⁺ gana electrones para formar Cu, oxidando al Zn."
+    },
+    {
+      "enunciado": "¿Cuáles son los coeficientes que balancean Ca(OH)₂ + HCl → CaCl₂ + H₂O?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1, 1, 1, 1",
+          "correcta": false
+        },
+        {
+          "texto": "1, 2, 1, 1",
+          "correcta": false
+        },
+        {
+          "texto": "2, 2, 2, 2",
+          "correcta": false
+        },
+        {
+          "texto": "1, 2, 1, 2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Ca(OH)₂ + 2 HCl → CaCl₂ + 2 H₂O iguala 1 Ca, 2 Cl, 2 O y 4 H en cada lado."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del cloro (Cl) en el ácido perclórico (HClO₄)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "+1",
+          "correcta": false
+        },
+        {
+          "texto": "+3",
+          "correcta": false
+        },
+        {
+          "texto": "+5",
+          "correcta": false
+        },
+        {
+          "texto": "+7",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El H aporta +1 y los 4 oxígenos −8; el cloro debe ser +7 para que la suma sea cero."
+    },
+    {
+      "enunciado": "En la combustión balanceada C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O, ¿cuánto vale la suma de todos los coeficientes?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La suma es 1 + 5 + 3 + 4 = 13."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del hierro (Fe) en el óxido férrico (Fe₂O₃)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "+3",
+          "correcta": true
+        },
+        {
+          "texto": "+6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los 3 oxígenos aportan −6; los dos hierros deben sumar +6, por lo que cada Fe es +3."
+    },
+    {
+      "enunciado": "El método algebraico de balanceo consiste en:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Asignar una incógnita (coeficiente) a cada sustancia y plantear una ecuación por cada elemento",
+          "correcta": true
+        },
+        {
+          "texto": "Probar coeficientes al azar hasta que la ecuación cuadre",
+          "correcta": false
+        },
+        {
+          "texto": "Modificar los subíndices de las fórmulas químicas",
+          "correcta": false
+        },
+        {
+          "texto": "Igualar únicamente los átomos de oxígeno e hidrógeno",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el método algebraico se asignan letras a los coeficientes y se resuelve el sistema de ecuaciones que surge de conservar cada elemento."
+    },
+    {
+      "enunciado": "¿Cuáles son los coeficientes que balancean P₄ + O₂ → P₄O₁₀?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1, 10, 1",
+          "correcta": false
+        },
+        {
+          "texto": "4, 5, 1",
+          "correcta": false
+        },
+        {
+          "texto": "1, 5, 1",
+          "correcta": true
+        },
+        {
+          "texto": "1, 4, 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "P₄ + 5 O₂ → P₄O₁₀: los 10 oxígenos del producto provienen de 5 moléculas de O₂."
+    },
+    {
+      "enunciado": "En la oxidación Cu → Cu²⁺, ¿cuántos electrones pierde cada átomo de cobre?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cobre pasa de número de oxidación 0 a +2, perdiendo 2 electrones."
+    },
+    {
+      "enunciado": "¿Cuáles son los coeficientes que balancean la reducción del óxido Fe₂O₃ + C → Fe + CO₂?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1, 3, 2, 3",
+          "correcta": false
+        },
+        {
+          "texto": "2, 3, 4, 3",
+          "correcta": true
+        },
+        {
+          "texto": "2, 3, 2, 3",
+          "correcta": false
+        },
+        {
+          "texto": "1, 1, 2, 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2 Fe₂O₃ + 3 C → 4 Fe + 3 CO₂ iguala 4 Fe, 6 O y 3 C en cada lado."
+    },
+    {
+      "enunciado": "Al balancear en medio ácido MnO₄⁻ + Fe²⁺ → Mn²⁺ + Fe³⁺, ¿cuál es la ecuación correcta?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "MnO₄⁻ + 5 Fe²⁺ + 8 H⁺ → Mn²⁺ + 5 Fe³⁺ + 4 H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "MnO₄⁻ + Fe²⁺ + 4 H⁺ → Mn²⁺ + Fe³⁺ + 2 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "MnO₄⁻ + 4 Fe²⁺ + 8 H⁺ → Mn²⁺ + 4 Fe³⁺ + 4 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "2 MnO₄⁻ + 5 Fe²⁺ + 16 H⁺ → 2 Mn²⁺ + 5 Fe³⁺ + 8 H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El Mn gana 5 electrones (de +7 a +2) y cada Fe pierde 1; se requieren 5 Fe²⁺, 8 H⁺ y 4 H₂O para balancear carga y átomos."
+    },
+    {
+      "enunciado": "En la semirreacción MnO₄⁻ → Mn²⁺ en medio ácido, ¿cuántos electrones se intercambian?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El manganeso pasa de +7 a +2, ganando 5 electrones."
+    },
+    {
+      "enunciado": "En la semirreacción Cr₂O₇²⁻ → 2 Cr³⁺ en medio ácido, ¿cuántos electrones se intercambian en total?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada cromo pasa de +6 a +3 (3 electrones); como hay 2 átomos de Cr, se intercambian 6 electrones."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación balanceada en medio ácido de Cr₂O₇²⁻ + Fe²⁺ → Cr³⁺ + Fe³⁺?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Cr₂O₇²⁻ + 3 Fe²⁺ + 14 H⁺ → 2 Cr³⁺ + 3 Fe³⁺ + 7 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "Cr₂O₇²⁻ + 6 Fe²⁺ + 14 H⁺ → 2 Cr³⁺ + 6 Fe³⁺ + 7 H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "Cr₂O₇²⁻ + 6 Fe²⁺ + 7 H⁺ → 2 Cr³⁺ + 6 Fe³⁺ + 7 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "Cr₂O₇²⁻ + 6 Fe²⁺ + 14 H⁺ → 2 Cr³⁺ + 6 Fe³⁺ + 14 H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El dicromato gana 6 electrones y cada Fe²⁺ pierde 1; con 6 Fe²⁺, 14 H⁺ y 7 H₂O se equilibran masa y carga."
+    },
+    {
+      "enunciado": "Al balancear la semirreacción MnO₄⁻ → Mn²⁺ en medio ácido, ¿cuántos H⁺ y H₂O se requieren, respectivamente?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4 H⁺ y 2 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "2 H⁺ y 1 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "8 H⁺ y 4 H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "8 H⁺ y 8 H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "MnO₄⁻ + 8 H⁺ + 5 e⁻ → Mn²⁺ + 4 H₂O: los 4 oxígenos forman 4 H₂O, que requieren 8 H⁺."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación balanceada de Cu + HNO₃ → Cu(NO₃)₂ + NO + H₂O?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3 Cu + 8 HNO₃ → 3 Cu(NO₃)₂ + 2 NO + 4 H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "Cu + 4 HNO₃ → Cu(NO₃)₂ + 2 NO + 2 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "3 Cu + 6 HNO₃ → 3 Cu(NO₃)₂ + 2 NO + 3 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "Cu + 2 HNO₃ → Cu(NO₃)₂ + NO + H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El Cu pierde 2 electrones y el N (de +5 a +2) gana 3; el balance da 3 Cu, 8 HNO₃, 2 NO y 4 H₂O."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación balanceada de KMnO₄ + HCl → KCl + MnCl₂ + Cl₂ + H₂O?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "KMnO₄ + 8 HCl → KCl + MnCl₂ + 2 Cl₂ + 4 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "2 KMnO₄ + 10 HCl → 2 KCl + 2 MnCl₂ + 3 Cl₂ + 5 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "2 KMnO₄ + 16 HCl → 2 KCl + 2 MnCl₂ + 5 Cl₂ + 8 H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "2 KMnO₄ + 16 HCl → 2 KCl + 2 MnCl₂ + 4 Cl₂ + 8 H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El Mn gana 5 electrones (de +7 a +2) y los cloruros se oxidan a Cl₂; el balance da 5 Cl₂ y 16 HCl."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación balanceada de H₂S + HNO₃ → S + NO + H₂O?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3 H₂S + 2 HNO₃ → 3 S + 2 NO + 4 H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "H₂S + 2 HNO₃ → S + 2 NO + 2 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "3 H₂S + 2 HNO₃ → 3 S + 2 NO + 3 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "2 H₂S + 3 HNO₃ → 2 S + 3 NO + 4 H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El S pasa de −2 a 0 (pierde 2 electrones) y el N de +5 a +2 (gana 3); el mínimo común da 3 H₂S y 2 HNO₃, con 4 H₂O."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación promedio del azufre en el ion tiosulfato, S₂O₃²⁻?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−2",
+          "correcta": false
+        },
+        {
+          "texto": "+2",
+          "correcta": true
+        },
+        {
+          "texto": "+4",
+          "correcta": false
+        },
+        {
+          "texto": "+6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los 3 oxígenos aportan −6; para una carga −2, los dos azufres suman +4, dando un promedio de +2 por átomo."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación balanceada de la oxidación del amoníaco, NH₃ + O₂ → NO + H₂O (proceso de Ostwald)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2 NH₃ + 2 O₂ → 2 NO + 3 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "4 NH₃ + 5 O₂ → 4 NO + 6 H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "4 NH₃ + 3 O₂ → 4 NO + 6 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "NH₃ + O₂ → NO + H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "4 NH₃ + 5 O₂ → 4 NO + 6 H₂O iguala 4 N, 12 H y 10 O en cada lado."
+    },
+    {
+      "enunciado": "¿Cuáles son los coeficientes que balancean la combustión del etano C₂H₆ + O₂ → CO₂ + H₂O?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1, 3, 2, 3",
+          "correcta": false
+        },
+        {
+          "texto": "2, 5, 4, 6",
+          "correcta": false
+        },
+        {
+          "texto": "1, 7, 2, 3",
+          "correcta": false
+        },
+        {
+          "texto": "2, 7, 4, 6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "2 C₂H₆ + 7 O₂ → 4 CO₂ + 6 H₂O equilibra 4 C, 12 H y 14 O en cada lado."
+    },
+    {
+      "enunciado": "Al balancear en medio básico la semirreacción MnO₄⁻ → MnO₂, ¿cuántos iones OH⁻ aparecen y en qué lado?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2 OH⁻ en el lado de los reactivos",
+          "correcta": false
+        },
+        {
+          "texto": "2 OH⁻ en el lado de los productos",
+          "correcta": false
+        },
+        {
+          "texto": "8 OH⁻ en el lado de los productos",
+          "correcta": false
+        },
+        {
+          "texto": "4 OH⁻ en el lado de los productos",
+          "correcta": true
+        }
+      ],
+      "explicacion": "MnO₄⁻ + 2 H₂O + 3 e⁻ → MnO₂ + 4 OH⁻: el Mn pasa de +7 a +4 y se generan 4 OH⁻ en medio básico."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación balanceada de Zn + HNO₃ → Zn(NO₃)₂ + NH₄NO₃ + H₂O (ácido nítrico muy diluido)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Zn + 4 HNO₃ → Zn(NO₃)₂ + NH₄NO₃ + H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "4 Zn + 10 HNO₃ → 4 Zn(NO₃)₂ + NH₄NO₃ + 3 H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "4 Zn + 8 HNO₃ → 4 Zn(NO₃)₂ + NH₄NO₃ + 3 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "4 Zn + 10 HNO₃ → 4 Zn(NO₃)₂ + NH₄NO₃ + 5 H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El Zn pierde 2 electrones y el N (de +5 a −3) gana 8; el balance da 4 Zn, 10 HNO₃ y 3 H₂O."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación balanceada de Cu + H₂SO₄ concentrado → CuSO₄ + SO₂ + H₂O?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Cu + 2 H₂SO₄ → CuSO₄ + SO₂ + 2 H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "Cu + H₂SO₄ → CuSO₄ + SO₂ + H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "2 Cu + 4 H₂SO₄ → 2 CuSO₄ + SO₂ + 4 H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "Cu + 2 H₂SO₄ → CuSO₄ + 2 SO₂ + 2 H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El Cu se oxida a +2 (pierde 2 electrones) y parte del azufre se reduce de +6 a +4 (SO₂); el balance da 2 H₂SO₄ y 2 H₂O."
+    }
+  ]
+}

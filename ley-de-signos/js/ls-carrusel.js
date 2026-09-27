@@ -59,9 +59,12 @@
     ui().callar(); ui().cerrarHoja(true);
     const lam = L()[idx];
     if (!lam) { root.innerHTML = '<div class="pantalla"><p>No se encontraron las láminas.</p></div>'; return; }
-    LS.st.laminas.actual = idx;
-    if (idx > LS.st.laminas.maxAlcanzada) LS.st.laminas.maxAlcanzada = idx;
-    LS.guardar();
+    // Abrir una lámina más adelante por enlace directo (repaso) no cuenta como avance
+    if (idx <= LS.st.laminas.maxAlcanzada + 1) {
+      LS.st.laminas.actual = idx;
+      if (idx > LS.st.laminas.maxAlcanzada) LS.st.laminas.maxAlcanzada = idx;
+      LS.guardar();
+    }
     const c = ctx();
     const r = resp(lam.id);
     hechoActual = !necesitaResponder(lam) || !!r.hecho || idx < LS.st.laminas.maxAlcanzada;

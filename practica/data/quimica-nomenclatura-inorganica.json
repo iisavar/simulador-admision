@@ -1,0 +1,1150 @@
+{
+  "id": "quimica-nomenclatura-inorganica",
+  "materia": "quimica",
+  "tema": "Nomenclatura inorgánica: óxidos, hidróxidos, ácidos y sales",
+  "bloque": "Nomenclatura",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "En todo compuesto la suma de los números de oxidación es cero. Metal + oxígeno da un óxido básico; óxido básico + agua, un hidróxido (grupo OH⁻); los ácidos empiezan con H; y un ácido + un hidróxido dan una sal. En Stock, el número romano es el número de oxidación del metal.",
+    "ejemplo": {
+      "enunciado": "Escribe la fórmula del óxido de hierro(III).",
+      "pasos": [
+        "El (III) indica que el hierro actúa con +3; el oxígeno en los óxidos actúa con −2.",
+        "Cruza los números sin signo: el 2 del oxígeno va al hierro y el 3 del hierro va al oxígeno → Fe₂O₃.",
+        "Comprueba que la suma dé cero: 2(+3) + 3(−2) = +6 − 6 = 0."
+      ],
+      "resultado": "Fe₂O₃"
+    },
+    "ojo": "El número romano de Stock no es la cantidad de átomos: FeCl₃ es cloruro de hierro(III) porque el hierro actúa con +3, no porque haya tres cloros. En la tradicional, -oso es la valencia menor e -ico la mayor."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la fórmula del óxido de sodio?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "NaO",
+          "correcta": false
+        },
+        {
+          "texto": "Na₂O₂",
+          "correcta": false
+        },
+        {
+          "texto": "Na₂O",
+          "correcta": true
+        },
+        {
+          "texto": "NaO₂",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El sodio actúa con +1 y el oxígeno con −2; al cruzar las valencias se obtiene Na₂O."
+    },
+    {
+      "enunciado": "El compuesto de fórmula H₂O se conoce comúnmente como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Agua",
+          "correcta": true
+        },
+        {
+          "texto": "Amoníaco",
+          "correcta": false
+        },
+        {
+          "texto": "Peróxido de hidrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "Hidruro de sodio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "H₂O es el agua, óxido de hidrógeno formado por dos hidrógenos y un oxígeno."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el compuesto NaCl?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Clorato de sodio",
+          "correcta": false
+        },
+        {
+          "texto": "Cloruro de sodio",
+          "correcta": true
+        },
+        {
+          "texto": "Hipoclorito de sodio",
+          "correcta": false
+        },
+        {
+          "texto": "Cloruro de calcio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "NaCl es una sal binaria del cloro con sodio: cloruro de sodio (la sal común)."
+    },
+    {
+      "enunciado": "La cal viva es el óxido de calcio. ¿Cuál es su fórmula?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Ca₂O",
+          "correcta": false
+        },
+        {
+          "texto": "CaO₂",
+          "correcta": false
+        },
+        {
+          "texto": "Ca(OH)₂",
+          "correcta": false
+        },
+        {
+          "texto": "CaO",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El calcio actúa con +2 y el oxígeno con −2; las cargas se compensan en CaO."
+    },
+    {
+      "enunciado": "¿A qué función química pertenece el compuesto NaOH?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Óxido",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido",
+          "correcta": false
+        },
+        {
+          "texto": "Hidróxido",
+          "correcta": true
+        },
+        {
+          "texto": "Sal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "NaOH contiene el grupo hidroxilo (OH⁻) unido a un metal, por lo que es un hidróxido (base)."
+    },
+    {
+      "enunciado": "El sufijo «-uro» se emplea principalmente para nombrar:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Oxoácidos",
+          "correcta": false
+        },
+        {
+          "texto": "Hidróxidos",
+          "correcta": false
+        },
+        {
+          "texto": "Óxidos ácidos",
+          "correcta": false
+        },
+        {
+          "texto": "Sales binarias como cloruros y sulfuros",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El sufijo -uro identifica al anión de un no metal en sales binarias, como cloruro o sulfuro."
+    },
+    {
+      "enunciado": "En disolución acuosa, el compuesto HCl recibe el nombre de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Ácido hipocloroso",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido clorhídrico",
+          "correcta": true
+        },
+        {
+          "texto": "Ácido clórico",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido perclórico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El HCl disuelto en agua es un hidrácido: el ácido clorhídrico."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el compuesto KOH?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Hidróxido de potasio",
+          "correcta": true
+        },
+        {
+          "texto": "Óxido de potasio",
+          "correcta": false
+        },
+        {
+          "texto": "Hidruro de potasio",
+          "correcta": false
+        },
+        {
+          "texto": "Peróxido de potasio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "KOH posee el grupo hidroxilo (OH⁻) con potasio: hidróxido de potasio."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación habitual del oxígeno en la mayoría de los óxidos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En los óxidos comunes el oxígeno presenta estado de oxidación −2."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del dióxido de carbono?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "CO",
+          "correcta": false
+        },
+        {
+          "texto": "C₂O",
+          "correcta": false
+        },
+        {
+          "texto": "CO₂",
+          "correcta": true
+        },
+        {
+          "texto": "CO₃",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El prefijo «di-» indica dos oxígenos por cada carbono: CO₂."
+    },
+    {
+      "enunciado": "¿Qué ion caracteriza a todos los hidróxidos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Óxido (O²⁻)",
+          "correcta": false
+        },
+        {
+          "texto": "Hidroxilo (OH⁻)",
+          "correcta": true
+        },
+        {
+          "texto": "Amonio (NH₄⁺)",
+          "correcta": false
+        },
+        {
+          "texto": "Nitrato (NO₃⁻)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los hidróxidos contienen el grupo hidroxilo (OH⁻) con carga −1 unido a un metal."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el compuesto Al₂O₃?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Óxido de aluminio",
+          "correcta": true
+        },
+        {
+          "texto": "Hidróxido de aluminio",
+          "correcta": false
+        },
+        {
+          "texto": "Óxido de aluminio(II)",
+          "correcta": false
+        },
+        {
+          "texto": "Sulfuro de aluminio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El aluminio tiene valencia fija +3; combinado con oxígeno −2 forma el óxido de aluminio, Al₂O₃."
+    },
+    {
+      "enunciado": "¿Qué rasgo distingue a un peróxido de un óxido normal?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El oxígeno actúa con −2",
+          "correcta": false
+        },
+        {
+          "texto": "El oxígeno actúa con −1 y hay un enlace O–O",
+          "correcta": true
+        },
+        {
+          "texto": "El oxígeno actúa con +2",
+          "correcta": false
+        },
+        {
+          "texto": "No contiene oxígeno",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En los peróxidos aparece el grupo peróxido O₂²⁻ (con enlace O–O), donde cada oxígeno actúa con −1."
+    },
+    {
+      "enunciado": "El agua oxigenada es el peróxido de hidrógeno. ¿Cuál es su fórmula?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "HO₂",
+          "correcta": false
+        },
+        {
+          "texto": "H₃O",
+          "correcta": false
+        },
+        {
+          "texto": "H₂O₂",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El peróxido de hidrógeno contiene el grupo peróxido O₂²⁻ unido a dos hidrógenos: su fórmula es H₂O₂."
+    },
+    {
+      "enunciado": "La combinación de un metal con oxígeno produce un:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Óxido básico",
+          "correcta": true
+        },
+        {
+          "texto": "Óxido ácido (anhídrido)",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido",
+          "correcta": false
+        },
+        {
+          "texto": "Sal binaria",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Metal + oxígeno forma un óxido básico o metálico; el no metal con oxígeno daría un óxido ácido."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del hidrógeno en la mayoría de sus compuestos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "+1",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El hidrógeno actúa con +1 en casi todos sus compuestos (solo −1 en los hidruros metálicos)."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el compuesto Mg(OH)₂?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Óxido de magnesio",
+          "correcta": false
+        },
+        {
+          "texto": "Hidruro de magnesio",
+          "correcta": false
+        },
+        {
+          "texto": "Peróxido de magnesio",
+          "correcta": false
+        },
+        {
+          "texto": "Hidróxido de magnesio",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El magnesio (+2) con dos grupos hidroxilo forma el hidróxido de magnesio, Mg(OH)₂."
+    },
+    {
+      "enunciado": "Según la nomenclatura de Stock, ¿cómo se nombra FeCl₃?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Cloruro de hierro(III)",
+          "correcta": true
+        },
+        {
+          "texto": "Cloruro de hierro(II)",
+          "correcta": false
+        },
+        {
+          "texto": "Clorato de hierro(III)",
+          "correcta": false
+        },
+        {
+          "texto": "Cloruro de hierro(I)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay tres Cl⁻ (−1 cada uno), por lo que el hierro actúa con +3: cloruro de hierro(III)."
+    },
+    {
+      "enunciado": "Según la nomenclatura tradicional, ¿cómo se nombra FeO?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Óxido férrico",
+          "correcta": false
+        },
+        {
+          "texto": "Óxido ferroso",
+          "correcta": true
+        },
+        {
+          "texto": "Óxido de hierro(III)",
+          "correcta": false
+        },
+        {
+          "texto": "Peróxido de hierro",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En FeO el hierro actúa con +2 (su menor valencia), por lo que se usa el sufijo -oso: óxido ferroso."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del ácido sulfúrico?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "H₂SO₃",
+          "correcta": false
+        },
+        {
+          "texto": "HSO₄",
+          "correcta": false
+        },
+        {
+          "texto": "H₂SO₄",
+          "correcta": true
+        },
+        {
+          "texto": "H₂S₂O₇",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El ácido sulfúrico, con azufre en +6, tiene fórmula H₂SO₄."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del óxido de hierro(III)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Fe₂O₃",
+          "correcta": true
+        },
+        {
+          "texto": "FeO",
+          "correcta": false
+        },
+        {
+          "texto": "Fe₃O₄",
+          "correcta": false
+        },
+        {
+          "texto": "FeO₃",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con hierro +3 y oxígeno −2 se cruzan las cargas y resulta Fe₂O₃."
+    },
+    {
+      "enunciado": "Según la nomenclatura de Stock, ¿cómo se nombra Cu₂O?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Óxido de cobre(II)",
+          "correcta": false
+        },
+        {
+          "texto": "Óxido cúprico",
+          "correcta": false
+        },
+        {
+          "texto": "Óxido de cobre(I)",
+          "correcta": true
+        },
+        {
+          "texto": "Peróxido de cobre",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dos átomos de cobre comparten un oxígeno −2, así que cada cobre actúa con +1: óxido de cobre(I)."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el ácido de fórmula HNO₃?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Ácido nitroso",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido hiponitroso",
+          "correcta": false
+        },
+        {
+          "texto": "Nitrato de hidrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido nítrico",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con nitrógeno en +5, el oxoácido es el ácido nítrico, HNO₃."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del hidróxido de calcio?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "CaOH",
+          "correcta": false
+        },
+        {
+          "texto": "Ca(OH)₂",
+          "correcta": true
+        },
+        {
+          "texto": "Ca₂OH",
+          "correcta": false
+        },
+        {
+          "texto": "CaO",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El calcio (+2) requiere dos grupos hidroxilo (OH⁻) para neutralizarse: Ca(OH)₂."
+    },
+    {
+      "enunciado": "Al reaccionar el trióxido de azufre (SO₃) con agua se obtiene:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Ácido sulfuroso",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido sulfhídrico",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido sulfúrico",
+          "correcta": true
+        },
+        {
+          "texto": "Anhídrido sulfuroso",
+          "correcta": false
+        }
+      ],
+      "explicacion": "SO₃ + H₂O da H₂SO₄; con azufre en +6 el oxoácido resultante es el ácido sulfúrico."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del sulfato de sodio?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Na₂SO₄",
+          "correcta": true
+        },
+        {
+          "texto": "NaSO₄",
+          "correcta": false
+        },
+        {
+          "texto": "Na₂S",
+          "correcta": false
+        },
+        {
+          "texto": "Na₂SO₃",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El ion sulfato SO₄²⁻ necesita dos sodios (+1) para neutralizarse: Na₂SO₄."
+    },
+    {
+      "enunciado": "El término tradicional «férrico» indica que el hierro actúa con número de oxidación:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "+3",
+          "correcta": true
+        },
+        {
+          "texto": "+1",
+          "correcta": false
+        },
+        {
+          "texto": "+6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El sufijo -ico señala la mayor valencia del hierro, que es +3 (férrico)."
+    },
+    {
+      "enunciado": "Según la nomenclatura de Stock, ¿cómo se nombra N₂O₅?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Óxido de nitrógeno(III)",
+          "correcta": false
+        },
+        {
+          "texto": "Óxido de nitrógeno(IV)",
+          "correcta": false
+        },
+        {
+          "texto": "Óxido nitroso",
+          "correcta": false
+        },
+        {
+          "texto": "Óxido de nitrógeno(V)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con cinco oxígenos (−2) repartidos entre dos nitrógenos, cada nitrógeno actúa con +5: óxido de nitrógeno(V)."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el compuesto CaCO₃?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Carbonato de calcio",
+          "correcta": true
+        },
+        {
+          "texto": "Bicarbonato de calcio",
+          "correcta": false
+        },
+        {
+          "texto": "Carburo de calcio",
+          "correcta": false
+        },
+        {
+          "texto": "Sulfato de calcio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El ion carbonato CO₃²⁻ con calcio (+2) forma el carbonato de calcio, CaCO₃."
+    },
+    {
+      "enunciado": "¿Cuál es el número de oxidación del manganeso en KMnO₄?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "+4",
+          "correcta": false
+        },
+        {
+          "texto": "+7",
+          "correcta": true
+        },
+        {
+          "texto": "+6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "K aporta +1 y los 4 oxígenos −8; para que la suma sea cero el manganeso debe ser +7."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el ácido de fórmula HClO?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Ácido cloroso",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido hipocloroso",
+          "correcta": true
+        },
+        {
+          "texto": "Ácido clórico",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido perclórico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con cloro en +1 (la menor valencia) se usa el prefijo hipo- y el sufijo -oso: ácido hipocloroso."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el ácido de fórmula HClO₄?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Ácido clórico",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido cloroso",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido hipocloroso",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido perclórico",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con cloro en +7 (la mayor valencia) se emplea el prefijo per- y el sufijo -ico: ácido perclórico."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el compuesto Zn(OH)₂?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Hidróxido de zinc",
+          "correcta": true
+        },
+        {
+          "texto": "Óxido de zinc",
+          "correcta": false
+        },
+        {
+          "texto": "Hidróxido de zinc(III)",
+          "correcta": false
+        },
+        {
+          "texto": "Peróxido de zinc",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El zinc tiene valencia fija +2 y lleva dos grupos OH⁻: hidróxido de zinc, Zn(OH)₂."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del sulfato de aluminio?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "AlSO₄",
+          "correcta": false
+        },
+        {
+          "texto": "Al₃(SO₄)₂",
+          "correcta": false
+        },
+        {
+          "texto": "Al₂(SO₄)₃",
+          "correcta": true
+        },
+        {
+          "texto": "Al₂SO₄",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El aluminio (+3) y el sulfato (−2) se cruzan dando Al₂(SO₄)₃."
+    },
+    {
+      "enunciado": "Según la nomenclatura de Stock, ¿cómo se nombra CuSO₄?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Sulfato de cobre(I)",
+          "correcta": false
+        },
+        {
+          "texto": "Sulfito de cobre(II)",
+          "correcta": false
+        },
+        {
+          "texto": "Sulfuro de cobre(II)",
+          "correcta": false
+        },
+        {
+          "texto": "Sulfato de cobre(II)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El ion sulfato SO₄²⁻ exige que el cobre actúe con +2: sulfato de cobre(II)."
+    },
+    {
+      "enunciado": "¿Cómo se nombra correctamente el compuesto NaHCO₃?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Carbonato de sodio",
+          "correcta": false
+        },
+        {
+          "texto": "Hidrogenocarbonato de sodio",
+          "correcta": true
+        },
+        {
+          "texto": "Hidróxido de sodio",
+          "correcta": false
+        },
+        {
+          "texto": "Hidruro de sodio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es una sal ácida: conserva uno de los hidrógenos del ácido carbónico (H₂CO₃) sin sustituir. Su nombre es hidrogenocarbonato de sodio, conocido como bicarbonato de sodio."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del fosfato de hierro(II)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "FePO₄",
+          "correcta": false
+        },
+        {
+          "texto": "Fe₂(PO₄)₃",
+          "correcta": false
+        },
+        {
+          "texto": "Fe₂PO₄",
+          "correcta": false
+        },
+        {
+          "texto": "Fe₃(PO₄)₂",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El hierro(II) es +2 y el fosfato PO₄³⁻ es −3; al cruzar cargas resulta Fe₃(PO₄)₂."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el oxoácido de fórmula H₂SO₃?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Ácido sulfúrico",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido sulfuroso",
+          "correcta": true
+        },
+        {
+          "texto": "Ácido sulfhídrico",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido hiposulfuroso",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con azufre en +4 (la menor valencia frecuente) el oxoácido se llama ácido sulfuroso."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el ácido de fórmula HNO₂?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Ácido nítrico",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido hiponitroso",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido nitroso",
+          "correcta": true
+        },
+        {
+          "texto": "Ácido pernítrico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con nitrógeno en +3 (menor valencia) el oxoácido es el ácido nitroso, HNO₂."
+    },
+    {
+      "enunciado": "En el dicromato de potasio (K₂Cr₂O₇), ¿cuál es el número de oxidación del cromo?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "+6",
+          "correcta": true
+        },
+        {
+          "texto": "+3",
+          "correcta": false
+        },
+        {
+          "texto": "+7",
+          "correcta": false
+        },
+        {
+          "texto": "+2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dos K aportan +2 y siete O aportan −14; los dos cromos suman +12, es decir +6 cada uno."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del nitrato de amonio?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "NH₄NO₂",
+          "correcta": false
+        },
+        {
+          "texto": "(NH₄)₂NO₃",
+          "correcta": false
+        },
+        {
+          "texto": "NH₃NO₃",
+          "correcta": false
+        },
+        {
+          "texto": "NH₄NO₃",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El amonio (NH₄⁺) y el nitrato (NO₃⁻) se combinan 1:1 dando NH₄NO₃."
+    },
+    {
+      "enunciado": "La neutralización total de ácido sulfúrico con hidróxido de sodio produce agua y la sal:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Sulfito de sodio",
+          "correcta": false
+        },
+        {
+          "texto": "Sulfato de sodio",
+          "correcta": true
+        },
+        {
+          "texto": "Sulfuro de sodio",
+          "correcta": false
+        },
+        {
+          "texto": "Hidrogenosulfato de sodio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "H₂SO₄ + 2 NaOH da Na₂SO₄ + 2 H₂O; al sustituir ambos hidrógenos se forma sulfato de sodio."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del fosfato de calcio?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "CaPO₄",
+          "correcta": false
+        },
+        {
+          "texto": "Ca₂(PO₄)₃",
+          "correcta": false
+        },
+        {
+          "texto": "Ca₃(PO₄)₂",
+          "correcta": true
+        },
+        {
+          "texto": "Ca(PO₄)₂",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El calcio (+2) y el fosfato PO₄³⁻ se cruzan dando Ca₃(PO₄)₂."
+    },
+    {
+      "enunciado": "¿Cómo se nombra el ácido de fórmula H₃PO₄?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Ácido fosfórico",
+          "correcta": true
+        },
+        {
+          "texto": "Ácido fosforoso",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido hipofosforoso",
+          "correcta": false
+        },
+        {
+          "texto": "Ácido pirofosfórico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con fósforo en +5 el oxoácido es el ácido fosfórico, H₃PO₄."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del peróxido de sodio?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Na₂O",
+          "correcta": false
+        },
+        {
+          "texto": "NaO₂",
+          "correcta": false
+        },
+        {
+          "texto": "Na₂O₂",
+          "correcta": true
+        },
+        {
+          "texto": "NaOH",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un peróxido contiene el grupo O₂²⁻; con dos sodios (+1) para neutralizarlo resulta Na₂O₂."
+    },
+    {
+      "enunciado": "Según la nomenclatura de Stock, ¿cómo se nombra Fe₂(SO₄)₃?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Sulfato de hierro(III)",
+          "correcta": true
+        },
+        {
+          "texto": "Sulfato de hierro(II)",
+          "correcta": false
+        },
+        {
+          "texto": "Sulfito de hierro(III)",
+          "correcta": false
+        },
+        {
+          "texto": "Sulfuro de hierro(III)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tres sulfatos (−2) suman −6 sobre dos hierros, así que cada hierro actúa con +3: sulfato de hierro(III)."
+    },
+    {
+      "enunciado": "El ácido sulfhídrico en disolución acuosa tiene la fórmula:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "H₂SO₄",
+          "correcta": false
+        },
+        {
+          "texto": "H₂S",
+          "correcta": true
+        },
+        {
+          "texto": "H₂SO₃",
+          "correcta": false
+        },
+        {
+          "texto": "HS",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El ácido sulfhídrico es un hidrácido del azufre (−2) con dos hidrógenos: H₂S."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes compuestos es una sal ácida?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Na₂SO₄",
+          "correcta": false
+        },
+        {
+          "texto": "NaCl",
+          "correcta": false
+        },
+        {
+          "texto": "Na₂O",
+          "correcta": false
+        },
+        {
+          "texto": "NaHSO₄",
+          "correcta": true
+        }
+      ],
+      "explicacion": "NaHSO₄ conserva un hidrógeno ácido del H₂SO₄ sin sustituir, por lo que es una sal ácida (hidrogenosulfato de sodio)."
+    },
+    {
+      "enunciado": "Según la nomenclatura de Stock, ¿cómo se nombra PbO₂?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Óxido de plomo(II)",
+          "correcta": false
+        },
+        {
+          "texto": "Óxido plumboso",
+          "correcta": false
+        },
+        {
+          "texto": "Peróxido de plomo",
+          "correcta": false
+        },
+        {
+          "texto": "Óxido de plomo(IV)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Dos oxígenos −2 obligan a que el plomo actúe con +4; no es peróxido porque el oxígeno es −2: óxido de plomo(IV)."
+    }
+  ]
+}

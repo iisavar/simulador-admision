@@ -202,6 +202,7 @@
         });
 
         const percent = Math.round(correct / TOTAL_QUIZ * 100);
+        try { localStorage.setItem('ultimo_simulador_unemi', JSON.stringify({ puntaje: percent, fecha: new Date().toISOString() })); } catch (e) { }
 
         $('#score-percent').textContent = percent;
         const ring = $('#score-ring');
@@ -314,6 +315,7 @@
     }
 
     function init() {
+        try { const c = JSON.parse(localStorage.getItem('campus_v1') || 'null'); if (c && c.usuario) { if (c.usuario.nombre) $('#student-name').value = c.usuario.nombre; if (c.usuario.correo) $('#student-email').value = c.usuario.correo; } } catch (e) { }
         $('#registration-form').addEventListener('submit', (e) => {
             e.preventDefault();
             student.name = $('#student-name').value.trim();

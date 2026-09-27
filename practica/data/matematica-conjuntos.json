@@ -1,0 +1,1104 @@
+{
+  "id": "matematica-conjuntos",
+  "materia": "matematica",
+  "tema": "Conjuntos y sus operaciones",
+  "bloque": "Aritmética",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "Un conjunto es una colección de elementos. La unión (∪) junta todo sin repetir; la intersección (∩) deja solo lo común; la diferencia A − B deja lo de A que no está en B; el complemento A' es lo que le falta a A para completar el universo U.",
+    "ejemplo": {
+      "enunciado": "En un curso de 35 estudiantes, 20 juegan fútbol, 15 juegan básquet y 8 juegan ambos. ¿Cuántos no juegan ninguno de los dos?",
+      "pasos": [
+        "Al menos uno: n(F ∪ B) = n(F) + n(B) − n(F ∩ B).",
+        "20 + 15 − 8 = 27 (los 8 de ambos se habían contado dos veces).",
+        "Ninguno = total − al menos uno = 35 − 27."
+      ],
+      "resultado": "8 estudiantes"
+    },
+    "ojo": "Sumar n(A) + n(B) sin restar la intersección: así los elementos comunes se cuentan dos veces."
+  },
+  "preguntas": [
+    {
+      "enunciado": "Sean A = {1, 2, 3} y B = {3, 4, 5}. ¿Cuál es A ∪ B?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "{3}",
+          "correcta": false
+        },
+        {
+          "texto": "{1, 2, 4, 5}",
+          "correcta": false
+        },
+        {
+          "texto": "{1, 2, 3, 4, 5}",
+          "correcta": true
+        },
+        {
+          "texto": "{1, 2, 3}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La unión reúne todos los elementos de ambos conjuntos sin repetir; el 3 se escribe una sola vez."
+    },
+    {
+      "enunciado": "Sean A = {2, 4, 6, 8} y B = {4, 8, 12}. ¿Cuál es A ∩ B?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "{2, 6}",
+          "correcta": false
+        },
+        {
+          "texto": "{2, 4, 6, 8, 12}",
+          "correcta": false
+        },
+        {
+          "texto": "{12}",
+          "correcta": false
+        },
+        {
+          "texto": "{4, 8}",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La intersección contiene solo los elementos comunes a ambos conjuntos: 4 y 8."
+    },
+    {
+      "enunciado": "Sean A = {1, 2, 3, 4, 5} y B = {2, 4}. ¿Cuál es A − B?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "{2, 4}",
+          "correcta": false
+        },
+        {
+          "texto": "{1, 3, 5}",
+          "correcta": true
+        },
+        {
+          "texto": "{1, 2, 3, 4, 5}",
+          "correcta": false
+        },
+        {
+          "texto": "∅",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A − B son los elementos de A que no están en B; se quitan el 2 y el 4."
+    },
+    {
+      "enunciado": "Si U = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} y A = {1, 3, 5, 7, 9}, ¿cuál es el complemento A'?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "{2, 4, 6, 8, 10}",
+          "correcta": true
+        },
+        {
+          "texto": "{1, 3, 5, 7, 9}",
+          "correcta": false
+        },
+        {
+          "texto": "{2, 4, 6, 8}",
+          "correcta": false
+        },
+        {
+          "texto": "{1, 2, 3, 4, 5}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El complemento son los elementos del universo que no están en A: los pares del 2 al 10."
+    },
+    {
+      "enunciado": "¿Cuántos elementos tiene el conjunto A = {a, e, i, o, u}?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El conjunto de las vocales tiene 5 elementos, por lo que n(A) = 5."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes representa el conjunto vacío?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "{0}",
+          "correcta": false
+        },
+        {
+          "texto": "{∅}",
+          "correcta": false
+        },
+        {
+          "texto": "{1}",
+          "correcta": false
+        },
+        {
+          "texto": "∅",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El conjunto vacío no tiene elementos y se escribe ∅ o { }; {0} y {∅} sí poseen un elemento."
+    },
+    {
+      "enunciado": "Sean A = {1, 3, 5} y B = {2, 4, 6}. ¿Cuál es A ∩ B?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "{1, 2, 3, 4, 5, 6}",
+          "correcta": false
+        },
+        {
+          "texto": "{1, 3, 5}",
+          "correcta": false
+        },
+        {
+          "texto": "{2, 4, 6}",
+          "correcta": false
+        },
+        {
+          "texto": "∅",
+          "correcta": true
+        }
+      ],
+      "explicacion": "No hay elementos comunes entre A y B, así que la intersección es el conjunto vacío."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes conjuntos es subconjunto de A = {1, 2, 3, 4, 5}?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "{2, 4}",
+          "correcta": true
+        },
+        {
+          "texto": "{1, 6}",
+          "correcta": false
+        },
+        {
+          "texto": "{5, 7}",
+          "correcta": false
+        },
+        {
+          "texto": "{0, 1}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un subconjunto debe tener todos sus elementos dentro de A; solo {2, 4} cumple."
+    },
+    {
+      "enunciado": "Sean A = {1, 2, 3} y B = {2, 3, 4, 5}. ¿Cuál es B − A?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "{4, 5}",
+          "correcta": true
+        },
+        {
+          "texto": "{2, 3}",
+          "correcta": false
+        },
+        {
+          "texto": "{1}",
+          "correcta": false
+        },
+        {
+          "texto": "{1, 2, 3}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "B − A son los elementos de B que no pertenecen a A: el 4 y el 5."
+    },
+    {
+      "enunciado": "Si A = {2, 4, 6}, ¿cuál es A ∪ A?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "{2, 4, 6}",
+          "correcta": true
+        },
+        {
+          "texto": "∅",
+          "correcta": false
+        },
+        {
+          "texto": "{4}",
+          "correcta": false
+        },
+        {
+          "texto": "{2, 2, 4, 4, 6, 6}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La unión de un conjunto consigo mismo es el mismo conjunto: A ∪ A = A."
+    },
+    {
+      "enunciado": "Sea A el conjunto de los múltiplos de 3 menores que 16. ¿Cuál de estos números pertenece a A?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "12 = 3 × 4 es múltiplo de 3 y es menor que 16, por lo que pertenece a A."
+    },
+    {
+      "enunciado": "Si A = {a, b, c, d} y B = {e, f} no tienen elementos comunes, ¿cuántos elementos tiene A ∪ B?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al no compartir elementos, n(A ∪ B) = 4 + 2 = 6."
+    },
+    {
+      "enunciado": "¿Cuál es el complemento del conjunto universal U?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "U",
+          "correcta": false
+        },
+        {
+          "texto": "{0}",
+          "correcta": false
+        },
+        {
+          "texto": "Un conjunto con un único elemento",
+          "correcta": false
+        },
+        {
+          "texto": "∅",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Fuera del universo no hay elementos, por lo que U' = ∅."
+    },
+    {
+      "enunciado": "Para cualquier conjunto A, ¿cuál es el resultado de A ∩ ∅?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "A",
+          "correcta": false
+        },
+        {
+          "texto": "U",
+          "correcta": false
+        },
+        {
+          "texto": "∅",
+          "correcta": true
+        },
+        {
+          "texto": "{0}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El conjunto vacío no comparte elementos con A, así que la intersección es ∅."
+    },
+    {
+      "enunciado": "Para cualquier conjunto A, ¿cuál es el resultado de A ∪ ∅?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "∅",
+          "correcta": false
+        },
+        {
+          "texto": "U",
+          "correcta": false
+        },
+        {
+          "texto": "A",
+          "correcta": true
+        },
+        {
+          "texto": "{∅}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Unir A con el conjunto vacío no agrega elementos, por lo que A ∪ ∅ = A."
+    },
+    {
+      "enunciado": "Si n(A) = 20, n(B) = 15 y n(A ∩ B) = 8, ¿cuánto vale n(A ∪ B)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "27",
+          "correcta": true
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        },
+        {
+          "texto": "43",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por inclusión-exclusión: n(A ∪ B) = 20 + 15 − 8 = 27."
+    },
+    {
+      "enunciado": "En un curso, 18 estudiantes estudian inglés, 12 estudian francés y 5 estudian ambos idiomas. ¿Cuántos estudian al menos un idioma?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "25",
+          "correcta": true
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        },
+        {
+          "texto": "23",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por el principio de inclusión-exclusión: 18 + 12 − 5 = 25."
+    },
+    {
+      "enunciado": "Sean A = {1, 2, 3, 4}, B = {3, 4, 5, 6} y C = {2, 4, 6, 8}. ¿Cuál es (A ∪ B) ∩ C?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "{2, 4, 6}",
+          "correcta": true
+        },
+        {
+          "texto": "{4}",
+          "correcta": false
+        },
+        {
+          "texto": "{2, 4, 6, 8}",
+          "correcta": false
+        },
+        {
+          "texto": "{1, 2, 3, 4, 5, 6}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A ∪ B = {1, 2, 3, 4, 5, 6}; su intersección con C deja {2, 4, 6}."
+    },
+    {
+      "enunciado": "Sean A = {1, 3, 5, 7, 9, 11} y B = {1, 2, 3, 4, 5}. ¿Cuál es A − B?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "{1, 3, 5}",
+          "correcta": false
+        },
+        {
+          "texto": "{2, 4}",
+          "correcta": false
+        },
+        {
+          "texto": "{7, 9, 11}",
+          "correcta": true
+        },
+        {
+          "texto": "{1, 3, 5, 7, 9, 11}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se quitan de A los elementos que están en B (1, 3 y 5), quedando {7, 9, 11}."
+    },
+    {
+      "enunciado": "Si U = {1, 2, 3, 4, 5, 6, 7, 8, 9}, A = {1, 2, 3} y B = {3, 4, 5}, ¿cuál es (A ∪ B)'?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "{1, 2, 3, 4, 5}",
+          "correcta": false
+        },
+        {
+          "texto": "{3}",
+          "correcta": false
+        },
+        {
+          "texto": "{6, 7, 8, 9}",
+          "correcta": true
+        },
+        {
+          "texto": "{5, 6, 7, 8, 9}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A ∪ B = {1, 2, 3, 4, 5}; su complemento respecto de U es {6, 7, 8, 9}."
+    },
+    {
+      "enunciado": "Según las leyes de De Morgan, ¿a qué es igual (A ∩ B)'?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "A' ∪ B'",
+          "correcta": true
+        },
+        {
+          "texto": "A' ∩ B'",
+          "correcta": false
+        },
+        {
+          "texto": "A ∪ B",
+          "correcta": false
+        },
+        {
+          "texto": "A − B",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una ley de De Morgan establece que (A ∩ B)' = A' ∪ B'."
+    },
+    {
+      "enunciado": "En un diagrama de Venn con dos conjuntos A y B, se sombrea únicamente la zona común a ambos círculos. ¿Qué operación representa la región sombreada?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "A ∪ B",
+          "correcta": false
+        },
+        {
+          "texto": "A − B",
+          "correcta": false
+        },
+        {
+          "texto": "A ∩ B",
+          "correcta": true
+        },
+        {
+          "texto": "B − A",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La zona compartida por ambos círculos corresponde a la intersección A ∩ B."
+    },
+    {
+      "enunciado": "Sean A = {1, 2, 3, 4} y B = {3, 4, 5, 6}. ¿Cuál es (A − B) ∪ (B − A)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "{3, 4}",
+          "correcta": false
+        },
+        {
+          "texto": "{1, 2, 5, 6}",
+          "correcta": true
+        },
+        {
+          "texto": "{1, 2, 3, 4, 5, 6}",
+          "correcta": false
+        },
+        {
+          "texto": "{1, 2}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A − B = {1, 2} y B − A = {5, 6}; su unión es {1, 2, 5, 6} (diferencia simétrica)."
+    },
+    {
+      "enunciado": "En un grupo, 25 personas usan transporte público (conjunto A) y 10 de ellas también usan bicicleta (A ∩ B). ¿Cuántas usan solo transporte público?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "35",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Solo A = n(A) − n(A ∩ B) = 25 − 10 = 15."
+    },
+    {
+      "enunciado": "¿Cuántos subconjuntos en total tiene el conjunto {a, b, c, d}?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un conjunto de n elementos tiene 2ⁿ subconjuntos; con n = 4 son 2⁴ = 16."
+    },
+    {
+      "enunciado": "¿Cuántos subconjuntos en total tiene un conjunto de 5 elementos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "32",
+          "correcta": true
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número de subconjuntos es 2ⁿ; para n = 5 son 2⁵ = 32."
+    },
+    {
+      "enunciado": "Sean A = {1, 2, 3, 4, 5, 6}, B = {2, 3, 5, 7} y C = {3, 5, 6, 9}. ¿Cuál es A ∩ B ∩ C?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "{2, 3, 5}",
+          "correcta": false
+        },
+        {
+          "texto": "{3, 5, 6}",
+          "correcta": false
+        },
+        {
+          "texto": "{5}",
+          "correcta": false
+        },
+        {
+          "texto": "{3, 5}",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los únicos elementos presentes en los tres conjuntos son 3 y 5."
+    },
+    {
+      "enunciado": "Sean A = {1, 2, 3, 4}, B = {2, 4} y C = {4, 6, 8}. ¿Cuál es A ∩ (B ∪ C)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "{4}",
+          "correcta": false
+        },
+        {
+          "texto": "{2, 4, 6, 8}",
+          "correcta": false
+        },
+        {
+          "texto": "{2, 4}",
+          "correcta": true
+        },
+        {
+          "texto": "{1, 3}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "B ∪ C = {2, 4, 6, 8}; al intersecar con A queda {2, 4}."
+    },
+    {
+      "enunciado": "En un grupo de 40 personas, 22 leen novelas, 18 leen poesía y 10 leen ambos géneros. ¿Cuántas no leen ninguno de los dos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Leen al menos uno 22 + 18 − 10 = 30; entonces no leen ninguno 40 − 30 = 10."
+    },
+    {
+      "enunciado": "Si U = {1, 2, 3, 4, 5, 6, 7, 8}, A = {1, 2, 3, 4} y B = {2, 4, 6, 8}, ¿cuál es A' ∩ B?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "{6, 8}",
+          "correcta": true
+        },
+        {
+          "texto": "{2, 4}",
+          "correcta": false
+        },
+        {
+          "texto": "{5, 7}",
+          "correcta": false
+        },
+        {
+          "texto": "{2, 4, 6, 8}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A' = {5, 6, 7, 8}; su intersección con B deja {6, 8}."
+    },
+    {
+      "enunciado": "Si n(A ∪ B) = 30, n(A) = 18 y n(B) = 20, ¿cuánto vale n(A ∩ B)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "38",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Despejando: n(A ∩ B) = n(A) + n(B) − n(A ∪ B) = 18 + 20 − 30 = 8."
+    },
+    {
+      "enunciado": "En un diagrama de Venn con dos conjuntos A y B, se sombrea únicamente la parte del círculo A que no toca al círculo B. ¿Qué operación representa la región sombreada?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "A ∩ B",
+          "correcta": false
+        },
+        {
+          "texto": "A − B",
+          "correcta": true
+        },
+        {
+          "texto": "A ∪ B",
+          "correcta": false
+        },
+        {
+          "texto": "B − A",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se sombrea la parte de A que no pertenece a B, es decir, A − B."
+    },
+    {
+      "enunciado": "¿A qué expresión equivale (A ∪ B ∪ C)' según las leyes de De Morgan?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "A' ∪ B' ∪ C'",
+          "correcta": false
+        },
+        {
+          "texto": "A' ∩ B' ∩ C'",
+          "correcta": true
+        },
+        {
+          "texto": "A ∩ B ∩ C",
+          "correcta": false
+        },
+        {
+          "texto": "A' ∩ B' ∪ C'",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La negación de una unión es la intersección de los complementos: A' ∩ B' ∩ C'."
+    },
+    {
+      "enunciado": "¿A cuál de las siguientes expresiones equivale A − (B ∪ C)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(A − B) ∪ (A − C)",
+          "correcta": false
+        },
+        {
+          "texto": "(A − B) ∩ (A − C)",
+          "correcta": true
+        },
+        {
+          "texto": "(A ∩ B) ∪ (A ∩ C)",
+          "correcta": false
+        },
+        {
+          "texto": "A ∩ B ∩ C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Quitar de A todo lo que esté en B o en C equivale a (A − B) ∩ (A − C)."
+    },
+    {
+      "enunciado": "Sean A = {1, 2, 3}, B = {3, 4, 5} y C = {5, 6, 7}. ¿Cuál es (A ∪ B) − C?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "{1, 2, 3, 4, 5}",
+          "correcta": false
+        },
+        {
+          "texto": "{5}",
+          "correcta": false
+        },
+        {
+          "texto": "{1, 2, 3, 4}",
+          "correcta": true
+        },
+        {
+          "texto": "{1, 2, 3}",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A ∪ B = {1, 2, 3, 4, 5}; al quitar los elementos de C queda {1, 2, 3, 4}."
+    },
+    {
+      "enunciado": "En una encuesta a 100 personas: 40 practican fútbol, 35 básquet y 30 tenis; 12 fútbol y básquet, 10 fútbol y tenis, 8 básquet y tenis, y 5 los tres deportes. ¿Cuántas practican al menos un deporte?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "90",
+          "correcta": false
+        },
+        {
+          "texto": "70",
+          "correcta": false
+        },
+        {
+          "texto": "80",
+          "correcta": true
+        },
+        {
+          "texto": "105",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por inclusión-exclusión: 40 + 35 + 30 − 12 − 10 − 8 + 5 = 80."
+    },
+    {
+      "enunciado": "En una encuesta a 120 personas: 40 practican fútbol, 35 básquet y 30 tenis; 12 practican fútbol y básquet, 10 fútbol y tenis, 8 básquet y tenis, y 5 los tres deportes. ¿Cuántas no practican ningún deporte?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "50",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Practican al menos uno 40 + 35 + 30 − 12 − 10 − 8 + 5 = 80; por lo tanto, ninguno 120 − 80 = 40."
+    },
+    {
+      "enunciado": "Se sabe que n(A) = 40, n(B) = 35, n(C) = 30, que n(A∩B) + n(A∩C) + n(B∩C) = 25 y que n(A ∪ B ∪ C) = 85. ¿Cuánto vale n(A ∩ B ∩ C)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "85 = (40 + 35 + 30) − 25 + n(A∩B∩C) = 80 + n(A∩B∩C), de donde n(A ∩ B ∩ C) = 5."
+    },
+    {
+      "enunciado": "En una encuesta, 40 personas practican fútbol; de ellas, 12 también practican básquet, 10 también practican tenis y 5 practican los tres deportes. ¿Cuántas practican únicamente fútbol?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "28",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "23",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los que hacen fútbol con otro deporte son 12 + 10 − 5 = 17 (los 5 de los tres se contaron dos veces); solo fútbol = 40 − 17 = 23."
+    },
+    {
+      "enunciado": "En una encuesta sobre fútbol, básquet y tenis: 12 personas practican fútbol y básquet, 10 fútbol y tenis, 8 básquet y tenis, y 5 practican los tres. ¿Cuántas practican exactamente dos deportes?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": true
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada intersección doble incluye a los 5 que hacen los tres: (12 − 5) + (10 − 5) + (8 − 5) = 7 + 5 + 3 = 15."
+    },
+    {
+      "enunciado": "Si A ⊆ B, ¿a qué es igual A ∪ B?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "A",
+          "correcta": false
+        },
+        {
+          "texto": "A ∩ B",
+          "correcta": false
+        },
+        {
+          "texto": "∅",
+          "correcta": false
+        },
+        {
+          "texto": "B",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Si A está contenido en B, la unión coincide con el conjunto mayor: A ∪ B = B."
+    },
+    {
+      "enunciado": "Si llamamos subconjuntos propios a todos los subconjuntos excepto el propio conjunto, ¿cuántos subconjuntos propios tiene un conjunto de 4 elementos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 2⁴ = 16 subconjuntos en total; quitando el propio conjunto quedan 16 − 1 = 15."
+    },
+    {
+      "enunciado": "Si n(A ∪ B) = 50, n(A) = 30 y n(A ∩ B) = 12, ¿cuánto vale n(B)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "32",
+          "correcta": true
+        },
+        {
+          "texto": "28",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "42",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De n(A ∪ B) = n(A) + n(B) − n(A ∩ B): 50 = 30 + n(B) − 12, así n(B) = 32."
+    },
+    {
+      "enunciado": "En un colegio de 60 estudiantes, 25 aprobaron Matemática, 30 aprobaron Lengua y 15 aprobaron ambas materias. ¿Cuántos estudiantes NO aprobaron las dos materias a la vez (es decir, no están en la intersección)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "40",
+          "correcta": false
+        },
+        {
+          "texto": "45",
+          "correcta": true
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Solo 15 están en la intersección (aprobaron ambas); los demás, 60 − 15 = 45, no aprobaron las dos a la vez."
+    },
+    {
+      "enunciado": "Si n(U) = 120, n(A') = 70, n(B) = 50 y n(A ∩ B) = 20, ¿cuánto vale n(A ∪ B)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "100",
+          "correcta": false
+        },
+        {
+          "texto": "70",
+          "correcta": false
+        },
+        {
+          "texto": "90",
+          "correcta": false
+        },
+        {
+          "texto": "80",
+          "correcta": true
+        }
+      ],
+      "explicacion": "n(A) = 120 − 70 = 50; entonces n(A ∪ B) = 50 + 50 − 20 = 80."
+    },
+    {
+      "enunciado": "De un conjunto de 6 elementos, ¿cuántos subconjuntos de exactamente 2 elementos se pueden formar?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": true
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Son las combinaciones de 6 en 2: C(6, 2) = (6 × 5) / 2 = 15."
+    },
+    {
+      "enunciado": "En un diagrama de Venn, la zona exclusiva de A tiene 8 elementos, A ∩ B (sin C) tiene 4, A ∩ C (sin B) tiene 3 y A ∩ B ∩ C tiene 2. ¿Cuántos elementos tiene A en total?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "17",
+          "correcta": true
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n(A) suma todas sus regiones: 8 + 4 + 3 + 2 = 17."
+    }
+  ]
+}

@@ -1,0 +1,1150 @@
+{
+  "id": "matematica-geometria-basica",
+  "materia": "matematica",
+  "tema": "Ángulos, triángulos y cuadriláteros",
+  "bloque": "Geometría y trigonometría",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "Los ángulos complementarios suman 90° y los suplementarios suman 180°. Los ángulos interiores de un triángulo siempre suman 180° y los de un cuadrilátero, 360°.",
+    "ejemplo": {
+      "enunciado": "En un triángulo, dos ángulos miden 45° y 75°. ¿Cuánto mide el tercero?",
+      "pasos": [
+        "Recuerda: los tres ángulos de un triángulo suman 180°.",
+        "Suma los ángulos que conoces: 45° + 75° = 120°.",
+        "Resta de 180°: 180° − 120° = 60°."
+      ],
+      "resultado": "El tercer ángulo mide 60°."
+    },
+    "ojo": "No confundas complemento (lo que falta para llegar a 90°) con suplemento (lo que falta para llegar a 180°)."
+  },
+  "preguntas": [
+    {
+      "enunciado": "El complemento de un ángulo que mide 30° es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "50°",
+          "correcta": false
+        },
+        {
+          "texto": "70°",
+          "correcta": false
+        },
+        {
+          "texto": "60°",
+          "correcta": true
+        },
+        {
+          "texto": "150°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dos ángulos son complementarios cuando suman 90°; por eso 90° − 30° = 60°."
+    },
+    {
+      "enunciado": "El suplemento de un ángulo que mide 110° es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "90°",
+          "correcta": false
+        },
+        {
+          "texto": "80°",
+          "correcta": false
+        },
+        {
+          "texto": "70°",
+          "correcta": true
+        },
+        {
+          "texto": "250°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dos ángulos son suplementarios cuando suman 180°; entonces 180° − 110° = 70°."
+    },
+    {
+      "enunciado": "¿Cuántos grados mide un ángulo recto?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "360°",
+          "correcta": false
+        },
+        {
+          "texto": "45°",
+          "correcta": false
+        },
+        {
+          "texto": "180°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por definición, un ángulo recto mide exactamente 90°."
+    },
+    {
+      "enunciado": "La suma de los ángulos interiores de cualquier triángulo es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "90°",
+          "correcta": false
+        },
+        {
+          "texto": "180°",
+          "correcta": true
+        },
+        {
+          "texto": "270°",
+          "correcta": false
+        },
+        {
+          "texto": "360°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En todo triángulo los tres ángulos interiores suman siempre 180°."
+    },
+    {
+      "enunciado": "Un triángulo que tiene sus tres lados iguales se llama:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Escaleno",
+          "correcta": false
+        },
+        {
+          "texto": "Equilátero",
+          "correcta": true
+        },
+        {
+          "texto": "Isósceles",
+          "correcta": false
+        },
+        {
+          "texto": "Rectángulo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El triángulo equilátero tiene los tres lados (y los tres ángulos) iguales."
+    },
+    {
+      "enunciado": "Un triángulo que tiene un ángulo interior de 90° se denomina triángulo:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Acutángulo",
+          "correcta": false
+        },
+        {
+          "texto": "Obtusángulo",
+          "correcta": false
+        },
+        {
+          "texto": "Rectángulo",
+          "correcta": true
+        },
+        {
+          "texto": "Equilátero",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se llama rectángulo al triángulo que posee un ángulo recto (90°)."
+    },
+    {
+      "enunciado": "Dos ángulos cuya suma es 90° reciben el nombre de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Suplementarios",
+          "correcta": false
+        },
+        {
+          "texto": "Adyacentes",
+          "correcta": false
+        },
+        {
+          "texto": "Complementarios",
+          "correcta": true
+        },
+        {
+          "texto": "Opuestos por el vértice",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los ángulos complementarios son aquellos que juntos suman 90°."
+    },
+    {
+      "enunciado": "Un ángulo que mide 45° se clasifica como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Llano",
+          "correcta": false
+        },
+        {
+          "texto": "Recto",
+          "correcta": false
+        },
+        {
+          "texto": "Obtuso",
+          "correcta": false
+        },
+        {
+          "texto": "Agudo",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Un ángulo agudo mide menos de 90°, y 45° está por debajo de ese valor."
+    },
+    {
+      "enunciado": "Un ángulo que mide 180° se llama ángulo:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Llano",
+          "correcta": true
+        },
+        {
+          "texto": "Agudo",
+          "correcta": false
+        },
+        {
+          "texto": "Recto",
+          "correcta": false
+        },
+        {
+          "texto": "Completo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El ángulo llano mide 180° y sus lados forman una línea recta."
+    },
+    {
+      "enunciado": "Dos rectas paralelas contenidas en un mismo plano:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Nunca se cortan",
+          "correcta": true
+        },
+        {
+          "texto": "Se cortan en un punto",
+          "correcta": false
+        },
+        {
+          "texto": "Se cortan en dos puntos",
+          "correcta": false
+        },
+        {
+          "texto": "Siempre son perpendiculares",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las rectas paralelas mantienen siempre la misma distancia y no se intersecan."
+    },
+    {
+      "enunciado": "¿Cuántos ángulos rectos tiene un cuadrado?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cuadrado tiene sus cuatro ángulos interiores rectos (de 90° cada uno)."
+    },
+    {
+      "enunciado": "La suma de los ángulos interiores de un cuadrilátero es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "180°",
+          "correcta": false
+        },
+        {
+          "texto": "270°",
+          "correcta": false
+        },
+        {
+          "texto": "360°",
+          "correcta": true
+        },
+        {
+          "texto": "540°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Todo cuadrilátero se divide en dos triángulos, por lo que sus ángulos suman 2 × 180° = 360°."
+    },
+    {
+      "enunciado": "Un triángulo que tiene exactamente dos lados iguales se llama:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Equilátero",
+          "correcta": false
+        },
+        {
+          "texto": "Isósceles",
+          "correcta": true
+        },
+        {
+          "texto": "Escaleno",
+          "correcta": false
+        },
+        {
+          "texto": "Rectángulo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El triángulo isósceles tiene dos lados iguales y, en consecuencia, dos ángulos iguales."
+    },
+    {
+      "enunciado": "Un ángulo que mide 120° se clasifica como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Agudo",
+          "correcta": false
+        },
+        {
+          "texto": "Obtuso",
+          "correcta": true
+        },
+        {
+          "texto": "Recto",
+          "correcta": false
+        },
+        {
+          "texto": "Llano",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un ángulo obtuso mide más de 90° y menos de 180°, como ocurre con 120°."
+    },
+    {
+      "enunciado": "Dos rectas perpendiculares forman entre sí un ángulo de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "30°",
+          "correcta": false
+        },
+        {
+          "texto": "45°",
+          "correcta": false
+        },
+        {
+          "texto": "60°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por definición, las rectas perpendiculares se cortan formando ángulos de 90°."
+    },
+    {
+      "enunciado": "En un triángulo, dos de sus ángulos miden 60° y 70°. El tercer ángulo mide:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "40°",
+          "correcta": false
+        },
+        {
+          "texto": "50°",
+          "correcta": true
+        },
+        {
+          "texto": "60°",
+          "correcta": false
+        },
+        {
+          "texto": "70°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como los ángulos suman 180°, el tercero es 180° − (60° + 70°) = 50°."
+    },
+    {
+      "enunciado": "Un triángulo cuyos tres lados tienen medidas diferentes se llama:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Equilátero",
+          "correcta": false
+        },
+        {
+          "texto": "Isósceles",
+          "correcta": false
+        },
+        {
+          "texto": "Rectángulo",
+          "correcta": false
+        },
+        {
+          "texto": "Escaleno",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El triángulo escaleno tiene sus tres lados y sus tres ángulos distintos."
+    },
+    {
+      "enunciado": "Dos ángulos son opuestos por el vértice y uno de ellos mide 65°. ¿Cuánto mide el otro?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "65°",
+          "correcta": true
+        },
+        {
+          "texto": "25°",
+          "correcta": false
+        },
+        {
+          "texto": "115°",
+          "correcta": false
+        },
+        {
+          "texto": "130°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los ángulos opuestos por el vértice son siempre iguales, por lo que el otro también mide 65°."
+    },
+    {
+      "enunciado": "Dos ángulos son complementarios y uno mide 40° más que el otro. ¿Cuánto mide el ángulo mayor?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "25°",
+          "correcta": false
+        },
+        {
+          "texto": "130°",
+          "correcta": false
+        },
+        {
+          "texto": "50°",
+          "correcta": false
+        },
+        {
+          "texto": "65°",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Si x + (x + 40) = 90, entonces 2x = 50 y x = 25; el mayor es 25 + 40 = 65°."
+    },
+    {
+      "enunciado": "En un triángulo isósceles, el ángulo del vértice (el desigual) mide 40°. ¿Cuánto mide cada ángulo de la base?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "40°",
+          "correcta": false
+        },
+        {
+          "texto": "70°",
+          "correcta": true
+        },
+        {
+          "texto": "100°",
+          "correcta": false
+        },
+        {
+          "texto": "140°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los ángulos de la base son iguales: (180° − 40°) / 2 = 70° cada uno."
+    },
+    {
+      "enunciado": "¿Cuánto mide cada ángulo interior de un triángulo equilátero?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "45°",
+          "correcta": false
+        },
+        {
+          "texto": "60°",
+          "correcta": true
+        },
+        {
+          "texto": "90°",
+          "correcta": false
+        },
+        {
+          "texto": "120°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sus tres ángulos son iguales y suman 180°, por lo que cada uno mide 180° / 3 = 60°."
+    },
+    {
+      "enunciado": "En un paralelogramo, dos ángulos consecutivos siempre son:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Suplementarios",
+          "correcta": true
+        },
+        {
+          "texto": "Iguales",
+          "correcta": false
+        },
+        {
+          "texto": "Complementarios",
+          "correcta": false
+        },
+        {
+          "texto": "Opuestos por el vértice",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En un paralelogramo, los ángulos consecutivos suman 180°, es decir, son suplementarios."
+    },
+    {
+      "enunciado": "¿Qué cuadrilátero tiene los cuatro lados iguales y las diagonales perpendiculares, aunque sus ángulos no son necesariamente rectos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Rombo",
+          "correcta": true
+        },
+        {
+          "texto": "Cuadrado",
+          "correcta": false
+        },
+        {
+          "texto": "Trapecio",
+          "correcta": false
+        },
+        {
+          "texto": "Rectángulo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El rombo tiene los cuatro lados iguales y diagonales perpendiculares; sus ángulos pueden no ser rectos (si lo son, es un cuadrado, que es un caso especial de rombo)."
+    },
+    {
+      "enunciado": "Un cuadrilátero que tiene exactamente un par de lados paralelos se llama:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Paralelogramo",
+          "correcta": false
+        },
+        {
+          "texto": "Trapecio",
+          "correcta": true
+        },
+        {
+          "texto": "Rombo",
+          "correcta": false
+        },
+        {
+          "texto": "Rectángulo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El trapecio se caracteriza por tener exactamente un par de lados paralelos, llamados bases."
+    },
+    {
+      "enunciado": "Tres ángulos consecutivos forman un ángulo llano. Si dos de ellos miden 50° y 70°, ¿cuánto mide el tercero?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "50°",
+          "correcta": false
+        },
+        {
+          "texto": "60°",
+          "correcta": true
+        },
+        {
+          "texto": "120°",
+          "correcta": false
+        },
+        {
+          "texto": "70°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un ángulo llano mide 180°, así que el tercero es 180° − (50° + 70°) = 60°."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes conjuntos de longitudes puede formar un triángulo?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2, 2 y 5",
+          "correcta": false
+        },
+        {
+          "texto": "3, 4 y 8",
+          "correcta": false
+        },
+        {
+          "texto": "1, 2 y 3",
+          "correcta": false
+        },
+        {
+          "texto": "5, 6 y 10",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por la desigualdad triangular, la suma de dos lados debe superar al tercero: 5 + 6 = 11 > 10."
+    },
+    {
+      "enunciado": "En un triángulo rectángulo, uno de los ángulos agudos mide 35°. ¿Cuánto mide el otro ángulo agudo?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "45°",
+          "correcta": false
+        },
+        {
+          "texto": "55°",
+          "correcta": true
+        },
+        {
+          "texto": "65°",
+          "correcta": false
+        },
+        {
+          "texto": "145°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los dos ángulos agudos suman 90°, por lo que el otro mide 90° − 35° = 55°."
+    },
+    {
+      "enunciado": "Dos ángulos forman un par lineal (adyacentes y suplementarios). Si uno mide 125°, ¿cuánto mide el otro?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "35°",
+          "correcta": false
+        },
+        {
+          "texto": "65°",
+          "correcta": false
+        },
+        {
+          "texto": "45°",
+          "correcta": false
+        },
+        {
+          "texto": "55°",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Un par lineal suma 180°, por lo que el otro mide 180° − 125° = 55°."
+    },
+    {
+      "enunciado": "El ángulo exterior de un triángulo es igual a:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "La suma de los tres ángulos interiores",
+          "correcta": false
+        },
+        {
+          "texto": "El ángulo interior adyacente",
+          "correcta": false
+        },
+        {
+          "texto": "La suma de los dos ángulos interiores no adyacentes",
+          "correcta": true
+        },
+        {
+          "texto": "La mitad del ángulo interior adyacente",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por el teorema del ángulo exterior, este equivale a la suma de los dos ángulos interiores no adyacentes."
+    },
+    {
+      "enunciado": "Una propiedad de las diagonales de un rectángulo es que:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Son iguales entre sí",
+          "correcta": true
+        },
+        {
+          "texto": "Una mide el doble de la otra",
+          "correcta": false
+        },
+        {
+          "texto": "Se cortan formando 60°",
+          "correcta": false
+        },
+        {
+          "texto": "Son perpendiculares entre sí",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el rectángulo, las dos diagonales tienen la misma longitud y se cortan en su punto medio."
+    },
+    {
+      "enunciado": "Los ángulos de un triángulo están en la relación 1 : 2 : 3. ¿Cuánto mide el ángulo mayor?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "30°",
+          "correcta": false
+        },
+        {
+          "texto": "60°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": true
+        },
+        {
+          "texto": "45°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las partes suman 6; como 180° / 6 = 30°, el mayor es 3 × 30° = 90°."
+    },
+    {
+      "enunciado": "¿Qué nombre recibe el cuadrilátero con cuatro ángulos rectos y lados opuestos iguales, pero no todos sus lados iguales?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Trapecio",
+          "correcta": false
+        },
+        {
+          "texto": "Cuadrado",
+          "correcta": false
+        },
+        {
+          "texto": "Rombo",
+          "correcta": false
+        },
+        {
+          "texto": "Rectángulo",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El rectángulo tiene los cuatro ángulos rectos y lados opuestos iguales, sin que todos los lados sean iguales."
+    },
+    {
+      "enunciado": "Cuando dos rectas paralelas son cortadas por una transversal, los ángulos alternos internos resultan:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Suplementarios",
+          "correcta": false
+        },
+        {
+          "texto": "Complementarios",
+          "correcta": false
+        },
+        {
+          "texto": "Iguales",
+          "correcta": true
+        },
+        {
+          "texto": "Rectos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Entre paralelas, los ángulos alternos internos tienen la misma medida."
+    },
+    {
+      "enunciado": "Dos rectas paralelas son cortadas por una transversal. Si dos ángulos alternos internos miden (2x + 10)° y (3x − 20)°, ¿cuánto vale x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "30",
+          "correcta": true
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": false
+        },
+        {
+          "texto": "70",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los alternos internos son iguales: 2x + 10 = 3x − 20, de donde x = 30."
+    },
+    {
+      "enunciado": "Un ángulo exterior de un triángulo mide 110° y uno de los ángulos interiores no adyacentes mide 45°. ¿Cuánto mide el otro ángulo interior no adyacente?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "65°",
+          "correcta": true
+        },
+        {
+          "texto": "70°",
+          "correcta": false
+        },
+        {
+          "texto": "55°",
+          "correcta": false
+        },
+        {
+          "texto": "75°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El ángulo exterior es la suma de los dos interiores no adyacentes: 110° − 45° = 65°."
+    },
+    {
+      "enunciado": "Los ángulos interiores de un triángulo miden (x + 10)°, (2x)° y (3x − 10)°. ¿Cuánto mide el ángulo mayor?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "40°",
+          "correcta": false
+        },
+        {
+          "texto": "80°",
+          "correcta": true
+        },
+        {
+          "texto": "60°",
+          "correcta": false
+        },
+        {
+          "texto": "100°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La suma es 6x = 180°, así que x = 30°; los ángulos son 40°, 60° y 80°, y el mayor es 80°."
+    },
+    {
+      "enunciado": "En un triángulo isósceles, el ángulo del vértice mide 30° más que cada ángulo de la base. ¿Cuánto mide el ángulo del vértice?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "70°",
+          "correcta": false
+        },
+        {
+          "texto": "50°",
+          "correcta": false
+        },
+        {
+          "texto": "80°",
+          "correcta": true
+        },
+        {
+          "texto": "110°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si la base mide b, entonces 2b + (b + 30) = 180, de donde b = 50° y el vértice es 50 + 30 = 80°."
+    },
+    {
+      "enunciado": "En un paralelogramo, dos ángulos consecutivos miden 5x y x. ¿Cuánto mide el ángulo mayor?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "30°",
+          "correcta": false
+        },
+        {
+          "texto": "60°",
+          "correcta": false
+        },
+        {
+          "texto": "120°",
+          "correcta": false
+        },
+        {
+          "texto": "150°",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los consecutivos suman 180°: 5x + x = 180, x = 30°; el mayor es 5 × 30° = 150°."
+    },
+    {
+      "enunciado": "Los ángulos interiores de un cuadrilátero están en la relación 1 : 2 : 3 : 4. ¿Cuánto mide el ángulo mayor?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "144°",
+          "correcta": true
+        },
+        {
+          "texto": "36°",
+          "correcta": false
+        },
+        {
+          "texto": "72°",
+          "correcta": false
+        },
+        {
+          "texto": "180°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las partes suman 10 y los ángulos suman 360°: 360° / 10 = 36°, por lo que el mayor es 4 × 36° = 144°."
+    },
+    {
+      "enunciado": "Tres ángulos consecutivos sobre una recta miden 2x, 3x y 4x. ¿Cuánto mide el mayor de ellos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "80°",
+          "correcta": true
+        },
+        {
+          "texto": "40°",
+          "correcta": false
+        },
+        {
+          "texto": "60°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Forman un ángulo llano: 2x + 3x + 4x = 180°, x = 20°; el mayor es 4 × 20° = 80°."
+    },
+    {
+      "enunciado": "La diferencia entre el suplemento y el complemento de un mismo ángulo es siempre:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "45°",
+          "correcta": false
+        },
+        {
+          "texto": "180°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": true
+        },
+        {
+          "texto": "Depende del valor del ángulo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(180° − x) − (90° − x) = 90°, valor que no depende del ángulo."
+    },
+    {
+      "enunciado": "Entre dos rectas paralelas, dos ángulos conjugados internos miden (3x + 5)° y (2x + 25)°. ¿Cuánto vale x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "30",
+          "correcta": true
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los conjugados internos son suplementarios: (3x + 5) + (2x + 25) = 180, 5x = 150, x = 30."
+    },
+    {
+      "enunciado": "La suma de los tres ángulos exteriores de un triángulo (uno por cada vértice) es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "180°",
+          "correcta": false
+        },
+        {
+          "texto": "270°",
+          "correcta": false
+        },
+        {
+          "texto": "360°",
+          "correcta": true
+        },
+        {
+          "texto": "540°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En todo polígono convexo la suma de los ángulos exteriores (uno por vértice) es 360°, y el triángulo no es la excepción."
+    },
+    {
+      "enunciado": "Un triángulo es a la vez rectángulo e isósceles. ¿Cuánto mide cada uno de sus ángulos agudos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "30°",
+          "correcta": false
+        },
+        {
+          "texto": "60°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": false
+        },
+        {
+          "texto": "45°",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los dos ángulos agudos son iguales y suman 90°, por lo que cada uno mide 45°."
+    },
+    {
+      "enunciado": "En un rombo, uno de los ángulos mide 110°. ¿Cuánto mide cada uno de los dos ángulos adyacentes a él?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "125°",
+          "correcta": false
+        },
+        {
+          "texto": "55°",
+          "correcta": false
+        },
+        {
+          "texto": "110°",
+          "correcta": false
+        },
+        {
+          "texto": "70°",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En el rombo los ángulos consecutivos son suplementarios: 180° − 110° = 70°."
+    },
+    {
+      "enunciado": "Dos lados de un triángulo miden 7 y 10. ¿Entre qué valores debe estar la longitud del tercer lado?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Entre 7 y 10",
+          "correcta": false
+        },
+        {
+          "texto": "Mayor que 3 y menor que 17",
+          "correcta": true
+        },
+        {
+          "texto": "Entre 10 y 17",
+          "correcta": false
+        },
+        {
+          "texto": "Cualquier valor positivo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la desigualdad triangular, el tercer lado está entre 10 − 7 = 3 y 10 + 7 = 17."
+    },
+    {
+      "enunciado": "Tres ángulos de un cuadrilátero miden 90°, 85° y 100°. ¿Cuánto mide el cuarto ángulo?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "75°",
+          "correcta": false
+        },
+        {
+          "texto": "95°",
+          "correcta": false
+        },
+        {
+          "texto": "85°",
+          "correcta": true
+        },
+        {
+          "texto": "100°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los ángulos suman 360°: 360° − (90° + 85° + 100°) = 85°."
+    },
+    {
+      "enunciado": "Un ángulo mide cuatro veces su suplemento. ¿Cuánto mide dicho ángulo?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "144°",
+          "correcta": true
+        },
+        {
+          "texto": "72°",
+          "correcta": false
+        },
+        {
+          "texto": "120°",
+          "correcta": false
+        },
+        {
+          "texto": "36°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si el suplemento es s, entonces 4s + s = 180°, s = 36°; el ángulo es 4 × 36° = 144°."
+    },
+    {
+      "enunciado": "Los ángulos interiores de un triángulo miden (2x)°, (x + 20)° y x°. El triángulo es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Rectángulo",
+          "correcta": false
+        },
+        {
+          "texto": "Equilátero",
+          "correcta": false
+        },
+        {
+          "texto": "Obtusángulo",
+          "correcta": false
+        },
+        {
+          "texto": "Acutángulo y escaleno",
+          "correcta": true
+        }
+      ],
+      "explicacion": "4x + 20 = 180 da x = 40°, así que los ángulos son 80°, 60° y 40°: todos agudos y distintos."
+    }
+  ]
+}

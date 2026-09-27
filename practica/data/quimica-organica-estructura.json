@@ -1,0 +1,1012 @@
+{
+  "id": "quimica-organica-estructura",
+  "materia": "quimica",
+  "tema": "El carbono: hibridación, enlaces e isomería",
+  "bloque": "Química orgánica",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "El carbono forma 4 enlaces. Si solo tiene enlaces simples es sp³ (tetraédrico, 109,5°); si tiene un enlace doble es sp² (trigonal plano, 120°); si tiene un triple o dos dobles es sp (lineal, 180°). Los isómeros tienen la misma fórmula molecular pero distinta estructura.",
+    "ejemplo": {
+      "enunciado": "¿Cuántos enlaces sigma (σ) y pi (π) tiene el propeno, CH₂=CH–CH₃?",
+      "pasos": [
+        "Cuenta los enlaces C–H: 2 + 1 + 3 = 6; todos son σ.",
+        "Enlaces C–C: el simple es 1 σ; el doble es 1 σ + 1 π.",
+        "Suma: 6 + 1 + 1 = 8 enlaces σ, y 1 enlace π."
+      ],
+      "resultado": "8 enlaces σ y 1 enlace π"
+    },
+    "ojo": "Todo enlace simple es σ; en un enlace doble solo uno es π y en un triple, dos son π. No cuentes el doble enlace como dos σ."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuántos electrones de valencia posee el átomo de carbono en su estado fundamental?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El carbono pertenece al grupo 14; su configuración 2s²2p² le otorga 4 electrones de valencia."
+    },
+    {
+      "enunciado": "En los compuestos orgánicos, ¿cuántos enlaces covalentes forma habitualmente el carbono?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con 4 electrones de valencia, el carbono completa el octeto formando 4 enlaces covalentes."
+    },
+    {
+      "enunciado": "¿Qué tipo de hibridación presenta el átomo de carbono en el metano (CH₄)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "sp³",
+          "correcta": true
+        },
+        {
+          "texto": "sp²",
+          "correcta": false
+        },
+        {
+          "texto": "sp",
+          "correcta": false
+        },
+        {
+          "texto": "sp³d",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbono del metano forma 4 enlaces sigma con geometría tetraédrica, lo que corresponde a hibridación sp³."
+    },
+    {
+      "enunciado": "En la molécula de eteno (CH₂=CH₂), ¿cuál es la hibridación de cada carbono?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "sp",
+          "correcta": false
+        },
+        {
+          "texto": "sp²",
+          "correcta": true
+        },
+        {
+          "texto": "sp³d²",
+          "correcta": false
+        },
+        {
+          "texto": "sp³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada carbono del eteno forma 3 enlaces sigma y participa en un enlace pi, característica de la hibridación sp²."
+    },
+    {
+      "enunciado": "¿Qué hibridación tienen los carbonos del etino (acetileno, CH≡CH)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "sp²",
+          "correcta": false
+        },
+        {
+          "texto": "sp",
+          "correcta": true
+        },
+        {
+          "texto": "sp³",
+          "correcta": false
+        },
+        {
+          "texto": "no presenta hibridación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El triple enlace implica 2 enlaces pi y 1 sigma; cada carbono usa hibridación sp con geometría lineal."
+    },
+    {
+      "enunciado": "El ángulo de enlace aproximado en un carbono con hibridación sp³ es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "109,5°",
+          "correcta": true
+        },
+        {
+          "texto": "90°",
+          "correcta": false
+        },
+        {
+          "texto": "120°",
+          "correcta": false
+        },
+        {
+          "texto": "180°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La geometría tetraédrica del carbono sp³ produce ángulos de enlace de 109,5°."
+    },
+    {
+      "enunciado": "¿Cuál es el ángulo de enlace característico de un carbono sp²?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "109,5°",
+          "correcta": false
+        },
+        {
+          "texto": "180°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": false
+        },
+        {
+          "texto": "120°",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El carbono sp² posee geometría trigonal plana con ángulos de 120°."
+    },
+    {
+      "enunciado": "La geometría que adopta un carbono con hibridación sp³ es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "lineal",
+          "correcta": false
+        },
+        {
+          "texto": "trigonal plana",
+          "correcta": false
+        },
+        {
+          "texto": "tetraédrica",
+          "correcta": true
+        },
+        {
+          "texto": "angular",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cuatro orbitales híbridos sp³ se orientan hacia los vértices de un tetraedro."
+    },
+    {
+      "enunciado": "La geometría de un carbono con hibridación sp es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "tetraédrica",
+          "correcta": false
+        },
+        {
+          "texto": "lineal",
+          "correcta": true
+        },
+        {
+          "texto": "trigonal plana",
+          "correcta": false
+        },
+        {
+          "texto": "angular",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los dos orbitales sp se orientan en línea recta, dando geometría lineal."
+    },
+    {
+      "enunciado": "Se denomina isómeros a los compuestos que:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "son siempre exactamente el mismo compuesto",
+          "correcta": false
+        },
+        {
+          "texto": "tienen distinta fórmula molecular pero igual estructura",
+          "correcta": false
+        },
+        {
+          "texto": "tienen la misma fórmula molecular pero distinta estructura",
+          "correcta": true
+        },
+        {
+          "texto": "se diferencian solo en su estado físico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los isómeros comparten la fórmula molecular pero difieren en la disposición de sus átomos."
+    },
+    {
+      "enunciado": "Un enlace covalente simple entre dos átomos de carbono está formado por:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1 enlace sigma y 1 enlace pi",
+          "correcta": false
+        },
+        {
+          "texto": "1 enlace pi",
+          "correcta": false
+        },
+        {
+          "texto": "2 enlaces sigma",
+          "correcta": false
+        },
+        {
+          "texto": "1 enlace sigma",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El enlace simple consiste únicamente en un enlace sigma."
+    },
+    {
+      "enunciado": "¿Cuántos enlaces pi contiene un doble enlace carbono-carbono?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El doble enlace está formado por 1 enlace sigma y 1 enlace pi."
+    },
+    {
+      "enunciado": "Un triple enlace carbono-carbono está constituido por:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1 enlace sigma y 1 enlace pi",
+          "correcta": false
+        },
+        {
+          "texto": "1 enlace sigma y 2 enlaces pi",
+          "correcta": true
+        },
+        {
+          "texto": "2 enlaces sigma y 1 enlace pi",
+          "correcta": false
+        },
+        {
+          "texto": "3 enlaces sigma",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El triple enlace está formado por 1 enlace sigma y 2 enlaces pi."
+    },
+    {
+      "enunciado": "El elemento que constituye la base estructural de todos los compuestos orgánicos es el:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "carbono",
+          "correcta": true
+        },
+        {
+          "texto": "oxígeno",
+          "correcta": false
+        },
+        {
+          "texto": "hidrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "nitrógeno",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La química orgánica es la química de los compuestos del carbono."
+    },
+    {
+      "enunciado": "¿Cuántos orbitales híbridos se generan en un átomo de carbono con hibridación sp³?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se combinan un orbital s y tres orbitales p, formando 4 orbitales híbridos sp³."
+    },
+    {
+      "enunciado": "En un carbono sp², el número de orbitales p que quedan sin hibridar es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La hibridación sp² usa el orbital s y dos orbitales p; queda un orbital p sin hibridar que forma el enlace pi."
+    },
+    {
+      "enunciado": "¿Cuántos isómeros estructurales presenta el compuesto de fórmula C₄H₁₀?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El C₄H₁₀ tiene dos isómeros: el n-butano y el isobutano (2-metilpropano)."
+    },
+    {
+      "enunciado": "El carbono del grupo carbonilo (C=O) en aldehídos y cetonas tiene hibridación:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "sp³",
+          "correcta": false
+        },
+        {
+          "texto": "sp",
+          "correcta": false
+        },
+        {
+          "texto": "sp²",
+          "correcta": true
+        },
+        {
+          "texto": "sp³d",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbono unido por doble enlace al oxígeno presenta geometría trigonal plana e hibridación sp²."
+    },
+    {
+      "enunciado": "El etanol (CH₃CH₂OH) y el metoximetano o éter dimetílico (CH₃OCH₃) comparten la fórmula C₂H₆O. El tipo de isomería entre ellos es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "de función",
+          "correcta": true
+        },
+        {
+          "texto": "de posición",
+          "correcta": false
+        },
+        {
+          "texto": "de cadena",
+          "correcta": false
+        },
+        {
+          "texto": "geométrica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Pertenecen a funciones químicas distintas (alcohol y éter), por lo que es isomería de función."
+    },
+    {
+      "enunciado": "La relación de isomería entre el n-butano y el 2-metilpropano se clasifica como isomería de:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "posición",
+          "correcta": false
+        },
+        {
+          "texto": "cadena",
+          "correcta": true
+        },
+        {
+          "texto": "función",
+          "correcta": false
+        },
+        {
+          "texto": "óptica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Difieren en la forma de la cadena carbonada (lineal o ramificada): isomería de cadena."
+    },
+    {
+      "enunciado": "¿Cuántos enlaces sigma hay en total en la molécula de etino (CH≡CH)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 2 enlaces sigma C–H y 1 enlace sigma C–C, en total 3 enlaces sigma (además de los 2 enlaces pi)."
+    },
+    {
+      "enunciado": "¿Cuántos isómeros estructurales tiene el pentano (C₅H₁₂)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Son tres: n-pentano, 2-metilbutano (isopentano) y 2,2-dimetilpropano (neopentano)."
+    },
+    {
+      "enunciado": "Para que un alqueno presente isomería geométrica (cis-trans) es necesario que:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "tenga al menos un carbono quiral",
+          "correcta": false
+        },
+        {
+          "texto": "posea un triple enlace",
+          "correcta": false
+        },
+        {
+          "texto": "cada carbono del doble enlace lleve dos sustituyentes diferentes",
+          "correcta": true
+        },
+        {
+          "texto": "sea una cadena ramificada",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como el doble enlace impide la rotación, solo existen las formas cis y trans si cada carbono del doble enlace lleva dos grupos distintos."
+    },
+    {
+      "enunciado": "En el but-2-eno, los dos grupos CH₃ están en lados opuestos del doble enlace. ¿Qué isómero geométrico es?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "trans",
+          "correcta": true
+        },
+        {
+          "texto": "cis",
+          "correcta": false
+        },
+        {
+          "texto": "no presenta isomería geométrica",
+          "correcta": false
+        },
+        {
+          "texto": "óptico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con los dos grupos CH₃ en lados opuestos del doble enlace, la molécula es el isómero trans (E)."
+    },
+    {
+      "enunciado": "Un carbono quiral (estereocentro) se caracteriza por estar unido a:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "tres átomos de hidrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "dos grupos iguales y dos hidrógenos",
+          "correcta": false
+        },
+        {
+          "texto": "cuatro grupos diferentes",
+          "correcta": true
+        },
+        {
+          "texto": "un doble enlace",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbono asimétrico tiene sus cuatro valencias ocupadas por sustituyentes distintos."
+    },
+    {
+      "enunciado": "En el anillo de benceno (C₆H₆), cada átomo de carbono presenta hibridación:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "sp³",
+          "correcta": false
+        },
+        {
+          "texto": "sp",
+          "correcta": false
+        },
+        {
+          "texto": "alterna entre sp² y sp³",
+          "correcta": false
+        },
+        {
+          "texto": "sp²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Todos los carbonos del benceno son sp², lo que permite el sistema pi deslocalizado."
+    },
+    {
+      "enunciado": "¿Cuántos enlaces sigma posee la molécula de eteno (CH₂=CH₂)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 4 enlaces sigma C–H y 1 enlace sigma C–C, en total 5 enlaces sigma (más 1 enlace pi)."
+    },
+    {
+      "enunciado": "El propanal (CH₃CH₂CHO) y la propanona (CH₃COCH₃) tienen fórmula C₃H₆O. Entre ellos existe isomería de:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "función",
+          "correcta": true
+        },
+        {
+          "texto": "posición",
+          "correcta": false
+        },
+        {
+          "texto": "cadena",
+          "correcta": false
+        },
+        {
+          "texto": "geométrica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Uno es aldehído y el otro cetona; al ser funciones químicas distintas se trata de isomería de función."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes compuestos posee un carbono quiral y es ópticamente activo?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "propan-2-ol",
+          "correcta": false
+        },
+        {
+          "texto": "etanol",
+          "correcta": false
+        },
+        {
+          "texto": "propano",
+          "correcta": false
+        },
+        {
+          "texto": "butan-2-ol",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En el butan-2-ol, el carbono 2 está unido a OH, H, CH₃ y C₂H₅, cuatro grupos distintos: es quiral."
+    },
+    {
+      "enunciado": "El átomo de carbono en el dióxido de carbono (O=C=O) tiene hibridación:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "sp",
+          "correcta": true
+        },
+        {
+          "texto": "sp²",
+          "correcta": false
+        },
+        {
+          "texto": "sp³",
+          "correcta": false
+        },
+        {
+          "texto": "sp³d",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbono forma dos enlaces sigma y dos enlaces pi con geometría lineal: hibridación sp."
+    },
+    {
+      "enunciado": "El propan-1-ol y el propan-2-ol son ejemplos de isomería de:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "cadena",
+          "correcta": false
+        },
+        {
+          "texto": "función",
+          "correcta": false
+        },
+        {
+          "texto": "posición",
+          "correcta": true
+        },
+        {
+          "texto": "óptica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Difieren en la posición del grupo –OH dentro de la misma cadena: isomería de posición."
+    },
+    {
+      "enunciado": "El porcentaje de carácter s en un orbital híbrido sp³ es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "50 %",
+          "correcta": false
+        },
+        {
+          "texto": "25 %",
+          "correcta": true
+        },
+        {
+          "texto": "33 %",
+          "correcta": false
+        },
+        {
+          "texto": "20 %",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El orbital sp³ proviene de 1 orbital s y 3 orbitales p; su carácter s es 1/4 = 25 %."
+    },
+    {
+      "enunciado": "¿Qué hibridación del carbono presenta el mayor porcentaje de carácter s (50 %)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "sp³",
+          "correcta": false
+        },
+        {
+          "texto": "sp²",
+          "correcta": false
+        },
+        {
+          "texto": "sp³d",
+          "correcta": false
+        },
+        {
+          "texto": "sp",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El orbital sp se forma de 1 orbital s y 1 orbital p, por lo que su carácter s es 1/2 = 50 %."
+    },
+    {
+      "enunciado": "¿Cuántos isómeros estructurales tiene el hexano (C₆H₁₄)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Existen 5: hexano, 2-metilpentano, 3-metilpentano, 2,2-dimetilbutano y 2,3-dimetilbutano."
+    },
+    {
+      "enunciado": "Una molécula con dos carbonos quirales diferentes (sin elementos de simetría) presenta como máximo:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2 estereoisómeros",
+          "correcta": false
+        },
+        {
+          "texto": "3 estereoisómeros",
+          "correcta": false
+        },
+        {
+          "texto": "4 estereoisómeros",
+          "correcta": true
+        },
+        {
+          "texto": "8 estereoisómeros",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número máximo de estereoisómeros es 2ⁿ, donde n es el número de carbonos quirales; con n = 2 resulta 2² = 4."
+    },
+    {
+      "enunciado": "Dos enantiómeros se definen como estereoisómeros que son:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "imágenes especulares no superponibles",
+          "correcta": true
+        },
+        {
+          "texto": "imágenes especulares superponibles",
+          "correcta": false
+        },
+        {
+          "texto": "isómeros de cadena entre sí",
+          "correcta": false
+        },
+        {
+          "texto": "exactamente el mismo compuesto",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los enantiómeros son imágenes en el espejo que no pueden superponerse."
+    },
+    {
+      "enunciado": "Dos enantiómeros desvían el plano de la luz polarizada:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "en sentidos opuestos pero con igual magnitud",
+          "correcta": true
+        },
+        {
+          "texto": "en el mismo sentido y con igual magnitud",
+          "correcta": false
+        },
+        {
+          "texto": "ninguno de los dos desvía la luz",
+          "correcta": false
+        },
+        {
+          "texto": "solo uno desvía y lo hace al doble",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los enantiómeros rotan el plano de la luz polarizada con igual magnitud pero en sentido contrario."
+    },
+    {
+      "enunciado": "En el aleno (CH₂=C=CH₂), la hibridación del carbono central es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "sp³",
+          "correcta": false
+        },
+        {
+          "texto": "sp²",
+          "correcta": false
+        },
+        {
+          "texto": "sp",
+          "correcta": true
+        },
+        {
+          "texto": "no presenta hibridación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbono central forma dos dobles enlaces (dos sigma y dos pi) con geometría lineal: hibridación sp."
+    },
+    {
+      "enunciado": "Con la fórmula molecular C₃H₈, ¿cuántos compuestos diferentes se pueden formar?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con tres carbonos la cadena no puede ramificarse: solo existe un compuesto, el propano, que por eso no tiene isómeros."
+    },
+    {
+      "enunciado": "¿Cuántos orbitales p sin hibridar quedan en un carbono con hibridación sp?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La hibridación sp usa 1 orbital s y 1 orbital p; quedan 2 orbitales p puros que forman los dos enlaces pi."
+    },
+    {
+      "enunciado": "¿Cuántos carbonos quirales tiene el ácido láctico, CH₃–CH(OH)–COOH?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Solo el carbono central está unido a cuatro grupos diferentes (CH₃, OH, H y COOH): un único estereocentro."
+    },
+    {
+      "enunciado": "Las formas alternada y eclipsada del etano, que se interconvierten por giro del enlace C–C, son ejemplos de:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "isómeros de cadena",
+          "correcta": false
+        },
+        {
+          "texto": "enantiómeros",
+          "correcta": false
+        },
+        {
+          "texto": "confórmeros (isómeros conformacionales)",
+          "correcta": true
+        },
+        {
+          "texto": "isómeros de función",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se interconvierten por rotación libre del enlace simple C–C; son confórmeros, no isómeros configuracionales."
+    },
+    {
+      "enunciado": "El propino (CH₃–C≡CH) contiene en total:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6 enlaces sigma y 2 enlaces pi",
+          "correcta": true
+        },
+        {
+          "texto": "5 enlaces sigma y 2 enlaces pi",
+          "correcta": false
+        },
+        {
+          "texto": "6 enlaces sigma y 1 enlace pi",
+          "correcta": false
+        },
+        {
+          "texto": "4 enlaces sigma y 2 enlaces pi",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El propino tiene 4 enlaces sigma C–H, 2 enlaces sigma C–C y 2 enlaces pi del triple enlace: total 6 sigma y 2 pi."
+    }
+  ]
+}

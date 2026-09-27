@@ -1,0 +1,1127 @@
+{
+  "id": "matematica-analitica",
+  "materia": "matematica",
+  "tema": "Geometría analítica: rectas y cónicas",
+  "bloque": "Geometría y trigonometría",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Con coordenadas puedes medir y describir figuras: distancia d = √((x₂ − x₁)² + (y₂ − y₁)²), punto medio = promedio de las coordenadas y pendiente m = (y₂ − y₁)/(x₂ − x₁). La circunferencia (x − h)² + (y − k)² = r² tiene centro (h, k) y radio r.",
+    "ejemplo": {
+      "enunciado": "Halla la ecuación de la recta que pasa por A(1, 3) y B(3, 7).",
+      "pasos": [
+        "Calcula la pendiente: m = (7 − 3)/(3 − 1) = 4/2 = 2.",
+        "Usa punto-pendiente con A: y − 3 = 2(x − 1).",
+        "Despeja y: y = 2x − 2 + 3 = 2x + 1."
+      ],
+      "resultado": "y = 2x + 1"
+    },
+    "ojo": "En (x − 3)² + (y + 2)² = 25 el centro es (3, −2): cambia el signo de los números que acompañan a x e y. Y el radio es √25 = 5, no 25."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el punto medio del segmento de extremos A(2, 4) y B(6, 8)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(4, 6)",
+          "correcta": true
+        },
+        {
+          "texto": "(8, 12)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El punto medio es ((2+6)/2, (4+8)/2) = (4, 6)."
+    },
+    {
+      "enunciado": "¿Cuál es la distancia entre los puntos (0, 0) y (3, 4)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "√7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "d = √(3² + 4²) = √25 = 5."
+    },
+    {
+      "enunciado": "La recta pasa por (1, 2) y (3, 6). ¿Cuál es su pendiente?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "m = (6 − 2)/(3 − 1) = 4/2 = 2."
+    },
+    {
+      "enunciado": "¿Cuál es la pendiente de la recta y = 3x − 5?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "−5",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "−3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En y = mx + b, la pendiente es el coeficiente de x, m = 3."
+    },
+    {
+      "enunciado": "¿Cuál es la ordenada al origen (intercepto con el eje y) de la recta y = −2x + 7?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−2",
+          "correcta": false
+        },
+        {
+          "texto": "−7",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La ordenada al origen es el término independiente b = 7."
+    },
+    {
+      "enunciado": "¿Cuál es el centro de la circunferencia x² + y² = 16?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(0, 0)",
+          "correcta": true
+        },
+        {
+          "texto": "(4, 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(16, 16)",
+          "correcta": false
+        },
+        {
+          "texto": "(0, 16)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación x² + y² = r² tiene su centro en el origen (0, 0)."
+    },
+    {
+      "enunciado": "¿Cuál es la pendiente de una recta horizontal?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "No está definida",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una recta horizontal no sube ni baja, por lo que su pendiente es 0."
+    },
+    {
+      "enunciado": "¿Cuál es la pendiente de una recta vertical?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "No está definida",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En una recta vertical el cambio horizontal (Δx) es 0, por lo que la pendiente no está definida."
+    },
+    {
+      "enunciado": "¿Cuál es la distancia entre los puntos (1, 2) y (1, 9)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tienen la misma abscisa, así que la distancia es |9 − 2| = 7."
+    },
+    {
+      "enunciado": "La ecuación x² + y² = 49 representa:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "una elipse",
+          "correcta": false
+        },
+        {
+          "texto": "una circunferencia de radio 7",
+          "correcta": true
+        },
+        {
+          "texto": "una parábola",
+          "correcta": false
+        },
+        {
+          "texto": "una circunferencia de radio 49",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es x² + y² = r² con r² = 49, una circunferencia centrada en el origen de radio 7."
+    },
+    {
+      "enunciado": "En la ecuación de la recta y = mx + b, ¿qué representa m?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "la ordenada al origen",
+          "correcta": false
+        },
+        {
+          "texto": "la pendiente",
+          "correcta": true
+        },
+        {
+          "texto": "la abscisa al origen",
+          "correcta": false
+        },
+        {
+          "texto": "la distancia al origen",
+          "correcta": false
+        }
+      ],
+      "explicacion": "m es la pendiente y b es la ordenada al origen."
+    },
+    {
+      "enunciado": "¿Cuál es el centro de la circunferencia (x − 3)² + (y − 2)² = 9?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(−3, −2)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 2)",
+          "correcta": true
+        },
+        {
+          "texto": "(9, 9)",
+          "correcta": false
+        },
+        {
+          "texto": "(−3, 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En (x − h)² + (y − k)² = r², el centro es (h, k) = (3, 2)."
+    },
+    {
+      "enunciado": "¿Cuál es el radio de la circunferencia (x − 1)² + (y + 4)² = 36?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "r² = 36, por lo que r = √36 = 6."
+    },
+    {
+      "enunciado": "¿Qué representa la ecuación y = 4 en el plano cartesiano?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "una recta vertical",
+          "correcta": false
+        },
+        {
+          "texto": "una recta oblicua",
+          "correcta": false
+        },
+        {
+          "texto": "una recta horizontal",
+          "correcta": true
+        },
+        {
+          "texto": "una parábola",
+          "correcta": false
+        }
+      ],
+      "explicacion": "y = constante es una recta horizontal: todos sus puntos tienen ordenada 4."
+    },
+    {
+      "enunciado": "¿Cuál es la distancia entre los puntos A(1, 2) y B(9, 8)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "48",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las diferencias son 9 − 1 = 8 y 8 − 2 = 6; d = √(8² + 6²) = √(64 + 36) = √100 = 10."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación de la recta de pendiente 3 que pasa por el punto (0, −2)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "y = 3x − 2",
+          "correcta": true
+        },
+        {
+          "texto": "y = 3x + 2",
+          "correcta": false
+        },
+        {
+          "texto": "y = −2x + 3",
+          "correcta": false
+        },
+        {
+          "texto": "y = 3x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con pendiente 3 y ordenada al origen −2: y = 3x − 2."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación de la recta que pasa por (2, 5) con pendiente 4, en forma y = mx + b?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "y = 4x + 5",
+          "correcta": false
+        },
+        {
+          "texto": "y = 4x − 8",
+          "correcta": false
+        },
+        {
+          "texto": "y = 4x + 3",
+          "correcta": false
+        },
+        {
+          "texto": "y = 4x − 3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "y − 5 = 4(x − 2) → y = 4x − 8 + 5 = 4x − 3."
+    },
+    {
+      "enunciado": "¿Cuál es la distancia entre los puntos (−3, 2) y (3, −6)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        },
+        {
+          "texto": "√28",
+          "correcta": false
+        }
+      ],
+      "explicacion": "d = √((3−(−3))² + (−6−2)²) = √(36 + 64) = √100 = 10."
+    },
+    {
+      "enunciado": "¿Cuál es el punto medio del segmento de extremos (5, −3) y (−1, 7)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2, 2)",
+          "correcta": true
+        },
+        {
+          "texto": "(3, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 5)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Punto medio = ((5−1)/2, (−3+7)/2) = (2, 2)."
+    },
+    {
+      "enunciado": "¿Cuál es la pendiente de cualquier recta paralela a y = 2x + 1?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "−1/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las rectas paralelas tienen la misma pendiente, m = 2."
+    },
+    {
+      "enunciado": "¿Cuál es la pendiente de una recta perpendicular a y = (1/3)x + 4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−1/3",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La perpendicular tiene pendiente recíproca y de signo opuesto: −1/(1/3) = −3."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación de la circunferencia de centro (2, −1) y radio 4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(x + 2)² + (y − 1)² = 16",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)² + (y − 1)² = 16",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)² + (y + 1)² = 4",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)² + (y + 1)² = 16",
+          "correcta": true
+        }
+      ],
+      "explicacion": "(x − h)² + (y − k)² = r² con (h, k) = (2, −1) y r² = 16."
+    },
+    {
+      "enunciado": "¿Cuál es el vértice de la parábola y = (x − 3)² + 2?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(−3, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(−3, −2)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, −2)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 2)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En y = (x − h)² + k, el vértice es (h, k) = (3, 2)."
+    },
+    {
+      "enunciado": "¿Cuál es el foco de la parábola y² = 8x?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2, 0)",
+          "correcta": true
+        },
+        {
+          "texto": "(0, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(8, 0)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 0)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "y² = 4px con 4p = 8 → p = 2; el foco es (p, 0) = (2, 0)."
+    },
+    {
+      "enunciado": "En la elipse x²/25 + y²/9 = 1, ¿cuánto mide el semieje mayor?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "a² = 25 es el mayor denominador, así que a = 5."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación de la recta que pasa por (1, 3) y (4, 3)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = 3",
+          "correcta": false
+        },
+        {
+          "texto": "y = 3",
+          "correcta": true
+        },
+        {
+          "texto": "y = x + 3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Ambos puntos tienen ordenada 3, es la recta horizontal y = 3."
+    },
+    {
+      "enunciado": "¿Para qué valor de k el punto (k, 2) pertenece a la recta y = 2x − 4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2 = 2k − 4 → 2k = 6 → k = 3."
+    },
+    {
+      "enunciado": "¿Cuál es la longitud del diámetro de la circunferencia x² + y² = 36?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        }
+      ],
+      "explicacion": "r = √36 = 6, por lo que el diámetro es 2r = 12."
+    },
+    {
+      "enunciado": "Al escribir 3x − y + 6 = 0 en la forma y = mx + b, ¿cuáles son la pendiente y la ordenada al origen?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "m = −3, b = −6",
+          "correcta": false
+        },
+        {
+          "texto": "m = −3, b = 6",
+          "correcta": false
+        },
+        {
+          "texto": "m = 3, b = −6",
+          "correcta": false
+        },
+        {
+          "texto": "m = 3, b = 6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Despejando y: y = 3x + 6, entonces m = 3 y b = 6."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes puntos pertenece a la circunferencia x² + y² = 25?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(3, 4)",
+          "correcta": true
+        },
+        {
+          "texto": "(2, 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(5, 5)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 5)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3² + 4² = 9 + 16 = 25, por lo que satisface la ecuación."
+    },
+    {
+      "enunciado": "Una circunferencia está centrada en el origen y su radio mide 5. ¿Cuál es su ecuación?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x² + y² = 25",
+          "correcta": true
+        },
+        {
+          "texto": "x² + y² = 5",
+          "correcta": false
+        },
+        {
+          "texto": "x² + y² = 10",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 5)² + y² = 25",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Centro en el origen y radio 5: x² + y² = 5² = 25."
+    },
+    {
+      "enunciado": "¿En qué punto la recta y = −x + 6 corta al eje x?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(0, 6)",
+          "correcta": false
+        },
+        {
+          "texto": "(6, 6)",
+          "correcta": false
+        },
+        {
+          "texto": "(−6, 0)",
+          "correcta": false
+        },
+        {
+          "texto": "(6, 0)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En el eje x, y = 0: 0 = −x + 6 → x = 6, punto (6, 0)."
+    },
+    {
+      "enunciado": "Al completar cuadrados en x² + y² − 6x + 4y − 12 = 0, ¿cuáles son el centro y el radio?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "centro (−3, 2), radio 5",
+          "correcta": false
+        },
+        {
+          "texto": "centro (3, −2), radio 25",
+          "correcta": false
+        },
+        {
+          "texto": "centro (3, −2), radio 5",
+          "correcta": true
+        },
+        {
+          "texto": "centro (−3, 2), radio √12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(x − 3)² + (y + 2)² = 12 + 9 + 4 = 25, centro (3, −2) y radio 5."
+    },
+    {
+      "enunciado": "¿Cuál es la distancia del punto (4, −3) a la recta 3x − 4y + 5 = 0?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "29",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "19/5",
+          "correcta": false
+        },
+        {
+          "texto": "29/5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "d = |3(4) − 4(−3) + 5| / √(3² + 4²) = |29| / 5 = 29/5."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación de la recta perpendicular a 2x + 3y = 6 que pasa por (4, 1)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "y = −(2/3)x − 5",
+          "correcta": false
+        },
+        {
+          "texto": "y = (3/2)x − 5",
+          "correcta": true
+        },
+        {
+          "texto": "y = (3/2)x + 5",
+          "correcta": false
+        },
+        {
+          "texto": "y = (2/3)x − 5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La pendiente de 2x + 3y = 6 es −2/3; la perpendicular es 3/2: y − 1 = (3/2)(x − 4) → y = (3/2)x − 5."
+    },
+    {
+      "enunciado": "¿Cuál es el vértice de la parábola y = x² − 4x + 7?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(−2, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 7)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, −3)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 3)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "x_v = −(−4)/(2·1) = 2; y_v = 4 − 8 + 7 = 3. Vértice (2, 3)."
+    },
+    {
+      "enunciado": "¿Cuál es la excentricidad de la elipse x²/25 + y²/16 = 1?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4/5",
+          "correcta": false
+        },
+        {
+          "texto": "5/3",
+          "correcta": false
+        },
+        {
+          "texto": "3/5",
+          "correcta": true
+        },
+        {
+          "texto": "3/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "a = 5, b = 4, c = √(25 − 16) = 3; e = c/a = 3/5."
+    },
+    {
+      "enunciado": "¿Cuáles son los focos de la elipse x²/25 + y²/16 = 1?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(0, 3) y (0, −3)",
+          "correcta": false
+        },
+        {
+          "texto": "(5, 0) y (−5, 0)",
+          "correcta": false
+        },
+        {
+          "texto": "(4, 0) y (−4, 0)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 0) y (−3, 0)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "c = √(25 − 16) = 3 y el eje mayor es horizontal: focos (±3, 0)."
+    },
+    {
+      "enunciado": "¿Cuál es la directriz de la parábola x² = 12y?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "y = 3",
+          "correcta": false
+        },
+        {
+          "texto": "y = −12",
+          "correcta": false
+        },
+        {
+          "texto": "x = −3",
+          "correcta": false
+        },
+        {
+          "texto": "y = −3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "x² = 4py con 4p = 12 → p = 3; abre hacia arriba y la directriz es y = −3."
+    },
+    {
+      "enunciado": "¿Cuánto mide el lado recto (latus rectum) de la parábola y² = 16x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "32",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para y² = 4px, la longitud del lado recto es |4p| = 16."
+    },
+    {
+      "enunciado": "¿Cuál es el punto de intersección de las rectas 2x + y = 7 y x − y = 2?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(1, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, 1)",
+          "correcta": true
+        },
+        {
+          "texto": "(2, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, −1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sumando ambas ecuaciones: 3x = 9 → x = 3; luego y = 3 − 2 = 1. Intersección (3, 1)."
+    },
+    {
+      "enunciado": "Los extremos de un diámetro de una circunferencia son (1, 2) y (7, 10). ¿Cuál es su ecuación?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(x − 4)² + (y − 6)² = 100",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 1)² + (y − 2)² = 25",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 4)² + (y − 6)² = 25",
+          "correcta": true
+        },
+        {
+          "texto": "(x − 4)² + (y − 6)² = 10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Centro = punto medio (4, 6); radio = mitad de la distancia (10/2 = 5), así que r² = 25."
+    },
+    {
+      "enunciado": "¿Para qué valor de k las rectas y = (k − 1)x + 3 y y = 2x − 5 son paralelas?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Son paralelas si tienen igual pendiente: k − 1 = 2 → k = 3."
+    },
+    {
+      "enunciado": "¿Para qué valor de k las rectas 3x − y = 4 y kx + 2y = 1 son perpendiculares?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−6",
+          "correcta": false
+        },
+        {
+          "texto": "−2/3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Las pendientes son 3 y −k/2; son perpendiculares si 3·(−k/2) = −1 → k = 2/3."
+    },
+    {
+      "enunciado": "El punto (1, k) pertenece a la circunferencia (x − 2)² + (y + 1)² = 10. ¿Cuál es un valor posible de k?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(1 − 2)² + (k + 1)² = 10 → (k + 1)² = 9 → k = 2 o k = −4; el valor 2 es solución."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación de la elipse con focos (±4, 0) y vértices (±5, 0)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x²/25 + y²/9 = 1",
+          "correcta": true
+        },
+        {
+          "texto": "x²/25 + y²/16 = 1",
+          "correcta": false
+        },
+        {
+          "texto": "x²/16 + y²/9 = 1",
+          "correcta": false
+        },
+        {
+          "texto": "x²/9 + y²/25 = 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "a = 5, c = 4 → b² = 25 − 16 = 9: x²/25 + y²/9 = 1."
+    },
+    {
+      "enunciado": "¿Cuál es la distancia entre las rectas paralelas 3x + 4y − 10 = 0 y 3x + 4y + 5 = 0?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "d = |−10 − 5| / √(3² + 4²) = 15 / 5 = 3."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación de la parábola con vértice en el origen y foco en (0, −2)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x² = −8y",
+          "correcta": true
+        },
+        {
+          "texto": "x² = 8y",
+          "correcta": false
+        },
+        {
+          "texto": "y² = −8x",
+          "correcta": false
+        },
+        {
+          "texto": "x² = −2y",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Abre hacia abajo con p = −2: x² = 4py = −8y."
+    }
+  ]
+}

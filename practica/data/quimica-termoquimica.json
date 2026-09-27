@@ -1,0 +1,1151 @@
+{
+  "id": "quimica-termoquimica",
+  "materia": "quimica",
+  "tema": "Termoquímica: entalpía, entropía y espontaneidad",
+  "bloque": "Termoquímica, cinética y equilibrio",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "ΔH es el calor de la reacción a presión constante: si ΔH < 0 es exotérmica (libera calor) y si ΔH > 0 es endotérmica (absorbe calor). Que ocurra sola (espontánea) lo decide la energía libre de Gibbs: ΔG = ΔH − TΔS; si ΔG < 0, la reacción es espontánea.",
+    "ejemplo": {
+      "enunciado": "Una reacción tiene ΔH = +30 kJ y ΔS = +150 J/K. ¿Es espontánea a 400 K?",
+      "pasos": [
+        "Pasa ΔS a kJ/K para que coincida con ΔH: 150 J/K = 0,150 kJ/K.",
+        "Calcula TΔS: 400 K × 0,150 kJ/K = 60 kJ.",
+        "Aplica Gibbs: ΔG = ΔH − TΔS = 30 − 60 = −30 kJ.",
+        "Como ΔG es negativo, la reacción es espontánea a esa temperatura."
+      ],
+      "resultado": "ΔG = −30 kJ: sí es espontánea a 400 K."
+    },
+    "ojo": "ΔS suele venir en J/K y ΔH en kJ: si no conviertes (dividir ΔS entre 1000), el resultado sale mil veces mal."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Qué estudia principalmente la termoquímica?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El intercambio de calor o energía que acompaña a las reacciones químicas",
+          "correcta": true
+        },
+        {
+          "texto": "La velocidad de las reacciones químicas",
+          "correcta": false
+        },
+        {
+          "texto": "La estructura interna de los átomos",
+          "correcta": false
+        },
+        {
+          "texto": "El balanceo de las ecuaciones químicas",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La termoquímica estudia los cambios de calor o energía que se producen durante las reacciones químicas."
+    },
+    {
+      "enunciado": "Una reacción exotérmica se caracteriza por:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Absorber calor del entorno",
+          "correcta": false
+        },
+        {
+          "texto": "No intercambiar energía con el entorno",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuir la temperatura de los alrededores",
+          "correcta": false
+        },
+        {
+          "texto": "Liberar calor al entorno",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Las reacciones exotérmicas desprenden calor hacia los alrededores, que tienden a calentarse."
+    },
+    {
+      "enunciado": "Una reacción endotérmica es aquella que:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Libera calor al entorno",
+          "correcta": false
+        },
+        {
+          "texto": "Absorbe calor del entorno",
+          "correcta": true
+        },
+        {
+          "texto": "Aumenta la temperatura de los alrededores",
+          "correcta": false
+        },
+        {
+          "texto": "No requiere energía para ocurrir",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En una reacción endotérmica el sistema absorbe calor de los alrededores, que tienden a enfriarse."
+    },
+    {
+      "enunciado": "El símbolo ΔH representa:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La variación de entropía",
+          "correcta": false
+        },
+        {
+          "texto": "La energía libre de Gibbs",
+          "correcta": false
+        },
+        {
+          "texto": "La variación de entalpía",
+          "correcta": true
+        },
+        {
+          "texto": "La temperatura absoluta",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔH es la variación de entalpía, es decir, el calor intercambiado a presión constante."
+    },
+    {
+      "enunciado": "En una reacción exotérmica, el signo de la variación de entalpía (ΔH) es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Positivo",
+          "correcta": false
+        },
+        {
+          "texto": "Negativo",
+          "correcta": true
+        },
+        {
+          "texto": "Cero",
+          "correcta": false
+        },
+        {
+          "texto": "Indeterminado",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como el sistema libera calor, su contenido de entalpía disminuye y ΔH resulta negativo."
+    },
+    {
+      "enunciado": "En una reacción endotérmica, el signo de ΔH es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Negativo",
+          "correcta": false
+        },
+        {
+          "texto": "Cero",
+          "correcta": false
+        },
+        {
+          "texto": "Positivo",
+          "correcta": true
+        },
+        {
+          "texto": "Indeterminado",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El sistema absorbe calor, por lo que su entalpía aumenta y ΔH es positivo."
+    },
+    {
+      "enunciado": "¿Cuál es la unidad de energía del Sistema Internacional empleada para la entalpía?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El joule (J)",
+          "correcta": true
+        },
+        {
+          "texto": "El gramo (g)",
+          "correcta": false
+        },
+        {
+          "texto": "El mol (mol)",
+          "correcta": false
+        },
+        {
+          "texto": "El kelvin (K)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La entalpía es una forma de energía; su unidad en el SI es el joule (J), aunque suele usarse el kilojoule (kJ)."
+    },
+    {
+      "enunciado": "La entropía (S) de un sistema es una medida de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Su grado de desorden o dispersión de energía",
+          "correcta": true
+        },
+        {
+          "texto": "Su masa total",
+          "correcta": false
+        },
+        {
+          "texto": "Su temperatura",
+          "correcta": false
+        },
+        {
+          "texto": "Su presión",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La entropía mide el grado de desorden o el número de microestados accesibles del sistema."
+    },
+    {
+      "enunciado": "¿En cuál estado de la materia las partículas de una sustancia presentan mayor entropía?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Sólido",
+          "correcta": false
+        },
+        {
+          "texto": "Líquido",
+          "correcta": false
+        },
+        {
+          "texto": "Es la misma en los tres estados",
+          "correcta": false
+        },
+        {
+          "texto": "Gaseoso",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En el estado gaseoso las partículas se mueven con mayor libertad y desorden, lo que implica mayor entropía."
+    },
+    {
+      "enunciado": "La energía libre de Gibbs se representa con la letra:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "H",
+          "correcta": false
+        },
+        {
+          "texto": "S",
+          "correcta": false
+        },
+        {
+          "texto": "Q",
+          "correcta": false
+        },
+        {
+          "texto": "G",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La energía libre de Gibbs se simboliza con G y determina la espontaneidad a presión y temperatura constantes."
+    },
+    {
+      "enunciado": "Un proceso es espontáneo cuando la variación de energía libre de Gibbs es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Negativa (ΔG < 0)",
+          "correcta": true
+        },
+        {
+          "texto": "Positiva (ΔG > 0)",
+          "correcta": false
+        },
+        {
+          "texto": "Igual a la entalpía",
+          "correcta": false
+        },
+        {
+          "texto": "Igual a cero (ΔG = 0)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un proceso ocurre de forma espontánea cuando ΔG es menor que cero."
+    },
+    {
+      "enunciado": "La ecuación que relaciona la energía libre de Gibbs con la entalpía y la entropía es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "ΔG = ΔH + TΔS",
+          "correcta": false
+        },
+        {
+          "texto": "ΔG = TΔS − ΔH",
+          "correcta": false
+        },
+        {
+          "texto": "ΔG = ΔH − TΔS",
+          "correcta": true
+        },
+        {
+          "texto": "ΔG = ΔH × TΔS",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación de Gibbs es ΔG = ΔH − TΔS, con la temperatura T expresada en kelvin."
+    },
+    {
+      "enunciado": "La fotosíntesis, que requiere energía luminosa para producir glucosa, es un proceso:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Exotérmico",
+          "correcta": false
+        },
+        {
+          "texto": "Sin intercambio de energía",
+          "correcta": false
+        },
+        {
+          "texto": "Endotérmico",
+          "correcta": true
+        },
+        {
+          "texto": "Espontáneo en la oscuridad",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La fotosíntesis absorbe energía (luz) para formar glucosa, por lo que es un proceso endotérmico."
+    },
+    {
+      "enunciado": "La combustión de la madera o del gas natural es un proceso:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Endotérmico",
+          "correcta": false
+        },
+        {
+          "texto": "Sin intercambio de calor",
+          "correcta": false
+        },
+        {
+          "texto": "Exotérmico",
+          "correcta": true
+        },
+        {
+          "texto": "Que absorbe calor del entorno",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Toda combustión libera calor (y a menudo luz) al entorno, por lo que es exotérmica."
+    },
+    {
+      "enunciado": "Cuando el agua líquida se congela y forma hielo, el proceso:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Absorbe calor (endotérmico)",
+          "correcta": false
+        },
+        {
+          "texto": "Libera calor (exotérmico)",
+          "correcta": true
+        },
+        {
+          "texto": "No intercambia energía",
+          "correcta": false
+        },
+        {
+          "texto": "Aumenta la entropía del agua",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al solidificarse, el agua cede calor a los alrededores; la congelación es un proceso exotérmico."
+    },
+    {
+      "enunciado": "En el diagrama de energía de una reacción, los productos quedan a menor energía que los reactivos. Por lo tanto, la reacción es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Exotérmica",
+          "correcta": true
+        },
+        {
+          "texto": "Endotérmica",
+          "correcta": false
+        },
+        {
+          "texto": "Sin variación de entalpía",
+          "correcta": false
+        },
+        {
+          "texto": "Termodinámicamente imposible",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si los productos quedan a menor energía que los reactivos, se libera energía y la reacción es exotérmica (ΔH < 0)."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes procesos produce un AUMENTO de la entropía?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La condensación de un vapor",
+          "correcta": false
+        },
+        {
+          "texto": "La evaporación del agua líquida",
+          "correcta": true
+        },
+        {
+          "texto": "La congelación de un líquido",
+          "correcta": false
+        },
+        {
+          "texto": "La cristalización de una sal disuelta",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al pasar de líquido a gas, las partículas se dispersan y desordenan, aumentando la entropía."
+    },
+    {
+      "enunciado": "En el diagrama de energía de una reacción, los productos quedan a mayor energía que los reactivos. La reacción es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Exotérmica",
+          "correcta": false
+        },
+        {
+          "texto": "Con ΔH negativo",
+          "correcta": false
+        },
+        {
+          "texto": "Endotérmica",
+          "correcta": true
+        },
+        {
+          "texto": "Que libera calor al entorno",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si los productos tienen mayor energía que los reactivos, la reacción absorbe energía: es endotérmica (ΔH > 0)."
+    },
+    {
+      "enunciado": "La ley de Hess establece que la variación de entalpía de una reacción:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Depende solo de los estados inicial y final, no del camino seguido",
+          "correcta": true
+        },
+        {
+          "texto": "Depende del número de etapas del proceso",
+          "correcta": false
+        },
+        {
+          "texto": "Es siempre negativa",
+          "correcta": false
+        },
+        {
+          "texto": "Depende de la velocidad de la reacción",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Según la ley de Hess, ΔH es una función de estado: depende únicamente de los estados inicial y final."
+    },
+    {
+      "enunciado": "La variación de entalpía de una reacción se calcula como:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "H(reactivos) − H(productos)",
+          "correcta": false
+        },
+        {
+          "texto": "H(productos) − H(reactivos)",
+          "correcta": true
+        },
+        {
+          "texto": "H(productos) × H(reactivos)",
+          "correcta": false
+        },
+        {
+          "texto": "H(productos) + H(reactivos)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔH = H(productos) − H(reactivos); si el resultado es negativo, la reacción libera calor."
+    },
+    {
+      "enunciado": "Para la reacción A → B, ΔH = −150 kJ. ¿Cuál es la variación de entalpía de la reacción inversa B → A?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "+150 kJ",
+          "correcta": true
+        },
+        {
+          "texto": "0 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−150 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−300 kJ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al invertir una reacción, ΔH cambia de signo: de −150 kJ pasa a +150 kJ."
+    },
+    {
+      "enunciado": "Si la reacción N₂ + O₂ → 2NO tiene ΔH = +180 kJ, ¿cuál es ΔH para 2N₂ + 2O₂ → 4NO?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−180 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "+90 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "+180 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "+360 kJ",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Al multiplicar la ecuación por 2, la entalpía también se duplica: 2 × (+180) = +360 kJ."
+    },
+    {
+      "enunciado": "La entalpía estándar de formación de un elemento en su estado más estable (por ejemplo, O₂ gaseoso) es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Siempre negativa",
+          "correcta": false
+        },
+        {
+          "texto": "Siempre positiva",
+          "correcta": false
+        },
+        {
+          "texto": "Igual a cero",
+          "correcta": true
+        },
+        {
+          "texto": "Igual a 100 kJ/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por convención, la entalpía de formación de un elemento en su estado estándar es cero."
+    },
+    {
+      "enunciado": "¿Cuánto calor absorben 200 g de agua al calentarse de 20 °C a 45 °C? (c del agua = 4,18 J/(g·°C))",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "20900 J",
+          "correcta": true
+        },
+        {
+          "texto": "8360 J",
+          "correcta": false
+        },
+        {
+          "texto": "4180 J",
+          "correcta": false
+        },
+        {
+          "texto": "1045 J",
+          "correcta": false
+        }
+      ],
+      "explicacion": "q = m·c·ΔT = 200 × 4,18 × 25 = 20900 J (≈ 20,9 kJ)."
+    },
+    {
+      "enunciado": "Respecto a la energía de enlace, romper un enlace químico:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Libera energía (proceso exotérmico)",
+          "correcta": false
+        },
+        {
+          "texto": "No implica cambio de energía",
+          "correcta": false
+        },
+        {
+          "texto": "Requiere energía (proceso endotérmico)",
+          "correcta": true
+        },
+        {
+          "texto": "Siempre produce un gas",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Romper enlaces siempre absorbe energía (endotérmico); formar enlaces la libera (exotérmico)."
+    },
+    {
+      "enunciado": "Usando energías de enlace (H–H = 436, Cl–Cl = 242, H–Cl = 431 kJ/mol), la variación de entalpía de H₂ + Cl₂ → 2HCl es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "+184 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−94 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−184 kJ",
+          "correcta": true
+        },
+        {
+          "texto": "−1540 kJ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔH = enlaces rotos − enlaces formados = (436 + 242) − 2(431) = 678 − 862 = −184 kJ."
+    },
+    {
+      "enunciado": "La entalpía de una reacción a partir de entalpías de formación se calcula como:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "ΣΔH°f(reactivos) − ΣΔH°f(productos)",
+          "correcta": false
+        },
+        {
+          "texto": "ΣΔH°f(productos) − ΣΔH°f(reactivos)",
+          "correcta": true
+        },
+        {
+          "texto": "ΣΔH°f(productos) + ΣΔH°f(reactivos)",
+          "correcta": false
+        },
+        {
+          "texto": "ΣΔH°f(productos) × ΣΔH°f(reactivos)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔH°reacción = ΣΔH°f(productos) − ΣΔH°f(reactivos), considerando los coeficientes estequiométricos."
+    },
+    {
+      "enunciado": "¿En cuál de los siguientes casos aumenta la entropía del sistema?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Cuando disminuye el número de moles de gas",
+          "correcta": false
+        },
+        {
+          "texto": "Cuando un gas se condensa a líquido",
+          "correcta": false
+        },
+        {
+          "texto": "Cuando aumenta el número de moles de gas",
+          "correcta": true
+        },
+        {
+          "texto": "Cuando un líquido se solidifica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si en la reacción aumenta el número de moles de gas, crece el desorden y la entropía aumenta (ΔS > 0)."
+    },
+    {
+      "enunciado": "Una reacción tiene ΔH = −50 kJ y ΔS = +100 J/K a 300 K. ¿Cuál es su ΔG?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "+30 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−20 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−50 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−80 kJ",
+          "correcta": true
+        }
+      ],
+      "explicacion": "ΔG = ΔH − TΔS = −50 − (300 × 0,100) = −50 − 30 = −80 kJ (convirtiendo ΔS a kJ/K)."
+    },
+    {
+      "enunciado": "Si una reacción tiene ΔH < 0 (exotérmica) y ΔS > 0 (aumenta el desorden), entonces es espontánea:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Solo a baja temperatura",
+          "correcta": false
+        },
+        {
+          "texto": "A cualquier temperatura",
+          "correcta": true
+        },
+        {
+          "texto": "Solo a alta temperatura",
+          "correcta": false
+        },
+        {
+          "texto": "Nunca es espontánea",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con ΔH < 0 y ΔS > 0, ΔG = ΔH − TΔS es siempre negativo, por lo que es espontánea a toda temperatura."
+    },
+    {
+      "enunciado": "Si una reacción tiene ΔH > 0 (endotérmica) y ΔS < 0 (disminuye el desorden), entonces:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Nunca es espontánea (ΔG siempre positivo)",
+          "correcta": true
+        },
+        {
+          "texto": "Es espontánea a cualquier temperatura",
+          "correcta": false
+        },
+        {
+          "texto": "Es espontánea solo a alta temperatura",
+          "correcta": false
+        },
+        {
+          "texto": "Es espontánea solo a baja temperatura",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con ΔH > 0 y ΔS < 0, ΔG = ΔH − TΔS es siempre positivo; la reacción no es espontánea a ninguna temperatura."
+    },
+    {
+      "enunciado": "El instrumento utilizado para medir el calor intercambiado en una reacción es el:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Termómetro",
+          "correcta": false
+        },
+        {
+          "texto": "Calorímetro",
+          "correcta": true
+        },
+        {
+          "texto": "Barómetro",
+          "correcta": false
+        },
+        {
+          "texto": "Manómetro",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El calorímetro permite medir el calor absorbido o liberado en un proceso mediante q = m·c·ΔT."
+    },
+    {
+      "enunciado": "La variación de entropía estándar de una reacción se calcula como:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "ΣS(reactivos) − ΣS(productos)",
+          "correcta": false
+        },
+        {
+          "texto": "ΣS(productos) − ΣS(reactivos)",
+          "correcta": true
+        },
+        {
+          "texto": "ΣS(productos) + ΣS(reactivos)",
+          "correcta": false
+        },
+        {
+          "texto": "ΣS(reactivos) × ΣS(productos)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔS°reacción = ΣS(productos) − ΣS(reactivos), usando las entropías molares estándar y sus coeficientes."
+    },
+    {
+      "enunciado": "Dadas: (1) C(s) + O₂(g) → CO₂(g), ΔH = −393 kJ; (2) CO(g) + ½O₂(g) → CO₂(g), ΔH = −283 kJ. Por la ley de Hess, ¿cuál es ΔH para C(s) + ½O₂(g) → CO(g)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "+676 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "+110 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−110 kJ",
+          "correcta": true
+        },
+        {
+          "texto": "−676 kJ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se invierte la reacción (2) y se suma a la (1): ΔH = −393 − (−283) = −110 kJ."
+    },
+    {
+      "enunciado": "Una reacción endotérmica tiene ΔH = +100 kJ y ΔS = +0,200 kJ/K. ¿Cuál es su ΔG a 600 K y qué indica?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−20 kJ, espontánea",
+          "correcta": true
+        },
+        {
+          "texto": "+20 kJ, no espontánea",
+          "correcta": false
+        },
+        {
+          "texto": "−220 kJ, espontánea",
+          "correcta": false
+        },
+        {
+          "texto": "+220 kJ, no espontánea",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔG = 100 − (600 × 0,200) = 100 − 120 = −20 kJ; como ΔG < 0, la reacción es espontánea a 600 K."
+    },
+    {
+      "enunciado": "Para CH₄ + 2O₂ → CO₂ + 2H₂O, usando energías de enlace (C–H = 413, O=O = 498, C=O = 799, O–H = 463 kJ/mol), la variación de entalpía es aproximadamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−1900 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−802 kJ",
+          "correcta": true
+        },
+        {
+          "texto": "−498 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "+802 kJ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Rotos: 4(413) + 2(498) = 2648; formados: 2(799) + 4(463) = 3450; ΔH = 2648 − 3450 = −802 kJ."
+    },
+    {
+      "enunciado": "Para CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l), con ΔH°f: CH₄ = −75, CO₂ = −393, H₂O(l) = −286 kJ/mol y O₂ = 0, la entalpía de reacción es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "+890 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−604 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−890 kJ",
+          "correcta": true
+        },
+        {
+          "texto": "−965 kJ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔH = [(−393) + 2(−286)] − [(−75) + 0] = −965 + 75 = −890 kJ."
+    },
+    {
+      "enunciado": "¿Cuál es el signo esperado de ΔS para la reacción N₂(g) + 3H₂(g) → 2NH₃(g)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Positivo",
+          "correcta": false
+        },
+        {
+          "texto": "Cero",
+          "correcta": false
+        },
+        {
+          "texto": "No se puede predecir",
+          "correcta": false
+        },
+        {
+          "texto": "Negativo",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se pasa de 4 moles de gas a 2 moles de gas; al disminuir el desorden, ΔS es negativo."
+    },
+    {
+      "enunciado": "Una reacción tiene ΔH = +40 kJ y ΔS = +0,080 kJ/K. ¿A partir de qué temperatura se vuelve espontánea?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "50 K",
+          "correcta": false
+        },
+        {
+          "texto": "320 K",
+          "correcta": false
+        },
+        {
+          "texto": "500 K",
+          "correcta": true
+        },
+        {
+          "texto": "3200 K",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El límite es ΔG = 0, es decir, T = ΔH/ΔS = 40/0,080 = 500 K; por encima de 500 K, ΔG < 0 y la reacción es espontánea."
+    },
+    {
+      "enunciado": "Si la reacción A → 2B tiene ΔH = +60 kJ, ¿cuál es ΔH para 4B → 2A?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "+120 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "+60 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−60 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−120 kJ",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La inversa de A → 2B es 2B → A con ΔH = −60 kJ; al multiplicarla por 2 se obtiene 4B → 2A, ΔH = −120 kJ."
+    },
+    {
+      "enunciado": "La combustión del metano libera 890 kJ por mol (M = 16 g/mol). ¿Cuánta energía se libera por gramo de metano?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "16 kJ/g",
+          "correcta": false
+        },
+        {
+          "texto": "55,6 kJ/g",
+          "correcta": true
+        },
+        {
+          "texto": "890 kJ/g",
+          "correcta": false
+        },
+        {
+          "texto": "14240 kJ/g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Energía por gramo = 890 kJ / 16 g = 55,6 kJ/g."
+    },
+    {
+      "enunciado": "¿Cuál es el signo de ΔS para la descomposición CaCO₃(s) → CaO(s) + CO₂(g)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Positivo",
+          "correcta": true
+        },
+        {
+          "texto": "Negativo",
+          "correcta": false
+        },
+        {
+          "texto": "Cero",
+          "correcta": false
+        },
+        {
+          "texto": "Indeterminado",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se genera un gas (CO₂) a partir de un sólido, lo que aumenta el desorden; por ello ΔS es positivo."
+    },
+    {
+      "enunciado": "Una reacción tiene ΔH = −20 kJ y ΔS = −50 J/K a 500 K. ¿Cuál es su ΔG y es espontánea?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−45 kJ, espontánea",
+          "correcta": false
+        },
+        {
+          "texto": "−20 kJ, espontánea",
+          "correcta": false
+        },
+        {
+          "texto": "+25 kJ, no espontánea",
+          "correcta": false
+        },
+        {
+          "texto": "+5 kJ, no espontánea",
+          "correcta": true
+        }
+      ],
+      "explicacion": "ΔG = −20 − (500 × (−0,050)) = −20 + 25 = +5 kJ; como ΔG > 0, la reacción no es espontánea."
+    },
+    {
+      "enunciado": "Para N₂ + 3H₂ → 2NH₃, con energías de enlace (N≡N = 945, H–H = 436, N–H = 391 kJ/mol), ΔH es aproximadamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "+93 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−93 kJ",
+          "correcta": true
+        },
+        {
+          "texto": "−1500 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−2346 kJ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Rotos: 945 + 3(436) = 2253; formados: 6(391) = 2346; ΔH = 2253 − 2346 = −93 kJ."
+    },
+    {
+      "enunciado": "Para la formación de agua 2H₂(g) + O₂(g) → 2H₂O(l), con ΔH°f[H₂O(l)] = −286 kJ/mol, la entalpía de reacción es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−572 kJ",
+          "correcta": true
+        },
+        {
+          "texto": "−286 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−143 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "+572 kJ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔH = 2 × (−286) − 0 = −572 kJ, ya que los elementos H₂ y O₂ tienen ΔH°f = 0."
+    },
+    {
+      "enunciado": "Una reacción libera 4180 J que calientan 100 g de agua (c = 4,18 J/(g·°C)). ¿Cuál es el aumento de temperatura del agua?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "100 °C",
+          "correcta": false
+        },
+        {
+          "texto": "41,8 °C",
+          "correcta": false
+        },
+        {
+          "texto": "10 °C",
+          "correcta": true
+        },
+        {
+          "texto": "1 °C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔT = q/(m·c) = 4180 / (100 × 4,18) = 10 °C."
+    },
+    {
+      "enunciado": "¿Cuál combinación de signos garantiza que una reacción sea espontánea solo a TEMPERATURAS ALTAS?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "ΔH < 0 y ΔS > 0",
+          "correcta": false
+        },
+        {
+          "texto": "ΔH < 0 y ΔS < 0",
+          "correcta": false
+        },
+        {
+          "texto": "ΔH > 0 y ΔS > 0",
+          "correcta": true
+        },
+        {
+          "texto": "ΔH > 0 y ΔS < 0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con ΔH > 0 y ΔS > 0, el término −TΔS solo supera a ΔH (haciendo ΔG < 0) cuando T es suficientemente alta."
+    },
+    {
+      "enunciado": "¿Cuál combinación de signos hace que una reacción sea espontánea solo a TEMPERATURAS BAJAS?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "ΔH < 0 y ΔS < 0",
+          "correcta": true
+        },
+        {
+          "texto": "ΔH > 0 y ΔS > 0",
+          "correcta": false
+        },
+        {
+          "texto": "ΔH < 0 y ΔS > 0",
+          "correcta": false
+        },
+        {
+          "texto": "ΔH > 0 y ΔS < 0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con ΔH < 0 y ΔS < 0, ΔG = ΔH − TΔS es negativo solo cuando T es pequeña, manteniendo bajo el término positivo −TΔS."
+    },
+    {
+      "enunciado": "Una reacción tiene ΔH = −92 kJ y ΔS = −0,198 kJ/K. ¿Cuál es su ΔG a 298 K?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "+59 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "+33 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−33 kJ",
+          "correcta": true
+        },
+        {
+          "texto": "−151 kJ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔG = −92 − (298 × (−0,198)) = −92 + 59 = −33 kJ; al ser ΔG < 0, a 298 K la reacción es espontánea."
+    }
+  ]
+}

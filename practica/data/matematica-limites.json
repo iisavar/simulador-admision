@@ -1,0 +1,1105 @@
+{
+  "id": "matematica-limites",
+  "materia": "matematica",
+  "tema": "Límites y continuidad",
+  "bloque": "Cálculo (preuniversitario)",
+  "nivel": "avanzado",
+  "clase": null,
+  "repaso": {
+    "idea": "lím (x→a) f(x) es el valor al que se acerca f(x) cuando x se acerca a a. Primero sustituye; si sale 0/0, factoriza o racionaliza, simplifica y vuelve a sustituir. Si x→∞ en un cociente de polinomios, compara los grados.",
+    "ejemplo": {
+      "enunciado": "Calcula lím (x→5) de (x² − 25)/(x − 5).",
+      "pasos": [
+        "Sustituir da (25 − 25)/(5 − 5) = 0/0: es una indeterminación.",
+        "Factoriza el numerador: x² − 25 = (x − 5)(x + 5).",
+        "Simplifica el factor (x − 5): queda x + 5.",
+        "Sustituye x = 5: 5 + 5 = 10."
+      ],
+      "resultado": "10"
+    },
+    "ojo": "Creer que 0/0 significa que el límite es 0 o que no existe: primero hay que simplificar."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Qué representa la expresión \"el límite de f(x) cuando x tiende a 2 es igual a 5\"?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Que f(2) debe ser exactamente 5 en todos los casos",
+          "correcta": false
+        },
+        {
+          "texto": "Que x se aproxima al valor 5",
+          "correcta": false
+        },
+        {
+          "texto": "Que f(x) se aproxima a 5 a medida que x se acerca a 2",
+          "correcta": true
+        },
+        {
+          "texto": "Que f(x) nunca puede tomar el valor 5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El límite describe el valor al que tiende f(x) cuando x se acerca a 2, sin importar el valor exacto que tome la función en x = 2."
+    },
+    {
+      "enunciado": "Calcula lím (x→3) de la función constante 7.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "21",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El límite de una función constante es la propia constante, por lo que el resultado es 7."
+    },
+    {
+      "enunciado": "Calcula lím (x→4) de x.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como lím (x→a) x = a, el resultado es 4."
+    },
+    {
+      "enunciado": "Calcula lím (x→2) de (3x + 1).",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por sustitución directa: 3(2) + 1 = 7."
+    },
+    {
+      "enunciado": "Calcula lím (x→1) de (x² + 2x + 1).",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sustituyendo x = 1: 1 + 2 + 1 = 4."
+    },
+    {
+      "enunciado": "Calcula lím (x→0) de (5x − 3).",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por sustitución directa: 5(0) − 3 = −3."
+    },
+    {
+      "enunciado": "Calcula lím (x→5) de (x/5).",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Sustituyendo x = 5: 5/5 = 1."
+    },
+    {
+      "enunciado": "Calcula lím (x→1) de (2x + 4)/(x + 1).",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El denominador no se anula: (2 + 4)/(1 + 1) = 6/2 = 3."
+    },
+    {
+      "enunciado": "Calcula lím (x→3) de x².",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por sustitución directa: 3² = 9."
+    },
+    {
+      "enunciado": "Calcula lím (x→−2) de (x + 5).",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sustituyendo x = −2: −2 + 5 = 3."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes funciones es continua en todos los números reales?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "f(x) = 1/x",
+          "correcta": false
+        },
+        {
+          "texto": "f(x) = x² + 1",
+          "correcta": true
+        },
+        {
+          "texto": "f(x) = 1/(x − 2)",
+          "correcta": false
+        },
+        {
+          "texto": "f(x) = (x + 1)/(x − 1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Todo polinomio es continuo en todo ℝ; las otras opciones tienen un denominador que se anula y allí no son continuas."
+    },
+    {
+      "enunciado": "Si lím (x→a⁻) f(x) = 3 y lím (x→a⁺) f(x) = 3, ¿cuánto vale lím (x→a) f(x)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "No existe",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El límite existe y vale 3 porque ambos límites laterales coinciden."
+    },
+    {
+      "enunciado": "Calcula lím (x→−1) de x³.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−1",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por sustitución directa: (−1)³ = −1."
+    },
+    {
+      "enunciado": "Calcula lím (x→9) de √x.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "81",
+          "correcta": false
+        },
+        {
+          "texto": "4,5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La raíz cuadrada es continua para x ≥ 0, así que √9 = 3."
+    },
+    {
+      "enunciado": "Calcula lím (x→1) de (4x² − 2x).",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sustituyendo x = 1: 4(1) − 2(1) = 4 − 2 = 2."
+    },
+    {
+      "enunciado": "Calcula lím (x→3) de (x² − 9)/(x − 3).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "No existe",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es una indeterminación 0/0; factorizando (x−3)(x+3)/(x−3) = x+3, que en x = 3 da 6."
+    },
+    {
+      "enunciado": "Calcula lím (x→1) de (x² − 1)/(x − 1).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Factorizando: (x−1)(x+1)/(x−1) = x+1, que en x = 1 da 2."
+    },
+    {
+      "enunciado": "Calcula lím (x→0) de (x² − 3x)/x.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": true
+        },
+        {
+          "texto": "No existe",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Simplificando x(x−3)/x = x−3, que en x = 0 da −3."
+    },
+    {
+      "enunciado": "Calcula lím (x→−2) de (x² − 4)/(x + 2).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−4",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Factorizando: (x+2)(x−2)/(x+2) = x−2, que en x = −2 da −4."
+    },
+    {
+      "enunciado": "Calcula lím (x→4) de (√x − 2)/(x − 4).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/4",
+          "correcta": true
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "No existe",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Racionalizando, (√x − 2)/(x − 4) = 1/(√x + 2), que en x = 4 vale 1/4."
+    },
+    {
+      "enunciado": "Calcula lím (x→0) de (√(x + 1) − 1)/x.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Racionalizando, la expresión equivale a 1/(√(x+1) + 1), que en x = 0 vale 1/2."
+    },
+    {
+      "enunciado": "Calcula lím (x→∞) de (3x + 2)/(x − 5).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "∞",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "−2/5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Numerador y denominador tienen igual grado; el límite es el cociente de los coeficientes principales, 3/1 = 3."
+    },
+    {
+      "enunciado": "Calcula lím (x→∞) de (2x² + 1)/(x² + x).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "∞",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Al tener el mismo grado, el límite es el cociente de coeficientes principales, 2/1 = 2."
+    },
+    {
+      "enunciado": "Calcula lím (x→∞) de (5x + 1)/(x² + 3).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "∞",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El grado del denominador es mayor que el del numerador, por lo que el límite es 0."
+    },
+    {
+      "enunciado": "Calcula lím (x→∞) de (x³ + 1)/(x² + 2).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "+∞",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El numerador tiene grado mayor (3 > 2), así que la función crece sin cota y el límite es +∞."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes expresiones es una forma indeterminada?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5/0",
+          "correcta": false
+        },
+        {
+          "texto": "0/5",
+          "correcta": false
+        },
+        {
+          "texto": "0/0",
+          "correcta": true
+        },
+        {
+          "texto": "3/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0/0 es indeterminada porque, según la función, el límite puede dar cualquier valor; 0/5 = 0, y un número distinto de 0 entre algo que tiende a 0 da un límite infinito, no una indeterminación."
+    },
+    {
+      "enunciado": "La función f(x) = (x² − 1)/(x − 1) no está definida en x = 1. ¿Qué valor debe asignarse a f(1) para que sea continua en ese punto?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "No es posible",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El límite cuando x→1 es 2; definiendo f(1) = 2 la discontinuidad se vuelve evitable y la función es continua."
+    },
+    {
+      "enunciado": "Sea f(x) = x + 1 si x < 2 y f(x) = 3 si x ≥ 2. ¿Es f continua en x = 2?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "No, porque f no está definida en x = 2",
+          "correcta": false
+        },
+        {
+          "texto": "No, porque el límite por la izquierda es 2",
+          "correcta": false
+        },
+        {
+          "texto": "Sí, porque los límites laterales y f(2) valen 3",
+          "correcta": true
+        },
+        {
+          "texto": "No se puede determinar con los datos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El límite por la izquierda es 2 + 1 = 3, el límite por la derecha es 3 y f(2) = 3; al coincidir, f es continua en x = 2."
+    },
+    {
+      "enunciado": "Calcula lím (x→1) de (x³ − 1)/(x − 1).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como x³ − 1 = (x − 1)(x² + x + 1), al simplificar queda x² + x + 1, que en x = 1 vale 3."
+    },
+    {
+      "enunciado": "Calcula lím (x→2) de (x² − x − 2)/(x − 2).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Factorizando: (x − 2)(x + 1)/(x − 2) = x + 1, que en x = 2 da 3."
+    },
+    {
+      "enunciado": "Calcula lím (x→−3) de (x² + x − 6)/(x + 3).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−5",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Factorizando: (x + 3)(x − 2)/(x + 3) = x − 2, que en x = −3 da −5."
+    },
+    {
+      "enunciado": "Calcula lím (x→0) de (sen x)/x.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "∞",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "No existe",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es el límite trigonométrico fundamental: lím (x→0) (sen x)/x = 1."
+    },
+    {
+      "enunciado": "Calcula lím (x→0) de (sen 3x)/x.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Reescribiendo: (sen 3x)/x = 3·(sen 3x)/(3x) → 3·1 = 3."
+    },
+    {
+      "enunciado": "Calcula lím (x→0) de (sen 2x)/(5x).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2/5",
+          "correcta": true
+        },
+        {
+          "texto": "5/2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Reescribiendo: (sen 2x)/(5x) = (2/5)·(sen 2x)/(2x) → 2/5."
+    },
+    {
+      "enunciado": "Calcula lím (x→0) de (tan x)/x.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "∞",
+          "correcta": false
+        },
+        {
+          "texto": "No existe",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "(tan x)/x = ((sen x)/x)·(1/cos x) → 1·1 = 1."
+    },
+    {
+      "enunciado": "Calcula lím (x→0) de (1 − cos x)/x.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "No existe",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        }
+      ],
+      "explicacion": "(1 − cos x)/x tiende a 0 cuando x→0; en cambio (1 − cos x)/x² tiende a 1/2."
+    },
+    {
+      "enunciado": "Calcula lím (x→∞) de (1 + 1/x)ˣ.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "∞",
+          "correcta": false
+        },
+        {
+          "texto": "e",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es la definición del número e ≈ 2,718."
+    },
+    {
+      "enunciado": "Calcula lím (x→∞) de (√(x² + x) − x).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "∞",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Racionalizando: √(x²+x) − x = x/(√(x²+x) + x) → 1/2."
+    },
+    {
+      "enunciado": "Calcula lím (x→∞) de √(x² + 1)/x.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "∞",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√(x² + 1)/x = √(1 + 1/x²) → 1 cuando x→∞."
+    },
+    {
+      "enunciado": "Calcula lím (x→0) de 1/x.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "No existe",
+          "correcta": true
+        },
+        {
+          "texto": "+∞",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la derecha tiende a +∞ y por la izquierda a −∞; como los límites laterales difieren, el límite no existe."
+    },
+    {
+      "enunciado": "Sea f(x) = ax + 1 si x < 3 y f(x) = x² − 5 si x ≥ 3. ¿Qué valor de a hace que f sea continua en x = 3?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Igualando los límites laterales: 3a + 1 = 9 − 5 = 4, de donde a = 1."
+    },
+    {
+      "enunciado": "Calcula lím (x→3) de (x² − 9)/(x² − x − 6).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6/5",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "5/6",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Factorizando: (x−3)(x+3)/[(x−3)(x+2)] = (x+3)/(x+2), que en x = 3 vale 6/5."
+    },
+    {
+      "enunciado": "Calcula lím (x→1) de (x³ − 1)/(x² − 1).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3/2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Factorizando: (x−1)(x²+x+1)/[(x−1)(x+1)] = (x²+x+1)/(x+1), que en x = 1 vale 3/2."
+    },
+    {
+      "enunciado": "Calcula lím (x→0) de (√(4 + x) − 2)/x.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1/8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Racionalizando, la expresión equivale a 1/(√(4+x) + 2), que en x = 0 vale 1/4."
+    },
+    {
+      "enunciado": "Calcula lím (x→2) de (x − 2)/(√(x + 2) − 2).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Racionalizando el denominador se obtiene √(x+2) + 2, que en x = 2 vale √4 + 2 = 4."
+    },
+    {
+      "enunciado": "Calcula lím (x→∞) de (3x² − 2x + 1)/(5x² + x).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "5/3",
+          "correcta": false
+        },
+        {
+          "texto": "∞",
+          "correcta": false
+        },
+        {
+          "texto": "3/5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Numerador y denominador tienen grado 2; el límite es el cociente de coeficientes principales, 3/5."
+    },
+    {
+      "enunciado": "Calcula lím (x→2⁺) de 1/(x − 2).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−∞",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "No existe",
+          "correcta": false
+        },
+        {
+          "texto": "+∞",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Cuando x→2⁺, el denominador x − 2 tiende a 0 por valores positivos, por lo que 1/(x − 2) → +∞."
+    }
+  ]
+}

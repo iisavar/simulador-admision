@@ -1,0 +1,1108 @@
+{
+  "id": "matematica-potenciacion",
+  "materia": "matematica",
+  "tema": "Potenciación y sus propiedades",
+  "bloque": "Potencias y raíces",
+  "nivel": "basico",
+  "clase": {
+    "titulo": "Ley de signos y operaciones combinadas",
+    "url": "../ley-de-signos/",
+    "lamina": 30
+  },
+  "repaso": {
+    "idea": "Una potencia es una multiplicación repetida: la base se multiplica por sí misma tantas veces como indica el exponente. Con la misma base, al multiplicar se suman los exponentes, al dividir se restan y en una potencia de potencia se multiplican.",
+    "ejemplo": {
+      "enunciado": "Simplifica (2³ · 2⁴) ÷ 2⁵.",
+      "pasos": [
+        "Multiplicación de igual base: se suman los exponentes, 2³ · 2⁴ = 2⁷.",
+        "División de igual base: se restan los exponentes, 2⁷ ÷ 2⁵ = 2².",
+        "Calcula: 2² = 2 · 2 = 4."
+      ],
+      "resultado": "4"
+    },
+    "ojo": "2³ no es 2 · 3 = 6, sino 2 · 2 · 2 = 8. Cuidado con el signo: (−2)⁴ = 16 (exponente par, positivo), pero (−2)³ = −8 (exponente impar, negativo). Y un exponente negativo no da un número negativo: 2⁻³ = 1/8."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el resultado de 2³?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "2³ significa 2 · 2 · 2 = 8. La opción 6 corresponde a multiplicar la base por el exponente."
+    },
+    {
+      "enunciado": "¿Cuánto es 5²?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "52",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": true
+        }
+      ],
+      "explicacion": "5² = 5 · 5 = 25. La opción 10 surge de multiplicar 5 por 2."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de 10²?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "1000",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "100",
+          "correcta": true
+        }
+      ],
+      "explicacion": "10² = 10 · 10 = 100; una potencia de 10 lleva tantos ceros como indica el exponente."
+    },
+    {
+      "enunciado": "¿Cuánto es 3²?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3² = 3 · 3 = 9. La opción 6 corresponde a 3 · 2."
+    },
+    {
+      "enunciado": "¿Cuánto es 2⁴?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2⁴ = 2 · 2 · 2 · 2 = 16. La opción 8 corresponde a 2³."
+    },
+    {
+      "enunciado": "En la potencia 7³, ¿cuál es la base?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "21",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La base es el factor que se repite, es decir 7; el 3 es el exponente."
+    },
+    {
+      "enunciado": "En la potencia 6⁴, ¿cuál es el exponente?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El exponente indica cuántas veces se multiplica la base; aquí es 4."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de 10³?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1000",
+          "correcta": true
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        },
+        {
+          "texto": "300",
+          "correcta": false
+        }
+      ],
+      "explicacion": "10³ = 10 · 10 · 10 = 1000; el exponente 3 indica tres ceros."
+    },
+    {
+      "enunciado": "¿Cuánto es 1⁵?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número 1 elevado a cualquier exponente sigue siendo 1: 1 · 1 · 1 · 1 · 1 = 1."
+    },
+    {
+      "enunciado": "¿Cuál es el resultado de 9⁰?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "90",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Todo número distinto de cero elevado al exponente 0 es igual a 1."
+    },
+    {
+      "enunciado": "¿Cuánto es 8¹?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Todo número elevado al exponente 1 es igual a sí mismo: 8¹ = 8."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de 3³?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3³ = 3 · 3 · 3 = 27. La opción 9 corresponde a 3²."
+    },
+    {
+      "enunciado": "¿Cuánto es 5³?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "75",
+          "correcta": false
+        },
+        {
+          "texto": "125",
+          "correcta": true
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        }
+      ],
+      "explicacion": "5³ = 5 · 5 · 5 = 125. La opción 25 corresponde a 5²."
+    },
+    {
+      "enunciado": "¿Cómo se expresa 2 · 2 · 2 · 2 · 2 como una potencia?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2⁵",
+          "correcta": true
+        },
+        {
+          "texto": "5²",
+          "correcta": false
+        },
+        {
+          "texto": "2⁴",
+          "correcta": false
+        },
+        {
+          "texto": "10²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El factor 2 se repite 5 veces, por lo que se escribe 2⁵."
+    },
+    {
+      "enunciado": "¿Cuánto es 0⁴?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Cero elevado a un exponente positivo da 0, porque 0 · 0 · 0 · 0 = 0."
+    },
+    {
+      "enunciado": "¿Cuál es el resultado de 3⁴?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "81",
+          "correcta": true
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3⁴ = 3 · 3 · 3 · 3 = 81. La opción 27 corresponde a 3³."
+    },
+    {
+      "enunciado": "¿Cuál es el resultado de (−2)³?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "−6",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "−8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Una base negativa elevada a exponente impar da resultado negativo: (−2)³ = −8."
+    },
+    {
+      "enunciado": "¿Cuánto es (−3)²?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−9",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "−6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una base negativa elevada a exponente par da resultado positivo: (−3)² = 9."
+    },
+    {
+      "enunciado": "¿Cuánto es (−2)⁴?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−16",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": true
+        },
+        {
+          "texto": "−8",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El exponente 4 es par, así que el resultado es positivo: (−2)⁴ = 16."
+    },
+    {
+      "enunciado": "Al multiplicar potencias de igual base, ¿cuál es el resultado de 2³ · 2⁴?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2¹²",
+          "correcta": false
+        },
+        {
+          "texto": "4⁷",
+          "correcta": false
+        },
+        {
+          "texto": "2⁷",
+          "correcta": true
+        },
+        {
+          "texto": "2¹",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con la misma base se conserva la base y se suman los exponentes: 2³⁺⁴ = 2⁷."
+    },
+    {
+      "enunciado": "Al dividir potencias de igual base, ¿cuál es el resultado de 5⁶ ÷ 5²?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5³",
+          "correcta": false
+        },
+        {
+          "texto": "5⁸",
+          "correcta": false
+        },
+        {
+          "texto": "5⁴",
+          "correcta": true
+        },
+        {
+          "texto": "1⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la división se conserva la base y se restan los exponentes: 5⁶⁻² = 5⁴."
+    },
+    {
+      "enunciado": "¿Cómo queda (3²)⁴ al aplicar la propiedad de potencia de una potencia?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3⁸",
+          "correcta": true
+        },
+        {
+          "texto": "3⁶",
+          "correcta": false
+        },
+        {
+          "texto": "3¹⁶",
+          "correcta": false
+        },
+        {
+          "texto": "6⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la potencia de una potencia se multiplican los exponentes: 2 · 4 = 8, así que (3²)⁴ = 3⁸."
+    },
+    {
+      "enunciado": "¿Cuánto es 7⁰ + 7¹?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        }
+      ],
+      "explicacion": "7⁰ = 1 y 7¹ = 7, entonces 1 + 7 = 8."
+    },
+    {
+      "enunciado": "¿Cuál es el resultado de (−10)³?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−1000",
+          "correcta": true
+        },
+        {
+          "texto": "1000",
+          "correcta": false
+        },
+        {
+          "texto": "−100",
+          "correcta": false
+        },
+        {
+          "texto": "−30",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Base negativa con exponente impar: (−10)³ = −1000."
+    },
+    {
+      "enunciado": "¿Cómo se expresa 1 000 000 como potencia de 10?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10⁵",
+          "correcta": false
+        },
+        {
+          "texto": "10⁷",
+          "correcta": false
+        },
+        {
+          "texto": "6¹⁰",
+          "correcta": false
+        },
+        {
+          "texto": "10⁶",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Un millón tiene seis ceros, por lo que equivale a 10⁶."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de 2⁵ · 2⁰?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "32",
+          "correcta": true
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2⁰ = 1, así que 2⁵ · 1 = 32; también 2⁵⁺⁰ = 2⁵ = 32."
+    },
+    {
+      "enunciado": "Usando la propiedad de la potencia de un producto, ¿cuánto es (2 · 3)²?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "72",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": true
+        }
+      ],
+      "explicacion": "(2 · 3)² = 6² = 36, equivalente a 2² · 3² = 4 · 9 = 36."
+    },
+    {
+      "enunciado": "¿Cuál es el resultado de 4³ ÷ 4³?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al restar exponentes iguales queda 4⁰ = 1; todo número dividido por sí mismo da 1."
+    },
+    {
+      "enunciado": "¿Cómo se escribe 0,001 como potencia de 10?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10⁻³",
+          "correcta": true
+        },
+        {
+          "texto": "10³",
+          "correcta": false
+        },
+        {
+          "texto": "10⁻²",
+          "correcta": false
+        },
+        {
+          "texto": "10⁻⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,001 = 1/1000 = 1/10³ = 10⁻³."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de 10⁻²?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−100",
+          "correcta": false
+        },
+        {
+          "texto": "0,01",
+          "correcta": true
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        },
+        {
+          "texto": "−0,02",
+          "correcta": false
+        }
+      ],
+      "explicacion": "10⁻² = 1/10² = 1/100 = 0,01; el exponente negativo indica inverso, no signo negativo."
+    },
+    {
+      "enunciado": "¿Cuánto es (−1)¹⁰⁰?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "−100",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 100 es par, (−1)¹⁰⁰ = 1; con exponente impar daría −1."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de 2⁻³?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−8",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "−1/8",
+          "correcta": false
+        },
+        {
+          "texto": "1/8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Un exponente negativo indica el inverso: 2⁻³ = 1/2³ = 1/8."
+    },
+    {
+      "enunciado": "¿Cuánto es (2/3)²?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4/9",
+          "correcta": true
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "4/3",
+          "correcta": false
+        },
+        {
+          "texto": "4/6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se eleva numerador y denominador: (2/3)² = 2²/3² = 4/9."
+    },
+    {
+      "enunciado": "¿Cuál es el resultado de (−2)⁻²?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−1/4",
+          "correcta": false
+        },
+        {
+          "texto": "−4",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "(−2)⁻² = 1/(−2)² = 1/4; el cuadrado de −2 es positivo y el exponente negativo invierte."
+    },
+    {
+      "enunciado": "Simplifica la expresión 3⁵ · 3⁻².",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": true
+        },
+        {
+          "texto": "2187",
+          "correcta": false
+        },
+        {
+          "texto": "1/9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suman los exponentes: 3⁵⁻² = 3³ = 27."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de (5²)⁻¹?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "1/25",
+          "correcta": true
+        },
+        {
+          "texto": "−25",
+          "correcta": false
+        },
+        {
+          "texto": "1/10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(5²)⁻¹ = 5⁻² = 1/25; el exponente −1 indica el inverso de 25."
+    },
+    {
+      "enunciado": "Expresa 0,000045 en notación científica.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4,5 × 10⁻⁵",
+          "correcta": true
+        },
+        {
+          "texto": "4,5 × 10⁵",
+          "correcta": false
+        },
+        {
+          "texto": "45 × 10⁻⁶",
+          "correcta": false
+        },
+        {
+          "texto": "4,5 × 10⁻⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se corre la coma 5 lugares a la derecha: 0,000045 = 4,5 × 10⁻⁵; 45 × 10⁻⁶ vale lo mismo, pero no es notación científica porque 45 no está entre 1 y 10."
+    },
+    {
+      "enunciado": "Expresa 6 300 000 en notación científica.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6,3 × 10⁵",
+          "correcta": false
+        },
+        {
+          "texto": "6,3 × 10⁶",
+          "correcta": true
+        },
+        {
+          "texto": "63 × 10⁵",
+          "correcta": false
+        },
+        {
+          "texto": "6,3 × 10⁷",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La coma se corre 6 lugares: 6 300 000 = 6,3 × 10⁶; 63 × 10⁵ vale lo mismo, pero no es notación científica porque 63 es mayor que 10."
+    },
+    {
+      "enunciado": "¿Cuál es el resultado de 16 elevado al exponente 1/2?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "256",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "32",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El exponente 1/2 equivale a la raíz cuadrada: √16 = 4, porque 4² = 16."
+    },
+    {
+      "enunciado": "¿Cuánto es 27 elevado al exponente 1/3?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "81",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El exponente 1/3 equivale a la raíz cúbica: ∛27 = 3, porque 3³ = 27."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de (1/2)⁻³?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/8",
+          "correcta": false
+        },
+        {
+          "texto": "−8",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El inverso de 1/2 es 2, entonces (1/2)⁻³ = 2³ = 8."
+    },
+    {
+      "enunciado": "Simplifica la expresión (2³ · 2⁴) ÷ 2⁵.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suman y restan exponentes: 2³⁺⁴⁻⁵ = 2² = 4."
+    },
+    {
+      "enunciado": "¿Cuál es el resultado de (−3)³ · (−3)²?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "243",
+          "correcta": false
+        },
+        {
+          "texto": "−729",
+          "correcta": false
+        },
+        {
+          "texto": "729",
+          "correcta": false
+        },
+        {
+          "texto": "−243",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se suman exponentes: (−3)³⁺² = (−3)⁵ = −243, pues el exponente impar conserva el signo negativo."
+    },
+    {
+      "enunciado": "¿Cuánto es 10⁻³ · 10⁵?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,01",
+          "correcta": false
+        },
+        {
+          "texto": "1000",
+          "correcta": false
+        },
+        {
+          "texto": "100",
+          "correcta": true
+        },
+        {
+          "texto": "10⁻¹⁵",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suman los exponentes: 10⁻³⁺⁵ = 10² = 100."
+    },
+    {
+      "enunciado": "Calcula 8 elevado al exponente 2/3.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El exponente 2/3 significa raíz cúbica y luego cuadrado: ∛8 = 2 y 2² = 4."
+    },
+    {
+      "enunciado": "¿Cuál es el resultado de (4 × 10³) · (2 × 10²) expresado en notación científica?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8 × 10⁵",
+          "correcta": true
+        },
+        {
+          "texto": "8 × 10⁶",
+          "correcta": false
+        },
+        {
+          "texto": "6 × 10⁵",
+          "correcta": false
+        },
+        {
+          "texto": "8 × 10¹",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se multiplican los coeficientes (4 · 2 = 8) y se suman los exponentes (10³⁺² = 10⁵): 8 × 10⁵."
+    },
+    {
+      "enunciado": "Simplifica la expresión (a⁵ · a³) ÷ a², con a distinto de cero.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "a⁶",
+          "correcta": true
+        },
+        {
+          "texto": "a¹⁰",
+          "correcta": false
+        },
+        {
+          "texto": "a⁴",
+          "correcta": false
+        },
+        {
+          "texto": "a⁰",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suman los exponentes del producto y se resta el del divisor: a⁵⁺³⁻² = a⁶."
+    }
+  ]
+}

@@ -1,0 +1,1081 @@
+{
+  "id": "matematica-volumenes",
+  "materia": "matematica",
+  "tema": "Volúmenes de cuerpos geométricos",
+  "bloque": "Geometría y trigonometría",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "El volumen mide el espacio que ocupa un cuerpo y se expresa en unidades cúbicas (cm³, m³). Prisma y cilindro: V = área de la base × altura. Pirámide y cono: un tercio de eso. Esfera: V = (4/3)πr³.",
+    "ejemplo": {
+      "enunciado": "Un cono tiene radio 3 cm y altura 5 cm. ¿Cuál es su volumen?",
+      "pasos": [
+        "Área de la base (un círculo): πr² = π · 3² = 9π cm².",
+        "Si fuera un cilindro, su volumen sería 9π × 5 = 45π cm³.",
+        "El cono es un tercio del cilindro: 45π ÷ 3 = 15π cm³ ≈ 47,1 cm³ (con π ≈ 3,14)."
+      ],
+      "resultado": "V = 15π cm³ ≈ 47,1 cm³"
+    },
+    "ojo": "No olvides el 1/3 en conos y pirámides, y usa el radio (no el diámetro) en las fórmulas."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el volumen de un cubo cuya arista mide 3 cm?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "81 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "18 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "27 cm³",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El volumen del cubo es la arista al cubo: V = 3³ = 27 cm³."
+    },
+    {
+      "enunciado": "¿Qué expresión representa el volumen de un cubo de arista a?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "a³",
+          "correcta": true
+        },
+        {
+          "texto": "a²",
+          "correcta": false
+        },
+        {
+          "texto": "6a²",
+          "correcta": false
+        },
+        {
+          "texto": "12a",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El volumen de un cubo es el producto de sus tres dimensiones iguales: a · a · a = a³."
+    },
+    {
+      "enunciado": "Un ortoedro (caja) mide 2 cm de largo, 3 cm de ancho y 4 cm de alto. ¿Cuál es su volumen?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "14 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "18 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "24 cm³",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El volumen del ortoedro es largo × ancho × alto = 2 × 3 × 4 = 24 cm³."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del volumen de un cilindro de radio r y altura h?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2πrh",
+          "correcta": false
+        },
+        {
+          "texto": "(4/3)πr³",
+          "correcta": false
+        },
+        {
+          "texto": "πrh",
+          "correcta": false
+        },
+        {
+          "texto": "πr²h",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El cilindro es área de la base (πr²) por la altura: V = πr²h."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del volumen de una esfera de radio r?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(4/3)πr³",
+          "correcta": true
+        },
+        {
+          "texto": "(1/3)πr³",
+          "correcta": false
+        },
+        {
+          "texto": "4πr²",
+          "correcta": false
+        },
+        {
+          "texto": "πr²h",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El volumen de la esfera es V = (4/3)πr³; la expresión 4πr² corresponde a su superficie."
+    },
+    {
+      "enunciado": "Un cilindro tiene radio 3 cm y altura 10 cm. Usando π ≈ 3,14, ¿cuál es su volumen aproximado?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "90 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "94,2 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "282,6 cm³",
+          "correcta": true
+        },
+        {
+          "texto": "188,4 cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V = πr²h = 3,14 · 3² · 10 = 3,14 · 90 = 282,6 cm³."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del volumen de un cono de radio r y altura h?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "πr²h",
+          "correcta": false
+        },
+        {
+          "texto": "(1/3)πr³",
+          "correcta": false
+        },
+        {
+          "texto": "(1/3)πr²h",
+          "correcta": true
+        },
+        {
+          "texto": "(2/3)πr²h",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cono equivale a un tercio del cilindro de igual base y altura: V = (1/3)πr²h."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula del volumen de una pirámide?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "área de la base × altura",
+          "correcta": false
+        },
+        {
+          "texto": "(1/3) × área de la base × altura",
+          "correcta": true
+        },
+        {
+          "texto": "(1/2) × área de la base × altura",
+          "correcta": false
+        },
+        {
+          "texto": "(1/3) × perímetro × altura",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La pirámide es un tercio del prisma de igual base y altura: V = (1/3) · A_base · h."
+    },
+    {
+      "enunciado": "¿Cuál es el volumen de un cubo de 10 cm de arista?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "100 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "1000 cm³",
+          "correcta": true
+        },
+        {
+          "texto": "300 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "10000 cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V = 10³ = 1000 cm³, que equivale a 1 litro."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes unidades sirve para medir un volumen?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "cm²",
+          "correcta": false
+        },
+        {
+          "texto": "cm³",
+          "correcta": true
+        },
+        {
+          "texto": "cm",
+          "correcta": false
+        },
+        {
+          "texto": "m²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El volumen se mide en unidades cúbicas, como el cm³; el cm² mide áreas y el cm mide longitudes."
+    },
+    {
+      "enunciado": "Un prisma tiene un área de base de 12 cm² y una altura de 5 cm. ¿Cuál es su volumen?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "17 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "60 cm³",
+          "correcta": true
+        },
+        {
+          "texto": "30 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "24 cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En un prisma V = A_base · h = 12 · 5 = 60 cm³."
+    },
+    {
+      "enunciado": "Una esfera tiene radio 6 cm. Con π ≈ 3,14, ¿cuál es su volumen aproximado?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "678,24 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "150,72 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "904,32 cm³",
+          "correcta": true
+        },
+        {
+          "texto": "452,16 cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V = (4/3)πr³ = (4/3) · 3,14 · 6³ = (4/3) · 3,14 · 216 = 904,32 cm³."
+    },
+    {
+      "enunciado": "Un cono tiene radio 3 cm y altura 4 cm. Con π ≈ 3,14, su volumen es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "113,04 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "56,52 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "12 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "37,68 cm³",
+          "correcta": true
+        }
+      ],
+      "explicacion": "V = (1/3)πr²h = (1/3) · 3,14 · 9 · 4 = 37,68 cm³."
+    },
+    {
+      "enunciado": "El volumen de un cilindro es 100π cm³ y su radio mide 5 cm. ¿Cuánto mide su altura?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2 cm",
+          "correcta": false
+        },
+        {
+          "texto": "8 cm",
+          "correcta": false
+        },
+        {
+          "texto": "4 cm",
+          "correcta": true
+        },
+        {
+          "texto": "20 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "h = V/(πr²) = 100π/(π·25) = 4 cm."
+    },
+    {
+      "enunciado": "Un cubo tiene un volumen de 64 cm³. ¿Cuánto mide su arista?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4 cm",
+          "correcta": true
+        },
+        {
+          "texto": "8 cm",
+          "correcta": false
+        },
+        {
+          "texto": "16 cm",
+          "correcta": false
+        },
+        {
+          "texto": "32 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La arista es la raíz cúbica del volumen: ∛64 = 4 cm."
+    },
+    {
+      "enunciado": "El volumen de una esfera es 288π cm³. ¿Cuál es su radio?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8 cm",
+          "correcta": false
+        },
+        {
+          "texto": "9 cm",
+          "correcta": false
+        },
+        {
+          "texto": "12 cm",
+          "correcta": false
+        },
+        {
+          "texto": "6 cm",
+          "correcta": true
+        }
+      ],
+      "explicacion": "De (4/3)πr³ = 288π se obtiene r³ = 216, por lo que r = 6 cm."
+    },
+    {
+      "enunciado": "Si se duplica la arista de un cubo, ¿por cuánto se multiplica su volumen?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El volumen depende del cubo de la arista; al duplicarla se multiplica por 2³ = 8."
+    },
+    {
+      "enunciado": "Un tanque con forma de ortoedro mide 2 m × 1,5 m × 1 m. ¿Cuántos litros de agua caben (1 m³ = 1000 L)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "300 L",
+          "correcta": false
+        },
+        {
+          "texto": "3000 L",
+          "correcta": true
+        },
+        {
+          "texto": "30 L",
+          "correcta": false
+        },
+        {
+          "texto": "4500 L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V = 2 · 1,5 · 1 = 3 m³ = 3000 L."
+    },
+    {
+      "enunciado": "Un cono tiene radio 6 cm y altura 10 cm. Con π ≈ 3,14, ¿cuál es su volumen?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "120 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "1130,4 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "376,8 cm³",
+          "correcta": true
+        },
+        {
+          "texto": "188,4 cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V = (1/3)πr²h = (1/3) · 3,14 · 36 · 10 = 376,8 cm³."
+    },
+    {
+      "enunciado": "Un cilindro tiene 10 cm de diámetro y 7 cm de altura. Con π ≈ 3,14, su volumen es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2198 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "175 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "1099 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "549,5 cm³",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El radio es 5 cm: V = 3,14 · 5² · 7 = 549,5 cm³."
+    },
+    {
+      "enunciado": "Una pirámide de base cuadrada tiene lado de base 6 cm y altura 10 cm. ¿Cuál es su volumen?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "360 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "200 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "60 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "120 cm³",
+          "correcta": true
+        }
+      ],
+      "explicacion": "V = (1/3) · A_base · h = (1/3) · 36 · 10 = 120 cm³."
+    },
+    {
+      "enunciado": "Un cubo tiene un volumen de 27 m³. ¿Cuál es su área total (superficie)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "27 m²",
+          "correcta": false
+        },
+        {
+          "texto": "9 m²",
+          "correcta": false
+        },
+        {
+          "texto": "36 m²",
+          "correcta": false
+        },
+        {
+          "texto": "54 m²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La arista es ∛27 = 3 m; el área total es 6 · 3² = 54 m²."
+    },
+    {
+      "enunciado": "Un prisma recto tiene como base un triángulo rectángulo de catetos 4 cm y 3 cm, y su altura (largo del prisma) es 10 cm. ¿Cuál es su volumen?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "60 cm³",
+          "correcta": true
+        },
+        {
+          "texto": "30 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "120 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "70 cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Área de la base = (4·3)/2 = 6 cm²; V = 6 · 10 = 60 cm³."
+    },
+    {
+      "enunciado": "Una semiesfera (media esfera) tiene radio 3 cm. Con π ≈ 3,14, ¿cuál es su volumen?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "113,04 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "84,78 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "56,52 cm³",
+          "correcta": true
+        },
+        {
+          "texto": "28,26 cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V = (2/3)πr³ = (2/3) · 3,14 · 27 = 56,52 cm³."
+    },
+    {
+      "enunciado": "Expresa, en términos de π, el volumen de un cilindro de radio 10 cm y altura 3 cm.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "30π cm³",
+          "correcta": false
+        },
+        {
+          "texto": "300π cm³",
+          "correcta": true
+        },
+        {
+          "texto": "60π cm³",
+          "correcta": false
+        },
+        {
+          "texto": "100π cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V = πr²h = π · 10² · 3 = 300π cm³."
+    },
+    {
+      "enunciado": "Si la altura de un cilindro se triplica y el radio no cambia, ¿por cuánto se multiplica su volumen?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El volumen es proporcional a la altura, así que al triplicarla se multiplica por 3."
+    },
+    {
+      "enunciado": "Un cono y un cilindro tienen la misma base y la misma altura. El volumen del cono es ¿qué fracción del volumen del cilindro?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": true
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cono cabe tres veces en el cilindro de igual base y altura, así que es 1/3 de él."
+    },
+    {
+      "enunciado": "Si el radio de un cilindro se triplica y la altura se mantiene, ¿por cuánto se multiplica su volumen?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El volumen depende del cuadrado del radio; al triplicarlo se multiplica por 3² = 9."
+    },
+    {
+      "enunciado": "¿Cuántos cubos de 1 cm de arista caben dentro de una caja cúbica de 4 cm de arista?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "64",
+          "correcta": true
+        },
+        {
+          "texto": "48",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El volumen de la caja es 4³ = 64 cm³, y cada cubo unitario ocupa 1 cm³, así que caben 64."
+    },
+    {
+      "enunciado": "Un cilindro tiene un volumen de 628 cm³ y una altura de 2 cm. Con π ≈ 3,14, ¿cuál es su radio?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "100 cm",
+          "correcta": false
+        },
+        {
+          "texto": "5 cm",
+          "correcta": false
+        },
+        {
+          "texto": "20 cm",
+          "correcta": false
+        },
+        {
+          "texto": "10 cm",
+          "correcta": true
+        }
+      ],
+      "explicacion": "r² = V/(πh) = 628/(3,14·2) = 100, por lo que r = 10 cm."
+    },
+    {
+      "enunciado": "Una esfera está inscrita en un cubo de arista 6 cm (la esfera toca las caras). Con π ≈ 3,14, ¿cuál es el volumen de la esfera?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "216 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "904,32 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "113,04 cm³",
+          "correcta": true
+        },
+        {
+          "texto": "28,26 cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El radio es la mitad de la arista: r = 3 cm; V = (4/3) · 3,14 · 27 = 113,04 cm³."
+    },
+    {
+      "enunciado": "Una esfera está inscrita en un cubo (toca las seis caras). ¿Qué porcentaje del volumen del cubo ocupa la esfera?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "52,4%",
+          "correcta": true
+        },
+        {
+          "texto": "66,7%",
+          "correcta": false
+        },
+        {
+          "texto": "33,3%",
+          "correcta": false
+        },
+        {
+          "texto": "78,5%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con arista 2r, el cubo mide 8r³ y la esfera (4/3)πr³; la razón es π/6 ≈ 0,524, es decir 52,4%."
+    },
+    {
+      "enunciado": "Un silo está formado por un cilindro de radio 3 m y altura 10 m, coronado por una semiesfera del mismo radio. Con π ≈ 3,14, ¿cuál es su volumen total?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "282,6 m³",
+          "correcta": false
+        },
+        {
+          "texto": "339,12 m³",
+          "correcta": true
+        },
+        {
+          "texto": "395,64 m³",
+          "correcta": false
+        },
+        {
+          "texto": "113,04 m³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cilindro: π·9·10 = 90π; semiesfera: (2/3)π·27 = 18π; total 108π = 339,12 m³."
+    },
+    {
+      "enunciado": "Un cono y un cilindro tienen el mismo radio y el mismo volumen. La altura del cono es ¿cuántas veces la del cilindro?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como el cono es (1/3)πr²h, para igualar el volumen del cilindro su altura debe ser el triple."
+    },
+    {
+      "enunciado": "En un cono, el radio se duplica y la altura se reduce a la mitad. ¿Por cuánto se multiplica el volumen?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El factor es 2² · (1/2) = 4 · 0,5 = 2."
+    },
+    {
+      "enunciado": "Un cono lleno de agua tiene radio 6 cm y altura 8 cm. Si se vierte toda el agua en un cilindro de radio 6 cm, ¿qué altura alcanza el agua?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8 cm",
+          "correcta": false
+        },
+        {
+          "texto": "2,67 cm",
+          "correcta": true
+        },
+        {
+          "texto": "4 cm",
+          "correcta": false
+        },
+        {
+          "texto": "24 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El volumen del cono es (1/3)π·36·8 = 96π; al repartirlo en la base π·36 del cilindro, h = 96π/36π = 8/3 ≈ 2,67 cm."
+    },
+    {
+      "enunciado": "Una esfera tiene 18 cm de diámetro. Con π ≈ 3,14, ¿cuál es su volumen?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1017,36 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "763,02 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "24416,64 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "3052,08 cm³",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El radio es la mitad del diámetro, 9 cm: V = (4/3) · 3,14 · 9³ = (4/3) · 3,14 · 729 = 3052,08 cm³."
+    },
+    {
+      "enunciado": "Una esfera está inscrita en un cilindro del mismo radio cuya altura es igual al diámetro. ¿Cuál es la razón entre el volumen de la esfera y el del cilindro?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": true
+        },
+        {
+          "texto": "3/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Esfera: (4/3)πr³; cilindro: πr²·(2r) = 2πr³; la razón es (4/3)/2 = 2/3."
+    },
+    {
+      "enunciado": "Si la arista de un cubo aumenta un 10%, ¿en qué porcentaje aumenta su volumen?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "33,1%",
+          "correcta": true
+        },
+        {
+          "texto": "21%",
+          "correcta": false
+        },
+        {
+          "texto": "30%",
+          "correcta": false
+        },
+        {
+          "texto": "10%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El nuevo volumen es 1,1³ = 1,331 veces el original, es decir un aumento del 33,1%."
+    },
+    {
+      "enunciado": "Dos conos son semejantes y la razón entre sus dimensiones lineales es 2:3. ¿Cuál es la razón entre sus volúmenes?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2:3",
+          "correcta": false
+        },
+        {
+          "texto": "4:9",
+          "correcta": false
+        },
+        {
+          "texto": "8:27",
+          "correcta": true
+        },
+        {
+          "texto": "6:9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En cuerpos semejantes la razón de volúmenes es el cubo de la razón lineal: 2³:3³ = 8:27."
+    },
+    {
+      "enunciado": "Una esfera metálica de radio 6 cm se funde y se moldea como un cilindro de radio 6 cm. ¿Qué altura tiene el cilindro?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4 cm",
+          "correcta": false
+        },
+        {
+          "texto": "16 cm",
+          "correcta": false
+        },
+        {
+          "texto": "8 cm",
+          "correcta": true
+        },
+        {
+          "texto": "12 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El volumen se conserva: (4/3)π·216 = π·36·h, de donde 288π = 36π·h y h = 8 cm."
+    },
+    {
+      "enunciado": "Un cono tiene radio 6 cm y generatriz (lado inclinado) de 10 cm. Con π ≈ 3,14, ¿cuál es su volumen?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "376,8 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "100,48 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "904,32 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "301,44 cm³",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La altura es √(10²−6²) = 8 cm; V = (1/3) · 3,14 · 36 · 8 = 301,44 cm³."
+    },
+    {
+      "enunciado": "¿Para qué radio el volumen de una esfera es numéricamente igual a su área superficial?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De (4/3)πr³ = 4πr² se obtiene r/3 = 1, es decir r = 3."
+    },
+    {
+      "enunciado": "Una pirámide de base cuadrada tiene lado de base 10 cm y un volumen de 200 cm³. ¿Cuál es su altura?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6 cm",
+          "correcta": true
+        },
+        {
+          "texto": "18 cm",
+          "correcta": false
+        },
+        {
+          "texto": "2 cm",
+          "correcta": false
+        },
+        {
+          "texto": "12 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De (1/3)·100·h = 200 se obtiene h = 600/100 = 6 cm."
+    },
+    {
+      "enunciado": "Un tanque cilíndrico de radio 2 m y altura 5 m se llena a razón de 0,5 m³ por minuto. Con π ≈ 3,14, ¿cuántos minutos tarda en llenarse?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "125,6 min",
+          "correcta": true
+        },
+        {
+          "texto": "251,2 min",
+          "correcta": false
+        },
+        {
+          "texto": "62,8 min",
+          "correcta": false
+        },
+        {
+          "texto": "40 min",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V = 3,14 · 2² · 5 = 62,8 m³; tiempo = 62,8/0,5 = 125,6 min."
+    },
+    {
+      "enunciado": "Se comparan tres cuerpos de radio 6 cm: una esfera, un cilindro de altura 6 cm y un cono de altura 6 cm. ¿Cuál tiene el mayor volumen?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "El cilindro",
+          "correcta": false
+        },
+        {
+          "texto": "El cono",
+          "correcta": false
+        },
+        {
+          "texto": "La esfera",
+          "correcta": true
+        },
+        {
+          "texto": "Los tres tienen el mismo volumen",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Esfera = 288π, cilindro = 216π y cono = 72π; la esfera tiene el mayor volumen."
+    }
+  ]
+}

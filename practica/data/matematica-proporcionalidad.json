@@ -1,0 +1,1082 @@
+{
+  "id": "matematica-proporcionalidad",
+  "materia": "matematica",
+  "tema": "Razones, proporciones y regla de tres",
+  "bloque": "Aritmética",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "Dos magnitudes son directamente proporcionales si al duplicar una se duplica la otra (más cosas, más costo), e inversamente proporcionales si al duplicar una la otra se reduce a la mitad (más obreros, menos días). Primero decide si es directa o inversa; luego calcula.",
+    "ejemplo": {
+      "enunciado": "Si 6 obreros terminan una obra en 10 días, ¿en cuántos días la terminan 4 obreros con el mismo rendimiento?",
+      "pasos": [
+        "Pregúntate: con menos obreros, ¿se tarda más o menos? Más: es proporción inversa.",
+        "En la inversa el producto se mantiene: 6 · 10 = 60 obrero-días de trabajo.",
+        "Reparte ese trabajo entre 4 obreros: 60 ÷ 4 = 15.",
+        "Tiene sentido: menos obreros tardan más días."
+      ],
+      "resultado": "15 días"
+    },
+    "ojo": "Aplicar la regla de tres directa a un problema inverso: con 4 obreros NO se tardan 10 · 4 ÷ 6 ≈ 6,7 días. Verifica siempre si el resultado tiene sentido."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la razón entre 8 y 4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La razón entre 8 y 4 es 8/4 = 2."
+    },
+    {
+      "enunciado": "¿Cuál es la razón entre 6 y 9 expresada en su forma más simple?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": true
+        },
+        {
+          "texto": "5/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se divide numerador y denominador entre 3: 6/9 = 2/3."
+    },
+    {
+      "enunciado": "En la proporción 2/3 = x/12, ¿cuál es el valor de x?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por productos cruzados: 3x = 2·12 = 24, así que x = 8."
+    },
+    {
+      "enunciado": "En la proporción 4/6 = 6/x, ¿cuál es el valor de x?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por productos cruzados: 4x = 6·6 = 36, entonces x = 9."
+    },
+    {
+      "enunciado": "Si 3 lápices cuestan 6 dólares, ¿cuánto cuestan 5 lápices del mismo precio?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "11 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "8 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "10 dólares",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Cada lápiz cuesta 6/3 = 2 dólares; 5 lápices cuestan 5·2 = 10 dólares."
+    },
+    {
+      "enunciado": "Un automóvil recorre 60 km en 1 hora a velocidad constante. ¿Cuántos kilómetros recorre en 3 horas?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "180 km",
+          "correcta": true
+        },
+        {
+          "texto": "120 km",
+          "correcta": false
+        },
+        {
+          "texto": "20 km",
+          "correcta": false
+        },
+        {
+          "texto": "240 km",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A 60 km por hora, en 3 horas recorre 60·3 = 180 km."
+    },
+    {
+      "enunciado": "¿Cuál es la forma más simple de la razón 10 : 15?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3 : 2",
+          "correcta": false
+        },
+        {
+          "texto": "2 : 3",
+          "correcta": true
+        },
+        {
+          "texto": "5 : 3",
+          "correcta": false
+        },
+        {
+          "texto": "1 : 2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dividiendo ambos términos entre 5 se obtiene 2 : 3."
+    },
+    {
+      "enunciado": "Una receta usa 2 tazas de harina por cada 1 taza de azúcar. Para 6 tazas de harina, ¿cuántas tazas de azúcar se necesitan?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La razón es 2 a 1, así que a 6 tazas de harina corresponden 6/2 = 3 tazas de azúcar."
+    },
+    {
+      "enunciado": "En la proporción 7/x = 1/2, ¿cuál es el valor de x?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": true
+        },
+        {
+          "texto": "3,5",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por productos cruzados: x·1 = 7·2 = 14, por lo tanto x = 14."
+    },
+    {
+      "enunciado": "En un salón la razón de niños a niñas es 3 : 2. Si hay 12 niños, ¿cuántas niñas hay?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada parte de la razón vale 12 ÷ 3 = 4 estudiantes; las niñas son 2 · 4 = 8."
+    },
+    {
+      "enunciado": "Si 4 cuadernos iguales cuestan 12 dólares, ¿cuál es el precio de un cuaderno?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "3 dólares",
+          "correcta": true
+        },
+        {
+          "texto": "48 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "8 dólares",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El precio unitario es 12/4 = 3 dólares."
+    },
+    {
+      "enunciado": "Un ciclista recorre 100 km en 2 horas a ritmo constante. ¿Cuál es su velocidad media?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "200 km/h",
+          "correcta": false
+        },
+        {
+          "texto": "100 km/h",
+          "correcta": false
+        },
+        {
+          "texto": "25 km/h",
+          "correcta": false
+        },
+        {
+          "texto": "50 km/h",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La velocidad es distancia entre tiempo: 100/2 = 50 km/h."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes razones forma una proporción con 1/2?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "3/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "2/4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "2/4 se simplifica a 1/2, por lo que 1/2 = 2/4 es una proporción."
+    },
+    {
+      "enunciado": "Un vehículo recorre 30 km con 1 litro de gasolina. ¿Cuántos kilómetros recorre con 4 litros?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "34 km",
+          "correcta": false
+        },
+        {
+          "texto": "120 km",
+          "correcta": true
+        },
+        {
+          "texto": "90 km",
+          "correcta": false
+        },
+        {
+          "texto": "7,5 km",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A 30 km por litro, con 4 litros recorre 30·4 = 120 km."
+    },
+    {
+      "enunciado": "Si 3 manzanas cuestan 1,50 dólares, ¿cuánto cuesta una sola manzana?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4,50 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "0,75 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "0,50 dólares",
+          "correcta": true
+        },
+        {
+          "texto": "1 dólar",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El precio por manzana es 1,50/3 = 0,50 dólares."
+    },
+    {
+      "enunciado": "Si 4 obreros realizan una obra en 6 días, ¿en cuántos días la realizan 8 obreros con el mismo rendimiento?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es proporción inversa: 4·6 = 24 obrero-días; con 8 obreros se tarda 24/8 = 3 días."
+    },
+    {
+      "enunciado": "A 60 km/h un viaje dura 4 horas. ¿A qué velocidad constante el viaje duraría solo 3 horas?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "45 km/h",
+          "correcta": false
+        },
+        {
+          "texto": "75 km/h",
+          "correcta": false
+        },
+        {
+          "texto": "80 km/h",
+          "correcta": true
+        },
+        {
+          "texto": "90 km/h",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Velocidad y tiempo son inversos: la distancia es 60·4 = 240 km; 240/3 = 80 km/h."
+    },
+    {
+      "enunciado": "Si 5 máquinas iguales producen 100 piezas en una hora, ¿cuántas piezas producen 8 máquinas en una hora?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "62,5",
+          "correcta": false
+        },
+        {
+          "texto": "105",
+          "correcta": false
+        },
+        {
+          "texto": "200",
+          "correcta": false
+        },
+        {
+          "texto": "160",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Cada máquina produce 100/5 = 20 piezas; 8 máquinas producen 8·20 = 160 piezas."
+    },
+    {
+      "enunciado": "En la proporción 3/4 = 15/x, ¿cuál es el valor de x?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "11,25",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": true
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por productos cruzados: 3x = 4·15 = 60, así que x = 20."
+    },
+    {
+      "enunciado": "Se reparten 120 dólares en la razón 2 : 3. ¿Cuál es la parte mayor?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "72 dólares",
+          "correcta": true
+        },
+        {
+          "texto": "48 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "60 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "80 dólares",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El total son 2+3 = 5 partes; cada parte vale 120/5 = 24, y la mayor es 3·24 = 72 dólares."
+    },
+    {
+      "enunciado": "Si 7 kilogramos de arroz cuestan 35 dólares, ¿cuánto cuestan 12 kilogramos al mismo precio?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "84 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "42 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "60 dólares",
+          "correcta": true
+        },
+        {
+          "texto": "70 dólares",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El precio por kilogramo es 35/7 = 5 dólares; 12 kilogramos cuestan 12·5 = 60 dólares."
+    },
+    {
+      "enunciado": "En un mapa 1 cm representa 50 km reales. Si dos ciudades están a 4 cm en el mapa, ¿cuál es la distancia real?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "200 km",
+          "correcta": true
+        },
+        {
+          "texto": "54 km",
+          "correcta": false
+        },
+        {
+          "texto": "12,5 km",
+          "correcta": false
+        },
+        {
+          "texto": "150 km",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada centímetro equivale a 50 km; 4 cm representan 4·50 = 200 km."
+    },
+    {
+      "enunciado": "Un tanque se llena con 6 grifos iguales en 8 horas. ¿En cuántas horas se llena con solo 4 grifos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5,3",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es proporción inversa: 6·8 = 48 grifo-horas; con 4 grifos se tarda 48/4 = 12 horas."
+    },
+    {
+      "enunciado": "Si 9 litros de pintura cubren 45 m² de pared, ¿cuántos metros cuadrados cubren 15 litros?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "75",
+          "correcta": true
+        },
+        {
+          "texto": "81",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada litro cubre 45/9 = 5 m²; 15 litros cubren 15·5 = 75 m²."
+    },
+    {
+      "enunciado": "Las edades de Ana y Beto están en la razón 5 : 7. Si Ana tiene 25 años, ¿cuántos años tiene Beto?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "27",
+          "correcta": false
+        },
+        {
+          "texto": "35",
+          "correcta": true
+        },
+        {
+          "texto": "17,9",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada unidad de la razón vale 25/5 = 5 años; Beto tiene 7·5 = 35 años."
+    },
+    {
+      "enunciado": "Un tren recorre 240 km en 3 horas a velocidad constante. ¿Cuánto recorre en 5 horas?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "144 km",
+          "correcta": false
+        },
+        {
+          "texto": "720 km",
+          "correcta": false
+        },
+        {
+          "texto": "320 km",
+          "correcta": false
+        },
+        {
+          "texto": "400 km",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La velocidad es 240/3 = 80 km/h; en 5 horas recorre 80·5 = 400 km."
+    },
+    {
+      "enunciado": "Si 10 vacas consumen el pasto de un potrero en 20 días, ¿en cuántos días lo consumen 25 vacas?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "50",
+          "correcta": false
+        },
+        {
+          "texto": "12,5",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es proporción inversa: 10·20 = 200 vaca-días; 200/25 = 8 días."
+    },
+    {
+      "enunciado": "En la proporción x/9 = 12/27, ¿cuál es el valor de x?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "20,25",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por productos cruzados: 27x = 9·12 = 108, así que x = 4."
+    },
+    {
+      "enunciado": "Una mezcla contiene agua y alcohol en la razón 3 : 2 y suma 500 mL en total. ¿Cuántos mililitros de agua hay?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "200",
+          "correcta": false
+        },
+        {
+          "texto": "250",
+          "correcta": false
+        },
+        {
+          "texto": "300",
+          "correcta": true
+        },
+        {
+          "texto": "350",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 3+2 = 5 partes; cada parte mide 500/5 = 100 mL y el agua ocupa 3·100 = 300 mL."
+    },
+    {
+      "enunciado": "Si 2/3 de un trabajo se completan en 4 días a ritmo constante, ¿en cuántos días se completa el trabajo entero?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2,7",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "5,3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si 2/3 toman 4 días, cada tercio toma 2 días; el trabajo completo (3 tercios) toma 6 días."
+    },
+    {
+      "enunciado": "Si 4 obreros en 6 días construyen 200 m de muro, ¿cuántos metros construyen 6 obreros en 8 días con igual rendimiento?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "400",
+          "correcta": true
+        },
+        {
+          "texto": "300",
+          "correcta": false
+        },
+        {
+          "texto": "450",
+          "correcta": false
+        },
+        {
+          "texto": "360",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Metros = 200·(6/4)·(8/6) = 200·48/24 = 400 m."
+    },
+    {
+      "enunciado": "Si 6 máquinas en 4 días producen 720 piezas, ¿cuántos días necesitan 4 máquinas para producir 960 piezas?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "5,3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada máquina produce 720/(6·4) = 30 piezas por día; 960/(4·30) = 8 días."
+    },
+    {
+      "enunciado": "Si 5 obreros trabajando 8 horas diarias terminan una obra en 6 días, ¿en cuántos días la terminan 6 obreros trabajando 5 horas diarias?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "7,2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La obra requiere 5·8·6 = 240 horas-obrero; con 6·5 = 30 por día se necesitan 240/30 = 8 días."
+    },
+    {
+      "enunciado": "Si 8 obreros pavimentan 600 m de vía en 5 días, ¿cuántos obreros se necesitan para pavimentar 900 m en 3 días?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Cada obrero pavimenta 600/(8·5) = 15 m por día; obreros = 900/(15·3) = 20."
+    },
+    {
+      "enunciado": "Si 12 obreros construyen una casa en 15 días trabajando 8 horas diarias, ¿cuántos obreros se requieren para hacerla en 10 días trabajando 9 horas diarias?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": true
+        },
+        {
+          "texto": "13,5",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La casa requiere 12·15·8 = 1440 horas-obrero; obreros = 1440/(10·9) = 16."
+    },
+    {
+      "enunciado": "Si 15 caballos consumen 200 kg de avena en 8 días, ¿cuántos kilogramos de avena consumen 10 caballos en 9 días?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "150",
+          "correcta": true
+        },
+        {
+          "texto": "240",
+          "correcta": false
+        },
+        {
+          "texto": "167",
+          "correcta": false
+        },
+        {
+          "texto": "120",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada caballo consume 200/(15·8) = 5/3 kg por día; 10·9·(5/3) = 150 kg."
+    },
+    {
+      "enunciado": "Si 4 bombas trabajando 6 horas diarias vacían un estanque en 3 días, ¿en cuántos días lo vacían 3 bombas trabajando 4 horas diarias?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4,5",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El trabajo equivale a 4·6·3 = 72 horas-bomba; con 3·4 = 12 por día se necesitan 72/12 = 6 días."
+    },
+    {
+      "enunciado": "Se reparten 120 dólares en partes inversamente proporcionales a 2, 3 y 6. ¿Cuál es la parte mayor?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "40 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "60 dólares",
+          "correcta": true
+        },
+        {
+          "texto": "20 dólares",
+          "correcta": false
+        },
+        {
+          "texto": "65 dólares",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los inversos 1/2, 1/3, 1/6 están en razón 3 : 2 : 1 (6 partes); la mayor es 3·(120/6) = 60 dólares."
+    },
+    {
+      "enunciado": "Si 20 obreros en 30 días realizan la mitad de una obra, ¿cuántos obreros se necesitan para terminar la otra mitad en 20 días?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "45",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": true
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La mitad requiere 20·30 = 600 obrero-días; para hacerla en 20 días se necesitan 600/20 = 30 obreros."
+    },
+    {
+      "enunciado": "Si 6 impresoras imprimen 1200 hojas en 4 minutos, ¿cuántas impresoras se necesitan para imprimir 2400 hojas en 2 minutos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "24",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada impresora imprime 1200/(6·4) = 50 hojas por minuto; impresoras = 2400/(2·50) = 24."
+    },
+    {
+      "enunciado": "Si a/b = 3/5 y a + b = 32, ¿cuál es el valor de a?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Sea a = 3k y b = 5k; entonces 8k = 32, k = 4 y a = 3·4 = 12."
+    },
+    {
+      "enunciado": "¿Cuál es la media proporcional (media geométrica) entre 4 y 9?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6,5",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La media proporcional es la raíz del producto: √(4·9) = √36 = 6."
+    },
+    {
+      "enunciado": "Si 8 sastres confeccionan 20 trajes en 5 días, ¿en cuántos días confeccionan 6 sastres 24 trajes?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada sastre hace 20/(8·5) = 0,5 traje por día; días = 24/(6·0,5) = 8."
+    },
+    {
+      "enunciado": "¿Cuál es la cuarta proporcional de 6, 8 y 15 (es decir, 6/8 = 15/x)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "11,25",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": true
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "17",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De 6/8 = 15/x se obtiene x = 8·15/6 = 20."
+    },
+    {
+      "enunciado": "Si 3 tractores aran 12 hectáreas en 4 horas, ¿cuántas hectáreas aran 5 tractores en 6 horas con igual rendimiento?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": true
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada tractor ara 12/(3·4) = 1 hectárea por hora; 5·6·1 = 30 hectáreas."
+    },
+    {
+      "enunciado": "Si 18 obreros, trabajando 8 horas diarias, construyen 540 m de carretera en 15 días, ¿cuántos días necesitan 12 obreros trabajando 10 horas diarias para construir 600 m?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Cada obrero hace 540/(18·8·15) = 0,25 m por hora; con 12 obreros a 10 h/día se hacen 30 m/día, y 600/30 = 20 días."
+    }
+  ]
+}

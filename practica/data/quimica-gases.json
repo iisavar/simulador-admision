@@ -1,0 +1,1150 @@
+{
+  "id": "quimica-gases",
+  "materia": "quimica",
+  "tema": "Leyes de los gases",
+  "bloque": "Soluciones y gases",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Un gas se describe con presión (P), volumen (V), temperatura (T) y moles (n). Boyle: P·V constante si T no cambia; Charles: V/T constante si P no cambia; Gay-Lussac: P/T constante si V no cambia. Todo se resume en PV = nRT, y la temperatura SIEMPRE va en kelvin.",
+    "ejemplo": {
+      "enunciado": "Un gas ocupa 10 L a 1 atm y 27 °C. ¿Qué volumen ocupa a 2 atm y 327 °C?",
+      "pasos": [
+        "Pasa a kelvin sumando 273: T₁ = 300 K y T₂ = 600 K.",
+        "Usa la ley combinada: V₂ = V₁ · (P₁/P₂) · (T₂/T₁).",
+        "Reemplaza: V₂ = 10 · (1/2) · (600/300) = 10 · 0,5 · 2 = 10 L."
+      ],
+      "resultado": "V₂ = 10 L: duplicar la presión lo reduce a la mitad y duplicar la temperatura absoluta lo duplica."
+    },
+    "ojo": "No uses grados Celsius en las fórmulas: 27 °C no es «27», es 300 K."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Qué establece la ley de Boyle para un gas?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "A volumen constante, la presión es directamente proporcional a la temperatura.",
+          "correcta": false
+        },
+        {
+          "texto": "A presión constante, el volumen es directamente proporcional a la temperatura.",
+          "correcta": false
+        },
+        {
+          "texto": "El volumen de un gas no depende de la presión.",
+          "correcta": false
+        },
+        {
+          "texto": "A temperatura constante, la presión de un gas es inversamente proporcional a su volumen.",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La ley de Boyle indica que, con temperatura y cantidad de gas constantes, P y V son inversamente proporcionales (PV = constante)."
+    },
+    {
+      "enunciado": "En la ley de Charles, que relaciona el volumen con la temperatura, ¿qué magnitud permanece constante?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La temperatura absoluta",
+          "correcta": false
+        },
+        {
+          "texto": "La densidad del gas",
+          "correcta": false
+        },
+        {
+          "texto": "La presión y el volumen simultáneamente",
+          "correcta": false
+        },
+        {
+          "texto": "La presión",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La ley de Charles se cumple a presión constante: el volumen es directamente proporcional a la temperatura absoluta."
+    },
+    {
+      "enunciado": "¿Qué relación describe la ley de Gay-Lussac?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "A temperatura constante, el volumen es inversamente proporcional a la presión.",
+          "correcta": false
+        },
+        {
+          "texto": "A presión constante, el volumen es proporcional a la temperatura.",
+          "correcta": false
+        },
+        {
+          "texto": "La presión es independiente de la temperatura.",
+          "correcta": false
+        },
+        {
+          "texto": "A volumen constante, la presión es directamente proporcional a la temperatura absoluta.",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La ley de Gay-Lussac establece que, a volumen constante, P/T = constante; presión y temperatura absoluta son directamente proporcionales."
+    },
+    {
+      "enunciado": "¿En qué unidad debe expresarse la temperatura al aplicar las leyes de los gases?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Kelvin",
+          "correcta": true
+        },
+        {
+          "texto": "Grados Celsius",
+          "correcta": false
+        },
+        {
+          "texto": "Grados Fahrenheit",
+          "correcta": false
+        },
+        {
+          "texto": "Cualquier escala, siempre que se use la misma en todo el cálculo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las leyes de los gases requieren la temperatura absoluta en kelvin para que las proporciones sean válidas."
+    },
+    {
+      "enunciado": "¿A cuántos kelvin equivale una temperatura de 0 °C?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0 K",
+          "correcta": false
+        },
+        {
+          "texto": "100 K",
+          "correcta": false
+        },
+        {
+          "texto": "273 K",
+          "correcta": true
+        },
+        {
+          "texto": "373 K",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para pasar de Celsius a kelvin se suma 273; así, 0 °C corresponde a 273 K."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de la constante universal de los gases R en unidades de L·atm/(mol·K)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,0821",
+          "correcta": true
+        },
+        {
+          "texto": "1,987",
+          "correcta": false
+        },
+        {
+          "texto": "8,314",
+          "correcta": false
+        },
+        {
+          "texto": "62,4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En L·atm/(mol·K) la constante de los gases vale 0,0821; el valor 8,314 corresponde a J/(mol·K)."
+    },
+    {
+      "enunciado": "Las condiciones normales (CN) para los gases corresponden a una temperatura y presión de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "25 °C y 1 atm",
+          "correcta": false
+        },
+        {
+          "texto": "0 °C y 760 atm",
+          "correcta": false
+        },
+        {
+          "texto": "0 °C y 1 atm",
+          "correcta": true
+        },
+        {
+          "texto": "273 °C y 1 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las condiciones normales clásicas son 0 °C (273 K) y 1 atm de presión."
+    },
+    {
+      "enunciado": "El volumen que ocupa 1 mol de un gas ideal en condiciones normales es aproximadamente:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "24,5 L",
+          "correcta": false
+        },
+        {
+          "texto": "22,4 L",
+          "correcta": true
+        },
+        {
+          "texto": "11,2 L",
+          "correcta": false
+        },
+        {
+          "texto": "1 L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El volumen molar de un gas ideal en condiciones normales (0 °C, 1 atm) es 22,4 L/mol."
+    },
+    {
+      "enunciado": "Según la ley de Dalton, la presión total de una mezcla de gases que no reaccionan entre sí es igual a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El producto de las presiones de cada gas",
+          "correcta": false
+        },
+        {
+          "texto": "La presión del gas más abundante",
+          "correcta": false
+        },
+        {
+          "texto": "El promedio de las presiones parciales",
+          "correcta": false
+        },
+        {
+          "texto": "La suma de las presiones parciales de cada gas",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La ley de Dalton señala que la presión total es la suma de las presiones parciales de los componentes."
+    },
+    {
+      "enunciado": "Al graficar la presión de un gas frente a su volumen, manteniendo constante la temperatura, se obtiene una curva decreciente (hipérbola). ¿Qué ley representa?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Ley de Boyle",
+          "correcta": true
+        },
+        {
+          "texto": "Ley de Charles",
+          "correcta": false
+        },
+        {
+          "texto": "Ley de Gay-Lussac",
+          "correcta": false
+        },
+        {
+          "texto": "Ley de Dalton",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La curva decreciente (hipérbola) de P frente a V a temperatura constante es la representación característica de la ley de Boyle."
+    },
+    {
+      "enunciado": "¿A cuántos kelvin equivalen 27 °C?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "27 K",
+          "correcta": false
+        },
+        {
+          "texto": "246 K",
+          "correcta": false
+        },
+        {
+          "texto": "300 K",
+          "correcta": true
+        },
+        {
+          "texto": "327 K",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suma 273: 27 + 273 = 300 K."
+    },
+    {
+      "enunciado": "Una temperatura de 25 °C expresada en la escala absoluta es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "248 K",
+          "correcta": false
+        },
+        {
+          "texto": "273 K",
+          "correcta": false
+        },
+        {
+          "texto": "298 K",
+          "correcta": true
+        },
+        {
+          "texto": "323 K",
+          "correcta": false
+        }
+      ],
+      "explicacion": "25 + 273 = 298 K."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación de estado del gas ideal?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "P/V = nRT",
+          "correcta": false
+        },
+        {
+          "texto": "PV = nRT",
+          "correcta": true
+        },
+        {
+          "texto": "PV = nR/T",
+          "correcta": false
+        },
+        {
+          "texto": "P + V = nRT",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ecuación del gas ideal relaciona presión, volumen, moles y temperatura como PV = nRT."
+    },
+    {
+      "enunciado": "A presión constante, si la temperatura absoluta de un gas se duplica, su volumen:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Se reduce a la mitad",
+          "correcta": false
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        },
+        {
+          "texto": "Se duplica",
+          "correcta": true
+        },
+        {
+          "texto": "Se reduce a la cuarta parte",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la ley de Charles, a presión constante V es proporcional a T; si T se duplica, V también se duplica."
+    },
+    {
+      "enunciado": "Un gas ocupa 4 L a una presión de 2 atm. Si a temperatura constante el volumen se reduce a 2 L, ¿cuál será la nueva presión?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8 atm",
+          "correcta": false
+        },
+        {
+          "texto": "4 atm",
+          "correcta": true
+        },
+        {
+          "texto": "2 atm",
+          "correcta": false
+        },
+        {
+          "texto": "1 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por Boyle: P₂ = P₁·V₁/V₂ = (2·4)/2 = 4 atm."
+    },
+    {
+      "enunciado": "Un gas ocupa 6 L a 300 K. Si a presión constante la temperatura aumenta a 600 K, ¿cuál será el nuevo volumen?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3 L",
+          "correcta": false
+        },
+        {
+          "texto": "6 L",
+          "correcta": false
+        },
+        {
+          "texto": "12 L",
+          "correcta": true
+        },
+        {
+          "texto": "24 L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por Charles: V₂ = V₁·T₂/T₁ = 6·(600/300) = 12 L."
+    },
+    {
+      "enunciado": "Un gas en un recipiente rígido tiene una presión de 1 atm a 300 K. Si se calienta hasta 600 K sin cambiar el volumen, su presión será:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,5 atm",
+          "correcta": false
+        },
+        {
+          "texto": "1 atm",
+          "correcta": false
+        },
+        {
+          "texto": "2 atm",
+          "correcta": true
+        },
+        {
+          "texto": "4 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por Gay-Lussac: P₂ = P₁·T₂/T₁ = 1·(600/300) = 2 atm."
+    },
+    {
+      "enunciado": "Una muestra de gas ocupa 5 L a 760 mmHg. ¿Qué presión ejercerá si se comprime a 2 L manteniendo constante la temperatura?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "304 mmHg",
+          "correcta": false
+        },
+        {
+          "texto": "380 mmHg",
+          "correcta": false
+        },
+        {
+          "texto": "950 mmHg",
+          "correcta": false
+        },
+        {
+          "texto": "1900 mmHg",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por Boyle: P₂ = (760·5)/2 = 1900 mmHg."
+    },
+    {
+      "enunciado": "Un gas ocupa 250 mL a 20 °C. ¿Qué volumen ocupará al calentarse a 40 °C a presión constante?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "500 mL",
+          "correcta": false
+        },
+        {
+          "texto": "267 mL",
+          "correcta": true
+        },
+        {
+          "texto": "234 mL",
+          "correcta": false
+        },
+        {
+          "texto": "125 mL",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En kelvin: 293 K y 313 K. V₂ = 250·(313/293) = 267 mL."
+    },
+    {
+      "enunciado": "El aire de un neumático está a 2,0 atm y 27 °C. Si la temperatura sube a 77 °C sin cambiar el volumen, ¿cuál será la presión?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4,67 atm",
+          "correcta": false
+        },
+        {
+          "texto": "2,33 atm",
+          "correcta": true
+        },
+        {
+          "texto": "2,0 atm",
+          "correcta": false
+        },
+        {
+          "texto": "1,71 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En kelvin: 300 K y 350 K. Por Gay-Lussac: P₂ = 2,0·(350/300) = 2,33 atm."
+    },
+    {
+      "enunciado": "Un gas ocupa 4 L a 1 atm y 300 K. ¿Qué volumen ocupará a 3 atm y 450 K?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1,33 L",
+          "correcta": false
+        },
+        {
+          "texto": "2 L",
+          "correcta": true
+        },
+        {
+          "texto": "4 L",
+          "correcta": false
+        },
+        {
+          "texto": "6 L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la ley combinada: V₂ = 4·(1/3)·(450/300) = 2 L."
+    },
+    {
+      "enunciado": "¿Cuántos moles de gas hay en una muestra que ocupa 11,2 L en condiciones normales?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,25 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 mol",
+          "correcta": true
+        },
+        {
+          "texto": "1 mol",
+          "correcta": false
+        },
+        {
+          "texto": "2 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = V/Vm = 11,2/22,4 = 0,5 mol."
+    },
+    {
+      "enunciado": "¿Cuántos moles de gas hay en un recipiente de 2 L a 1 atm y 273 K? (R = 0,0821 L·atm/(mol·K))",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,045 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,089 mol",
+          "correcta": true
+        },
+        {
+          "texto": "0,18 mol",
+          "correcta": false
+        },
+        {
+          "texto": "1,0 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = PV/RT = (1·2)/(0,0821·273) = 0,089 mol."
+    },
+    {
+      "enunciado": "¿Qué volumen ocupan 0,5 mol de un gas ideal a 1 atm y 300 K? (R = 0,0821 L·atm/(mol·K))",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "24,6 L",
+          "correcta": false
+        },
+        {
+          "texto": "12,3 L",
+          "correcta": true
+        },
+        {
+          "texto": "11,2 L",
+          "correcta": false
+        },
+        {
+          "texto": "6,15 L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V = nRT/P = (0,5·0,0821·300)/1 = 12,3 L."
+    },
+    {
+      "enunciado": "En un recipiente, el oxígeno ejerce una presión parcial de 0,3 atm y el nitrógeno de 0,5 atm. ¿Cuál es la presión total de la mezcla?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,15 atm",
+          "correcta": false
+        },
+        {
+          "texto": "0,2 atm",
+          "correcta": false
+        },
+        {
+          "texto": "0,8 atm",
+          "correcta": true
+        },
+        {
+          "texto": "1,6 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por Dalton: P total = 0,3 + 0,5 = 0,8 atm."
+    },
+    {
+      "enunciado": "Una mezcla contiene 2 mol de N₂ y 3 mol de O₂, con una presión total de 5 atm. ¿Cuál es la presión parcial del N₂?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1 atm",
+          "correcta": false
+        },
+        {
+          "texto": "2 atm",
+          "correcta": true
+        },
+        {
+          "texto": "2,5 atm",
+          "correcta": false
+        },
+        {
+          "texto": "3 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "P(N₂) = fracción molar · P total = (2/5)·5 = 2 atm."
+    },
+    {
+      "enunciado": "Un globo tiene 1,5 L a 25 °C y 1 atm. Asciende hasta una altura donde la presión es 0,8 atm y la temperatura 10 °C. ¿Cuál será su volumen?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1,20 L",
+          "correcta": false
+        },
+        {
+          "texto": "1,42 L",
+          "correcta": false
+        },
+        {
+          "texto": "1,78 L",
+          "correcta": true
+        },
+        {
+          "texto": "1,97 L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En kelvin: 298 K y 283 K. V₂ = 1,5·(1/0,8)·(283/298) = 1,78 L."
+    },
+    {
+      "enunciado": "¿Qué volumen ocupan 3 mol de un gas ideal en condiciones normales?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "67,2 L",
+          "correcta": true
+        },
+        {
+          "texto": "44,8 L",
+          "correcta": false
+        },
+        {
+          "texto": "33,6 L",
+          "correcta": false
+        },
+        {
+          "texto": "22,4 L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V = n·Vm = 3·22,4 = 67,2 L."
+    },
+    {
+      "enunciado": "¿Cuál es la densidad del dióxido de carbono (M = 44 g/mol) en condiciones normales?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,51 g/L",
+          "correcta": false
+        },
+        {
+          "texto": "1,96 g/L",
+          "correcta": true
+        },
+        {
+          "texto": "22,4 g/L",
+          "correcta": false
+        },
+        {
+          "texto": "44 g/L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "d = M/Vm = 44/22,4 = 1,96 g/L."
+    },
+    {
+      "enunciado": "¿Qué volumen ocupan 8 g de oxígeno (O₂, M = 32 g/mol) en condiciones normales?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "22,4 L",
+          "correcta": false
+        },
+        {
+          "texto": "11,2 L",
+          "correcta": false
+        },
+        {
+          "texto": "5,6 L",
+          "correcta": true
+        },
+        {
+          "texto": "2,8 L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 8/32 = 0,25 mol; V = 0,25·22,4 = 5,6 L."
+    },
+    {
+      "enunciado": "Un gas ocupa 4 L a 300 K. ¿A qué temperatura ocupará 5 L si la presión permanece constante?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "240 K",
+          "correcta": false
+        },
+        {
+          "texto": "300 K",
+          "correcta": false
+        },
+        {
+          "texto": "375 K",
+          "correcta": true
+        },
+        {
+          "texto": "600 K",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por Charles: T₂ = T₁·V₂/V₁ = 300·(5/4) = 375 K."
+    },
+    {
+      "enunciado": "Un gas ejerce 1,5 atm a 400 K en un recipiente rígido. ¿A qué temperatura su presión será 2 atm?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "267 K",
+          "correcta": false
+        },
+        {
+          "texto": "300 K",
+          "correcta": false
+        },
+        {
+          "texto": "533 K",
+          "correcta": true
+        },
+        {
+          "texto": "800 K",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por Gay-Lussac: T₂ = T₁·P₂/P₁ = 400·(2/1,5) = 533 K."
+    },
+    {
+      "enunciado": "Se recoge un gas sobre agua. La presión total medida es 750 mmHg y la presión de vapor del agua es 24 mmHg. ¿Cuál es la presión del gas seco?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "774 mmHg",
+          "correcta": false
+        },
+        {
+          "texto": "750 mmHg",
+          "correcta": false
+        },
+        {
+          "texto": "726 mmHg",
+          "correcta": true
+        },
+        {
+          "texto": "31 mmHg",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por Dalton: P(gas seco) = P total − P(vapor) = 750 − 24 = 726 mmHg."
+    },
+    {
+      "enunciado": "¿Cuántos gramos de nitrógeno (N₂, M = 28 g/mol) hay en un recipiente de 5 L a 2 atm y 300 K? (R = 0,0821 L·atm/(mol·K))",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5,7 g",
+          "correcta": false
+        },
+        {
+          "texto": "8,2 g",
+          "correcta": false
+        },
+        {
+          "texto": "11,4 g",
+          "correcta": true
+        },
+        {
+          "texto": "22,8 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = PV/RT = (2·5)/(0,0821·300) = 0,406 mol; m = 0,406·28 = 11,4 g."
+    },
+    {
+      "enunciado": "Una muestra de 1,96 g de un gas ocupa 1,00 L en condiciones normales. ¿Cuál es su masa molar?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "22 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "28 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "44 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "88 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 1,00/22,4 = 0,0446 mol; M = 1,96/0,0446 = 44 g/mol."
+    },
+    {
+      "enunciado": "Un gas tiene una densidad de 1,25 g/L en condiciones normales. ¿Cuál es su masa molar?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "44 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "28 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "22,4 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "17,9 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "M = d·Vm = 1,25·22,4 = 28 g/mol."
+    },
+    {
+      "enunciado": "Un gas ocupa 500 mL a 27 °C y 1 atm. ¿Qué volumen ocupará a 2 atm y 127 °C?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "250 mL",
+          "correcta": false
+        },
+        {
+          "texto": "333 mL",
+          "correcta": true
+        },
+        {
+          "texto": "375 mL",
+          "correcta": false
+        },
+        {
+          "texto": "667 mL",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En kelvin: 300 K y 400 K. V₂ = 500·(1/2)·(400/300) = 333 mL."
+    },
+    {
+      "enunciado": "Se recogen 0,5 L de oxígeno sobre agua a 20 °C (293 K). La presión total es 740 mmHg y la presión de vapor del agua es 18 mmHg. ¿Cuántos moles de O₂ seco se obtuvieron? (R = 0,0821 L·atm/(mol·K))",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,0099 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,0197 mol",
+          "correcta": true
+        },
+        {
+          "texto": "0,0202 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,0395 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "P(O₂) = (740 − 18)/760 = 0,950 atm; n = PV/RT = (0,950·0,5)/(0,0821·293) = 0,0197 mol."
+    },
+    {
+      "enunciado": "Un recipiente de 10 L contiene 4 g de helio (M = 4 g/mol) y 16 g de oxígeno (M = 32 g/mol) a 300 K. ¿Cuál es la presión parcial del helio? (R = 0,0821 L·atm/(mol·K))",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4,93 atm",
+          "correcta": false
+        },
+        {
+          "texto": "3,69 atm",
+          "correcta": false
+        },
+        {
+          "texto": "2,46 atm",
+          "correcta": true
+        },
+        {
+          "texto": "1,23 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n(He) = 4/4 = 1 mol; P(He) = nRT/V = (1·0,0821·300)/10 = 2,46 atm."
+    },
+    {
+      "enunciado": "En un recipiente de 5 L hay 0,2 mol de N₂ y 0,3 mol de CO₂ a 350 K. ¿Cuál es la presión parcial del CO₂? (R = 0,0821 L·atm/(mol·K))",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2,87 atm",
+          "correcta": false
+        },
+        {
+          "texto": "1,72 atm",
+          "correcta": true
+        },
+        {
+          "texto": "1,15 atm",
+          "correcta": false
+        },
+        {
+          "texto": "0,57 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "P(CO₂) = nRT/V = (0,3·0,0821·350)/5 = 1,72 atm."
+    },
+    {
+      "enunciado": "Se transfieren a un recipiente de 5 L, a temperatura constante, el contenido de un balón A (2 L a 3 atm) y de un balón B (3 L a 2 atm). ¿Cuál es la presión total resultante?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12 atm",
+          "correcta": false
+        },
+        {
+          "texto": "5 atm",
+          "correcta": false
+        },
+        {
+          "texto": "2,4 atm",
+          "correcta": true
+        },
+        {
+          "texto": "1,2 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada gas se expande al nuevo volumen: P(A) = (3·2)/5 = 1,2 atm, P(B) = (2·3)/5 = 1,2 atm; P total = 2,4 atm."
+    },
+    {
+      "enunciado": "Una burbuja de aire de 2,0 mL se forma en el fondo de un lago, donde la presión es 4,0 atm. ¿Qué volumen tendrá al llegar a la superficie (1,0 atm), si la temperatura no cambia?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,5 mL",
+          "correcta": false
+        },
+        {
+          "texto": "2,0 mL",
+          "correcta": false
+        },
+        {
+          "texto": "4,0 mL",
+          "correcta": false
+        },
+        {
+          "texto": "8,0 mL",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por Boyle: V₂ = P₁·V₁/P₂ = (4,0·2,0)/1,0 = 8,0 mL."
+    },
+    {
+      "enunciado": "¿A qué temperatura se encuentran 0,25 mol de un gas ideal que ocupan 2 L a 3 atm? (R = 0,0821 L·atm/(mol·K))",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "365 K",
+          "correcta": false
+        },
+        {
+          "texto": "292 K",
+          "correcta": true
+        },
+        {
+          "texto": "146 K",
+          "correcta": false
+        },
+        {
+          "texto": "19 K",
+          "correcta": false
+        }
+      ],
+      "explicacion": "T = PV/(nR) = (3·2)/(0,25·0,0821) = 292 K."
+    },
+    {
+      "enunciado": "Un recipiente rígido de 10 L contiene un gas a 2 atm y 300 K. Si se añade gas hasta duplicar el número de moles y la temperatura sube a 400 K, ¿cuál será la nueva presión?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8 atm",
+          "correcta": false
+        },
+        {
+          "texto": "5,33 atm",
+          "correcta": true
+        },
+        {
+          "texto": "4 atm",
+          "correcta": false
+        },
+        {
+          "texto": "2,67 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A volumen constante: P₂ = P₁·(n₂/n₁)·(T₂/T₁) = 2·2·(400/300) = 5,33 atm."
+    },
+    {
+      "enunciado": "En una mezcla gaseosa, las presiones parciales son: N₂ = 0,6 atm, O₂ = 0,2 atm y CO₂ = 0,2 atm. ¿Cuál es la fracción molar del N₂?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,75",
+          "correcta": false
+        },
+        {
+          "texto": "0,60",
+          "correcta": true
+        },
+        {
+          "texto": "0,40",
+          "correcta": false
+        },
+        {
+          "texto": "0,20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La fracción molar equivale a la fracción de presión: X(N₂) = 0,6/(0,6+0,2+0,2) = 0,60."
+    },
+    {
+      "enunciado": "Un gas ocupa 4 L a 2 atm y 300 K. ¿Qué presión tendrá si su volumen se reduce a 2 L y su temperatura sube a 450 K?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6 atm",
+          "correcta": true
+        },
+        {
+          "texto": "4 atm",
+          "correcta": false
+        },
+        {
+          "texto": "3 atm",
+          "correcta": false
+        },
+        {
+          "texto": "1,33 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la ley combinada: P₂ = 2·(4/2)·(450/300) = 6 atm."
+    },
+    {
+      "enunciado": "¿Cuál es la densidad del oxígeno (O₂, M = 32 g/mol) a 2 atm y 300 K? (R = 0,0821 L·atm/(mol·K))",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5,20 g/L",
+          "correcta": false
+        },
+        {
+          "texto": "2,60 g/L",
+          "correcta": true
+        },
+        {
+          "texto": "1,43 g/L",
+          "correcta": false
+        },
+        {
+          "texto": "1,30 g/L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "d = PM/(RT) = (2·32)/(0,0821·300) = 2,60 g/L."
+    },
+    {
+      "enunciado": "¿Cuántas moléculas hay en 2,0 L de un gas ideal en condiciones normales? (número de Avogadro = 6,022 × 10²³)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6,0 × 10²³ moléculas",
+          "correcta": false
+        },
+        {
+          "texto": "1,2 × 10²⁴ moléculas",
+          "correcta": false
+        },
+        {
+          "texto": "5,4 × 10²² moléculas",
+          "correcta": true
+        },
+        {
+          "texto": "2,7 × 10²² moléculas",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 2,0/22,4 = 0,089 mol; N = 0,089·6,022 × 10²³ = 5,4 × 10²² moléculas."
+    },
+    {
+      "enunciado": "Un recipiente de 2,0 L contiene 2,8 g de nitrógeno (N₂, M = 28 g/mol) a 350 K. ¿Cuál es la presión del gas? (R = 0,0821 L·atm/(mol·K))",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,72 atm",
+          "correcta": false
+        },
+        {
+          "texto": "1,44 atm",
+          "correcta": true
+        },
+        {
+          "texto": "2,87 atm",
+          "correcta": false
+        },
+        {
+          "texto": "4,02 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 2,8/28 = 0,1 mol; P = nRT/V = (0,1·0,0821·350)/2,0 = 1,44 atm."
+    }
+  ]
+}

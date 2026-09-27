@@ -1,0 +1,1128 @@
+{
+  "id": "matematica-funciones",
+  "materia": "matematica",
+  "tema": "Funciones: lineal, cuadrática y exponencial",
+  "bloque": "Ecuaciones y funciones",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Una función es una regla que a cada valor de x le asigna un único valor f(x). Evaluar es reemplazar x por el número; el dominio son los x permitidos y el rango, los valores que salen. Lineal: f(x) = mx + b (recta); cuadrática: f(x) = ax² + bx + c (parábola); exponencial: f(x) = aˣ.",
+    "ejemplo": {
+      "enunciado": "Para f(x) = x² − 4x + 3, halla el vértice de la parábola y di si es un mínimo o un máximo.",
+      "pasos": [
+        "Identifica a = 1, b = −4, c = 3.",
+        "Abscisa del vértice: x = −b/(2a) = 4/2 = 2.",
+        "Evalúa: f(2) = 2² − 4·2 + 3 = 4 − 8 + 3 = −1.",
+        "Como a = 1 > 0, la parábola abre hacia arriba: el vértice es el punto más bajo."
+      ],
+      "resultado": "Vértice (2, −1); f tiene un valor mínimo de −1."
+    },
+    "ojo": "Al evaluar con números negativos usa paréntesis: si f(x) = x² − 4, entonces f(−3) = (−3)² − 4 = 9 − 4 = 5, no −9 − 4."
+  },
+  "preguntas": [
+    {
+      "enunciado": "Si f(x) = 2x + 3, ¿cuál es el valor de f(4)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se reemplaza x por 4: f(4) = 2(4) + 3 = 8 + 3 = 11."
+    },
+    {
+      "enunciado": "Para la función f(x) = x², ¿cuál es el valor de f(3)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se eleva al cuadrado: f(3) = 3² = 9."
+    },
+    {
+      "enunciado": "Si f(x) = 3x − 1, ¿cuánto vale f(0)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al sustituir x = 0: f(0) = 3(0) − 1 = −1."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes es una función lineal?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "y = x²",
+          "correcta": false
+        },
+        {
+          "texto": "y = 3ˣ",
+          "correcta": false
+        },
+        {
+          "texto": "y = 2x + 1",
+          "correcta": true
+        },
+        {
+          "texto": "y = 1/x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una función lineal tiene la forma y = mx + b con variable de grado 1; y = 2x + 1 cumple esa forma."
+    },
+    {
+      "enunciado": "¿Cuál es el dominio de la función f(x) = x + 2?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x > 0",
+          "correcta": false
+        },
+        {
+          "texto": "x ≠ 0",
+          "correcta": false
+        },
+        {
+          "texto": "Todos los números reales",
+          "correcta": true
+        },
+        {
+          "texto": "x ≥ 2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es una función lineal (polinomio), por lo que está definida para cualquier número real."
+    },
+    {
+      "enunciado": "¿Cuál es la pendiente de la recta y = 4x − 7?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−7",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "−4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la forma y = mx + b, la pendiente es el coeficiente de x, es decir m = 4."
+    },
+    {
+      "enunciado": "¿En qué punto la recta y = 3x + 5 corta al eje Y?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(0, 5)",
+          "correcta": true
+        },
+        {
+          "texto": "(0, 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(5, 0)",
+          "correcta": false
+        },
+        {
+          "texto": "(0, −5)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El corte con el eje Y ocurre en x = 0: y = 3(0) + 5 = 5, es decir el punto (0, 5)."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes es una función cuadrática?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "y = 2x − 1",
+          "correcta": false
+        },
+        {
+          "texto": "y = 5x",
+          "correcta": false
+        },
+        {
+          "texto": "y = 2ˣ",
+          "correcta": false
+        },
+        {
+          "texto": "y = x² − 3x + 2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Una función cuadrática tiene un término de segundo grado (x²); y = x² − 3x + 2 lo posee."
+    },
+    {
+      "enunciado": "Si f(x) = 2ˣ, ¿cuánto vale f(3)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f(3) = 2³ = 2 · 2 · 2 = 8."
+    },
+    {
+      "enunciado": "Si f(x) = 7 es una función constante, ¿cuál es el valor de f(100)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "100",
+          "correcta": false
+        },
+        {
+          "texto": "107",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una función constante da el mismo valor para cualquier x; por lo tanto f(100) = 7."
+    },
+    {
+      "enunciado": "Si f(x) = −x + 2, ¿cuál es el valor de f(5)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−7",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "f(5) = −(5) + 2 = −5 + 2 = −3."
+    },
+    {
+      "enunciado": "La gráfica de una función lineal sube de izquierda a derecha. ¿Qué se puede afirmar de ella?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Es decreciente (pendiente negativa)",
+          "correcta": false
+        },
+        {
+          "texto": "Es creciente (pendiente positiva)",
+          "correcta": true
+        },
+        {
+          "texto": "Es constante (horizontal)",
+          "correcta": false
+        },
+        {
+          "texto": "Es vertical",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La recta sube de izquierda a derecha, por lo que su pendiente es positiva y la función es creciente."
+    },
+    {
+      "enunciado": "¿Cuál es el dominio de la función f(x) = 1/x?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Todos los números reales",
+          "correcta": false
+        },
+        {
+          "texto": "x ≠ 0",
+          "correcta": true
+        },
+        {
+          "texto": "x > 0",
+          "correcta": false
+        },
+        {
+          "texto": "x ≥ 0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "No se puede dividir entre cero, por lo que el dominio excluye x = 0."
+    },
+    {
+      "enunciado": "Si f(x) = x² + 1, ¿cuál es el valor de f(0)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f(0) = 0² + 1 = 0 + 1 = 1."
+    },
+    {
+      "enunciado": "¿Hacia dónde abre la parábola de la función y = x²?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Hacia abajo",
+          "correcta": false
+        },
+        {
+          "texto": "Hacia la derecha",
+          "correcta": false
+        },
+        {
+          "texto": "Hacia la izquierda",
+          "correcta": false
+        },
+        {
+          "texto": "Hacia arriba",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como el coeficiente de x² es positivo, la parábola abre hacia arriba."
+    },
+    {
+      "enunciado": "Si f(x) = x² − 4, ¿cuál es el valor de f(−3)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "−5",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f(−3) = (−3)² − 4 = 9 − 4 = 5."
+    },
+    {
+      "enunciado": "¿Cuál es el dominio de la función f(x) = √(x − 3)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x > 3",
+          "correcta": false
+        },
+        {
+          "texto": "x ≤ 3",
+          "correcta": false
+        },
+        {
+          "texto": "x ≥ 3",
+          "correcta": true
+        },
+        {
+          "texto": "Todos los números reales",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El radicando debe ser no negativo: x − 3 ≥ 0, es decir x ≥ 3."
+    },
+    {
+      "enunciado": "¿Cuál es el vértice de la parábola y = x² − 6x + 5?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(−3, −4)",
+          "correcta": false
+        },
+        {
+          "texto": "(3, −4)",
+          "correcta": true
+        },
+        {
+          "texto": "(3, 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(6, 5)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La abscisa del vértice es x = −b/(2a) = 6/2 = 3; al evaluar, y = 9 − 18 + 5 = −4."
+    },
+    {
+      "enunciado": "¿Cuál es el rango (conjunto de valores) de la función f(x) = x²?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Todos los números reales",
+          "correcta": false
+        },
+        {
+          "texto": "y > 0",
+          "correcta": false
+        },
+        {
+          "texto": "y ≤ 0",
+          "correcta": false
+        },
+        {
+          "texto": "y ≥ 0",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El cuadrado de cualquier número real es no negativo, por lo que y toma todos los valores mayores o iguales que 0."
+    },
+    {
+      "enunciado": "¿En qué valores de x corta al eje X la gráfica de f(x) = x² − 5x + 6?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2 y 3",
+          "correcta": true
+        },
+        {
+          "texto": "−2 y −3",
+          "correcta": false
+        },
+        {
+          "texto": "1 y 6",
+          "correcta": false
+        },
+        {
+          "texto": "−1 y 6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los cortes con el eje X cumplen f(x) = 0: x² − 5x + 6 = (x − 2)(x − 3) = 0, de donde x = 2 o x = 3."
+    },
+    {
+      "enunciado": "Si f(x) = 2x + 1, ¿para qué valor de x se cumple f(x) = 9?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se resuelve 2x + 1 = 9, entonces 2x = 8 y x = 4."
+    },
+    {
+      "enunciado": "¿Cuál es la ecuación de la recta que tiene pendiente 3 y pasa por el punto (0, 2)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "y = 2x + 3",
+          "correcta": false
+        },
+        {
+          "texto": "y = 3x − 2",
+          "correcta": false
+        },
+        {
+          "texto": "y = 2x − 3",
+          "correcta": false
+        },
+        {
+          "texto": "y = 3x + 2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En y = mx + b, la pendiente m = 3 y el corte b = 2, así que y = 3x + 2."
+    },
+    {
+      "enunciado": "¿Cuál es el dominio de la función f(x) = 1/(x − 2)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x ≠ 2",
+          "correcta": true
+        },
+        {
+          "texto": "x ≠ −2",
+          "correcta": false
+        },
+        {
+          "texto": "x ≥ 2",
+          "correcta": false
+        },
+        {
+          "texto": "Todos los números reales",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El denominador no puede ser cero: x − 2 ≠ 0, es decir x ≠ 2."
+    },
+    {
+      "enunciado": "Si f(x) = 3 · 2ˣ, ¿cuál es el valor de f(2)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f(2) = 3 · 2² = 3 · 4 = 12."
+    },
+    {
+      "enunciado": "¿En qué valor corta al eje Y la parábola y = x² − 2x − 3?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El corte con el eje Y se obtiene con x = 0: y = 0 − 0 − 3 = −3."
+    },
+    {
+      "enunciado": "¿Cuál es la pendiente de la recta que pasa por los puntos (1, 2) y (3, 8)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La pendiente es (8 − 2)/(3 − 1) = 6/2 = 3."
+    },
+    {
+      "enunciado": "Si f(x) = x² + 2x, ¿qué valor de x, además de x = 0, hace que f(x) = 0?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "x² + 2x = x(x + 2) = 0, cuyas soluciones son x = 0 y x = −2."
+    },
+    {
+      "enunciado": "¿Cuál es el eje de simetría de la parábola y = 2x² + 8x + 1?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = −2",
+          "correcta": true
+        },
+        {
+          "texto": "x = 2",
+          "correcta": false
+        },
+        {
+          "texto": "x = 4",
+          "correcta": false
+        },
+        {
+          "texto": "x = −4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El eje de simetría es x = −b/(2a) = −8/(2 · 2) = −8/4 = −2."
+    },
+    {
+      "enunciado": "Si f(x) = (1/2)ˣ, ¿cuál es el valor de f(3)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/8",
+          "correcta": true
+        },
+        {
+          "texto": "1/6",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "3/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f(3) = (1/2)³ = 1/8."
+    },
+    {
+      "enunciado": "¿Cómo es la función f(x) = −2x + 5?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Creciente",
+          "correcta": false
+        },
+        {
+          "texto": "Decreciente",
+          "correcta": true
+        },
+        {
+          "texto": "Constante",
+          "correcta": false
+        },
+        {
+          "texto": "No es función",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La pendiente es −2 (negativa), por lo que la función es decreciente."
+    },
+    {
+      "enunciado": "¿Cuál es el rango de la función f(x) = 2ˣ?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "y ≥ 0",
+          "correcta": false
+        },
+        {
+          "texto": "Todos los números reales",
+          "correcta": false
+        },
+        {
+          "texto": "y > 0",
+          "correcta": true
+        },
+        {
+          "texto": "y > 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una función exponencial de base 2 siempre toma valores positivos, nunca cero ni negativos, así que y > 0."
+    },
+    {
+      "enunciado": "¿Cuál es la solución de la ecuación 2ˣ = 32?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como 32 = 2⁵, se tiene 2ˣ = 2⁵, por lo tanto x = 5."
+    },
+    {
+      "enunciado": "¿Cuál es el valor mínimo de la función f(x) = x² − 4x + 7?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Completando cuadrados: f(x) = (x − 2)² + 3, cuyo valor mínimo es 3 (cuando x = 2)."
+    },
+    {
+      "enunciado": "¿Cuál es el dominio de la función f(x) = √(4 − x²)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x ≥ 2",
+          "correcta": false
+        },
+        {
+          "texto": "Todos los números reales",
+          "correcta": false
+        },
+        {
+          "texto": "x ≤ 4",
+          "correcta": false
+        },
+        {
+          "texto": "−2 ≤ x ≤ 2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se exige 4 − x² ≥ 0, es decir x² ≤ 4, lo que da −2 ≤ x ≤ 2."
+    },
+    {
+      "enunciado": "¿Cuál es el rango de la función f(x) = −x² + 4?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "y ≥ 4",
+          "correcta": false
+        },
+        {
+          "texto": "y ≥ 0",
+          "correcta": false
+        },
+        {
+          "texto": "y ≤ 4",
+          "correcta": true
+        },
+        {
+          "texto": "Todos los números reales",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La parábola abre hacia abajo con vértice en (0, 4); el valor máximo es 4, por lo que y ≤ 4."
+    },
+    {
+      "enunciado": "Para f(x) = x² y h ≠ 0, ¿cuál es la expresión simplificada del cociente [f(x + h) − f(x)]/h?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2x",
+          "correcta": false
+        },
+        {
+          "texto": "2x + h",
+          "correcta": true
+        },
+        {
+          "texto": "x + h",
+          "correcta": false
+        },
+        {
+          "texto": "2x + h²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "[(x + h)² − x²]/h = (2xh + h²)/h = 2x + h."
+    },
+    {
+      "enunciado": "Si f(x) = 2x + 1 y g(x) = x², ¿cuál es el valor de f(g(3))?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "49",
+          "correcta": false
+        },
+        {
+          "texto": "37",
+          "correcta": false
+        },
+        {
+          "texto": "19",
+          "correcta": true
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Primero g(3) = 9; luego f(9) = 2(9) + 1 = 19."
+    },
+    {
+      "enunciado": "¿Cuál es la función inversa de f(x) = 2x − 4?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "f⁻¹(x) = (x + 4)/2",
+          "correcta": true
+        },
+        {
+          "texto": "f⁻¹(x) = (x − 4)/2",
+          "correcta": false
+        },
+        {
+          "texto": "f⁻¹(x) = 2x + 4",
+          "correcta": false
+        },
+        {
+          "texto": "f⁻¹(x) = 1/(2x − 4)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se despeja x de y = 2x − 4: x = (y + 4)/2; al intercambiar las letras, f⁻¹(x) = (x + 4)/2."
+    },
+    {
+      "enunciado": "Una población crece según P(t) = 500 · 2ᵗ (t en años). ¿Cuál será la población al cabo de 3 años?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3000 habitantes",
+          "correcta": false
+        },
+        {
+          "texto": "4000 habitantes",
+          "correcta": true
+        },
+        {
+          "texto": "1500 habitantes",
+          "correcta": false
+        },
+        {
+          "texto": "8000 habitantes",
+          "correcta": false
+        }
+      ],
+      "explicacion": "P(3) = 500 · 2³ = 500 · 8 = 4000."
+    },
+    {
+      "enunciado": "¿En cuántos puntos corta al eje X la parábola y = x² + 2x + 5?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "En dos puntos",
+          "correcta": false
+        },
+        {
+          "texto": "En un solo punto (el vértice)",
+          "correcta": false
+        },
+        {
+          "texto": "En tres puntos",
+          "correcta": false
+        },
+        {
+          "texto": "En ningún punto",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los cortes con el eje X son las soluciones de x² + 2x + 5 = 0; su discriminante es 4 − 20 = −16 < 0, así que no hay cortes."
+    },
+    {
+      "enunciado": "¿Para qué valores de k la parábola y = x² + kx + 9 toca al eje X en un solo punto?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "k = ±6",
+          "correcta": true
+        },
+        {
+          "texto": "k = ±3",
+          "correcta": false
+        },
+        {
+          "texto": "k = ±9",
+          "correcta": false
+        },
+        {
+          "texto": "k = ±18",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Toca al eje X en un solo punto cuando el discriminante es cero: k² − 4·1·9 = 0, entonces k² = 36 y k = ±6."
+    },
+    {
+      "enunciado": "¿Cuál es la solución de la ecuación 3ˣ⁺¹ = 27?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 27 = 3³, se iguala x + 1 = 3, de donde x = 2."
+    },
+    {
+      "enunciado": "¿Cuál es el rango de la función f(x) = 2ˣ + 3?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "y ≥ 3",
+          "correcta": false
+        },
+        {
+          "texto": "y > 0",
+          "correcta": false
+        },
+        {
+          "texto": "Todos los números reales",
+          "correcta": false
+        },
+        {
+          "texto": "y > 3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como 2ˣ > 0 siempre, al sumar 3 se obtiene y > 3 (la recta y = 3 es asíntota)."
+    },
+    {
+      "enunciado": "¿Cuál es el vértice de la parábola y = (x − 2)² + 1?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(−2, 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, −1)",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 1)",
+          "correcta": true
+        },
+        {
+          "texto": "(−2, −1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la forma y = (x − h)² + k, el vértice es (h, k) = (2, 1)."
+    },
+    {
+      "enunciado": "¿Cuáles son los ceros (raíces) de la función f(x) = 2x² − 3x − 2?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−2 y 1/2",
+          "correcta": false
+        },
+        {
+          "texto": "2 y −1/2",
+          "correcta": true
+        },
+        {
+          "texto": "2 y 1/2",
+          "correcta": false
+        },
+        {
+          "texto": "−2 y −1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los ceros cumplen f(x) = 0. Factorizando: (2x + 1)(x − 2) = 0, de donde x = −1/2 o x = 2."
+    },
+    {
+      "enunciado": "Una sustancia de 80 g se reduce a la mitad cada 5 horas, es decir, A = 80 · (1/2)ⁿ, donde n = t/5 es el número de periodos de 5 horas. ¿Cuántos gramos quedan a las 10 horas?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "40 g",
+          "correcta": false
+        },
+        {
+          "texto": "10 g",
+          "correcta": false
+        },
+        {
+          "texto": "8 g",
+          "correcta": false
+        },
+        {
+          "texto": "20 g",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En 10 horas hay n = 10/5 = 2 periodos: A = 80 · (1/2)² = 80 · 1/4 = 20 g."
+    },
+    {
+      "enunciado": "¿Cuál es la tasa media de cambio de f(x) = x² en el intervalo [1, 4]?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "17",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La tasa media es [f(4) − f(1)]/(4 − 1) = (16 − 1)/3 = 15/3 = 5."
+    },
+    {
+      "enunciado": "¿Cuál es el valor máximo de la función f(x) = −2x² + 8x − 3?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El máximo está en x = −b/(2a) = −8/(−4) = 2; f(2) = −8 + 16 − 3 = 5."
+    }
+  ]
+}

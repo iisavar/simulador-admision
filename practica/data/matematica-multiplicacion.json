@@ -1,0 +1,1081 @@
+{
+  "id": "matematica-multiplicacion",
+  "materia": "matematica",
+  "tema": "Multiplicación de números naturales",
+  "bloque": "Aritmética",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "Multiplicar es sumar un número varias veces. Para productos grandes, descompón un factor en decenas y unidades y suma los productos parciales. El orden y la agrupación de los factores no cambian el resultado.",
+    "ejemplo": {
+      "enunciado": "Calcula: 47 × 19",
+      "pasos": [
+        "Piensa 19 como 20 − 1.",
+        "47 × 20 = 940.",
+        "47 × 1 = 47, y se resta: 940 − 47 = 893."
+      ],
+      "resultado": "893"
+    },
+    "ojo": "Al descomponer (20 + 3) × 4, multiplicar solo una parte: hay que multiplicar el 20 y también el 3."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuánto es 7 × 8?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "54",
+          "correcta": false
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        },
+        {
+          "texto": "49",
+          "correcta": false
+        },
+        {
+          "texto": "56",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Según la tabla del 7, 7 × 8 = 56."
+    },
+    {
+      "enunciado": "¿Cuánto es 9 × 9?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "72",
+          "correcta": false
+        },
+        {
+          "texto": "99",
+          "correcta": false
+        },
+        {
+          "texto": "81",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El cuadrado de 9 es 9 × 9 = 81."
+    },
+    {
+      "enunciado": "Una caja contiene 6 lápices. ¿Cuántos lápices hay en 4 cajas iguales?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se repiten 6 lápices 4 veces: 6 × 4 = 24."
+    },
+    {
+      "enunciado": "¿Cuánto es 5 × 6?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "30",
+          "correcta": true
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Según la tabla del 5, 5 × 6 = 30."
+    },
+    {
+      "enunciado": "¿Cuánto es 8 × 4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "32",
+          "correcta": true
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Según la tabla del 8, 8 × 4 = 32 (cuatro grupos de 8)."
+    },
+    {
+      "enunciado": "Un estante tiene 5 filas y en cada fila hay 8 libros. ¿Cuántos libros hay en total?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": true
+        },
+        {
+          "texto": "45",
+          "correcta": false
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Son 5 grupos de 8 libros: 5 × 8 = 40."
+    },
+    {
+      "enunciado": "¿Cuánto es 10 × 7?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "70",
+          "correcta": true
+        },
+        {
+          "texto": "17",
+          "correcta": false
+        },
+        {
+          "texto": "700",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicar por 10 agrega un cero a la derecha: 10 × 7 = 70."
+    },
+    {
+      "enunciado": "¿Cuál igualdad muestra la propiedad conmutativa de la multiplicación?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3 + 5 = 5 + 3",
+          "correcta": false
+        },
+        {
+          "texto": "(2 × 3) × 4 = 2 × (3 × 4)",
+          "correcta": false
+        },
+        {
+          "texto": "6 × 2 = 2 × 6",
+          "correcta": true
+        },
+        {
+          "texto": "4 × 1 = 4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La propiedad conmutativa indica que el orden de los factores no altera el producto: a × b = b × a."
+    },
+    {
+      "enunciado": "¿Cuánto es 3 × 0?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Todo número multiplicado por 0 da como resultado 0."
+    },
+    {
+      "enunciado": "¿Cuánto es 1 × 8?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 1 es el elemento neutro de la multiplicación: 1 × 8 = 8."
+    },
+    {
+      "enunciado": "¿Cuánto es 6 × 7?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "42",
+          "correcta": true
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "48",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Según la tabla del 6, 6 × 7 = 42."
+    },
+    {
+      "enunciado": "¿Cuánto es 9 × 6?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "45",
+          "correcta": false
+        },
+        {
+          "texto": "56",
+          "correcta": false
+        },
+        {
+          "texto": "63",
+          "correcta": false
+        },
+        {
+          "texto": "54",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Según la tabla del 9, 9 × 6 = 54 (también 10 × 6 − 6 = 54)."
+    },
+    {
+      "enunciado": "¿Cuánto es 8 × 8?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "56",
+          "correcta": false
+        },
+        {
+          "texto": "64",
+          "correcta": true
+        },
+        {
+          "texto": "72",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cuadrado de 8 es 8 × 8 = 64."
+    },
+    {
+      "enunciado": "¿Cuánto es 5 × 5?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El cuadrado de 5 es 5 × 5 = 25."
+    },
+    {
+      "enunciado": "¿Cuánto es 23 × 4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "82",
+          "correcta": false
+        },
+        {
+          "texto": "96",
+          "correcta": false
+        },
+        {
+          "texto": "92",
+          "correcta": true
+        },
+        {
+          "texto": "88",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se descompone: 20 × 4 = 80 y 3 × 4 = 12, luego 80 + 12 = 92."
+    },
+    {
+      "enunciado": "¿Cuánto es 34 × 5?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "150",
+          "correcta": false
+        },
+        {
+          "texto": "170",
+          "correcta": true
+        },
+        {
+          "texto": "175",
+          "correcta": false
+        },
+        {
+          "texto": "160",
+          "correcta": false
+        }
+      ],
+      "explicacion": "30 × 5 = 150 y 4 × 5 = 20, luego 150 + 20 = 170."
+    },
+    {
+      "enunciado": "¿Cuánto es 12 × 12?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "124",
+          "correcta": false
+        },
+        {
+          "texto": "120",
+          "correcta": false
+        },
+        {
+          "texto": "144",
+          "correcta": true
+        },
+        {
+          "texto": "148",
+          "correcta": false
+        }
+      ],
+      "explicacion": "12 × 12 = 144 (es una docena de docenas)."
+    },
+    {
+      "enunciado": "Si 7 × n = 56, ¿cuál es el valor de n?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se despeja dividiendo: 56 ÷ 7 = 8."
+    },
+    {
+      "enunciado": "Un arreglo rectangular tiene 3 filas con 5 puntos en cada fila. ¿Qué multiplicación representa la cantidad total de puntos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5 × 5 = 25",
+          "correcta": false
+        },
+        {
+          "texto": "3 + 5 = 8",
+          "correcta": false
+        },
+        {
+          "texto": "3 × 5 = 15",
+          "correcta": true
+        },
+        {
+          "texto": "4 × 5 = 20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 3 filas con 5 puntos cada una, por lo que el total es 3 × 5 = 15."
+    },
+    {
+      "enunciado": "¿Cuánto es 25 × 4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "90",
+          "correcta": false
+        },
+        {
+          "texto": "100",
+          "correcta": true
+        },
+        {
+          "texto": "85",
+          "correcta": false
+        },
+        {
+          "texto": "110",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cuatro grupos de 25 forman 100: 25 × 4 = 100."
+    },
+    {
+      "enunciado": "Una docena tiene 12 unidades. ¿Cuántos huevos hay en 3 docenas?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "36",
+          "correcta": true
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se repiten 12 huevos 3 veces: 12 × 3 = 36."
+    },
+    {
+      "enunciado": "¿Cuánto es 18 × 6?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "96",
+          "correcta": false
+        },
+        {
+          "texto": "108",
+          "correcta": true
+        },
+        {
+          "texto": "104",
+          "correcta": false
+        },
+        {
+          "texto": "114",
+          "correcta": false
+        }
+      ],
+      "explicacion": "10 × 6 = 60 y 8 × 6 = 48, luego 60 + 48 = 108."
+    },
+    {
+      "enunciado": "¿Cuánto es 45 × 2?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "80",
+          "correcta": false
+        },
+        {
+          "texto": "95",
+          "correcta": false
+        },
+        {
+          "texto": "90",
+          "correcta": true
+        },
+        {
+          "texto": "85",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El doble de 45 es 90: 45 × 2 = 90."
+    },
+    {
+      "enunciado": "¿Cuánto es 11 × 11?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "111",
+          "correcta": false
+        },
+        {
+          "texto": "101",
+          "correcta": false
+        },
+        {
+          "texto": "22",
+          "correcta": false
+        },
+        {
+          "texto": "121",
+          "correcta": true
+        }
+      ],
+      "explicacion": "11 × 11 = 11 × 10 + 11 = 110 + 11 = 121."
+    },
+    {
+      "enunciado": "¿Cuánto es 16 × 5?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "80",
+          "correcta": true
+        },
+        {
+          "texto": "75",
+          "correcta": false
+        },
+        {
+          "texto": "85",
+          "correcta": false
+        },
+        {
+          "texto": "96",
+          "correcta": false
+        }
+      ],
+      "explicacion": "10 × 5 = 50 y 6 × 5 = 30, luego 50 + 30 = 80."
+    },
+    {
+      "enunciado": "Cada caja trae 12 chocolates. ¿Cuántos chocolates hay en 8 cajas?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "86",
+          "correcta": false
+        },
+        {
+          "texto": "96",
+          "correcta": true
+        },
+        {
+          "texto": "104",
+          "correcta": false
+        },
+        {
+          "texto": "90",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se repiten 12 chocolates 8 veces: 12 × 8 = 96."
+    },
+    {
+      "enunciado": "¿Qué igualdad ilustra la propiedad asociativa de la multiplicación?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(3 × 2) × 5 = 3 × (2 × 5)",
+          "correcta": true
+        },
+        {
+          "texto": "3 × 2 = 2 × 3",
+          "correcta": false
+        },
+        {
+          "texto": "3 × 1 = 3",
+          "correcta": false
+        },
+        {
+          "texto": "3 × 0 = 0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La propiedad asociativa permite reagrupar los factores sin cambiar el producto: (a × b) × c = a × (b × c)."
+    },
+    {
+      "enunciado": "¿Cuánto es 24 × 3?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "76",
+          "correcta": false
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        },
+        {
+          "texto": "68",
+          "correcta": false
+        },
+        {
+          "texto": "72",
+          "correcta": true
+        }
+      ],
+      "explicacion": "20 × 3 = 60 y 4 × 3 = 12, luego 60 + 12 = 72."
+    },
+    {
+      "enunciado": "Si m × 9 = 72, ¿cuál es el valor de m?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se despeja dividiendo: 72 ÷ 9 = 8."
+    },
+    {
+      "enunciado": "¿Cuánto es 13 × 7?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "91",
+          "correcta": true
+        },
+        {
+          "texto": "81",
+          "correcta": false
+        },
+        {
+          "texto": "84",
+          "correcta": false
+        },
+        {
+          "texto": "96",
+          "correcta": false
+        }
+      ],
+      "explicacion": "10 × 7 = 70 y 3 × 7 = 21, luego 70 + 21 = 91."
+    },
+    {
+      "enunciado": "Usando la propiedad asociativa, conviene agrupar 2 × 17 × 5 como (2 × 5) × 17. ¿Cuál es el resultado?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "170",
+          "correcta": true
+        },
+        {
+          "texto": "160",
+          "correcta": false
+        },
+        {
+          "texto": "175",
+          "correcta": false
+        },
+        {
+          "texto": "34",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al reagrupar, 2 × 5 = 10 y luego 10 × 17 = 170."
+    },
+    {
+      "enunciado": "¿Cuánto es 250 × 4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "900",
+          "correcta": false
+        },
+        {
+          "texto": "1050",
+          "correcta": false
+        },
+        {
+          "texto": "1000",
+          "correcta": true
+        },
+        {
+          "texto": "950",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cuatro grupos de 250 forman 1000: 250 × 4 = 1000."
+    },
+    {
+      "enunciado": "¿Cuánto es 123 × 4?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "482",
+          "correcta": false
+        },
+        {
+          "texto": "412",
+          "correcta": false
+        },
+        {
+          "texto": "492",
+          "correcta": true
+        },
+        {
+          "texto": "496",
+          "correcta": false
+        }
+      ],
+      "explicacion": "100 × 4 = 400, 20 × 4 = 80 y 3 × 4 = 12, luego 400 + 80 + 12 = 492."
+    },
+    {
+      "enunciado": "¿Cuánto es 56 × 23?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1188",
+          "correcta": false
+        },
+        {
+          "texto": "1288",
+          "correcta": true
+        },
+        {
+          "texto": "1298",
+          "correcta": false
+        },
+        {
+          "texto": "1368",
+          "correcta": false
+        }
+      ],
+      "explicacion": "56 × 20 = 1120 y 56 × 3 = 168, luego 1120 + 168 = 1288."
+    },
+    {
+      "enunciado": "¿Cuánto es 99 × 99?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "9921",
+          "correcta": false
+        },
+        {
+          "texto": "9899",
+          "correcta": false
+        },
+        {
+          "texto": "9081",
+          "correcta": false
+        },
+        {
+          "texto": "9801",
+          "correcta": true
+        }
+      ],
+      "explicacion": "99 × 99 = 99 × 100 − 99 = 9900 − 99 = 9801."
+    },
+    {
+      "enunciado": "El producto 2 × 2 × 2 × 2 × 2 equivale a 2⁵ (2 elevado a la quinta). ¿Cuál es su valor?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "32",
+          "correcta": true
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando paso a paso: 2 × 2 = 4, × 2 = 8, × 2 = 16 y × 2 = 32; es decir, 2⁵ = 32."
+    },
+    {
+      "enunciado": "Un teatro tiene 24 filas con 18 butacas cada una. ¿Cuántas butacas hay en total?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "412",
+          "correcta": false
+        },
+        {
+          "texto": "432",
+          "correcta": true
+        },
+        {
+          "texto": "422",
+          "correcta": false
+        },
+        {
+          "texto": "442",
+          "correcta": false
+        }
+      ],
+      "explicacion": "24 × 18 = 24 × 20 − 24 × 2 = 480 − 48 = 432."
+    },
+    {
+      "enunciado": "¿Cuánto es 125 × 8?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1000",
+          "correcta": true
+        },
+        {
+          "texto": "900",
+          "correcta": false
+        },
+        {
+          "texto": "1025",
+          "correcta": false
+        },
+        {
+          "texto": "950",
+          "correcta": false
+        }
+      ],
+      "explicacion": "125 × 8 = 1000, ya que 125 es la octava parte de 1000."
+    },
+    {
+      "enunciado": "Sabiendo que la multiplicación es asociativa, ¿a qué es igual (4 × 5) × 2?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4 × (5 × 2)",
+          "correcta": true
+        },
+        {
+          "texto": "4 + (5 × 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(4 + 5) × 2",
+          "correcta": false
+        },
+        {
+          "texto": "4 × 5 × 5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La asociativa permite reagrupar los factores: (4 × 5) × 2 = 4 × (5 × 2) = 40."
+    },
+    {
+      "enunciado": "¿Cuánto es 47 × 19?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "893",
+          "correcta": true
+        },
+        {
+          "texto": "883",
+          "correcta": false
+        },
+        {
+          "texto": "903",
+          "correcta": false
+        },
+        {
+          "texto": "847",
+          "correcta": false
+        }
+      ],
+      "explicacion": "47 × 19 = 47 × 20 − 47 = 940 − 47 = 893."
+    },
+    {
+      "enunciado": "Un depósito tiene 15 cajas; cada caja contiene 12 paquetes y cada paquete trae 6 unidades. ¿Cuántas unidades hay en total?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "900",
+          "correcta": false
+        },
+        {
+          "texto": "1080",
+          "correcta": true
+        },
+        {
+          "texto": "1020",
+          "correcta": false
+        },
+        {
+          "texto": "1160",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la asociativa: 15 × 12 = 180 y luego 180 × 6 = 1080."
+    },
+    {
+      "enunciado": "¿Cuánto es 15 × 15?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "215",
+          "correcta": false
+        },
+        {
+          "texto": "250",
+          "correcta": false
+        },
+        {
+          "texto": "205",
+          "correcta": false
+        },
+        {
+          "texto": "225",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El cuadrado de 15 es 15 × 15 = 225."
+    },
+    {
+      "enunciado": "El producto 3 × 3 × 3 × 3 equivale a 3⁴ (3 elevado a la cuarta). ¿Cuál es su valor?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        },
+        {
+          "texto": "81",
+          "correcta": true
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando paso a paso: 3 × 3 = 9, 9 × 3 = 27 y 27 × 3 = 81; es decir, 3⁴ = 81."
+    },
+    {
+      "enunciado": "¿Cuánto es 64 × 25?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1500",
+          "correcta": false
+        },
+        {
+          "texto": "1600",
+          "correcta": true
+        },
+        {
+          "texto": "1640",
+          "correcta": false
+        },
+        {
+          "texto": "1560",
+          "correcta": false
+        }
+      ],
+      "explicacion": "64 × 25 = 64 × 100 ÷ 4 = 6400 ÷ 4 = 1600."
+    },
+    {
+      "enunciado": "¿Cuánto es el producto 5 × 4 × 3 × 2 × 1?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "120",
+          "correcta": true
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": false
+        },
+        {
+          "texto": "140",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando en orden: 5 × 4 = 20, × 3 = 60, × 2 = 120 y × 1 = 120."
+    },
+    {
+      "enunciado": "Una fábrica produce 480 unidades por hora y trabaja 8 horas diarias durante 5 días. ¿Cuántas unidades produce en total?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "20400",
+          "correcta": false
+        },
+        {
+          "texto": "18200",
+          "correcta": false
+        },
+        {
+          "texto": "17600",
+          "correcta": false
+        },
+        {
+          "texto": "19200",
+          "correcta": true
+        }
+      ],
+      "explicacion": "480 × 8 = 3840 unidades por día y 3840 × 5 = 19 200 unidades en total."
+    }
+  ]
+}

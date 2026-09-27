@@ -1,0 +1,1128 @@
+{
+  "id": "matematica-desigualdades",
+  "materia": "matematica",
+  "tema": "Desigualdades e inecuaciones",
+  "bloque": "Ecuaciones y funciones",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Una inecuación se resuelve casi como una ecuación, pero su solución es un conjunto de valores (un intervalo). La regla de oro: si multiplicas o divides por un número NEGATIVO, el sentido de la desigualdad se invierte.",
+    "ejemplo": {
+      "enunciado": "Resuelve 5 − 2x > 11 y escribe la solución como intervalo.",
+      "pasos": [
+        "Resta 5 a ambos lados: −2x > 6.",
+        "Divide entre −2 (negativo), así que el > se convierte en <: x < −3.",
+        "Todos los números menores que −3, sin incluir el −3 (paréntesis).",
+        "Comprueba con x = −4: 5 − 2(−4) = 13 > 11. ¡Cumple!"
+      ],
+      "resultado": "x < −3, es decir, (−∞, −3)"
+    },
+    "ojo": "Olvidar voltear el signo al dividir entre un negativo. Y en los intervalos, el infinito siempre va con paréntesis, nunca con corchete."
+  },
+  "preguntas": [
+    {
+      "enunciado": "En una desigualdad, ¿qué significa el símbolo >?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Menor que",
+          "correcta": false
+        },
+        {
+          "texto": "Igual a",
+          "correcta": false
+        },
+        {
+          "texto": "Mayor que",
+          "correcta": true
+        },
+        {
+          "texto": "Mayor o igual que",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El símbolo > se lee «mayor que»; el símbolo ≥ corresponde a «mayor o igual que»."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes símbolos representa «menor o igual que»?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "≥",
+          "correcta": false
+        },
+        {
+          "texto": "<",
+          "correcta": false
+        },
+        {
+          "texto": ">",
+          "correcta": false
+        },
+        {
+          "texto": "≤",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La línea bajo el signo < indica la inclusión de la igualdad: ≤ significa «menor o igual que»."
+    },
+    {
+      "enunciado": "Resuelve la inecuación x + 3 > 5.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x > 2",
+          "correcta": true
+        },
+        {
+          "texto": "x > 8",
+          "correcta": false
+        },
+        {
+          "texto": "x < 2",
+          "correcta": false
+        },
+        {
+          "texto": "x > −2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se resta 3 a ambos lados: x > 5 − 3, es decir x > 2."
+    },
+    {
+      "enunciado": "Resuelve la inecuación x − 4 < 1.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x < 3",
+          "correcta": false
+        },
+        {
+          "texto": "x < 5",
+          "correcta": true
+        },
+        {
+          "texto": "x > 5",
+          "correcta": false
+        },
+        {
+          "texto": "x < −3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suma 4 a ambos lados: x < 1 + 4, es decir x < 5."
+    },
+    {
+      "enunciado": "Resuelve la inecuación 2x < 8.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x < 16",
+          "correcta": false
+        },
+        {
+          "texto": "x > 4",
+          "correcta": false
+        },
+        {
+          "texto": "x < 4",
+          "correcta": true
+        },
+        {
+          "texto": "x < 6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se divide entre 2 (positivo, no cambia el sentido): x < 8/2, es decir x < 4."
+    },
+    {
+      "enunciado": "Resuelve la inecuación 3x ≥ 9.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x ≥ 3",
+          "correcta": true
+        },
+        {
+          "texto": "x ≥ 27",
+          "correcta": false
+        },
+        {
+          "texto": "x ≤ 3",
+          "correcta": false
+        },
+        {
+          "texto": "x ≥ 6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se divide entre 3 (positivo): x ≥ 9/3, es decir x ≥ 3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación x/2 > 3.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x > 1,5",
+          "correcta": false
+        },
+        {
+          "texto": "x > 6",
+          "correcta": true
+        },
+        {
+          "texto": "x > 5",
+          "correcta": false
+        },
+        {
+          "texto": "x < 6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se multiplica por 2 ambos lados: x > 3 · 2, es decir x > 6."
+    },
+    {
+      "enunciado": "¿Cómo se escribe en notación de intervalo el conjunto de números mayores que 2 y menores que 5?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "[2, 5]",
+          "correcta": false
+        },
+        {
+          "texto": "{2, 5}",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 5]",
+          "correcta": false
+        },
+        {
+          "texto": "(2, 5)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como los extremos no se incluyen (mayor y menor estrictos), se usan paréntesis: (2, 5)."
+    },
+    {
+      "enunciado": "El intervalo cerrado [1, 4], ¿qué números incluye respecto a sus extremos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Incluye los extremos 1 y 4",
+          "correcta": true
+        },
+        {
+          "texto": "No incluye ni el 1 ni el 4",
+          "correcta": false
+        },
+        {
+          "texto": "Incluye solo el 1",
+          "correcta": false
+        },
+        {
+          "texto": "Incluye solo el 4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los corchetes indican intervalo cerrado, por lo que ambos extremos 1 y 4 pertenecen al conjunto."
+    },
+    {
+      "enunciado": "¿Qué números representa el intervalo (−∞, 3)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Todos los números mayores que 3",
+          "correcta": false
+        },
+        {
+          "texto": "Todos los números menores o iguales que 3",
+          "correcta": false
+        },
+        {
+          "texto": "Todos los números menores que 3",
+          "correcta": true
+        },
+        {
+          "texto": "Los números entre −3 y 3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El paréntesis junto al 3 indica que es estricto, así que representa todos los x < 3."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de |−7|?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−7",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El valor absoluto es la distancia al cero, siempre no negativa: |−7| = 7."
+    },
+    {
+      "enunciado": "¿Qué representa el valor absoluto de un número?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Su signo positivo o negativo",
+          "correcta": false
+        },
+        {
+          "texto": "Su número opuesto",
+          "correcta": false
+        },
+        {
+          "texto": "El cuadrado del número",
+          "correcta": false
+        },
+        {
+          "texto": "Su distancia al cero en la recta numérica",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El valor absoluto mide cuán lejos está el número del cero, por eso nunca es negativo."
+    },
+    {
+      "enunciado": "En una recta numérica, la solución se dibuja con un punto relleno en 2 y sombreado hacia la derecha. ¿Qué inecuación representa?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x ≤ 2",
+          "correcta": false
+        },
+        {
+          "texto": "x ≥ 2",
+          "correcta": true
+        },
+        {
+          "texto": "x > 2",
+          "correcta": false
+        },
+        {
+          "texto": "x < 2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El punto relleno indica que el 2 se incluye y el sombreado hacia la derecha indica valores mayores: x ≥ 2."
+    },
+    {
+      "enunciado": "Si la solución de una inecuación es x > 4, ¿cuál de estos valores pertenece al conjunto solución?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Solo 5 es estrictamente mayor que 4; el 4 no cumple porque la desigualdad es estricta."
+    },
+    {
+      "enunciado": "¿Cuál es el conjunto solución de la inecuación x < 0?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Los números positivos",
+          "correcta": false
+        },
+        {
+          "texto": "Solo el cero",
+          "correcta": false
+        },
+        {
+          "texto": "Los números negativos",
+          "correcta": true
+        },
+        {
+          "texto": "Los números mayores o iguales que cero",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los números menores que cero son justamente los negativos."
+    },
+    {
+      "enunciado": "Resuelve la inecuación −x < 3.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x > −3",
+          "correcta": true
+        },
+        {
+          "texto": "x < −3",
+          "correcta": false
+        },
+        {
+          "texto": "x < 3",
+          "correcta": false
+        },
+        {
+          "texto": "x > 3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al multiplicar por −1 ambos lados, el sentido se invierte: x > −3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación −2x > 6.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x < −3",
+          "correcta": true
+        },
+        {
+          "texto": "x > −3",
+          "correcta": false
+        },
+        {
+          "texto": "x > 3",
+          "correcta": false
+        },
+        {
+          "texto": "x < 3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al dividir entre −2 (negativo) se invierte el sentido: x < −3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación 2x + 1 ≤ 7.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x ≤ 4",
+          "correcta": false
+        },
+        {
+          "texto": "x ≥ 3",
+          "correcta": false
+        },
+        {
+          "texto": "x ≤ 3",
+          "correcta": true
+        },
+        {
+          "texto": "x ≤ 8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se resta 1 (2x ≤ 6) y se divide entre 2: x ≤ 3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación 3x − 2 > 7.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x > 9",
+          "correcta": false
+        },
+        {
+          "texto": "x > 3",
+          "correcta": true
+        },
+        {
+          "texto": "x < 3",
+          "correcta": false
+        },
+        {
+          "texto": "x > 5/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suma 2 (3x > 9) y se divide entre 3: x > 3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación 5 − x ≥ 2.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x ≥ 3",
+          "correcta": false
+        },
+        {
+          "texto": "x ≤ 7",
+          "correcta": false
+        },
+        {
+          "texto": "x ≤ −3",
+          "correcta": false
+        },
+        {
+          "texto": "x ≤ 3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se pasa a −x ≥ −3 y al multiplicar por −1 se invierte: x ≤ 3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación 4x + 3 < 2x + 9.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x < 6",
+          "correcta": false
+        },
+        {
+          "texto": "x < 12",
+          "correcta": false
+        },
+        {
+          "texto": "x > 3",
+          "correcta": false
+        },
+        {
+          "texto": "x < 3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se agrupan términos: 2x < 6, y al dividir entre 2 queda x < 3."
+    },
+    {
+      "enunciado": "¿Cuál es la notación de intervalo del conjunto x ≥ 2?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2, +∞)",
+          "correcta": false
+        },
+        {
+          "texto": "(−∞, 2]",
+          "correcta": false
+        },
+        {
+          "texto": "[2, +∞)",
+          "correcta": true
+        },
+        {
+          "texto": "(2, +∞]",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 2 se incluye (corchete) y el infinito siempre lleva paréntesis: [2, +∞)."
+    },
+    {
+      "enunciado": "¿Cuál es la notación de intervalo del conjunto x ≤ −1?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(−∞, −1]",
+          "correcta": true
+        },
+        {
+          "texto": "(−∞, −1)",
+          "correcta": false
+        },
+        {
+          "texto": "[−1, +∞)",
+          "correcta": false
+        },
+        {
+          "texto": "(−1, +∞)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Incluye el −1 (corchete) y se extiende hacia los menores: (−∞, −1]."
+    },
+    {
+      "enunciado": "Escribe en notación de intervalo el conjunto de los x tales que 1 < x ≤ 5.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "[1, 5)",
+          "correcta": false
+        },
+        {
+          "texto": "(1, 5]",
+          "correcta": true
+        },
+        {
+          "texto": "(1, 5)",
+          "correcta": false
+        },
+        {
+          "texto": "[1, 5]",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 1 es estricto (paréntesis) y el 5 se incluye (corchete): (1, 5]."
+    },
+    {
+      "enunciado": "En una recta numérica, la solución se dibuja con un punto vacío en −1 y sombreado hacia la izquierda. ¿Qué inecuación representa?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x ≤ −1",
+          "correcta": false
+        },
+        {
+          "texto": "x > −1",
+          "correcta": false
+        },
+        {
+          "texto": "x < −1",
+          "correcta": true
+        },
+        {
+          "texto": "x < 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El punto vacío indica que −1 no se incluye y el sombreado a la izquierda son valores menores: x < −1."
+    },
+    {
+      "enunciado": "¿Cuáles son las soluciones de la ecuación |x| = 4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = 4",
+          "correcta": false
+        },
+        {
+          "texto": "x = −4",
+          "correcta": false
+        },
+        {
+          "texto": "x = 16",
+          "correcta": false
+        },
+        {
+          "texto": "x = 4 o x = −4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Hay dos números a distancia 4 del cero: 4 y −4."
+    },
+    {
+      "enunciado": "Resuelve la inecuación |x| < 3.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−3 < x < 3",
+          "correcta": true
+        },
+        {
+          "texto": "x < 3",
+          "correcta": false
+        },
+        {
+          "texto": "x > 3 o x < −3",
+          "correcta": false
+        },
+        {
+          "texto": "x < −3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "|x| < 3 equivale a estar a menos de 3 del cero: −3 < x < 3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación |x| > 2.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−2 < x < 2",
+          "correcta": false
+        },
+        {
+          "texto": "x > 2 o x < −2",
+          "correcta": true
+        },
+        {
+          "texto": "x > 2",
+          "correcta": false
+        },
+        {
+          "texto": "x < −2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "|x| > 2 son los puntos a más de 2 del cero, hacia ambos lados: x > 2 o x < −2."
+    },
+    {
+      "enunciado": "Resuelve la inecuación x² < 9.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x < 3",
+          "correcta": false
+        },
+        {
+          "texto": "−3 < x < 3",
+          "correcta": true
+        },
+        {
+          "texto": "x > 3 o x < −3",
+          "correcta": false
+        },
+        {
+          "texto": "−9 < x < 9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x² < 9 equivale a |x| < 3, es decir −3 < x < 3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación x² > 16.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x > 4 o x < −4",
+          "correcta": true
+        },
+        {
+          "texto": "−4 < x < 4",
+          "correcta": false
+        },
+        {
+          "texto": "x > 4",
+          "correcta": false
+        },
+        {
+          "texto": "x > 16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x² > 16 equivale a |x| > 4, es decir x > 4 o x < −4."
+    },
+    {
+      "enunciado": "¿Cuáles son las soluciones de la ecuación |x − 2| = 5?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = 7 o x = 3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 3 o x = −7",
+          "correcta": false
+        },
+        {
+          "texto": "x = 5 o x = −5",
+          "correcta": false
+        },
+        {
+          "texto": "x = 7 o x = −3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se plantea x − 2 = 5 o x − 2 = −5, de donde x = 7 o x = −3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación compuesta 1 ≤ x + 2 < 5.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1 ≤ x < 5",
+          "correcta": false
+        },
+        {
+          "texto": "−1 ≤ x ≤ 3",
+          "correcta": false
+        },
+        {
+          "texto": "−1 ≤ x < 3",
+          "correcta": true
+        },
+        {
+          "texto": "1 ≤ x < 3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se resta 2 en las tres partes: −1 ≤ x < 3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación cuadrática x² − 5x + 6 < 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x < 2 o x > 3",
+          "correcta": false
+        },
+        {
+          "texto": "2 < x < 3",
+          "correcta": true
+        },
+        {
+          "texto": "−3 < x < −2",
+          "correcta": false
+        },
+        {
+          "texto": "2 ≤ x ≤ 3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se factoriza (x − 2)(x − 3) < 0; como la parábola abre hacia arriba, es negativa entre las raíces: 2 < x < 3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación cuadrática x² − x − 6 ≥ 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−2 ≤ x ≤ 3",
+          "correcta": false
+        },
+        {
+          "texto": "x ≤ −3 o x ≥ 2",
+          "correcta": false
+        },
+        {
+          "texto": "x ≤ −2 o x ≥ 3",
+          "correcta": true
+        },
+        {
+          "texto": "−3 ≤ x ≤ 2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se factoriza (x − 3)(x + 2) ≥ 0; la parábola es no negativa fuera de las raíces −2 y 3: x ≤ −2 o x ≥ 3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación cuadrática x² + 2x − 8 > 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x < −4 o x > 2",
+          "correcta": true
+        },
+        {
+          "texto": "−4 < x < 2",
+          "correcta": false
+        },
+        {
+          "texto": "x < −2 o x > 4",
+          "correcta": false
+        },
+        {
+          "texto": "−2 < x < 4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se factoriza (x + 4)(x − 2) > 0; la parábola es positiva fuera de las raíces −4 y 2: x < −4 o x > 2."
+    },
+    {
+      "enunciado": "Resuelve la inecuación |x − 3| ≤ 4 y exprésala como intervalo.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "[−7, 1]",
+          "correcta": false
+        },
+        {
+          "texto": "[3, 7]",
+          "correcta": false
+        },
+        {
+          "texto": "[−4, 4]",
+          "correcta": false
+        },
+        {
+          "texto": "[−1, 7]",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Equivale a −4 ≤ x − 3 ≤ 4; sumando 3 se obtiene −1 ≤ x ≤ 7, es decir [−1, 7]."
+    },
+    {
+      "enunciado": "Resuelve la inecuación |2x − 1| < 5 y exprésala como intervalo.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(−3, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(−2, 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(−2, 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(−3, 3)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Equivale a −5 < 2x − 1 < 5; sumando 1 da −4 < 2x < 6 y dividiendo entre 2, −2 < x < 3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación |x + 2| > 3.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−5 < x < 1",
+          "correcta": false
+        },
+        {
+          "texto": "x > 1 o x < −5",
+          "correcta": true
+        },
+        {
+          "texto": "x > 1",
+          "correcta": false
+        },
+        {
+          "texto": "x < −5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se separa en x + 2 > 3 o x + 2 < −3, lo que da x > 1 o x < −5."
+    },
+    {
+      "enunciado": "Resuelve la inecuación |3x + 6| ≥ 9.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−5 ≤ x ≤ 1",
+          "correcta": false
+        },
+        {
+          "texto": "x ≥ 1",
+          "correcta": false
+        },
+        {
+          "texto": "x ≤ −5",
+          "correcta": false
+        },
+        {
+          "texto": "x ≥ 1 o x ≤ −5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se separa en 3x + 6 ≥ 9 o 3x + 6 ≤ −9; resolviendo se obtiene x ≥ 1 o x ≤ −5."
+    },
+    {
+      "enunciado": "¿Cuál es el conjunto solución de x² ≤ 0?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 0",
+          "correcta": true
+        },
+        {
+          "texto": "Todos los números reales",
+          "correcta": false
+        },
+        {
+          "texto": "x < 0",
+          "correcta": false
+        },
+        {
+          "texto": "No tiene solución",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un cuadrado nunca es negativo, así que x² ≤ 0 solo se cumple cuando x² = 0, es decir x = 0."
+    },
+    {
+      "enunciado": "¿Cuál es el conjunto solución de x² + 1 > 0?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x > 0",
+          "correcta": false
+        },
+        {
+          "texto": "x > −1",
+          "correcta": false
+        },
+        {
+          "texto": "Ningún número real",
+          "correcta": false
+        },
+        {
+          "texto": "Todos los números reales",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como x² ≥ 0 siempre, x² + 1 ≥ 1 > 0 para cualquier x; la desigualdad se cumple para todos los reales."
+    },
+    {
+      "enunciado": "Resuelve la inecuación cuadrática x² − 4x ≤ 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x ≤ 0 o x ≥ 4",
+          "correcta": false
+        },
+        {
+          "texto": "0 ≤ x ≤ 4",
+          "correcta": true
+        },
+        {
+          "texto": "−4 ≤ x ≤ 0",
+          "correcta": false
+        },
+        {
+          "texto": "0 < x < 4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se factoriza x(x − 4) ≤ 0; la parábola es no positiva entre las raíces 0 y 4, incluyéndolas: 0 ≤ x ≤ 4."
+    },
+    {
+      "enunciado": "Resuelve la inecuación −x² + 4 ≥ 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−2 ≤ x ≤ 2",
+          "correcta": true
+        },
+        {
+          "texto": "x ≤ −2 o x ≥ 2",
+          "correcta": false
+        },
+        {
+          "texto": "−4 ≤ x ≤ 4",
+          "correcta": false
+        },
+        {
+          "texto": "0 ≤ x ≤ 2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Equivale a x² ≤ 4, o sea |x| ≤ 2, es decir −2 ≤ x ≤ 2."
+    },
+    {
+      "enunciado": "El perímetro de un cuadrado de lado x cm debe ser menor que 20 cm. ¿Qué valores puede tomar x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x < 5",
+          "correcta": false
+        },
+        {
+          "texto": "x < 20",
+          "correcta": false
+        },
+        {
+          "texto": "0 < x < 5",
+          "correcta": true
+        },
+        {
+          "texto": "0 < x < 20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El perímetro es 4x < 20, de donde x < 5; además el lado debe ser positivo, así que 0 < x < 5."
+    },
+    {
+      "enunciado": "Resuelve la inecuación compuesta −3 < 2x + 1 ≤ 7.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−2 ≤ x < 3",
+          "correcta": false
+        },
+        {
+          "texto": "−2 < x < 3",
+          "correcta": false
+        },
+        {
+          "texto": "−2 < x ≤ 3",
+          "correcta": true
+        },
+        {
+          "texto": "−1 < x ≤ 4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se resta 1 (−4 < 2x ≤ 6) y se divide entre 2: −2 < x ≤ 3."
+    },
+    {
+      "enunciado": "Resuelve la inecuación racional (x − 1)/(x + 2) > 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x < −2 o x > 1",
+          "correcta": true
+        },
+        {
+          "texto": "−2 < x < 1",
+          "correcta": false
+        },
+        {
+          "texto": "x > 1",
+          "correcta": false
+        },
+        {
+          "texto": "x < −2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los puntos críticos son x = 1 (anula el numerador) y x = −2 (anula el denominador); el cociente es positivo cuando numerador y denominador tienen igual signo: x < −2 o x > 1."
+    },
+    {
+      "enunciado": "¿Cuál es el conjunto solución de |x − 1| < 0?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 1",
+          "correcta": false
+        },
+        {
+          "texto": "No tiene solución",
+          "correcta": true
+        },
+        {
+          "texto": "Todos los números reales",
+          "correcta": false
+        },
+        {
+          "texto": "x < 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un valor absoluto nunca es negativo, por lo que jamás puede ser estrictamente menor que 0: no hay solución."
+    },
+    {
+      "enunciado": "Resuelve la inecuación cuadrática x² − 6x + 9 > 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x > 3",
+          "correcta": false
+        },
+        {
+          "texto": "Todos los números reales",
+          "correcta": false
+        },
+        {
+          "texto": "No tiene solución",
+          "correcta": false
+        },
+        {
+          "texto": "Todos los números reales distintos de 3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La expresión es (x − 3)², que es positiva para todo x salvo en x = 3, donde vale 0; por eso la solución es todo real distinto de 3."
+    }
+  ]
+}

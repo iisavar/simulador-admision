@@ -1,0 +1,1012 @@
+{
+  "id": "matematica-radicacion",
+  "materia": "matematica",
+  "tema": "Radicación y simplificación de radicales",
+  "bloque": "Potencias y raíces",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "La raíz es la operación inversa de la potencia: √36 = 6 porque 6² = 36. Para simplificar un radical, descompón el número buscando un factor que sea cuadrado perfecto (4, 9, 16, 25…) y sácalo de la raíz.",
+    "ejemplo": {
+      "enunciado": "Simplifica √12 + √27.",
+      "pasos": [
+        "Busca cuadrados perfectos: 12 = 4 · 3 y 27 = 9 · 3.",
+        "Saca sus raíces: √12 = 2√3 y √27 = 3√3.",
+        "Ahora son radicales semejantes (los dos tienen √3): suma los coeficientes, 2 + 3 = 5."
+      ],
+      "resultado": "5√3"
+    },
+    "ojo": "La raíz no se reparte en una suma: √(9 + 16) = √25 = 5, no √9 + √16 = 7. Y solo se suman radicales semejantes: 2√3 + 3√3 = 5√3, pero √2 + √3 no es √5."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el valor de √36?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 6² = 36, se tiene que √36 = 6."
+    },
+    {
+      "enunciado": "Calcula √49.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "24,5",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "7² = 49, por lo tanto √49 = 7."
+    },
+    {
+      "enunciado": "Determina el valor de √100.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "50",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "1000",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        }
+      ],
+      "explicacion": "10² = 100, entonces √100 = 10."
+    },
+    {
+      "enunciado": "¿Cuál es la raíz cuadrada de 144?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "72",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        }
+      ],
+      "explicacion": "12² = 144, por lo que √144 = 12."
+    },
+    {
+      "enunciado": "¿Cuánto vale la raíz cúbica de 8 (∛8)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 2³ = 8, la raíz cúbica de 8 es 2."
+    },
+    {
+      "enunciado": "Determina ∛27.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3³ = 27, por lo tanto ∛27 = 3."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de ∛64?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "32",
+          "correcta": false
+        }
+      ],
+      "explicacion": "4³ = 64, así que ∛64 = 4."
+    },
+    {
+      "enunciado": "¿Cuánto es ∛1000?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": true
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "10³ = 1000, por lo que ∛1000 = 10."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de √0,25?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,05",
+          "correcta": false
+        },
+        {
+          "texto": "0,5",
+          "correcta": true
+        },
+        {
+          "texto": "0,125",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,5² = 0,25, de modo que √0,25 = 0,5."
+    },
+    {
+      "enunciado": "Calcula √(4/9).",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4/9",
+          "correcta": false
+        },
+        {
+          "texto": "16/81",
+          "correcta": false
+        },
+        {
+          "texto": "3/2",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "√(4/9) = √4/√9 = 2/3."
+    },
+    {
+      "enunciado": "¿Cuánto es √9 + √16?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√9 = 3 y √16 = 4; su suma es 3 + 4 = 7."
+    },
+    {
+      "enunciado": "Determina el resultado de √25 · √4.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": true
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√25 = 5 y √4 = 2; el producto es 5 · 2 = 10."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de ∛(−8)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "−4",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como (−2)³ = −8, la raíz cúbica de −8 es −2."
+    },
+    {
+      "enunciado": "Simplifica el radical √12.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2√3",
+          "correcta": true
+        },
+        {
+          "texto": "3√2",
+          "correcta": false
+        },
+        {
+          "texto": "4√3",
+          "correcta": false
+        },
+        {
+          "texto": "6√2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√12 = √(4·3) = √4·√3 = 2√3."
+    },
+    {
+      "enunciado": "Expresa √50 en su forma más simple.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2√5",
+          "correcta": false
+        },
+        {
+          "texto": "25√2",
+          "correcta": false
+        },
+        {
+          "texto": "10√5",
+          "correcta": false
+        },
+        {
+          "texto": "5√2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "√50 = √(25·2) = 5√2."
+    },
+    {
+      "enunciado": "¿Cuál es la forma simplificada de √75?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3√5",
+          "correcta": false
+        },
+        {
+          "texto": "5√3",
+          "correcta": true
+        },
+        {
+          "texto": "25√3",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√75 = √(25·3) = 5√3."
+    },
+    {
+      "enunciado": "Simplifica √48.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3√4",
+          "correcta": false
+        },
+        {
+          "texto": "6√2",
+          "correcta": false
+        },
+        {
+          "texto": "4√3",
+          "correcta": true
+        },
+        {
+          "texto": "16√3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√48 = √(16·3) = 4√3."
+    },
+    {
+      "enunciado": "Reduce la expresión 2√3 + 3√3.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5√6",
+          "correcta": false
+        },
+        {
+          "texto": "5√3",
+          "correcta": true
+        },
+        {
+          "texto": "6√3",
+          "correcta": false
+        },
+        {
+          "texto": "5√9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al ser radicales semejantes, se suman los coeficientes: 2√3 + 3√3 = 5√3."
+    },
+    {
+      "enunciado": "Calcula y simplifica √12 + √27.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5√3",
+          "correcta": true
+        },
+        {
+          "texto": "√39",
+          "correcta": false
+        },
+        {
+          "texto": "5√6",
+          "correcta": false
+        },
+        {
+          "texto": "6√3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√12 = 2√3 y √27 = 3√3; su suma es 2√3 + 3√3 = 5√3."
+    },
+    {
+      "enunciado": "Simplifica la expresión √18 − √8.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "√10",
+          "correcta": false
+        },
+        {
+          "texto": "5√2",
+          "correcta": false
+        },
+        {
+          "texto": "2√2",
+          "correcta": false
+        },
+        {
+          "texto": "√2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "√18 = 3√2 y √8 = 2√2; la resta da 3√2 − 2√2 = √2."
+    },
+    {
+      "enunciado": "Simplifica √98.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2√7",
+          "correcta": false
+        },
+        {
+          "texto": "49√2",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "7√2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "√98 = √(49·2) = 7√2."
+    },
+    {
+      "enunciado": "Racionaliza el denominador de 1/√2.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2/√2",
+          "correcta": false
+        },
+        {
+          "texto": "√2",
+          "correcta": false
+        },
+        {
+          "texto": "√2/2",
+          "correcta": true
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando por √2/√2: 1/√2 = √2/2."
+    },
+    {
+      "enunciado": "Racionaliza y simplifica 6/√3.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3√3",
+          "correcta": false
+        },
+        {
+          "texto": "6√3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "2√3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "6/√3 = 6√3/3 = 2√3."
+    },
+    {
+      "enunciado": "Simplifica la raíz cúbica ∛24.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3∛2",
+          "correcta": false
+        },
+        {
+          "texto": "2∛3",
+          "correcta": true
+        },
+        {
+          "texto": "2∛2",
+          "correcta": false
+        },
+        {
+          "texto": "4∛3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∛24 = ∛(8·3) = 2∛3."
+    },
+    {
+      "enunciado": "Expresa ∛54 en su forma más simple.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2∛3",
+          "correcta": false
+        },
+        {
+          "texto": "3∛2",
+          "correcta": true
+        },
+        {
+          "texto": "9∛2",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∛54 = ∛(27·2) = 3∛2."
+    },
+    {
+      "enunciado": "Calcula el producto √2 · √8.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "√10",
+          "correcta": false
+        },
+        {
+          "texto": "2√10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√2 · √8 = √16 = 4."
+    },
+    {
+      "enunciado": "Determina el cociente √50 / √2.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "√48",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√50 / √2 = √(50/2) = √25 = 5."
+    },
+    {
+      "enunciado": "Racionaliza el denominador de 1/(√3 − 1).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(√3+1)/2",
+          "correcta": true
+        },
+        {
+          "texto": "(√3−1)/2",
+          "correcta": false
+        },
+        {
+          "texto": "√3+1",
+          "correcta": false
+        },
+        {
+          "texto": "(√3+1)/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando por el conjugado (√3+1): 1/(√3−1) = (√3+1)/((√3)²−1²) = (√3+1)/2."
+    },
+    {
+      "enunciado": "Racionaliza la expresión 2/(√5 + 1).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(√5+1)/2",
+          "correcta": false
+        },
+        {
+          "texto": "(√5−1)/2",
+          "correcta": true
+        },
+        {
+          "texto": "√5−1",
+          "correcta": false
+        },
+        {
+          "texto": "(√5−1)/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando por el conjugado (√5−1): 2/(√5+1) = 2(√5−1)/(5−1) = (√5−1)/2."
+    },
+    {
+      "enunciado": "Racionaliza el denominador de 1/(√2 + 1).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "√2+1",
+          "correcta": false
+        },
+        {
+          "texto": "(√2−1)/3",
+          "correcta": false
+        },
+        {
+          "texto": "√2−1",
+          "correcta": true
+        },
+        {
+          "texto": "1−√2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando por el conjugado (√2−1): 1/(√2+1) = (√2−1)/((√2)²−1²) = √2−1."
+    },
+    {
+      "enunciado": "Simplifica √72 + √50 − √18.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "14√2",
+          "correcta": false
+        },
+        {
+          "texto": "8√2",
+          "correcta": true
+        },
+        {
+          "texto": "4√2",
+          "correcta": false
+        },
+        {
+          "texto": "2√2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√72 = 6√2, √50 = 5√2 y √18 = 3√2; entonces 6√2 + 5√2 − 3√2 = 8√2."
+    },
+    {
+      "enunciado": "Desarrolla (√3 + 1)².",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "4+√3",
+          "correcta": false
+        },
+        {
+          "texto": "3+2√3",
+          "correcta": false
+        },
+        {
+          "texto": "4+2√3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "(√3+1)² = (√3)² + 2·√3·1 + 1² = 3 + 2√3 + 1 = 4 + 2√3."
+    },
+    {
+      "enunciado": "Desarrolla (√2 + √3)².",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "5+√6",
+          "correcta": false
+        },
+        {
+          "texto": "5+2√5",
+          "correcta": false
+        },
+        {
+          "texto": "5+2√6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "(√2+√3)² = 2 + 2√6 + 3 = 5 + 2√6."
+    },
+    {
+      "enunciado": "Calcula el producto (√5 + √2)(√5 − √2).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "√3",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "√10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es una diferencia de cuadrados: (√5)² − (√2)² = 5 − 2 = 3."
+    },
+    {
+      "enunciado": "¿Cuál es el resultado de (2√3)²?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "2√3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(2√3)² = 2²·(√3)² = 4·3 = 12."
+    },
+    {
+      "enunciado": "Simplifica el cociente √6 / √2.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "√3",
+          "correcta": true
+        },
+        {
+          "texto": "√8",
+          "correcta": false
+        },
+        {
+          "texto": "2√3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√6/√2 = √(6/2) = √3."
+    },
+    {
+      "enunciado": "Simplifica la raíz cúbica ∛16.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4∛2",
+          "correcta": false
+        },
+        {
+          "texto": "2∛4",
+          "correcta": false
+        },
+        {
+          "texto": "2∛2",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∛16 = ∛(8·2) = 2∛2."
+    },
+    {
+      "enunciado": "Expresa ∛250 en su forma más simple.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2∛5",
+          "correcta": false
+        },
+        {
+          "texto": "25∛2",
+          "correcta": false
+        },
+        {
+          "texto": "5∛2",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∛250 = ∛(125·2) = 5∛2."
+    },
+    {
+      "enunciado": "Calcula √3 / √27.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "1/9",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√3/√27 = √(3/27) = √(1/9) = 1/3."
+    },
+    {
+      "enunciado": "Calcula el producto (√7 − √3)(√7 + √3).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "√10",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Diferencia de cuadrados: (√7)² − (√3)² = 7 − 3 = 4."
+    },
+    {
+      "enunciado": "Racionaliza el denominador de 4/(√6 − √2).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "√6−√2",
+          "correcta": false
+        },
+        {
+          "texto": "√6+√2",
+          "correcta": true
+        },
+        {
+          "texto": "(√6+√2)/2",
+          "correcta": false
+        },
+        {
+          "texto": "4(√6+√2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando por el conjugado (√6+√2): 4(√6+√2)/(6−2) = 4(√6+√2)/4 = √6+√2."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de 4 elevado al exponente 3/2?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El exponente 3/2 significa raíz cuadrada y luego cubo: √4 = 2 y 2³ = 8."
+    },
+    {
+      "enunciado": "Calcula 27 elevado al exponente 2/3.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "81",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El exponente 2/3 significa raíz cúbica y luego cuadrado: ∛27 = 3 y 3² = 9."
+    }
+  ]
+}

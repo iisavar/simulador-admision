@@ -1,0 +1,1035 @@
+{
+  "id": "matematica-division",
+  "materia": "matematica",
+  "tema": "División y divisibilidad",
+  "bloque": "Aritmética",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "En toda división se cumple: dividendo = divisor × cociente + residuo, con el residuo menor que el divisor. Si el residuo es 0, la división es exacta y el divisor «divide» al número.",
+    "ejemplo": {
+      "enunciado": "Divide 100 entre 7 y halla el cociente y el residuo.",
+      "pasos": [
+        "Busca el mayor múltiplo de 7 que no pase de 100: 7 × 14 = 98.",
+        "El cociente es 14.",
+        "Residuo: 100 − 98 = 2. Comprueba: 7 × 14 + 2 = 100."
+      ],
+      "resultado": "Cociente 14, residuo 2"
+    },
+    "ojo": "Dar un residuo igual o mayor que el divisor: si pasa eso, el cociente todavía puede crecer."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es el cociente de la división 36 ÷ 4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "32",
+          "correcta": false
+        }
+      ],
+      "explicacion": "36 ÷ 4 = 9, porque 4 × 9 = 36 con residuo 0."
+    },
+    {
+      "enunciado": "¿Cuánto es 72 ÷ 8?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "64",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": true
+        }
+      ],
+      "explicacion": "72 ÷ 8 = 9, porque 8 × 9 = 72."
+    },
+    {
+      "enunciado": "¿Cuál afirmación es correcta sobre la división 20 ÷ 4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Es exacta y su cociente es 5",
+          "correcta": true
+        },
+        {
+          "texto": "Es inexacta y su residuo es 2",
+          "correcta": false
+        },
+        {
+          "texto": "Es exacta y su cociente es 4",
+          "correcta": false
+        },
+        {
+          "texto": "Es inexacta y su residuo es 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "20 ÷ 4 = 5 con residuo 0, por lo que la división es exacta."
+    },
+    {
+      "enunciado": "¿Cuál es el residuo de la división 17 ÷ 5?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "17 = 5 × 3 + 2, así que el residuo es 2 y la división es inexacta."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es múltiplo de 3?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "21",
+          "correcta": true
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "21 = 3 × 7, por lo tanto es múltiplo de 3."
+    },
+    {
+      "enunciado": "¿Cuál de estos números es divisor de 12?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "4 divide a 12 de forma exacta porque 12 ÷ 4 = 3."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es divisible por 2?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "38",
+          "correcta": true
+        },
+        {
+          "texto": "23",
+          "correcta": false
+        },
+        {
+          "texto": "41",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un número es divisible por 2 si termina en cifra par; 38 termina en 8."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es divisible por 5?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "45",
+          "correcta": true
+        },
+        {
+          "texto": "32",
+          "correcta": false
+        },
+        {
+          "texto": "53",
+          "correcta": false
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un número es divisible por 5 si termina en 0 o 5; 45 termina en 5."
+    },
+    {
+      "enunciado": "¿Cuál es el tercer múltiplo positivo de 4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los múltiplos de 4 son 4, 8, 12, ...; el tercero es 4 × 3 = 12."
+    },
+    {
+      "enunciado": "¿Cuál es el menor múltiplo de 7 que sea mayor que cero?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El menor múltiplo positivo de 7 es 7 × 1 = 7."
+    },
+    {
+      "enunciado": "¿El número 10 es divisible por 3?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "No, porque deja residuo 1",
+          "correcta": true
+        },
+        {
+          "texto": "Sí, porque es par",
+          "correcta": false
+        },
+        {
+          "texto": "Sí, porque 3 × 3 = 10",
+          "correcta": false
+        },
+        {
+          "texto": "No, porque deja residuo 2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "10 = 3 × 3 + 1, por lo que deja residuo 1 y no es divisible por 3."
+    },
+    {
+      "enunciado": "En la división 19 ÷ 4, ¿cuáles son el cociente y el residuo?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Cociente 5 y residuo 0",
+          "correcta": false
+        },
+        {
+          "texto": "Cociente 4 y residuo 1",
+          "correcta": false
+        },
+        {
+          "texto": "Cociente 3 y residuo 7",
+          "correcta": false
+        },
+        {
+          "texto": "Cociente 4 y residuo 3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "19 = 4 × 4 + 3, de modo que el cociente es 4 y el residuo 3."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es divisible por 10?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "250",
+          "correcta": true
+        },
+        {
+          "texto": "33",
+          "correcta": false
+        },
+        {
+          "texto": "105",
+          "correcta": false
+        },
+        {
+          "texto": "72",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un número es divisible por 10 si termina en 0; 250 cumple esa condición."
+    },
+    {
+      "enunciado": "Si se reparten 23 caramelos entre 4 niños en partes iguales, ¿cuántos caramelos sobran?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "23 = 4 × 5 + 3; cada niño recibe 5 y sobran 3 caramelos (el residuo)."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es múltiplo de 9?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": true
+        }
+      ],
+      "explicacion": "27 = 9 × 3, por lo tanto es múltiplo de 9."
+    },
+    {
+      "enunciado": "¿El número 123 es divisible por 3?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Sí, porque 1 + 2 + 3 = 6 es múltiplo de 3",
+          "correcta": true
+        },
+        {
+          "texto": "No, porque termina en 3",
+          "correcta": false
+        },
+        {
+          "texto": "Sí, porque es impar",
+          "correcta": false
+        },
+        {
+          "texto": "No, porque 1 + 2 + 3 = 6 no es múltiplo de 3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La suma de cifras 1 + 2 + 3 = 6 es múltiplo de 3, así que 123 es divisible por 3."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es divisible por 6?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "142",
+          "correcta": false
+        },
+        {
+          "texto": "416",
+          "correcta": false
+        },
+        {
+          "texto": "215",
+          "correcta": false
+        },
+        {
+          "texto": "234",
+          "correcta": true
+        }
+      ],
+      "explicacion": "234 es par y su suma de cifras (2 + 3 + 4 = 9) es múltiplo de 3, por lo que es divisible por 6."
+    },
+    {
+      "enunciado": "¿Cuál es el residuo de la división 100 ÷ 7?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "100 = 7 × 14 + 2, por lo tanto el residuo es 2."
+    },
+    {
+      "enunciado": "¿Cuál es el máximo común divisor (MCD) de 12 y 18?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "12 = 2² × 3 y 18 = 2 × 3²; los factores comunes con menor exponente dan 2 × 3 = 6."
+    },
+    {
+      "enunciado": "¿Cuántos divisores tiene el número 12?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los divisores de 12 son 1, 2, 3, 4, 6 y 12; en total son 6."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es divisible por 4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "718",
+          "correcta": false
+        },
+        {
+          "texto": "426",
+          "correcta": false
+        },
+        {
+          "texto": "312",
+          "correcta": true
+        },
+        {
+          "texto": "530",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un número es divisible por 4 si sus dos últimas cifras lo son; 12 ÷ 4 = 3, así que 312 cumple."
+    },
+    {
+      "enunciado": "¿Cuál es el cociente de la división 1000 ÷ 8?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "140",
+          "correcta": false
+        },
+        {
+          "texto": "120",
+          "correcta": false
+        },
+        {
+          "texto": "128",
+          "correcta": false
+        },
+        {
+          "texto": "125",
+          "correcta": true
+        }
+      ],
+      "explicacion": "1000 ÷ 8 = 125, porque 8 × 125 = 1000 con residuo 0."
+    },
+    {
+      "enunciado": "Si se guardan 84 lápices en 7 cajas iguales, ¿cuántos lápices van en cada caja?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "84 ÷ 7 = 12, por lo que cada caja contiene 12 lápices."
+    },
+    {
+      "enunciado": "¿Cuál es el menor número de tres cifras divisible por 5?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "105",
+          "correcta": false
+        },
+        {
+          "texto": "150",
+          "correcta": false
+        },
+        {
+          "texto": "110",
+          "correcta": false
+        },
+        {
+          "texto": "100",
+          "correcta": true
+        }
+      ],
+      "explicacion": "100 es el primer número de tres cifras y termina en 0, por lo que es divisible por 5."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números es divisible por 9?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "271",
+          "correcta": false
+        },
+        {
+          "texto": "738",
+          "correcta": true
+        },
+        {
+          "texto": "415",
+          "correcta": false
+        },
+        {
+          "texto": "530",
+          "correcta": false
+        }
+      ],
+      "explicacion": "7 + 3 + 8 = 18 es múltiplo de 9, por lo que 738 es divisible por 9."
+    },
+    {
+      "enunciado": "¿El número 121 es divisible por 11?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "No, porque es impar",
+          "correcta": false
+        },
+        {
+          "texto": "No, porque deja residuo 10",
+          "correcta": false
+        },
+        {
+          "texto": "Sí, porque 121 ÷ 11 = 11",
+          "correcta": true
+        },
+        {
+          "texto": "Sí, porque es múltiplo de 12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "121 ÷ 11 = 11 con residuo 0, así que 121 es divisible por 11."
+    },
+    {
+      "enunciado": "¿Cuál es el mínimo común múltiplo (MCM) de 8 y 12?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "48",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": true
+        },
+        {
+          "texto": "96",
+          "correcta": false
+        }
+      ],
+      "explicacion": "8 = 2³ y 12 = 2² × 3; el MCM es 2³ × 3 = 24."
+    },
+    {
+      "enunciado": "¿Cuántos múltiplos de 5 hay entre 1 y 50, ambos incluidos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Son 5, 10, 15, ..., 50; es decir 50 ÷ 5 = 10 múltiplos."
+    },
+    {
+      "enunciado": "¿Cuál es el residuo de la división 250 ÷ 9?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "250 = 9 × 27 + 7; también la suma de cifras 2 + 5 + 0 = 7 confirma el residuo."
+    },
+    {
+      "enunciado": "¿Cuál es el cociente de la división 936 ÷ 8?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "107",
+          "correcta": false
+        },
+        {
+          "texto": "117",
+          "correcta": true
+        },
+        {
+          "texto": "118",
+          "correcta": false
+        },
+        {
+          "texto": "116",
+          "correcta": false
+        }
+      ],
+      "explicacion": "936 ÷ 8 = 117, porque 8 × 117 = 936 con residuo 0."
+    },
+    {
+      "enunciado": "¿Cuántos divisores tiene el número 20?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "20 = 2² × 5, y el número de divisores es (2 + 1)(1 + 1) = 6: 1, 2, 4, 5, 10 y 20."
+    },
+    {
+      "enunciado": "¿Cuál es la descomposición en factores primos de 360?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2³ × 3² × 5",
+          "correcta": true
+        },
+        {
+          "texto": "2² × 3² × 5²",
+          "correcta": false
+        },
+        {
+          "texto": "2³ × 3 × 5²",
+          "correcta": false
+        },
+        {
+          "texto": "2² × 3³ × 5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "360 = 8 × 9 × 5 = 2³ × 3² × 5."
+    },
+    {
+      "enunciado": "¿Cuántos divisores tiene el número 72?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "72 = 2³ × 3², por lo que el número de divisores es (3 + 1)(2 + 1) = 12."
+    },
+    {
+      "enunciado": "¿Cuál es el mayor número de dos cifras divisible por 7?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "84",
+          "correcta": false
+        },
+        {
+          "texto": "98",
+          "correcta": true
+        },
+        {
+          "texto": "99",
+          "correcta": false
+        },
+        {
+          "texto": "91",
+          "correcta": false
+        }
+      ],
+      "explicacion": "98 = 7 × 14 y es el mayor múltiplo de 7 menor o igual que 99."
+    },
+    {
+      "enunciado": "¿Cuál es el residuo de dividir 2¹⁰ entre 3?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "2¹⁰ = 1024 y 1024 = 3 × 341 + 1, así que al dividir entre 3 el residuo es 1."
+    },
+    {
+      "enunciado": "Dos luces parpadean cada 12 y cada 18 segundos. Si ahora parpadean juntas, ¿cada cuántos segundos vuelven a coincidir?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": true
+        },
+        {
+          "texto": "72",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Coinciden cada MCM(12, 18) = 36 segundos."
+    },
+    {
+      "enunciado": "¿Cuántos números del 1 al 100 son divisibles por 6?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "17",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": true
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "100 ÷ 6 = 16 con residuo 4, así que hay 16 múltiplos de 6 (de 6 hasta 96)."
+    },
+    {
+      "enunciado": "En el número 4_6, ¿qué dígito debe ir en el centro para que sea divisible por 9?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si el dígito es x, la suma de cifras 4 + x + 6 = 10 + x debe ser múltiplo de 9; con x = 8 da 18, y 486 ÷ 9 = 54."
+    },
+    {
+      "enunciado": "¿Cuál es el mayor número de tres cifras divisible por 12?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "984",
+          "correcta": false
+        },
+        {
+          "texto": "999",
+          "correcta": false
+        },
+        {
+          "texto": "996",
+          "correcta": true
+        },
+        {
+          "texto": "990",
+          "correcta": false
+        }
+      ],
+      "explicacion": "996 = 12 × 83 y es el mayor múltiplo de 12 menor o igual que 999."
+    },
+    {
+      "enunciado": "¿Cuál es el mínimo común múltiplo (MCM) de 6, 8 y 12?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "48",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": true
+        }
+      ],
+      "explicacion": "6 = 2 × 3, 8 = 2³ y 12 = 2² × 3; el MCM es 2³ × 3 = 24."
+    },
+    {
+      "enunciado": "Un número es divisible por 15 si lo es por 3 y por 5. ¿Cuál de los siguientes cumple ambas condiciones?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "345",
+          "correcta": true
+        },
+        {
+          "texto": "310",
+          "correcta": false
+        },
+        {
+          "texto": "520",
+          "correcta": false
+        },
+        {
+          "texto": "245",
+          "correcta": false
+        }
+      ],
+      "explicacion": "345 termina en 5 (divisible por 5) y 3 + 4 + 5 = 12 es múltiplo de 3, así que 345 ÷ 15 = 23."
+    },
+    {
+      "enunciado": "¿Cuál es la suma de los divisores primos de 30?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "30 = 2 × 3 × 5; la suma de sus divisores primos es 2 + 3 + 5 = 10."
+    },
+    {
+      "enunciado": "Un número dividido entre 7 da cociente 12 y residuo 5. ¿Cuál es ese número?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "90",
+          "correcta": false
+        },
+        {
+          "texto": "84",
+          "correcta": false
+        },
+        {
+          "texto": "89",
+          "correcta": true
+        },
+        {
+          "texto": "17",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la relación dividendo = divisor × cociente + residuo: 7 × 12 + 5 = 89."
+    },
+    {
+      "enunciado": "¿Cuántos divisores comunes tienen los números 24 y 36?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los divisores comunes son los del MCD(24, 36) = 12, es decir 1, 2, 3, 4, 6 y 12: en total 6."
+    }
+  ]
+}

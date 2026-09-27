@@ -1,0 +1,1150 @@
+{
+  "id": "matematica-fracciones-operaciones",
+  "materia": "matematica",
+  "tema": "Operaciones con fracciones",
+  "bloque": "Aritmética",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "Suma y resta: con el mismo denominador (usa el MCM) se operan solo los numeradores. Multiplicación: numerador por numerador y denominador por denominador. División: multiplica por la fracción invertida. Al final, simplifica.",
+    "ejemplo": {
+      "enunciado": "Calcula: 2/3 − 1/4 × 2/5",
+      "pasos": [
+        "Primero la multiplicación: 1/4 × 2/5 = 2/20 = 1/10.",
+        "Denominador común de 3 y 10: 30. Entonces 2/3 = 20/30 y 1/10 = 3/30.",
+        "20/30 − 3/30 = 17/30."
+      ],
+      "resultado": "17/30"
+    },
+    "ojo": "Sumar denominadores: 1/4 + 1/4 no es 2/8, es 2/4 = 1/2."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuánto es 1/4 + 1/4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "2/8",
+          "correcta": false
+        },
+        {
+          "texto": "1/8",
+          "correcta": false
+        },
+        {
+          "texto": "1/16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con igual denominador se suman los numeradores: (1+1)/4 = 2/4 = 1/2."
+    },
+    {
+      "enunciado": "¿Cuánto es 3/7 + 2/7?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5/14",
+          "correcta": false
+        },
+        {
+          "texto": "6/7",
+          "correcta": false
+        },
+        {
+          "texto": "5/7",
+          "correcta": true
+        },
+        {
+          "texto": "1/7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Mismo denominador: (3+2)/7 = 5/7. El denominador no se suma."
+    },
+    {
+      "enunciado": "¿Cuánto es 7/9 − 2/9?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5/18",
+          "correcta": false
+        },
+        {
+          "texto": "3/9",
+          "correcta": false
+        },
+        {
+          "texto": "5/9",
+          "correcta": true
+        },
+        {
+          "texto": "7/9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con igual denominador se restan los numeradores: (7−2)/9 = 5/9."
+    },
+    {
+      "enunciado": "¿Cuánto es 4/6 − 1/6?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3/12",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "5/6",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(4−1)/6 = 3/6, que simplificado da 1/2."
+    },
+    {
+      "enunciado": "¿Cuánto es 1/2 × 1/3?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2/5",
+          "correcta": false
+        },
+        {
+          "texto": "5/6",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": true
+        },
+        {
+          "texto": "3/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se multiplican numeradores y denominadores: (1×1)/(2×3) = 1/6."
+    },
+    {
+      "enunciado": "¿Cuánto es 2/3 × 1/4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/6",
+          "correcta": true
+        },
+        {
+          "texto": "3/7",
+          "correcta": false
+        },
+        {
+          "texto": "1/12",
+          "correcta": false
+        },
+        {
+          "texto": "2/7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(2×1)/(3×4) = 2/12 = 1/6."
+    },
+    {
+      "enunciado": "¿Cuánto es 3/5 × 2/7?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6/35",
+          "correcta": true
+        },
+        {
+          "texto": "5/12",
+          "correcta": false
+        },
+        {
+          "texto": "6/12",
+          "correcta": false
+        },
+        {
+          "texto": "5/35",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(3×2)/(5×7) = 6/35."
+    },
+    {
+      "enunciado": "¿Cuánto es 1/2 ÷ 1/4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/8",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dividir es multiplicar por el inverso: 1/2 × 4/1 = 4/2 = 2."
+    },
+    {
+      "enunciado": "¿Cuánto es 3/4 ÷ 1/2?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3/8",
+          "correcta": false
+        },
+        {
+          "texto": "3/2",
+          "correcta": true
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3/4 × 2/1 = 6/4 = 3/2."
+    },
+    {
+      "enunciado": "¿Cuánto es 2/3 ÷ 2/3?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "4/9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Toda cantidad distinta de cero dividida entre sí misma es 1: 2/3 × 3/2 = 1."
+    },
+    {
+      "enunciado": "¿Cuánto es 1/3 + 1/6?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2/9",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "1/9",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con denominador común 6: 2/6 + 1/6 = 3/6 = 1/2."
+    },
+    {
+      "enunciado": "¿Cuánto es 1/2 + 1/3?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2/6",
+          "correcta": false
+        },
+        {
+          "texto": "2/5",
+          "correcta": false
+        },
+        {
+          "texto": "1/5",
+          "correcta": false
+        },
+        {
+          "texto": "5/6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con denominador común 6: 3/6 + 2/6 = 5/6."
+    },
+    {
+      "enunciado": "¿Cuánto es 3/4 − 1/2?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": true
+        },
+        {
+          "texto": "3/8",
+          "correcta": false
+        },
+        {
+          "texto": "5/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con denominador común 4: 3/4 − 2/4 = 1/4."
+    },
+    {
+      "enunciado": "¿Cuánto es 5/6 − 1/3?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4/3",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con denominador común 6: 5/6 − 2/6 = 3/6 = 1/2."
+    },
+    {
+      "enunciado": "¿Cuánto es 3 × 2/5?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6/15",
+          "correcta": false
+        },
+        {
+          "texto": "5/6",
+          "correcta": false
+        },
+        {
+          "texto": "2/15",
+          "correcta": false
+        },
+        {
+          "texto": "6/5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El entero multiplica solo al numerador: 3 × 2/5 = 6/5. El denominador no cambia."
+    },
+    {
+      "enunciado": "¿Cuánto es 1/5 de 20?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1/5 de 20 es 20 ÷ 5 = 4."
+    },
+    {
+      "enunciado": "¿Cuánto es 2/3 + 3/4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "17/12",
+          "correcta": true
+        },
+        {
+          "texto": "5/7",
+          "correcta": false
+        },
+        {
+          "texto": "6/12",
+          "correcta": false
+        },
+        {
+          "texto": "5/12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con denominador común 12: 8/12 + 9/12 = 17/12."
+    },
+    {
+      "enunciado": "¿Cuánto es 5/6 − 2/9?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "11/9",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3/15",
+          "correcta": false
+        },
+        {
+          "texto": "11/18",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con denominador común 18: 15/18 − 4/18 = 11/18."
+    },
+    {
+      "enunciado": "¿Cuánto es 3/4 × 8/9?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "11/13",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": true
+        },
+        {
+          "texto": "24/13",
+          "correcta": false
+        },
+        {
+          "texto": "5/6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(3×8)/(4×9) = 24/36, que simplificado da 2/3."
+    },
+    {
+      "enunciado": "¿Cuánto es 4/5 ÷ 2/3?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8/15",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "5/6",
+          "correcta": false
+        },
+        {
+          "texto": "6/5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "4/5 × 3/2 = 12/10 = 6/5."
+    },
+    {
+      "enunciado": "¿Cuánto es 2/3 ÷ 4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8/3",
+          "correcta": false
+        },
+        {
+          "texto": "2/7",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": true
+        },
+        {
+          "texto": "1/12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dividir entre 4 es multiplicar por 1/4: 2/3 × 1/4 = 2/12 = 1/6."
+    },
+    {
+      "enunciado": "Calcula la suma de los números mixtos 1 1/2 + 2 1/4.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3 1/4",
+          "correcta": false
+        },
+        {
+          "texto": "4 1/4",
+          "correcta": false
+        },
+        {
+          "texto": "3 1/2",
+          "correcta": false
+        },
+        {
+          "texto": "3 3/4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como impropias: 3/2 + 9/4 = 6/4 + 9/4 = 15/4 = 3 3/4."
+    },
+    {
+      "enunciado": "¿Cuánto es 5/8 × 4/15?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "9/23",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": true
+        },
+        {
+          "texto": "5/6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(5×4)/(8×15) = 20/120 = 1/6."
+    },
+    {
+      "enunciado": "¿Cuánto es 7/10 − 1/4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3/20",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "6/14",
+          "correcta": false
+        },
+        {
+          "texto": "9/20",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con denominador común 20: 14/20 − 5/20 = 9/20."
+    },
+    {
+      "enunciado": "¿Cuánto es 1/2 + 2/3 + 1/6?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4/11",
+          "correcta": false
+        },
+        {
+          "texto": "3/2",
+          "correcta": false
+        },
+        {
+          "texto": "4/3",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con denominador común 6: 3/6 + 4/6 + 1/6 = 8/6 = 4/3."
+    },
+    {
+      "enunciado": "¿Cuánto es 9/10 × 5/6?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3/4",
+          "correcta": true
+        },
+        {
+          "texto": "3/5",
+          "correcta": false
+        },
+        {
+          "texto": "14/16",
+          "correcta": false
+        },
+        {
+          "texto": "5/9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(9×5)/(10×6) = 45/60 = 3/4."
+    },
+    {
+      "enunciado": "¿Cuánto es (1/2 + 1/3) × 6?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "5/36",
+          "correcta": false
+        },
+        {
+          "texto": "5/6",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Primero 1/2 + 1/3 = 5/6; luego 5/6 × 6 = 5."
+    },
+    {
+      "enunciado": "¿Cuánto es 2/3 de 9/10?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3/5",
+          "correcta": true
+        },
+        {
+          "texto": "3/10",
+          "correcta": false
+        },
+        {
+          "texto": "11/13",
+          "correcta": false
+        },
+        {
+          "texto": "18/13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "«De» indica multiplicar: 2/3 × 9/10 = 18/30 = 3/5."
+    },
+    {
+      "enunciado": "¿Cuánto es 5/6 ÷ 5/12?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "25/72",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "6/5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "5/6 × 12/5 = 60/30 = 2."
+    },
+    {
+      "enunciado": "¿Cuánto es 11/12 − 5/8?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3/2",
+          "correcta": false
+        },
+        {
+          "texto": "7/24",
+          "correcta": true
+        },
+        {
+          "texto": "37/24",
+          "correcta": false
+        },
+        {
+          "texto": "1/24",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con denominador común 24: 22/24 − 15/24 = 7/24."
+    },
+    {
+      "enunciado": "¿Cuánto es 1/2 × 2/3 × 3/4?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6/9",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "3/8",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "(1×2×3)/(2×3×4) = 6/24 = 1/4."
+    },
+    {
+      "enunciado": "Un rectángulo mide 2/3 de metro de largo y 3/4 de metro de ancho. ¿Cuál es su área en metros cuadrados?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "17/12",
+          "correcta": false
+        },
+        {
+          "texto": "6/7",
+          "correcta": false
+        },
+        {
+          "texto": "5/12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área es largo por ancho: 2/3 × 3/4 = 6/12 = 1/2 m²."
+    },
+    {
+      "enunciado": "Un tanque está lleno hasta 5/8 de su capacidad y se usa 1/4 del tanque. ¿Qué fracción del tanque queda con agua?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "3/8",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "4/12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1/4 equivale a 2/8, entonces 5/8 − 2/8 = 3/8."
+    },
+    {
+      "enunciado": "¿Cuánto es (1/2 + 1/3) ÷ (1 − 1/6)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5/6",
+          "correcta": false
+        },
+        {
+          "texto": "6/5",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "25/36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Numerador 1/2 + 1/3 = 5/6 y denominador 1 − 1/6 = 5/6; (5/6) ÷ (5/6) = 1."
+    },
+    {
+      "enunciado": "¿Cuánto es (2/3 − 1/4) ÷ (1/2)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5/24",
+          "correcta": false
+        },
+        {
+          "texto": "5/12",
+          "correcta": false
+        },
+        {
+          "texto": "5/6",
+          "correcta": true
+        },
+        {
+          "texto": "12/5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2/3 − 1/4 = 5/12; luego (5/12) × 2 = 10/12 = 5/6."
+    },
+    {
+      "enunciado": "Calcula la división de los números mixtos 2 1/3 ÷ 1 1/6.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "49/18",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "14/9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como impropias: 7/3 ÷ 7/6 = 7/3 × 6/7 = 42/21 = 2."
+    },
+    {
+      "enunciado": "¿Cuánto es 1/2 + 1/3 × 3/4? (respeta la jerarquía de operaciones)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3/4",
+          "correcta": true
+        },
+        {
+          "texto": "5/8",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "5/24",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Primero la multiplicación: 1/3 × 3/4 = 1/4; luego 1/2 + 1/4 = 3/4."
+    },
+    {
+      "enunciado": "¿Cuánto es 2/3 − 1/4 × 2/5?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/6",
+          "correcta": false
+        },
+        {
+          "texto": "5/12",
+          "correcta": false
+        },
+        {
+          "texto": "17/30",
+          "correcta": true
+        },
+        {
+          "texto": "13/30",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Primero 1/4 × 2/5 = 2/20 = 1/10; luego 2/3 − 1/10 = 20/30 − 3/30 = 17/30."
+    },
+    {
+      "enunciado": "¿Cuánto es (3/4 ÷ 1/2) − 2/3?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "13/6",
+          "correcta": false
+        },
+        {
+          "texto": "5/12",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": false
+        },
+        {
+          "texto": "5/6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "3/4 ÷ 1/2 = 3/2; luego 3/2 − 2/3 = 9/6 − 4/6 = 5/6."
+    },
+    {
+      "enunciado": "¿Cuánto es 1 ÷ (1 + 1 ÷ (1 + 1/2))?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5/3",
+          "correcta": false
+        },
+        {
+          "texto": "3/5",
+          "correcta": true
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        },
+        {
+          "texto": "2/5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1 + 1/2 = 3/2; 1 ÷ (3/2) = 2/3; 1 + 2/3 = 5/3; 1 ÷ (5/3) = 3/5."
+    },
+    {
+      "enunciado": "¿Cuánto es (1/2 ÷ 3/4) + 1/3?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "17/24",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "11/12",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1/2 ÷ 3/4 = 1/2 × 4/3 = 2/3; luego 2/3 + 1/3 = 1."
+    },
+    {
+      "enunciado": "¿Cuánto es 1/2 + 1/4 + 1/8 + 1/16?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4/30",
+          "correcta": false
+        },
+        {
+          "texto": "15/16",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "7/8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con denominador común 16: 8/16 + 4/16 + 2/16 + 1/16 = 15/16."
+    },
+    {
+      "enunciado": "Una persona gasta 1/3 de su dinero y luego 1/4 del dinero original. ¿Qué fracción del dinero le queda?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5/12",
+          "correcta": true
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "7/12",
+          "correcta": false
+        },
+        {
+          "texto": "5/7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Gasta 1/3 + 1/4 = 7/12; le queda 1 − 7/12 = 5/12."
+    },
+    {
+      "enunciado": "¿Cuánto es 3/5 × 2 1/2 + 1/4? (2 1/2 es un número mixto)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "21/20",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "6/5",
+          "correcta": false
+        },
+        {
+          "texto": "7/4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "2 1/2 = 5/2; 3/5 × 5/2 = 15/10 = 3/2; luego 3/2 + 1/4 = 7/4."
+    },
+    {
+      "enunciado": "¿Cuánto es (2/3) ÷ ((4/9) ÷ (1/3))?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8/27",
+          "correcta": false
+        },
+        {
+          "texto": "2/9",
+          "correcta": false
+        },
+        {
+          "texto": "9/8",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Primero el paréntesis interno: (4/9) ÷ (1/3) = 4/9 × 3 = 12/9 = 4/3; luego (2/3) ÷ (4/3) = 2/4 = 1/2."
+    },
+    {
+      "enunciado": "Si 2/3 de un número es 8, ¿cuál es el número?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "16/3",
+          "correcta": false
+        },
+        {
+          "texto": "24",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si 2/3 del número es 8, el número es 8 ÷ 2/3 = 8 × 3/2 = 12. Comprobación: 2/3 de 12 = 8."
+    },
+    {
+      "enunciado": "¿Qué fracción de 3/4 es 1/2?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3/8",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "3/2",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se plantea (1/2) ÷ (3/4) = 1/2 × 4/3 = 4/6 = 2/3."
+    },
+    {
+      "enunciado": "¿Cuánto es 5/6 − (2/3 − 1/4)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "5/12",
+          "correcta": true
+        },
+        {
+          "texto": "11/12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Primero el paréntesis: 2/3 − 1/4 = 5/12; luego 5/6 − 5/12 = 10/12 − 5/12 = 5/12."
+    },
+    {
+      "enunciado": "Un ciclista recorre 1/2 del trayecto el lunes, 1/3 el martes y 12 km el miércoles para terminar. ¿Cuál es la longitud total del trayecto?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "144 km",
+          "correcta": false
+        },
+        {
+          "texto": "72 km",
+          "correcta": true
+        },
+        {
+          "texto": "36 km",
+          "correcta": false
+        },
+        {
+          "texto": "60 km",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Lunes y martes suman 1/2 + 1/3 = 5/6; el resto 1/6 son 12 km, así que el total es 12 × 6 = 72 km."
+    }
+  ]
+}

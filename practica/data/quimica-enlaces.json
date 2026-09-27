@@ -1,0 +1,1104 @@
+{
+  "id": "quimica-enlaces",
+  "materia": "quimica",
+  "tema": "Enlace químico, geometría molecular y fuerzas intermoleculares",
+  "bloque": "Tabla periódica y enlaces",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Los átomos se unen para quedar más estables (regla del octeto). Enlace iónico: un metal cede electrones a un no metal. Enlace covalente: dos no metales comparten electrones (polar si uno atrae más que el otro). Enlace metálico: cationes en un «mar» de electrones libres.",
+    "ejemplo": {
+      "enunciado": "Clasifica el enlace H–Cl sabiendo que las electronegatividades son H = 2,1 y Cl = 3,0.",
+      "pasos": [
+        "Calcula la diferencia de electronegatividad: ΔEN = 3,0 − 2,1 = 0,9.",
+        "Compara con la regla práctica: menor que 0,4 → covalente apolar; entre 0,4 y 1,7 → covalente polar; mayor que 1,7 → iónico.",
+        "0,9 está entre 0,4 y 1,7."
+      ],
+      "resultado": "Enlace covalente polar (el cloro atrae más los electrones compartidos)."
+    },
+    "ojo": "Una molécula con enlaces polares puede ser apolar si es simétrica: en el CO₂ y en el CCl₄ los dipolos se anulan."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Qué es un enlace químico?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El número de neutrones del núcleo atómico",
+          "correcta": false
+        },
+        {
+          "texto": "La fuerza que mantiene unidos a los átomos en una sustancia",
+          "correcta": true
+        },
+        {
+          "texto": "La cantidad de protones de un átomo",
+          "correcta": false
+        },
+        {
+          "texto": "La masa total de una molécula",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un enlace químico es la fuerza de atracción que une a los átomos para formar moléculas o compuestos."
+    },
+    {
+      "enunciado": "El enlace iónico se forma típicamente entre:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Dos no metales",
+          "correcta": false
+        },
+        {
+          "texto": "Dos metales",
+          "correcta": false
+        },
+        {
+          "texto": "Un metal y un no metal",
+          "correcta": true
+        },
+        {
+          "texto": "Dos gases nobles",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El enlace iónico resulta de la transferencia de electrones de un metal (baja electronegatividad) a un no metal (alta electronegatividad)."
+    },
+    {
+      "enunciado": "En un enlace covalente, los átomos involucrados:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Transfieren electrones por completo",
+          "correcta": false
+        },
+        {
+          "texto": "Intercambian protones del núcleo",
+          "correcta": false
+        },
+        {
+          "texto": "Pierden todos sus electrones de valencia",
+          "correcta": false
+        },
+        {
+          "texto": "Comparten uno o más pares de electrones",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En el enlace covalente los átomos comparten pares de electrones para alcanzar la configuración estable del octeto."
+    },
+    {
+      "enunciado": "El cloruro de sodio (NaCl) presenta un enlace de tipo:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Iónico",
+          "correcta": true
+        },
+        {
+          "texto": "Covalente apolar",
+          "correcta": false
+        },
+        {
+          "texto": "Metálico",
+          "correcta": false
+        },
+        {
+          "texto": "Covalente polar",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El sodio (metal) cede un electrón al cloro (no metal) y se forman iones Na⁺ y Cl⁻ que se atraen: es un enlace iónico."
+    },
+    {
+      "enunciado": "El enlace que mantiene unidos a los átomos en un trozo de cobre puro es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Iónico",
+          "correcta": false
+        },
+        {
+          "texto": "Metálico",
+          "correcta": true
+        },
+        {
+          "texto": "Covalente polar",
+          "correcta": false
+        },
+        {
+          "texto": "Puente de hidrógeno",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En los metales como el cobre, los cationes quedan rodeados por un mar de electrones deslocalizados, característico del enlace metálico."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes moléculas presenta un enlace covalente apolar?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "HCl",
+          "correcta": false
+        },
+        {
+          "texto": "H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "O₂",
+          "correcta": true
+        },
+        {
+          "texto": "NaCl",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el O₂ los dos átomos son idénticos, por lo que la diferencia de electronegatividad es cero y el enlace es covalente apolar."
+    },
+    {
+      "enunciado": "La regla del octeto establece que los átomos tienden a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Tener 8 protones en el núcleo",
+          "correcta": false
+        },
+        {
+          "texto": "Ganar 8 neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "Perder siempre 8 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Completar 8 electrones en su capa de valencia",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los átomos ganan, pierden o comparten electrones para alcanzar 8 electrones de valencia, configuración estable de gas noble."
+    },
+    {
+      "enunciado": "Un catión es un ion que tiene carga:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Positiva, porque perdió electrones",
+          "correcta": true
+        },
+        {
+          "texto": "Negativa, porque ganó electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Neutra, porque no cambió",
+          "correcta": false
+        },
+        {
+          "texto": "Positiva, porque ganó protones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al perder electrones, el átomo queda con más protones que electrones y adquiere carga positiva (catión)."
+    },
+    {
+      "enunciado": "Un anión se forma cuando un átomo:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Pierde electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Gana electrones",
+          "correcta": true
+        },
+        {
+          "texto": "Gana protones",
+          "correcta": false
+        },
+        {
+          "texto": "Pierde neutrones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al ganar electrones, el átomo adquiere carga negativa y se convierte en un anión."
+    },
+    {
+      "enunciado": "Las fuerzas de dispersión de London están presentes:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "En todas las moléculas",
+          "correcta": true
+        },
+        {
+          "texto": "Solo en compuestos iónicos",
+          "correcta": false
+        },
+        {
+          "texto": "Solo en moléculas polares",
+          "correcta": false
+        },
+        {
+          "texto": "Solo en los metales",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las fuerzas de London surgen de dipolos instantáneos y existen en todas las sustancias, siendo las únicas en moléculas apolares."
+    },
+    {
+      "enunciado": "La molécula de agua (H₂O) está formada por enlaces:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Iónicos",
+          "correcta": false
+        },
+        {
+          "texto": "Metálicos",
+          "correcta": false
+        },
+        {
+          "texto": "Covalentes apolares",
+          "correcta": false
+        },
+        {
+          "texto": "Covalentes polares",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El oxígeno y el hidrógeno comparten electrones de manera desigual (electronegatividades 3,5 y 2,1), así que forman enlaces covalentes polares."
+    },
+    {
+      "enunciado": "La electronegatividad de un átomo es su capacidad para:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Emitir radiación",
+          "correcta": false
+        },
+        {
+          "texto": "Aumentar su masa atómica",
+          "correcta": false
+        },
+        {
+          "texto": "Atraer hacia sí los electrones de un enlace",
+          "correcta": true
+        },
+        {
+          "texto": "Perder neutrones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La electronegatividad mide la tendencia de un átomo a atraer los electrones compartidos en un enlace químico."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes sustancias conduce la electricidad por poseer electrones libres?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El aluminio metálico",
+          "correcta": true
+        },
+        {
+          "texto": "El azúcar sólido",
+          "correcta": false
+        },
+        {
+          "texto": "El diamante",
+          "correcta": false
+        },
+        {
+          "texto": "El cloruro de sodio sólido",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los metales como el aluminio conducen la corriente gracias a sus electrones de valencia deslocalizados (mar de electrones)."
+    },
+    {
+      "enunciado": "El puente de hidrógeno se forma cuando un átomo de hidrógeno se une a átomos muy electronegativos de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Carbono, azufre o fósforo",
+          "correcta": false
+        },
+        {
+          "texto": "Sodio, potasio o litio",
+          "correcta": false
+        },
+        {
+          "texto": "Flúor, oxígeno o nitrógeno",
+          "correcta": true
+        },
+        {
+          "texto": "Hierro, cobre o zinc",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El puente de hidrógeno requiere H unido a F, O o N, átomos pequeños y muy electronegativos."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes moléculas puede formar puentes de hidrógeno entre sus moléculas?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "CH₄",
+          "correcta": false
+        },
+        {
+          "texto": "NH₃",
+          "correcta": true
+        },
+        {
+          "texto": "Cl₂",
+          "correcta": false
+        },
+        {
+          "texto": "CO₂",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El NH₃ posee enlaces N–H, lo que permite formar puentes de hidrógeno; CH₄, Cl₂ y CO₂ no tienen H unido a F, O o N."
+    },
+    {
+      "enunciado": "En estado sólido, los compuestos iónicos generalmente:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Son gases a temperatura ambiente",
+          "correcta": false
+        },
+        {
+          "texto": "Son blandos y moldeables",
+          "correcta": false
+        },
+        {
+          "texto": "Tienen puntos de fusión muy bajos",
+          "correcta": false
+        },
+        {
+          "texto": "Tienen puntos de fusión altos",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La fuerte atracción electrostática entre iones en la red cristalina hace que los compuestos iónicos tengan altos puntos de fusión."
+    },
+    {
+      "enunciado": "La geometría de la molécula de dióxido de carbono (CO₂) es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Angular",
+          "correcta": false
+        },
+        {
+          "texto": "Piramidal",
+          "correcta": false
+        },
+        {
+          "texto": "Lineal",
+          "correcta": true
+        },
+        {
+          "texto": "Tetraédrica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbono central tiene dos dominios de enlace y ningún par libre, lo que produce una geometría lineal con ángulo de 180°."
+    },
+    {
+      "enunciado": "Si la diferencia de electronegatividad entre dos átomos enlazados es 2,1, el enlace se clasifica como:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Iónico",
+          "correcta": true
+        },
+        {
+          "texto": "Covalente apolar",
+          "correcta": false
+        },
+        {
+          "texto": "Covalente polar",
+          "correcta": false
+        },
+        {
+          "texto": "Metálico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una diferencia de electronegatividad mayor a aproximadamente 1,7 indica un enlace predominantemente iónico."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes moléculas es polar?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Cl₂",
+          "correcta": false
+        },
+        {
+          "texto": "O₂",
+          "correcta": false
+        },
+        {
+          "texto": "N₂",
+          "correcta": false
+        },
+        {
+          "texto": "HCl",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El HCl tiene diferencia de electronegatividad (~0,9) y es asimétrico, lo que genera un dipolo neto; las moléculas diatómicas homonucleares son apolares."
+    },
+    {
+      "enunciado": "La molécula de CO₂ tiene dos enlaces C=O polares; sin embargo, la molécula es apolar porque:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "El carbono no posee electronegatividad",
+          "correcta": false
+        },
+        {
+          "texto": "Su geometría lineal y simétrica cancela los dos dipolos",
+          "correcta": true
+        },
+        {
+          "texto": "Sus enlaces son en realidad iónicos",
+          "correcta": false
+        },
+        {
+          "texto": "El oxígeno no tiene electrones de valencia",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los dos dipolos C=O apuntan en sentidos opuestos a lo largo de la línea y se anulan, por lo que el momento dipolar neto es cero."
+    },
+    {
+      "enunciado": "Según la teoría VSEPR, la geometría molecular del amoniaco (NH₃) es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Trigonal plana",
+          "correcta": false
+        },
+        {
+          "texto": "Lineal",
+          "correcta": false
+        },
+        {
+          "texto": "Piramidal trigonal",
+          "correcta": true
+        },
+        {
+          "texto": "Tetraédrica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El nitrógeno tiene 3 pares enlazantes y 1 par libre; la repulsión del par libre genera una geometría piramidal trigonal (~107°)."
+    },
+    {
+      "enunciado": "En el metano (CH₄), el ángulo de enlace H–C–H es de aproximadamente:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "90°",
+          "correcta": false
+        },
+        {
+          "texto": "109,5°",
+          "correcta": true
+        },
+        {
+          "texto": "120°",
+          "correcta": false
+        },
+        {
+          "texto": "180°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbono con 4 pares enlazantes adopta geometría tetraédrica, con ángulos característicos de 109,5°."
+    },
+    {
+      "enunciado": "El hielo flota sobre el agua líquida porque los puentes de hidrógeno:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Forman una estructura abierta y menos densa que el agua líquida",
+          "correcta": true
+        },
+        {
+          "texto": "Aumentan la masa de cada molécula de agua",
+          "correcta": false
+        },
+        {
+          "texto": "Rompen los enlaces covalentes O–H",
+          "correcta": false
+        },
+        {
+          "texto": "Eliminan la electronegatividad del oxígeno",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el hielo, los puentes de hidrógeno ordenan las moléculas en una red hexagonal abierta, disminuyendo la densidad respecto al agua líquida."
+    },
+    {
+      "enunciado": "¿Por qué el agua (H₂O, 18 g/mol) tiene un punto de ebullición mayor que el sulfuro de hidrógeno (H₂S, 34 g/mol)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Porque el H₂S es un compuesto iónico",
+          "correcta": false
+        },
+        {
+          "texto": "Porque el agua tiene mayor masa molar",
+          "correcta": false
+        },
+        {
+          "texto": "Porque el H₂S es metálico",
+          "correcta": false
+        },
+        {
+          "texto": "Porque el agua forma puentes de hidrógeno",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Pese a tener menor masa molar, el agua forma puentes de hidrógeno fuertes, lo que eleva su punto de ebullición por encima del H₂S."
+    },
+    {
+      "enunciado": "Las fuerzas de dispersión de London se vuelven más intensas cuando:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Aumenta el número de electrones y la masa molar de la molécula",
+          "correcta": true
+        },
+        {
+          "texto": "Disminuye el número de electrones de la molécula",
+          "correcta": false
+        },
+        {
+          "texto": "La molécula se hace más pequeña",
+          "correcta": false
+        },
+        {
+          "texto": "La temperatura desciende a 0 K",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Mayor número de electrones implica nubes electrónicas más polarizables, lo que intensifica las fuerzas de dispersión de London."
+    },
+    {
+      "enunciado": "La maleabilidad y la conductividad eléctrica de los metales se explican por:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Puentes de hidrógeno entre los átomos",
+          "correcta": false
+        },
+        {
+          "texto": "La presencia de iones fijos sin movilidad",
+          "correcta": false
+        },
+        {
+          "texto": "Un mar de electrones deslocalizados que se mueven libremente",
+          "correcta": true
+        },
+        {
+          "texto": "Enlaces covalentes dobles entre todos los átomos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los electrones deslocalizados pueden desplazarse (conductividad) y los cationes deslizarse sin romper el enlace (maleabilidad)."
+    },
+    {
+      "enunciado": "Con los valores de electronegatividad H = 2,1, Cl = 3,0, F = 4,0 y Br = 2,8, ¿cuál de estos enlaces es el más polar?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "H–Br",
+          "correcta": false
+        },
+        {
+          "texto": "H–F",
+          "correcta": true
+        },
+        {
+          "texto": "H–Cl",
+          "correcta": false
+        },
+        {
+          "texto": "Cl–F",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La diferencia H–F es 1,9, mayor que H–Cl (0,9), H–Br (0,7) y Cl–F (1,0); a mayor diferencia, mayor polaridad."
+    },
+    {
+      "enunciado": "¿Cuántos pares de electrones no enlazantes posee el átomo central de oxígeno en la molécula de agua?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El oxígeno tiene 6 electrones de valencia; al formar 2 enlaces O–H le quedan 2 pares libres."
+    },
+    {
+      "enunciado": "La geometría molecular del trifluoruro de boro (BF₃) es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Piramidal",
+          "correcta": false
+        },
+        {
+          "texto": "Angular",
+          "correcta": false
+        },
+        {
+          "texto": "Tetraédrica",
+          "correcta": false
+        },
+        {
+          "texto": "Trigonal plana",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El boro tiene 3 pares enlazantes y ningún par libre, lo que da una geometría trigonal plana con ángulos de 120°."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes moléculas NO cumple la regla del octeto en su átomo central?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "CH₄",
+          "correcta": false
+        },
+        {
+          "texto": "BF₃",
+          "correcta": true
+        },
+        {
+          "texto": "H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "NH₃",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el BF₃ el boro queda con solo 6 electrones alrededor, por lo que es una excepción a la regla del octeto."
+    },
+    {
+      "enunciado": "El fluoruro de hidrógeno (HF) tiene mayor punto de ebullición que el cloruro de hidrógeno (HCl) porque:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "El HF forma puentes de hidrógeno y el HCl no",
+          "correcta": true
+        },
+        {
+          "texto": "El HCl es una molécula apolar",
+          "correcta": false
+        },
+        {
+          "texto": "El HF tiene mayor masa molar que el HCl",
+          "correcta": false
+        },
+        {
+          "texto": "El HCl es un compuesto metálico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El flúor es lo bastante electronegativo para que el HF forme puentes de hidrógeno; el HCl solo presenta interacciones dipolo-dipolo más débiles."
+    },
+    {
+      "enunciado": "¿Cuál de estas propiedades es típica de los compuestos iónicos?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Son buenos conductores en estado sólido",
+          "correcta": false
+        },
+        {
+          "texto": "Son gases a temperatura ambiente",
+          "correcta": false
+        },
+        {
+          "texto": "Conducen la electricidad cuando están fundidos o disueltos",
+          "correcta": true
+        },
+        {
+          "texto": "Tienen puntos de fusión muy bajos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En estado fundido o en disolución los iones quedan libres para moverse y conducir corriente; en estado sólido la red los inmoviliza."
+    },
+    {
+      "enunciado": "La molécula de tetracloruro de carbono (CCl₄) es apolar a pesar de tener enlaces C–Cl polares porque:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Los enlaces C–Cl son en realidad apolares",
+          "correcta": false
+        },
+        {
+          "texto": "El carbono se comporta como un metal",
+          "correcta": false
+        },
+        {
+          "texto": "Forma puentes de hidrógeno internos",
+          "correcta": false
+        },
+        {
+          "texto": "Su geometría tetraédrica simétrica anula los dipolos",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los cuatro dipolos C–Cl, dispuestos simétricamente en un tetraedro, se cancelan y el momento dipolar neto es cero."
+    },
+    {
+      "enunciado": "Una molécula del tipo AX₂E₂ (átomo central con 2 pares enlazantes y 2 pares libres) tiene una geometría molecular:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Lineal",
+          "correcta": false
+        },
+        {
+          "texto": "Angular",
+          "correcta": true
+        },
+        {
+          "texto": "Trigonal plana",
+          "correcta": false
+        },
+        {
+          "texto": "Tetraédrica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con 2 pares enlazantes y 2 libres (como el agua), la repulsión de los pares libres produce una geometría angular."
+    },
+    {
+      "enunciado": "La hibridación del átomo de carbono en el metano (CH₄) es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "sp",
+          "correcta": false
+        },
+        {
+          "texto": "sp²",
+          "correcta": false
+        },
+        {
+          "texto": "sp³",
+          "correcta": true
+        },
+        {
+          "texto": "sp³d",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbono forma 4 enlaces sigma equivalentes, por lo que combina un orbital s y tres p en cuatro híbridos sp³."
+    },
+    {
+      "enunciado": "El átomo de carbono en el dióxido de carbono (CO₂) presenta hibridación:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "sp",
+          "correcta": true
+        },
+        {
+          "texto": "sp²",
+          "correcta": false
+        },
+        {
+          "texto": "sp³",
+          "correcta": false
+        },
+        {
+          "texto": "sp³d²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El carbono tiene 2 dominios de enlace (geometría lineal), lo que corresponde a hibridación sp con dos enlaces pi adicionales."
+    },
+    {
+      "enunciado": "¿Cuántos enlaces sigma (σ) y pi (π) hay en la molécula de nitrógeno (N≡N)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3 enlaces sigma y 0 pi",
+          "correcta": false
+        },
+        {
+          "texto": "2 enlaces sigma y 1 pi",
+          "correcta": false
+        },
+        {
+          "texto": "1 enlace sigma y 2 pi",
+          "correcta": true
+        },
+        {
+          "texto": "1 enlace sigma y 1 pi",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un enlace triple está formado por 1 enlace sigma y 2 enlaces pi."
+    },
+    {
+      "enunciado": "La geometría molecular del hexafluoruro de azufre (SF₆) es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Tetraédrica",
+          "correcta": false
+        },
+        {
+          "texto": "Trigonal bipiramidal",
+          "correcta": false
+        },
+        {
+          "texto": "Cuadrada plana",
+          "correcta": false
+        },
+        {
+          "texto": "Octaédrica",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El azufre con 6 pares enlazantes y ningún par libre adopta una geometría octaédrica con ángulos de 90°."
+    },
+    {
+      "enunciado": "En el ion amonio (NH₄⁺), el cuarto enlace N–H se forma mediante:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Un enlace covalente coordinado o dativo",
+          "correcta": true
+        },
+        {
+          "texto": "Un enlace iónico",
+          "correcta": false
+        },
+        {
+          "texto": "Un puente de hidrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "Un enlace metálico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El nitrógeno aporta su par libre para formar el enlace con un H⁺, constituyendo un enlace covalente coordinado (dativo)."
+    },
+    {
+      "enunciado": "Ordene de menor a mayor punto de ebullición las siguientes sustancias según sus fuerzas intermoleculares: CH₄, H₂S y H₂O.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "H₂O < H₂S < CH₄",
+          "correcta": false
+        },
+        {
+          "texto": "CH₄ < H₂S < H₂O",
+          "correcta": true
+        },
+        {
+          "texto": "H₂S < CH₄ < H₂O",
+          "correcta": false
+        },
+        {
+          "texto": "H₂O < CH₄ < H₂S",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El CH₄ solo tiene fuerzas de London, el H₂S dipolo-dipolo y el H₂O puentes de hidrógeno; por ello su punto de ebullición crece en ese orden."
+    },
+    {
+      "enunciado": "La hibridación del átomo de boro en el BF₃ es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "sp",
+          "correcta": false
+        },
+        {
+          "texto": "sp³",
+          "correcta": false
+        },
+        {
+          "texto": "sp³d",
+          "correcta": false
+        },
+        {
+          "texto": "sp²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El boro forma 3 enlaces sigma con geometría trigonal plana, lo que corresponde a hibridación sp²."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes moléculas posee un momento dipolar neto distinto de cero (es polar)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "NH₃",
+          "correcta": true
+        },
+        {
+          "texto": "CO₂",
+          "correcta": false
+        },
+        {
+          "texto": "BF₃",
+          "correcta": false
+        },
+        {
+          "texto": "CCl₄",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El NH₃ es piramidal y su par libre hace que los dipolos no se anulen; el CO₂, el BF₃ y el CCl₄ son simétricos y sus dipolos se cancelan."
+    },
+    {
+      "enunciado": "El diamante es extremadamente duro y posee un punto de fusión muy elevado porque:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Está formado por iones positivos y negativos",
+          "correcta": false
+        },
+        {
+          "texto": "Es un sólido covalente de red con enlaces C–C en toda su estructura",
+          "correcta": true
+        },
+        {
+          "texto": "Sus átomos se mantienen unidos solo por fuerzas de London",
+          "correcta": false
+        },
+        {
+          "texto": "Presenta puentes de hidrógeno entre sus átomos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el diamante cada carbono se une a otros cuatro mediante enlaces covalentes fuertes formando una red tridimensional continua."
+    },
+    {
+      "enunciado": "En la molécula de agua, considerando sus 4 dominios de electrones, la geometría electrónica y la geometría molecular son, respectivamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Tetraédrica y lineal",
+          "correcta": false
+        },
+        {
+          "texto": "Angular y angular",
+          "correcta": false
+        },
+        {
+          "texto": "Tetraédrica y angular",
+          "correcta": true
+        },
+        {
+          "texto": "Lineal y lineal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los 4 dominios (2 enlaces y 2 pares libres) dan una geometría electrónica tetraédrica, pero solo los átomos definen la forma angular de la molécula."
+    },
+    {
+      "enunciado": "¿Cuál opción ordena correctamente las interacciones de menor a mayor intensidad?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Fuerzas de London < dipolo-dipolo < puente de hidrógeno < enlace iónico",
+          "correcta": true
+        },
+        {
+          "texto": "Enlace iónico < puente de hidrógeno < dipolo-dipolo < fuerzas de London",
+          "correcta": false
+        },
+        {
+          "texto": "Puente de hidrógeno < fuerzas de London < dipolo-dipolo < enlace iónico",
+          "correcta": false
+        },
+        {
+          "texto": "Dipolo-dipolo < fuerzas de London < enlace iónico < puente de hidrógeno",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las fuerzas de London son las más débiles y el enlace iónico (electrostático de red) el más fuerte; entre las intermoleculares, el puente de hidrógeno supera al dipolo-dipolo."
+    },
+    {
+      "enunciado": "La molécula de pentacloruro de fósforo (PCl₅) presenta geometría e hibridación, respectivamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Octaédrica y sp³d²",
+          "correcta": false
+        },
+        {
+          "texto": "Tetraédrica y sp³",
+          "correcta": false
+        },
+        {
+          "texto": "Trigonal plana y sp²",
+          "correcta": false
+        },
+        {
+          "texto": "Trigonal bipiramidal y sp³d",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El fósforo con 5 pares enlazantes adopta geometría trigonal bipiramidal e hibridación sp³d."
+    },
+    {
+      "enunciado": "En la molécula de SO₂ (azufre central con un par libre), la geometría es angular y el ángulo de enlace es de aproximadamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "180°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": false
+        },
+        {
+          "texto": "119°",
+          "correcta": true
+        },
+        {
+          "texto": "109,5°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con 2 enlaces y 1 par libre (AX₂E), el SO₂ es angular con un ángulo cercano a 119°, algo menor que el ideal de 120°."
+    }
+  ]
+}

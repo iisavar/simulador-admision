@@ -1,0 +1,1154 @@
+{
+  "id": "quimica-estados",
+  "materia": "quimica",
+  "tema": "Estados de la materia y cambios de estado",
+  "bloque": "Materia y átomo",
+  "nivel": "basico",
+  "clase": {
+    "titulo": "Química desde cero",
+    "url": "../quimica-materia/",
+    "lamina": 14
+  },
+  "repaso": {
+    "idea": "Sólido, líquido y gas se diferencian por lo juntas y libres que están sus partículas. Al ganar calor la materia pasa por fusión, vaporización o sublimación progresiva; al perderlo, por solidificación, condensación o sublimación regresiva. Mientras ocurre un cambio de estado, la temperatura se mantiene constante.",
+    "ejemplo": {
+      "enunciado": "¿Cuánto calor se necesita para convertir 30 g de hielo a 0 °C en agua a 10 °C? (Lf = 80 cal/g; c del agua = 1 cal/g·°C)",
+      "pasos": [
+        "Primero se funde el hielo a 0 °C: Q₁ = m·Lf = 30 × 80 = 2400 cal.",
+        "Luego se calienta el agua de 0 °C a 10 °C: Q₂ = m·c·ΔT = 30 × 1 × 10 = 300 cal.",
+        "Suma las dos etapas: Q = 2400 + 300."
+      ],
+      "resultado": "Q = 2700 cal"
+    },
+    "ojo": "No confundas los sentidos: de sólido a gas es sublimación progresiva y de gas a sólido es sublimación regresiva; de gas a líquido es condensación, no evaporación."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál de los siguientes estados de la materia tiene forma propia y volumen definido?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Líquido",
+          "correcta": false
+        },
+        {
+          "texto": "Sólido",
+          "correcta": true
+        },
+        {
+          "texto": "Gas",
+          "correcta": false
+        },
+        {
+          "texto": "Plasma",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el sólido las partículas están muy juntas y ordenadas en posiciones fijas, por lo que conserva forma y volumen propios."
+    },
+    {
+      "enunciado": "¿Qué estado de la materia adopta la forma del recipiente que lo contiene, pero mantiene constante su volumen?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Sólido",
+          "correcta": false
+        },
+        {
+          "texto": "Gas",
+          "correcta": false
+        },
+        {
+          "texto": "Líquido",
+          "correcta": true
+        },
+        {
+          "texto": "Plasma",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El líquido tiene volumen definido pero no forma propia, por lo que toma la forma del recipiente sin expandirse para llenarlo."
+    },
+    {
+      "enunciado": "¿Cuál estado de la materia no posee forma ni volumen definidos y se expande hasta llenar todo el recipiente?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Sólido",
+          "correcta": false
+        },
+        {
+          "texto": "Líquido",
+          "correcta": false
+        },
+        {
+          "texto": "Coloide",
+          "correcta": false
+        },
+        {
+          "texto": "Gas",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En el gas las partículas están muy separadas y en movimiento desordenado, por lo que ocupan todo el volumen disponible."
+    },
+    {
+      "enunciado": "El cambio de estado de sólido a líquido se denomina:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Fusión",
+          "correcta": true
+        },
+        {
+          "texto": "Solidificación",
+          "correcta": false
+        },
+        {
+          "texto": "Sublimación",
+          "correcta": false
+        },
+        {
+          "texto": "Condensación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La fusión es el paso de sólido a líquido por absorción de calor, como cuando se derrite el hielo."
+    },
+    {
+      "enunciado": "El cambio de estado de líquido a gas se denomina:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Condensación",
+          "correcta": false
+        },
+        {
+          "texto": "Vaporización",
+          "correcta": true
+        },
+        {
+          "texto": "Fusión",
+          "correcta": false
+        },
+        {
+          "texto": "Solidificación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La vaporización es el paso de líquido a gas; incluye la evaporación y la ebullición."
+    },
+    {
+      "enunciado": "El cambio de estado de gas a líquido se denomina:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Evaporación",
+          "correcta": false
+        },
+        {
+          "texto": "Sublimación",
+          "correcta": false
+        },
+        {
+          "texto": "Condensación",
+          "correcta": true
+        },
+        {
+          "texto": "Fusión",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La condensación es el paso de gas a líquido por liberación de calor, como el vapor que se vuelve agua sobre una superficie fría."
+    },
+    {
+      "enunciado": "El cambio de estado de líquido a sólido se denomina:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Fusión",
+          "correcta": false
+        },
+        {
+          "texto": "Vaporización",
+          "correcta": false
+        },
+        {
+          "texto": "Condensación",
+          "correcta": false
+        },
+        {
+          "texto": "Solidificación",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La solidificación (o congelación) es el paso de líquido a sólido al retirar calor, como el agua que se convierte en hielo."
+    },
+    {
+      "enunciado": "El paso directo de sólido a gas, sin pasar por el estado líquido, se llama:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Sublimación progresiva",
+          "correcta": true
+        },
+        {
+          "texto": "Sublimación regresiva",
+          "correcta": false
+        },
+        {
+          "texto": "Fusión",
+          "correcta": false
+        },
+        {
+          "texto": "Condensación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La sublimación progresiva es el paso directo de sólido a gas, como ocurre con la naftalina o el hielo seco; la regresiva es el paso contrario, de gas a sólido."
+    },
+    {
+      "enunciado": "El paso directo de gas a sólido, sin pasar por el estado líquido, se denomina:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Sublimación progresiva",
+          "correcta": false
+        },
+        {
+          "texto": "Sublimación regresiva",
+          "correcta": true
+        },
+        {
+          "texto": "Solidificación",
+          "correcta": false
+        },
+        {
+          "texto": "Condensación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La sublimación regresiva (también llamada deposición) es el paso directo de gas a sólido, como la escarcha que se forma a partir del vapor de agua."
+    },
+    {
+      "enunciado": "¿Cuál es el estado de la materia más abundante en el universo (considerando la materia visible)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Plasma",
+          "correcta": true
+        },
+        {
+          "texto": "Sólido",
+          "correcta": false
+        },
+        {
+          "texto": "Líquido",
+          "correcta": false
+        },
+        {
+          "texto": "Gas",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las estrellas están formadas por plasma y concentran la mayor parte de la materia visible del universo, por eso es el estado más abundante."
+    },
+    {
+      "enunciado": "El plasma es un estado de la materia que se caracteriza principalmente por:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Tener partículas ordenadas en posiciones fijas",
+          "correcta": false
+        },
+        {
+          "texto": "Ser siempre frío y oscuro",
+          "correcta": false
+        },
+        {
+          "texto": "No conducir la corriente eléctrica",
+          "correcta": false
+        },
+        {
+          "texto": "Estar formado por partículas ionizadas (iones y electrones libres)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El plasma es un gas ionizado con iones y electrones libres, lo que lo hace buen conductor de la electricidad."
+    },
+    {
+      "enunciado": "¿En cuál estado de la materia las partículas se encuentran más separadas entre sí?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Sólido",
+          "correcta": false
+        },
+        {
+          "texto": "Líquido",
+          "correcta": false
+        },
+        {
+          "texto": "Gas",
+          "correcta": true
+        },
+        {
+          "texto": "Cristal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el gas las fuerzas de atracción son muy débiles y las partículas están muy separadas, ocupando todo el espacio disponible."
+    },
+    {
+      "enunciado": "A presión atmosférica normal (nivel del mar), el agua pura hierve aproximadamente a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "100 °C",
+          "correcta": true
+        },
+        {
+          "texto": "0 °C",
+          "correcta": false
+        },
+        {
+          "texto": "50 °C",
+          "correcta": false
+        },
+        {
+          "texto": "212 °C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A 1 atm el agua hierve a 100 °C; el valor 212 corresponde a esa misma temperatura, pero en grados Fahrenheit."
+    },
+    {
+      "enunciado": "A presión atmosférica normal, el punto de fusión del hielo (temperatura a la que se congela el agua) es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4 °C",
+          "correcta": false
+        },
+        {
+          "texto": "−10 °C",
+          "correcta": false
+        },
+        {
+          "texto": "0 °C",
+          "correcta": true
+        },
+        {
+          "texto": "100 °C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A 1 atm el agua se congela y el hielo se funde a 0 °C, temperatura que define el punto de fusión del hielo."
+    },
+    {
+      "enunciado": "¿Cuál estado de la materia es el más fácilmente compresible?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Sólido",
+          "correcta": false
+        },
+        {
+          "texto": "Gas",
+          "correcta": true
+        },
+        {
+          "texto": "Líquido",
+          "correcta": false
+        },
+        {
+          "texto": "Vidrio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como en los gases las partículas están muy separadas, existe mucho espacio vacío entre ellas y se comprimen con facilidad."
+    },
+    {
+      "enunciado": "La evaporación del agua de un charco después de la lluvia es un ejemplo de cambio de estado de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Gas a líquido",
+          "correcta": false
+        },
+        {
+          "texto": "Sólido a líquido",
+          "correcta": false
+        },
+        {
+          "texto": "Líquido a sólido",
+          "correcta": false
+        },
+        {
+          "texto": "Líquido a gas",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En la evaporación el agua líquida pasa a vapor (gas), un caso de vaporización en la superficie del líquido."
+    },
+    {
+      "enunciado": "La formación de rocío sobre las plantas durante la madrugada es un ejemplo de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Evaporación",
+          "correcta": false
+        },
+        {
+          "texto": "Sublimación",
+          "correcta": false
+        },
+        {
+          "texto": "Condensación",
+          "correcta": true
+        },
+        {
+          "texto": "Fusión",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El vapor de agua del aire se enfría sobre las superficies frías y pasa a líquido, lo que constituye una condensación."
+    },
+    {
+      "enunciado": "Según la teoría cinético-molecular, al aumentar la temperatura de una sustancia, la energía cinética promedio de sus partículas:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Aumenta",
+          "correcta": true
+        },
+        {
+          "texto": "Disminuye",
+          "correcta": false
+        },
+        {
+          "texto": "Permanece constante",
+          "correcta": false
+        },
+        {
+          "texto": "Se hace cero",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La temperatura es una medida de la energía cinética promedio de las partículas, de modo que al subir la temperatura esta energía aumenta."
+    },
+    {
+      "enunciado": "Durante el cambio de estado de una sustancia pura (por ejemplo, la fusión), mientras coexisten ambas fases la temperatura:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Aumenta de forma continua",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuye de forma continua",
+          "correcta": false
+        },
+        {
+          "texto": "Oscila al azar",
+          "correcta": false
+        },
+        {
+          "texto": "Permanece constante",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Durante un cambio de estado el calor absorbido se usa en romper las fuerzas entre partículas, no en elevar la temperatura, que permanece constante."
+    },
+    {
+      "enunciado": "En una curva de calentamiento, las mesetas o tramos horizontales (zonas planas) corresponden a:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Calentamiento de una sola fase",
+          "correcta": false
+        },
+        {
+          "texto": "Cambios de estado a temperatura constante",
+          "correcta": true
+        },
+        {
+          "texto": "Enfriamiento del sistema",
+          "correcta": false
+        },
+        {
+          "texto": "Un aumento de la presión",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En las mesetas la temperatura no cambia porque el calor se invierte en el cambio de estado (calor latente)."
+    },
+    {
+      "enunciado": "El calor que una sustancia absorbe o libera durante un cambio de estado, sin que varíe su temperatura, se denomina:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Calor sensible",
+          "correcta": false
+        },
+        {
+          "texto": "Calor específico",
+          "correcta": false
+        },
+        {
+          "texto": "Calor latente",
+          "correcta": true
+        },
+        {
+          "texto": "Capacidad calorífica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El calor latente es la energía asociada a un cambio de fase a temperatura constante; el calor sensible, en cambio, sí varía la temperatura."
+    },
+    {
+      "enunciado": "El hielo seco (CO₂ sólido) parece «humear» y desaparece a temperatura ambiente porque:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Se funde primero a líquido y luego se evapora",
+          "correcta": false
+        },
+        {
+          "texto": "Pasa directamente de sólido a gas sin fundirse a presión normal",
+          "correcta": true
+        },
+        {
+          "texto": "Se condensa formando agua",
+          "correcta": false
+        },
+        {
+          "texto": "Se solidifica aún más con el calor",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A presión atmosférica el CO₂ no tiene fase líquida estable, así que pasa directamente de sólido a gas (sublimación progresiva)."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes procesos es exotérmico (libera calor al entorno)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Condensación del vapor de agua",
+          "correcta": true
+        },
+        {
+          "texto": "Fusión del hielo",
+          "correcta": false
+        },
+        {
+          "texto": "Evaporación del agua",
+          "correcta": false
+        },
+        {
+          "texto": "Sublimación del hielo seco",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la condensación las partículas se acercan y pierden energía, liberando calor; la fusión, evaporación y sublimación son endotérmicas."
+    },
+    {
+      "enunciado": "La temperatura a la cual la presión de vapor de un líquido iguala la presión externa se denomina:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Punto de fusión",
+          "correcta": false
+        },
+        {
+          "texto": "Punto triple",
+          "correcta": false
+        },
+        {
+          "texto": "Punto crítico",
+          "correcta": false
+        },
+        {
+          "texto": "Punto de ebullición",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La ebullición ocurre cuando la presión de vapor del líquido iguala la presión externa, permitiendo la formación de burbujas en todo el seno del líquido."
+    },
+    {
+      "enunciado": "Si se calienta agua en lo alto de una montaña, donde la presión atmosférica es menor que al nivel del mar, el agua hervirá a una temperatura:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Menor a 100 °C",
+          "correcta": true
+        },
+        {
+          "texto": "Mayor a 100 °C",
+          "correcta": false
+        },
+        {
+          "texto": "Exactamente 100 °C",
+          "correcta": false
+        },
+        {
+          "texto": "0 °C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al disminuir la presión externa, la presión de vapor iguala a la externa a menor temperatura, por lo que el agua hierve por debajo de 100 °C."
+    },
+    {
+      "enunciado": "¿Qué cantidad de calor se necesita para elevar la temperatura de 200 g de agua de 20 °C a 80 °C? (calor específico del agua = 1 cal/g·°C)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6000 cal",
+          "correcta": false
+        },
+        {
+          "texto": "1200 cal",
+          "correcta": false
+        },
+        {
+          "texto": "12000 cal",
+          "correcta": true
+        },
+        {
+          "texto": "16000 cal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Q = m·c·ΔT = 200 g × 1 cal/g·°C × (80 − 20) °C = 200 × 60 = 12000 cal."
+    },
+    {
+      "enunciado": "¿Cuánto calor se requiere para fundir 50 g de hielo que ya está a 0 °C? (calor latente de fusión del hielo = 80 cal/g)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "400 cal",
+          "correcta": false
+        },
+        {
+          "texto": "4000 cal",
+          "correcta": true
+        },
+        {
+          "texto": "1600 cal",
+          "correcta": false
+        },
+        {
+          "texto": "8000 cal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Q = m·Lf = 50 g × 80 cal/g = 4000 cal; al estar ya a 0 °C, todo el calor se usa en fundirlo."
+    },
+    {
+      "enunciado": "El calor latente de vaporización del agua es 540 cal/g. ¿Cuánto calor se necesita para vaporizar 10 g de agua que ya está a 100 °C?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "540 cal",
+          "correcta": false
+        },
+        {
+          "texto": "800 cal",
+          "correcta": false
+        },
+        {
+          "texto": "54000 cal",
+          "correcta": false
+        },
+        {
+          "texto": "5400 cal",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Q = m·Lv = 10 g × 540 cal/g = 5400 cal, calor necesario para el cambio de líquido a vapor a temperatura constante."
+    },
+    {
+      "enunciado": "En el enfriamiento progresivo de una sustancia pura desde el estado gaseoso, ¿cuál es el orden correcto de los cambios de estado que ocurren?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Fusión y luego vaporización",
+          "correcta": false
+        },
+        {
+          "texto": "Solidificación y luego condensación",
+          "correcta": false
+        },
+        {
+          "texto": "Sublimación y luego fusión",
+          "correcta": false
+        },
+        {
+          "texto": "Condensación y luego solidificación",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Al enfriarse, el gas primero se condensa a líquido y luego el líquido se solidifica, en sentido inverso al calentamiento."
+    },
+    {
+      "enunciado": "¿Por qué la transpiración (sudor) ayuda a enfriar el cuerpo?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Porque libera calor al evaporarse",
+          "correcta": false
+        },
+        {
+          "texto": "Porque al evaporarse absorbe calor del cuerpo",
+          "correcta": true
+        },
+        {
+          "texto": "Porque se congela sobre la piel",
+          "correcta": false
+        },
+        {
+          "texto": "Porque se condensa sobre la piel",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La evaporación del sudor es un proceso endotérmico que toma calor de la piel, produciendo un efecto refrescante."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes propiedades es característica de los gases?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Se difunden y mezclan con facilidad",
+          "correcta": true
+        },
+        {
+          "texto": "Tienen forma definida",
+          "correcta": false
+        },
+        {
+          "texto": "Son prácticamente incompresibles",
+          "correcta": false
+        },
+        {
+          "texto": "Tienen volumen fijo, independiente del recipiente",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por el gran espacio entre sus partículas y su movimiento rápido, los gases se difunden y mezclan fácilmente, y son muy compresibles."
+    },
+    {
+      "enunciado": "Los sólidos amorfos, como el vidrio, se diferencian de los sólidos cristalinos en que:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Tienen un punto de fusión muy definido y único",
+          "correcta": false
+        },
+        {
+          "texto": "Sus partículas están perfectamente ordenadas",
+          "correcta": false
+        },
+        {
+          "texto": "Sus partículas no presentan un ordenamiento de largo alcance",
+          "correcta": true
+        },
+        {
+          "texto": "Son siempre gaseosos a temperatura ambiente",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En los sólidos amorfos las partículas carecen de orden de largo alcance, por lo que se ablandan en un rango de temperatura en lugar de tener un punto de fusión único."
+    },
+    {
+      "enunciado": "En la mayoría de las sustancias, ¿qué ocurre con su densidad al pasar del estado líquido al sólido?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Disminuye",
+          "correcta": false
+        },
+        {
+          "texto": "Permanece igual",
+          "correcta": false
+        },
+        {
+          "texto": "Se hace cero",
+          "correcta": false
+        },
+        {
+          "texto": "Aumenta",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Al solidificarse, las partículas suelen acomodarse más juntas, por lo que la densidad aumenta en la mayoría de las sustancias."
+    },
+    {
+      "enunciado": "El agua es una excepción notable entre las sustancias porque su forma sólida (el hielo):",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Es más densa que el agua líquida",
+          "correcta": false
+        },
+        {
+          "texto": "Es menos densa que el agua líquida y por eso flota",
+          "correcta": true
+        },
+        {
+          "texto": "Tiene exactamente la misma densidad que el líquido",
+          "correcta": false
+        },
+        {
+          "texto": "No puede flotar en el agua",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La estructura abierta del hielo lo hace menos denso que el agua líquida, razón por la cual el hielo flota."
+    },
+    {
+      "enunciado": "¿Cuánto calor total se necesita para convertir 20 g de hielo a 0 °C en agua líquida a 0 °C y luego calentarla hasta 25 °C? (Lf = 80 cal/g; c agua = 1 cal/g·°C)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1600 cal",
+          "correcta": false
+        },
+        {
+          "texto": "500 cal",
+          "correcta": false
+        },
+        {
+          "texto": "2100 cal",
+          "correcta": true
+        },
+        {
+          "texto": "4100 cal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Fusión: 20×80 = 1600 cal; calentamiento del agua: 20×1×25 = 500 cal; total = 1600 + 500 = 2100 cal."
+    },
+    {
+      "enunciado": "Se tienen 100 g de hielo a −10 °C. ¿Cuánto calor se necesita para llevarlo hasta 0 °C sin que comience a fundirse? (calor específico del hielo = 0,5 cal/g·°C)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "500 cal",
+          "correcta": true
+        },
+        {
+          "texto": "1000 cal",
+          "correcta": false
+        },
+        {
+          "texto": "800 cal",
+          "correcta": false
+        },
+        {
+          "texto": "50 cal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Q = m·c·ΔT = 100 g × 0,5 cal/g·°C × (0 − (−10)) °C = 100 × 0,5 × 10 = 500 cal."
+    },
+    {
+      "enunciado": "¿Cuánto calor se necesita para llevar 50 g de agua de 90 °C a vapor a 100 °C? (c agua = 1 cal/g·°C; Lv = 540 cal/g)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "27000 cal",
+          "correcta": false
+        },
+        {
+          "texto": "500 cal",
+          "correcta": false
+        },
+        {
+          "texto": "27500 cal",
+          "correcta": true
+        },
+        {
+          "texto": "32400 cal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Calentamiento: 50×1×10 = 500 cal; vaporización: 50×540 = 27000 cal; total = 500 + 27000 = 27500 cal."
+    },
+    {
+      "enunciado": "En una curva de calentamiento se observa que durante la fusión de 20 g de una sustancia se absorben 1600 cal a temperatura constante. ¿Cuál es su calor latente de fusión?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "32000 cal/g",
+          "correcta": false
+        },
+        {
+          "texto": "0,0125 cal/g",
+          "correcta": false
+        },
+        {
+          "texto": "1620 cal/g",
+          "correcta": false
+        },
+        {
+          "texto": "80 cal/g",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Lf = Q/m = 1600 cal / 20 g = 80 cal/g."
+    },
+    {
+      "enunciado": "¿Cuánto calor total se requiere para convertir 10 g de hielo a 0 °C en vapor a 100 °C? (Lf = 80 cal/g; c agua = 1 cal/g·°C; Lv = 540 cal/g)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "7200 cal",
+          "correcta": true
+        },
+        {
+          "texto": "6200 cal",
+          "correcta": false
+        },
+        {
+          "texto": "5400 cal",
+          "correcta": false
+        },
+        {
+          "texto": "1800 cal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Fusión: 10×80 = 800 cal; calentar 0→100 °C: 10×1×100 = 1000 cal; vaporizar: 10×540 = 5400 cal; total = 7200 cal."
+    },
+    {
+      "enunciado": "Para una misma masa de agua se necesita más energía para vaporizarla que para fundirla. Esto se debe a que:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "El calor latente de fusión es mayor que el de vaporización",
+          "correcta": false
+        },
+        {
+          "texto": "El calor latente de vaporización (540 cal/g) es mayor que el de fusión (80 cal/g)",
+          "correcta": true
+        },
+        {
+          "texto": "Ambos calores latentes son exactamente iguales",
+          "correcta": false
+        },
+        {
+          "texto": "La vaporización libera energía en lugar de absorberla",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Separar por completo las partículas en la vaporización requiere más energía que solo aumentar su movilidad en la fusión, de ahí que Lv > Lf."
+    },
+    {
+      "enunciado": "¿Cuál es la temperatura final al mezclar 100 g de agua a 80 °C con 100 g de agua a 20 °C, suponiendo que no hay pérdidas de calor?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "40 °C",
+          "correcta": false
+        },
+        {
+          "texto": "60 °C",
+          "correcta": false
+        },
+        {
+          "texto": "100 °C",
+          "correcta": false
+        },
+        {
+          "texto": "50 °C",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por balance térmico: Tf = (100×80 + 100×20)/(100+100) = (8000 + 2000)/200 = 50 °C."
+    },
+    {
+      "enunciado": "A diferencia de la mayoría de las sustancias, en el agua un aumento de presión sobre el equilibrio sólido-líquido provoca que el punto de fusión:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Disminuya",
+          "correcta": true
+        },
+        {
+          "texto": "Aumente",
+          "correcta": false
+        },
+        {
+          "texto": "No se vea afectado",
+          "correcta": false
+        },
+        {
+          "texto": "Se reduzca hasta cero absoluto",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como el hielo es menos denso que el agua líquida, al aumentar la presión el punto de fusión del agua disminuye (línea sólido-líquido con pendiente negativa)."
+    },
+    {
+      "enunciado": "Por encima de la temperatura crítica, una sustancia:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Siempre es sólida",
+          "correcta": false
+        },
+        {
+          "texto": "No puede licuarse por mucho que se aumente la presión",
+          "correcta": true
+        },
+        {
+          "texto": "Se congela de inmediato",
+          "correcta": false
+        },
+        {
+          "texto": "Pierde su masa",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por encima de la temperatura crítica desaparece la distinción entre líquido y gas, por lo que el aumento de presión no logra licuar la sustancia."
+    },
+    {
+      "enunciado": "¿Cuánto calor liberan 30 g de vapor de agua a 100 °C al condensarse completamente a agua líquida a 100 °C? (Lv = 540 cal/g)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "540 cal",
+          "correcta": false
+        },
+        {
+          "texto": "2400 cal",
+          "correcta": false
+        },
+        {
+          "texto": "16200 cal",
+          "correcta": true
+        },
+        {
+          "texto": "16740 cal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Q = m·Lv = 30 g × 540 cal/g = 16200 cal, que se liberan al ser la condensación un proceso exotérmico."
+    },
+    {
+      "enunciado": "Se mezclan 200 g de agua líquida a 20 °C con 50 g de hielo a 0 °C, en un recipiente aislado. ¿Cuál es el estado final? (c agua = 1 cal/g·°C; Lf = 80 cal/g)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0 °C, con todo el hielo ya fundido",
+          "correcta": true
+        },
+        {
+          "texto": "10 °C, con algo de hielo sin fundir",
+          "correcta": false
+        },
+        {
+          "texto": "4 °C, con todo el hielo sin fundir",
+          "correcta": false
+        },
+        {
+          "texto": "20 °C, sin cambios",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El agua al enfriarse de 20 a 0 °C cede 200×1×20 = 4000 cal, justo lo necesario para fundir 50 g de hielo (50×80 = 4000 cal); el sistema queda a 0 °C con todo el hielo fundido."
+    },
+    {
+      "enunciado": "Si se suministran 500 cal a 25 g de una sustancia y su temperatura aumenta 40 °C, ¿cuál es su calor específico?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,25 cal/g·°C",
+          "correcta": false
+        },
+        {
+          "texto": "2 cal/g·°C",
+          "correcta": false
+        },
+        {
+          "texto": "0,05 cal/g·°C",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 cal/g·°C",
+          "correcta": true
+        }
+      ],
+      "explicacion": "c = Q/(m·ΔT) = 500 cal / (25 g × 40 °C) = 500/1000 = 0,5 cal/g·°C."
+    },
+    {
+      "enunciado": "En la curva de calentamiento de una sustancia pura, la primera meseta (a menor temperatura) y la segunda meseta (a mayor temperatura) corresponden, respectivamente, a:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "La ebullición y la fusión",
+          "correcta": false
+        },
+        {
+          "texto": "La condensación y la solidificación",
+          "correcta": false
+        },
+        {
+          "texto": "La fusión y la ebullición (vaporización)",
+          "correcta": true
+        },
+        {
+          "texto": "La solidificación y la condensación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al calentar, primero se funde el sólido (primera meseta) y, a mayor temperatura, el líquido entra en ebullición (segunda meseta)."
+    },
+    {
+      "enunciado": "La liofilización (freeze-drying) de alimentos consiste en congelar el producto y luego eliminar el agua mediante:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "La fusión del hielo a presión normal",
+          "correcta": false
+        },
+        {
+          "texto": "La sublimación del hielo a baja presión",
+          "correcta": true
+        },
+        {
+          "texto": "La evaporación del agua líquida a alta presión",
+          "correcta": false
+        },
+        {
+          "texto": "La condensación del vapor de agua",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la liofilización el agua congelada pasa directamente de hielo a vapor (sublimación progresiva) al trabajar a baja presión, conservando la estructura del alimento."
+    },
+    {
+      "enunciado": "En un diagrama de fases, el punto en el que coexisten en equilibrio los tres estados (sólido, líquido y gaseoso) se denomina:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Punto triple",
+          "correcta": true
+        },
+        {
+          "texto": "Punto crítico",
+          "correcta": false
+        },
+        {
+          "texto": "Punto de ebullición",
+          "correcta": false
+        },
+        {
+          "texto": "Punto de fusión",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El punto triple es la combinación única de presión y temperatura en la que las fases sólida, líquida y gaseosa coexisten en equilibrio."
+    }
+  ]
+}

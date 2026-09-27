@@ -22,6 +22,7 @@
     else if (pantalla === 'laminas') LS.laminas.abrir(r, opts);
     else if (pantalla === 'juego') LS.juego ? LS.juego.abrir(r, opts) : falta(r, 'el juego');
     else if (pantalla === 'test') LS.test ? LS.test.abrir(r, opts) : falta(r, 'el test');
+    else if (pantalla === 'herramienta' && LS.HERRAMIENTAS && LS.HERRAMIENTAS[opts.tipo]) LS.HERRAMIENTAS[opts.tipo](r);
     if (pantalla !== 'laminas' && pantalla !== 'juego' && pantalla !== 'test') LS.setColor('full');
     if (!desdeHistorial) {
       try { history.pushState({ s: pantalla }, '', location.pathname + location.search); } catch (e) { }
@@ -122,6 +123,7 @@
     const pctL = totalL ? Math.round((lamHecha ? totalL : lam.maxAlcanzada) / totalL * 100) : 0;
     r.innerHTML =
       '<div class="pantalla hub">' +
+      '<a class="campus-volver" href="../campus/">← CIDEA Jóvenes</a>' +
       '<div class="fila"><div class="marca esp"><div class="marca-logo">±</div><div class="marca-txt"><b>Ley de signos</b><span>' + ui().esc(st.usuario.nombre) + '</span></div></div>' +
       '<button class="btn-ico" data-a="glosario" aria-label="Glosario">' + ui().icon('ayuda') + '</button>' +
       '<button class="btn-ico" data-a="ajustes" aria-label="Ajustes">' + ui().icon('ajustes') + '</button></div>' +
@@ -221,12 +223,29 @@
   // ---------- Inicio ----------
   function iniciar() {
     avisoNavegador();
+    // Registro único: si el estudiante ya se registró en el Campus, se usan esos datos
+    try {
+      const c = JSON.parse(localStorage.getItem('campus_v1') || 'null');
+      const u0 = LS.st.usuario;
+      if ((!u0.nombre || !u0.correo) && c && c.usuario && c.usuario.nombre && c.usuario.correo) {
+        LS.st.usuario = { nombre: c.usuario.nombre, correo: c.usuario.correo };
+        LS.guardar();
+      }
+    } catch (e) { }
     const u = LS.st.usuario;
-    let destino = 'hub';
+    let destino = 'hub', opts = {};
     if (!u.nombre || !u.correo) destino = 'registro';
     else if (!LS.st.laminas.completadas && LS.st.laminas.maxAlcanzada === 0) destino = 'laminas';
-    try { history.replaceState({ s: destino }, '', location.pathname + location.search); } catch (e) { }
-    ir(destino, {}, true);
+    // Enlaces directos desde el Campus: ?ir=juego|test|hub|laminas · ?lamina=34 · ?herramienta=tabla
+    if (destino !== 'registro') {
+      const q = new URLSearchParams(location.search);
+      const her = q.get('herramienta'), lam = parseFloat(q.get('lamina')), a = q.get('ir');
+      if (her && LS.HERRAMIENTAS && LS.HERRAMIENTAS[her]) { destino = 'herramienta'; opts = { tipo: her }; }
+      else if (!isNaN(lam)) { destino = 'laminas'; opts = { num: lam }; }
+      else if (['juego', 'test', 'hub', 'laminas'].indexOf(a) >= 0) destino = a;
+    }
+    try { history.replaceState({ s: destino }, '', location.pathname); } catch (e) { }
+    ir(destino, opts, true);
     guardia();
   }
 

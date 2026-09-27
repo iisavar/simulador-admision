@@ -1,0 +1,1152 @@
+{
+  "id": "matematica-derivadas",
+  "materia": "matematica",
+  "tema": "Derivadas y sus aplicaciones",
+  "bloque": "Cálculo (preuniversitario)",
+  "nivel": "avanzado",
+  "clase": null,
+  "repaso": {
+    "idea": "La derivada f'(x) mide qué tan rápido cambia f y es la pendiente de la recta tangente. Regla clave: (xⁿ)' = n·xⁿ⁻¹, y la derivada de una constante es 0. En un máximo o un mínimo, f'(x) = 0.",
+    "ejemplo": {
+      "enunciado": "Deriva f(x) = 4x³ − 5x² + 7 y calcula f'(1).",
+      "pasos": [
+        "(4x³)' = 4·3x² = 12x².",
+        "(−5x²)' = −5·2x = −10x.",
+        "(7)' = 0, porque es constante.",
+        "f'(x) = 12x² − 10x.",
+        "f'(1) = 12 − 10 = 2."
+      ],
+      "resultado": "f'(x) = 12x² − 10x y f'(1) = 2"
+    },
+    "ojo": "En la regla de la cadena, olvidar multiplicar por la derivada de lo de adentro: (sen 3x)' = 3cos 3x, no cos 3x."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál es la derivada de la función constante f(x)=12?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "12x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La derivada de cualquier función constante es 0."
+    },
+    {
+      "enunciado": "Si f(x)=x, ¿cuál es f'(x)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "2x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La derivada de x respecto a x es 1."
+    },
+    {
+      "enunciado": "La derivada de f(x)=x² es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x²",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "2x",
+          "correcta": true
+        },
+        {
+          "texto": "x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la regla de la potencia: 2·x²⁻¹=2x."
+    },
+    {
+      "enunciado": "Si f(x)=x⁴, entonces f'(x) es igual a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x³",
+          "correcta": false
+        },
+        {
+          "texto": "4x⁴",
+          "correcta": false
+        },
+        {
+          "texto": "4x³",
+          "correcta": true
+        },
+        {
+          "texto": "3x³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Regla de la potencia: 4·x⁴⁻¹=4x³."
+    },
+    {
+      "enunciado": "La derivada de f(x)=7x es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "7x",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La derivada de una constante por x es la constante: 7."
+    },
+    {
+      "enunciado": "Si f(x)=3x², ¿cuál es su derivada?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6x",
+          "correcta": true
+        },
+        {
+          "texto": "3x",
+          "correcta": false
+        },
+        {
+          "texto": "6x²",
+          "correcta": false
+        },
+        {
+          "texto": "9x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3·2x = 6x."
+    },
+    {
+      "enunciado": "La derivada de f(x)=x³+x² es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3x+2x",
+          "correcta": false
+        },
+        {
+          "texto": "x²+x",
+          "correcta": false
+        },
+        {
+          "texto": "3x²+2",
+          "correcta": false
+        },
+        {
+          "texto": "3x²+2x",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se deriva término a término: 3x²+2x."
+    },
+    {
+      "enunciado": "Si f(x)=2x⁵, entonces f'(x)=",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2x⁴",
+          "correcta": false
+        },
+        {
+          "texto": "10x⁵",
+          "correcta": false
+        },
+        {
+          "texto": "7x⁴",
+          "correcta": false
+        },
+        {
+          "texto": "10x⁴",
+          "correcta": true
+        }
+      ],
+      "explicacion": "2·5x⁴ = 10x⁴."
+    },
+    {
+      "enunciado": "La derivada de f(x)=x²−5x+6 es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2x−5",
+          "correcta": true
+        },
+        {
+          "texto": "2x+6",
+          "correcta": false
+        },
+        {
+          "texto": "x−5",
+          "correcta": false
+        },
+        {
+          "texto": "2x−5x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se deriva cada término; la constante 6 desaparece: 2x−5."
+    },
+    {
+      "enunciado": "Geométricamente, la derivada de una función en un punto representa:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "el área bajo la curva",
+          "correcta": false
+        },
+        {
+          "texto": "la pendiente de la recta tangente a la curva en ese punto",
+          "correcta": true
+        },
+        {
+          "texto": "el valor máximo de la función",
+          "correcta": false
+        },
+        {
+          "texto": "la longitud de la curva",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La derivada en un punto es la pendiente de la recta tangente a la gráfica en ese punto."
+    },
+    {
+      "enunciado": "Si f(x)=5x²+3x−1, ¿cuál es f'(x)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5x+3",
+          "correcta": false
+        },
+        {
+          "texto": "10x−1",
+          "correcta": false
+        },
+        {
+          "texto": "10x+3",
+          "correcta": true
+        },
+        {
+          "texto": "10x+3x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Derivando término a término: 10x+3."
+    },
+    {
+      "enunciado": "La derivada de f(x)=√x es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "√x/2",
+          "correcta": false
+        },
+        {
+          "texto": "2√x",
+          "correcta": false
+        },
+        {
+          "texto": "1/√x",
+          "correcta": false
+        },
+        {
+          "texto": "1/(2√x)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como √x = x elevado a 1/2, la regla de la potencia da (1/2)·x elevado a −1/2, que es 1/(2√x)."
+    },
+    {
+      "enunciado": "La derivada de f(x)=1/x es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/x²",
+          "correcta": false
+        },
+        {
+          "texto": "−1/x",
+          "correcta": false
+        },
+        {
+          "texto": "ln x",
+          "correcta": false
+        },
+        {
+          "texto": "−1/x²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "1/x = x⁻¹; su derivada es −x⁻²=−1/x²."
+    },
+    {
+      "enunciado": "La derivada de f(x)=8x³ es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "24x²",
+          "correcta": true
+        },
+        {
+          "texto": "8x²",
+          "correcta": false
+        },
+        {
+          "texto": "24x³",
+          "correcta": false
+        },
+        {
+          "texto": "11x²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "8·3x² = 24x²."
+    },
+    {
+      "enunciado": "Si f(x)=x¹⁰, entonces f'(x)=",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x⁹",
+          "correcta": false
+        },
+        {
+          "texto": "10x⁹",
+          "correcta": true
+        },
+        {
+          "texto": "10x¹⁰",
+          "correcta": false
+        },
+        {
+          "texto": "9x¹⁰",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Regla de la potencia: 10·x⁹."
+    },
+    {
+      "enunciado": "La derivada de f(x)=−x²+4x es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2x+4",
+          "correcta": false
+        },
+        {
+          "texto": "−2x+4",
+          "correcta": true
+        },
+        {
+          "texto": "−2x−4",
+          "correcta": false
+        },
+        {
+          "texto": "−x+4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Derivando cada término: −2x+4."
+    },
+    {
+      "enunciado": "Aplicando la regla del producto, la derivada de f(x)=x·eˣ es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "eˣ",
+          "correcta": false
+        },
+        {
+          "texto": "eˣ+x·eˣ",
+          "correcta": true
+        },
+        {
+          "texto": "x·eˣ",
+          "correcta": false
+        },
+        {
+          "texto": "1+eˣ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f'=1·eˣ + x·eˣ = eˣ+x·eˣ."
+    },
+    {
+      "enunciado": "La derivada de f(x)=(2x+1)³ es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3(2x+1)²",
+          "correcta": false
+        },
+        {
+          "texto": "6(2x+1)",
+          "correcta": false
+        },
+        {
+          "texto": "6(2x+1)²",
+          "correcta": true
+        },
+        {
+          "texto": "(2x+1)²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Regla de la cadena: 3(2x+1)²·2=6(2x+1)²."
+    },
+    {
+      "enunciado": "La derivada de f(x)=sen x es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "cos x",
+          "correcta": true
+        },
+        {
+          "texto": "−cos x",
+          "correcta": false
+        },
+        {
+          "texto": "−sen x",
+          "correcta": false
+        },
+        {
+          "texto": "tan x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La derivada de sen x es cos x."
+    },
+    {
+      "enunciado": "La derivada de f(x)=cos x es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−sen x",
+          "correcta": true
+        },
+        {
+          "texto": "sen x",
+          "correcta": false
+        },
+        {
+          "texto": "−cos x",
+          "correcta": false
+        },
+        {
+          "texto": "cos x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La derivada de cos x es −sen x."
+    },
+    {
+      "enunciado": "La derivada de f(x)=eˣ es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x·eˣ⁻¹",
+          "correcta": false
+        },
+        {
+          "texto": "eˣ",
+          "correcta": true
+        },
+        {
+          "texto": "eˣ⁻¹",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La función eˣ es su propia derivada."
+    },
+    {
+      "enunciado": "La derivada de f(x)=ln x es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x",
+          "correcta": false
+        },
+        {
+          "texto": "1/x²",
+          "correcta": false
+        },
+        {
+          "texto": "1/x",
+          "correcta": true
+        },
+        {
+          "texto": "eˣ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La derivada del logaritmo natural es 1/x."
+    },
+    {
+      "enunciado": "Aplicando la regla del cociente, la derivada de f(x)=x/(x+1) es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−1/(x+1)²",
+          "correcta": false
+        },
+        {
+          "texto": "1/(x+1)²",
+          "correcta": true
+        },
+        {
+          "texto": "1/(x+1)",
+          "correcta": false
+        },
+        {
+          "texto": "x/(x+1)²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f'=[(x+1)−x]/(x+1)² = 1/(x+1)²."
+    },
+    {
+      "enunciado": "La derivada de f(x)=sen(3x) es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3cos(3x)",
+          "correcta": true
+        },
+        {
+          "texto": "cos(3x)",
+          "correcta": false
+        },
+        {
+          "texto": "3cos x",
+          "correcta": false
+        },
+        {
+          "texto": "−3cos(3x)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Regla de la cadena: cos(3x)·3 = 3cos(3x)."
+    },
+    {
+      "enunciado": "La pendiente de la recta tangente a f(x)=x² en x=2 es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f'(x)=2x, por lo que f'(2)=4."
+    },
+    {
+      "enunciado": "La derivada de f(x)=e²ˣ es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2e²ˣ",
+          "correcta": true
+        },
+        {
+          "texto": "e²ˣ",
+          "correcta": false
+        },
+        {
+          "texto": "2eˣ",
+          "correcta": false
+        },
+        {
+          "texto": "e²ˣ/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Regla de la cadena: e²ˣ·2 = 2e²ˣ."
+    },
+    {
+      "enunciado": "La derivada de f(x)=x²·sen x es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2x·cos x",
+          "correcta": false
+        },
+        {
+          "texto": "2x·sen x+x²·cos x",
+          "correcta": true
+        },
+        {
+          "texto": "x²·cos x",
+          "correcta": false
+        },
+        {
+          "texto": "2x·sen x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Regla del producto: 2x·sen x + x²·cos x."
+    },
+    {
+      "enunciado": "La derivada de f(x)=ln(x²+1) es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/(x²+1)",
+          "correcta": false
+        },
+        {
+          "texto": "2x",
+          "correcta": false
+        },
+        {
+          "texto": "x²/(x²+1)",
+          "correcta": false
+        },
+        {
+          "texto": "2x/(x²+1)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Regla de la cadena: (1/(x²+1))·2x = 2x/(x²+1)."
+    },
+    {
+      "enunciado": "El punto crítico de f(x)=x²−6x+5 está en x=",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f'(x)=2x−6=0 da x=3."
+    },
+    {
+      "enunciado": "Si f(x)=x³, ¿cuál es su segunda derivada f''(x)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3x²",
+          "correcta": false
+        },
+        {
+          "texto": "6x²",
+          "correcta": false
+        },
+        {
+          "texto": "3x",
+          "correcta": false
+        },
+        {
+          "texto": "6x",
+          "correcta": true
+        }
+      ],
+      "explicacion": "f'(x)=3x² y al derivar de nuevo f''(x)=6x."
+    },
+    {
+      "enunciado": "La derivada de f(x)=√(x²+1) es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/(2√(x²+1))",
+          "correcta": false
+        },
+        {
+          "texto": "2x/√(x²+1)",
+          "correcta": false
+        },
+        {
+          "texto": "x/√(x²+1)",
+          "correcta": true
+        },
+        {
+          "texto": "x/(2√(x²+1))",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cadena: (1/(2√(x²+1)))·2x = x/√(x²+1)."
+    },
+    {
+      "enunciado": "La derivada de f(x)=(3x−2)⁴ es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4(3x−2)³",
+          "correcta": false
+        },
+        {
+          "texto": "12(3x−2)⁴",
+          "correcta": false
+        },
+        {
+          "texto": "12(3x−2)³",
+          "correcta": true
+        },
+        {
+          "texto": "3(3x−2)³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cadena: 4(3x−2)³·3 = 12(3x−2)³."
+    },
+    {
+      "enunciado": "La derivada de f(x)=tan x es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "sec² x",
+          "correcta": true
+        },
+        {
+          "texto": "−csc² x",
+          "correcta": false
+        },
+        {
+          "texto": "sec x·tan x",
+          "correcta": false
+        },
+        {
+          "texto": "−sen x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La derivada de tan x es sec² x."
+    },
+    {
+      "enunciado": "La función f(x)=x³−3x tiene un máximo local en:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x=1",
+          "correcta": false
+        },
+        {
+          "texto": "x=0",
+          "correcta": false
+        },
+        {
+          "texto": "x=3",
+          "correcta": false
+        },
+        {
+          "texto": "x=−1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "f'(x)=3x²−3=0 da x=±1; como f''(−1)=−6<0, en x=−1 hay un máximo."
+    },
+    {
+      "enunciado": "Entre todos los rectángulos de perímetro 20, el de área máxima es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "un rectángulo de 8 por 2",
+          "correcta": false
+        },
+        {
+          "texto": "un rectángulo de 6 por 4",
+          "correcta": false
+        },
+        {
+          "texto": "un cuadrado de lado 5",
+          "correcta": true
+        },
+        {
+          "texto": "un rectángulo de 9 por 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con 2(x+y)=20, A=x(10−x) se maximiza en x=5; el cuadrado 5×5 da el área mayor (25)."
+    },
+    {
+      "enunciado": "Un objeto se mueve según s(t)=t³−6t²+9t. La velocidad es cero en:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "t=0 y t=3",
+          "correcta": false
+        },
+        {
+          "texto": "t=1 y t=3",
+          "correcta": true
+        },
+        {
+          "texto": "t=2 y t=3",
+          "correcta": false
+        },
+        {
+          "texto": "t=1 y t=2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "v(t)=s'(t)=3t²−12t+9=3(t−1)(t−3)=0 da t=1 y t=3."
+    },
+    {
+      "enunciado": "Se cercará un terreno rectangular contra una pared (sin cerca en el lado de la pared) con 40 m de cerca. El área máxima es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "100 m²",
+          "correcta": false
+        },
+        {
+          "texto": "400 m²",
+          "correcta": false
+        },
+        {
+          "texto": "150 m²",
+          "correcta": false
+        },
+        {
+          "texto": "200 m²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con 2x+y=40, A=x(40−2x); A'=40−4x=0 da x=10, y=20 y área 200 m²."
+    },
+    {
+      "enunciado": "Si f''(x)>0 en un intervalo, la gráfica de f en ese intervalo es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "cóncava hacia abajo",
+          "correcta": false
+        },
+        {
+          "texto": "una recta",
+          "correcta": false
+        },
+        {
+          "texto": "siempre decreciente",
+          "correcta": false
+        },
+        {
+          "texto": "cóncava hacia arriba",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Una segunda derivada positiva indica concavidad hacia arriba."
+    },
+    {
+      "enunciado": "La función f(x)=x·e⁻ˣ alcanza su máximo en x=",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "e",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f'(x)=e⁻ˣ(1−x)=0 da x=1, que corresponde a un máximo."
+    },
+    {
+      "enunciado": "El punto de inflexión de f(x)=x³−3x² ocurre en x=",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f''(x)=6x−6=0 da x=1, donde la concavidad cambia."
+    },
+    {
+      "enunciado": "Se construye una caja sin tapa cortando cuadrados de lado x en las esquinas de una lámina cuadrada de 12 cm de lado. El volumen es máximo cuando x=",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6 cm",
+          "correcta": false
+        },
+        {
+          "texto": "3 cm",
+          "correcta": false
+        },
+        {
+          "texto": "2 cm",
+          "correcta": true
+        },
+        {
+          "texto": "4 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V=x(12−2x)²; V'=12(x−2)(x−6)=0 da x=2 (x=6 anula el volumen)."
+    },
+    {
+      "enunciado": "El radio de un círculo crece a 3 cm/s. Cuando el radio es 5 cm, el área crece a razón de:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "30π cm²/s",
+          "correcta": true
+        },
+        {
+          "texto": "15π cm²/s",
+          "correcta": false
+        },
+        {
+          "texto": "10π cm²/s",
+          "correcta": false
+        },
+        {
+          "texto": "6π cm²/s",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A=πr²; dA/dt=2πr·(dr/dt)=2π·5·3=30π cm²/s."
+    },
+    {
+      "enunciado": "Un objeto se lanza verticalmente y su altura es h(t)=20t−5t² (metros). La altura máxima alcanzada es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "40 m",
+          "correcta": false
+        },
+        {
+          "texto": "20 m",
+          "correcta": true
+        },
+        {
+          "texto": "10 m",
+          "correcta": false
+        },
+        {
+          "texto": "15 m",
+          "correcta": false
+        }
+      ],
+      "explicacion": "h'(t)=20−10t=0 da t=2; h(2)=40−20=20 m."
+    },
+    {
+      "enunciado": "El valor máximo absoluto de f(x)=x²−4x en el intervalo [0,3] es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−4",
+          "correcta": false
+        },
+        {
+          "texto": "−3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se evalúa en el crítico x=2 y en los extremos: f(0)=0, f(2)=−4, f(3)=−3; el mayor es 0."
+    },
+    {
+      "enunciado": "Si x²+y²=25, por derivación implícita dy/dx es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−x/y",
+          "correcta": true
+        },
+        {
+          "texto": "x/y",
+          "correcta": false
+        },
+        {
+          "texto": "−y/x",
+          "correcta": false
+        },
+        {
+          "texto": "−x/(2y)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Derivando: 2x+2y·y'=0, de donde y'=−x/y."
+    },
+    {
+      "enunciado": "Al aplicar la definición f'(x) = lím (h→0) [f(x+h) − f(x)]/h a f(x)=x², se obtiene:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2x",
+          "correcta": true
+        },
+        {
+          "texto": "x",
+          "correcta": false
+        },
+        {
+          "texto": "2x+h",
+          "correcta": false
+        },
+        {
+          "texto": "x²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cociente es (2xh+h²)/h=2x+h, y al tomar h→0 resulta 2x."
+    },
+    {
+      "enunciado": "Para f(x)=x³−3x²+2, los extremos locales son:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "máximo en x=2 y mínimo en x=0",
+          "correcta": false
+        },
+        {
+          "texto": "máximo en x=1 únicamente",
+          "correcta": false
+        },
+        {
+          "texto": "máximo en x=0 y mínimo en x=2",
+          "correcta": true
+        },
+        {
+          "texto": "no tiene extremos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "f'(x)=3x(x−2)=0 da x=0 y x=2; f''(0)<0 (máximo) y f''(2)>0 (mínimo)."
+    },
+    {
+      "enunciado": "El costo de producir q unidades es C(q)=q²+10q+100. El costo marginal cuando q=20 es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "40",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "50",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El costo marginal es C'(q)=2q+10; en q=20 vale 50."
+    },
+    {
+      "enunciado": "La ganancia de una empresa es G(x)=−2x²+40x−50 (en miles de dólares). La producción que la maximiza es x=",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        }
+      ],
+      "explicacion": "G'(x)=−4x+40=0 da x=10, que maximiza por tratarse de una parábola hacia abajo."
+    }
+  ]
+}

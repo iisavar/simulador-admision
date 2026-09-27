@@ -1,0 +1,1081 @@
+{
+  "id": "matematica-factorizacion",
+  "materia": "matematica",
+  "tema": "Factorización de polinomios",
+  "bloque": "Álgebra",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Factorizar es escribir un polinomio como una multiplicación de factores (lo contrario de desarrollar). Revisa en este orden: 1) factor común, 2) diferencia de cuadrados, 3) trinomio cuadrado perfecto, 4) trinomio x² + bx + c, 5) agrupación o Ruffini.",
+    "ejemplo": {
+      "enunciado": "Factoriza completamente 3x³ − 12x.",
+      "pasos": [
+        "Saca el factor común 3x: 3x(x² − 4).",
+        "Lo de adentro es una diferencia de cuadrados: x² − 4 = (x + 2)(x − 2).",
+        "Escribe todos los factores juntos."
+      ],
+      "resultado": "3x(x + 2)(x − 2)"
+    },
+    "ojo": "En x² + bx + c buscas dos números que MULTIPLIQUEN c y SUMEN b, cuidando los signos: x² − 5x + 6 = (x − 2)(x − 3). Comprueba siempre multiplicando los factores."
+  },
+  "preguntas": [
+    {
+      "enunciado": "Factoriza la expresión 6x + 9.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3(2x + 9)",
+          "correcta": false
+        },
+        {
+          "texto": "3(2x + 3)",
+          "correcta": true
+        },
+        {
+          "texto": "6(x + 3)",
+          "correcta": false
+        },
+        {
+          "texto": "9(2x + 1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El máximo común divisor de 6 y 9 es 3; al extraerlo queda 3(2x + 3)."
+    },
+    {
+      "enunciado": "Factoriza x² + 5x.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x(x + 5)",
+          "correcta": true
+        },
+        {
+          "texto": "x(x − 5)",
+          "correcta": false
+        },
+        {
+          "texto": "x²(x + 5)",
+          "correcta": false
+        },
+        {
+          "texto": "5x(x + 1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El factor común es x: x² + 5x = x(x + 5)."
+    },
+    {
+      "enunciado": "Factoriza 4a + 4b.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4(a − b)",
+          "correcta": false
+        },
+        {
+          "texto": "4(a + b)",
+          "correcta": true
+        },
+        {
+          "texto": "16(a + b)",
+          "correcta": false
+        },
+        {
+          "texto": "4ab",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 4 es factor común: 4a + 4b = 4(a + b)."
+    },
+    {
+      "enunciado": "Factoriza 10x² − 5x.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5x(2x + 1)",
+          "correcta": false
+        },
+        {
+          "texto": "5x(x − 1)",
+          "correcta": false
+        },
+        {
+          "texto": "2x(5x − 2)",
+          "correcta": false
+        },
+        {
+          "texto": "5x(2x − 1)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El factor común es 5x: 10x² − 5x = 5x(2x − 1)."
+    },
+    {
+      "enunciado": "Factoriza x² − 9.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(x − 3)(x − 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 3)(x + 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 3)(x − 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(x + 9)(x − 9)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es una diferencia de cuadrados: x² − 9 = (x + 3)(x − 3)."
+    },
+    {
+      "enunciado": "Factoriza el trinomio cuadrado perfecto x² + 2x + 1.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(x − 1)²",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 1)(x − 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 2)²",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 1)²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "x² + 2x + 1 corresponde a (x + 1)² porque 2x = 2·x·1."
+    },
+    {
+      "enunciado": "Factoriza x² + 6x + 8.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(x + 1)(x + 8)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 2)(x − 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 2)(x + 4)",
+          "correcta": true
+        },
+        {
+          "texto": "(x + 6)(x + 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se buscan dos números que sumen 6 y multipliquen 8: 2 y 4."
+    },
+    {
+      "enunciado": "Factoriza x² + 7x + 12.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(x + 2)(x + 6)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 1)(x + 12)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 3)(x + 4)",
+          "correcta": true
+        },
+        {
+          "texto": "(x + 3)(x − 4)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3 y 4 suman 7 y multiplican 12: (x + 3)(x + 4)."
+    },
+    {
+      "enunciado": "Factoriza 8x³ + 12x².",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4x²(2x − 3)",
+          "correcta": false
+        },
+        {
+          "texto": "4x²(2x + 3)",
+          "correcta": true
+        },
+        {
+          "texto": "4x²(x + 3)",
+          "correcta": false
+        },
+        {
+          "texto": "8x²(x + 4)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El factor común es 4x²: 8x³ + 12x² = 4x²(2x + 3)."
+    },
+    {
+      "enunciado": "Factoriza 4x² − 25.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(2x − 5)²",
+          "correcta": false
+        },
+        {
+          "texto": "(2x + 5)²",
+          "correcta": false
+        },
+        {
+          "texto": "(4x + 5)(x − 5)",
+          "correcta": false
+        },
+        {
+          "texto": "(2x + 5)(2x − 5)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Diferencia de cuadrados: (2x)² − 5² = (2x + 5)(2x − 5)."
+    },
+    {
+      "enunciado": "Factoriza x² − 10x + 25.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(x + 5)²",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 5)(x + 5)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 10)²",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 5)²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Es un trinomio cuadrado perfecto: (x − 5)² = x² − 10x + 25."
+    },
+    {
+      "enunciado": "Factoriza x² − 5x + 6.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(x + 2)(x + 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)(x − 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(x − 1)(x − 6)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)(x + 3)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "−2 y −3 suman −5 y multiplican 6: (x − 2)(x − 3)."
+    },
+    {
+      "enunciado": "Factoriza ab + ac.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "a(b − c)",
+          "correcta": false
+        },
+        {
+          "texto": "b(a + c)",
+          "correcta": false
+        },
+        {
+          "texto": "abc",
+          "correcta": false
+        },
+        {
+          "texto": "a(b + c)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La letra a es común: ab + ac = a(b + c)."
+    },
+    {
+      "enunciado": "Factoriza x² − 1.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "(x − 1)²",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 1)(x − 1)",
+          "correcta": true
+        },
+        {
+          "texto": "(x + 1)²",
+          "correcta": false
+        },
+        {
+          "texto": "x(x − 1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Diferencia de cuadrados: x² − 1 = (x + 1)(x − 1)."
+    },
+    {
+      "enunciado": "Factoriza 2x² + 4x + 6.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2(x² + 2x + 6)",
+          "correcta": false
+        },
+        {
+          "texto": "2(x² + 2x + 3)",
+          "correcta": true
+        },
+        {
+          "texto": "2(x² + 4x + 3)",
+          "correcta": false
+        },
+        {
+          "texto": "2x(x + 2 + 3)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 2 es factor común de los tres términos: 2(x² + 2x + 3)."
+    },
+    {
+      "enunciado": "Factoriza por agrupación x³ + x² + x + 1.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(x + 1)(x² + 1)",
+          "correcta": true
+        },
+        {
+          "texto": "(x − 1)(x² + 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 1)(x² − 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 1)³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Agrupando: x²(x + 1) + (x + 1) = (x + 1)(x² + 1)."
+    },
+    {
+      "enunciado": "Factoriza 2x² + 7x + 3.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2x + 3)(x + 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(2x + 1)(x + 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(2x + 1)(x − 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 1)(x + 3)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(2x + 1)(x + 3) da 2x² + 7x + 3 al desarrollar."
+    },
+    {
+      "enunciado": "Factoriza 3x² + 10x + 8.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(3x + 4)(x + 2)",
+          "correcta": true
+        },
+        {
+          "texto": "(3x + 2)(x + 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(3x + 8)(x + 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(3x + 4)(x − 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(3x + 4)(x + 2) = 3x² + 10x + 8."
+    },
+    {
+      "enunciado": "Factoriza por agrupación ax + ay + bx + by.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(a + b)(x − y)",
+          "correcta": false
+        },
+        {
+          "texto": "(a − b)(x + y)",
+          "correcta": false
+        },
+        {
+          "texto": "(ax + by)(a + b)",
+          "correcta": false
+        },
+        {
+          "texto": "(a + b)(x + y)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "a(x + y) + b(x + y) = (a + b)(x + y)."
+    },
+    {
+      "enunciado": "Factoriza completamente 2x² − 8.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2(x − 2)²",
+          "correcta": false
+        },
+        {
+          "texto": "2(x + 2)²",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 2)(x − 4)",
+          "correcta": false
+        },
+        {
+          "texto": "2(x + 2)(x − 2)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se extrae el 2 y luego la diferencia de cuadrados: 2(x² − 4) = 2(x + 2)(x − 2)."
+    },
+    {
+      "enunciado": "Factoriza la suma de cubos x³ + 8.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(x + 2)(x² + 2x + 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)(x² + 2x + 4)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 2)(x² − 2x + 4)",
+          "correcta": true
+        },
+        {
+          "texto": "(x + 2)³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "a³ + b³ = (a + b)(a² − ab + b²) con a = x, b = 2."
+    },
+    {
+      "enunciado": "Factoriza la diferencia de cubos x³ − 27.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(x − 3)(x² − 3x + 9)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 3)(x² + 3x + 9)",
+          "correcta": true
+        },
+        {
+          "texto": "(x + 3)(x² − 3x + 9)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 3)³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "a³ − b³ = (a − b)(a² + ab + b²) con a = x, b = 3."
+    },
+    {
+      "enunciado": "Factoriza 6x² − x − 2.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2x − 1)(3x + 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(6x + 1)(x − 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(2x + 1)(3x − 2)",
+          "correcta": true
+        },
+        {
+          "texto": "(2x + 1)(3x + 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(2x + 1)(3x − 2) = 6x² − x − 2."
+    },
+    {
+      "enunciado": "Factoriza x(a + b) + y(a + b).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(a + b)(x − y)",
+          "correcta": false
+        },
+        {
+          "texto": "(a + b)(xy)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + y)(a − b)",
+          "correcta": false
+        },
+        {
+          "texto": "(a + b)(x + y)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El binomio (a + b) es factor común: (a + b)(x + y)."
+    },
+    {
+      "enunciado": "Factoriza 9x² + 12x + 4.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(3x − 2)²",
+          "correcta": false
+        },
+        {
+          "texto": "(3x + 2)(3x − 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(3x + 2)²",
+          "correcta": true
+        },
+        {
+          "texto": "(9x + 2)(x + 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Trinomio cuadrado perfecto: (3x + 2)² = 9x² + 12x + 4."
+    },
+    {
+      "enunciado": "Factoriza por agrupación 6ax + 4ay + 3bx + 2by.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2a + b)(3x + 2y)",
+          "correcta": true
+        },
+        {
+          "texto": "(2a − b)(3x + 2y)",
+          "correcta": false
+        },
+        {
+          "texto": "(2a + b)(3x − 2y)",
+          "correcta": false
+        },
+        {
+          "texto": "(3a + 2b)(2x + y)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2a(3x + 2y) + b(3x + 2y) = (2a + b)(3x + 2y)."
+    },
+    {
+      "enunciado": "Factoriza 9 − x².",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(3 − x)²",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 3)(x − 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(3 + x)(3 − x)",
+          "correcta": true
+        },
+        {
+          "texto": "(3 + x)²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Diferencia de cuadrados: 3² − x² = (3 + x)(3 − x)."
+    },
+    {
+      "enunciado": "Factoriza 4x² − 12x + 9.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2x + 3)²",
+          "correcta": false
+        },
+        {
+          "texto": "(2x − 3)(2x + 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(2x − 3)²",
+          "correcta": true
+        },
+        {
+          "texto": "(4x − 3)(x − 3)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Trinomio cuadrado perfecto: (2x − 3)² = 4x² − 12x + 9."
+    },
+    {
+      "enunciado": "Factoriza completamente x³ − x.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x(x − 1)²",
+          "correcta": false
+        },
+        {
+          "texto": "x(x + 1)(x − 1)",
+          "correcta": true
+        },
+        {
+          "texto": "x²(x − 1)",
+          "correcta": false
+        },
+        {
+          "texto": "x(x + 1)²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x³ − x = x(x² − 1) = x(x + 1)(x − 1)."
+    },
+    {
+      "enunciado": "Factoriza 2x² − 5x − 3.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2x + 1)(x − 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(2x − 1)(x + 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(2x + 3)(x − 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 3)(x + 1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(2x + 1)(x − 3) = 2x² − 5x − 3."
+    },
+    {
+      "enunciado": "Factoriza 8x³ + 1.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(2x + 1)(4x² + 2x + 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(2x + 1)(4x² − 2x + 1)",
+          "correcta": true
+        },
+        {
+          "texto": "(2x − 1)(4x² + 2x + 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(2x + 1)³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Suma de cubos con a = 2x, b = 1: (2x + 1)(4x² − 2x + 1)."
+    },
+    {
+      "enunciado": "Factoriza completamente x⁴ − 16.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(x² + 4)(x + 2)(x − 2)",
+          "correcta": true
+        },
+        {
+          "texto": "(x² − 4)(x + 2)(x − 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 2)²(x − 2)²",
+          "correcta": false
+        },
+        {
+          "texto": "(x² + 4)(x + 4)(x − 4)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x⁴ − 16 = (x² + 4)(x² − 4) = (x² + 4)(x + 2)(x − 2)."
+    },
+    {
+      "enunciado": "Sabiendo que x = 1 es raíz, factoriza completamente x³ − 6x² + 11x − 6.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(x − 1)(x + 2)(x + 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 1)(x + 2)(x + 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 1)(x − 2)(x − 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(x − 1)(x − 2)(x + 3)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por Ruffini las raíces son 1, 2 y 3: (x − 1)(x − 2)(x − 3)."
+    },
+    {
+      "enunciado": "Factoriza x³ + 2x² − 5x − 6.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(x − 1)(x + 2)(x + 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 1)(x + 2)(x − 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 1)(x − 2)(x + 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(x + 1)(x − 2)(x − 3)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las raíces son −1, 2 y −3: (x + 1)(x − 2)(x + 3)."
+    },
+    {
+      "enunciado": "Factoriza x³ − 7x + 6.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(x − 1)(x − 2)(x + 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(x + 1)(x + 2)(x − 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 1)(x + 2)(x + 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 1)(x − 2)(x − 3)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las raíces son 1, 2 y −3: (x − 1)(x − 2)(x + 3)."
+    },
+    {
+      "enunciado": "Factoriza 2x³ − 3x² − 11x + 6.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(x + 3)(2x − 1)(x − 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 3)(2x + 1)(x − 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 3)(x − 1)(2x + 6)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 3)(2x − 1)(x + 2)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por Ruffini x = 3 es raíz; el cociente 2x² + 3x − 2 = (2x − 1)(x + 2)."
+    },
+    {
+      "enunciado": "Factoriza 6x² + 11x − 10.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(2x + 5)(3x − 2)",
+          "correcta": true
+        },
+        {
+          "texto": "(2x − 5)(3x + 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(6x − 5)(x + 2)",
+          "correcta": false
+        },
+        {
+          "texto": "(3x + 5)(2x − 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(2x + 5)(3x − 2) = 6x² + 11x − 10."
+    },
+    {
+      "enunciado": "Factoriza completamente 3x³ − 12x.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3x(x − 2)²",
+          "correcta": false
+        },
+        {
+          "texto": "3x(x + 2)²",
+          "correcta": false
+        },
+        {
+          "texto": "3x(x + 2)(x − 2)",
+          "correcta": true
+        },
+        {
+          "texto": "3(x + 2)(x − 2)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3x³ − 12x = 3x(x² − 4) = 3x(x + 2)(x − 2)."
+    },
+    {
+      "enunciado": "Factoriza x⁴ + x² + 1.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(x² + 1)(x² + 1)",
+          "correcta": false
+        },
+        {
+          "texto": "(x² + x + 1)(x² − x + 1)",
+          "correcta": true
+        },
+        {
+          "texto": "(x² + x + 1)²",
+          "correcta": false
+        },
+        {
+          "texto": "(x² − x + 1)²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Sumando y restando x²: (x² + 1)² − x² = (x² + x + 1)(x² − x + 1)."
+    },
+    {
+      "enunciado": "Factoriza completamente x³ − x² − x + 1.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(x − 1)²(x + 1)",
+          "correcta": true
+        },
+        {
+          "texto": "(x − 1)(x + 1)²",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 1)³",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 1)(x² + 1)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x²(x − 1) − (x − 1) = (x − 1)(x² − 1) = (x − 1)²(x + 1)."
+    },
+    {
+      "enunciado": "Factoriza 27x³ − 64.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(3x − 4)(9x² + 12x + 16)",
+          "correcta": true
+        },
+        {
+          "texto": "(3x + 4)(9x² − 12x + 16)",
+          "correcta": false
+        },
+        {
+          "texto": "(3x − 4)(9x² − 12x + 16)",
+          "correcta": false
+        },
+        {
+          "texto": "(3x − 4)³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Diferencia de cubos con a = 3x, b = 4: (3x − 4)(9x² + 12x + 16)."
+    },
+    {
+      "enunciado": "Factoriza completamente 4x⁴ − 37x² + 9.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(2x + 1)(2x − 1)(x + 3)(x − 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(4x² − 1)(x² + 9)",
+          "correcta": false
+        },
+        {
+          "texto": "(2x + 1)(2x − 1)(x + 9)(x − 9)",
+          "correcta": false
+        },
+        {
+          "texto": "(4x² + 1)(x² − 9)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "4x⁴ − 37x² + 9 = (4x² − 1)(x² − 9) = (2x + 1)(2x − 1)(x + 3)(x − 3)."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes expresiones es un factor de x⁶ − 1?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x² + 1",
+          "correcta": false
+        },
+        {
+          "texto": "x² − x + 1",
+          "correcta": true
+        },
+        {
+          "texto": "x² + 2x + 1",
+          "correcta": false
+        },
+        {
+          "texto": "x² + 4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x⁶ − 1 = (x − 1)(x + 1)(x² + x + 1)(x² − x + 1), por lo que x² − x + 1 es factor."
+    },
+    {
+      "enunciado": "Factoriza 2x³ + x² − 13x + 6.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(x + 2)(2x − 1)(x − 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)(2x + 1)(x − 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)(x − 1)(2x + 6)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)(2x − 1)(x + 3)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por Ruffini x = 2 es raíz; el cociente 2x² + 5x − 3 = (2x − 1)(x + 3)."
+    },
+    {
+      "enunciado": "Factoriza completamente x⁴ − 13x² + 36.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(x² − 4)(x² + 9)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 2)²(x − 3)²",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 4)(x − 4)(x + 9)(x − 9)",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 2)(x − 2)(x + 3)(x − 3)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "x⁴ − 13x² + 36 = (x² − 4)(x² − 9) = (x + 2)(x − 2)(x + 3)(x − 3)."
+    },
+    {
+      "enunciado": "Factoriza por agrupación x³ − 2x² − 9x + 18.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(x − 2)(x + 3)(x − 3)",
+          "correcta": true
+        },
+        {
+          "texto": "(x + 2)(x + 3)(x − 3)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)(x² + 9)",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)(x − 3)²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x²(x − 2) − 9(x − 2) = (x − 2)(x² − 9) = (x − 2)(x + 3)(x − 3)."
+    }
+  ]
+}

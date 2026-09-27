@@ -1,0 +1,989 @@
+{
+  "id": "matematica-porcentajes",
+  "materia": "matematica",
+  "tema": "Porcentajes e interés",
+  "bloque": "Aritmética",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "El p% de una cantidad es cantidad × p/100 (por ejemplo, el 15% de 40 es 40 × 0,15). Para aumentar un p% se multiplica por (1 + p/100) y para descontar un p%, por (1 − p/100).",
+    "ejemplo": {
+      "enunciado": "Unos zapatos cuestan $40 y tienen un 15% de descuento. ¿Cuánto pagas?",
+      "pasos": [
+        "Calcula el descuento: 40 × 0,15 = 6.",
+        "Réstalo del precio: 40 − 6 = 34.",
+        "Atajo: pagas el 85% del precio, 40 × 0,85 = 34."
+      ],
+      "resultado": "Pagas $34."
+    },
+    "ojo": "Dos porcentajes seguidos no se suman ni se restan: subir un 20% y luego bajar un 20% deja el precio en el 96% del original, no en el 100%."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuánto es el 10% de 200?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 10% equivale a multiplicar por 0,10: 200 × 0,10 = 20."
+    },
+    {
+      "enunciado": "¿Cuánto es el 25% de 80?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": true
+        },
+        {
+          "texto": "40",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 25% es la cuarta parte: 80 ÷ 4 = 20."
+    },
+    {
+      "enunciado": "¿Cuánto es el 50% de 60?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "50",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": true
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 50% es la mitad: 60 ÷ 2 = 30."
+    },
+    {
+      "enunciado": "¿Cuánto es el 5% de 400?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "20",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": false
+        },
+        {
+          "texto": "80",
+          "correcta": false
+        }
+      ],
+      "explicacion": "400 × 0,05 = 20."
+    },
+    {
+      "enunciado": "¿A qué porcentaje equivale la fracción 1/4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "25%",
+          "correcta": true
+        },
+        {
+          "texto": "14%",
+          "correcta": false
+        },
+        {
+          "texto": "40%",
+          "correcta": false
+        },
+        {
+          "texto": "75%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1 ÷ 4 = 0,25, que equivale al 25%."
+    },
+    {
+      "enunciado": "¿A qué porcentaje equivale el decimal 0,75?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7,5%",
+          "correcta": false
+        },
+        {
+          "texto": "0,75%",
+          "correcta": false
+        },
+        {
+          "texto": "75%",
+          "correcta": true
+        },
+        {
+          "texto": "750%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para pasar de decimal a porcentaje se multiplica por 100: 0,75 × 100 = 75%."
+    },
+    {
+      "enunciado": "¿Qué porcentaje de 100 representa el número 30?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3%",
+          "correcta": false
+        },
+        {
+          "texto": "70%",
+          "correcta": false
+        },
+        {
+          "texto": "30%",
+          "correcta": true
+        },
+        {
+          "texto": "130%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "30 ÷ 100 = 0,30, es decir, el 30%."
+    },
+    {
+      "enunciado": "¿Qué porcentaje de 60 representa el número 15?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "15%",
+          "correcta": false
+        },
+        {
+          "texto": "40%",
+          "correcta": false
+        },
+        {
+          "texto": "4%",
+          "correcta": false
+        },
+        {
+          "texto": "25%",
+          "correcta": true
+        }
+      ],
+      "explicacion": "15 ÷ 60 = 0,25, equivalente al 25%."
+    },
+    {
+      "enunciado": "¿Cuánto es el 100% de 45?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "45",
+          "correcta": true
+        },
+        {
+          "texto": "90",
+          "correcta": false
+        },
+        {
+          "texto": "4,5",
+          "correcta": false
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 100% de una cantidad es la cantidad completa: 45."
+    },
+    {
+      "enunciado": "¿Cuánto es el 1% de 500?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "50",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0,5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 1% equivale a dividir entre 100: 500 ÷ 100 = 5."
+    },
+    {
+      "enunciado": "¿Cuánto es el 75% de 40?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": true
+        },
+        {
+          "texto": "75",
+          "correcta": false
+        },
+        {
+          "texto": "28",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 75% son tres cuartas partes: 40 × 0,75 = 30."
+    },
+    {
+      "enunciado": "¿A qué porcentaje equivale la fracción 3/5?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "60%",
+          "correcta": true
+        },
+        {
+          "texto": "53%",
+          "correcta": false
+        },
+        {
+          "texto": "35%",
+          "correcta": false
+        },
+        {
+          "texto": "30%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "3 ÷ 5 = 0,6, equivalente al 60%."
+    },
+    {
+      "enunciado": "Un artículo cuesta $80 y tiene un descuento del 15%. ¿Cuál es el precio final?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "$72",
+          "correcta": false
+        },
+        {
+          "texto": "$65",
+          "correcta": false
+        },
+        {
+          "texto": "$68",
+          "correcta": true
+        },
+        {
+          "texto": "$12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El descuento es 80 × 0,15 = 12, por lo que el precio final es 80 − 12 = 68."
+    },
+    {
+      "enunciado": "Un producto que vale $50 sube de precio un 20%. ¿Cuál es el nuevo precio?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "$70",
+          "correcta": false
+        },
+        {
+          "texto": "$60",
+          "correcta": true
+        },
+        {
+          "texto": "$52",
+          "correcta": false
+        },
+        {
+          "texto": "$40",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El aumento es 50 × 0,20 = 10, así que el nuevo precio es 50 + 10 = 60."
+    },
+    {
+      "enunciado": "Después de aplicar un descuento del 10%, un artículo cuesta $90. ¿Cuál era el precio original?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "$99",
+          "correcta": false
+        },
+        {
+          "texto": "$81",
+          "correcta": false
+        },
+        {
+          "texto": "$100",
+          "correcta": true
+        },
+        {
+          "texto": "$110",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El precio final es el 90% del original: 90 ÷ 0,90 = 100."
+    },
+    {
+      "enunciado": "¿Cuál es el interés simple de un capital de $1000 al 5% anual durante 2 años?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "$100",
+          "correcta": true
+        },
+        {
+          "texto": "$50",
+          "correcta": false
+        },
+        {
+          "texto": "$200",
+          "correcta": false
+        },
+        {
+          "texto": "$1100",
+          "correcta": false
+        }
+      ],
+      "explicacion": "I = C·i·t = 1000 × 0,05 × 2 = 100."
+    },
+    {
+      "enunciado": "Una población de 2000 habitantes crece un 8%. ¿Cuántos habitantes hay ahora?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2160",
+          "correcta": true
+        },
+        {
+          "texto": "2080",
+          "correcta": false
+        },
+        {
+          "texto": "2008",
+          "correcta": false
+        },
+        {
+          "texto": "2200",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El aumento es 2000 × 0,08 = 160, así que el total es 2000 + 160 = 2160."
+    },
+    {
+      "enunciado": "Si el 12% de un número es 36, ¿cuál es ese número?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "432",
+          "correcta": false
+        },
+        {
+          "texto": "250",
+          "correcta": false
+        },
+        {
+          "texto": "48",
+          "correcta": false
+        },
+        {
+          "texto": "300",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El número es 36 ÷ 0,12 = 300."
+    },
+    {
+      "enunciado": "Un precio sube de $40 a $50. ¿Cuál es el porcentaje de aumento?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "20%",
+          "correcta": false
+        },
+        {
+          "texto": "50%",
+          "correcta": false
+        },
+        {
+          "texto": "10%",
+          "correcta": false
+        },
+        {
+          "texto": "25%",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El aumento es 10 sobre 40: 10 ÷ 40 = 0,25, es decir, el 25%."
+    },
+    {
+      "enunciado": "Un precio baja de $80 a $60. ¿Cuál es el porcentaje de descuento?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "20%",
+          "correcta": false
+        },
+        {
+          "texto": "33%",
+          "correcta": false
+        },
+        {
+          "texto": "25%",
+          "correcta": true
+        },
+        {
+          "texto": "30%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La rebaja es 20 sobre 80: 20 ÷ 80 = 0,25, es decir, el 25%."
+    },
+    {
+      "enunciado": "¿Cuál es el interés simple de $2000 al 6% anual durante 3 años?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "$120",
+          "correcta": false
+        },
+        {
+          "texto": "$240",
+          "correcta": false
+        },
+        {
+          "texto": "$2360",
+          "correcta": false
+        },
+        {
+          "texto": "$360",
+          "correcta": true
+        }
+      ],
+      "explicacion": "I = C·i·t = 2000 × 0,06 × 3 = 360."
+    },
+    {
+      "enunciado": "Un artículo de $200 recibe dos descuentos sucesivos: primero 10% y luego 20%. ¿Cuál es el precio final?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "$140",
+          "correcta": false
+        },
+        {
+          "texto": "$144",
+          "correcta": true
+        },
+        {
+          "texto": "$160",
+          "correcta": false
+        },
+        {
+          "texto": "$150",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se aplican los factores en cadena: 200 × 0,90 × 0,80 = 144 (no es lo mismo que un 30% directo)."
+    },
+    {
+      "enunciado": "Un producto cuesta $250 sin impuesto. Si se le aplica un IVA del 15%, ¿cuál es el precio total?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "$37,50",
+          "correcta": false
+        },
+        {
+          "texto": "$265,00",
+          "correcta": false
+        },
+        {
+          "texto": "$300,00",
+          "correcta": false
+        },
+        {
+          "texto": "$287,50",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El IVA es 250 × 0,15 = 37,50, así que el total es 250 + 37,50 = 287,50 (o directamente 250 × 1,15 = 287,50)."
+    },
+    {
+      "enunciado": "¿Cuánto es el 18% de 250?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "50",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "45",
+          "correcta": true
+        }
+      ],
+      "explicacion": "250 × 0,18 = 45."
+    },
+    {
+      "enunciado": "El interés simple ganado fue $150, con una tasa del 5% anual durante 2 años. ¿Cuál fue el capital?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "$750",
+          "correcta": false
+        },
+        {
+          "texto": "$3000",
+          "correcta": false
+        },
+        {
+          "texto": "$1500",
+          "correcta": true
+        },
+        {
+          "texto": "$1350",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De I = C·i·t: 150 = C × 0,05 × 2 = 0,1C, por lo que C = 1500."
+    },
+    {
+      "enunciado": "Un número aumentado en un 30% da como resultado 130. ¿Cuál es el número original?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "100",
+          "correcta": true
+        },
+        {
+          "texto": "91",
+          "correcta": false
+        },
+        {
+          "texto": "110",
+          "correcta": false
+        },
+        {
+          "texto": "169",
+          "correcta": false
+        }
+      ],
+      "explicacion": "130 representa el 130% del número: 130 ÷ 1,30 = 100."
+    },
+    {
+      "enunciado": "¿Cuál es el monto final de $1000 a un interés compuesto del 10% anual durante 2 años?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "$1200",
+          "correcta": false
+        },
+        {
+          "texto": "$1100",
+          "correcta": false
+        },
+        {
+          "texto": "$1221",
+          "correcta": false
+        },
+        {
+          "texto": "$1210",
+          "correcta": true
+        }
+      ],
+      "explicacion": "M = C(1 + i)ᵗ = 1000 × 1,10² = 1000 × 1,21 = 1210."
+    },
+    {
+      "enunciado": "Un precio sufre dos aumentos sucesivos del 10% cada uno. ¿Cuál es el aumento porcentual total?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "20%",
+          "correcta": false
+        },
+        {
+          "texto": "21%",
+          "correcta": true
+        },
+        {
+          "texto": "22%",
+          "correcta": false
+        },
+        {
+          "texto": "11%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los factores se multiplican: 1,10 × 1,10 = 1,21, lo que equivale a un aumento total del 21%."
+    },
+    {
+      "enunciado": "Un precio primero sube un 20% y luego baja un 20%. ¿Cuál es la variación neta respecto al precio inicial?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "No cambia",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuye 4%",
+          "correcta": true
+        },
+        {
+          "texto": "Aumenta 4%",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuye 40%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El factor neto es 1,20 × 0,80 = 0,96, lo que significa una disminución del 4%."
+    },
+    {
+      "enunciado": "¿Cuánto interés compuesto genera un capital de $2000 al 5% anual durante 2 años?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "$205",
+          "correcta": true
+        },
+        {
+          "texto": "$200",
+          "correcta": false
+        },
+        {
+          "texto": "$210",
+          "correcta": false
+        },
+        {
+          "texto": "$220",
+          "correcta": false
+        }
+      ],
+      "explicacion": "M = 2000 × 1,05² = 2205, por lo que el interés es 2205 − 2000 = 205."
+    },
+    {
+      "enunciado": "¿Cuál es la diferencia entre el interés compuesto y el interés simple de $1000 al 10% anual durante 2 años?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "$0",
+          "correcta": false
+        },
+        {
+          "texto": "$20",
+          "correcta": false
+        },
+        {
+          "texto": "$21",
+          "correcta": false
+        },
+        {
+          "texto": "$10",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Compuesto: 1000 × 1,21 − 1000 = 210; simple: 1000 × 0,10 × 2 = 200; la diferencia es 210 − 200 = 10."
+    },
+    {
+      "enunciado": "Un comerciante marca un producto con un 40% de ganancia sobre el costo y luego ofrece un 25% de descuento. ¿Cuál es el resultado neto sobre el costo?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "15% de ganancia",
+          "correcta": false
+        },
+        {
+          "texto": "5% de pérdida",
+          "correcta": false
+        },
+        {
+          "texto": "5% de ganancia",
+          "correcta": true
+        },
+        {
+          "texto": "10% de ganancia",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El factor neto es 1,40 × 0,75 = 1,05, lo que representa una ganancia del 5% sobre el costo."
+    },
+    {
+      "enunciado": "Un capital de $800 crece hasta $968 en 2 años a interés compuesto. ¿Cuál es la tasa anual?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "21%",
+          "correcta": false
+        },
+        {
+          "texto": "8%",
+          "correcta": false
+        },
+        {
+          "texto": "12%",
+          "correcta": false
+        },
+        {
+          "texto": "10%",
+          "correcta": true
+        }
+      ],
+      "explicacion": "968 ÷ 800 = 1,21 = (1+i)², de donde 1+i = 1,10, es decir i = 10%."
+    },
+    {
+      "enunciado": "Una población de 10000 habitantes disminuye un 10% cada año durante 2 años. ¿Cuál es la población final?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8100",
+          "correcta": true
+        },
+        {
+          "texto": "8200",
+          "correcta": false
+        },
+        {
+          "texto": "8000",
+          "correcta": false
+        },
+        {
+          "texto": "9000",
+          "correcta": false
+        }
+      ],
+      "explicacion": "10000 × 0,90² = 10000 × 0,81 = 8100."
+    },
+    {
+      "enunciado": "Tras aplicar un IVA del 15%, un artículo cuesta $575. ¿Cuál era el precio sin IVA?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "$488,75",
+          "correcta": false
+        },
+        {
+          "texto": "$500,00",
+          "correcta": true
+        },
+        {
+          "texto": "$560,00",
+          "correcta": false
+        },
+        {
+          "texto": "$475,00",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El precio con IVA es el 115% del original: 575 ÷ 1,15 = 500. Restar el 15% de 575 (488,75) es un error, porque el 15% se calculó sobre el precio sin IVA."
+    },
+    {
+      "enunciado": "¿En cuántos años se duplica un capital colocado a interés simple del 10% anual?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "20 años",
+          "correcta": false
+        },
+        {
+          "texto": "5 años",
+          "correcta": false
+        },
+        {
+          "texto": "10 años",
+          "correcta": true
+        },
+        {
+          "texto": "100 años",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para duplicar, el interés debe igualar al capital: C = C·0,10·t, de donde t = 1 ÷ 0,10 = 10 años."
+    },
+    {
+      "enunciado": "¿Cuál es el monto final de $1500 a un interés compuesto del 6% anual durante 3 años?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "$1786,52",
+          "correcta": true
+        },
+        {
+          "texto": "$1800,00",
+          "correcta": false
+        },
+        {
+          "texto": "$1770,00",
+          "correcta": false
+        },
+        {
+          "texto": "$1795,00",
+          "correcta": false
+        }
+      ],
+      "explicacion": "M = 1500 × 1,06³ = 1500 × 1,191016 = 1786,52 (el interés simple daría solo 1770)."
+    },
+    {
+      "enunciado": "Si un producto subió un 25%, ¿qué porcentaje de descuento debe aplicarse para volver al precio original?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "25%",
+          "correcta": false
+        },
+        {
+          "texto": "22%",
+          "correcta": false
+        },
+        {
+          "texto": "15%",
+          "correcta": false
+        },
+        {
+          "texto": "20%",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Hay que rebajar el aumento sobre el nuevo precio: 25 ÷ 125 = 0,20, es decir, un descuento del 20%."
+    },
+    {
+      "enunciado": "Un capital de $4000 se coloca a un interés compuesto del 4% semestral durante 1 año (2 semestres). ¿Cuál es el monto final?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "$4320,00",
+          "correcta": false
+        },
+        {
+          "texto": "$4326,40",
+          "correcta": true
+        },
+        {
+          "texto": "$4160,00",
+          "correcta": false
+        },
+        {
+          "texto": "$4332,80",
+          "correcta": false
+        }
+      ],
+      "explicacion": "M = 4000 × 1,04² = 4000 × 1,0816 = 4326,40."
+    },
+    {
+      "enunciado": "El precio de un bien aumentó de $250 a $300. Luego se aplicó un descuento que lo dejó en $270. ¿Qué porcentaje de descuento se aplicó sobre los $300?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8%",
+          "correcta": false
+        },
+        {
+          "texto": "10%",
+          "correcta": true
+        },
+        {
+          "texto": "11%",
+          "correcta": false
+        },
+        {
+          "texto": "12%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La rebaja es 300 − 270 = 30 sobre 300: 30 ÷ 300 = 0,10, es decir, el 10%."
+    },
+    {
+      "enunciado": "Una inversión de $2000 produce $240 de interés simple en 2 años. ¿Cuál es la tasa anual?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5%",
+          "correcta": false
+        },
+        {
+          "texto": "12%",
+          "correcta": false
+        },
+        {
+          "texto": "6%",
+          "correcta": true
+        },
+        {
+          "texto": "6,5%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De I = C·i·t: 240 = 2000 × i × 2 = 4000i, por lo que i = 0,06 = 6%."
+    },
+    {
+      "enunciado": "¿Cuál es la diferencia entre el interés compuesto y el interés simple de $10000 al 10% anual durante 3 años?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "$310",
+          "correcta": true
+        },
+        {
+          "texto": "$331",
+          "correcta": false
+        },
+        {
+          "texto": "$300",
+          "correcta": false
+        },
+        {
+          "texto": "$31",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Compuesto: 10000 × 1,10³ − 10000 = 3310; simple: 10000 × 0,10 × 3 = 3000; la diferencia es 310."
+    }
+  ]
+}

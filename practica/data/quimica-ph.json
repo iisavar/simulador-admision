@@ -1,0 +1,1127 @@
+{
+  "id": "quimica-ph",
+  "materia": "quimica",
+  "tema": "Ácidos, bases y pH",
+  "bloque": "Soluciones y gases",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Los ácidos liberan H⁺ en agua y las bases liberan OH⁻ (Arrhenius). El pH mide la acidez: pH = −log[H⁺]. A 25 °C: pH < 7 es ácido, pH = 7 es neutro y pH > 7 es básico; además, pH + pOH = 14.",
+    "ejemplo": {
+      "enunciado": "¿Cuál es el pH de una disolución de NaOH 0,01 M?",
+      "pasos": [
+        "El NaOH es una base fuerte: se disocia por completo, así que [OH⁻] = 0,01 M = 10⁻² M.",
+        "Calcula el pOH: pOH = −log(10⁻²) = 2.",
+        "Pasa al pH: pH = 14 − pOH = 14 − 2 = 12."
+      ],
+      "resultado": "pH = 12: la disolución es básica."
+    },
+    "ojo": "Con una base, −log[OH⁻] te da el pOH, no el pH: no olvides restar de 14 al final."
+  },
+  "preguntas": [
+    {
+      "enunciado": "Según la teoría de Arrhenius, un ácido es una sustancia que, al disolverse en agua, libera iones:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "OH⁻",
+          "correcta": false
+        },
+        {
+          "texto": "H⁺ (o H₃O⁺)",
+          "correcta": true
+        },
+        {
+          "texto": "Na⁺",
+          "correcta": false
+        },
+        {
+          "texto": "Cl⁻",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para Arrhenius, un ácido aumenta la concentración de iones hidrógeno (H⁺) en disolución acuosa."
+    },
+    {
+      "enunciado": "A 25 °C, una disolución es neutra cuando su pH es igual a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En agua pura a 25 °C, [H⁺] = [OH⁻] = 1 × 10⁻⁷ M, lo que corresponde a pH = 7."
+    },
+    {
+      "enunciado": "Una disolución con pH = 3 se clasifica como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Ácida",
+          "correcta": true
+        },
+        {
+          "texto": "Básica",
+          "correcta": false
+        },
+        {
+          "texto": "Neutra",
+          "correcta": false
+        },
+        {
+          "texto": "Anfótera",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un pH menor que 7 indica predominio de iones H⁺; por lo tanto, la disolución es ácida."
+    },
+    {
+      "enunciado": "A 25 °C, la suma del pH y el pOH de cualquier disolución acuosa es igual a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como Kw = [H⁺][OH⁻] = 1 × 10⁻¹⁴, al aplicar logaritmos se obtiene pH + pOH = 14."
+    },
+    {
+      "enunciado": "Al sumergir un papel tornasol azul en una disolución ácida, toma color:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Verde",
+          "correcta": false
+        },
+        {
+          "texto": "Amarillo",
+          "correcta": false
+        },
+        {
+          "texto": "Rojo",
+          "correcta": true
+        },
+        {
+          "texto": "Incoloro",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El tornasol vira a rojo en medio ácido y permanece azul en medio básico."
+    },
+    {
+      "enunciado": "Según Arrhenius, una base es una sustancia que en agua libera iones:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "H⁺",
+          "correcta": false
+        },
+        {
+          "texto": "OH⁻",
+          "correcta": true
+        },
+        {
+          "texto": "H₃O⁺",
+          "correcta": false
+        },
+        {
+          "texto": "CO₃²⁻",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para Arrhenius, una base aumenta la concentración de iones hidróxido (OH⁻) en disolución acuosa."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes sustancias es un ácido fuerte de uso común?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "NaCl (cloruro de sodio)",
+          "correcta": false
+        },
+        {
+          "texto": "NH₃ (amoníaco)",
+          "correcta": false
+        },
+        {
+          "texto": "HCl (ácido clorhídrico)",
+          "correcta": true
+        },
+        {
+          "texto": "CH₃OH (metanol)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El HCl se ioniza prácticamente al 100 % en agua, por eso es un ácido fuerte."
+    },
+    {
+      "enunciado": "La escala de pH que se usa habitualmente abarca valores entre:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0 y 14",
+          "correcta": true
+        },
+        {
+          "texto": "0 y 7",
+          "correcta": false
+        },
+        {
+          "texto": "1 y 10",
+          "correcta": false
+        },
+        {
+          "texto": "7 y 14",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La escala convencional de pH va de 0 a 14, y el 7 es el punto neutro a 25 °C."
+    },
+    {
+      "enunciado": "Una disolución tiene pH = 11. Esto indica que la disolución es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Ácida",
+          "correcta": false
+        },
+        {
+          "texto": "Básica",
+          "correcta": true
+        },
+        {
+          "texto": "Neutra",
+          "correcta": false
+        },
+        {
+          "texto": "Salina y neutra",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un pH mayor que 7 corresponde a predominio de iones OH⁻, es decir, a una disolución básica."
+    },
+    {
+      "enunciado": "Según la teoría de Brønsted-Lowry, un ácido es una especie que:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Acepta un protón (H⁺)",
+          "correcta": false
+        },
+        {
+          "texto": "Dona un par de electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Dona un protón (H⁺)",
+          "correcta": true
+        },
+        {
+          "texto": "Libera iones OH⁻",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para Brønsted-Lowry, un ácido es un donador de protones y una base es un aceptor de protones."
+    },
+    {
+      "enunciado": "Según Brønsted-Lowry, una base es una especie que:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Dona protones",
+          "correcta": false
+        },
+        {
+          "texto": "Acepta un par de electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Libera iones H⁺",
+          "correcta": false
+        },
+        {
+          "texto": "Acepta protones (H⁺)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En la teoría de Brønsted-Lowry, una base es un aceptor de protones."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes sustancias es una base común de laboratorio y de uso doméstico?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "H₂SO₄",
+          "correcta": false
+        },
+        {
+          "texto": "HNO₃",
+          "correcta": false
+        },
+        {
+          "texto": "CH₃COOH",
+          "correcta": false
+        },
+        {
+          "texto": "NaOH (hidróxido de sodio)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El NaOH (soda cáustica) es una base fuerte que libera iones OH⁻ en agua; las otras tres son ácidos."
+    },
+    {
+      "enunciado": "Si una disolución tiene [H⁺] = 1 × 10⁻⁴ M, su pH es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "−4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "pH = −log[H⁺] = −log(1 × 10⁻⁴) = 4."
+    },
+    {
+      "enunciado": "La reacción entre un ácido y una base (neutralización) produce, en general:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Solo un gas",
+          "correcta": false
+        },
+        {
+          "texto": "Solo agua oxigenada",
+          "correcta": false
+        },
+        {
+          "texto": "Un metal y un óxido",
+          "correcta": false
+        },
+        {
+          "texto": "Una sal y agua",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En la neutralización, el H⁺ del ácido y el OH⁻ de la base forman agua, y los demás iones quedan formando una sal."
+    },
+    {
+      "enunciado": "La fenolftaleína, en una disolución claramente básica, toma un color:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Rosa o fucsia",
+          "correcta": true
+        },
+        {
+          "texto": "Incoloro",
+          "correcta": false
+        },
+        {
+          "texto": "Azul intenso",
+          "correcta": false
+        },
+        {
+          "texto": "Verde",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La fenolftaleína es incolora en medio ácido y vira a rosa o fucsia en medio básico (pH > 8,2)."
+    },
+    {
+      "enunciado": "Una propiedad organoléptica característica de los ácidos es que su sabor es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Amargo",
+          "correcta": false
+        },
+        {
+          "texto": "Agrio",
+          "correcta": true
+        },
+        {
+          "texto": "Salado",
+          "correcta": false
+        },
+        {
+          "texto": "Dulce",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los ácidos, como el del limón o el vinagre, tienen sabor agrio; las bases tienden a saber amargo."
+    },
+    {
+      "enunciado": "Las disoluciones A y B tienen pH = 5 y pH = 9, respectivamente. Se puede afirmar que:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "B tiene mayor concentración de H⁺ que A",
+          "correcta": false
+        },
+        {
+          "texto": "A es más básica que B",
+          "correcta": false
+        },
+        {
+          "texto": "B es más básica y tiene menor [H⁺] que A",
+          "correcta": true
+        },
+        {
+          "texto": "Ambas son neutras",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A mayor pH, menor [H⁺]; por eso B (pH 9) es más básica y tiene menos H⁺ que A (pH 5)."
+    },
+    {
+      "enunciado": "Si una disolución tiene pH = 9 a 25 °C, ¿cuál es su pOH?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "23",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como pH + pOH = 14, entonces pOH = 14 − 9 = 5."
+    },
+    {
+      "enunciado": "Una disolución tiene pOH = 2. ¿Cuál es su concentración de iones hidróxido, [OH⁻]?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1 × 10⁻¹² M",
+          "correcta": false
+        },
+        {
+          "texto": "2 M",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10² M",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10⁻² M",
+          "correcta": true
+        }
+      ],
+      "explicacion": "[OH⁻] = 10 elevado a (−pOH) = 10⁻² = 1 × 10⁻² M."
+    },
+    {
+      "enunciado": "Según la teoría de Lewis, un ácido es una especie que:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Dona un par de electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Acepta un par de electrones",
+          "correcta": true
+        },
+        {
+          "texto": "Dona un protón",
+          "correcta": false
+        },
+        {
+          "texto": "Libera iones OH⁻",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para Lewis, un ácido es un aceptor de pares de electrones y una base es un donador de pares de electrones."
+    },
+    {
+      "enunciado": "En la ionización del HCl en agua, ¿cuál es la base conjugada del HCl?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Cl⁻",
+          "correcta": true
+        },
+        {
+          "texto": "H₃O⁺",
+          "correcta": false
+        },
+        {
+          "texto": "OH⁻",
+          "correcta": false
+        },
+        {
+          "texto": "H₂O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al ceder su protón, el HCl se transforma en Cl⁻, que es su base conjugada."
+    },
+    {
+      "enunciado": "Cuando el amoníaco (NH₃) acepta un protón, forma su ácido conjugado, que es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "NH₄⁺",
+          "correcta": true
+        },
+        {
+          "texto": "NH₂⁻",
+          "correcta": false
+        },
+        {
+          "texto": "N₂",
+          "correcta": false
+        },
+        {
+          "texto": "OH⁻",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al captar un H⁺, el NH₃ se convierte en el ion amonio, NH₄⁺, su ácido conjugado."
+    },
+    {
+      "enunciado": "¿Cuál es el pH de una disolución de HCl 0,01 M (ácido fuerte, totalmente ionizado)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0,01",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por ser ácido fuerte, [H⁺] = 0,01 M = 10⁻² M; pH = −log(10⁻²) = 2."
+    },
+    {
+      "enunciado": "¿Cuál es el pH de una disolución de NaOH 0,001 M (base fuerte, totalmente disociada) a 25 °C?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": true
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "[OH⁻] = 1 × 10⁻³ M, así que pOH = 3 y pH = 14 − 3 = 11."
+    },
+    {
+      "enunciado": "Si una disolución tiene pH = 5, ¿cuál es su concentración de iones hidrógeno?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1 × 10⁻⁹ M",
+          "correcta": false
+        },
+        {
+          "texto": "5 M",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10⁻⁵ M",
+          "correcta": true
+        },
+        {
+          "texto": "1 × 10⁵ M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "[H⁺] = 10 elevado a (−pH) = 10⁻⁵ M."
+    },
+    {
+      "enunciado": "El ion bicarbonato (HCO₃⁻) puede ceder o aceptar un protón según el medio. Esto significa que es una especie:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Solo ácida",
+          "correcta": false
+        },
+        {
+          "texto": "Solo básica",
+          "correcta": false
+        },
+        {
+          "texto": "Inerte",
+          "correcta": false
+        },
+        {
+          "texto": "Anfótera (anfiprótica)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El HCO₃⁻ actúa como ácido frente a las bases y como base frente a los ácidos; por eso es anfótero."
+    },
+    {
+      "enunciado": "En la neutralización H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O, ¿cuántos moles de NaOH se necesitan para neutralizar 1 mol de H₂SO₄?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4 mol",
+          "correcta": false
+        },
+        {
+          "texto": "2 mol",
+          "correcta": true
+        },
+        {
+          "texto": "1 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El H₂SO₄ aporta 2 H⁺ por molécula, así que necesita 2 mol de NaOH por cada mol de ácido."
+    },
+    {
+      "enunciado": "Una disolución amortiguadora (buffer) típica está formada por:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Un ácido débil y su base conjugada (o una base débil y su ácido conjugado)",
+          "correcta": true
+        },
+        {
+          "texto": "Un ácido fuerte y una base fuerte",
+          "correcta": false
+        },
+        {
+          "texto": "Solo agua destilada",
+          "correcta": false
+        },
+        {
+          "texto": "Dos ácidos fuertes mezclados",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un buffer combina un ácido débil con su base conjugada (o una base débil con su ácido conjugado) para resistir los cambios de pH."
+    },
+    {
+      "enunciado": "En una titulación ácido-base, el punto de equivalencia se alcanza cuando:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Se agrega la primera gota de titulante",
+          "correcta": false
+        },
+        {
+          "texto": "El indicador recupera su color inicial",
+          "correcta": false
+        },
+        {
+          "texto": "El pH se hace exactamente 0",
+          "correcta": false
+        },
+        {
+          "texto": "Los moles de H⁺ igualan a los moles de OH⁻ según la estequiometría",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El punto de equivalencia ocurre cuando el ácido y la base han reaccionado en proporción estequiométrica exacta."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes es una base fuerte?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "NH₃",
+          "correcta": false
+        },
+        {
+          "texto": "CH₃NH₂",
+          "correcta": false
+        },
+        {
+          "texto": "HCO₃⁻",
+          "correcta": false
+        },
+        {
+          "texto": "KOH",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El KOH (hidróxido de potasio) se disocia completamente en agua; el NH₃ y la metilamina son bases débiles."
+    },
+    {
+      "enunciado": "A 25 °C, Kw = 1 × 10⁻¹⁴. Si en una disolución [H⁺] = 1 × 10⁻⁶ M, ¿cuánto vale [OH⁻]?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1 × 10⁻⁶ M",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10⁻¹⁴ M",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10⁻⁸ M",
+          "correcta": true
+        },
+        {
+          "texto": "1 × 10⁸ M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "[OH⁻] = Kw/[H⁺] = 10⁻¹⁴ / 10⁻⁶ = 1 × 10⁻⁸ M."
+    },
+    {
+      "enunciado": "En el equilibrio HSO₄⁻ ⇌ H⁺ + SO₄²⁻, ¿cuál es la base conjugada del ion HSO₄⁻?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "H₂SO₄",
+          "correcta": false
+        },
+        {
+          "texto": "H₃O⁺",
+          "correcta": false
+        },
+        {
+          "texto": "SO₄²⁻",
+          "correcta": true
+        },
+        {
+          "texto": "OH⁻",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al perder su protón, el HSO₄⁻ se convierte en SO₄²⁻, que es su base conjugada."
+    },
+    {
+      "enunciado": "Calcula el pH aproximado de una disolución 0,10 M de ácido acético (CH₃COOH), cuyo Ka = 1,8 × 10⁻⁵.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5,00",
+          "correcta": false
+        },
+        {
+          "texto": "4,74",
+          "correcta": false
+        },
+        {
+          "texto": "2,87",
+          "correcta": true
+        },
+        {
+          "texto": "1,00",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para un ácido débil, [H⁺] ≈ √(Ka · C) = √(1,8 × 10⁻⁵ · 0,10) = 1,34 × 10⁻³ M; pH = −log(1,34 × 10⁻³) = 2,87."
+    },
+    {
+      "enunciado": "Si el Ka del ácido acético es 1,8 × 10⁻⁵, ¿cuál es su pKa?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,80",
+          "correcta": false
+        },
+        {
+          "texto": "4,74",
+          "correcta": true
+        },
+        {
+          "texto": "5,26",
+          "correcta": false
+        },
+        {
+          "texto": "9,26",
+          "correcta": false
+        }
+      ],
+      "explicacion": "pKa = −log(Ka) = −log(1,8 × 10⁻⁵) = 4,74."
+    },
+    {
+      "enunciado": "Una disolución amortiguadora contiene igual concentración de ácido acético y de acetato de sodio. Si pKa = 4,74, ¿cuál es su pH?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "9,26",
+          "correcta": false
+        },
+        {
+          "texto": "7,00",
+          "correcta": false
+        },
+        {
+          "texto": "4,74",
+          "correcta": true
+        },
+        {
+          "texto": "2,37",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por Henderson-Hasselbalch, pH = pKa + log([A⁻]/[HA]); si [A⁻] = [HA], log 1 = 0 y pH = pKa = 4,74."
+    },
+    {
+      "enunciado": "Un buffer contiene ácido acético 0,10 M (pKa = 4,74) y acetato 0,20 M. ¿Cuál es su pH? (log 2 ≈ 0,30)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4,44",
+          "correcta": false
+        },
+        {
+          "texto": "4,74",
+          "correcta": false
+        },
+        {
+          "texto": "5,04",
+          "correcta": true
+        },
+        {
+          "texto": "5,74",
+          "correcta": false
+        }
+      ],
+      "explicacion": "pH = pKa + log([A⁻]/[HA]) = 4,74 + log(0,20/0,10) = 4,74 + 0,30 = 5,04."
+    },
+    {
+      "enunciado": "Un buffer contiene un ácido débil 0,30 M (pKa = 4,74) y su base conjugada 0,15 M. ¿Cuál es su pH? (log 2 ≈ 0,30)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3,74",
+          "correcta": false
+        },
+        {
+          "texto": "4,44",
+          "correcta": true
+        },
+        {
+          "texto": "4,74",
+          "correcta": false
+        },
+        {
+          "texto": "5,04",
+          "correcta": false
+        }
+      ],
+      "explicacion": "pH = pKa + log([A⁻]/[HA]) = 4,74 + log(0,15/0,30) = 4,74 − 0,30 = 4,44."
+    },
+    {
+      "enunciado": "En una disolución 0,10 M de ácido acético con [H⁺] = 1,34 × 10⁻³ M, ¿cuál es el porcentaje de ionización?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "100 %",
+          "correcta": false
+        },
+        {
+          "texto": "13,4 %",
+          "correcta": false
+        },
+        {
+          "texto": "1,34 %",
+          "correcta": true
+        },
+        {
+          "texto": "0,13 %",
+          "correcta": false
+        }
+      ],
+      "explicacion": "% ionización = ([H⁺]/C) × 100 = (1,34 × 10⁻³ / 0,10) × 100 = 1,34 %."
+    },
+    {
+      "enunciado": "¿Cuál es el pH de una disolución de Ca(OH)₂ 0,05 M (base fuerte que aporta 2 OH⁻ por fórmula) a 25 °C?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,00",
+          "correcta": false
+        },
+        {
+          "texto": "11,30",
+          "correcta": false
+        },
+        {
+          "texto": "12,70",
+          "correcta": false
+        },
+        {
+          "texto": "13,00",
+          "correcta": true
+        }
+      ],
+      "explicacion": "[OH⁻] = 2 × 0,05 = 0,10 M; pOH = −log(0,10) = 1; pH = 14 − 1 = 13."
+    },
+    {
+      "enunciado": "Calcula el pH de una disolución 0,10 M de amoníaco (NH₃), base débil con Kb = 1,8 × 10⁻⁵.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "13,00",
+          "correcta": false
+        },
+        {
+          "texto": "11,13",
+          "correcta": true
+        },
+        {
+          "texto": "9,26",
+          "correcta": false
+        },
+        {
+          "texto": "2,87",
+          "correcta": false
+        }
+      ],
+      "explicacion": "[OH⁻] ≈ √(Kb · C) = √(1,8 × 10⁻⁵ · 0,10) = 1,34 × 10⁻³ M; pOH = 2,87 y pH = 14 − 2,87 = 11,13."
+    },
+    {
+      "enunciado": "Se mezclan 100 mL de NaOH 0,20 M con 100 mL de HCl 0,10 M. ¿Cuál es el pH de la mezcla resultante?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "13,00",
+          "correcta": false
+        },
+        {
+          "texto": "12,70",
+          "correcta": true
+        },
+        {
+          "texto": "7,00",
+          "correcta": false
+        },
+        {
+          "texto": "1,30",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Moles de OH⁻ = 0,020 y de H⁺ = 0,010; sobran 0,010 mol de OH⁻ en 0,200 L = 0,05 M; pOH = 1,30 y pH = 12,70."
+    },
+    {
+      "enunciado": "Se mezclan 50 mL de HCl 0,10 M con 50 mL de NaOH 0,05 M. ¿Cuál es el pH de la mezcla?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,60",
+          "correcta": true
+        },
+        {
+          "texto": "2,00",
+          "correcta": false
+        },
+        {
+          "texto": "7,00",
+          "correcta": false
+        },
+        {
+          "texto": "12,40",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Moles de H⁺ = 0,005 y de OH⁻ = 0,0025; sobran 0,0025 mol de H⁺ en 0,100 L = 0,025 M; pH = −log(0,025) = 1,60."
+    },
+    {
+      "enunciado": "Se toman 10 mL de HCl 0,10 M y se diluyen con agua hasta 100 mL. ¿Cuál es el pH de la disolución diluida?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "0,1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "C₂ = C₁V₁/V₂ = (0,10 × 10)/100 = 0,01 M; pH = −log(10⁻²) = 2."
+    },
+    {
+      "enunciado": "¿Cuántos mL de NaOH 0,20 M se requieren para neutralizar 20 mL de H₂SO₄ 0,15 M?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "7,5 mL",
+          "correcta": false
+        },
+        {
+          "texto": "15 mL",
+          "correcta": false
+        },
+        {
+          "texto": "30 mL",
+          "correcta": true
+        },
+        {
+          "texto": "60 mL",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Moles de H⁺ = 2 × 0,15 × 0,020 = 0,006 mol; V(NaOH) = 0,006/0,20 = 0,030 L = 30 mL."
+    },
+    {
+      "enunciado": "En la titulación de un ácido débil con una base fuerte, en el punto de semiequivalencia (la mitad del camino al punto de equivalencia) se cumple que:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "pH = pKa",
+          "correcta": true
+        },
+        {
+          "texto": "pH = 7",
+          "correcta": false
+        },
+        {
+          "texto": "pH = 14",
+          "correcta": false
+        },
+        {
+          "texto": "pH = 0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la semiequivalencia [HA] = [A⁻], de modo que pH = pKa + log 1 = pKa."
+    },
+    {
+      "enunciado": "Una disolución 0,10 M de un ácido débil HA tiene pH = 3. ¿Cuál es el valor aproximado de su Ka?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1 × 10⁻³",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10⁻⁵",
+          "correcta": true
+        },
+        {
+          "texto": "1 × 10⁻⁷",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10⁻¹",
+          "correcta": false
+        }
+      ],
+      "explicacion": "[H⁺] = 10⁻³ M; Ka ≈ [H⁺]²/C = (10⁻³)² / 0,10 = 1 × 10⁻⁵."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes mezclas forma una disolución amortiguadora (buffer) eficaz?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "HCl y NaCl",
+          "correcta": false
+        },
+        {
+          "texto": "NH₃ y NH₄Cl",
+          "correcta": true
+        },
+        {
+          "texto": "NaOH y KOH",
+          "correcta": false
+        },
+        {
+          "texto": "HCl y NaOH en cantidades iguales",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El NH₃ (base débil) con el NH₄Cl (su ácido conjugado) forman un buffer; las otras mezclas no tienen un par conjugado débil."
+    },
+    {
+      "enunciado": "Para titular 25 mL de una disolución de HCl se gastan 20 mL de NaOH 0,10 M hasta el punto de equivalencia. ¿Cuál es la concentración del HCl?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,04 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,08 M",
+          "correcta": true
+        },
+        {
+          "texto": "0,10 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,125 M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En proporción 1:1, M(HCl) = (0,10 M × 20 mL)/25 mL = 0,08 M."
+    }
+  ]
+}

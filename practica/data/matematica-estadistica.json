@@ -1,0 +1,1127 @@
+{
+  "id": "matematica-estadistica",
+  "materia": "matematica",
+  "tema": "Estadística descriptiva",
+  "bloque": "Estadística y probabilidad",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "La media es la suma de los datos dividida entre cuántos son; la mediana es el dato del centro con los datos ORDENADOS; la moda es el que más se repite. La varianza y la desviación estándar miden qué tan separados están los datos de la media.",
+    "ejemplo": {
+      "enunciado": "Para los datos 3, 7, 5, 9, 6, halla la media y la mediana.",
+      "pasos": [
+        "Media: (3 + 7 + 5 + 9 + 6)/5 = 30/5 = 6.",
+        "Ordena los datos: 3, 5, 6, 7, 9.",
+        "Son 5 datos (impar): la mediana es el 3.º, es decir, 6."
+      ],
+      "resultado": "Media = 6 y mediana = 6"
+    },
+    "ojo": "Buscar la mediana sin ordenar antes los datos o, con cantidad par de datos, olvidar promediar los dos del centro."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cómo se calcula la media aritmética de un conjunto de datos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Se suman todos los valores y el resultado se divide entre el número de datos",
+          "correcta": true
+        },
+        {
+          "texto": "Se ordenan los datos y se toma el valor central",
+          "correcta": false
+        },
+        {
+          "texto": "Se identifica el valor que más se repite",
+          "correcta": false
+        },
+        {
+          "texto": "Se resta el valor menor del valor mayor",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La media aritmética es la suma de todos los valores dividida entre la cantidad de datos."
+    },
+    {
+      "enunciado": "¿Cuál es la media aritmética de los datos 2, 4 y 6?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(2+4+6)/3 = 12/3 = 4."
+    },
+    {
+      "enunciado": "¿Cuál es el promedio de los valores 5, 10, 15 y 20?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "12,5",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "50",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(5+10+15+20)/4 = 50/4 = 12,5."
+    },
+    {
+      "enunciado": "¿Cuál es la moda del conjunto 3, 3, 5, 7, 3, 8?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La moda es el valor más frecuente; el 3 aparece tres veces."
+    },
+    {
+      "enunciado": "¿Cuál es la mediana de los datos 3, 5 y 7?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con los datos ordenados, la mediana es el valor central: 5."
+    },
+    {
+      "enunciado": "¿Cuál es la mediana del conjunto 2, 4, 6, 8, 10?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Son 5 datos ordenados; el valor central (tercero) es 6."
+    },
+    {
+      "enunciado": "¿Qué representa la moda en un conjunto de datos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El valor central de los datos ordenados",
+          "correcta": false
+        },
+        {
+          "texto": "El promedio de todos los valores",
+          "correcta": false
+        },
+        {
+          "texto": "El valor que aparece con mayor frecuencia",
+          "correcta": true
+        },
+        {
+          "texto": "La diferencia entre el mayor y el menor",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La moda es el dato que se repite más veces dentro del conjunto."
+    },
+    {
+      "enunciado": "En un conjunto con una cantidad impar de datos ordenados, ¿qué es la mediana?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El valor que ocupa la posición central",
+          "correcta": true
+        },
+        {
+          "texto": "El valor más frecuente",
+          "correcta": false
+        },
+        {
+          "texto": "La suma dividida entre el total",
+          "correcta": false
+        },
+        {
+          "texto": "El valor más grande del conjunto",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La mediana es el dato que queda en el centro al ordenar los valores."
+    },
+    {
+      "enunciado": "¿Cuál es la moda del conjunto 1, 2, 2, 3, 4?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El valor 2 es el único que se repite, por lo que es la moda."
+    },
+    {
+      "enunciado": "¿Cuál es la mediana del conjunto 1, 3, 5, 7?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con cantidad par de datos, la mediana es el promedio de los dos centrales: (3+5)/2 = 4."
+    },
+    {
+      "enunciado": "¿Cuál es el rango del conjunto 4, 8, 15, 16, 23?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "23",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "19",
+          "correcta": true
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El rango es la diferencia entre el mayor y el menor: 23 − 4 = 19."
+    },
+    {
+      "enunciado": "¿Cuál es la media de los datos 6, 7, 8, 9 y 10?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "7,5",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(6+7+8+9+10)/5 = 40/5 = 8."
+    },
+    {
+      "enunciado": "¿Cuál es la moda del conjunto 5, 5, 6, 6, 6, 7?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "5,83",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El valor 6 se repite tres veces, más que cualquier otro, por lo que es la moda."
+    },
+    {
+      "enunciado": "¿Cuál es la mediana del conjunto 12, 15, 11, 14 y 13?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": true
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al ordenar: 11, 12, 13, 14, 15; el valor central es 13."
+    },
+    {
+      "enunciado": "¿Qué tipo de gráfico es más adecuado para comparar la frecuencia de categorías cualitativas, como los colores favoritos de un grupo?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Gráfico de barras",
+          "correcta": true
+        },
+        {
+          "texto": "Histograma",
+          "correcta": false
+        },
+        {
+          "texto": "Diagrama de dispersión",
+          "correcta": false
+        },
+        {
+          "texto": "Gráfico de línea de tiempo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El gráfico de barras compara frecuencias de categorías cualitativas separadas."
+    },
+    {
+      "enunciado": "¿Qué representa principalmente un gráfico circular (de pastel)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La evolución de una variable en el tiempo",
+          "correcta": false
+        },
+        {
+          "texto": "La relación entre dos variables numéricas",
+          "correcta": false
+        },
+        {
+          "texto": "La dispersión de los datos",
+          "correcta": false
+        },
+        {
+          "texto": "La proporción o porcentaje de cada parte respecto al total",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El gráfico circular muestra cómo se reparte un total en partes proporcionales."
+    },
+    {
+      "enunciado": "¿Cuál es la media de los datos 7, 8, 9, 10, 11 y 15?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "9,5",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "60",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(7+8+9+10+11+15)/6 = 60/6 = 10."
+    },
+    {
+      "enunciado": "¿Cuál es la mediana del conjunto 4, 8, 15, 16, 23 y 42?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "15,5",
+          "correcta": true
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con 6 datos ordenados, la mediana es el promedio de los centrales: (15+16)/2 = 15,5."
+    },
+    {
+      "enunciado": "¿Cuál es la varianza poblacional del conjunto 1, 2, 3, 4 y 5?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2,5",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1,41",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La media es 3; la suma de cuadrados de las desviaciones es 10, y 10/5 = 2."
+    },
+    {
+      "enunciado": "Si la varianza de un conjunto de datos es 9, ¿cuál es su desviación estándar?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "81",
+          "correcta": false
+        },
+        {
+          "texto": "4,5",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La desviación estándar es la raíz cuadrada de la varianza: √9 = 3."
+    },
+    {
+      "enunciado": "¿Cuál es la varianza poblacional del conjunto 2, 4, 6 y 8?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "6,67",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "2,24",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La media es 5; las desviaciones al cuadrado suman 20, y 20/4 = 5."
+    },
+    {
+      "enunciado": "¿Cuál es la desviación estándar poblacional del conjunto 2, 4, 4, 4, 5, 5, 7 y 9?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "1,87",
+          "correcta": false
+        },
+        {
+          "texto": "32",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La media es 5, la varianza es 32/8 = 4, y la desviación estándar es √4 = 2."
+    },
+    {
+      "enunciado": "Un estudiante obtiene 80 en un examen que vale el 40% y 90 en otro que vale el 60%. ¿Cuál es su promedio ponderado?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "85",
+          "correcta": false
+        },
+        {
+          "texto": "84",
+          "correcta": false
+        },
+        {
+          "texto": "86",
+          "correcta": true
+        },
+        {
+          "texto": "170",
+          "correcta": false
+        }
+      ],
+      "explicacion": "80(0,40) + 90(0,60) = 32 + 54 = 86."
+    },
+    {
+      "enunciado": "Si a cada dato de un conjunto se le suma 5, ¿qué ocurre con la desviación estándar?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Aumenta en 5",
+          "correcta": false
+        },
+        {
+          "texto": "Se multiplica por 5",
+          "correcta": false
+        },
+        {
+          "texto": "Aumenta en 25",
+          "correcta": false
+        },
+        {
+          "texto": "No cambia (permanece igual)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Sumar una constante traslada todos los datos por igual y no altera la dispersión."
+    },
+    {
+      "enunciado": "Si cada dato de un conjunto se multiplica por 3, ¿qué ocurre con la desviación estándar?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "No cambia",
+          "correcta": false
+        },
+        {
+          "texto": "Se multiplica por 3",
+          "correcta": true
+        },
+        {
+          "texto": "Se multiplica por 9",
+          "correcta": false
+        },
+        {
+          "texto": "Aumenta en 3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La desviación estándar se multiplica por el mismo factor que escala los datos."
+    },
+    {
+      "enunciado": "En una tabla de frecuencias, el valor 1 aparece 2 veces, el 2 aparece 3 veces y el 3 aparece 5 veces. ¿Cuál es la media?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "2,3",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2,5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(1·2 + 2·3 + 3·5)/10 = 23/10 = 2,3."
+    },
+    {
+      "enunciado": "En una tabla de frecuencias, el 10 aparece 3 veces, el 20 aparece 5 veces y el 30 aparece 2 veces. ¿Cuál es la mediana?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": true
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con 10 datos, los valores en las posiciones 5 y 6 son ambos 20, así que la mediana es 20."
+    },
+    {
+      "enunciado": "En una tabla de frecuencias, el 5 aparece 4 veces, el 10 aparece 7 veces y el 15 aparece 3 veces. ¿Cuál es la moda?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La moda es el valor con mayor frecuencia; el 10 aparece 7 veces."
+    },
+    {
+      "enunciado": "¿Cuál es la diferencia principal entre un histograma y un gráfico de barras?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "El histograma solo usa colores diferentes",
+          "correcta": false
+        },
+        {
+          "texto": "El gráfico de barras representa datos continuos",
+          "correcta": false
+        },
+        {
+          "texto": "No existe ninguna diferencia entre ambos",
+          "correcta": false
+        },
+        {
+          "texto": "El histograma representa datos numéricos continuos y sus barras se tocan",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El histograma agrupa datos numéricos continuos en intervalos contiguos, por lo que sus barras se tocan."
+    },
+    {
+      "enunciado": "En una encuesta a 40 estudiantes, 10 eligieron el azul como color favorito. ¿Cuál es la frecuencia relativa del azul, en porcentaje?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "25%",
+          "correcta": true
+        },
+        {
+          "texto": "10%",
+          "correcta": false
+        },
+        {
+          "texto": "40%",
+          "correcta": false
+        },
+        {
+          "texto": "4%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Frecuencia relativa = 10/40 = 0,25, es decir, el 25% del total de encuestados."
+    },
+    {
+      "enunciado": "En un gráfico circular, una categoría representa el 25% del total. ¿Cuántos grados mide su sector?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "25°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": true
+        },
+        {
+          "texto": "45°",
+          "correcta": false
+        },
+        {
+          "texto": "120°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El sector es proporcional: 0,25 × 360° = 90°."
+    },
+    {
+      "enunciado": "Un conjunto de 4 datos tiene media 10. Si se agrega un quinto dato igual a 20, ¿cuál es la nueva media?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "11",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La suma original es 4·10 = 40; con el nuevo dato es 60, y 60/5 = 12."
+    },
+    {
+      "enunciado": "¿Cuál medida de tendencia central se ve más afectada por un valor extremo (atípico)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "La mediana",
+          "correcta": false
+        },
+        {
+          "texto": "La moda",
+          "correcta": false
+        },
+        {
+          "texto": "Las tres (media, mediana y moda) se afectan por igual",
+          "correcta": false
+        },
+        {
+          "texto": "La media",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La media usa todos los valores en su cálculo, por lo que un dato extremo la altera notablemente."
+    },
+    {
+      "enunciado": "¿Cuál es la varianza muestral del conjunto 2, 4, 6, 8 y 10?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "40",
+          "correcta": false
+        },
+        {
+          "texto": "3,16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La media es 6; las desviaciones al cuadrado suman 40, y en la varianza muestral se divide entre n−1: 40/4 = 10."
+    },
+    {
+      "enunciado": "Si la desviación estándar de un conjunto es 15 y la media es 60, ¿cuál es el coeficiente de variación?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "0,25%",
+          "correcta": false
+        },
+        {
+          "texto": "25%",
+          "correcta": true
+        },
+        {
+          "texto": "75%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "CV = (desviación estándar / media) × 100 = (15/60) × 100 = 25%."
+    },
+    {
+      "enunciado": "El grupo A tiene 20 estudiantes con media 70 y el grupo B tiene 30 estudiantes con media 80. ¿Cuál es la media combinada de los 50 estudiantes?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "75",
+          "correcta": false
+        },
+        {
+          "texto": "77",
+          "correcta": false
+        },
+        {
+          "texto": "76",
+          "correcta": true
+        },
+        {
+          "texto": "150",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(20·70 + 30·80)/50 = (1400 + 2400)/50 = 3800/50 = 76."
+    },
+    {
+      "enunciado": "Un conjunto de 10 datos tiene media 15. Si se elimina un dato de valor 24, ¿cuál es la nueva media?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "13,4",
+          "correcta": false
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La suma original es 10·15 = 150; al quitar 24 queda 126, y 126/9 = 14."
+    },
+    {
+      "enunciado": "La media de los datos 8, 12, x y 20 es 14. ¿Cuál es el valor de x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": true
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La suma debe ser 4·14 = 56; como 8+12+20 = 40, entonces x = 16."
+    },
+    {
+      "enunciado": "Si todos los valores de un conjunto de datos son iguales, ¿cuál es su desviación estándar?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "Igual al valor de los datos",
+          "correcta": false
+        },
+        {
+          "texto": "No se puede calcular",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si no hay variación entre los datos, todas las desviaciones son cero y la desviación estándar es 0."
+    },
+    {
+      "enunciado": "En un conjunto de datos, el promedio de los cuadrados de los valores es 30 y la media es 5. Usando Var = (media de los cuadrados) − (cuadrado de la media), ¿cuál es la varianza?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "55",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Var = 30 − 5² = 30 − 25 = 5."
+    },
+    {
+      "enunciado": "Para los datos 2, 4, 6, 8, 10, 12, 14 y 16, ¿cuál es el rango intercuartílico (RIC), si Q1 y Q3 se toman como las medianas de la mitad inferior y de la mitad superior?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Mitad inferior 2, 4, 6, 8 → Q1 = 5; mitad superior 10, 12, 14, 16 → Q3 = 13; RIC = Q3 − Q1 = 13 − 5 = 8."
+    },
+    {
+      "enunciado": "Si cada dato de un conjunto se multiplica por 2, ¿qué ocurre con la varianza?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Se multiplica por 2",
+          "correcta": false
+        },
+        {
+          "texto": "Se multiplica por 4",
+          "correcta": true
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        },
+        {
+          "texto": "Se multiplica por 8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La varianza se multiplica por el cuadrado del factor de escala: 2² = 4."
+    },
+    {
+      "enunciado": "En un diagrama de caja (boxplot), ¿qué representa la línea dibujada dentro de la caja?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "La media",
+          "correcta": false
+        },
+        {
+          "texto": "La mediana",
+          "correcta": true
+        },
+        {
+          "texto": "El valor máximo",
+          "correcta": false
+        },
+        {
+          "texto": "El primer cuartil",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En un diagrama de caja, la línea interior de la caja marca la mediana de los datos."
+    },
+    {
+      "enunciado": "En una distribución de datos, la media es mayor que la mediana. ¿Qué tipo de asimetría (sesgo) presenta?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Asimetría negativa (sesgo a la izquierda)",
+          "correcta": false
+        },
+        {
+          "texto": "Es perfectamente simétrica",
+          "correcta": false
+        },
+        {
+          "texto": "Asimetría positiva (sesgo a la derecha)",
+          "correcta": true
+        },
+        {
+          "texto": "No tiene asimetría definida",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cuando la media supera a la mediana, la cola larga está a la derecha: asimetría positiva."
+    },
+    {
+      "enunciado": "Un dato vale 80, la media del conjunto es 70 y la desviación estándar es 5. ¿Cuál es su puntuación estándar (z)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "0,5",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "z = (valor − media)/desviación estándar = (80 − 70)/5 = 2."
+    },
+    {
+      "enunciado": "En una tabla de datos agrupados, el intervalo [0,10) tiene marca de clase 5 y frecuencia 2, el [10,20) tiene marca 15 y frecuencia 3, y el [20,30) tiene marca 25 y frecuencia 5. ¿Cuál es la media?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": true
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "16,7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(5·2 + 15·3 + 25·5)/10 = (10 + 45 + 125)/10 = 180/10 = 18."
+    },
+    {
+      "enunciado": "Si los datos están medidos en metros, ¿cuáles son las unidades de la varianza?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Metros (m)",
+          "correcta": false
+        },
+        {
+          "texto": "No tiene unidades",
+          "correcta": false
+        },
+        {
+          "texto": "Metros por segundo (m/s)",
+          "correcta": false
+        },
+        {
+          "texto": "Metros al cuadrado (m²)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La varianza se calcula con desviaciones elevadas al cuadrado, por lo que sus unidades quedan al cuadrado: m²."
+    },
+    {
+      "enunciado": "En una distribución normal con media 100 y desviación estándar 10, aproximadamente el 68% de los datos se encuentra entre:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "90 y 110",
+          "correcta": true
+        },
+        {
+          "texto": "80 y 120",
+          "correcta": false
+        },
+        {
+          "texto": "68 y 132",
+          "correcta": false
+        },
+        {
+          "texto": "95 y 105",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La regla empírica indica que cerca del 68% de los datos cae dentro de una desviación estándar de la media: 100 ± 10."
+    }
+  ]
+}

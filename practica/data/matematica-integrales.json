@@ -1,0 +1,1105 @@
+{
+  "id": "matematica-integrales",
+  "materia": "matematica",
+  "tema": "Integrales indefinidas y definidas",
+  "bloque": "Cálculo (preuniversitario)",
+  "nivel": "avanzado",
+  "clase": null,
+  "repaso": {
+    "idea": "Integrar es el proceso inverso de derivar: ∫xⁿ dx = xⁿ⁺¹/(n + 1) + C (si n ≠ −1) y ∫(1/x) dx = ln|x| + C. En una integral definida se evalúa una primitiva F: ∫ₐᵇ f(x) dx = F(b) − F(a).",
+    "ejemplo": {
+      "enunciado": "Calcula ∫₁² (3x² + 2) dx.",
+      "pasos": [
+        "Primitiva: F(x) = x³ + 2x.",
+        "F(2) = 8 + 4 = 12.",
+        "F(1) = 1 + 2 = 3.",
+        "F(2) − F(1) = 12 − 3 = 9."
+      ],
+      "resultado": "9"
+    },
+    "ojo": "Olvidar la constante C en la integral indefinida, o derivar en lugar de integrar (∫x² dx no es 2x)."
+  },
+  "preguntas": [
+    {
+      "enunciado": "∫ x dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x + C",
+          "correcta": false
+        },
+        {
+          "texto": "x² + C",
+          "correcta": false
+        },
+        {
+          "texto": "2x + C",
+          "correcta": false
+        },
+        {
+          "texto": "x²/2 + C",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por la regla de la potencia, ∫xⁿ dx = xⁿ⁺¹/(n+1) + C; con n = 1 se obtiene x²/2 + C."
+    },
+    {
+      "enunciado": "∫ 5 dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5 + C",
+          "correcta": false
+        },
+        {
+          "texto": "5x² + C",
+          "correcta": false
+        },
+        {
+          "texto": "5x + C",
+          "correcta": true
+        },
+        {
+          "texto": "x⁵ + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La integral de una constante k es kx + C, por lo que ∫5 dx = 5x + C."
+    },
+    {
+      "enunciado": "∫ x² dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2x + C",
+          "correcta": false
+        },
+        {
+          "texto": "x³ + C",
+          "correcta": false
+        },
+        {
+          "texto": "x³/3 + C",
+          "correcta": true
+        },
+        {
+          "texto": "3x³ + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Regla de la potencia con n = 2: ∫x² dx = x³/3 + C."
+    },
+    {
+      "enunciado": "∫ 2x dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2 + C",
+          "correcta": false
+        },
+        {
+          "texto": "x² + C",
+          "correcta": true
+        },
+        {
+          "texto": "2x² + C",
+          "correcta": false
+        },
+        {
+          "texto": "x²/2 + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫2x dx = 2·(x²/2) + C = x² + C."
+    },
+    {
+      "enunciado": "∫ x³ dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3x² + C",
+          "correcta": false
+        },
+        {
+          "texto": "x⁴ + C",
+          "correcta": false
+        },
+        {
+          "texto": "x⁴/4 + C",
+          "correcta": true
+        },
+        {
+          "texto": "4x⁴ + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Regla de la potencia con n = 3: ∫x³ dx = x⁴/4 + C."
+    },
+    {
+      "enunciado": "∫ (1/x) dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−1/x² + C",
+          "correcta": false
+        },
+        {
+          "texto": "ln|x| + C",
+          "correcta": true
+        },
+        {
+          "texto": "1/(2x²) + C",
+          "correcta": false
+        },
+        {
+          "texto": "x·ln|x| − x + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El caso n = −1 de la regla de la potencia no aplica; la primitiva de 1/x es ln|x| + C."
+    },
+    {
+      "enunciado": "∫ eˣ dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x·eˣ + C",
+          "correcta": false
+        },
+        {
+          "texto": "eˣ + C",
+          "correcta": true
+        },
+        {
+          "texto": "eˣ/2 + C",
+          "correcta": false
+        },
+        {
+          "texto": "(1/2)e²ˣ + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La función exponencial eˣ es su propia derivada y su propia primitiva: ∫eˣ dx = eˣ + C."
+    },
+    {
+      "enunciado": "∫ cos x dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "sen x + C",
+          "correcta": true
+        },
+        {
+          "texto": "−sen x + C",
+          "correcta": false
+        },
+        {
+          "texto": "cos x + C",
+          "correcta": false
+        },
+        {
+          "texto": "−cos x + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como la derivada de sen x es cos x, se tiene ∫cos x dx = sen x + C."
+    },
+    {
+      "enunciado": "∫ sen x dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "cos x + C",
+          "correcta": false
+        },
+        {
+          "texto": "sen x + C",
+          "correcta": false
+        },
+        {
+          "texto": "−cos x + C",
+          "correcta": true
+        },
+        {
+          "texto": "−sen x + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La derivada de −cos x es sen x, por lo que ∫sen x dx = −cos x + C."
+    },
+    {
+      "enunciado": "∫ 3x² dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x³ + C",
+          "correcta": true
+        },
+        {
+          "texto": "3x³ + C",
+          "correcta": false
+        },
+        {
+          "texto": "x³/3 + C",
+          "correcta": false
+        },
+        {
+          "texto": "6x + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫3x² dx = 3·(x³/3) + C = x³ + C."
+    },
+    {
+      "enunciado": "∫ (x + 1) dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x² + x + C",
+          "correcta": false
+        },
+        {
+          "texto": "x²/2 + 1 + C",
+          "correcta": false
+        },
+        {
+          "texto": "1 + C",
+          "correcta": false
+        },
+        {
+          "texto": "x²/2 + x + C",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se integra término a término: ∫x dx + ∫1 dx = x²/2 + x + C."
+    },
+    {
+      "enunciado": "∫ √x dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/(2√x) + C",
+          "correcta": false
+        },
+        {
+          "texto": "x√x + C",
+          "correcta": false
+        },
+        {
+          "texto": "(3/2)x√x + C",
+          "correcta": false
+        },
+        {
+          "texto": "(2/3)x√x + C",
+          "correcta": true
+        }
+      ],
+      "explicacion": "√x = x elevado a 1/2; se suma 1 al exponente (queda 3/2) y se divide entre 3/2: (2/3)·x elevado a 3/2 = (2/3)x√x + C."
+    },
+    {
+      "enunciado": "∫ (1/x²) dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−1/x + C",
+          "correcta": true
+        },
+        {
+          "texto": "1/x + C",
+          "correcta": false
+        },
+        {
+          "texto": "−2/x³ + C",
+          "correcta": false
+        },
+        {
+          "texto": "ln|x²| + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se escribe 1/x² = x⁻²; su primitiva es x⁻¹/(−1) = −1/x + C."
+    },
+    {
+      "enunciado": "∫ sec²x dx =",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "sec x + C",
+          "correcta": false
+        },
+        {
+          "texto": "−cot x + C",
+          "correcta": false
+        },
+        {
+          "texto": "tan x + C",
+          "correcta": true
+        },
+        {
+          "texto": "sec x · tan x + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La derivada de tan x es sec²x, por lo que ∫sec²x dx = tan x + C."
+    },
+    {
+      "enunciado": "∫ (x² + 3x) dx =",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x³/3 + 3x + C",
+          "correcta": false
+        },
+        {
+          "texto": "x³/3 + 3x²/2 + C",
+          "correcta": true
+        },
+        {
+          "texto": "2x + 3 + C",
+          "correcta": false
+        },
+        {
+          "texto": "x³ + 3x² + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Integrando término a término: x³/3 + 3·(x²/2) = x³/3 + 3x²/2 + C."
+    },
+    {
+      "enunciado": "∫ (2x − 5) dx =",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x² − 5x + C",
+          "correcta": true
+        },
+        {
+          "texto": "2 + C",
+          "correcta": false
+        },
+        {
+          "texto": "x² − 5 + C",
+          "correcta": false
+        },
+        {
+          "texto": "2x² − 5x + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫2x dx − ∫5 dx = x² − 5x + C."
+    },
+    {
+      "enunciado": "Calcula ∫₀¹ x dx.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫₀¹ x dx = [x²/2]₀¹ = 1/2 − 0 = 1/2."
+    },
+    {
+      "enunciado": "Calcula ∫₀² x² dx.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8/3",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫₀² x² dx = [x³/3]₀² = 8/3 − 0 = 8/3."
+    },
+    {
+      "enunciado": "∫ (6x² + 4x) dx =",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6x³ + 4x² + C",
+          "correcta": false
+        },
+        {
+          "texto": "12x + 4 + C",
+          "correcta": false
+        },
+        {
+          "texto": "2x³ + 4x² + C",
+          "correcta": false
+        },
+        {
+          "texto": "2x³ + 2x² + C",
+          "correcta": true
+        }
+      ],
+      "explicacion": "∫6x² dx = 2x³ y ∫4x dx = 2x²; la suma es 2x³ + 2x² + C."
+    },
+    {
+      "enunciado": "∫ e²ˣ dx =",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "e²ˣ + C",
+          "correcta": false
+        },
+        {
+          "texto": "2e²ˣ + C",
+          "correcta": false
+        },
+        {
+          "texto": "e²ˣ/(2x) + C",
+          "correcta": false
+        },
+        {
+          "texto": "e²ˣ/2 + C",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por sustitución u = 2x se divide entre la derivada del exponente: ∫e²ˣ dx = e²ˣ/2 + C."
+    },
+    {
+      "enunciado": "∫ cos(3x) dx =",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "sen(3x) + C",
+          "correcta": false
+        },
+        {
+          "texto": "sen(3x)/3 + C",
+          "correcta": true
+        },
+        {
+          "texto": "3 sen(3x) + C",
+          "correcta": false
+        },
+        {
+          "texto": "−sen(3x)/3 + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫cos(ax) dx = sen(ax)/a + C; con a = 3 da sen(3x)/3 + C."
+    },
+    {
+      "enunciado": "Calcula ∫₁³ 2 dx.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫₁³ 2 dx = [2x]₁³ = 6 − 2 = 4."
+    },
+    {
+      "enunciado": "Calcula la integral definida de sen x desde x = 0 hasta x = π.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "−2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una primitiva es −cos x: (−cos π) − (−cos 0) = 1 + 1 = 2."
+    },
+    {
+      "enunciado": "∫ (x + 2)³ dx =",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(x+2)⁴ + C",
+          "correcta": false
+        },
+        {
+          "texto": "3(x+2)² + C",
+          "correcta": false
+        },
+        {
+          "texto": "(x+2)⁴/3 + C",
+          "correcta": false
+        },
+        {
+          "texto": "(x+2)⁴/4 + C",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por sustitución u = x+2: ∫u³ du = u⁴/4 = (x+2)⁴/4 + C."
+    },
+    {
+      "enunciado": "∫ 1/(x + 1) dx =",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−1/(x+1)² + C",
+          "correcta": false
+        },
+        {
+          "texto": "1/(x+1)² + C",
+          "correcta": false
+        },
+        {
+          "texto": "ln|x+1| + C",
+          "correcta": true
+        },
+        {
+          "texto": "ln|x| + 1 + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con u = x+1 se obtiene ∫du/u = ln|x+1| + C."
+    },
+    {
+      "enunciado": "Calcula ∫₀¹ eˣ dx.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "e",
+          "correcta": false
+        },
+        {
+          "texto": "e − 1",
+          "correcta": true
+        },
+        {
+          "texto": "1 − e",
+          "correcta": false
+        },
+        {
+          "texto": "e + 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫₀¹ eˣ dx = [eˣ]₀¹ = e¹ − e⁰ = e − 1."
+    },
+    {
+      "enunciado": "∫ (3x² + 2x + 1) dx =",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x³ + x² + x + C",
+          "correcta": true
+        },
+        {
+          "texto": "6x + 2 + C",
+          "correcta": false
+        },
+        {
+          "texto": "x³ + 2x² + x + C",
+          "correcta": false
+        },
+        {
+          "texto": "3x³ + x² + x + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Integrando término a término: x³ + x² + x + C."
+    },
+    {
+      "enunciado": "Calcula ∫₁² (1/x) dx.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "ln(1/2)",
+          "correcta": false
+        },
+        {
+          "texto": "ln 2",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫₁² dx/x = [ln x]₁² = ln 2 − ln 1 = ln 2."
+    },
+    {
+      "enunciado": "∫ sen(2x) dx =",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−cos(2x)/2 + C",
+          "correcta": true
+        },
+        {
+          "texto": "cos(2x)/2 + C",
+          "correcta": false
+        },
+        {
+          "texto": "−cos(2x) + C",
+          "correcta": false
+        },
+        {
+          "texto": "2 cos(2x) + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫sen(ax) dx = −cos(ax)/a + C; con a = 2 da −cos(2x)/2 + C."
+    },
+    {
+      "enunciado": "Calcula la integral definida de cos x desde x = 0 hasta x = π/2.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "π/2",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una primitiva es sen x: sen(π/2) − sen 0 = 1 − 0 = 1."
+    },
+    {
+      "enunciado": "∫ (4/x) dx =",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4 ln|x| + C",
+          "correcta": true
+        },
+        {
+          "texto": "4/x² + C",
+          "correcta": false
+        },
+        {
+          "texto": "ln|4x| + C",
+          "correcta": false
+        },
+        {
+          "texto": "−4/x² + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se extrae la constante: 4∫dx/x = 4 ln|x| + C."
+    },
+    {
+      "enunciado": "∫ (2x + 1)⁴ dx =",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(2x+1)⁵/5 + C",
+          "correcta": false
+        },
+        {
+          "texto": "(2x+1)⁵ + C",
+          "correcta": false
+        },
+        {
+          "texto": "4(2x+1)³ + C",
+          "correcta": false
+        },
+        {
+          "texto": "(2x+1)⁵/10 + C",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con u = 2x+1, du = 2dx: ∫u⁴ du/2 = u⁵/10 = (2x+1)⁵/10 + C."
+    },
+    {
+      "enunciado": "∫ x·√(x² + 1) dx =",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(2/3)√(x²+1)³ + C",
+          "correcta": false
+        },
+        {
+          "texto": "(1/2)√(x²+1)³ + C",
+          "correcta": false
+        },
+        {
+          "texto": "(1/3)√(x²+1)³ + C",
+          "correcta": true
+        },
+        {
+          "texto": "√(x²+1)³ + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con u = x² + 1, du = 2x dx: (1/2)∫√u du = (1/2)·(2/3)·√u³ = (1/3)√(x²+1)³ + C."
+    },
+    {
+      "enunciado": "∫ 2x/(x² + 1) dx =",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2 ln(x²+1) + C",
+          "correcta": false
+        },
+        {
+          "texto": "arctan x + C",
+          "correcta": false
+        },
+        {
+          "texto": "ln(x²+1) + C",
+          "correcta": true
+        },
+        {
+          "texto": "1/(x²+1) + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El numerador 2x es la derivada de x²+1, de modo que ∫du/u = ln(x²+1) + C."
+    },
+    {
+      "enunciado": "∫ x·eˣ dx =",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x eˣ − eˣ + C",
+          "correcta": true
+        },
+        {
+          "texto": "x eˣ + eˣ + C",
+          "correcta": false
+        },
+        {
+          "texto": "x² eˣ/2 + C",
+          "correcta": false
+        },
+        {
+          "texto": "eˣ + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Integración por partes con u = x, dv = eˣ dx: x eˣ − ∫eˣ dx = x eˣ − eˣ + C."
+    },
+    {
+      "enunciado": "∫ ln x dx =",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x ln x − x + C",
+          "correcta": true
+        },
+        {
+          "texto": "1/x + C",
+          "correcta": false
+        },
+        {
+          "texto": "x ln x + x + C",
+          "correcta": false
+        },
+        {
+          "texto": "(ln x)²/2 + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por partes con u = ln x, dv = dx: x ln x − ∫x·(1/x)dx = x ln x − x + C."
+    },
+    {
+      "enunciado": "∫ x·cos x dx =",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x sen x − cos x + C",
+          "correcta": false
+        },
+        {
+          "texto": "−x sen x + cos x + C",
+          "correcta": false
+        },
+        {
+          "texto": "x sen x + cos x + C",
+          "correcta": true
+        },
+        {
+          "texto": "(x²/2) sen x + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por partes con u = x, dv = cos x dx: x sen x − ∫sen x dx = x sen x + cos x + C."
+    },
+    {
+      "enunciado": "∫ sen²x dx =",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x/2 + sen(2x)/4 + C",
+          "correcta": false
+        },
+        {
+          "texto": "x/2 − sen(2x)/4 + C",
+          "correcta": true
+        },
+        {
+          "texto": "sen³x/3 + C",
+          "correcta": false
+        },
+        {
+          "texto": "−(1/3)cos³x + C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Usando la identidad sen²x = (1 − cos 2x)/2: ∫ = x/2 − sen(2x)/4 + C."
+    },
+    {
+      "enunciado": "El área bajo la curva y = x² entre x = 0 y x = 3 es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "27",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Área = ∫₀³ x² dx = [x³/3]₀³ = 27/3 = 9."
+    },
+    {
+      "enunciado": "El área de la región limitada por y = x y y = x² entre x = 0 y x = 1 es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        },
+        {
+          "texto": "5/6",
+          "correcta": false
+        },
+        {
+          "texto": "1/6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como x ≥ x² en [0,1]: ∫₀¹(x − x²)dx = 1/2 − 1/3 = 1/6."
+    },
+    {
+      "enunciado": "El área de la región encerrada entre y = 2x y y = x² es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8/3",
+          "correcta": false
+        },
+        {
+          "texto": "4/3",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las curvas se cortan en x = 0 y x = 2; ∫₀²(2x − x²)dx = [x² − x³/3]₀² = 4 − 8/3 = 4/3."
+    },
+    {
+      "enunciado": "Calcula ∫₀² (x² + 1) dx.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "8/3",
+          "correcta": false
+        },
+        {
+          "texto": "10/3",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "14/3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "∫₀²(x²+1)dx = [x³/3 + x]₀² = 8/3 + 2 = 14/3."
+    },
+    {
+      "enunciado": "Calcula la integral definida de 1/x desde x = 1 hasta x = e.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "e",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "e − 1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una primitiva es ln x: ln e − ln 1 = 1 − 0 = 1."
+    },
+    {
+      "enunciado": "Calcula ∫₋₁¹ x³ dx.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x³ es una función impar sobre el intervalo simétrico [−1,1]: ∫₋₁¹ x³ dx = [x⁴/4]₋₁¹ = 1/4 − 1/4 = 0."
+    },
+    {
+      "enunciado": "El área bajo la curva y = 1/x² entre x = 1 y x = 2 es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "3/2",
+          "correcta": false
+        },
+        {
+          "texto": "ln 2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫₁² x⁻² dx = [−1/x]₁² = −1/2 + 1 = 1/2."
+    },
+    {
+      "enunciado": "El área total encerrada entre la curva y = sen x y el eje x en el intervalo [0, 2π] es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Cada arco de la curva encierra un área de 2; la integral de 0 a 2π da 0 porque el arco bajo el eje cancela al de arriba, pero el área total suma valores absolutos: 2 + 2 = 4."
+    },
+    {
+      "enunciado": "Calcula ∫₀¹ (3x² − 2x) dx.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "∫₀¹(3x² − 2x)dx = [x³ − x²]₀¹ = (1 − 1) − 0 = 0."
+    }
+  ]
+}

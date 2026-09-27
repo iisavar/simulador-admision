@@ -1,0 +1,1127 @@
+{
+  "id": "matematica-decimales",
+  "materia": "matematica",
+  "tema": "Números decimales",
+  "bloque": "Aritmética",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "Para sumar o restar decimales, alinea las comas (completa con ceros si hace falta). Para multiplicar, multiplica sin comas y el resultado lleva tantas cifras decimales como los dos factores juntos. Para dividir, corre la coma en ambos números hasta que el divisor sea entero.",
+    "ejemplo": {
+      "enunciado": "Calcula: 2,4 ÷ 0,08",
+      "pasos": [
+        "El divisor 0,08 tiene 2 cifras decimales: multiplica ambos números por 100.",
+        "2,4 × 100 = 240 y 0,08 × 100 = 8.",
+        "240 ÷ 8 = 30."
+      ],
+      "resultado": "30"
+    },
+    "ojo": "En 0,2 × 0,15 el resultado lleva 3 cifras decimales (1 + 2): 0,030 = 0,03, no 0,3."
+  },
+  "preguntas": [
+    {
+      "enunciado": "Calcula la suma: 0,5 + 0,3",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,08",
+          "correcta": false
+        },
+        {
+          "texto": "0,7",
+          "correcta": false
+        },
+        {
+          "texto": "0,53",
+          "correcta": false
+        },
+        {
+          "texto": "0,8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se suman las décimas: 5 + 3 = 8 décimas, es decir 0,8."
+    },
+    {
+      "enunciado": "Calcula la resta: 0,7 − 0,2",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,5",
+          "correcta": true
+        },
+        {
+          "texto": "0,05",
+          "correcta": false
+        },
+        {
+          "texto": "0,9",
+          "correcta": false
+        },
+        {
+          "texto": "0,4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "7 décimas menos 2 décimas son 5 décimas, es decir 0,5."
+    },
+    {
+      "enunciado": "¿Cómo se escribe en forma decimal la cantidad «tres décimas»?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,03",
+          "correcta": false
+        },
+        {
+          "texto": "0,3",
+          "correcta": true
+        },
+        {
+          "texto": "3,0",
+          "correcta": false
+        },
+        {
+          "texto": "0,003",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tres décimas se ubican en la primera posición después de la coma: 0,3."
+    },
+    {
+      "enunciado": "La fracción 1/2 expresada como número decimal es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,12",
+          "correcta": false
+        },
+        {
+          "texto": "1,2",
+          "correcta": false
+        },
+        {
+          "texto": "0,2",
+          "correcta": false
+        },
+        {
+          "texto": "0,5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Dividir 1 entre 2 da 0,5."
+    },
+    {
+      "enunciado": "El número decimal 0,25 escrito como fracción irreducible es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/4",
+          "correcta": true
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "2/5",
+          "correcta": false
+        },
+        {
+          "texto": "1/25",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,25 = 25/100 = 1/4 al simplificar entre 25."
+    },
+    {
+      "enunciado": "El decimal 0,5 expresado como porcentaje equivale a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5%",
+          "correcta": false
+        },
+        {
+          "texto": "0,5%",
+          "correcta": false
+        },
+        {
+          "texto": "50%",
+          "correcta": true
+        },
+        {
+          "texto": "500%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para pasar a porcentaje se multiplica por 100: 0,5 × 100 = 50%."
+    },
+    {
+      "enunciado": "Calcula el producto: 0,1 × 10",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,1",
+          "correcta": false
+        },
+        {
+          "texto": "0,01",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Multiplicar por 10 corre la coma un lugar a la derecha: 0,1 × 10 = 1."
+    },
+    {
+      "enunciado": "Calcula la suma: 2,5 + 1,5",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3,10",
+          "correcta": false
+        },
+        {
+          "texto": "4,10",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "2,5 + 1,5 = 4,0, es decir 4."
+    },
+    {
+      "enunciado": "Calcula la suma: 0,6 + 0,4",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "0,64",
+          "correcta": false
+        },
+        {
+          "texto": "0,1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "6 décimas más 4 décimas son 10 décimas, que equivalen a una unidad: 1,0."
+    },
+    {
+      "enunciado": "¿Cuál de estos números decimales es el mayor?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,5",
+          "correcta": true
+        },
+        {
+          "texto": "0,45",
+          "correcta": false
+        },
+        {
+          "texto": "0,05",
+          "correcta": false
+        },
+        {
+          "texto": "0,045",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Comparando las décimas, 0,5 tiene 5 décimas, más que 0,45 (4 décimas), 0,05 y 0,045."
+    },
+    {
+      "enunciado": "La fracción 3/10 expresada como número decimal es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,03",
+          "correcta": false
+        },
+        {
+          "texto": "3,10",
+          "correcta": false
+        },
+        {
+          "texto": "0,3",
+          "correcta": true
+        },
+        {
+          "texto": "0,13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una fracción con denominador 10 se escribe con un dígito decimal: 3/10 = 0,3."
+    },
+    {
+      "enunciado": "El porcentaje 25% expresado como número decimal es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,25",
+          "correcta": true
+        },
+        {
+          "texto": "0,025",
+          "correcta": false
+        },
+        {
+          "texto": "2,5",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para pasar de porcentaje a decimal se divide entre 100: 25 ÷ 100 = 0,25."
+    },
+    {
+      "enunciado": "El número decimal 0,75 escrito como fracción irreducible es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7/5",
+          "correcta": false
+        },
+        {
+          "texto": "3/4",
+          "correcta": true
+        },
+        {
+          "texto": "3/5",
+          "correcta": false
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,75 = 75/100 = 3/4 al simplificar entre 25."
+    },
+    {
+      "enunciado": "Calcula el producto: 0,2 × 3",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,23",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "0,06",
+          "correcta": false
+        },
+        {
+          "texto": "0,6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "0,2 × 3 = 0,6 (dos décimas tres veces son seis décimas)."
+    },
+    {
+      "enunciado": "La fracción 1/4 expresada como porcentaje equivale a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "14%",
+          "correcta": false
+        },
+        {
+          "texto": "4%",
+          "correcta": false
+        },
+        {
+          "texto": "25%",
+          "correcta": true
+        },
+        {
+          "texto": "40%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1/4 = 0,25 = 25%."
+    },
+    {
+      "enunciado": "Si tienes 0,50 de un dólar, ¿a cuántos centavos equivale (1 dólar = 100 centavos)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5 centavos",
+          "correcta": false
+        },
+        {
+          "texto": "50 centavos",
+          "correcta": true
+        },
+        {
+          "texto": "500 centavos",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 centavos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,50 dólares × 100 centavos = 50 centavos."
+    },
+    {
+      "enunciado": "El número decimal 0,125 escrito como fracción irreducible es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/8",
+          "correcta": true
+        },
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/5",
+          "correcta": false
+        },
+        {
+          "texto": "1/12",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,125 = 125/1000 = 1/8 al simplificar entre 125."
+    },
+    {
+      "enunciado": "La fracción 3/8 expresada como número decimal es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2,67",
+          "correcta": false
+        },
+        {
+          "texto": "0,38",
+          "correcta": false
+        },
+        {
+          "texto": "0,375",
+          "correcta": true
+        },
+        {
+          "texto": "0,038",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al dividir 3 entre 8 se obtiene 0,375."
+    },
+    {
+      "enunciado": "Una barra está dividida en 10 partes iguales y 7 de ellas están pintadas. ¿Qué número decimal representa la parte pintada?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,07",
+          "correcta": false
+        },
+        {
+          "texto": "0,3",
+          "correcta": false
+        },
+        {
+          "texto": "0,7",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 7 partes pintadas de 10, es decir 7/10 = 0,7."
+    },
+    {
+      "enunciado": "Calcula la suma: 0,45 + 0,55",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,90",
+          "correcta": false
+        },
+        {
+          "texto": "1,1",
+          "correcta": false
+        },
+        {
+          "texto": "0,100",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "0,45 + 0,55 = 1,00, es decir 1."
+    },
+    {
+      "enunciado": "Calcula la resta: 12,5 − 3,75",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8,75",
+          "correcta": true
+        },
+        {
+          "texto": "9,25",
+          "correcta": false
+        },
+        {
+          "texto": "8,25",
+          "correcta": false
+        },
+        {
+          "texto": "9,75",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Igualando decimales: 12,50 − 3,75 = 8,75."
+    },
+    {
+      "enunciado": "Calcula el producto: 0,6 × 0,5",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3,0",
+          "correcta": false
+        },
+        {
+          "texto": "1,1",
+          "correcta": false
+        },
+        {
+          "texto": "0,03",
+          "correcta": false
+        },
+        {
+          "texto": "0,3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "6 × 5 = 30 y el resultado lleva dos cifras decimales: 0,30 = 0,3."
+    },
+    {
+      "enunciado": "Un cuadrado está dividido en 4 partes iguales y 3 de ellas están pintadas. ¿Qué número decimal representa la región pintada?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,25",
+          "correcta": false
+        },
+        {
+          "texto": "0,34",
+          "correcta": false
+        },
+        {
+          "texto": "0,75",
+          "correcta": true
+        },
+        {
+          "texto": "3,4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Hay 3 partes pintadas de 4, es decir 3/4 = 0,75."
+    },
+    {
+      "enunciado": "Calcula la división: 1,2 ÷ 0,4",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,3",
+          "correcta": false
+        },
+        {
+          "texto": "4,8",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Multiplicando ambos por 10: 12 ÷ 4 = 3."
+    },
+    {
+      "enunciado": "La fracción 7/20 expresada como número decimal es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,27",
+          "correcta": false
+        },
+        {
+          "texto": "0,035",
+          "correcta": false
+        },
+        {
+          "texto": "0,72",
+          "correcta": false
+        },
+        {
+          "texto": "0,35",
+          "correcta": true
+        }
+      ],
+      "explicacion": "7/20 = 35/100 = 0,35 (también 7 ÷ 20 = 0,35)."
+    },
+    {
+      "enunciado": "La fracción 2/5 expresada como porcentaje equivale a:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "40%",
+          "correcta": true
+        },
+        {
+          "texto": "4%",
+          "correcta": false
+        },
+        {
+          "texto": "25%",
+          "correcta": false
+        },
+        {
+          "texto": "20%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2/5 = 0,4 = 40%."
+    },
+    {
+      "enunciado": "¿Cuánto es el 15% de 80?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "120",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "1,2",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        }
+      ],
+      "explicacion": "15% = 0,15 y 0,15 × 80 = 12."
+    },
+    {
+      "enunciado": "El número decimal periódico 0,333... corresponde a la fracción:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/30",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": true
+        },
+        {
+          "texto": "3/10",
+          "correcta": false
+        },
+        {
+          "texto": "33/100",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El decimal periódico 0,333... es exactamente igual a 1/3."
+    },
+    {
+      "enunciado": "El número decimal 0,625 escrito como fracción irreducible es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5/8",
+          "correcta": true
+        },
+        {
+          "texto": "5/6",
+          "correcta": false
+        },
+        {
+          "texto": "3/8",
+          "correcta": false
+        },
+        {
+          "texto": "6/25",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,625 = 625/1000 = 5/8 al simplificar entre 125."
+    },
+    {
+      "enunciado": "Redondea el número 3,14159 a dos cifras decimales (centésimas):",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3,15",
+          "correcta": false
+        },
+        {
+          "texto": "3,14",
+          "correcta": true
+        },
+        {
+          "texto": "3,142",
+          "correcta": false
+        },
+        {
+          "texto": "3,141",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La tercera cifra decimal es 1, menor que 5, por lo que la centésima no cambia: 3,14."
+    },
+    {
+      "enunciado": "El número decimal 1,5 expresado como porcentaje equivale a:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "15%",
+          "correcta": false
+        },
+        {
+          "texto": "150%",
+          "correcta": true
+        },
+        {
+          "texto": "1,5%",
+          "correcta": false
+        },
+        {
+          "texto": "0,15%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1,5 × 100 = 150%."
+    },
+    {
+      "enunciado": "Calcula la suma: 3,6 + 0,45",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4,1",
+          "correcta": false
+        },
+        {
+          "texto": "8,1",
+          "correcta": false
+        },
+        {
+          "texto": "4,5",
+          "correcta": false
+        },
+        {
+          "texto": "4,05",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Igualando decimales: 3,60 + 0,45 = 4,05."
+    },
+    {
+      "enunciado": "Calcula el producto: 0,2 × 0,15",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,35",
+          "correcta": false
+        },
+        {
+          "texto": "0,3",
+          "correcta": false
+        },
+        {
+          "texto": "0,03",
+          "correcta": true
+        },
+        {
+          "texto": "3,0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2 × 15 = 30 y el resultado lleva tres cifras decimales: 0,030 = 0,03."
+    },
+    {
+      "enunciado": "Calcula: 5/8 + 0,25",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,75",
+          "correcta": false
+        },
+        {
+          "texto": "0,875",
+          "correcta": true
+        },
+        {
+          "texto": "0,885",
+          "correcta": false
+        },
+        {
+          "texto": "0,9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "5/8 = 0,625 y 0,625 + 0,25 = 0,875."
+    },
+    {
+      "enunciado": "Calcula: 0,375 + 1/4",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,4",
+          "correcta": false
+        },
+        {
+          "texto": "0,625",
+          "correcta": true
+        },
+        {
+          "texto": "0,5",
+          "correcta": false
+        },
+        {
+          "texto": "0,65",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1/4 = 0,25 y 0,375 + 0,25 = 0,625."
+    },
+    {
+      "enunciado": "Calcula el cuadrado: (0,5)²",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,1",
+          "correcta": false
+        },
+        {
+          "texto": "1,0",
+          "correcta": false
+        },
+        {
+          "texto": "0,25",
+          "correcta": true
+        },
+        {
+          "texto": "2,5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(0,5)² = 0,5 × 0,5 = 0,25."
+    },
+    {
+      "enunciado": "Calcula la división: 2,4 ÷ 0,08",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "300",
+          "correcta": false
+        },
+        {
+          "texto": "30",
+          "correcta": true
+        },
+        {
+          "texto": "0,192",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando ambos por 100: 240 ÷ 8 = 30."
+    },
+    {
+      "enunciado": "El número decimal 0,1875 escrito como fracción irreducible es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/8",
+          "correcta": false
+        },
+        {
+          "texto": "3/8",
+          "correcta": false
+        },
+        {
+          "texto": "3/16",
+          "correcta": true
+        },
+        {
+          "texto": "5/16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,1875 = 1875/10000 = 3/16 (verificable: 3 ÷ 16 = 0,1875)."
+    },
+    {
+      "enunciado": "La fracción 5/16 expresada como número decimal es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,35",
+          "correcta": false
+        },
+        {
+          "texto": "0,3125",
+          "correcta": true
+        },
+        {
+          "texto": "0,16",
+          "correcta": false
+        },
+        {
+          "texto": "0,53",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al dividir 5 entre 16 se obtiene 0,3125."
+    },
+    {
+      "enunciado": "El número decimal 0,045 expresado como porcentaje equivale a:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4,5%",
+          "correcta": true
+        },
+        {
+          "texto": "0,45%",
+          "correcta": false
+        },
+        {
+          "texto": "45%",
+          "correcta": false
+        },
+        {
+          "texto": "0,045%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,045 × 100 = 4,5%."
+    },
+    {
+      "enunciado": "El número decimal periódico 0,666... corresponde a la fracción:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6/10",
+          "correcta": false
+        },
+        {
+          "texto": "2/3",
+          "correcta": true
+        },
+        {
+          "texto": "2/30",
+          "correcta": false
+        },
+        {
+          "texto": "66/100",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El decimal periódico 0,666... es exactamente igual a 2/3."
+    },
+    {
+      "enunciado": "El porcentaje 12,5% expresado como fracción irreducible es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/12",
+          "correcta": false
+        },
+        {
+          "texto": "1/8",
+          "correcta": true
+        },
+        {
+          "texto": "12/100",
+          "correcta": false
+        }
+      ],
+      "explicacion": "12,5% = 0,125 = 1/8."
+    },
+    {
+      "enunciado": "Calcula: 3/4 − 0,35",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,65",
+          "correcta": false
+        },
+        {
+          "texto": "0,45",
+          "correcta": false
+        },
+        {
+          "texto": "0,5",
+          "correcta": false
+        },
+        {
+          "texto": "0,4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "3/4 = 0,75 y 0,75 − 0,35 = 0,40 = 0,4."
+    },
+    {
+      "enunciado": "Calcula el producto: 0,025 × 200",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,5",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "50",
+          "correcta": false
+        },
+        {
+          "texto": "0,05",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,025 × 200 = 25 × 0,2 = 5."
+    },
+    {
+      "enunciado": "Calcula respetando el orden de operaciones: (0,3 + 0,7) × 0,5",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,0",
+          "correcta": false
+        },
+        {
+          "texto": "0,65",
+          "correcta": false
+        },
+        {
+          "texto": "0,5",
+          "correcta": true
+        },
+        {
+          "texto": "0,05",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Primero el paréntesis: 0,3 + 0,7 = 1,0; luego 1,0 × 0,5 = 0,5."
+    },
+    {
+      "enunciado": "Calcula: 1/8 + 1/4 + 0,125",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,5",
+          "correcta": true
+        },
+        {
+          "texto": "0,625",
+          "correcta": false
+        },
+        {
+          "texto": "0,375",
+          "correcta": false
+        },
+        {
+          "texto": "0,25",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1/8 = 0,125 y 1/4 = 0,25; entonces 0,125 + 0,25 + 0,125 = 0,5."
+    },
+    {
+      "enunciado": "Calcula la división: 0,144 ÷ 0,12",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,2",
+          "correcta": true
+        },
+        {
+          "texto": "0,12",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": false
+        },
+        {
+          "texto": "0,012",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Multiplicando ambos por 1000: 144 ÷ 120 = 1,2."
+    },
+    {
+      "enunciado": "Un artículo de 360 dólares tiene un recargo del 2,5%. ¿De cuántos dólares es ese recargo?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "0,9",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "90",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2,5% = 0,025 y 0,025 × 360 = 9 dólares."
+    }
+  ]
+}

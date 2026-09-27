@@ -1,0 +1,1081 @@
+{
+  "id": "matematica-notacion",
+  "materia": "matematica",
+  "tema": "Notación científica y cifras significativas",
+  "bloque": "Potencias y raíces",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "Un número en notación científica se escribe como a × 10ⁿ, donde el coeficiente a está entre 1 y 10 (1 ≤ a < 10). Si el número es grande, n es positivo; si es menor que 1, n es negativo.",
+    "ejemplo": {
+      "enunciado": "Escribe 0,00012 en notación científica.",
+      "pasos": [
+        "Mueve la coma hasta dejar una sola cifra distinta de cero a su izquierda: 0,00012 → 1,2.",
+        "Cuenta los lugares que se movió la coma: 4 hacia la derecha.",
+        "Como el número original es menor que 1, el exponente es negativo: −4."
+      ],
+      "resultado": "1,2 × 10⁻⁴"
+    },
+    "ojo": "12 × 10⁻⁵ vale lo mismo que 1,2 × 10⁻⁴, pero NO es notación científica: el coeficiente debe estar entre 1 y 10. Al multiplicar, los exponentes se suman; al dividir, se restan."
+  },
+  "preguntas": [
+    {
+      "enunciado": "Escribe el número 5000 en notación científica.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5 × 10⁴",
+          "correcta": false
+        },
+        {
+          "texto": "5 × 10³",
+          "correcta": true
+        },
+        {
+          "texto": "50 × 10²",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 × 10⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "5000 = 5 × 1000 = 5 × 10³; el coeficiente debe estar entre 1 y 10."
+    },
+    {
+      "enunciado": "Escribe 0,0003 en notación científica.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3 × 10⁻⁴",
+          "correcta": true
+        },
+        {
+          "texto": "3 × 10⁴",
+          "correcta": false
+        },
+        {
+          "texto": "3 × 10⁻³",
+          "correcta": false
+        },
+        {
+          "texto": "0,3 × 10⁻³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para 0,0003 la coma se desplaza 4 lugares a la derecha, por eso el exponente es −4: 3 × 10⁻⁴; 0,3 × 10⁻³ vale lo mismo, pero su coeficiente no está entre 1 y 10."
+    },
+    {
+      "enunciado": "¿Cuál es la forma decimal (notación normal) de 2,5 × 10³?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2500",
+          "correcta": true
+        },
+        {
+          "texto": "250",
+          "correcta": false
+        },
+        {
+          "texto": "25 000",
+          "correcta": false
+        },
+        {
+          "texto": "0,0025",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2,5 × 10³ = 2,5 × 1000 = 2500."
+    },
+    {
+      "enunciado": "¿Cuál es la forma decimal de 7 × 10⁻²?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "700",
+          "correcta": false
+        },
+        {
+          "texto": "0,07",
+          "correcta": true
+        },
+        {
+          "texto": "0,7",
+          "correcta": false
+        },
+        {
+          "texto": "0,007",
+          "correcta": false
+        }
+      ],
+      "explicacion": "7 × 10⁻² = 7 ÷ 100 = 0,07."
+    },
+    {
+      "enunciado": "¿Cuál número está correctamente escrito en notación científica (coeficiente entre 1 y 10)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "12 × 10⁴",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 × 10⁶",
+          "correcta": false
+        },
+        {
+          "texto": "45 × 10⁻²",
+          "correcta": false
+        },
+        {
+          "texto": "3,4 × 10⁵",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Solo 3,4 × 10⁵ tiene un coeficiente mayor o igual a 1 y menor que 10."
+    },
+    {
+      "enunciado": "Escribe 0,00012 en notación científica.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1,2 × 10⁻³",
+          "correcta": false
+        },
+        {
+          "texto": "12 × 10⁻⁵",
+          "correcta": false
+        },
+        {
+          "texto": "1,2 × 10⁴",
+          "correcta": false
+        },
+        {
+          "texto": "1,2 × 10⁻⁴",
+          "correcta": true
+        }
+      ],
+      "explicacion": "0,00012 = 1,2 × 10⁻⁴, pues la coma se desplaza 4 lugares; 12 × 10⁻⁵ vale lo mismo, pero 12 no está entre 1 y 10."
+    },
+    {
+      "enunciado": "Convierte 4,05 × 10² a notación decimal.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "40,5",
+          "correcta": false
+        },
+        {
+          "texto": "405",
+          "correcta": true
+        },
+        {
+          "texto": "4050",
+          "correcta": false
+        },
+        {
+          "texto": "0,0405",
+          "correcta": false
+        }
+      ],
+      "explicacion": "4,05 × 10² = 4,05 × 100 = 405."
+    },
+    {
+      "enunciado": "¿Cómo se escribe un millón (1 000 000) en notación científica?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1 × 10⁶",
+          "correcta": true
+        },
+        {
+          "texto": "1 × 10⁵",
+          "correcta": false
+        },
+        {
+          "texto": "10 × 10⁶",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10⁷",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1 000 000 tiene 6 ceros, por lo que equivale a 1 × 10⁶."
+    },
+    {
+      "enunciado": "¿A qué valor equivale 8,0 × 10⁰?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "80",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": true
+        },
+        {
+          "texto": "0,8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 10⁰ = 1, se tiene 8,0 × 10⁰ = 8,0 × 1 = 8."
+    },
+    {
+      "enunciado": "Escribe 340 en notación científica.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "34 × 10¹",
+          "correcta": false
+        },
+        {
+          "texto": "3,4 × 10³",
+          "correcta": false
+        },
+        {
+          "texto": "0,34 × 10³",
+          "correcta": false
+        },
+        {
+          "texto": "3,4 × 10²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "340 = 3,4 × 100 = 3,4 × 10²; 34 × 10¹ vale lo mismo, pero 34 no está entre 1 y 10."
+    },
+    {
+      "enunciado": "¿Cuál es la forma decimal de 9 × 10⁻¹?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,9",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "0,09",
+          "correcta": false
+        },
+        {
+          "texto": "90",
+          "correcta": false
+        }
+      ],
+      "explicacion": "9 × 10⁻¹ = 9 ÷ 10 = 0,9."
+    },
+    {
+      "enunciado": "¿Cuántas cifras significativas tiene el número 3,14?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los dígitos 3, 1 y 4 son significativos: en total 3 cifras significativas."
+    },
+    {
+      "enunciado": "¿Cuántas cifras significativas tiene 0,0025?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los ceros a la izquierda no cuentan; solo 2 y 5 son significativos."
+    },
+    {
+      "enunciado": "Al escribir 7800 como 7,8 × 10ⁿ, ¿cuál es el valor de n?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "7800 = 7,8 × 1000 = 7,8 × 10³, por lo que n = 3."
+    },
+    {
+      "enunciado": "Escribe 12 en notación científica.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "12 × 10⁰",
+          "correcta": false
+        },
+        {
+          "texto": "1,2 × 10²",
+          "correcta": false
+        },
+        {
+          "texto": "1,2 × 10¹",
+          "correcta": true
+        },
+        {
+          "texto": "0,12 × 10²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "12 = 1,2 × 10 = 1,2 × 10¹; 12 × 10⁰ vale 12, pero el coeficiente 12 no está entre 1 y 10."
+    },
+    {
+      "enunciado": "Calcula (2 × 10³) × (3 × 10⁴).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6 × 10⁶",
+          "correcta": false
+        },
+        {
+          "texto": "5 × 10⁷",
+          "correcta": false
+        },
+        {
+          "texto": "6 × 10¹²",
+          "correcta": false
+        },
+        {
+          "texto": "6 × 10⁷",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se multiplican los coeficientes (2 × 3 = 6) y se suman los exponentes (3 + 4 = 7): 6 × 10⁷."
+    },
+    {
+      "enunciado": "Calcula (8 × 10⁶) ÷ (2 × 10²).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4 × 10⁴",
+          "correcta": true
+        },
+        {
+          "texto": "4 × 10³",
+          "correcta": false
+        },
+        {
+          "texto": "6 × 10⁴",
+          "correcta": false
+        },
+        {
+          "texto": "4 × 10⁸",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se dividen los coeficientes (8 ÷ 2 = 4) y se restan los exponentes (6 − 2 = 4): 4 × 10⁴."
+    },
+    {
+      "enunciado": "Calcula 3 × 10⁴ + 2 × 10⁴.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5 × 10⁸",
+          "correcta": false
+        },
+        {
+          "texto": "5 × 10⁴",
+          "correcta": true
+        },
+        {
+          "texto": "6 × 10⁴",
+          "correcta": false
+        },
+        {
+          "texto": "5 × 10¹⁶",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al tener el mismo exponente, se suman los coeficientes: (3 + 2) × 10⁴ = 5 × 10⁴."
+    },
+    {
+      "enunciado": "Expresa (5 × 10⁻³) × (4 × 10⁶) en notación científica correcta.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "20 × 10³",
+          "correcta": false
+        },
+        {
+          "texto": "2 × 10³",
+          "correcta": false
+        },
+        {
+          "texto": "2 × 10⁴",
+          "correcta": true
+        },
+        {
+          "texto": "9 × 10³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "5 × 4 = 20 y −3 + 6 = 3 dan 20 × 10³, que normalizado es 2 × 10⁴."
+    },
+    {
+      "enunciado": "¿Cuántas cifras significativas tiene 1200,0?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como el número lleva cifras después de la coma decimal, los ceros finales sí cuentan: 1, 2, 0, 0 y 0 son 5 cifras significativas."
+    },
+    {
+      "enunciado": "¿Cuántas cifras significativas tiene 0,003040?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los ceros iniciales no cuentan; 3, 0, 4 y el 0 final sí: 4 cifras significativas."
+    },
+    {
+      "enunciado": "Redondea 0,0047829 a 3 cifras significativas.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,00478",
+          "correcta": true
+        },
+        {
+          "texto": "0,00479",
+          "correcta": false
+        },
+        {
+          "texto": "0,0048",
+          "correcta": false
+        },
+        {
+          "texto": "0,004782",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las tres primeras cifras significativas son 4, 7, 8; el siguiente dígito (2) no redondea hacia arriba: 0,00478."
+    },
+    {
+      "enunciado": "Expresa (6 × 10⁵) + (4 × 10⁴) en notación científica.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1,0 × 10⁵",
+          "correcta": false
+        },
+        {
+          "texto": "6,4 × 10⁵",
+          "correcta": true
+        },
+        {
+          "texto": "6,4 × 10⁴",
+          "correcta": false
+        },
+        {
+          "texto": "10 × 10⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "600 000 + 40 000 = 640 000 = 6,4 × 10⁵."
+    },
+    {
+      "enunciado": "Calcula (3 × 10²)².",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6 × 10⁴",
+          "correcta": false
+        },
+        {
+          "texto": "9 × 10⁴",
+          "correcta": true
+        },
+        {
+          "texto": "9 × 10²",
+          "correcta": false
+        },
+        {
+          "texto": "3 × 10⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se eleva al cuadrado el coeficiente (3² = 9) y se duplica el exponente ((10²)² = 10⁴): 9 × 10⁴."
+    },
+    {
+      "enunciado": "¿Cuál es el orden de magnitud de 2,3 × 10⁵?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10⁴",
+          "correcta": false
+        },
+        {
+          "texto": "10⁶",
+          "correcta": false
+        },
+        {
+          "texto": "10⁵",
+          "correcta": true
+        },
+        {
+          "texto": "2,3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El orden de magnitud es la potencia de 10 del número escrito en notación científica: 10⁵."
+    },
+    {
+      "enunciado": "Escribe 45 000 en notación científica.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "45 × 10³",
+          "correcta": false
+        },
+        {
+          "texto": "4,5 × 10⁵",
+          "correcta": false
+        },
+        {
+          "texto": "0,45 × 10⁵",
+          "correcta": false
+        },
+        {
+          "texto": "4,5 × 10⁴",
+          "correcta": true
+        }
+      ],
+      "explicacion": "45 000 = 4,5 × 10 000 = 4,5 × 10⁴; 45 × 10³ vale lo mismo, pero 45 no está entre 1 y 10."
+    },
+    {
+      "enunciado": "Calcula (9 × 10⁸) ÷ (3 × 10⁻²).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3 × 10¹⁰",
+          "correcta": true
+        },
+        {
+          "texto": "3 × 10⁶",
+          "correcta": false
+        },
+        {
+          "texto": "6 × 10¹⁰",
+          "correcta": false
+        },
+        {
+          "texto": "3 × 10⁻⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "9 ÷ 3 = 3 y 8 − (−2) = 10: 3 × 10¹⁰."
+    },
+    {
+      "enunciado": "¿Cuántas cifras significativas tiene 5,060 × 10³?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el coeficiente 5,060 son significativos 5, 0, 6 y 0: 4 cifras."
+    },
+    {
+      "enunciado": "Calcula (1,5 × 10⁻⁴) × (2 × 10⁻³).",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3 × 10⁻¹²",
+          "correcta": false
+        },
+        {
+          "texto": "3 × 10⁻⁷",
+          "correcta": true
+        },
+        {
+          "texto": "3 × 10⁻¹",
+          "correcta": false
+        },
+        {
+          "texto": "3,5 × 10⁻⁷",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1,5 × 2 = 3 y −4 + (−3) = −7: 3 × 10⁻⁷."
+    },
+    {
+      "enunciado": "Redondea 78 654 a 2 cifras significativas.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "78 000",
+          "correcta": false
+        },
+        {
+          "texto": "80 000",
+          "correcta": false
+        },
+        {
+          "texto": "79",
+          "correcta": false
+        },
+        {
+          "texto": "79 000",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Las dos primeras cifras son 7 y 8; el siguiente dígito (6) redondea hacia arriba: 79 000."
+    },
+    {
+      "enunciado": "La luz viaja a unos 3 × 10⁸ m/s. ¿Cuál es esa rapidez en km/s?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3 × 10¹¹ km/s",
+          "correcta": false
+        },
+        {
+          "texto": "3 × 10⁶ km/s",
+          "correcta": false
+        },
+        {
+          "texto": "3 × 10⁵ km/s",
+          "correcta": true
+        },
+        {
+          "texto": "3 × 10⁸ km/s",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1 km = 1000 m, así que se divide entre 10³: 3 × 10⁸ ÷ 10³ = 3 × 10⁵ km/s."
+    },
+    {
+      "enunciado": "Expresa en notación científica: (4 × 10³) × (5 × 10⁻⁷) ÷ (2 × 10⁻²).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1 × 10⁻²",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10⁻³",
+          "correcta": false
+        },
+        {
+          "texto": "5 × 10⁻¹",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10⁻¹",
+          "correcta": true
+        }
+      ],
+      "explicacion": "4 × 5 ÷ 2 = 10 y 3 + (−7) − (−2) = −2, da 10 × 10⁻² = 1 × 10⁻¹."
+    },
+    {
+      "enunciado": "Una hoja de papel mide 0,001 cm de espesor. Si se apilan 5 × 10⁵ hojas, ¿qué altura alcanza la pila en cm?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "50 cm",
+          "correcta": false
+        },
+        {
+          "texto": "5000 cm",
+          "correcta": false
+        },
+        {
+          "texto": "5 cm",
+          "correcta": false
+        },
+        {
+          "texto": "500 cm",
+          "correcta": true
+        }
+      ],
+      "explicacion": "0,001 cm = 1 × 10⁻³ cm; (1 × 10⁻³)(5 × 10⁵) = 5 × 10² = 500 cm."
+    },
+    {
+      "enunciado": "Calcula (2,5 × 10⁴) + (3,0 × 10³) y exprésalo en notación científica.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5,5 × 10⁴",
+          "correcta": false
+        },
+        {
+          "texto": "2,8 × 10⁷",
+          "correcta": false
+        },
+        {
+          "texto": "2,8 × 10⁴",
+          "correcta": true
+        },
+        {
+          "texto": "5,5 × 10⁷",
+          "correcta": false
+        }
+      ],
+      "explicacion": "25 000 + 3000 = 28 000 = 2,8 × 10⁴."
+    },
+    {
+      "enunciado": "La masa del protón es 1,67 × 10⁻²⁷ kg y la del electrón 9,11 × 10⁻³¹ kg. ¿Cuántas veces más masivo es el protón, aproximadamente?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Unas 18 veces",
+          "correcta": false
+        },
+        {
+          "texto": "Unas 1800 veces",
+          "correcta": true
+        },
+        {
+          "texto": "Unas 180 veces",
+          "correcta": false
+        },
+        {
+          "texto": "Unas 18 000 veces",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1,67 × 10⁻²⁷ ÷ 9,11 × 10⁻³¹ ≈ 0,183 × 10⁴ ≈ 1,8 × 10³, es decir cerca de 1800 veces."
+    },
+    {
+      "enunciado": "Al multiplicar 4,56 × 1,4, ¿cómo se reporta el producto con las cifras significativas correctas?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6,38",
+          "correcta": false
+        },
+        {
+          "texto": "6,4",
+          "correcta": true
+        },
+        {
+          "texto": "6,384",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El factor con menos cifras significativas (1,4) tiene 2, así que 6,384 se redondea a 6,4."
+    },
+    {
+      "enunciado": "Suma 12,11 + 0,3 + 1,215 y exprésala con las cifras decimales correctas.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "13,625",
+          "correcta": false
+        },
+        {
+          "texto": "14",
+          "correcta": false
+        },
+        {
+          "texto": "13,6",
+          "correcta": true
+        },
+        {
+          "texto": "13,63",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El sumando con menos decimales (0,3) tiene 1; la suma 13,625 se redondea a 13,6."
+    },
+    {
+      "enunciado": "El número de Avogadro es 6,022 × 10²³ (átomos en 1 mol). ¿Cuántos átomos hay en 0,5 mol de un elemento?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,2044 × 10²⁴",
+          "correcta": false
+        },
+        {
+          "texto": "3,011 × 10²³",
+          "correcta": true
+        },
+        {
+          "texto": "3,011 × 10²²",
+          "correcta": false
+        },
+        {
+          "texto": "6,022 × 10²²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,5 × 6,022 × 10²³ = 3,011 × 10²³ átomos."
+    },
+    {
+      "enunciado": "¿Cuál es el orden de magnitud del cociente (6 × 10⁸) ÷ (2 × 10⁻³)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "10¹¹",
+          "correcta": true
+        },
+        {
+          "texto": "10⁵",
+          "correcta": false
+        },
+        {
+          "texto": "10¹²",
+          "correcta": false
+        },
+        {
+          "texto": "10⁻¹¹",
+          "correcta": false
+        }
+      ],
+      "explicacion": "6 ÷ 2 = 3 y 8 − (−3) = 11, da 3 × 10¹¹, cuyo orden de magnitud es 10¹¹."
+    },
+    {
+      "enunciado": "Calcula (1,2 × 10⁵)³.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,728 × 10¹⁵",
+          "correcta": true
+        },
+        {
+          "texto": "3,6 × 10¹⁵",
+          "correcta": false
+        },
+        {
+          "texto": "1,728 × 10⁸",
+          "correcta": false
+        },
+        {
+          "texto": "1,2 × 10¹⁵",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1,2³ = 1,728 y (10⁵)³ = 10¹⁵: 1,728 × 10¹⁵."
+    },
+    {
+      "enunciado": "Calcula √(9 × 10¹⁶).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "9 × 10⁸",
+          "correcta": false
+        },
+        {
+          "texto": "3 × 10⁴",
+          "correcta": false
+        },
+        {
+          "texto": "3 × 10⁸",
+          "correcta": true
+        },
+        {
+          "texto": "4,5 × 10⁸",
+          "correcta": false
+        }
+      ],
+      "explicacion": "√9 = 3 y √(10¹⁶) = 10⁸: 3 × 10⁸."
+    },
+    {
+      "enunciado": "Calcula √(1,6 × 10⁻⁷).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,3 × 10⁻³",
+          "correcta": false
+        },
+        {
+          "texto": "4 × 10⁻³",
+          "correcta": false
+        },
+        {
+          "texto": "8 × 10⁻⁴",
+          "correcta": false
+        },
+        {
+          "texto": "4 × 10⁻⁴",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Se reescribe como 16 × 10⁻⁸; √16 = 4 y √(10⁻⁸) = 10⁻⁴: 4 × 10⁻⁴."
+    },
+    {
+      "enunciado": "Un procesador realiza 2 × 10⁹ operaciones por segundo. ¿Cuántas hace en 5 × 10⁻³ segundos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1 × 10⁶",
+          "correcta": false
+        },
+        {
+          "texto": "4 × 10⁶",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10¹²",
+          "correcta": false
+        },
+        {
+          "texto": "1 × 10⁷",
+          "correcta": true
+        }
+      ],
+      "explicacion": "(2 × 10⁹)(5 × 10⁻³) = 10 × 10⁶ = 1 × 10⁷ operaciones."
+    },
+    {
+      "enunciado": "El diámetro de un átomo de hidrógeno es 1,06 × 10⁻¹⁰ m. Exprésalo en nanómetros (1 nm = 10⁻⁹ m).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,106 nm",
+          "correcta": true
+        },
+        {
+          "texto": "1,06 nm",
+          "correcta": false
+        },
+        {
+          "texto": "10,6 nm",
+          "correcta": false
+        },
+        {
+          "texto": "0,0106 nm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1,06 × 10⁻¹⁰ m ÷ 10⁻⁹ m/nm = 1,06 × 10⁻¹ = 0,106 nm."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes números tiene exactamente 4 cifras significativas?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "45,00",
+          "correcta": true
+        },
+        {
+          "texto": "0,00450",
+          "correcta": false
+        },
+        {
+          "texto": "4,50 × 10³",
+          "correcta": false
+        },
+        {
+          "texto": "0,045",
+          "correcta": false
+        }
+      ],
+      "explicacion": "45,00 tiene los dígitos 4, 5, 0 y 0 como significativos; los demás tienen menos de 4."
+    },
+    {
+      "enunciado": "La distancia de la Tierra al Sol es 1,496 × 10¹¹ m y la luz viaja a 3,0 × 10⁸ m/s. ¿Cuánto tarda la luz del Sol en llegar a la Tierra, aproximadamente?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Unos 5,0 × 10³ s",
+          "correcta": false
+        },
+        {
+          "texto": "Unos 5,0 × 10² s",
+          "correcta": true
+        },
+        {
+          "texto": "Unos 4,5 × 10³ s",
+          "correcta": false
+        },
+        {
+          "texto": "Unos 50 s",
+          "correcta": false
+        }
+      ],
+      "explicacion": "t = 1,496 × 10¹¹ ÷ 3,0 × 10⁸ ≈ 0,50 × 10³ ≈ 5,0 × 10² s (unos 500 s)."
+    }
+  ]
+}

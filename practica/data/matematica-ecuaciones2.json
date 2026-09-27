@@ -1,0 +1,1129 @@
+{
+  "id": "matematica-ecuaciones2",
+  "materia": "matematica",
+  "tema": "Ecuaciones de segundo grado",
+  "bloque": "Ecuaciones y funciones",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Una ecuación de segundo grado tiene la forma ax² + bx + c = 0 (con a ≠ 0) y puede tener dos, una o ninguna solución real. Se resuelve factorizando o con la fórmula general x = (−b ± √(b² − 4ac)) / (2a); el discriminante Δ = b² − 4ac te dice cuántas soluciones hay.",
+    "ejemplo": {
+      "enunciado": "Resuelve x² − 2x − 8 = 0.",
+      "pasos": [
+        "Busca dos números que multiplicados den −8 y sumados den −2: son −4 y 2.",
+        "Factoriza: (x − 4)(x + 2) = 0.",
+        "Iguala cada factor a cero: x − 4 = 0 o x + 2 = 0.",
+        "Despeja: x = 4 o x = −2.",
+        "Comprueba con x = 4: 16 − 8 − 8 = 0. ¡Cumple!"
+      ],
+      "resultado": "x = 4 y x = −2"
+    },
+    "ojo": "Si x² = 9, no olvides la solución negativa: x = ±3. Y en la fórmula general el denominador es 2a (divide a todo el numerador, no solo a la raíz)."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuál de las siguientes es una ecuación de segundo grado escrita en forma general?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x² + 5x − 6 = 0",
+          "correcta": true
+        },
+        {
+          "texto": "3x − 7 = 0",
+          "correcta": false
+        },
+        {
+          "texto": "x³ − 2x = 0",
+          "correcta": false
+        },
+        {
+          "texto": "5x + 2 = 9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una ecuación de segundo grado tiene la forma ax² + bx + c = 0 con a ≠ 0; solo x² + 5x − 6 = 0 cumple esa estructura."
+    },
+    {
+      "enunciado": "En la ecuación 2x² + 3x − 5 = 0, ¿cuál es el valor del coeficiente a?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−5",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En ax² + bx + c = 0 el coeficiente a acompaña a x²; aquí a = 2."
+    },
+    {
+      "enunciado": "Resuelve la ecuación x² = 9.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x = 3 únicamente",
+          "correcta": false
+        },
+        {
+          "texto": "x = ±3",
+          "correcta": true
+        },
+        {
+          "texto": "x = ±81",
+          "correcta": false
+        },
+        {
+          "texto": "x = 4,5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si x² = 9, entonces x = ±√9 = ±3, ya que tanto 3 como −3 al cuadrado dan 9."
+    },
+    {
+      "enunciado": "Resuelve x² − 16 = 0.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x = ±8",
+          "correcta": false
+        },
+        {
+          "texto": "x = 16",
+          "correcta": false
+        },
+        {
+          "texto": "x = ±4",
+          "correcta": true
+        },
+        {
+          "texto": "x = 8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x² = 16 implica x = ±√16 = ±4."
+    },
+    {
+      "enunciado": "Las soluciones de la ecuación x(x − 4) = 0 son:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x = 4 únicamente",
+          "correcta": false
+        },
+        {
+          "texto": "x = 0 y x = 4",
+          "correcta": true
+        },
+        {
+          "texto": "x = 0 y x = −4",
+          "correcta": false
+        },
+        {
+          "texto": "x = −4 únicamente",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la propiedad del producto nulo, cada factor se iguala a cero: x = 0 o x − 4 = 0, es decir x = 0 y x = 4."
+    },
+    {
+      "enunciado": "Las soluciones de (x − 3)(x + 6) = 0 son:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x = 3 y x = −6",
+          "correcta": true
+        },
+        {
+          "texto": "x = −3 y x = 6",
+          "correcta": false
+        },
+        {
+          "texto": "x = 3 y x = 6",
+          "correcta": false
+        },
+        {
+          "texto": "x = −3 y x = −6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada factor igualado a cero: x − 3 = 0 da x = 3, y x + 6 = 0 da x = −6."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula general para resolver ax² + bx + c = 0?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x = (−b ± √(b² + 4ac)) / (2a)",
+          "correcta": false
+        },
+        {
+          "texto": "x = (b ± √(b² − 4ac)) / (2a)",
+          "correcta": false
+        },
+        {
+          "texto": "x = (−b ± √(b² − 4ac)) / (2a)",
+          "correcta": true
+        },
+        {
+          "texto": "x = (−b ± √(b² − 4ac)) / a",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La fórmula general es x = (−b ± √(b² − 4ac)) / (2a), válida para toda ecuación cuadrática con a ≠ 0."
+    },
+    {
+      "enunciado": "El discriminante de ax² + bx + c = 0 se calcula como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "b² + 4ac",
+          "correcta": false
+        },
+        {
+          "texto": "4ac − b²",
+          "correcta": false
+        },
+        {
+          "texto": "(b − 4ac)²",
+          "correcta": false
+        },
+        {
+          "texto": "b² − 4ac",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El discriminante es Δ = b² − 4ac y determina la naturaleza de las raíces."
+    },
+    {
+      "enunciado": "Resuelve la ecuación 3x² = 12.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x = ±4",
+          "correcta": false
+        },
+        {
+          "texto": "x = ±6",
+          "correcta": false
+        },
+        {
+          "texto": "x = ±2",
+          "correcta": true
+        },
+        {
+          "texto": "x = ±36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dividiendo entre 3: x² = 4, por lo que x = ±2."
+    },
+    {
+      "enunciado": "Resuelve x² − x = 0.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x = 1 únicamente",
+          "correcta": false
+        },
+        {
+          "texto": "x = 0 únicamente",
+          "correcta": false
+        },
+        {
+          "texto": "x = ±1",
+          "correcta": false
+        },
+        {
+          "texto": "x = 0 y x = 1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Factorizando x(x − 1) = 0, las soluciones son x = 0 y x = 1."
+    },
+    {
+      "enunciado": "¿Cuál es el número máximo de soluciones reales de una ecuación de segundo grado?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "Infinitas",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una ecuación de segundo grado tiene a lo sumo dos soluciones reales."
+    },
+    {
+      "enunciado": "Resuelve x² = 0.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x = 0 (raíz doble)",
+          "correcta": true
+        },
+        {
+          "texto": "No tiene solución",
+          "correcta": false
+        },
+        {
+          "texto": "x = ±1",
+          "correcta": false
+        },
+        {
+          "texto": "Cualquier número real",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x² = 0 se cumple solo cuando x = 0; es una raíz doble."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes NO es una ecuación de segundo grado?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2x − 5 = 0",
+          "correcta": true
+        },
+        {
+          "texto": "x² − 1 = 0",
+          "correcta": false
+        },
+        {
+          "texto": "3x² + x = 0",
+          "correcta": false
+        },
+        {
+          "texto": "x² = 7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2x − 5 = 0 es de primer grado porque no contiene término x²."
+    },
+    {
+      "enunciado": "En la ecuación x² − 8 = 0, ¿cuál es el valor del término independiente c?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−8",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Comparando con ax² + bx + c = 0, el término independiente es c = −8."
+    },
+    {
+      "enunciado": "Resuelve 2x² − 18 = 0.",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "x = ±9",
+          "correcta": false
+        },
+        {
+          "texto": "x = ±6",
+          "correcta": false
+        },
+        {
+          "texto": "x = ±81",
+          "correcta": false
+        },
+        {
+          "texto": "x = ±3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "2x² = 18 da x² = 9, por lo que x = ±3."
+    },
+    {
+      "enunciado": "Resuelve x² − 5x + 6 = 0.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = −2 y x = −3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 2 y x = 3",
+          "correcta": true
+        },
+        {
+          "texto": "x = 1 y x = 6",
+          "correcta": false
+        },
+        {
+          "texto": "x = −1 y x = −6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se factoriza (x − 2)(x − 3) = 0, cuyas soluciones son x = 2 y x = 3 (suman 5 y multiplican 6)."
+    },
+    {
+      "enunciado": "Resuelve x² + 7x + 12 = 0.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = −3 y x = −4",
+          "correcta": true
+        },
+        {
+          "texto": "x = 3 y x = 4",
+          "correcta": false
+        },
+        {
+          "texto": "x = −2 y x = −6",
+          "correcta": false
+        },
+        {
+          "texto": "x = 2 y x = 6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(x + 3)(x + 4) = 0 da x = −3 y x = −4, pues suman −7 y multiplican 12."
+    },
+    {
+      "enunciado": "Resuelve x² − x − 6 = 0.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = −3 y x = 2",
+          "correcta": false
+        },
+        {
+          "texto": "x = 6 y x = −1",
+          "correcta": false
+        },
+        {
+          "texto": "x = 3 y x = −2",
+          "correcta": true
+        },
+        {
+          "texto": "x = 2 y x = 3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(x − 3)(x + 2) = 0 da x = 3 y x = −2; su suma es 1 y su producto −6."
+    },
+    {
+      "enunciado": "Resuelve x² + 2x − 15 = 0.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = 5 y x = −3",
+          "correcta": false
+        },
+        {
+          "texto": "x = −5 y x = 3",
+          "correcta": true
+        },
+        {
+          "texto": "x = −5 y x = −3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 15 y x = −1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(x + 5)(x − 3) = 0 da x = −5 y x = 3; suman −2 y multiplican −15."
+    },
+    {
+      "enunciado": "¿Cuál es el valor del discriminante de x² − 4x + 4 = 0?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "−16",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Δ = (−4)² − 4(1)(4) = 16 − 16 = 0, lo que indica una raíz doble."
+    },
+    {
+      "enunciado": "¿Cuál es la suma de las raíces de x² − 7x + 10 = 0?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−7",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "−10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La suma de las raíces es −b/a = −(−7)/1 = 7 (las raíces son 2 y 5)."
+    },
+    {
+      "enunciado": "¿Cuál es el producto de las raíces de x² − 7x + 10 = 0?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "−10",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": true
+        },
+        {
+          "texto": "−7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El producto de las raíces es c/a = 10/1 = 10 (las raíces son 2 y 5)."
+    },
+    {
+      "enunciado": "Resuelve 2x² − 7x + 3 = 0.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = 1/2 y x = 3",
+          "correcta": true
+        },
+        {
+          "texto": "x = 2 y x = 3",
+          "correcta": false
+        },
+        {
+          "texto": "x = −1/2 y x = −3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 1/3 y x = 2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Factorizando (2x − 1)(x − 3) = 0 se obtiene x = 1/2 y x = 3."
+    },
+    {
+      "enunciado": "Resuelve x² − 6x + 9 = 0.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = 3 y x = −3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 9 y x = 1",
+          "correcta": false
+        },
+        {
+          "texto": "x = −3 (raíz doble)",
+          "correcta": false
+        },
+        {
+          "texto": "x = 3 (raíz doble)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Es un trinomio cuadrado perfecto: (x − 3)² = 0, por lo que x = 3 es raíz doble."
+    },
+    {
+      "enunciado": "¿Qué constante hay que sumar para completar el cuadrado en x² + 6x?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "9",
+          "correcta": true
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se suma (6/2)² = 9, obteniéndose x² + 6x + 9 = (x + 3)²."
+    },
+    {
+      "enunciado": "Resuelve x² + 4x − 5 = 0.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = 5 y x = −1",
+          "correcta": false
+        },
+        {
+          "texto": "x = −5 y x = −1",
+          "correcta": false
+        },
+        {
+          "texto": "x = 5 y x = 1",
+          "correcta": false
+        },
+        {
+          "texto": "x = −5 y x = 1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "(x + 5)(x − 1) = 0 da x = −5 y x = 1."
+    },
+    {
+      "enunciado": "Resuelve x² − 2x − 3 = 0 usando la fórmula general.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = 1 y x = −3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 3 y x = 1",
+          "correcta": false
+        },
+        {
+          "texto": "x = 3 y x = −1",
+          "correcta": true
+        },
+        {
+          "texto": "x = −3 y x = −1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x = (2 ± √(4 + 12))/2 = (2 ± 4)/2, lo que da x = 3 y x = −1."
+    },
+    {
+      "enunciado": "Resuelve 3x² − 2x − 1 = 0.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = 1 y x = −1/3",
+          "correcta": true
+        },
+        {
+          "texto": "x = −1 y x = 1/3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 1 y x = 1/3",
+          "correcta": false
+        },
+        {
+          "texto": "x = −1 y x = −1/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Factorizando (3x + 1)(x − 1) = 0 se obtiene x = 1 y x = −1/3."
+    },
+    {
+      "enunciado": "Si el discriminante de una ecuación cuadrática es positivo (Δ > 0), entonces la ecuación tiene:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Dos raíces reales distintas",
+          "correcta": true
+        },
+        {
+          "texto": "Una raíz doble",
+          "correcta": false
+        },
+        {
+          "texto": "Ninguna raíz real",
+          "correcta": false
+        },
+        {
+          "texto": "Infinitas raíces",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cuando Δ > 0 la ecuación posee dos soluciones reales y diferentes."
+    },
+    {
+      "enunciado": "Resuelve x² − 9x + 20 = 0.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x = −4 y x = −5",
+          "correcta": false
+        },
+        {
+          "texto": "x = 2 y x = 10",
+          "correcta": false
+        },
+        {
+          "texto": "x = 4 y x = 5",
+          "correcta": true
+        },
+        {
+          "texto": "x = 1 y x = 20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "(x − 4)(x − 5) = 0 da x = 4 y x = 5, que suman 9 y multiplican 20."
+    },
+    {
+      "enunciado": "¿Cuál es la forma de cuadrado completo de x² − 4x + 1?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "(x − 2)² + 3",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 4)² − 3",
+          "correcta": false
+        },
+        {
+          "texto": "(x + 2)² − 3",
+          "correcta": false
+        },
+        {
+          "texto": "(x − 2)² − 3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "x² − 4x + 1 = (x² − 4x + 4) − 3 = (x − 2)² − 3."
+    },
+    {
+      "enunciado": "¿Cuál ecuación de segundo grado tiene como raíces x = 2 y x = 3?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "x² + 5x + 6 = 0",
+          "correcta": false
+        },
+        {
+          "texto": "x² − 5x + 6 = 0",
+          "correcta": true
+        },
+        {
+          "texto": "x² − 6x + 5 = 0",
+          "correcta": false
+        },
+        {
+          "texto": "x² + 5x − 6 = 0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con raíces 2 y 3: x² − (suma)x + producto = x² − 5x + 6 = 0."
+    },
+    {
+      "enunciado": "Resuelve 2x² + 5x − 3 = 0 con la fórmula general.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 1/2 y x = −3",
+          "correcta": true
+        },
+        {
+          "texto": "x = 3 y x = −1/2",
+          "correcta": false
+        },
+        {
+          "texto": "x = 1/2 y x = 3",
+          "correcta": false
+        },
+        {
+          "texto": "x = −3 y x = −1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x = (−5 ± √(25 + 24))/4 = (−5 ± 7)/4, de donde x = 1/2 y x = −3."
+    },
+    {
+      "enunciado": "Resuelve x² − 4x + 1 = 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 2 ± √5",
+          "correcta": false
+        },
+        {
+          "texto": "x = −2 ± √3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 2 ± √3",
+          "correcta": true
+        },
+        {
+          "texto": "x = 4 ± √3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x = (4 ± √(16 − 4))/2 = (4 ± √12)/2 = 2 ± √3."
+    },
+    {
+      "enunciado": "Resuelve 3x² + 5x + 1 = 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = (−5 ± √37)/6",
+          "correcta": false
+        },
+        {
+          "texto": "x = (5 ± √13)/6",
+          "correcta": false
+        },
+        {
+          "texto": "x = (−5 ± √13)/3",
+          "correcta": false
+        },
+        {
+          "texto": "x = (−5 ± √13)/6",
+          "correcta": true
+        }
+      ],
+      "explicacion": "x = (−5 ± √(25 − 12))/6 = (−5 ± √13)/6."
+    },
+    {
+      "enunciado": "¿Qué se puede afirmar sobre las soluciones de 2x² + 3x + 5 = 0?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Tiene dos soluciones reales distintas",
+          "correcta": false
+        },
+        {
+          "texto": "No tiene soluciones reales",
+          "correcta": true
+        },
+        {
+          "texto": "Tiene una raíz doble",
+          "correcta": false
+        },
+        {
+          "texto": "Tiene solo una solución real",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Δ = 3² − 4(2)(5) = 9 − 40 = −31 < 0, por lo que no existen soluciones reales."
+    },
+    {
+      "enunciado": "¿Para qué valores de k la ecuación x² + kx + 9 = 0 tiene una raíz doble?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "k = 9",
+          "correcta": false
+        },
+        {
+          "texto": "k = 3",
+          "correcta": false
+        },
+        {
+          "texto": "k = ±6",
+          "correcta": true
+        },
+        {
+          "texto": "k = ±3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una raíz doble exige Δ = k² − 36 = 0, es decir k = ±6."
+    },
+    {
+      "enunciado": "¿Para qué valor de k ≠ 0 la ecuación kx² − 4x + 1 = 0 tiene una raíz doble?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "k = 2",
+          "correcta": false
+        },
+        {
+          "texto": "k = 4",
+          "correcta": true
+        },
+        {
+          "texto": "k = −4",
+          "correcta": false
+        },
+        {
+          "texto": "k = 16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una raíz doble requiere Δ = (−4)² − 4·k·1 = 16 − 4k = 0, de donde k = 4 (entonces 4x² − 4x + 1 = (2x − 1)² = 0)."
+    },
+    {
+      "enunciado": "Resuelve x² + x − 1 = 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = (−1 ± √3)/2",
+          "correcta": false
+        },
+        {
+          "texto": "x = (1 ± √5)/2",
+          "correcta": false
+        },
+        {
+          "texto": "x = (−1 ± √5)/4",
+          "correcta": false
+        },
+        {
+          "texto": "x = (−1 ± √5)/2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "x = (−1 ± √(1 + 4))/2 = (−1 ± √5)/2."
+    },
+    {
+      "enunciado": "Resuelve 4x² − 12x + 9 = 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 3/2 (raíz doble)",
+          "correcta": true
+        },
+        {
+          "texto": "x = 3 y x = −3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 2/3 (raíz doble)",
+          "correcta": false
+        },
+        {
+          "texto": "x = 3/2 y x = −3/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es un cuadrado perfecto: (2x − 3)² = 0, por lo que x = 3/2 es raíz doble."
+    },
+    {
+      "enunciado": "Al resolver 2x² + 8x − 10 = 0 completando el cuadrado, las soluciones son:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 1 y x = 5",
+          "correcta": false
+        },
+        {
+          "texto": "x = −1 y x = 5",
+          "correcta": false
+        },
+        {
+          "texto": "x = −1 y x = −5",
+          "correcta": false
+        },
+        {
+          "texto": "x = 1 y x = −5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Dividiendo entre 2: x² + 4x − 5 = 0; completando, (x + 2)² = 9, así x + 2 = ±3 y x = 1 o x = −5."
+    },
+    {
+      "enunciado": "¿Cuál ecuación de segundo grado tiene como raíces x = −2 y x = 5?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x² + 3x − 10 = 0",
+          "correcta": false
+        },
+        {
+          "texto": "x² − 3x + 10 = 0",
+          "correcta": false
+        },
+        {
+          "texto": "x² − 3x − 10 = 0",
+          "correcta": true
+        },
+        {
+          "texto": "x² + 7x + 10 = 0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x² − (suma)x + producto = x² − (3)x + (−10) = x² − 3x − 10 = 0."
+    },
+    {
+      "enunciado": "El producto de dos enteros positivos consecutivos es 56. ¿Cuáles son esos enteros?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6 y 7",
+          "correcta": false
+        },
+        {
+          "texto": "7 y 8",
+          "correcta": true
+        },
+        {
+          "texto": "8 y 9",
+          "correcta": false
+        },
+        {
+          "texto": "5 y 6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si x(x + 1) = 56, entonces x² + x − 56 = 0; (x + 8)(x − 7) = 0 da x = 7, por lo que los enteros son 7 y 8."
+    },
+    {
+      "enunciado": "Un rectángulo tiene 3 m más de largo que de ancho y su área es 40 m². ¿Cuánto mide el ancho?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5 m",
+          "correcta": true
+        },
+        {
+          "texto": "4 m",
+          "correcta": false
+        },
+        {
+          "texto": "8 m",
+          "correcta": false
+        },
+        {
+          "texto": "6 m",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con ancho w: w(w + 3) = 40, es decir w² + 3w − 40 = 0; (w + 8)(w − 5) = 0 da w = 5 m."
+    },
+    {
+      "enunciado": "La altura de un objeto lanzado verticalmente es h = 20t − 5t² (en metros). ¿En qué instante t > 0 regresa al suelo (h = 0)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "t = 2 s",
+          "correcta": false
+        },
+        {
+          "texto": "t = 5 s",
+          "correcta": false
+        },
+        {
+          "texto": "t = 20 s",
+          "correcta": false
+        },
+        {
+          "texto": "t = 4 s",
+          "correcta": true
+        }
+      ],
+      "explicacion": "h = 0 da t(20 − 5t) = 0; descartando t = 0, queda 20 − 5t = 0, es decir t = 4 s."
+    },
+    {
+      "enunciado": "¿Para qué valores de k la ecuación x² + 6x + k = 0 tiene dos soluciones reales distintas?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "k > 9",
+          "correcta": false
+        },
+        {
+          "texto": "k < 9",
+          "correcta": true
+        },
+        {
+          "texto": "k = 9",
+          "correcta": false
+        },
+        {
+          "texto": "k < −9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Se requiere Δ = 36 − 4k > 0, lo que equivale a k < 9."
+    },
+    {
+      "enunciado": "¿Cuál es la naturaleza de las soluciones de x² + 2x + 5 = 0?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Dos soluciones reales distintas",
+          "correcta": false
+        },
+        {
+          "texto": "Una raíz doble real",
+          "correcta": false
+        },
+        {
+          "texto": "No tiene soluciones reales",
+          "correcta": true
+        },
+        {
+          "texto": "x = 5 y x = −1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Δ = 2² − 4(1)(5) = 4 − 20 = −16 < 0, por lo que no hay soluciones reales."
+    },
+    {
+      "enunciado": "Resuelve x² − 2x − 2 = 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 1 ± √3",
+          "correcta": true
+        },
+        {
+          "texto": "x = 1 ± √2",
+          "correcta": false
+        },
+        {
+          "texto": "x = −1 ± √3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 2 ± √3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "x = (2 ± √(4 + 8))/2 = (2 ± √12)/2 = 1 ± √3."
+    }
+  ]
+}

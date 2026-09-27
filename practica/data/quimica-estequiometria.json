@@ -1,0 +1,1127 @@
+{
+  "id": "quimica-estequiometria",
+  "materia": "quimica",
+  "tema": "El mol y la estequiometría",
+  "bloque": "Reacciones y estequiometría",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "El mol es el «paquete» de la química: 1 mol = 6,022 × 10²³ partículas y pesa su masa molar en gramos. Con n = m/M pasas de gramos a moles, y los coeficientes de la ecuación balanceada te dan la proporción EN MOLES entre las sustancias.",
+    "ejemplo": {
+      "enunciado": "¿Cuántos gramos de agua se forman al quemar 32 g de metano? CH₄ + 2O₂ → CO₂ + 2H₂O (CH₄ = 16 g/mol; H₂O = 18 g/mol)",
+      "pasos": [
+        "Gramos a moles: n(CH₄) = 32 g ÷ 16 g/mol = 2 mol.",
+        "Proporción de la ecuación: 1 mol de CH₄ da 2 mol de H₂O, así que 2 mol de CH₄ dan 4 mol de H₂O.",
+        "Moles a gramos: 4 mol × 18 g/mol = 72 g."
+      ],
+      "resultado": "Se forman 72 g de agua."
+    },
+    "ojo": "No uses la proporción de la ecuación con gramos: los coeficientes indican moles, así que primero convierte los gramos a moles."
+  },
+  "preguntas": [
+    {
+      "enunciado": "Un mol de cualquier sustancia contiene aproximadamente 6,022 × 10²³ unidades elementales. Este valor se conoce como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Número de Avogadro",
+          "correcta": true
+        },
+        {
+          "texto": "Constante de Planck",
+          "correcta": false
+        },
+        {
+          "texto": "Número de masa",
+          "correcta": false
+        },
+        {
+          "texto": "Constante de los gases",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número de Avogadro (6,022 × 10²³) define cuántas entidades elementales contiene un mol."
+    },
+    {
+      "enunciado": "Considerando las masas atómicas H = 1 y O = 16, la masa molar del agua (H₂O) es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "20 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "18 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "16 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "2 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La masa molar del agua es 2(1)+16 = 18 g/mol."
+    },
+    {
+      "enunciado": "Con la masa atómica O = 16, la masa molar del oxígeno molecular (O₂) es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "48 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "32 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "16 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "8 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El O₂ tiene dos átomos de oxígeno: 2(16) = 32 g/mol."
+    },
+    {
+      "enunciado": "¿Cuántos átomos de hidrógeno hay en una molécula de agua (H₂O)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La fórmula H₂O indica dos átomos de hidrógeno por molécula."
+    },
+    {
+      "enunciado": "Con las masas atómicas C = 12 y O = 16, la masa molar del dióxido de carbono (CO₂) es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "56 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "44 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "28 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "12 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "CO₂ = 12 + 2(16) = 12 + 32 = 44 g/mol."
+    },
+    {
+      "enunciado": "¿Cuántos moles hay en 36 g de agua, si su masa molar es 18 g/mol?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "36 mol",
+          "correcta": false
+        },
+        {
+          "texto": "18 mol",
+          "correcta": false
+        },
+        {
+          "texto": "2 mol",
+          "correcta": true
+        },
+        {
+          "texto": "0,5 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = m/M = 36/18 = 2 mol."
+    },
+    {
+      "enunciado": "¿Cuántos gramos hay en 2 mol de hidróxido de sodio (NaOH), cuya masa molar es 40 g/mol?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "160 g",
+          "correcta": false
+        },
+        {
+          "texto": "80 g",
+          "correcta": true
+        },
+        {
+          "texto": "40 g",
+          "correcta": false
+        },
+        {
+          "texto": "20 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "m = n×M = 2×40 = 80 g."
+    },
+    {
+      "enunciado": "¿Cuántas moléculas hay en 2 mol de un gas?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6,022 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "1,2044 × 10²⁴",
+          "correcta": true
+        },
+        {
+          "texto": "3,011 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "12,044 × 10²⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2 mol × 6,022 × 10²³ = 1,2044 × 10²⁴ moléculas."
+    },
+    {
+      "enunciado": "Con las masas atómicas Na = 23 y Cl = 35,5, la masa molar del cloruro de sodio (NaCl) es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "23 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "35,5 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "58,5 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "70 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "NaCl = 23 + 35,5 = 58,5 g/mol."
+    },
+    {
+      "enunciado": "¿Cuál es la fórmula correcta para calcular el número de moles a partir de la masa de una sustancia?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "n = m × M",
+          "correcta": false
+        },
+        {
+          "texto": "n = M / m",
+          "correcta": false
+        },
+        {
+          "texto": "n = m + M",
+          "correcta": false
+        },
+        {
+          "texto": "n = m / M",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El número de moles es la masa dividida entre la masa molar: n = m/M."
+    },
+    {
+      "enunciado": "¿Cuántos moles de átomos de oxígeno hay en 1 mol de dióxido de carbono (CO₂)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0,5 mol",
+          "correcta": false
+        },
+        {
+          "texto": "1 mol",
+          "correcta": false
+        },
+        {
+          "texto": "2 mol",
+          "correcta": true
+        },
+        {
+          "texto": "3 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada molécula de CO₂ tiene 2 átomos de O, por lo que 1 mol de CO₂ contiene 2 mol de átomos de O."
+    },
+    {
+      "enunciado": "Con las masas atómicas C = 12 y H = 1, la masa molar del metano (CH₄) es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "17 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "16 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "14 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "12 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "CH₄ = 12 + 4(1) = 16 g/mol."
+    },
+    {
+      "enunciado": "¿Cuántas moléculas hay en 0,5 mol de una sustancia?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6,022 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "1,2044 × 10²⁴",
+          "correcta": false
+        },
+        {
+          "texto": "1,5 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "3,011 × 10²³",
+          "correcta": true
+        }
+      ],
+      "explicacion": "0,5 mol × 6,022 × 10²³ = 3,011 × 10²³ moléculas."
+    },
+    {
+      "enunciado": "¿Cuál es, aproximadamente, la masa de 1 mol de átomos de carbono-12?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1 g",
+          "correcta": false
+        },
+        {
+          "texto": "6 g",
+          "correcta": false
+        },
+        {
+          "texto": "12 g",
+          "correcta": true
+        },
+        {
+          "texto": "24 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La masa de un átomo de carbono-12 es 12 u, así que 1 mol de esos átomos tiene una masa de prácticamente 12 g."
+    },
+    {
+      "enunciado": "¿Cuántos moles hay en 64 g de oxígeno molecular (O₂), cuya masa molar es 32 g/mol?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4 mol",
+          "correcta": false
+        },
+        {
+          "texto": "2 mol",
+          "correcta": true
+        },
+        {
+          "texto": "1 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 64/32 = 2 mol."
+    },
+    {
+      "enunciado": "En la reacción 2H₂ + O₂ → 2H₂O, ¿cuántos moles de agua se forman a partir de 2 mol de H₂ con oxígeno suficiente?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1 mol",
+          "correcta": false
+        },
+        {
+          "texto": "2 mol",
+          "correcta": true
+        },
+        {
+          "texto": "3 mol",
+          "correcta": false
+        },
+        {
+          "texto": "4 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La proporción 2H₂ : 2H₂O es 1:1, por lo que 2 mol de H₂ producen 2 mol de H₂O."
+    },
+    {
+      "enunciado": "¿Qué representa la masa molar de una sustancia?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La masa de una sola molécula en gramos",
+          "correcta": false
+        },
+        {
+          "texto": "El número de átomos contenidos en un mol",
+          "correcta": false
+        },
+        {
+          "texto": "La masa de un mol de la sustancia, expresada en g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "El volumen que ocupa un mol de la sustancia",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La masa molar es la masa de un mol de sustancia y se expresa en g/mol."
+    },
+    {
+      "enunciado": "¿Cuántas moléculas hay en 11 g de CO₂ (masa molar 44 g/mol)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1,5055 × 10²³",
+          "correcta": true
+        },
+        {
+          "texto": "2,4 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "3,011 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "6,022 × 10²³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 11/44 = 0,25 mol; 0,25 × 6,022 × 10²³ = 1,5055 × 10²³ moléculas."
+    },
+    {
+      "enunciado": "¿Cuántos átomos de oxígeno hay en 2 mol de agua (H₂O)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6,022 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "1,2044 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "2,4 × 10²⁴",
+          "correcta": false
+        },
+        {
+          "texto": "1,2044 × 10²⁴",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Cada H₂O tiene 1 átomo de O, así que 2 mol de H₂O dan 2 mol de O = 1,2044 × 10²⁴ átomos."
+    },
+    {
+      "enunciado": "Con las masas atómicas Ca = 40, S = 32 y O = 16, la masa molar del sulfato de calcio (CaSO₄) es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "96 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "120 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "136 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "152 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "CaSO₄ = 40 + 32 + 4(16) = 40 + 32 + 64 = 136 g/mol."
+    },
+    {
+      "enunciado": "¿Cuántos gramos de NaCl contienen 3,011 × 10²³ fórmulas unitarias? (masa molar 58,5 g/mol)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "117 g",
+          "correcta": false
+        },
+        {
+          "texto": "58,5 g",
+          "correcta": false
+        },
+        {
+          "texto": "29,25 g",
+          "correcta": true
+        },
+        {
+          "texto": "14,6 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 3,011 × 10²³ / 6,022 × 10²³ = 0,5 mol; m = 0,5 × 58,5 = 29,25 g."
+    },
+    {
+      "enunciado": "En 2Al + 3Cl₂ → 2AlCl₃, ¿cuántos moles de Cl₂ se necesitan para reaccionar con 4 mol de Al?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "12 mol",
+          "correcta": false
+        },
+        {
+          "texto": "6 mol",
+          "correcta": true
+        },
+        {
+          "texto": "4 mol",
+          "correcta": false
+        },
+        {
+          "texto": "3 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La proporción es 2Al : 3Cl₂, así que 4 mol de Al × (3/2) = 6 mol de Cl₂."
+    },
+    {
+      "enunciado": "En 2H₂ + O₂ → 2H₂O, ¿cuántos gramos de O₂ se necesitan para reaccionar completamente con 4 g de H₂? (masas molares: H₂ = 2, O₂ = 32 g/mol)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8 g",
+          "correcta": false
+        },
+        {
+          "texto": "16 g",
+          "correcta": false
+        },
+        {
+          "texto": "32 g",
+          "correcta": true
+        },
+        {
+          "texto": "64 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n(H₂) = 4/2 = 2 mol; la proporción 2H₂:O₂ da 1 mol de O₂ = 32 g."
+    },
+    {
+      "enunciado": "Se mezclan 2 mol de H₂ con 2 mol de O₂ según 2H₂ + O₂ → 2H₂O. ¿Cuál es el reactivo limitante?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "El O₂",
+          "correcta": false
+        },
+        {
+          "texto": "El H₂",
+          "correcta": true
+        },
+        {
+          "texto": "El agua formada",
+          "correcta": false
+        },
+        {
+          "texto": "No hay limitante porque hay cantidades iguales",
+          "correcta": false
+        }
+      ],
+      "explicacion": "2 mol de H₂ requieren solo 1 mol de O₂; el O₂ queda en exceso y el H₂ es limitante."
+    },
+    {
+      "enunciado": "Si el rendimiento teórico de una reacción es 50 g y en la práctica se obtienen 40 g, ¿cuál es el porcentaje de rendimiento?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "125%",
+          "correcta": false
+        },
+        {
+          "texto": "90%",
+          "correcta": false
+        },
+        {
+          "texto": "80%",
+          "correcta": true
+        },
+        {
+          "texto": "10%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Rendimiento = (real/teórico)×100 = (40/50)×100 = 80%."
+    },
+    {
+      "enunciado": "Una muestra de 200 g de caliza contiene 150 g de CaCO₃. ¿Cuál es el porcentaje de pureza?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "25%",
+          "correcta": false
+        },
+        {
+          "texto": "50%",
+          "correcta": false
+        },
+        {
+          "texto": "75%",
+          "correcta": true
+        },
+        {
+          "texto": "133%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Pureza = (150/200)×100 = 75%."
+    },
+    {
+      "enunciado": "Con las masas atómicas Ca = 40, O = 16 y H = 1, la masa molar del hidróxido de calcio Ca(OH)₂ es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "74 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "58 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "57 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "41 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Ca(OH)₂ = 40 + 2(16+1) = 40 + 34 = 74 g/mol."
+    },
+    {
+      "enunciado": "¿Cuántos átomos en total (H y O) hay en 1 mol de agua (H₂O)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1,8066 × 10²⁴",
+          "correcta": true
+        },
+        {
+          "texto": "6,022 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "1,2044 × 10²⁴",
+          "correcta": false
+        },
+        {
+          "texto": "2,4088 × 10²⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cada molécula tiene 3 átomos; 3 × 6,022 × 10²³ = 1,8066 × 10²⁴ átomos."
+    },
+    {
+      "enunciado": "¿Qué volumen ocupa 1 mol de un gas ideal en condiciones normales (0 °C y 1 atm)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1 L",
+          "correcta": false
+        },
+        {
+          "texto": "11,2 L",
+          "correcta": false
+        },
+        {
+          "texto": "22,4 L",
+          "correcta": true
+        },
+        {
+          "texto": "24,5 L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En condiciones normales (0 °C y 1 atm), el volumen molar de un gas ideal es 22,4 L/mol."
+    },
+    {
+      "enunciado": "¿Cuántos moles hay en 5,6 L de un gas en condiciones normales (volumen molar 22,4 L/mol)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,25 mol",
+          "correcta": true
+        },
+        {
+          "texto": "0,1 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 5,6/22,4 = 0,25 mol."
+    },
+    {
+      "enunciado": "¿Cuál es el porcentaje en masa de oxígeno en el agua (H₂O, masa molar 18 g/mol)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "11,1%",
+          "correcta": false
+        },
+        {
+          "texto": "50%",
+          "correcta": false
+        },
+        {
+          "texto": "80%",
+          "correcta": false
+        },
+        {
+          "texto": "88,9%",
+          "correcta": true
+        }
+      ],
+      "explicacion": "%O = (16/18)×100 = 88,9%."
+    },
+    {
+      "enunciado": "¿Cuántos gramos de CaCO₃ hay en 250 g de una muestra con 80% de pureza?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "312,5 g",
+          "correcta": false
+        },
+        {
+          "texto": "200 g",
+          "correcta": true
+        },
+        {
+          "texto": "80 g",
+          "correcta": false
+        },
+        {
+          "texto": "50 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Masa pura = 250 × 0,80 = 200 g de CaCO₃."
+    },
+    {
+      "enunciado": "Se hacen reaccionar 28 g de N₂ con 3 g de H₂ según N₂ + 3H₂ → 2NH₃. ¿Cuál es el reactivo limitante? (masas molares: N₂ = 28, H₂ = 2 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "El H₂",
+          "correcta": true
+        },
+        {
+          "texto": "El N₂",
+          "correcta": false
+        },
+        {
+          "texto": "Ambos por igual",
+          "correcta": false
+        },
+        {
+          "texto": "El NH₃",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n(N₂) = 1 mol y n(H₂) = 1,5 mol; 1 mol de N₂ necesita 3 mol de H₂, pero solo hay 1,5, así que el H₂ es limitante."
+    },
+    {
+      "enunciado": "En N₂ + 3H₂ → 2NH₃, si reaccionan completamente 2 mol de N₂ con H₂ suficiente, ¿cuántos gramos de NH₃ se forman? (masa molar: NH₃ = 17 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "68 g",
+          "correcta": true
+        },
+        {
+          "texto": "34 g",
+          "correcta": false
+        },
+        {
+          "texto": "17 g",
+          "correcta": false
+        },
+        {
+          "texto": "6 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La proporción N₂:NH₃ es 1:2, así que 2 mol de N₂ dan 4 mol de NH₃ = 4×17 = 68 g."
+    },
+    {
+      "enunciado": "Una síntesis cuyo rendimiento teórico es 68 g de NH₃ produce en la práctica 51 g. ¿Cuál es el porcentaje de rendimiento?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "25%",
+          "correcta": false
+        },
+        {
+          "texto": "75%",
+          "correcta": true
+        },
+        {
+          "texto": "80%",
+          "correcta": false
+        },
+        {
+          "texto": "133%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Rendimiento = (51/68)×100 = 75%."
+    },
+    {
+      "enunciado": "En CH₄ + 2O₂ → CO₂ + 2H₂O, ¿cuántos gramos de CO₂ se producen al quemar 16 g de CH₄? (masas molares: CH₄ = 16, CO₂ = 44 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "16 g",
+          "correcta": false
+        },
+        {
+          "texto": "32 g",
+          "correcta": false
+        },
+        {
+          "texto": "44 g",
+          "correcta": true
+        },
+        {
+          "texto": "88 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n(CH₄) = 16/16 = 1 mol; proporción 1:1 con CO₂, así que se forma 1 mol de CO₂ = 44 g."
+    },
+    {
+      "enunciado": "En CH₄ + 2O₂ → CO₂ + 2H₂O, ¿cuántos gramos de agua se forman al quemar 32 g de CH₄? (masas molares: CH₄ = 16, H₂O = 18 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "18 g",
+          "correcta": false
+        },
+        {
+          "texto": "36 g",
+          "correcta": false
+        },
+        {
+          "texto": "72 g",
+          "correcta": true
+        },
+        {
+          "texto": "144 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n(CH₄) = 32/16 = 2 mol; proporción 1:2 con H₂O da 4 mol de agua = 4×18 = 72 g."
+    },
+    {
+      "enunciado": "En 2H₂ + O₂ → 2H₂O reaccionan 4 g de H₂ con 32 g de O₂. ¿Cuántos gramos de agua se forman? (masas molares: H₂ = 2, O₂ = 32, H₂O = 18 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "72 g",
+          "correcta": false
+        },
+        {
+          "texto": "36 g",
+          "correcta": true
+        },
+        {
+          "texto": "34 g",
+          "correcta": false
+        },
+        {
+          "texto": "18 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n(H₂) = 2 mol y n(O₂) = 1 mol están en proporción exacta; se forman 2 mol de H₂O = 2×18 = 36 g."
+    },
+    {
+      "enunciado": "Se mezclan 5 mol de H₂ con 2 mol de O₂ según 2H₂ + O₂ → 2H₂O. ¿Cuántos moles de agua se forman?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5 mol",
+          "correcta": false
+        },
+        {
+          "texto": "4 mol",
+          "correcta": true
+        },
+        {
+          "texto": "2,5 mol",
+          "correcta": false
+        },
+        {
+          "texto": "2 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "5 mol de H₂ necesitarían 2,5 mol de O₂, pero solo hay 2; el O₂ es limitante y 2 mol de O₂ producen 4 mol de H₂O."
+    },
+    {
+      "enunciado": "Se descomponen 50 g de CaCO₃ impuro con 80% de pureza según CaCO₃ → CaO + CO₂. ¿Cuántos moles de CO₂ se producen? (masa molar: CaCO₃ = 100 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,8 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,4 mol",
+          "correcta": true
+        },
+        {
+          "texto": "0,2 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Masa pura = 50×0,8 = 40 g; n(CaCO₃) = 40/100 = 0,4 mol, que produce 0,4 mol de CO₂."
+    },
+    {
+      "enunciado": "Con las masas atómicas N = 14, H = 1 y O = 16, ¿cuál es el porcentaje en masa de nitrógeno en el nitrato de amonio (NH₄NO₃)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "14%",
+          "correcta": false
+        },
+        {
+          "texto": "17,5%",
+          "correcta": false
+        },
+        {
+          "texto": "28%",
+          "correcta": false
+        },
+        {
+          "texto": "35%",
+          "correcta": true
+        }
+      ],
+      "explicacion": "M(NH₄NO₃) = 2(14)+4(1)+3(16) = 80; %N = (28/80)×100 = 35%."
+    },
+    {
+      "enunciado": "Un compuesto contiene 40% de C, 6,7% de H y 53,3% de O en masa. ¿Cuál es su fórmula empírica? (C = 12, H = 1, O = 16)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "C₂H₄O₂",
+          "correcta": false
+        },
+        {
+          "texto": "CHO",
+          "correcta": false
+        },
+        {
+          "texto": "CH₂O",
+          "correcta": true
+        },
+        {
+          "texto": "CH₄O",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Moles relativos: C = 40/12 = 3,33, H = 6,7/1 = 6,7, O = 53,3/16 = 3,33; al dividir entre 3,33 se obtiene CH₂O."
+    },
+    {
+      "enunciado": "¿Cuántos átomos de oxígeno hay en 49 g de ácido sulfúrico (H₂SO₄, masa molar 98 g/mol)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6,022 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "1,2044 × 10²⁴",
+          "correcta": true
+        },
+        {
+          "texto": "3,011 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "2,4088 × 10²⁴",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 49/98 = 0,5 mol; cada molécula tiene 4 O, así que hay 2 mol de O = 1,2044 × 10²⁴ átomos."
+    },
+    {
+      "enunciado": "Una reacción tiene un rendimiento del 90 %. ¿Cuál debe ser el rendimiento teórico para obtener realmente 36 g de producto?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "45 g",
+          "correcta": false
+        },
+        {
+          "texto": "40 g",
+          "correcta": true
+        },
+        {
+          "texto": "39,6 g",
+          "correcta": false
+        },
+        {
+          "texto": "32,4 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Rendimiento teórico = real ÷ rendimiento = 36 g ÷ 0,90 = 40 g."
+    },
+    {
+      "enunciado": "En 4Al + 3O₂ → 2Al₂O₃, ¿cuántos gramos de aluminio se necesitan para producir 204 g de Al₂O₃? (masas molares: Al = 27, Al₂O₃ = 102 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "216 g",
+          "correcta": false
+        },
+        {
+          "texto": "108 g",
+          "correcta": true
+        },
+        {
+          "texto": "54 g",
+          "correcta": false
+        },
+        {
+          "texto": "27 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n(Al₂O₃) = 204/102 = 2 mol; proporción 4Al:2Al₂O₃ requiere 4 mol de Al = 4×27 = 108 g."
+    },
+    {
+      "enunciado": "¿Cuántas moléculas de glucosa (C₆H₁₂O₆, masa molar 180 g/mol) hay en 90 g?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6,022 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "1,5 × 10²³",
+          "correcta": false
+        },
+        {
+          "texto": "1,2 × 10²⁴",
+          "correcta": false
+        },
+        {
+          "texto": "3,011 × 10²³",
+          "correcta": true
+        }
+      ],
+      "explicacion": "n = 90/180 = 0,5 mol; 0,5 × 6,022 × 10²³ = 3,011 × 10²³ moléculas."
+    },
+    {
+      "enunciado": "Se hacen reaccionar 23 g de Na con 71 g de Cl₂ según 2Na + Cl₂ → 2NaCl. ¿Cuál es el reactivo limitante? (masas molares: Na = 23, Cl₂ = 71 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "El Cl₂",
+          "correcta": false
+        },
+        {
+          "texto": "El Na",
+          "correcta": true
+        },
+        {
+          "texto": "Ambos por igual",
+          "correcta": false
+        },
+        {
+          "texto": "El NaCl",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n(Na) = 1 mol y n(Cl₂) = 1 mol; 1 mol de Cl₂ requiere 2 mol de Na, pero solo hay 1, así que el Na es limitante."
+    },
+    {
+      "enunciado": "En la combustión C₃H₈ + 5O₂ → 3CO₂ + 4H₂O, ¿cuántos gramos de CO₂ se producen al quemar 22 g de propano? (masas molares: C₃H₈ = 44, CO₂ = 44 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "22 g",
+          "correcta": false
+        },
+        {
+          "texto": "44 g",
+          "correcta": false
+        },
+        {
+          "texto": "66 g",
+          "correcta": true
+        },
+        {
+          "texto": "132 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n(C₃H₈) = 22/44 = 0,5 mol; proporción 1:3 con CO₂ da 1,5 mol de CO₂ = 1,5×44 = 66 g."
+    }
+  ]
+}

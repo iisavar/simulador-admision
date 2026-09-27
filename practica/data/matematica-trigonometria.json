@@ -1,0 +1,1150 @@
+{
+  "id": "matematica-trigonometria",
+  "materia": "matematica",
+  "tema": "Trigonometría",
+  "bloque": "Geometría y trigonometría",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "En un triángulo rectángulo: sen = cateto opuesto/hipotenusa, cos = cateto adyacente/hipotenusa y tan = opuesto/adyacente. Memoriza los valores de 30°, 45° y 60°, y recuerda que 180° = π radianes.",
+    "ejemplo": {
+      "enunciado": "Una rampa de 8 m de largo forma un ángulo de 30° con el suelo. ¿A qué altura llega?",
+      "pasos": [
+        "La rampa es la hipotenusa y la altura es el cateto opuesto al ángulo de 30°.",
+        "Plantea: sen 30° = altura / 8.",
+        "Despeja: altura = 8 · sen 30° = 8 · 1/2 = 4."
+      ],
+      "resultado": "La rampa llega a 4 m de altura."
+    },
+    "ojo": "Fíjate desde qué ángulo miras: el cateto opuesto a un ángulo agudo es el cateto adyacente del otro ángulo agudo."
+  },
+  "preguntas": [
+    {
+      "enunciado": "En un triángulo rectángulo, ¿con qué cociente se define el seno de un ángulo agudo?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Hipotenusa / cateto opuesto",
+          "correcta": false
+        },
+        {
+          "texto": "Cateto adyacente / hipotenusa",
+          "correcta": false
+        },
+        {
+          "texto": "Cateto opuesto / cateto adyacente",
+          "correcta": false
+        },
+        {
+          "texto": "Cateto opuesto / hipotenusa",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El seno de un ángulo agudo es el cociente entre el cateto opuesto y la hipotenusa."
+    },
+    {
+      "enunciado": "En un triángulo rectángulo, el coseno de un ángulo agudo es igual a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Cateto adyacente / hipotenusa",
+          "correcta": true
+        },
+        {
+          "texto": "Cateto opuesto / hipotenusa",
+          "correcta": false
+        },
+        {
+          "texto": "Cateto adyacente / cateto opuesto",
+          "correcta": false
+        },
+        {
+          "texto": "Hipotenusa / cateto adyacente",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El coseno es el cociente entre el cateto adyacente y la hipotenusa."
+    },
+    {
+      "enunciado": "La tangente de un ángulo agudo en un triángulo rectángulo se define como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Cateto adyacente / cateto opuesto",
+          "correcta": false
+        },
+        {
+          "texto": "Cateto opuesto / cateto adyacente",
+          "correcta": true
+        },
+        {
+          "texto": "Cateto opuesto / hipotenusa",
+          "correcta": false
+        },
+        {
+          "texto": "Hipotenusa / cateto adyacente",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La tangente es el cociente entre el cateto opuesto y el cateto adyacente."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de sen 30°?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "√3/2",
+          "correcta": false
+        },
+        {
+          "texto": "√2/2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El seno de 30° es un valor notable igual a 1/2."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de cos 60°?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "√3/2",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El coseno de 60° es igual a 1/2, valor notable de la tabla trigonométrica."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de tan 45°?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "√3",
+          "correcta": false
+        },
+        {
+          "texto": "√3/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La tangente de 45° vale 1, pues en ese ángulo el cateto opuesto y el adyacente son iguales."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de sen 90°?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El seno de 90° alcanza su valor máximo, igual a 1."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de cos 0°?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El coseno de 0° vale 1, su valor máximo."
+    },
+    {
+      "enunciado": "¿A cuántos radianes equivalen 180°?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "π",
+          "correcta": true
+        },
+        {
+          "texto": "2π",
+          "correcta": false
+        },
+        {
+          "texto": "π/2",
+          "correcta": false
+        },
+        {
+          "texto": "π/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Media vuelta corresponde a 180°, que en radianes equivale a π."
+    },
+    {
+      "enunciado": "El ángulo de 90° expresado en radianes es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "π",
+          "correcta": false
+        },
+        {
+          "texto": "2π",
+          "correcta": false
+        },
+        {
+          "texto": "π/4",
+          "correcta": false
+        },
+        {
+          "texto": "π/2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "90° es la mitad de 180°, por lo que equivale a π/2 radianes."
+    },
+    {
+      "enunciado": "En un triángulo rectángulo con catetos 3 y 4 e hipotenusa 5, ¿cuánto vale el seno del ángulo opuesto al cateto de longitud 3?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "4/5",
+          "correcta": false
+        },
+        {
+          "texto": "3/5",
+          "correcta": true
+        },
+        {
+          "texto": "5/3",
+          "correcta": false
+        },
+        {
+          "texto": "3/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El seno del ángulo opuesto al cateto 3 es cateto opuesto/hipotenusa = 3/5."
+    },
+    {
+      "enunciado": "En un triángulo rectángulo con catetos 3 y 4 e hipotenusa 5, ¿cuánto vale el coseno del ángulo opuesto al cateto de longitud 3?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5/4",
+          "correcta": false
+        },
+        {
+          "texto": "3/5",
+          "correcta": false
+        },
+        {
+          "texto": "4/3",
+          "correcta": false
+        },
+        {
+          "texto": "4/5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El coseno de ese ángulo es cateto adyacente/hipotenusa = 4/5."
+    },
+    {
+      "enunciado": "La cosecante de un ángulo (csc θ) es igual a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1 / cos θ",
+          "correcta": false
+        },
+        {
+          "texto": "sen θ / cos θ",
+          "correcta": false
+        },
+        {
+          "texto": "1 / tan θ",
+          "correcta": false
+        },
+        {
+          "texto": "1 / sen θ",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por definición, csc θ = 1/sen θ."
+    },
+    {
+      "enunciado": "La secante de un ángulo (sec θ) es igual a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1 / cos θ",
+          "correcta": true
+        },
+        {
+          "texto": "1 / tan θ",
+          "correcta": false
+        },
+        {
+          "texto": "1 / sen θ",
+          "correcta": false
+        },
+        {
+          "texto": "cos θ / sen θ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por definición, sec θ = 1/cos θ."
+    },
+    {
+      "enunciado": "La cotangente de un ángulo (cot θ) es igual a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1 / sen θ",
+          "correcta": false
+        },
+        {
+          "texto": "1 / tan θ",
+          "correcta": true
+        },
+        {
+          "texto": "sen θ / cos θ",
+          "correcta": false
+        },
+        {
+          "texto": "1 / cos θ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por definición, cot θ = 1/tan θ = cos θ/sen θ."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de sen 0°?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El seno de 0° es 0."
+    },
+    {
+      "enunciado": "¿Cuál es la identidad pitagórica fundamental de la trigonometría?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "sen²x + cos²x = 1",
+          "correcta": true
+        },
+        {
+          "texto": "sen²x − cos²x = 1",
+          "correcta": false
+        },
+        {
+          "texto": "sen x + cos x = 1",
+          "correcta": false
+        },
+        {
+          "texto": "1 + sen²x = cos²x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La identidad pitagórica fundamental es sen²x + cos²x = 1."
+    },
+    {
+      "enunciado": "Si θ es un ángulo agudo y sen θ = 3/5, ¿cuánto vale cos θ?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4/5",
+          "correcta": true
+        },
+        {
+          "texto": "5/3",
+          "correcta": false
+        },
+        {
+          "texto": "3/4",
+          "correcta": false
+        },
+        {
+          "texto": "5/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con sen θ = 3/5, cos θ = √(1 − 9/25) = √(16/25) = 4/5 al ser θ agudo."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de tan 30°?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "√3/3",
+          "correcta": true
+        },
+        {
+          "texto": "√3/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "√3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La tangente de 30° es √3/3 (equivalente a 1/√3)."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de cos 30°?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "√2/2",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "√3/2",
+          "correcta": true
+        },
+        {
+          "texto": "√3/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El coseno de 30° es √3/2."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de sen 45°?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": false
+        },
+        {
+          "texto": "√2/2",
+          "correcta": true
+        },
+        {
+          "texto": "√3/2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El seno de 45° es √2/2."
+    },
+    {
+      "enunciado": "¿A cuántos radianes equivalen 60°?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "π/6",
+          "correcta": false
+        },
+        {
+          "texto": "π/2",
+          "correcta": false
+        },
+        {
+          "texto": "π/3",
+          "correcta": true
+        },
+        {
+          "texto": "π/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 180° = π, entonces 60° = π/3 radianes."
+    },
+    {
+      "enunciado": "El ángulo π/6 radianes equivale en grados a:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "60°",
+          "correcta": false
+        },
+        {
+          "texto": "45°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": false
+        },
+        {
+          "texto": "30°",
+          "correcta": true
+        }
+      ],
+      "explicacion": "π/6 rad equivale a 180°/6 = 30°."
+    },
+    {
+      "enunciado": "En un triángulo rectángulo, la hipotenusa mide 10 y uno de los ángulos agudos mide 30°. ¿Cuánto mide el cateto adyacente a ese ángulo?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "5√3",
+          "correcta": true
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cateto adyacente se obtiene con cos 30° = x/10, luego x = 10 · (√3/2) = 5√3 ≈ 8,66."
+    },
+    {
+      "enunciado": "Una escalera de 12 m se apoya en una pared formando un ángulo de 30° con el suelo. ¿Qué altura alcanza sobre la pared?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6√3 m",
+          "correcta": false
+        },
+        {
+          "texto": "24 m",
+          "correcta": false
+        },
+        {
+          "texto": "12 m",
+          "correcta": false
+        },
+        {
+          "texto": "6 m",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La altura es el cateto opuesto: 12·sen 30° = 12·(1/2) = 6 m."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes expresa correctamente la ley de los senos para un triángulo de lados a, b, c y ángulos opuestos A, B, C?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "a·sen A = b·sen B = c·sen C",
+          "correcta": false
+        },
+        {
+          "texto": "a/sen A = b/sen B = c/sen C",
+          "correcta": true
+        },
+        {
+          "texto": "sen A/a = sen B/c = sen C/b",
+          "correcta": false
+        },
+        {
+          "texto": "a/cos A = b/cos B = c/cos C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ley de los senos establece a/sen A = b/sen B = c/sen C."
+    },
+    {
+      "enunciado": "La ley de los cosenos para hallar el lado c, conocidos a, b y el ángulo C comprendido, es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "c² = a² + b² + 2ab·cos C",
+          "correcta": false
+        },
+        {
+          "texto": "c² = a² + b² − 2ab·cos C",
+          "correcta": true
+        },
+        {
+          "texto": "c = a² + b² − 2ab·cos C",
+          "correcta": false
+        },
+        {
+          "texto": "c² = a² − b² − 2ab·cos C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La ley de los cosenos es c² = a² + b² − 2ab·cos C."
+    },
+    {
+      "enunciado": "¿Cuál es la amplitud de la función y = 4 sen x?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La amplitud de y = A·sen x es |A|; aquí |4| = 4."
+    },
+    {
+      "enunciado": "¿Cuál es el periodo de la función y = cos x?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "π",
+          "correcta": false
+        },
+        {
+          "texto": "4π",
+          "correcta": false
+        },
+        {
+          "texto": "π/2",
+          "correcta": false
+        },
+        {
+          "texto": "2π",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La función coseno se repite cada 2π, por lo que su periodo es 2π."
+    },
+    {
+      "enunciado": "¿Cuál de estas identidades trigonométricas es correcta?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1 + cot²x = sec²x",
+          "correcta": false
+        },
+        {
+          "texto": "1 − tan²x = sec²x",
+          "correcta": false
+        },
+        {
+          "texto": "1 + tan²x = sec²x",
+          "correcta": true
+        },
+        {
+          "texto": "1 + tan²x = csc²x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dividiendo la identidad pitagórica entre cos²x se obtiene 1 + tan²x = sec²x."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de sen 150°?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "√3/2",
+          "correcta": false
+        },
+        {
+          "texto": "−√3/2",
+          "correcta": false
+        },
+        {
+          "texto": "−1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "sen 150° = sen(180° − 30°) = sen 30° = 1/2."
+    },
+    {
+      "enunciado": "¿Cuál es el valor de cos 180°?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−1/2",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El coseno de 180° vale −1."
+    },
+    {
+      "enunciado": "Si tan θ = 1 y θ es un ángulo agudo, ¿cuánto mide θ?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "30°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": false
+        },
+        {
+          "texto": "60°",
+          "correcta": false
+        },
+        {
+          "texto": "45°",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La tangente vale 1 cuando el ángulo agudo es 45°."
+    },
+    {
+      "enunciado": "En un triángulo, los lados a = 8 y b = 5 forman un ángulo C = 60°. ¿Cuánto mide el lado c opuesto a ese ángulo?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "√89",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "√129",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la ley de los cosenos: c² = 8² + 5² − 2·8·5·cos 60° = 89 − 40 = 49, luego c = 7."
+    },
+    {
+      "enunciado": "Un triángulo tiene lados 3, 4 y 5. ¿Cuánto mide el ángulo opuesto al lado de longitud 5?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "60°",
+          "correcta": false
+        },
+        {
+          "texto": "45°",
+          "correcta": false
+        },
+        {
+          "texto": "90°",
+          "correcta": true
+        },
+        {
+          "texto": "53°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 3² + 4² = 5², el triángulo es rectángulo y el ángulo opuesto a 5 mide 90°."
+    },
+    {
+      "enunciado": "En un triángulo, el lado a = 10 se opone al ángulo A = 30°. Si el ángulo B = 45°, ¿cuánto mide el lado b opuesto a B?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5√2 ≈ 7,07",
+          "correcta": false
+        },
+        {
+          "texto": "20",
+          "correcta": false
+        },
+        {
+          "texto": "10√2 ≈ 14,14",
+          "correcta": true
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la ley de los senos: b = 10·sen 45°/sen 30° = 10·(√2/2)/(1/2) = 10√2 ≈ 14,14."
+    },
+    {
+      "enunciado": "Si sen x = 3/5 y cos x = 4/5, ¿cuánto vale sen 2x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "7/25",
+          "correcta": false
+        },
+        {
+          "texto": "12/25",
+          "correcta": false
+        },
+        {
+          "texto": "6/5",
+          "correcta": false
+        },
+        {
+          "texto": "24/25",
+          "correcta": true
+        }
+      ],
+      "explicacion": "sen 2x = 2·sen x·cos x = 2·(3/5)·(4/5) = 24/25."
+    },
+    {
+      "enunciado": "Si sen x = 4/5 y x es un ángulo del segundo cuadrante, ¿cuánto vale cos x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−3/5",
+          "correcta": true
+        },
+        {
+          "texto": "3/5",
+          "correcta": false
+        },
+        {
+          "texto": "−4/5",
+          "correcta": false
+        },
+        {
+          "texto": "−5/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el segundo cuadrante el coseno es negativo: cos x = −√(1 − 16/25) = −3/5."
+    },
+    {
+      "enunciado": "Si sen x = 1/2, ¿cuánto vale cos 2x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1/4",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "3/4",
+          "correcta": false
+        },
+        {
+          "texto": "−1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "cos 2x = 1 − 2·sen²x = 1 − 2·(1/4) = 1/2."
+    },
+    {
+      "enunciado": "¿Cuáles son las soluciones de la ecuación sen x = 1/2 en el intervalo [0, 2π)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = π/6 y x = 5π/6",
+          "correcta": true
+        },
+        {
+          "texto": "x = π/3 y x = 2π/3",
+          "correcta": false
+        },
+        {
+          "texto": "x = π/6 y x = 7π/6",
+          "correcta": false
+        },
+        {
+          "texto": "x = π/4 y x = 3π/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En [0, 2π), sen x = 1/2 se cumple en x = π/6 y x = 5π/6."
+    },
+    {
+      "enunciado": "¿Cuál es el periodo de la función y = sen(2x)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2π",
+          "correcta": false
+        },
+        {
+          "texto": "π/2",
+          "correcta": false
+        },
+        {
+          "texto": "π",
+          "correcta": true
+        },
+        {
+          "texto": "4π",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El periodo de y = sen(bx) es 2π/b; aquí 2π/2 = π."
+    },
+    {
+      "enunciado": "¿Cuál es el periodo de la función y = tan x?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "π/2",
+          "correcta": false
+        },
+        {
+          "texto": "2π",
+          "correcta": false
+        },
+        {
+          "texto": "π",
+          "correcta": true
+        },
+        {
+          "texto": "π/4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La función tangente tiene periodo π."
+    },
+    {
+      "enunciado": "¿Cuál es el valor máximo de la función y = 2 sen x + 1?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El máximo de sen x es 1, así que el máximo de 2·sen x + 1 es 2·1 + 1 = 3."
+    },
+    {
+      "enunciado": "¿Cuál es el valor exacto de sen 75°?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "(√6 − √2)/4",
+          "correcta": false
+        },
+        {
+          "texto": "(√2 + 1)/2",
+          "correcta": false
+        },
+        {
+          "texto": "(√6 + √2)/4",
+          "correcta": true
+        },
+        {
+          "texto": "√3/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "sen 75° = sen(45° + 30°) = sen45·cos30 + cos45·sen30 = (√6 + √2)/4."
+    },
+    {
+      "enunciado": "La fórmula del coseno de la suma de dos ángulos, cos(A + B), es igual a:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "cos A cos B + sen A sen B",
+          "correcta": false
+        },
+        {
+          "texto": "sen A cos B + cos A sen B",
+          "correcta": false
+        },
+        {
+          "texto": "cos A cos B − sen A sen B",
+          "correcta": true
+        },
+        {
+          "texto": "cos A cos B − sen A cos B",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El coseno de la suma es cos(A + B) = cos A·cos B − sen A·sen B."
+    },
+    {
+      "enunciado": "El ángulo 5π/6 radianes equivale en grados a:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "150°",
+          "correcta": true
+        },
+        {
+          "texto": "120°",
+          "correcta": false
+        },
+        {
+          "texto": "135°",
+          "correcta": false
+        },
+        {
+          "texto": "210°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "5π/6 rad = 5·180°/6 = 150°."
+    },
+    {
+      "enunciado": "¿Cuál es la amplitud de la función y = −5 sen(3x)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        },
+        {
+          "texto": "15",
+          "correcta": false
+        },
+        {
+          "texto": "−5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La amplitud es el valor absoluto del coeficiente: |−5| = 5."
+    },
+    {
+      "enunciado": "¿Cuáles son las soluciones de la ecuación cos x = 0 en el intervalo [0, 2π)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 0 y x = π",
+          "correcta": false
+        },
+        {
+          "texto": "x = π/2 y x = 3π/2",
+          "correcta": true
+        },
+        {
+          "texto": "x = π/4 y x = 5π/4",
+          "correcta": false
+        },
+        {
+          "texto": "x = π únicamente",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En [0, 2π), cos x = 0 en x = π/2 y x = 3π/2."
+    },
+    {
+      "enunciado": "Un terreno triangular tiene dos lados que miden 6 m y 10 m, y el ángulo comprendido entre ellos es 120°. ¿Cuánto mide el tercer lado?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "√76 m",
+          "correcta": false
+        },
+        {
+          "texto": "8 m",
+          "correcta": false
+        },
+        {
+          "texto": "14 m",
+          "correcta": true
+        },
+        {
+          "texto": "16 m",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la ley de los cosenos: c² = 6² + 10² − 2·6·10·cos 120° = 136 + 60 = 196, luego c = 14 m."
+    }
+  ]
+}

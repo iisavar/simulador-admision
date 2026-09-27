@@ -1,0 +1,1173 @@
+{
+  "id": "quimica-soluciones",
+  "materia": "quimica",
+  "tema": "Soluciones y concentración",
+  "bloque": "Soluciones y gases",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "Una disolución (o solución) es una mezcla homogénea de soluto (lo que se disuelve) y disolvente (normalmente agua). La concentración dice cuánto soluto hay: molaridad M = moles de soluto ÷ litros de disolución; % m/m = (g de soluto ÷ g de disolución) × 100. Al diluir, los moles de soluto no cambian: C₁V₁ = C₂V₂.",
+    "ejemplo": {
+      "enunciado": "¿Cuál es la molaridad de una disolución con 20 g de NaOH (40 g/mol) en 500 mL de disolución?",
+      "pasos": [
+        "Gramos a moles: n = 20 g ÷ 40 g/mol = 0,5 mol.",
+        "Volumen en litros: 500 mL = 0,5 L.",
+        "Molaridad: M = 0,5 mol ÷ 0,5 L = 1 mol/L."
+      ],
+      "resultado": "La disolución es 1 M."
+    },
+    "ojo": "El volumen de la molaridad va en LITROS y es el de toda la disolución; y en el % m/m la masa de la disolución es soluto + disolvente, no solo el agua."
+  },
+  "preguntas": [
+    {
+      "enunciado": "En una disolución, ¿qué es el soluto?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El componente que se disuelve y suele estar en menor cantidad",
+          "correcta": true
+        },
+        {
+          "texto": "El componente que se encuentra en mayor cantidad y disuelve al otro",
+          "correcta": false
+        },
+        {
+          "texto": "La mezcla homogénea que resulta del proceso",
+          "correcta": false
+        },
+        {
+          "texto": "El recipiente que contiene la mezcla",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El soluto es la sustancia que se dispersa o disuelve, generalmente presente en menor proporción que el disolvente."
+    },
+    {
+      "enunciado": "En una disolución de azúcar en agua, ¿cuál es el disolvente?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El agua",
+          "correcta": true
+        },
+        {
+          "texto": "El azúcar",
+          "correcta": false
+        },
+        {
+          "texto": "La mezcla resultante",
+          "correcta": false
+        },
+        {
+          "texto": "El aire disuelto",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El disolvente es el componente en mayor cantidad y que disuelve al soluto; aquí es el agua."
+    },
+    {
+      "enunciado": "Una mezcla homogénea de dos o más sustancias se denomina:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Suspensión",
+          "correcta": false
+        },
+        {
+          "texto": "Disolución",
+          "correcta": true
+        },
+        {
+          "texto": "Coloide",
+          "correcta": false
+        },
+        {
+          "texto": "Emulsión heterogénea",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una disolución es una mezcla homogénea con composición uniforme en toda su extensión."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes corresponde a una disolución verdadera?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Agua con arena en el fondo",
+          "correcta": false
+        },
+        {
+          "texto": "Aceite y agua separados en capas",
+          "correcta": false
+        },
+        {
+          "texto": "Un trozo de granito",
+          "correcta": false
+        },
+        {
+          "texto": "Agua salada transparente",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El agua salada es una mezcla homogénea de una sola fase; las demás son heterogéneas."
+    },
+    {
+      "enunciado": "Para la mayoría de los sólidos disueltos en agua, al aumentar la temperatura su solubilidad generalmente:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Disminuye",
+          "correcta": false
+        },
+        {
+          "texto": "Aumenta",
+          "correcta": true
+        },
+        {
+          "texto": "No cambia en absoluto",
+          "correcta": false
+        },
+        {
+          "texto": "Se vuelve cero",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la mayoría de las sales sólidas la solubilidad crece con la temperatura: en agua caliente se disuelve más soluto que en agua fría."
+    },
+    {
+      "enunciado": "¿Cómo varía la solubilidad de un gas en un líquido al aumentar la temperatura?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Aumenta",
+          "correcta": false
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        },
+        {
+          "texto": "Se duplica siempre",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuye",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Al calentar, los gases escapan con más facilidad del líquido, por lo que su solubilidad disminuye."
+    },
+    {
+      "enunciado": "Una disolución que contiene la máxima cantidad de soluto disuelto a una temperatura dada se llama:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Diluida",
+          "correcta": false
+        },
+        {
+          "texto": "Insaturada",
+          "correcta": false
+        },
+        {
+          "texto": "Saturada",
+          "correcta": true
+        },
+        {
+          "texto": "Coloidal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una disolución saturada contiene el máximo de soluto que puede disolverse a esa temperatura, en equilibrio con el exceso."
+    },
+    {
+      "enunciado": "Una disolución con poca cantidad de soluto respecto al disolvente se describe como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Concentrada",
+          "correcta": false
+        },
+        {
+          "texto": "Saturada",
+          "correcta": false
+        },
+        {
+          "texto": "Sobresaturada",
+          "correcta": false
+        },
+        {
+          "texto": "Diluida",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Una disolución diluida tiene baja proporción de soluto frente al disolvente."
+    },
+    {
+      "enunciado": "¿Qué unidad expresa la concentración como moles de soluto por litro de disolución?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Molalidad",
+          "correcta": false
+        },
+        {
+          "texto": "Normalidad",
+          "correcta": false
+        },
+        {
+          "texto": "Molaridad",
+          "correcta": true
+        },
+        {
+          "texto": "Fracción molar",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La molaridad (M) se define como moles de soluto entre litros de disolución."
+    },
+    {
+      "enunciado": "La molalidad de una disolución se define como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Moles de soluto por litro de disolución",
+          "correcta": false
+        },
+        {
+          "texto": "Moles de soluto por kilogramo de disolvente",
+          "correcta": true
+        },
+        {
+          "texto": "Gramos de soluto por litro de disolución",
+          "correcta": false
+        },
+        {
+          "texto": "Moles de soluto por mol de disolvente",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La molalidad (m) son los moles de soluto divididos entre la masa, en kilogramos, del disolvente."
+    },
+    {
+      "enunciado": "El porcentaje masa/masa (% m/m) de una disolución indica:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Gramos de soluto por cada 100 mL de disolución",
+          "correcta": false
+        },
+        {
+          "texto": "Moles de soluto por cada 100 g de disolución",
+          "correcta": false
+        },
+        {
+          "texto": "Mililitros de soluto por cada 100 mL de disolución",
+          "correcta": false
+        },
+        {
+          "texto": "Gramos de soluto por cada 100 g de disolución",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El % m/m expresa la masa de soluto contenida en 100 g de disolución."
+    },
+    {
+      "enunciado": "En disoluciones acuosas diluidas, 1 ppm (parte por millón) equivale aproximadamente a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1 g de soluto por litro de disolución",
+          "correcta": false
+        },
+        {
+          "texto": "1 kg de soluto por litro de disolución",
+          "correcta": false
+        },
+        {
+          "texto": "1 mol de soluto por litro de disolución",
+          "correcta": false
+        },
+        {
+          "texto": "1 mg de soluto por litro de disolución",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como 1 L de agua pesa aproximadamente 1 kg, 1 mg/L equivale a 1 mg por millón de mg, es decir 1 ppm."
+    },
+    {
+      "enunciado": "¿Qué proceso consiste en agregar disolvente para disminuir la concentración de una disolución?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Saturación",
+          "correcta": false
+        },
+        {
+          "texto": "Cristalización",
+          "correcta": false
+        },
+        {
+          "texto": "Dilución",
+          "correcta": true
+        },
+        {
+          "texto": "Evaporación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Diluir es añadir disolvente, lo que reduce la concentración manteniendo los moles de soluto."
+    },
+    {
+      "enunciado": "¿Cuál es la molaridad de una disolución que contiene 2 mol de soluto en 4 L de disolución?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8 M",
+          "correcta": false
+        },
+        {
+          "texto": "2 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 M",
+          "correcta": true
+        },
+        {
+          "texto": "0,25 M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "M = moles/volumen = 2 mol / 4 L = 0,5 M."
+    },
+    {
+      "enunciado": "¿Cuántos moles de soluto hay en 2 L de una disolución 3 M?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "6 mol",
+          "correcta": true
+        },
+        {
+          "texto": "5 mol",
+          "correcta": false
+        },
+        {
+          "texto": "1,5 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,67 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = M × V = 3 mol/L × 2 L = 6 mol."
+    },
+    {
+      "enunciado": "Una disolución al 10 % m/m contiene, en 100 g de disolución:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "10 g de soluto y 90 g de disolvente",
+          "correcta": true
+        },
+        {
+          "texto": "10 g de soluto y 100 g de agua",
+          "correcta": false
+        },
+        {
+          "texto": "90 g de soluto y 10 g de disolvente",
+          "correcta": false
+        },
+        {
+          "texto": "10 g de soluto por cada litro",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 10 % m/m son 10 g de soluto en 100 g de disolución; el resto, 90 g, es disolvente."
+    },
+    {
+      "enunciado": "Las propiedades coligativas de una disolución dependen principalmente de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La naturaleza química del soluto",
+          "correcta": false
+        },
+        {
+          "texto": "El número de partículas de soluto disueltas",
+          "correcta": true
+        },
+        {
+          "texto": "El color de la disolución",
+          "correcta": false
+        },
+        {
+          "texto": "La masa molar del disolvente",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las propiedades coligativas dependen de la cantidad de partículas disueltas, no de su identidad química."
+    },
+    {
+      "enunciado": "Calcula la molaridad de una disolución preparada con 0,5 mol de NaCl en 250 mL de disolución.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,125 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 M",
+          "correcta": false
+        },
+        {
+          "texto": "1,25 M",
+          "correcta": false
+        },
+        {
+          "texto": "2 M",
+          "correcta": true
+        }
+      ],
+      "explicacion": "M = 0,5 mol / 0,250 L = 2 M."
+    },
+    {
+      "enunciado": "¿Cuántos gramos de NaOH (masa molar 40 g/mol) se necesitan para preparar 500 mL de disolución 1 M?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10 g",
+          "correcta": false
+        },
+        {
+          "texto": "20 g",
+          "correcta": true
+        },
+        {
+          "texto": "40 g",
+          "correcta": false
+        },
+        {
+          "texto": "80 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 1 M × 0,5 L = 0,5 mol; masa = 0,5 mol × 40 g/mol = 20 g."
+    },
+    {
+      "enunciado": "Se disuelven 20 g de NaOH (40 g/mol) en agua hasta completar 2 L de disolución. ¿Cuál es su molaridad?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,25 M",
+          "correcta": true
+        },
+        {
+          "texto": "0,1 M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 20/40 = 0,5 mol; M = 0,5 mol / 2 L = 0,25 M."
+    },
+    {
+      "enunciado": "¿Qué volumen de disolución 6 M se necesita para preparar 300 mL de disolución 2 M por dilución?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "900 mL",
+          "correcta": false
+        },
+        {
+          "texto": "150 mL",
+          "correcta": false
+        },
+        {
+          "texto": "100 mL",
+          "correcta": true
+        },
+        {
+          "texto": "50 mL",
+          "correcta": false
+        }
+      ],
+      "explicacion": "C₁V₁ = C₂V₂: V₁ = (2 × 300)/6 = 100 mL."
+    },
+    {
+      "enunciado": "Se diluyen 50 mL de HCl 4 M con agua hasta un volumen final de 200 mL. ¿Cuál es la concentración final?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "16 M",
+          "correcta": false
+        },
+        {
+          "texto": "2 M",
+          "correcta": false
+        },
+        {
+          "texto": "1 M",
+          "correcta": true
+        },
+        {
+          "texto": "0,5 M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "C₂ = C₁V₁/V₂ = (4 × 50)/200 = 1 M."
+    },
+    {
+      "enunciado": "Una muestra de agua contiene 0,005 g de un contaminante en 1 L de disolución. ¿Cuál es la concentración en ppm?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,5 ppm",
+          "correcta": false
+        },
+        {
+          "texto": "5 ppm",
+          "correcta": true
+        },
+        {
+          "texto": "50 ppm",
+          "correcta": false
+        },
+        {
+          "texto": "500 ppm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "0,005 g = 5 mg en 1 L, y 1 mg/L = 1 ppm, por lo que son 5 ppm."
+    },
+    {
+      "enunciado": "Calcula el porcentaje masa/volumen (% m/v) de una disolución con 15 g de soluto en 300 mL de disolución.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "45 %",
+          "correcta": false
+        },
+        {
+          "texto": "5 %",
+          "correcta": true
+        },
+        {
+          "texto": "2 %",
+          "correcta": false
+        },
+        {
+          "texto": "0,05 %",
+          "correcta": false
+        }
+      ],
+      "explicacion": "% m/v = (15 g / 300 mL) × 100 = 5 %."
+    },
+    {
+      "enunciado": "Se disuelven 25 g de soluto en 100 g de agua. ¿Cuál es el porcentaje masa/masa de la disolución?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "80 %",
+          "correcta": false
+        },
+        {
+          "texto": "25 %",
+          "correcta": false
+        },
+        {
+          "texto": "20 %",
+          "correcta": true
+        },
+        {
+          "texto": "4 %",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La disolución pesa 125 g; % m/m = (25/125) × 100 = 20 %."
+    },
+    {
+      "enunciado": "¿Cuál es la molalidad de una disolución con 0,5 mol de soluto disueltos en 250 g de disolvente?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,125 m",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 m",
+          "correcta": false
+        },
+        {
+          "texto": "1,25 m",
+          "correcta": false
+        },
+        {
+          "texto": "2 m",
+          "correcta": true
+        }
+      ],
+      "explicacion": "m = 0,5 mol / 0,250 kg = 2 mol/kg."
+    },
+    {
+      "enunciado": "¿Cuántos gramos de glucosa (180 g/mol) hay en 500 mL de disolución 0,2 M?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "90 g",
+          "correcta": false
+        },
+        {
+          "texto": "36 g",
+          "correcta": false
+        },
+        {
+          "texto": "18 g",
+          "correcta": true
+        },
+        {
+          "texto": "9 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 0,2 M × 0,5 L = 0,1 mol; masa = 0,1 × 180 = 18 g."
+    },
+    {
+      "enunciado": "A 20 °C la solubilidad del KNO₃ es 30 g por cada 100 g de agua. ¿Cuánto KNO₃ se disuelve, como máximo, en 250 g de agua?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "120 g",
+          "correcta": false
+        },
+        {
+          "texto": "75 g",
+          "correcta": true
+        },
+        {
+          "texto": "30 g",
+          "correcta": false
+        },
+        {
+          "texto": "7,5 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Regla de tres: 30 g/100 g × 250 g = 75 g."
+    },
+    {
+      "enunciado": "El agua de un río contiene 8 ppm de oxígeno disuelto. ¿Cuántos miligramos de O₂ hay en 2 L?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "16 mg",
+          "correcta": true
+        },
+        {
+          "texto": "8 mg",
+          "correcta": false
+        },
+        {
+          "texto": "4 mg",
+          "correcta": false
+        },
+        {
+          "texto": "0,016 mg",
+          "correcta": false
+        }
+      ],
+      "explicacion": "8 ppm = 8 mg/L; en 2 L hay 8 × 2 = 16 mg."
+    },
+    {
+      "enunciado": "En una disolución hay 2 mol de soluto y 8 mol de disolvente. ¿Cuál es la fracción molar del soluto?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,2",
+          "correcta": true
+        },
+        {
+          "texto": "0,25",
+          "correcta": false
+        },
+        {
+          "texto": "0,8",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "X(soluto) = 2 / (2 + 8) = 0,2."
+    },
+    {
+      "enunciado": "¿Qué ocurre con el punto de ebullición del agua al disolver en ella un soluto no volátil como la sal?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Disminuye",
+          "correcta": false
+        },
+        {
+          "texto": "Aumenta",
+          "correcta": true
+        },
+        {
+          "texto": "Permanece igual",
+          "correcta": false
+        },
+        {
+          "texto": "Baja hasta 0 °C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La elevación ebulloscópica hace que la disolución hierva a mayor temperatura que el disolvente puro."
+    },
+    {
+      "enunciado": "¿Qué le ocurre al punto de congelación del agua al agregarle un soluto?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Disminuye",
+          "correcta": true
+        },
+        {
+          "texto": "Aumenta",
+          "correcta": false
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        },
+        {
+          "texto": "Sube hasta 100 °C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El descenso crioscópico hace que la disolución congele a una temperatura menor que el disolvente puro."
+    },
+    {
+      "enunciado": "Se mezclan 100 mL de NaCl 1 M con 100 mL de NaCl 3 M. ¿Cuál es la concentración final?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4 M",
+          "correcta": false
+        },
+        {
+          "texto": "3 M",
+          "correcta": false
+        },
+        {
+          "texto": "2 M",
+          "correcta": true
+        },
+        {
+          "texto": "1,5 M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Moles totales = 0,1 + 0,3 = 0,4 mol en 0,2 L; M = 0,4/0,2 = 2 M."
+    },
+    {
+      "enunciado": "Una disolución contiene 58,5 g/L de NaCl (masa molar 58,5 g/mol). ¿Cuál es su molaridad?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,5 M",
+          "correcta": false
+        },
+        {
+          "texto": "1 M",
+          "correcta": true
+        },
+        {
+          "texto": "2 M",
+          "correcta": false
+        },
+        {
+          "texto": "58,5 M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "M = (58,5 g/L) / (58,5 g/mol) = 1 mol/L."
+    },
+    {
+      "enunciado": "Una disolución 0,5 m de un no electrolito en agua tiene Kf = 1,86 °C/m. ¿Cuál es su punto de congelación?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−1,86 °C",
+          "correcta": false
+        },
+        {
+          "texto": "−0,93 °C",
+          "correcta": true
+        },
+        {
+          "texto": "−0,5 °C",
+          "correcta": false
+        },
+        {
+          "texto": "0,93 °C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔTf = Kf × m = 1,86 × 0,5 = 0,93; Tf = 0 − 0,93 = −0,93 °C."
+    },
+    {
+      "enunciado": "Para una disolución 2 m de glucosa en agua (Kb = 0,512 °C/m), ¿cuál es su punto de ebullición aproximado?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "102,0 °C",
+          "correcta": false
+        },
+        {
+          "texto": "101,0 °C",
+          "correcta": true
+        },
+        {
+          "texto": "100,5 °C",
+          "correcta": false
+        },
+        {
+          "texto": "98,98 °C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔTb = Kb × m = 0,512 × 2 = 1,02; Tb = 100 + 1,02 ≈ 101,0 °C."
+    },
+    {
+      "enunciado": "¿Cuál es el punto de congelación de una disolución de NaCl 0,5 m (i = 2) en agua, con Kf = 1,86 °C/m?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−3,72 °C",
+          "correcta": false
+        },
+        {
+          "texto": "−1,86 °C",
+          "correcta": true
+        },
+        {
+          "texto": "−0,93 °C",
+          "correcta": false
+        },
+        {
+          "texto": "−0,5 °C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔTf = i × Kf × m = 2 × 1,86 × 0,5 = 1,86; Tf = −1,86 °C."
+    },
+    {
+      "enunciado": "Calcula la presión osmótica de una disolución 0,1 M de un no electrolito a 27 °C (R = 0,082 atm·L/(mol·K)).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,246 atm",
+          "correcta": false
+        },
+        {
+          "texto": "1,23 atm",
+          "correcta": false
+        },
+        {
+          "texto": "2,46 atm",
+          "correcta": true
+        },
+        {
+          "texto": "24,6 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "π = MRT = 0,1 × 0,082 × 300 = 2,46 atm (27 °C = 300 K)."
+    },
+    {
+      "enunciado": "¿Qué molaridad tiene una disolución preparada disolviendo 49 g de H₂SO₄ (98 g/mol) en agua hasta 500 mL?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2 M",
+          "correcta": false
+        },
+        {
+          "texto": "1 M",
+          "correcta": true
+        },
+        {
+          "texto": "0,5 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,1 M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "n = 49/98 = 0,5 mol; M = 0,5 mol / 0,5 L = 1 M."
+    },
+    {
+      "enunciado": "Una disolución de HCl al 36,5 % m/m tiene una densidad de 1,18 g/mL. ¿Cuál es su molaridad? (HCl = 36,5 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "36,5 M",
+          "correcta": false
+        },
+        {
+          "texto": "11,8 M",
+          "correcta": true
+        },
+        {
+          "texto": "5,9 M",
+          "correcta": false
+        },
+        {
+          "texto": "1,18 M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En 1 L: masa = 1180 g; HCl = 0,365 × 1180 = 430,7 g; moles = 430,7/36,5 = 11,8; M ≈ 11,8."
+    },
+    {
+      "enunciado": "Se tiene una disolución de glucosa (180 g/mol) al 18 % m/m en agua. ¿Cuál es su molalidad?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,1 m",
+          "correcta": false
+        },
+        {
+          "texto": "1,0 m",
+          "correcta": false
+        },
+        {
+          "texto": "1,22 m",
+          "correcta": true
+        },
+        {
+          "texto": "2,2 m",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En 100 g: 18 g glucosa = 0,1 mol y 82 g de agua = 0,082 kg; m = 0,1/0,082 ≈ 1,22 mol/kg."
+    },
+    {
+      "enunciado": "Una disolución de 6 g de un no electrolito en 100 g de agua congela a −1,86 °C (Kf = 1,86 °C/m). ¿Cuál es la masa molar del soluto?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "30 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "60 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "120 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "m = ΔTf/Kf = 1,86/1,86 = 1; moles = 1 × 0,1 = 0,1; M = 6/0,1 = 60 g/mol."
+    },
+    {
+      "enunciado": "Se mezclan 200 mL de HCl 0,5 M con 300 mL de HCl 1 M y se afora con agua hasta 1 L. ¿Cuál es la concentración final?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,5 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,8 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,75 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,4 M",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Moles = 0,2 × 0,5 + 0,3 × 1 = 0,1 + 0,3 = 0,4 mol en 1 L; M = 0,4 M."
+    },
+    {
+      "enunciado": "¿Qué volumen final debe alcanzar la disolución para que 25 mL de HNO₃ 12 M queden a 0,5 M?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1200 mL",
+          "correcta": false
+        },
+        {
+          "texto": "600 mL",
+          "correcta": true
+        },
+        {
+          "texto": "300 mL",
+          "correcta": false
+        },
+        {
+          "texto": "150 mL",
+          "correcta": false
+        }
+      ],
+      "explicacion": "V₂ = C₁V₁/C₂ = (12 × 25)/0,5 = 600 mL."
+    },
+    {
+      "enunciado": "Una disolución acuosa tiene 250 ppm de Ca²⁺ y densidad 1,0 g/mL. ¿Cuántos gramos de Ca²⁺ hay en 4 L?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,25 g",
+          "correcta": false
+        },
+        {
+          "texto": "1 g",
+          "correcta": true
+        },
+        {
+          "texto": "4 g",
+          "correcta": false
+        },
+        {
+          "texto": "10 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "250 ppm = 250 mg/L; en 4 L hay 1000 mg = 1 g."
+    },
+    {
+      "enunciado": "Calcula la presión osmótica de una disolución de NaCl 0,2 M (i = 2) a 300 K (R = 0,082 atm·L/(mol·K)).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2,46 atm",
+          "correcta": false
+        },
+        {
+          "texto": "4,92 atm",
+          "correcta": false
+        },
+        {
+          "texto": "9,84 atm",
+          "correcta": true
+        },
+        {
+          "texto": "19,68 atm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "π = iMRT = 2 × 0,2 × 0,082 × 300 = 9,84 atm."
+    },
+    {
+      "enunciado": "La solubilidad del KClO₃ es 7 g/100 g de agua a 20 °C y 24 g/100 g a 60 °C. Si se satura a 60 °C con 100 g de agua y luego se enfría a 20 °C, ¿cuánto sólido cristaliza?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "31 g",
+          "correcta": false
+        },
+        {
+          "texto": "24 g",
+          "correcta": false
+        },
+        {
+          "texto": "17 g",
+          "correcta": true
+        },
+        {
+          "texto": "7 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cristaliza la diferencia entre lo disuelto a 60 °C y a 20 °C: 24 − 7 = 17 g."
+    },
+    {
+      "enunciado": "A 500 mL de disolución 0,4 M de KCl se le evapora agua hasta dejar 200 mL. ¿Cuál es la nueva concentración?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1 M",
+          "correcta": true
+        },
+        {
+          "texto": "0,8 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,4 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,16 M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los moles se conservan: 0,4 × 0,5 = 0,2 mol; M = 0,2/0,2 = 1 M."
+    },
+    {
+      "enunciado": "¿Cuál es el punto de congelación de una disolución de CaCl₂ 0,1 m (i = 3) en agua, con Kf = 1,86 °C/m?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−0,186 °C",
+          "correcta": false
+        },
+        {
+          "texto": "−0,56 °C",
+          "correcta": true
+        },
+        {
+          "texto": "−0,93 °C",
+          "correcta": false
+        },
+        {
+          "texto": "−1,86 °C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔTf = i × Kf × m = 3 × 1,86 × 0,1 = 0,558; Tf ≈ −0,56 °C."
+    },
+    {
+      "enunciado": "Una disolución de NaCl al 5 % m/m tiene una densidad de 1,03 g/mL. ¿Cuál es su molaridad? (NaCl = 58,5 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,05 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,5 M",
+          "correcta": false
+        },
+        {
+          "texto": "0,88 M",
+          "correcta": true
+        },
+        {
+          "texto": "1,76 M",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En 1 L: masa = 1030 g; NaCl = 0,05 × 1030 = 51,5 g; moles = 51,5/58,5 = 0,88; M ≈ 0,88."
+    }
+  ]
+}

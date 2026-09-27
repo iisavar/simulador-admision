@@ -1,0 +1,1154 @@
+{
+  "id": "quimica-periodica",
+  "materia": "quimica",
+  "tema": "La tabla periódica y sus propiedades",
+  "bloque": "Tabla periódica y enlaces",
+  "nivel": "basico",
+  "clase": {
+    "titulo": "Química desde cero",
+    "url": "../quimica-materia/",
+    "lamina": 54
+  },
+  "repaso": {
+    "idea": "La tabla ordena los elementos por número atómico creciente: 7 periodos (filas) y 18 grupos (columnas). El radio atómico crece hacia abajo y hacia la izquierda; la energía de ionización y la electronegatividad crecen al revés: hacia arriba y hacia la derecha.",
+    "ejemplo": {
+      "enunciado": "Ordena Na, Mg y K de mayor a menor radio atómico.",
+      "pasos": [
+        "Ubica: Na y Mg están en el periodo 3 (Na en el grupo 1, Mg en el grupo 2); K está en el grupo 1, periodo 4.",
+        "En un mismo periodo el radio disminuye hacia la derecha: Na es más grande que Mg.",
+        "Al bajar en un grupo se agregan capas: K es más grande que Na."
+      ],
+      "resultado": "K > Na > Mg"
+    },
+    "ojo": "No mezcles los sentidos: el radio aumenta hacia abajo y a la izquierda, pero la electronegatividad y la energía de ionización aumentan hacia arriba y a la derecha."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Quién propuso en 1869 la primera tabla periódica ordenando los elementos por sus propiedades?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "John Dalton",
+          "correcta": false
+        },
+        {
+          "texto": "Dmitri Mendeléyev",
+          "correcta": true
+        },
+        {
+          "texto": "Niels Bohr",
+          "correcta": false
+        },
+        {
+          "texto": "Antoine Lavoisier",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Mendeléyev organizó la primera tabla periódica en 1869 y dejó espacios para elementos aún no descubiertos."
+    },
+    {
+      "enunciado": "¿Cuántos periodos (filas horizontales) tiene la tabla periódica actual?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La tabla periódica moderna consta de 7 periodos numerados del 1 al 7."
+    },
+    {
+      "enunciado": "¿Cómo se denominan las columnas verticales de la tabla periódica?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Periodos",
+          "correcta": false
+        },
+        {
+          "texto": "Bloques",
+          "correcta": false
+        },
+        {
+          "texto": "Series",
+          "correcta": false
+        },
+        {
+          "texto": "Grupos",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Las columnas verticales se llaman grupos y agrupan elementos con propiedades químicas semejantes."
+    },
+    {
+      "enunciado": "¿Cuántos grupos (columnas) tiene la tabla periódica moderna?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "18",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La tabla periódica moderna tiene 18 grupos numerados del 1 al 18."
+    },
+    {
+      "enunciado": "Los elementos del grupo 1 (excepto el hidrógeno) reciben el nombre de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Metales alcalinotérreos",
+          "correcta": false
+        },
+        {
+          "texto": "Metales alcalinos",
+          "correcta": true
+        },
+        {
+          "texto": "Halógenos",
+          "correcta": false
+        },
+        {
+          "texto": "Gases nobles",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El grupo 1, sin contar el hidrógeno, agrupa a los metales alcalinos como el litio, el sodio y el potasio."
+    },
+    {
+      "enunciado": "Los elementos del grupo 17 se conocen como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Gases nobles",
+          "correcta": false
+        },
+        {
+          "texto": "Metales alcalinos",
+          "correcta": false
+        },
+        {
+          "texto": "Halógenos",
+          "correcta": true
+        },
+        {
+          "texto": "Calcógenos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El grupo 17 corresponde a los halógenos, como el flúor, el cloro, el bromo y el yodo."
+    },
+    {
+      "enunciado": "Los elementos del grupo 18 se denominan:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Halógenos",
+          "correcta": false
+        },
+        {
+          "texto": "Metales de transición",
+          "correcta": false
+        },
+        {
+          "texto": "Lantánidos",
+          "correcta": false
+        },
+        {
+          "texto": "Gases nobles",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El grupo 18 reúne a los gases nobles, caracterizados por su gran estabilidad química."
+    },
+    {
+      "enunciado": "El número que indica la cantidad de protones de un átomo se llama:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Número atómico",
+          "correcta": true
+        },
+        {
+          "texto": "Número másico",
+          "correcta": false
+        },
+        {
+          "texto": "Número de neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "Peso atómico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número atómico (Z) representa la cantidad de protones del núcleo e identifica al elemento."
+    },
+    {
+      "enunciado": "En la tabla periódica moderna los elementos están ordenados según su:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Número atómico creciente",
+          "correcta": true
+        },
+        {
+          "texto": "Masa atómica creciente",
+          "correcta": false
+        },
+        {
+          "texto": "Orden alfabético",
+          "correcta": false
+        },
+        {
+          "texto": "Año de descubrimiento",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Moseley estableció que los elementos se ordenan por número atómico creciente, no por masa."
+    },
+    {
+      "enunciado": "Los metales alcalinotérreos pertenecen al grupo:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "17",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El grupo 2 reúne a los metales alcalinotérreos como el berilio, el magnesio y el calcio."
+    },
+    {
+      "enunciado": "¿En qué zona de la tabla periódica se ubican principalmente los metales?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "En la esquina superior derecha",
+          "correcta": false
+        },
+        {
+          "texto": "Solo en la última fila",
+          "correcta": false
+        },
+        {
+          "texto": "En la columna del extremo derecho",
+          "correcta": false
+        },
+        {
+          "texto": "A la izquierda y en el centro",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los metales ocupan la parte izquierda y central de la tabla; los no metales se sitúan a la derecha."
+    },
+    {
+      "enunciado": "El símbolo químico del sodio es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "So",
+          "correcta": false
+        },
+        {
+          "texto": "Na",
+          "correcta": true
+        },
+        {
+          "texto": "Sd",
+          "correcta": false
+        },
+        {
+          "texto": "S",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El símbolo del sodio es Na, derivado de su nombre latino natrium."
+    },
+    {
+      "enunciado": "¿Cuántos elementos contiene el primer periodo de la tabla periódica?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El primer periodo solo contiene al hidrógeno y al helio, es decir, dos elementos."
+    },
+    {
+      "enunciado": "El hidrógeno se ubica habitualmente en el grupo:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "18",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "17",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El hidrógeno suele colocarse en el grupo 1 porque posee un único electrón de valencia."
+    },
+    {
+      "enunciado": "La electronegatividad de un elemento mide:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La masa total del átomo",
+          "correcta": false
+        },
+        {
+          "texto": "El número de neutrones del núcleo",
+          "correcta": false
+        },
+        {
+          "texto": "El volumen del átomo",
+          "correcta": false
+        },
+        {
+          "texto": "La tendencia de un átomo a atraer los electrones de un enlace",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La electronegatividad expresa la capacidad de un átomo para atraer hacia sí los electrones de un enlace."
+    },
+    {
+      "enunciado": "El radio atómico es una medida de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La carga eléctrica del núcleo",
+          "correcta": false
+        },
+        {
+          "texto": "La masa del átomo",
+          "correcta": false
+        },
+        {
+          "texto": "El tamaño del átomo",
+          "correcta": true
+        },
+        {
+          "texto": "El número de enlaces que forma",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El radio atómico estima el tamaño del átomo, relacionado con la distancia del núcleo a la capa más externa."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes elementos es un gas noble?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Cloro",
+          "correcta": false
+        },
+        {
+          "texto": "Neón",
+          "correcta": true
+        },
+        {
+          "texto": "Sodio",
+          "correcta": false
+        },
+        {
+          "texto": "Oxígeno",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El neón pertenece al grupo 18 (gases nobles) y posee su capa de valencia completa."
+    },
+    {
+      "enunciado": "A lo largo de un periodo, de izquierda a derecha, el radio atómico generalmente:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Disminuye",
+          "correcta": true
+        },
+        {
+          "texto": "Aumenta",
+          "correcta": false
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        },
+        {
+          "texto": "Se duplica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al avanzar en un periodo crece la carga nuclear sin añadir capas, por lo que el radio atómico disminuye."
+    },
+    {
+      "enunciado": "Al descender en un grupo, el radio atómico generalmente:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Disminuye",
+          "correcta": false
+        },
+        {
+          "texto": "Permanece constante",
+          "correcta": false
+        },
+        {
+          "texto": "Se reduce a la mitad",
+          "correcta": false
+        },
+        {
+          "texto": "Aumenta",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Al bajar en un grupo se agregan capas electrónicas, lo que incrementa el radio atómico."
+    },
+    {
+      "enunciado": "La energía de ionización, a lo largo de un periodo de izquierda a derecha, tiende a:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Disminuir",
+          "correcta": false
+        },
+        {
+          "texto": "No variar",
+          "correcta": false
+        },
+        {
+          "texto": "Aumentar",
+          "correcta": true
+        },
+        {
+          "texto": "Anularse",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al avanzar en un periodo aumenta la carga nuclear efectiva, dificultando quitar electrones, por lo que la energía de ionización crece."
+    },
+    {
+      "enunciado": "Al descender en un grupo, la energía de ionización generalmente:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Aumenta",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuye",
+          "correcta": true
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        },
+        {
+          "texto": "Se duplica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al bajar en un grupo el electrón externo está más lejos del núcleo y mejor apantallado, por lo que es más fácil arrancarlo."
+    },
+    {
+      "enunciado": "El elemento con mayor electronegatividad de toda la tabla periódica es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Oxígeno",
+          "correcta": false
+        },
+        {
+          "texto": "Cloro",
+          "correcta": false
+        },
+        {
+          "texto": "Cesio",
+          "correcta": false
+        },
+        {
+          "texto": "Flúor",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El flúor posee la electronegatividad más alta (aproximadamente 4,0 en la escala de Pauling)."
+    },
+    {
+      "enunciado": "De los siguientes elementos, ¿cuál tiene el mayor radio atómico?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "H",
+          "correcta": false
+        },
+        {
+          "texto": "Li",
+          "correcta": false
+        },
+        {
+          "texto": "K",
+          "correcta": true
+        },
+        {
+          "texto": "Na",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dentro del grupo 1, el potasio (periodo 4) está más abajo que H, Li y Na, por lo que tiene el mayor radio atómico."
+    },
+    {
+      "enunciado": "De los elementos Na, Mg, Al y Si, ¿cuál presenta la mayor primera energía de ionización?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Si",
+          "correcta": true
+        },
+        {
+          "texto": "Na",
+          "correcta": false
+        },
+        {
+          "texto": "Mg",
+          "correcta": false
+        },
+        {
+          "texto": "Al",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el periodo 3 la energía de ionización aumenta hacia la derecha; el silicio (786 kJ/mol) supera a Na, Mg y Al."
+    },
+    {
+      "enunciado": "La afinidad electrónica se relaciona con la energía asociada a:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "La ganancia de un electrón por un átomo gaseoso",
+          "correcta": true
+        },
+        {
+          "texto": "La pérdida de un electrón por un átomo",
+          "correcta": false
+        },
+        {
+          "texto": "La ganancia de un protón por el núcleo",
+          "correcta": false
+        },
+        {
+          "texto": "La formación de un enlace covalente doble",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La afinidad electrónica es el cambio de energía cuando un átomo gaseoso neutro gana un electrón."
+    },
+    {
+      "enunciado": "De los elementos Li, B, N y F, ¿cuál tiene el menor radio atómico?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Li",
+          "correcta": false
+        },
+        {
+          "texto": "B",
+          "correcta": false
+        },
+        {
+          "texto": "F",
+          "correcta": true
+        },
+        {
+          "texto": "N",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los cuatro están en el periodo 2; el radio disminuye hacia la derecha, de modo que el flúor es el más pequeño."
+    },
+    {
+      "enunciado": "¿Qué propiedad periódica aumenta al bajar en un grupo y al ir hacia la izquierda en un periodo?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Energía de ionización",
+          "correcta": false
+        },
+        {
+          "texto": "Electronegatividad",
+          "correcta": false
+        },
+        {
+          "texto": "Afinidad electrónica",
+          "correcta": false
+        },
+        {
+          "texto": "Radio atómico",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El radio atómico aumenta hacia abajo y hacia la izquierda; la energía de ionización, la electronegatividad y la afinidad electrónica crecen en sentido contrario."
+    },
+    {
+      "enunciado": "¿Qué grupo de la tabla periódica presenta, en general, la menor energía de ionización?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Grupo 17 (halógenos)",
+          "correcta": false
+        },
+        {
+          "texto": "Grupo 1 (metales alcalinos)",
+          "correcta": true
+        },
+        {
+          "texto": "Grupo 18 (gases nobles)",
+          "correcta": false
+        },
+        {
+          "texto": "Grupo 2 (alcalinotérreos)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los metales alcalinos pierden con facilidad su único electrón de valencia, por lo que tienen la menor energía de ionización."
+    },
+    {
+      "enunciado": "Los elementos de transición se ubican principalmente en el bloque:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "d",
+          "correcta": true
+        },
+        {
+          "texto": "s",
+          "correcta": false
+        },
+        {
+          "texto": "p",
+          "correcta": false
+        },
+        {
+          "texto": "f",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los metales de transición corresponden al bloque d, donde se llenan los orbitales d."
+    },
+    {
+      "enunciado": "¿Cuántos electrones de valencia tienen los elementos del grupo 16?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los elementos del grupo 16 (calcógenos) poseen 6 electrones de valencia."
+    },
+    {
+      "enunciado": "Un catión, comparado con su átomo neutro de origen, presenta un radio:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Mayor",
+          "correcta": false
+        },
+        {
+          "texto": "Igual",
+          "correcta": false
+        },
+        {
+          "texto": "Menor",
+          "correcta": true
+        },
+        {
+          "texto": "Depende solo del número de neutrones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al perder electrones disminuye la repulsión y, a veces, se pierde una capa, por lo que el catión es más pequeño que el átomo neutro."
+    },
+    {
+      "enunciado": "Un anión, comparado con su átomo neutro de origen, presenta un radio:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Menor",
+          "correcta": false
+        },
+        {
+          "texto": "Igual",
+          "correcta": false
+        },
+        {
+          "texto": "Depende solo del número de neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "Mayor",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Al ganar electrones aumenta la repulsión electrónica y la misma carga nuclear atrae a más electrones, por lo que el anión es mayor que el átomo neutro."
+    },
+    {
+      "enunciado": "Salvo el helio, los gases nobles se ubican en el bloque:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "s",
+          "correcta": false
+        },
+        {
+          "texto": "d",
+          "correcta": false
+        },
+        {
+          "texto": "f",
+          "correcta": false
+        },
+        {
+          "texto": "p",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Los gases nobles ocupan el extremo derecho del bloque p (con la configuración ns² np⁶); el helio es la excepción del bloque s."
+    },
+    {
+      "enunciado": "La configuración electrónica del calcio (elemento del grupo 2, periodo 4) es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "[Ar]4s¹",
+          "correcta": false
+        },
+        {
+          "texto": "[Ne]3s²",
+          "correcta": false
+        },
+        {
+          "texto": "[Ar]4s²",
+          "correcta": true
+        },
+        {
+          "texto": "[Ar]3d²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El calcio (Z = 20) tiene la configuración [Ar]4s², con dos electrones de valencia en el cuarto nivel."
+    },
+    {
+      "enunciado": "Un elemento tiene la configuración 1s² 2s² 2p⁶ 3s² 3p⁵. ¿A qué grupo pertenece?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Grupo 7",
+          "correcta": false
+        },
+        {
+          "texto": "Grupo 17",
+          "correcta": true
+        },
+        {
+          "texto": "Grupo 15",
+          "correcta": false
+        },
+        {
+          "texto": "Grupo 13",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con 7 electrones de valencia (3s² 3p⁵) corresponde al grupo 17; se trata del cloro."
+    },
+    {
+      "enunciado": "Un átomo neutro con configuración [Ne]3s² 3p³ se ubica en el:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Periodo 3, grupo 15",
+          "correcta": true
+        },
+        {
+          "texto": "Periodo 3, grupo 13",
+          "correcta": false
+        },
+        {
+          "texto": "Periodo 2, grupo 15",
+          "correcta": false
+        },
+        {
+          "texto": "Periodo 3, grupo 5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El nivel más alto es el 3 (periodo 3) y posee 5 electrones de valencia (3s² 3p³), lo que corresponde al grupo 15: el fósforo."
+    },
+    {
+      "enunciado": "¿Por qué la primera energía de ionización del aluminio es menor que la del magnesio?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Porque el aluminio tiene mayor carga nuclear que el magnesio",
+          "correcta": false
+        },
+        {
+          "texto": "Porque el magnesio es un gas noble",
+          "correcta": false
+        },
+        {
+          "texto": "Porque el electrón que se retira del Al está en un orbital 3p de mayor energía, mientras el Mg tiene el subnivel 3s² completo y estable",
+          "correcta": true
+        },
+        {
+          "texto": "Porque el aluminio tiene menor masa atómica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El Al pierde un electrón 3p¹, más alto en energía y apantallado por el 3s², mientras que el Mg tiene el subnivel 3s² lleno y más estable; por eso ioniza con menor energía."
+    },
+    {
+      "enunciado": "¿Por qué el oxígeno tiene una primera energía de ionización ligeramente menor que el nitrógeno?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Porque el oxígeno tiene menor carga nuclear",
+          "correcta": false
+        },
+        {
+          "texto": "Porque el nitrógeno posee el subnivel 2p semilleno (2p³), más estable, y en el oxígeno se retira un electrón apareado",
+          "correcta": true
+        },
+        {
+          "texto": "Porque el oxígeno es un metal",
+          "correcta": false
+        },
+        {
+          "texto": "Porque el oxígeno tiene mayor radio que el nitrógeno",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El N (2p³) tiene un subnivel semilleno estable; en el O (2p⁴) hay un electrón apareado cuya repulsión facilita su salida, reduciendo la energía de ionización."
+    },
+    {
+      "enunciado": "¿Cuál es el orden correcto de radio atómico creciente para Na, Mg, Al y Si?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Na < Mg < Al < Si",
+          "correcta": false
+        },
+        {
+          "texto": "Mg < Na < Si < Al",
+          "correcta": false
+        },
+        {
+          "texto": "Al < Si < Na < Mg",
+          "correcta": false
+        },
+        {
+          "texto": "Si < Al < Mg < Na",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En el periodo 3 el radio disminuye hacia la derecha, por lo que el orden creciente es Si < Al < Mg < Na."
+    },
+    {
+      "enunciado": "Las especies N³⁻, O²⁻, F⁻, Na⁺ y Mg²⁺ son isoelectrónicas (10 electrones). ¿Cuál tiene el menor radio iónico?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Mg²⁺",
+          "correcta": true
+        },
+        {
+          "texto": "N³⁻",
+          "correcta": false
+        },
+        {
+          "texto": "F⁻",
+          "correcta": false
+        },
+        {
+          "texto": "Na⁺",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En especies isoelectrónicas, a mayor carga nuclear menor radio; el Mg²⁺ (Z = 12) atrae con más fuerza los 10 electrones, así que es el más pequeño."
+    },
+    {
+      "enunciado": "Entre los iones isoelectrónicos N³⁻, O²⁻, F⁻, Na⁺ y Mg²⁺ (todos con 10 electrones), ¿cuál tiene el mayor radio iónico?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "O²⁻",
+          "correcta": false
+        },
+        {
+          "texto": "Na⁺",
+          "correcta": false
+        },
+        {
+          "texto": "Mg²⁺",
+          "correcta": false
+        },
+        {
+          "texto": "N³⁻",
+          "correcta": true
+        }
+      ],
+      "explicacion": "A menor carga nuclear, mayor radio; el N³⁻ (Z = 7) ejerce la menor atracción sobre los 10 electrones, por lo que es el ion más grande."
+    },
+    {
+      "enunciado": "La segunda energía de ionización del sodio es mucho mayor que la primera porque:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "El segundo electrón se extrae de una configuración de gas noble muy estable",
+          "correcta": true
+        },
+        {
+          "texto": "El sodio gana un electrón en lugar de perderlo",
+          "correcta": false
+        },
+        {
+          "texto": "El sodio se comporta como un halógeno",
+          "correcta": false
+        },
+        {
+          "texto": "La masa del átomo aumenta al ionizarse",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tras perder el electrón 3s¹, el Na⁺ queda con configuración de neón; arrancar el segundo electrón de esa capa estable requiere muchísima más energía."
+    },
+    {
+      "enunciado": "De los halógenos F, Cl, Br y I, ¿cuál presenta la mayor afinidad electrónica (valor más exotérmico)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "I",
+          "correcta": false
+        },
+        {
+          "texto": "Cl",
+          "correcta": true
+        },
+        {
+          "texto": "Br",
+          "correcta": false
+        },
+        {
+          "texto": "F",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El cloro (aprox. −349 kJ/mol) supera al flúor (aprox. −328 kJ/mol): el átomo de flúor es tan pequeño que la repulsión entre sus electrones reduce su afinidad electrónica."
+    },
+    {
+      "enunciado": "Según la escala de Pauling, la electronegatividad del flúor es aproximadamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,7",
+          "correcta": false
+        },
+        {
+          "texto": "2,5",
+          "correcta": false
+        },
+        {
+          "texto": "4,0",
+          "correcta": true
+        },
+        {
+          "texto": "1,0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El flúor tiene la mayor electronegatividad de la tabla, con un valor cercano a 4,0 en la escala de Pauling."
+    },
+    {
+      "enunciado": "De los elementos Cs, Li, Na y F, ¿cuál es el menos electronegativo (más electropositivo)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "F",
+          "correcta": false
+        },
+        {
+          "texto": "Li",
+          "correcta": false
+        },
+        {
+          "texto": "Cs",
+          "correcta": true
+        },
+        {
+          "texto": "Na",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La electronegatividad disminuye hacia abajo y hacia la izquierda; el cesio (aprox. 0,79) es el más electropositivo de los cuatro."
+    },
+    {
+      "enunciado": "Dentro del periodo 3, ¿qué elemento posee la mayor energía de ionización?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Na",
+          "correcta": false
+        },
+        {
+          "texto": "Mg",
+          "correcta": false
+        },
+        {
+          "texto": "Cl",
+          "correcta": false
+        },
+        {
+          "texto": "Ar",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El argón, gas noble con capa de valencia completa (3s² 3p⁶), tiene la mayor energía de ionización del periodo 3."
+    },
+    {
+      "enunciado": "En el grupo 17 (F, Cl, Br, I), al descender en el grupo la electronegatividad:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Aumenta",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuye",
+          "correcta": true
+        },
+        {
+          "texto": "Permanece constante",
+          "correcta": false
+        },
+        {
+          "texto": "Se duplica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al bajar en un grupo el electrón de valencia está más lejos del núcleo y más apantallado; por eso la electronegatividad disminuye del flúor (4,0) al yodo (2,7)."
+    },
+    {
+      "enunciado": "Un elemento X forma el ion X²⁺ cuya configuración es la del argón ([Ar]). ¿Cuál es el elemento X?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Calcio",
+          "correcta": true
+        },
+        {
+          "texto": "Argón",
+          "correcta": false
+        },
+        {
+          "texto": "Potasio",
+          "correcta": false
+        },
+        {
+          "texto": "Escandio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El calcio neutro es [Ar]4s²; al perder dos electrones forma Ca²⁺ con configuración de argón."
+    },
+    {
+      "enunciado": "En el periodo 2, la energía de ionización no aumenta de forma perfectamente uniforme. ¿Entre qué elementos baja en lugar de subir?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Entre Li y Be",
+          "correcta": false
+        },
+        {
+          "texto": "Entre Be y B, y entre N y O",
+          "correcta": true
+        },
+        {
+          "texto": "Entre C y N",
+          "correcta": false
+        },
+        {
+          "texto": "Entre O y F",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La energía de ionización baja de Be a B (se retira un electrón 2p¹ frente al 2s² lleno) y de N a O (se rompe el subnivel 2p³ semilleno estable)."
+    }
+  ]
+}

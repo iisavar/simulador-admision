@@ -1,0 +1,1178 @@
+{
+  "id": "quimica-materia",
+  "materia": "quimica",
+  "tema": "La materia: clasificación, propiedades y mezclas",
+  "bloque": "Materia y átomo",
+  "nivel": "basico",
+  "clase": {
+    "titulo": "Química desde cero",
+    "url": "../quimica-materia/",
+    "lamina": 17
+  },
+  "repaso": {
+    "idea": "Materia es todo lo que tiene masa y ocupa espacio. Se clasifica en sustancias puras (elementos y compuestos) y mezclas (homogéneas o heterogéneas); las mezclas se separan por métodos físicos que aprovechan una diferencia entre sus componentes.",
+    "ejemplo": {
+      "enunciado": "Una piedra tiene 60 g de masa y ocupa 24 cm³. ¿Cuál es su densidad? ¿Flota en el agua?",
+      "pasos": [
+        "Escribe la fórmula: d = m/V.",
+        "Reemplaza: d = 60 g ÷ 24 cm³.",
+        "Divide: 60 ÷ 24 = 2,5 → d = 2,5 g/cm³.",
+        "Compara con el agua (1,0 g/cm³): 2,5 es mayor, así que la piedra se hunde."
+      ],
+      "resultado": "d = 2,5 g/cm³; se hunde porque es más densa que el agua."
+    },
+    "ojo": "No confundas «homogénea» con «pura»: el agua con sal se ve uniforme, pero es una mezcla (disolución), no una sustancia pura."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Qué característica define a la materia?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Solo aquello que podemos ver a simple vista",
+          "correcta": false
+        },
+        {
+          "texto": "Todo aquello que tiene masa y ocupa un lugar en el espacio",
+          "correcta": true
+        },
+        {
+          "texto": "Únicamente las sustancias en estado sólido",
+          "correcta": false
+        },
+        {
+          "texto": "La energía que emiten los cuerpos calientes",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La materia es todo lo que posee masa y ocupa un volumen (espacio); no se limita a lo visible ni a un estado en particular."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes es una propiedad general, común a toda la materia?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El color",
+          "correcta": false
+        },
+        {
+          "texto": "El sabor",
+          "correcta": false
+        },
+        {
+          "texto": "La masa",
+          "correcta": true
+        },
+        {
+          "texto": "La dureza",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La masa es una propiedad general porque todo cuerpo material la posee; el color, el sabor y la dureza son propiedades específicas de cada sustancia."
+    },
+    {
+      "enunciado": "Los tres estados de agregación de la materia más comunes en la Tierra son:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Sólido, plasma y coloide",
+          "correcta": false
+        },
+        {
+          "texto": "Líquido, vapor y mezcla",
+          "correcta": false
+        },
+        {
+          "texto": "Gaseoso, plasma y cristal",
+          "correcta": false
+        },
+        {
+          "texto": "Sólido, líquido y gaseoso",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En condiciones terrestres habituales la materia se presenta como sólido, líquido o gas; el plasma es común en estrellas, no en la superficie terrestre."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes es un cambio físico?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La fusión del hielo",
+          "correcta": true
+        },
+        {
+          "texto": "La combustión de la madera",
+          "correcta": false
+        },
+        {
+          "texto": "La oxidación de un clavo de hierro",
+          "correcta": false
+        },
+        {
+          "texto": "La fermentación de la fruta",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la fusión del hielo solo cambia el estado físico del agua, no su composición; los demás procesos forman nuevas sustancias (cambios químicos)."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes es un cambio químico?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Doblar una lámina de aluminio",
+          "correcta": false
+        },
+        {
+          "texto": "Quemar un trozo de papel",
+          "correcta": true
+        },
+        {
+          "texto": "Disolver azúcar en agua",
+          "correcta": false
+        },
+        {
+          "texto": "Triturar una roca",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al quemar el papel se forman nuevas sustancias (humo, cenizas, gases); doblar, disolver y triturar no alteran la composición de la materia."
+    },
+    {
+      "enunciado": "Una sustancia pura formada por un solo tipo de átomo se denomina:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Compuesto",
+          "correcta": false
+        },
+        {
+          "texto": "Mezcla",
+          "correcta": false
+        },
+        {
+          "texto": "Elemento",
+          "correcta": true
+        },
+        {
+          "texto": "Disolución",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un elemento está constituido por átomos de una sola clase; el compuesto combina átomos distintos y las mezclas no son sustancias puras."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes sustancias es un elemento químico?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El agua",
+          "correcta": false
+        },
+        {
+          "texto": "La sal de mesa",
+          "correcta": false
+        },
+        {
+          "texto": "El dióxido de carbono",
+          "correcta": false
+        },
+        {
+          "texto": "El oxígeno",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El oxígeno está formado por un solo tipo de átomo; el agua, la sal y el dióxido de carbono son compuestos formados por elementos distintos."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes sustancias es un compuesto?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El agua",
+          "correcta": true
+        },
+        {
+          "texto": "El hierro",
+          "correcta": false
+        },
+        {
+          "texto": "El oro",
+          "correcta": false
+        },
+        {
+          "texto": "El helio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El agua (H₂O) está formada por hidrógeno y oxígeno unidos químicamente; el hierro, el oro y el helio son elementos."
+    },
+    {
+      "enunciado": "El agua con sal completamente disuelta es un ejemplo de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Mezcla heterogénea",
+          "correcta": false
+        },
+        {
+          "texto": "Mezcla homogénea",
+          "correcta": true
+        },
+        {
+          "texto": "Elemento",
+          "correcta": false
+        },
+        {
+          "texto": "Compuesto puro",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al disolverse por completo, la sal no se distingue del agua y se obtiene una sola fase uniforme: una mezcla homogénea (disolución)."
+    },
+    {
+      "enunciado": "Una mezcla en la que se distinguen a simple vista sus componentes se llama:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Heterogénea",
+          "correcta": true
+        },
+        {
+          "texto": "Homogénea",
+          "correcta": false
+        },
+        {
+          "texto": "Disolución",
+          "correcta": false
+        },
+        {
+          "texto": "Sustancia pura",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En una mezcla heterogénea se observan dos o más fases o componentes diferenciables; en la homogénea hay una sola fase uniforme."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes es una mezcla homogénea?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Agua con aceite",
+          "correcta": false
+        },
+        {
+          "texto": "Ensalada de frutas",
+          "correcta": false
+        },
+        {
+          "texto": "Agua con arena",
+          "correcta": false
+        },
+        {
+          "texto": "El aire limpio y seco",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El aire es una mezcla homogénea de gases (nitrógeno, oxígeno, etc.) con una sola fase; los demás ejemplos presentan fases distinguibles."
+    },
+    {
+      "enunciado": "En una disolución, el componente que se encuentra en mayor proporción y disuelve a los demás se llama:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Soluto",
+          "correcta": false
+        },
+        {
+          "texto": "Precipitado",
+          "correcta": false
+        },
+        {
+          "texto": "Disolvente (solvente)",
+          "correcta": true
+        },
+        {
+          "texto": "Coloide",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El disolvente es el componente mayoritario que disuelve al soluto; en el agua salada, el agua actúa como disolvente."
+    },
+    {
+      "enunciado": "En el agua azucarada, el azúcar cumple el papel de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Soluto",
+          "correcta": true
+        },
+        {
+          "texto": "Disolvente",
+          "correcta": false
+        },
+        {
+          "texto": "Mezcla heterogénea",
+          "correcta": false
+        },
+        {
+          "texto": "Elemento",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El soluto es la sustancia que se disuelve y está en menor proporción; aquí el azúcar se disuelve en el agua, que es el disolvente."
+    },
+    {
+      "enunciado": "Para separar limaduras de hierro mezcladas con arena, el método más adecuado es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La filtración",
+          "correcta": false
+        },
+        {
+          "texto": "La destilación",
+          "correcta": false
+        },
+        {
+          "texto": "La separación magnética con un imán",
+          "correcta": true
+        },
+        {
+          "texto": "La evaporación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El hierro es atraído por un imán y la arena no, por lo que la separación magnética aprovecha esa propiedad para separarlos."
+    },
+    {
+      "enunciado": "Para separar la arena del agua en una mezcla, se puede emplear:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La separación magnética",
+          "correcta": false
+        },
+        {
+          "texto": "La filtración",
+          "correcta": true
+        },
+        {
+          "texto": "La cromatografía",
+          "correcta": false
+        },
+        {
+          "texto": "La sublimación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La arena es un sólido insoluble que el papel o malla de filtro retiene, dejando pasar el agua: ese proceso es la filtración."
+    },
+    {
+      "enunciado": "El estado de la materia que posee forma y volumen propios (definidos) es el:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Líquido",
+          "correcta": false
+        },
+        {
+          "texto": "Gaseoso",
+          "correcta": false
+        },
+        {
+          "texto": "Plasma",
+          "correcta": false
+        },
+        {
+          "texto": "Sólido",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En el estado sólido las partículas están muy ordenadas y unidas, por lo que el cuerpo conserva forma y volumen propios."
+    },
+    {
+      "enunciado": "Un líquido se caracteriza por tener:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Forma y volumen definidos",
+          "correcta": false
+        },
+        {
+          "texto": "Forma definida, pero volumen variable",
+          "correcta": false
+        },
+        {
+          "texto": "Volumen definido, pero forma variable que se adapta al recipiente",
+          "correcta": true
+        },
+        {
+          "texto": "Ni forma ni volumen definidos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El líquido mantiene su volumen pero adopta la forma del recipiente que lo contiene; el gas no conserva ni forma ni volumen."
+    },
+    {
+      "enunciado": "La destilación es un método de separación que se basa en la diferencia de:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Puntos de ebullición de los componentes",
+          "correcta": true
+        },
+        {
+          "texto": "Tamaño de las partículas",
+          "correcta": false
+        },
+        {
+          "texto": "Color de los componentes",
+          "correcta": false
+        },
+        {
+          "texto": "Densidad de los sólidos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la destilación se calienta la mezcla y el componente más volátil (menor punto de ebullición) hierve primero, se evapora y luego se condensa por separado."
+    },
+    {
+      "enunciado": "Para separar el alcohol del agua de una mezcla líquida homogénea se recomienda:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "La filtración",
+          "correcta": false
+        },
+        {
+          "texto": "La decantación",
+          "correcta": false
+        },
+        {
+          "texto": "El tamizado",
+          "correcta": false
+        },
+        {
+          "texto": "La destilación",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El alcohol y el agua se mezclan totalmente, así que solo pueden separarse por destilación, aprovechando sus distintos puntos de ebullición."
+    },
+    {
+      "enunciado": "La cromatografía permite separar los pigmentos de una tinta porque cada componente tiene distinta:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Masa atómica",
+          "correcta": false
+        },
+        {
+          "texto": "Afinidad o velocidad de desplazamiento sobre el soporte",
+          "correcta": true
+        },
+        {
+          "texto": "Carga eléctrica",
+          "correcta": false
+        },
+        {
+          "texto": "Temperatura de fusión",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En la cromatografía cada pigmento avanza a distinta velocidad según su afinidad por la fase móvil y la fija, lo que los separa en bandas."
+    },
+    {
+      "enunciado": "Para separar dos líquidos que no se mezclan (inmiscibles), como agua y aceite, se usa un embudo de separación que deja salir primero el líquido de abajo. ¿Qué método es?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Filtración",
+          "correcta": false
+        },
+        {
+          "texto": "Sublimación",
+          "correcta": false
+        },
+        {
+          "texto": "Decantación con embudo de separación",
+          "correcta": true
+        },
+        {
+          "texto": "Cromatografía",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El embudo de separación deja salir por abajo el líquido más denso (agua) y retiene el menos denso (aceite); ese método es la decantación."
+    },
+    {
+      "enunciado": "Un montaje con un embudo cónico, papel de filtro y un vaso debajo se utiliza para:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Separar dos gases entre sí",
+          "correcta": false
+        },
+        {
+          "texto": "Separar un sólido insoluble de un líquido (filtración)",
+          "correcta": true
+        },
+        {
+          "texto": "Destilar una disolución salina",
+          "correcta": false
+        },
+        {
+          "texto": "Magnetizar un metal",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El papel de filtro retiene el sólido insoluble y deja pasar el líquido al vaso; ese montaje corresponde a una filtración."
+    },
+    {
+      "enunciado": "El tamizado es un método que separa mezclas de sólidos aprovechando la diferencia de:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Tamaño de las partículas",
+          "correcta": true
+        },
+        {
+          "texto": "Densidad",
+          "correcta": false
+        },
+        {
+          "texto": "Punto de ebullición",
+          "correcta": false
+        },
+        {
+          "texto": "Solubilidad",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el tamizado, una malla deja pasar las partículas pequeñas y retiene las grandes, separando los sólidos según su tamaño."
+    },
+    {
+      "enunciado": "La centrifugación separa los componentes de una mezcla principalmente según su:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Color",
+          "correcta": false
+        },
+        {
+          "texto": "Carga eléctrica",
+          "correcta": false
+        },
+        {
+          "texto": "Temperatura",
+          "correcta": false
+        },
+        {
+          "texto": "Densidad, mediante un giro a alta velocidad",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La centrífuga gira la mezcla a gran velocidad y los componentes más densos se desplazan al fondo, separándose de los menos densos."
+    },
+    {
+      "enunciado": "Para recuperar la sal disuelta en agua conservando el sólido, el método más sencillo es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "La evaporación del agua",
+          "correcta": true
+        },
+        {
+          "texto": "La filtración",
+          "correcta": false
+        },
+        {
+          "texto": "La separación magnética",
+          "correcta": false
+        },
+        {
+          "texto": "El tamizado",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al evaporar el agua, esta pasa a vapor y la sal queda como residuo sólido; la filtración no separa solutos disueltos."
+    },
+    {
+      "enunciado": "El acero (hierro con carbono) y el bronce son ejemplos de:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Mezclas heterogéneas",
+          "correcta": false
+        },
+        {
+          "texto": "Compuestos químicos",
+          "correcta": false
+        },
+        {
+          "texto": "Aleaciones, que son mezclas homogéneas sólidas",
+          "correcta": true
+        },
+        {
+          "texto": "Elementos puros",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las aleaciones son mezclas homogéneas de metales (o metal con otro elemento) en estado sólido, con una composición uniforme."
+    },
+    {
+      "enunciado": "La leche y la gelatina son ejemplos de un tipo especial de mezcla llamada:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Disolución verdadera",
+          "correcta": false
+        },
+        {
+          "texto": "Coloide",
+          "correcta": true
+        },
+        {
+          "texto": "Aleación",
+          "correcta": false
+        },
+        {
+          "texto": "Compuesto",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En un coloide las partículas dispersas son intermedias: no se ven a simple vista pero dispersan la luz y no sedimentan fácilmente."
+    },
+    {
+      "enunciado": "El agua turbia con arcilla que sedimenta al reposar es un ejemplo de:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Disolución",
+          "correcta": false
+        },
+        {
+          "texto": "Sustancia pura",
+          "correcta": false
+        },
+        {
+          "texto": "Compuesto",
+          "correcta": false
+        },
+        {
+          "texto": "Suspensión",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En una suspensión las partículas sólidas son grandes, enturbian el líquido y con el tiempo se depositan en el fondo por gravedad."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes NO es una sustancia pura?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "El agua destilada",
+          "correcta": false
+        },
+        {
+          "texto": "El oxígeno gaseoso",
+          "correcta": false
+        },
+        {
+          "texto": "El dióxido de carbono",
+          "correcta": false
+        },
+        {
+          "texto": "El aire",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El aire es una mezcla de varios gases, mientras que el agua destilada, el oxígeno y el dióxido de carbono son sustancias puras."
+    },
+    {
+      "enunciado": "El paso directo del estado sólido al gaseoso, sin pasar por el líquido, se denomina:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Fusión",
+          "correcta": false
+        },
+        {
+          "texto": "Sublimación progresiva",
+          "correcta": true
+        },
+        {
+          "texto": "Condensación",
+          "correcta": false
+        },
+        {
+          "texto": "Solidificación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La sublimación progresiva es el paso directo de sólido a gas, como ocurre con el hielo seco o la naftalina; el paso inverso (gas a sólido) es la sublimación regresiva."
+    },
+    {
+      "enunciado": "El paso del estado gaseoso al líquido se llama:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Condensación",
+          "correcta": true
+        },
+        {
+          "texto": "Vaporización",
+          "correcta": false
+        },
+        {
+          "texto": "Sublimación",
+          "correcta": false
+        },
+        {
+          "texto": "Fusión",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La condensación es el cambio de gas a líquido, como el vapor de agua que forma gotas sobre un vaso frío; la vaporización es el cambio contrario."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes es una propiedad intensiva (no depende de la cantidad de materia)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "La masa",
+          "correcta": false
+        },
+        {
+          "texto": "El volumen",
+          "correcta": false
+        },
+        {
+          "texto": "La densidad",
+          "correcta": true
+        },
+        {
+          "texto": "El peso",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La densidad es intensiva porque su valor no cambia con la cantidad de muestra; la masa, el volumen y el peso sí dependen de ella."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes es una propiedad extensiva (depende de la cantidad de materia)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "El punto de ebullición",
+          "correcta": false
+        },
+        {
+          "texto": "La densidad",
+          "correcta": false
+        },
+        {
+          "texto": "La temperatura",
+          "correcta": false
+        },
+        {
+          "texto": "El volumen",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El volumen aumenta o disminuye con la cantidad de materia, por lo que es extensivo; el punto de ebullición, la densidad y la temperatura son intensivos."
+    },
+    {
+      "enunciado": "Para separar una mezcla de arena, sal y agua, el orden correcto de métodos es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Primero evaporar el agua y luego usar un imán",
+          "correcta": false
+        },
+        {
+          "texto": "Primero filtrar para retirar la arena y luego evaporar para recuperar la sal",
+          "correcta": true
+        },
+        {
+          "texto": "Primero destilar y luego tamizar",
+          "correcta": false
+        },
+        {
+          "texto": "Primero cromatografiar y luego decantar",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La filtración retira la arena insoluble; al evaporar después el agua filtrada se recupera la sal disuelta como sólido."
+    },
+    {
+      "enunciado": "Un objeto tiene una masa de 50 g y ocupa un volumen de 20 cm³. ¿Cuál es su densidad?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,4 g/cm³",
+          "correcta": false
+        },
+        {
+          "texto": "70 g/cm³",
+          "correcta": false
+        },
+        {
+          "texto": "2,5 g/cm³",
+          "correcta": true
+        },
+        {
+          "texto": "1000 g/cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La densidad es d = m/V = 50 g / 20 cm³ = 2,5 g/cm³."
+    },
+    {
+      "enunciado": "El mercurio tiene una densidad de 13,6 g/mL. ¿Qué masa tienen 50 mL de mercurio?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "680 g",
+          "correcta": true
+        },
+        {
+          "texto": "3,7 g",
+          "correcta": false
+        },
+        {
+          "texto": "63,6 g",
+          "correcta": false
+        },
+        {
+          "texto": "272 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De d = m/V se despeja m = d·V = 13,6 g/mL × 50 mL = 680 g."
+    },
+    {
+      "enunciado": "Una pieza metálica tiene una masa de 270 g y una densidad de 2,7 g/cm³. ¿Cuál es su volumen?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "729 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "267,3 cm³",
+          "correcta": false
+        },
+        {
+          "texto": "100 cm³",
+          "correcta": true
+        },
+        {
+          "texto": "10 cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De d = m/V se despeja V = m/d = 270 g / 2,7 g/cm³ = 100 cm³."
+    },
+    {
+      "enunciado": "Se disuelven 20 g de sal en 80 g de agua. ¿Cuál es la concentración en porcentaje masa/masa de la disolución?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "25%",
+          "correcta": false
+        },
+        {
+          "texto": "80%",
+          "correcta": false
+        },
+        {
+          "texto": "16%",
+          "correcta": false
+        },
+        {
+          "texto": "20%",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La masa total es 20 + 80 = 100 g, así que %m/m = (20/100)×100 = 20%."
+    },
+    {
+      "enunciado": "¿Qué masa de soluto contiene 250 g de una disolución cuya concentración es 8% en masa?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "20 g",
+          "correcta": true
+        },
+        {
+          "texto": "31,25 g",
+          "correcta": false
+        },
+        {
+          "texto": "2 g",
+          "correcta": false
+        },
+        {
+          "texto": "8 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El 8% en masa significa 8 g de soluto por cada 100 g de disolución: 0,08 × 250 g = 20 g."
+    },
+    {
+      "enunciado": "Un cuerpo flota en el agua (densidad del agua = 1,0 g/cm³) únicamente si su densidad es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Mayor que 1,0 g/cm³",
+          "correcta": false
+        },
+        {
+          "texto": "Menor que 1,0 g/cm³",
+          "correcta": true
+        },
+        {
+          "texto": "Igual a 2,0 g/cm³",
+          "correcta": false
+        },
+        {
+          "texto": "Igual a 1,5 g/cm³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un cuerpo flota cuando es menos denso que el líquido; si su densidad es menor que 1,0 g/cm³, flota en el agua."
+    },
+    {
+      "enunciado": "De los siguientes materiales, ¿cuál FLOTARÁ en agua (densidad 1,0 g/cm³)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Hierro, densidad 7,9 g/cm³",
+          "correcta": false
+        },
+        {
+          "texto": "Aluminio, densidad 2,7 g/cm³",
+          "correcta": false
+        },
+        {
+          "texto": "Vidrio, densidad 2,5 g/cm³",
+          "correcta": false
+        },
+        {
+          "texto": "Corcho, densidad 0,24 g/cm³",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Solo el corcho tiene densidad menor que la del agua (0,24 < 1,0 g/cm³), por lo que flota; los demás se hunden."
+    },
+    {
+      "enunciado": "Una muestra de agua contiene 5 mg de un contaminante disuelto por cada litro de agua. Su concentración en partes por millón (ppm) es aproximadamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5 ppm",
+          "correcta": true
+        },
+        {
+          "texto": "0,5 ppm",
+          "correcta": false
+        },
+        {
+          "texto": "50 ppm",
+          "correcta": false
+        },
+        {
+          "texto": "500 ppm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En agua diluida, 1 L pesa unos 1 000 000 mg; por eso 1 mg/L ≈ 1 ppm y 5 mg/L ≈ 5 ppm."
+    },
+    {
+      "enunciado": "Si la densidad de una sustancia es 1 g/cm³, su valor equivalente en el Sistema Internacional (kg/m³) es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1 kg/m³",
+          "correcta": false
+        },
+        {
+          "texto": "1000 kg/m³",
+          "correcta": true
+        },
+        {
+          "texto": "100 kg/m³",
+          "correcta": false
+        },
+        {
+          "texto": "0,001 kg/m³",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 1 g = 0,001 kg y 1 cm³ = 0,000001 m³, resulta 1 g/cm³ = 0,001/0,000001 = 1000 kg/m³."
+    },
+    {
+      "enunciado": "Un lingote de oro (densidad 19,3 g/cm³) tiene un volumen de 2 cm³. ¿Cuál es su masa?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "9,65 g",
+          "correcta": false
+        },
+        {
+          "texto": "21,3 g",
+          "correcta": false
+        },
+        {
+          "texto": "38,6 g",
+          "correcta": true
+        },
+        {
+          "texto": "19,3 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "m = d·V = 19,3 g/cm³ × 2 cm³ = 38,6 g."
+    },
+    {
+      "enunciado": "Se vierten en un recipiente agua (densidad 1,0 g/mL) y aceite (densidad 0,92 g/mL), que no se mezclan entre sí. Al reposar:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "El aceite queda en la capa superior por ser menos denso",
+          "correcta": true
+        },
+        {
+          "texto": "El agua queda arriba por ser menos densa",
+          "correcta": false
+        },
+        {
+          "texto": "Forman una sola capa homogénea",
+          "correcta": false
+        },
+        {
+          "texto": "El aceite se hunde por ser más denso",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El líquido menos denso se ubica encima; como el aceite (0,92 g/mL) es menos denso que el agua (1,0 g/mL), queda en la capa superior."
+    },
+    {
+      "enunciado": "En la filtración, el papel de filtro retiene las partículas que son:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Más pequeñas que sus poros",
+          "correcta": false
+        },
+        {
+          "texto": "Líquidas",
+          "correcta": false
+        },
+        {
+          "texto": "Gaseosas",
+          "correcta": false
+        },
+        {
+          "texto": "Más grandes que el tamaño de sus poros",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El filtro deja pasar el líquido y las partículas menores que sus poros, mientras retiene las partículas sólidas más grandes que ellos."
+    },
+    {
+      "enunciado": "Una disolución se prepara con 30 mL de alcohol en un volumen total de 200 mL de disolución. Su concentración en porcentaje volumen/volumen es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6,7%",
+          "correcta": false
+        },
+        {
+          "texto": "30%",
+          "correcta": false
+        },
+        {
+          "texto": "15%",
+          "correcta": true
+        },
+        {
+          "texto": "170%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El %v/v = (volumen de soluto / volumen de disolución)×100 = (30/200)×100 = 15%."
+    },
+    {
+      "enunciado": "Al añadir más disolvente (agua) a una disolución de sal sin agregar más sal, la concentración de la disolución:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Aumenta",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuye (se diluye)",
+          "correcta": true
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        },
+        {
+          "texto": "Se duplica siempre",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La misma cantidad de soluto repartida en más disolvente da menor concentración: la disolución se diluye."
+    },
+    {
+      "enunciado": "Cuando se disuelven completamente 15 g de azúcar en 185 g de agua, la masa total de la disolución, según la conservación de la masa, es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "200 g",
+          "correcta": true
+        },
+        {
+          "texto": "185 g",
+          "correcta": false
+        },
+        {
+          "texto": "170 g",
+          "correcta": false
+        },
+        {
+          "texto": "15 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La masa se conserva, por lo que la disolución pesa la suma de sus componentes: 15 g + 185 g = 200 g."
+    },
+    {
+      "enunciado": "Una pieza de aluminio (densidad 2,7 g/cm³) y una de plomo (densidad 11,3 g/cm³) tienen el mismo volumen de 10 cm³. ¿Cuál afirmación es correcta?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Ambas tienen la misma masa porque tienen igual volumen",
+          "correcta": false
+        },
+        {
+          "texto": "La pieza de aluminio tiene mayor masa",
+          "correcta": false
+        },
+        {
+          "texto": "La pieza de plomo tiene mayor masa: 113 g frente a 27 g",
+          "correcta": true
+        },
+        {
+          "texto": "La masa no depende de la densidad",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con m = d·V: aluminio = 2,7×10 = 27 g y plomo = 11,3×10 = 113 g; a igual volumen, el más denso tiene más masa."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CIDEA Jóvenes</title>
+<meta name="description" content="CIDEA Jóvenes: todas tus clases con Ignacio Isa, tu avance, simuladores del examen de admisión y repasos en un solo lugar.">
+<meta name="theme-color" content="#8854d0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16131f" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%238854d0'/%3E%3Cpath d='M32 14 8 25l24 11 24-11z' fill='%23fff'/%3E%3Cpath d='M18 31v10c0 4 6 8 14 8s14-4 14-8V31l-14 6.5z' fill='%23fff' opacity='.85'/%3E%3Cpath d='M53 26v13' stroke='%23f4a124' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="campus.css?v=1">
+<script>
+  /* Aplica el tema guardado antes de pintar (evita parpadeo) */
+  try {
+    var c0 = JSON.parse(localStorage.getItem('campus_v1') || 'null');
+    var t0 = c0 && c0.ajustes && c0.ajustes.tema;
+    if (t0 === 'light' || t0 === 'dark') document.documentElement.setAttribute('data-theme', t0);
+  } catch (e) { }
+</script>
+</head>
+<body>
+<a class="saltar" href="#principal">Saltar al contenido</a>
+
+<header class="barra">
+  <div class="barra-in">
+    <a class="marca" href="#principal" aria-label="CIDEA Jóvenes, inicio">
+      <span class="marca-logo" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M32 14 8 25l24 11 24-11z" fill="currentColor"/><path d="M18 31v10c0 4 6 8 14 8s14-4 14-8V31l-14 6.5z" fill="currentColor" opacity=".8"/><path d="M53 26v13" stroke="#f4a124" stroke-width="3.5" stroke-linecap="round"/></svg>
+      </span>
+      <span class="marca-txt"><b>CIDEA</b><span class="marca-badge">Jóvenes</span></span>
+    </a>
+    <nav class="nav" aria-label="Secciones" id="nav" hidden>
+      <a href="#ruta-sec">Mi ruta</a>
+      <a href="#evaluate">Evalúate</a>
+      <a href="#practica">Práctica libre</a>
+      <a href="#repasar">Repasar</a>
+    </nav>
+    <div class="barra-acc">
+      <button type="button" class="btn-ico" id="btn-tema" aria-label="Cambiar a tema oscuro"></button>
+      <button type="button" class="btn-perfil" id="btn-ajustes" aria-label="Ajustes y perfil" hidden><span id="perfil-ini">?</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="principal" tabindex="-1">
+  <section id="registro" class="registro" hidden aria-labelledby="reg-titulo"></section>
+  <div id="campus" hidden>
+    <section class="hero" id="hero" aria-labelledby="saludo"></section>
+
+    <div class="columnas">
+      <div class="col-principal">
+        <section class="seccion" id="ruta-sec" aria-labelledby="t-ruta">
+          <div class="sec-cab">
+            <h2 id="t-ruta">Mi ruta</h2>
+            <p>Tus clases en el orden del cronograma. Cada una tiene láminas, juego y examen, y guarda tu avance sola.</p>
+          </div>
+          <ol class="ruta" id="ruta"></ol>
+        </section>
+      </div>
+
+      <div class="col-lateral">
+        <section class="seccion" id="evaluate" aria-labelledby="t-evaluate">
+          <div class="sec-cab">
+            <h2 id="t-evaluate">Evalúate</h2>
+            <p>Mide cómo vas con diagnósticos y un simulacro del examen.</p>
+          </div>
+          <div class="lista-evaluate" id="lista-evaluate"></div>
+        </section>
+
+        <section class="seccion" id="repasar" aria-labelledby="t-repasar">
+          <div class="sec-cab">
+            <h2 id="t-repasar">Repasar</h2>
+            <p>Lo esencial de cada clase en una lámina, y lo que más te conviene reforzar.</p>
+          </div>
+          <div class="debil" id="debilidades"></div>
+          <div class="resumenes" id="lista-resumenes"></div>
+        </section>
+      </div>
+    </div>
+
+    <section class="seccion extras" id="practica" aria-labelledby="t-practica">
+      <div class="sec-cab">
+        <h2 id="t-practica">Práctica libre <span class="h2-opc">· opcional</span></h2>
+        <p>Para los que quieren más: practica por tema cuando quieras. No reemplaza a las clases.</p>
+      </div>
+      <div class="grid-libre" id="lista-libre"></div>
+      <h3 class="sub-t" id="t-herr">Herramientas y juegos de tus clases</h3>
+      <div class="grid-practica" id="lista-practica"></div>
+    </section>
+  </div>
+</main>
+
+<footer class="pie">
+  <p><b>CIDEA Jóvenes</b></p>
+  <p class="pie-sub">por Ignacio Isa · Tu avance se guarda en este dispositivo.</p>
+</footer>
+
+<dialog id="ajustes" class="hoja" aria-labelledby="aj-titulo">
+  <form method="dialog" class="hoja-in" id="aj-form">
+    <div class="hoja-cab">
+      <h2 id="aj-titulo">Ajustes</h2>
+      <button type="submit" class="btn-ico" aria-label="Cerrar ajustes" value="cerrar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="aj-usuario">
+      <span class="aj-ini" id="aj-ini" aria-hidden="true">?</span>
+      <div><b id="aj-nombre"></b><span id="aj-correo"></span></div>
+    </div>
+    <button type="button" class="btn btn-sec btn-ancho" id="aj-cambiar">¿No eres tú? Cambiar</button>
+    <fieldset class="aj-tema">
+      <legend>Tema</legend>
+      <label><input type="radio" name="tema" value="auto"> Automático</label>
+      <label><input type="radio" name="tema" value="light"> Claro</label>
+      <label><input type="radio" name="tema" value="dark"> Oscuro</label>
+    </fieldset>
+    <p class="aj-nota">Tu avance de cada clase se guarda en este celular o computadora. Si cambias de dispositivo, empiezas de nuevo allí.</p>
+  </form>
+</dialog>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+
+<script src="campus.js?v=1"></script>
+</body>
+</html>

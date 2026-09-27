@@ -1,0 +1,1081 @@
+{
+  "id": "quimica-cinetica",
+  "materia": "quimica",
+  "tema": "Cinética química: velocidad de reacción",
+  "bloque": "Termoquímica, cinética y equilibrio",
+  "nivel": "avanzado",
+  "clase": null,
+  "repaso": {
+    "idea": "La cinética estudia qué tan rápido ocurre una reacción. La velocidad es el cambio de concentración por unidad de tiempo, y aumenta con la temperatura, la concentración, la superficie de contacto y los catalizadores.",
+    "ejemplo": {
+      "enunciado": "La ley de velocidad de una reacción es v = k[A]²[B]. ¿Qué le pasa a la velocidad si se duplica [A] y [B] no cambia?",
+      "pasos": [
+        "El exponente de [A] es 2: la velocidad depende de [A]².",
+        "Si [A] se duplica, ese factor queda multiplicado por 2² = 4.",
+        "[B] no cambia, así que su factor es 1: 4 × 1 = 4."
+      ],
+      "resultado": "La velocidad se multiplica por 4."
+    },
+    "ojo": "Los exponentes de la ley de velocidad (los órdenes) salen de experimentos, no de los coeficientes de la ecuación; y el catalizador baja la energía de activación pero no cambia ΔH ni la constante de equilibrio."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Qué estudia principalmente la cinética química?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La cantidad de calor que libera o absorbe una reacción",
+          "correcta": false
+        },
+        {
+          "texto": "La velocidad de las reacciones y los factores que la modifican",
+          "correcta": true
+        },
+        {
+          "texto": "La composición final del sistema en equilibrio",
+          "correcta": false
+        },
+        {
+          "texto": "La masa exacta de productos que se forma",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La cinética química estudia la rapidez de las reacciones y los factores que la modifican, como temperatura, concentración y catalizadores."
+    },
+    {
+      "enunciado": "La velocidad de una reacción suele expresarse como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La masa total de los productos formados",
+          "correcta": false
+        },
+        {
+          "texto": "El número de moles iniciales de reactivo",
+          "correcta": false
+        },
+        {
+          "texto": "El cambio de concentración de un reactivo o producto por unidad de tiempo",
+          "correcta": true
+        },
+        {
+          "texto": "La temperatura alcanzada al final del proceso",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La velocidad se define como la variación de la concentración de un reactivo o producto por unidad de tiempo, en mol/(L·s)."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes factores, en general, aumenta la velocidad de una reacción?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Reducir la superficie de contacto",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuir la concentración de los reactivos",
+          "correcta": false
+        },
+        {
+          "texto": "Enfriar la mezcla de reacción",
+          "correcta": false
+        },
+        {
+          "texto": "Aumentar la temperatura",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Al subir la temperatura las moléculas se mueven más rápido y chocan con más energía, por lo que la velocidad aumenta."
+    },
+    {
+      "enunciado": "Un catalizador es una sustancia que:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Aumenta la velocidad de la reacción sin consumirse en ella",
+          "correcta": true
+        },
+        {
+          "texto": "Desplaza el equilibrio hacia los productos",
+          "correcta": false
+        },
+        {
+          "texto": "Aumenta la energía de activación",
+          "correcta": false
+        },
+        {
+          "texto": "Se consume totalmente durante la reacción",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un catalizador acelera la reacción ofreciendo un camino de menor energía de activación y se recupera intacto al final."
+    },
+    {
+      "enunciado": "¿De qué manera actúa un catalizador sobre una reacción?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Aumenta la energía de activación",
+          "correcta": false
+        },
+        {
+          "texto": "Modifica la entalpía de la reacción",
+          "correcta": false
+        },
+        {
+          "texto": "Incrementa la energía de los productos",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuye la energía de activación",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El catalizador proporciona una ruta alternativa con menor energía de activación, por lo que más choques resultan efectivos."
+    },
+    {
+      "enunciado": "Al aumentar la concentración de los reactivos, la velocidad de reacción generalmente:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Disminuye",
+          "correcta": false
+        },
+        {
+          "texto": "Aumenta",
+          "correcta": true
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        },
+        {
+          "texto": "Se vuelve cero",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A mayor concentración hay más partículas por unidad de volumen, aumentan los choques efectivos y la velocidad crece."
+    },
+    {
+      "enunciado": "La energía de activación corresponde a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La energía liberada por la reacción",
+          "correcta": false
+        },
+        {
+          "texto": "La energía de los productos",
+          "correcta": false
+        },
+        {
+          "texto": "La energía mínima necesaria para que la reacción ocurra",
+          "correcta": true
+        },
+        {
+          "texto": "La energía total del sistema en reposo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La energía de activación es la barrera energética mínima que deben superar los reactivos para transformarse en productos."
+    },
+    {
+      "enunciado": "Para una misma masa de un reactivo sólido, la reacción es más rápida cuando el sólido está:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Finamente pulverizado",
+          "correcta": true
+        },
+        {
+          "texto": "Compactado en un bloque",
+          "correcta": false
+        },
+        {
+          "texto": "En un solo trozo grande",
+          "correcta": false
+        },
+        {
+          "texto": "Cubierto por una capa de pintura",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Pulverizar el sólido aumenta la superficie de contacto, por lo que hay más choques y la reacción es más rápida."
+    },
+    {
+      "enunciado": "Según la teoría de las colisiones, para que dos moléculas reaccionen deben:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Chocar suavemente, sin importar su orientación",
+          "correcta": false
+        },
+        {
+          "texto": "Chocar con suficiente energía y con la orientación adecuada",
+          "correcta": true
+        },
+        {
+          "texto": "Estar en reposo absoluto",
+          "correcta": false
+        },
+        {
+          "texto": "Tener exactamente la misma masa",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La teoría de colisiones exige choques con energía igual o mayor a la de activación y con la orientación adecuada."
+    },
+    {
+      "enunciado": "Una sustancia que disminuye la velocidad de una reacción se denomina:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Producto intermedio",
+          "correcta": false
+        },
+        {
+          "texto": "Catalizador",
+          "correcta": false
+        },
+        {
+          "texto": "Reactivo limitante",
+          "correcta": false
+        },
+        {
+          "texto": "Inhibidor",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Un inhibidor es una sustancia que reduce la velocidad de la reacción."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes NO influye en la velocidad de una reacción química?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La temperatura del sistema",
+          "correcta": false
+        },
+        {
+          "texto": "La concentración de los reactivos",
+          "correcta": false
+        },
+        {
+          "texto": "El color del recipiente donde ocurre",
+          "correcta": true
+        },
+        {
+          "texto": "La presencia de un catalizador",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El color del recipiente no influye en la velocidad; sí lo hacen temperatura, concentración, superficie y catalizadores."
+    },
+    {
+      "enunciado": "En la combustión de un material, aumentar la concentración de oxígeno disponible hace que la reacción:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Sea más rápida",
+          "correcta": true
+        },
+        {
+          "texto": "Sea más lenta",
+          "correcta": false
+        },
+        {
+          "texto": "Se detenga",
+          "correcta": false
+        },
+        {
+          "texto": "No modifique su velocidad",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Mayor concentración de oxígeno implica más choques efectivos, por lo que la combustión se acelera."
+    },
+    {
+      "enunciado": "Las enzimas se consideran:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Inhibidores permanentes",
+          "correcta": false
+        },
+        {
+          "texto": "Catalizadores biológicos",
+          "correcta": true
+        },
+        {
+          "texto": "Reactivos que se agotan",
+          "correcta": false
+        },
+        {
+          "texto": "Productos de la digestión",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las enzimas son catalizadores biológicos que aceleran reacciones en los seres vivos."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes procesos es un ejemplo de reacción muy rápida?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "La oxidación lenta del hierro a la intemperie",
+          "correcta": false
+        },
+        {
+          "texto": "La maduración de una fruta",
+          "correcta": false
+        },
+        {
+          "texto": "La formación de estalactitas en una cueva",
+          "correcta": false
+        },
+        {
+          "texto": "La explosión de la pólvora",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La explosión de la pólvora es una reacción muy rápida; la oxidación del hierro o la formación de estalactitas son muy lentas."
+    },
+    {
+      "enunciado": "La concentración de un reactivo A disminuye de 0,80 mol/L a 0,50 mol/L en 10 s. ¿Cuál es su velocidad media de desaparición?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,080 mol/(L·s)",
+          "correcta": false
+        },
+        {
+          "texto": "0,050 mol/(L·s)",
+          "correcta": false
+        },
+        {
+          "texto": "0,030 mol/(L·s)",
+          "correcta": true
+        },
+        {
+          "texto": "0,13 mol/(L·s)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Velocidad media = ΔC/Δt = (0,80 − 0,50)/10 = 0,030 mol/(L·s)."
+    },
+    {
+      "enunciado": "En la reacción 2A → B, si A desaparece a 0,040 mol/(L·s), ¿con qué velocidad se forma B?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,020 mol/(L·s)",
+          "correcta": true
+        },
+        {
+          "texto": "0,040 mol/(L·s)",
+          "correcta": false
+        },
+        {
+          "texto": "0,080 mol/(L·s)",
+          "correcta": false
+        },
+        {
+          "texto": "0,010 mol/(L·s)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la estequiometría 2A → B, B se forma a la mitad de la velocidad con que desaparece A: 0,040/2 = 0,020 mol/(L·s)."
+    },
+    {
+      "enunciado": "Para una reacción con ley de velocidad v = k[A][B], el orden total de la reacción es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El orden total es la suma de los exponentes: 1 + 1 = 2."
+    },
+    {
+      "enunciado": "Si la ley de velocidad es v = k[A]² y se duplica la concentración de A, la velocidad:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Se duplica",
+          "correcta": false
+        },
+        {
+          "texto": "Se reduce a la mitad",
+          "correcta": false
+        },
+        {
+          "texto": "Se multiplica por 4",
+          "correcta": true
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con v = k[A]², al duplicar [A] la velocidad se multiplica por 2² = 4."
+    },
+    {
+      "enunciado": "Una reacción tiene la ley de velocidad v = k[A][B]². ¿Cuál es su orden global?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El orden global es la suma de exponentes: 1 + 2 = 3."
+    },
+    {
+      "enunciado": "Una reacción es de primer orden respecto a A. Si la concentración de A se triplica, la velocidad:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Se duplica",
+          "correcta": false
+        },
+        {
+          "texto": "Se triplica",
+          "correcta": true
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        },
+        {
+          "texto": "Se multiplica por 9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si es de primer orden, v es proporcional a [A]; al triplicar [A] la velocidad se triplica."
+    },
+    {
+      "enunciado": "Manteniendo todo lo demás constante, si la energía de activación de una reacción es mayor, su constante de velocidad k tiende a ser:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Independiente de la energía de activación",
+          "correcta": false
+        },
+        {
+          "texto": "Mayor",
+          "correcta": false
+        },
+        {
+          "texto": "Igual a 1",
+          "correcta": false
+        },
+        {
+          "texto": "Menor",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Según Arrhenius, k = A·e^(−Ea/RT); a mayor Ea menor es k."
+    },
+    {
+      "enunciado": "¿De cuál de los siguientes factores depende el valor de la constante de velocidad k?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "De la temperatura",
+          "correcta": true
+        },
+        {
+          "texto": "De la concentración inicial de los reactivos",
+          "correcta": false
+        },
+        {
+          "texto": "Del volumen del recipiente",
+          "correcta": false
+        },
+        {
+          "texto": "De la masa total de la mezcla",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La constante k depende de la temperatura (y del catalizador), no de la concentración inicial."
+    },
+    {
+      "enunciado": "En una reacción de orden cero, la velocidad:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Es proporcional a la concentración del reactivo",
+          "correcta": false
+        },
+        {
+          "texto": "Es independiente de la concentración de los reactivos",
+          "correcta": true
+        },
+        {
+          "texto": "Es proporcional al cuadrado de la concentración",
+          "correcta": false
+        },
+        {
+          "texto": "Aumenta al disminuir la temperatura",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En orden cero la velocidad es constante e independiente de la concentración del reactivo."
+    },
+    {
+      "enunciado": "En el diagrama de energía de una reacción (energía frente al avance de la reacción), el punto más alto de la curva corresponde a:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Los reactivos en reposo",
+          "correcta": false
+        },
+        {
+          "texto": "Los productos finales",
+          "correcta": false
+        },
+        {
+          "texto": "El complejo activado o estado de transición",
+          "correcta": true
+        },
+        {
+          "texto": "Un catalizador añadido",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El máximo de la curva corresponde al complejo activado o estado de transición, la cima de la barrera de energía."
+    },
+    {
+      "enunciado": "Para una reacción de primer orden con k = 0,0231 s⁻¹, su tiempo de vida media (t₁/₂ = 0,693/k) es aproximadamente:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "15 s",
+          "correcta": false
+        },
+        {
+          "texto": "0,016 s",
+          "correcta": false
+        },
+        {
+          "texto": "60 s",
+          "correcta": false
+        },
+        {
+          "texto": "30 s",
+          "correcta": true
+        }
+      ],
+      "explicacion": "t₁/₂ = 0,693/k = 0,693/0,0231 ≈ 30 s."
+    },
+    {
+      "enunciado": "Si la ley de velocidad de una reacción es v = k[A], las unidades de k (con v en mol/(L·s) y [A] en mol/L) son:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "s⁻¹",
+          "correcta": true
+        },
+        {
+          "texto": "mol/(L·s)",
+          "correcta": false
+        },
+        {
+          "texto": "L/(mol·s)",
+          "correcta": false
+        },
+        {
+          "texto": "L²/(mol²·s)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para v = k[A], k = v/[A] tiene unidades (mol/(L·s))/(mol/L) = s⁻¹."
+    },
+    {
+      "enunciado": "Una regla aproximada indica que la velocidad se duplica por cada 10 °C de aumento. Si la temperatura sube de 20 °C a 40 °C, la velocidad aumenta aproximadamente:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2 veces",
+          "correcta": false
+        },
+        {
+          "texto": "4 veces",
+          "correcta": true
+        },
+        {
+          "texto": "20 veces",
+          "correcta": false
+        },
+        {
+          "texto": "8 veces",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Dos intervalos de 10 °C equivalen a dos duplicaciones: 2 × 2 = 4 veces."
+    },
+    {
+      "enunciado": "¿Qué efecto tiene un catalizador sobre la constante de equilibrio de una reacción?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "La disminuye",
+          "correcta": false
+        },
+        {
+          "texto": "La aumenta",
+          "correcta": false
+        },
+        {
+          "texto": "No la modifica, porque acelera por igual las reacciones directa e inversa",
+          "correcta": true
+        },
+        {
+          "texto": "La vuelve igual a cero",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El catalizador acelera por igual la reacción directa e inversa, de modo que la constante de equilibrio K no cambia."
+    },
+    {
+      "enunciado": "En la reacción N₂ + 3H₂ → 2NH₃, si el H₂ se consume a 0,60 mol/(L·s), ¿con qué velocidad se consume el N₂?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,60 mol/(L·s)",
+          "correcta": false
+        },
+        {
+          "texto": "0,20 mol/(L·s)",
+          "correcta": true
+        },
+        {
+          "texto": "1,8 mol/(L·s)",
+          "correcta": false
+        },
+        {
+          "texto": "0,30 mol/(L·s)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por estequiometría, el N₂ se consume a un tercio de la velocidad del H₂: 0,60/3 = 0,20 mol/(L·s)."
+    },
+    {
+      "enunciado": "Si al duplicar la concentración de un reactivo la velocidad de la reacción no cambia, el orden respecto a ese reactivo es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si al duplicar la concentración la velocidad no varía, el orden respecto a ese reactivo es 0."
+    },
+    {
+      "enunciado": "Para A + B → productos se midieron velocidades iniciales: Exp 1: [A]=0,10, [B]=0,10, v=0,010; Exp 2: [A]=0,20, [B]=0,10, v=0,020; Exp 3: [A]=0,10, [B]=0,20, v=0,040 (en mol/L y mol/(L·s)). ¿Cuál es el orden global de la reacción?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Al duplicar [A] la velocidad se duplica (orden 1) y al duplicar [B] se cuadruplica (orden 2); el orden total es 1 + 2 = 3."
+    },
+    {
+      "enunciado": "La reacción A + B → productos tiene ley de velocidad v = k[A][B]². Cuando [A] = 0,10 mol/L y [B] = 0,10 mol/L la velocidad es 0,010 mol/(L·s). ¿Cuál es el valor de k?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,0 L²/(mol²·s)",
+          "correcta": false
+        },
+        {
+          "texto": "0,10 L²/(mol²·s)",
+          "correcta": false
+        },
+        {
+          "texto": "10 L²/(mol²·s)",
+          "correcta": true
+        },
+        {
+          "texto": "100 L²/(mol²·s)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "k = v/([A][B]²) = 0,010/(0,10 × 0,10²) = 0,010/0,001 = 10 L²/(mol²·s)."
+    },
+    {
+      "enunciado": "Una reacción de primer orden tiene k = 0,10 s⁻¹. ¿Cuánto tiempo se necesita para que la concentración del reactivo se reduzca a la cuarta parte de la inicial?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6,9 s",
+          "correcta": false
+        },
+        {
+          "texto": "27,7 s",
+          "correcta": false
+        },
+        {
+          "texto": "13,9 s",
+          "correcta": true
+        },
+        {
+          "texto": "2,5 s",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Reducir a 1/4 son dos vidas medias: 2 × (0,693/0,10) = 2 × 6,93 ≈ 13,9 s."
+    },
+    {
+      "enunciado": "Una sustancia se descompone por una reacción de primer orden con vida media de 20 min. ¿Qué porcentaje de la sustancia inicial queda después de 60 min?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "25 %",
+          "correcta": false
+        },
+        {
+          "texto": "33 %",
+          "correcta": false
+        },
+        {
+          "texto": "6,25 %",
+          "correcta": false
+        },
+        {
+          "texto": "12,5 %",
+          "correcta": true
+        }
+      ],
+      "explicacion": "60 min equivalen a 3 vidas medias: (1/2)³ = 1/8 = 12,5 % restante."
+    },
+    {
+      "enunciado": "Una reacción de orden cero tiene k = 0,10 mol/(L·s) y [A]₀ = 1,0 mol/L. Usando [A] = [A]₀ − kt, ¿cuál es la concentración de A después de 5,0 s?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,50 mol/L",
+          "correcta": true
+        },
+        {
+          "texto": "0,90 mol/L",
+          "correcta": false
+        },
+        {
+          "texto": "0,0 mol/L",
+          "correcta": false
+        },
+        {
+          "texto": "0,10 mol/L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "[A] = [A]₀ − kt = 1,0 − 0,10 × 5,0 = 0,50 mol/L."
+    },
+    {
+      "enunciado": "Para una reacción de primer orden con k = 0,050 s⁻¹ y [A]₀ = 1,0 mol/L, usando ln([A]₀/[A]) = kt, ¿cuál es la concentración de A a los 20 s?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,50 mol/L",
+          "correcta": false
+        },
+        {
+          "texto": "0,37 mol/L",
+          "correcta": true
+        },
+        {
+          "texto": "0,13 mol/L",
+          "correcta": false
+        },
+        {
+          "texto": "0,05 mol/L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ln([A]₀/[A]) = kt = 0,050 × 20 = 1,0, de donde [A] = 1,0/e ≈ 0,37 mol/L."
+    },
+    {
+      "enunciado": "Para una reacción de segundo orden con k = 0,50 L/(mol·s) y [A]₀ = 1,0 mol/L, usando 1/[A] − 1/[A]₀ = kt, ¿cuál es la concentración de A a los 2,0 s?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,0 mol/L",
+          "correcta": false
+        },
+        {
+          "texto": "0,25 mol/L",
+          "correcta": false
+        },
+        {
+          "texto": "2,0 mol/L",
+          "correcta": false
+        },
+        {
+          "texto": "0,50 mol/L",
+          "correcta": true
+        }
+      ],
+      "explicacion": "1/[A] = 1/[A]₀ + kt = 1,0 + 0,50 × 2,0 = 2,0, por lo que [A] = 0,50 mol/L."
+    },
+    {
+      "enunciado": "Al estudiar una reacción se observa que cuando [X] pasa de 0,20 mol/L a 0,40 mol/L la velocidad aumenta de 4,0×10⁻³ a 1,6×10⁻² mol/(L·s). ¿Cuál es el orden respecto a X?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al duplicar [X] la velocidad se cuadruplica: 2ⁿ = 4 implica n = 2."
+    },
+    {
+      "enunciado": "En una gráfica de ln k frente a 1/T (ecuación de Arrhenius), la pendiente de la recta es igual a:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Ea/R",
+          "correcta": false
+        },
+        {
+          "texto": "−Ea/R",
+          "correcta": true
+        },
+        {
+          "texto": "−R/Ea",
+          "correcta": false
+        },
+        {
+          "texto": "ln A",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La forma lineal de Arrhenius, ln k = ln A − (Ea/R)(1/T), tiene pendiente −Ea/R."
+    },
+    {
+      "enunciado": "De la gráfica de ln k frente a 1/T se obtiene una pendiente de −5000 K. Usando R = 8,314 J/(mol·K), la energía de activación es aproximadamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "41,6 kJ/mol",
+          "correcta": true
+        },
+        {
+          "texto": "8,3 kJ/mol",
+          "correcta": false
+        },
+        {
+          "texto": "5000 kJ/mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,60 kJ/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Ea = −pendiente × R = 5000 × 8,314 ≈ 41 600 J/mol ≈ 41,6 kJ/mol."
+    },
+    {
+      "enunciado": "Una reacción de orden cero tiene [A]₀ = 2,0 mol/L y k = 0,10 mol/(L·s). Su tiempo de vida media (t₁/₂ = [A]₀/2k) es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "10 s",
+          "correcta": true
+        },
+        {
+          "texto": "20 s",
+          "correcta": false
+        },
+        {
+          "texto": "5 s",
+          "correcta": false
+        },
+        {
+          "texto": "0,1 s",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Para orden cero, t₁/₂ = [A]₀/(2k) = 2,0/(2 × 0,10) = 10 s."
+    },
+    {
+      "enunciado": "La ley de velocidad de una reacción es v = k[A]²[B]. Si [A] se duplica y [B] se triplica al mismo tiempo, ¿por qué factor aumenta la velocidad?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "12",
+          "correcta": true
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Con v = k[A]²[B], el factor es 2² × 3 = 4 × 3 = 12."
+    },
+    {
+      "enunciado": "Para una reacción con Ea = 80 kJ/mol, ¿aproximadamente cuántas veces aumenta la constante de velocidad k al pasar de 300 K a 320 K? (R = 8,314 J/(mol·K))",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Unas 80 veces",
+          "correcta": false
+        },
+        {
+          "texto": "Unas 2 veces",
+          "correcta": false
+        },
+        {
+          "texto": "Unas 7 veces",
+          "correcta": true
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ln(k₂/k₁) = (Ea/R)(1/T₁ − 1/T₂) ≈ 2,0, de modo que k₂/k₁ = e² ≈ 7."
+    },
+    {
+      "enunciado": "Una reacción de primer orden se completa en un 75 % al cabo de 40 s. Usando ln([A]₀/[A]) = kt, ¿cuál es el valor de la constante de velocidad k?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,017 s⁻¹",
+          "correcta": false
+        },
+        {
+          "texto": "0,019 s⁻¹",
+          "correcta": false
+        },
+        {
+          "texto": "0,69 s⁻¹",
+          "correcta": false
+        },
+        {
+          "texto": "0,035 s⁻¹",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Si reacciona el 75 %, queda el 25 %: ln(1/0,25) = ln 4 = 1,386 = k·40, así k ≈ 0,035 s⁻¹."
+    },
+    {
+      "enunciado": "Aplicando la regla de que la velocidad se duplica por cada 10 °C, ¿cuántas veces más rápida es una reacción a 50 °C que a 20 °C?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "3 veces",
+          "correcta": false
+        },
+        {
+          "texto": "6 veces",
+          "correcta": false
+        },
+        {
+          "texto": "30 veces",
+          "correcta": false
+        },
+        {
+          "texto": "8 veces",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Hay 30 °C de diferencia, es decir 3 duplicaciones: 2³ = 8 veces."
+    },
+    {
+      "enunciado": "Se comparan los diagramas de energía de una misma reacción sin catalizador y con catalizador. ¿Qué afirmación describe correctamente el camino con catalizador?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Aumenta la energía de activación de la reacción",
+          "correcta": false
+        },
+        {
+          "texto": "Cambia la energía de los productos",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuye la energía de activación sin cambiar la energía de reactivos ni de productos",
+          "correcta": true
+        },
+        {
+          "texto": "Modifica la entalpía global de la reacción",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El catalizador baja la energía de activación (pico más bajo), pero no altera las energías de reactivos ni de productos, por lo que ΔH no cambia."
+    }
+  ]
+}

@@ -443,3 +443,7 @@ svg .ficha.cancelar{ animation:cancelarFicha .5s ease-in forwards; animation-del
   :root:not([data-theme="light"]) body{ background-image:none; }
 }
 :root[data-theme="dark"] body{ background-image:none; }
+
+/* Enlace de vuelta al Campus */
+.campus-volver{ display:inline-flex; align-items:center; min-height:40px; font-weight:800; font-size:.95rem; color:var(--ink-2); text-decoration:none; }
+.campus-volver:hover{ text-decoration:underline; }

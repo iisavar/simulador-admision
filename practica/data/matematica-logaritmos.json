@@ -1,0 +1,1059 @@
+{
+  "id": "matematica-logaritmos",
+  "materia": "matematica",
+  "tema": "Logaritmos y ecuaciones exponenciales",
+  "bloque": "Potencias y raíces",
+  "nivel": "intermedio",
+  "clase": null,
+  "repaso": {
+    "idea": "El logaritmo responde a la pregunta «¿a qué exponente debo elevar la base para obtener el número?»: log₂(8) = 3 porque 2³ = 8. Propiedades: log(A·B) = log A + log B, log(A/B) = log A − log B y log(Aⁿ) = n·log A.",
+    "ejemplo": {
+      "enunciado": "Resuelve log₂(x) + log₂(x − 2) = 3.",
+      "pasos": [
+        "Une los logaritmos (suma → producto): log₂(x(x − 2)) = 3.",
+        "Pasa a forma exponencial: x(x − 2) = 2³ = 8.",
+        "Resuelve x² − 2x − 8 = 0: (x − 4)(x + 2) = 0, así que x = 4 o x = −2.",
+        "Descarta x = −2, porque no existe el logaritmo de un número negativo."
+      ],
+      "resultado": "x = 4"
+    },
+    "ojo": "log(A + B) NO es log A + log B. Y en las ecuaciones logarítmicas comprueba siempre las soluciones: el argumento del logaritmo debe ser positivo."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Cuánto vale log₁₀(100)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "100",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 10² = 100, el logaritmo en base 10 de 100 es 2."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₂(8)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 2³ = 8, se tiene log₂(8) = 3."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₃(81)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "27",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 3⁴ = 81, el logaritmo en base 3 de 81 es 4."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₅(25)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 5² = 25, se tiene log₅(25) = 2."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₁₀(1)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Cualquier base elevada a 0 da 1, así que log₁₀(1) = 0."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₇(7)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El logaritmo de la propia base es 1, porque 7¹ = 7."
+    },
+    {
+      "enunciado": "¿Cuánto vale ln(e)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": false
+        },
+        {
+          "texto": "e",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El logaritmo natural tiene base e y e¹ = e, por lo que ln(e) = 1."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₄(64)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 4³ = 64, se tiene log₄(64) = 3."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₂(1/4)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−2",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 2⁻² = 1/4, el logaritmo es −2."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₁₀(0,01)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−1",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "0,01",
+          "correcta": false
+        },
+        {
+          "texto": "−2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como 10⁻² = 0,01, el logaritmo en base 10 de 0,01 es −2."
+    },
+    {
+      "enunciado": "La igualdad logₐ(x) = y es equivalente a:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "aˣ = y",
+          "correcta": false
+        },
+        {
+          "texto": "xʸ = a",
+          "correcta": false
+        },
+        {
+          "texto": "aʸ = x",
+          "correcta": true
+        },
+        {
+          "texto": "yᵃ = x",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por definición, logₐ(x) = y significa que la base a elevada a y da x: aʸ = x."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₃(1/3)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": true
+        },
+        {
+          "texto": "−3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 3⁻¹ = 1/3, el logaritmo es −1."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₆(36)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 6² = 36, se tiene log₆(36) = 2."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₉(3)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "1/3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como √9 = 3, es decir, 9 elevado a 1/2 da 3, se tiene log₉(3) = 1/2."
+    },
+    {
+      "enunciado": "¿Cuánto vale ln(1)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "0",
+          "correcta": true
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "e",
+          "correcta": false
+        },
+        {
+          "texto": "−1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como e⁰ = 1, el logaritmo natural de 1 es 0."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₂(64)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "32",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 2⁶ = 64, se tiene log₂(64) = 6."
+    },
+    {
+      "enunciado": "Aplicando propiedades, ¿cuánto vale log₆(4) + log₆(9)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": true
+        },
+        {
+          "texto": "log₆(13)",
+          "correcta": false
+        },
+        {
+          "texto": "13",
+          "correcta": false
+        },
+        {
+          "texto": "36",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La suma de logaritmos es el logaritmo del producto: log₆(4·9) = log₆(36) = 2."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₂(40) − log₂(5)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "35",
+          "correcta": false
+        },
+        {
+          "texto": "log₂(35)",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La resta de logaritmos es el logaritmo del cociente: log₂(40/5) = log₂(8) = 3."
+    },
+    {
+      "enunciado": "Usando la propiedad de la potencia, ¿cuánto vale log₂(8²)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "9",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": true
+        },
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "64",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El exponente sale como factor: 2·log₂(8) = 2·3 = 6."
+    },
+    {
+      "enunciado": "Resuelve la ecuación log₂(x) = 5.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "32",
+          "correcta": true
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por definición, x = 2⁵ = 32."
+    },
+    {
+      "enunciado": "Resuelve la ecuación exponencial 2ˣ = 16.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 16 = 2⁴, se obtiene x = 4."
+    },
+    {
+      "enunciado": "Resuelve la ecuación exponencial 5ˣ = 125.",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "25",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como 125 = 5³, se obtiene x = 3."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₅(√5)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1/2",
+          "correcta": true
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": false
+        },
+        {
+          "texto": "1/5",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como √5 es 5 elevado a 1/2, el logaritmo en base 5 de √5 es 1/2."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₂(√8)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3",
+          "correcta": false
+        },
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3/2",
+          "correcta": true
+        },
+        {
+          "texto": "1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como √8 = √(2³), es decir, 2 elevado a 3/2, el logaritmo en base 2 es 3/2."
+    },
+    {
+      "enunciado": "Si log(2) ≈ 0,301, ¿cuánto vale log(4)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,301",
+          "correcta": false
+        },
+        {
+          "texto": "0,602",
+          "correcta": true
+        },
+        {
+          "texto": "0,903",
+          "correcta": false
+        },
+        {
+          "texto": "0,150",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 4 = 2², log(4) = 2·log(2) = 2·0,301 = 0,602."
+    },
+    {
+      "enunciado": "Si log(2) ≈ 0,301, ¿cuánto vale log(5)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,699",
+          "correcta": true
+        },
+        {
+          "texto": "0,301",
+          "correcta": false
+        },
+        {
+          "texto": "1,301",
+          "correcta": false
+        },
+        {
+          "texto": "0,602",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 5 = 10/2, log(5) = log(10) − log(2) = 1 − 0,301 = 0,699."
+    },
+    {
+      "enunciado": "¿Cuánto vale 10 elevado al exponente log 7? (log es el logaritmo en base 10)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "10",
+          "correcta": false
+        },
+        {
+          "texto": "7",
+          "correcta": true
+        },
+        {
+          "texto": "70",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La exponencial de base 10 y el logaritmo en base 10 son funciones inversas, por lo que el resultado es 7."
+    },
+    {
+      "enunciado": "¿Cuánto vale e elevado al exponente ln 5?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "e",
+          "correcta": false
+        },
+        {
+          "texto": "ln 5",
+          "correcta": false
+        },
+        {
+          "texto": "5",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La exponencial natural y el logaritmo natural son inversas, así que el resultado es 5."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₂(48) − log₂(3)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "16",
+          "correcta": false
+        },
+        {
+          "texto": "45",
+          "correcta": false
+        },
+        {
+          "texto": "4",
+          "correcta": true
+        },
+        {
+          "texto": "log₂(45)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por la resta de logaritmos: log₂(48/3) = log₂(16) = 4."
+    },
+    {
+      "enunciado": "Si ambos logaritmos están en la misma base, ¿cuánto vale log(8)/log(2)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4",
+          "correcta": false
+        },
+        {
+          "texto": "6",
+          "correcta": false
+        },
+        {
+          "texto": "log(6)",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por el cambio de base, log(8)/log(2) = log₂(8) = 3."
+    },
+    {
+      "enunciado": "¿Cuánto vale log₇(49) + log₇(7)?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "2",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "56",
+          "correcta": false
+        },
+        {
+          "texto": "1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "log₇(49) = 2 y log₇(7) = 1, por lo que la suma es 3 (equivale a log₇(343))."
+    },
+    {
+      "enunciado": "Resuelve la ecuación logarítmica log₂(x) + log₂(x − 2) = 3.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 2",
+          "correcta": false
+        },
+        {
+          "texto": "x = 8",
+          "correcta": false
+        },
+        {
+          "texto": "x = −2",
+          "correcta": false
+        },
+        {
+          "texto": "x = 4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "log₂(x(x − 2)) = 3 lleva a x² − 2x = 8; resolviendo x² − 2x − 8 = 0 se obtiene x = 4 (se descarta −2 por el dominio)."
+    },
+    {
+      "enunciado": "Resuelve la ecuación logarítmica log(x) + log(x − 3) = 1 (base 10).",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 2",
+          "correcta": false
+        },
+        {
+          "texto": "x = 5",
+          "correcta": true
+        },
+        {
+          "texto": "x = −2",
+          "correcta": false
+        },
+        {
+          "texto": "x = 10",
+          "correcta": false
+        }
+      ],
+      "explicacion": "log(x(x − 3)) = 1 da x(x − 3) = 10; resolviendo x² − 3x − 10 = 0 resulta x = 5 (se descarta −2)."
+    },
+    {
+      "enunciado": "Resuelve la ecuación exponencial 2ˣ⁺¹ = 32.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 5",
+          "correcta": false
+        },
+        {
+          "texto": "x = 16",
+          "correcta": false
+        },
+        {
+          "texto": "x = 3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 4",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como 32 = 2⁵, se iguala x + 1 = 5, por lo que x = 4."
+    },
+    {
+      "enunciado": "Resuelve la ecuación exponencial 3²ˣ = 81.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 4",
+          "correcta": false
+        },
+        {
+          "texto": "x = 2",
+          "correcta": true
+        },
+        {
+          "texto": "x = 3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 1",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Como 81 = 3⁴, se iguala 2x = 4, por lo que x = 2."
+    },
+    {
+      "enunciado": "Resuelve la ecuación logarítmica log₃(x − 1) = 2.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 7",
+          "correcta": false
+        },
+        {
+          "texto": "x = 10",
+          "correcta": true
+        },
+        {
+          "texto": "x = 9",
+          "correcta": false
+        },
+        {
+          "texto": "x = 4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por definición x − 1 = 3² = 9, de donde x = 10."
+    },
+    {
+      "enunciado": "Resuelve la ecuación exponencial 4ˣ = 8.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 3/2",
+          "correcta": true
+        },
+        {
+          "texto": "x = 2",
+          "correcta": false
+        },
+        {
+          "texto": "x = 3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 1/2",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Escribiendo 2²ˣ = 2³ se iguala 2x = 3, por lo que x = 3/2."
+    },
+    {
+      "enunciado": "Resuelve la ecuación logarítmica log₂(x) − log₂(x − 1) = 1.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 2",
+          "correcta": true
+        },
+        {
+          "texto": "x = 1",
+          "correcta": false
+        },
+        {
+          "texto": "x = 3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "log₂(x/(x − 1)) = 1 da x/(x − 1) = 2; resolviendo x = 2(x − 1) se obtiene x = 2."
+    },
+    {
+      "enunciado": "Expresa la solución de la ecuación exponencial 5ˣ = 20.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = log(5)/log(20)",
+          "correcta": false
+        },
+        {
+          "texto": "x = log(20) − log(5)",
+          "correcta": false
+        },
+        {
+          "texto": "x = log(20)/log(5)",
+          "correcta": true
+        },
+        {
+          "texto": "x = 4",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Aplicando logaritmos, x = log₅(20) = log(20)/log(5) ≈ 1,86."
+    },
+    {
+      "enunciado": "Resuelve la ecuación exponencial e²ˣ = 10.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = (ln 10)/2",
+          "correcta": true
+        },
+        {
+          "texto": "x = ln(10)",
+          "correcta": false
+        },
+        {
+          "texto": "x = ln(5)",
+          "correcta": false
+        },
+        {
+          "texto": "x = (ln 10)²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Tomando logaritmo natural, 2x = ln(10), de donde x = (ln 10)/2 ≈ 1,15."
+    },
+    {
+      "enunciado": "Resuelve la ecuación log₂(x²) = 6 con x > 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 3",
+          "correcta": false
+        },
+        {
+          "texto": "x = 6",
+          "correcta": false
+        },
+        {
+          "texto": "x = 64",
+          "correcta": false
+        },
+        {
+          "texto": "x = 8",
+          "correcta": true
+        }
+      ],
+      "explicacion": "x² = 2⁶ = 64, y como x > 0 resulta x = 8."
+    },
+    {
+      "enunciado": "¿Cuánto vale el producto log₂(3)·log₃(8)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1",
+          "correcta": false
+        },
+        {
+          "texto": "log₂(24)",
+          "correcta": false
+        },
+        {
+          "texto": "3",
+          "correcta": true
+        },
+        {
+          "texto": "8",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por cambio de base, log₂(3)·log₃(8) = (ln3/ln2)(ln8/ln3) = ln8/ln2 = log₂(8) = 3."
+    },
+    {
+      "enunciado": "Resuelve la ecuación exponencial 2²ˣ − 5·2ˣ + 4 = 0.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = 1 y x = 4",
+          "correcta": false
+        },
+        {
+          "texto": "x = 0 y x = 4",
+          "correcta": false
+        },
+        {
+          "texto": "x = 1 y x = 2",
+          "correcta": false
+        },
+        {
+          "texto": "x = 0 y x = 2",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Con u = 2ˣ queda u² − 5u + 4 = 0, cuyas raíces son u = 1 y u = 4; entonces 2ˣ = 1 da x = 0 y 2ˣ = 4 da x = 2."
+    },
+    {
+      "enunciado": "Resuelve la ecuación logarítmica log₅(x) = −2.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = −10",
+          "correcta": false
+        },
+        {
+          "texto": "x = 25",
+          "correcta": false
+        },
+        {
+          "texto": "x = −25",
+          "correcta": false
+        },
+        {
+          "texto": "x = 1/25",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Por definición x = 5⁻² = 1/25."
+    },
+    {
+      "enunciado": "Resuelve la ecuación logarítmica log₃(x) + log₃(x + 6) = 3.",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "x = −9",
+          "correcta": false
+        },
+        {
+          "texto": "x = 9",
+          "correcta": false
+        },
+        {
+          "texto": "x = 3",
+          "correcta": true
+        },
+        {
+          "texto": "x = 3 y x = −9",
+          "correcta": false
+        }
+      ],
+      "explicacion": "log₃(x(x + 6)) = 3 da x² + 6x = 27; resolviendo x² + 6x − 27 = 0 se obtiene x = 3 (se descarta −9 por el dominio)."
+    }
+  ]
+}

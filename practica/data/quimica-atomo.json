@@ -1,0 +1,1154 @@
+{
+  "id": "quimica-atomo",
+  "materia": "quimica",
+  "tema": "El átomo: modelos, partículas, isótopos e iones",
+  "bloque": "Materia y átomo",
+  "nivel": "basico",
+  "clase": {
+    "titulo": "Química desde cero",
+    "url": "../quimica-materia/",
+    "lamina": 34
+  },
+  "repaso": {
+    "idea": "El átomo tiene un núcleo con protones (+) y neutrones (sin carga), y electrones (−) alrededor. Z = número de protones; A = protones + neutrones. Si el átomo pierde electrones queda como catión (+); si los gana, como anión (−).",
+    "ejemplo": {
+      "enunciado": "¿Cuántos protones, neutrones y electrones tiene el ion Fe³⁺ con A = 56 y Z = 26?",
+      "pasos": [
+        "Protones = Z = 26.",
+        "Neutrones = A − Z = 56 − 26 = 30.",
+        "Un átomo neutro de hierro tendría 26 electrones; la carga 3+ significa que perdió 3 electrones: 26 − 3 = 23."
+      ],
+      "resultado": "26 protones, 30 neutrones y 23 electrones."
+    },
+    "ojo": "La carga de un ion cambia solo los electrones, nunca los protones: un catión perdió electrones y un anión los ganó."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Qué científico propuso que la materia está formada por átomos descritos como esferas macizas e indivisibles?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "J. J. Thomson",
+          "correcta": false
+        },
+        {
+          "texto": "John Dalton",
+          "correcta": true
+        },
+        {
+          "texto": "Niels Bohr",
+          "correcta": false
+        },
+        {
+          "texto": "Ernest Rutherford",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El modelo de Dalton (1803) describía el átomo como una esfera maciza, indivisible e indestructible."
+    },
+    {
+      "enunciado": "¿Qué partícula subatómica posee carga eléctrica negativa?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El electrón",
+          "correcta": true
+        },
+        {
+          "texto": "El protón",
+          "correcta": false
+        },
+        {
+          "texto": "El neutrón",
+          "correcta": false
+        },
+        {
+          "texto": "El núcleo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El electrón tiene carga negativa (−1), mientras el protón es positivo y el neutrón es neutro."
+    },
+    {
+      "enunciado": "¿Qué partícula subatómica tiene carga eléctrica positiva?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El electrón",
+          "correcta": false
+        },
+        {
+          "texto": "El fotón",
+          "correcta": false
+        },
+        {
+          "texto": "El protón",
+          "correcta": true
+        },
+        {
+          "texto": "El neutrón",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El protón posee carga positiva (+1) y se localiza en el núcleo atómico."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes partículas subatómicas carece de carga eléctrica?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El protón",
+          "correcta": false
+        },
+        {
+          "texto": "El electrón",
+          "correcta": false
+        },
+        {
+          "texto": "El catión",
+          "correcta": false
+        },
+        {
+          "texto": "El neutrón",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El neutrón es eléctricamente neutro; aporta masa al núcleo pero no carga."
+    },
+    {
+      "enunciado": "¿En qué región del átomo se encuentran los protones y los neutrones?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "En la nube electrónica",
+          "correcta": false
+        },
+        {
+          "texto": "En la corteza",
+          "correcta": false
+        },
+        {
+          "texto": "En el núcleo",
+          "correcta": true
+        },
+        {
+          "texto": "En los orbitales externos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Protones y neutrones forman el núcleo, que concentra casi toda la masa del átomo."
+    },
+    {
+      "enunciado": "El número atómico (Z) de un elemento indica la cantidad de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Neutrones del núcleo",
+          "correcta": false
+        },
+        {
+          "texto": "Protones del núcleo",
+          "correcta": true
+        },
+        {
+          "texto": "Protones más neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "Electrones de valencia",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número atómico Z es igual al número de protones e identifica al elemento."
+    },
+    {
+      "enunciado": "¿Qué científico descubrió el electrón mediante sus experimentos con rayos catódicos?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "James Chadwick",
+          "correcta": false
+        },
+        {
+          "texto": "John Dalton",
+          "correcta": false
+        },
+        {
+          "texto": "Erwin Schrödinger",
+          "correcta": false
+        },
+        {
+          "texto": "J. J. Thomson",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Thomson identificó el electrón en 1897 estudiando los rayos catódicos."
+    },
+    {
+      "enunciado": "Un modelo atómico describe el átomo como una esfera de carga positiva con electrones incrustados en ella. ¿Qué modelo es?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Modelo de Thomson (pudín de pasas)",
+          "correcta": true
+        },
+        {
+          "texto": "Modelo de Dalton",
+          "correcta": false
+        },
+        {
+          "texto": "Modelo cuántico",
+          "correcta": false
+        },
+        {
+          "texto": "Modelo de Rutherford",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El modelo de Thomson representaba el átomo como una masa positiva con electrones incrustados, como pasas en un pudín."
+    },
+    {
+      "enunciado": "Entre el protón y el electrón, ¿cuál tiene mayor masa?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El electrón",
+          "correcta": false
+        },
+        {
+          "texto": "El protón",
+          "correcta": true
+        },
+        {
+          "texto": "Ambos tienen la misma masa",
+          "correcta": false
+        },
+        {
+          "texto": "Ninguno de los dos tiene masa",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El protón tiene una masa unas 1836 veces mayor que la del electrón; por eso casi toda la masa del átomo está en el núcleo."
+    },
+    {
+      "enunciado": "En un átomo eléctricamente neutro, el número de protones es igual al número de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "Niveles de energía",
+          "correcta": false
+        },
+        {
+          "texto": "Isótopos",
+          "correcta": false
+        },
+        {
+          "texto": "Electrones",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En un átomo neutro las cargas positivas y negativas se equilibran: protones = electrones."
+    },
+    {
+      "enunciado": "¿Qué letra se utiliza para simbolizar el número atómico?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Z",
+          "correcta": true
+        },
+        {
+          "texto": "A",
+          "correcta": false
+        },
+        {
+          "texto": "M",
+          "correcta": false
+        },
+        {
+          "texto": "N",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número atómico se representa con la letra Z y equivale al número de protones."
+    },
+    {
+      "enunciado": "¿Qué letra simboliza el número másico de un átomo?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Z",
+          "correcta": false
+        },
+        {
+          "texto": "Q",
+          "correcta": false
+        },
+        {
+          "texto": "A",
+          "correcta": true
+        },
+        {
+          "texto": "E",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El número másico se representa con la letra A e indica la suma de protones y neutrones."
+    },
+    {
+      "enunciado": "El número másico (A) de un átomo es la suma de:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Protones y electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Protones y neutrones",
+          "correcta": true
+        },
+        {
+          "texto": "Electrones y orbitales",
+          "correcta": false
+        },
+        {
+          "texto": "Neutrones y electrones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A = protones + neutrones, ya que ambos se ubican en el núcleo y aportan la masa."
+    },
+    {
+      "enunciado": "¿Qué partículas se distribuyen alrededor del núcleo, en la nube electrónica?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Los neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "Los protones",
+          "correcta": false
+        },
+        {
+          "texto": "Los electrones",
+          "correcta": true
+        },
+        {
+          "texto": "Los núcleos",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los electrones ocupan la región exterior del átomo, girando alrededor del núcleo."
+    },
+    {
+      "enunciado": "Dos isótopos de un mismo elemento siempre tienen igual:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Número de protones",
+          "correcta": true
+        },
+        {
+          "texto": "Número de neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "Número másico",
+          "correcta": false
+        },
+        {
+          "texto": "Masa atómica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los isótopos comparten el número atómico (protones) pero difieren en el número de neutrones."
+    },
+    {
+      "enunciado": "¿Cómo se denomina un ion que posee carga eléctrica positiva?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Anión",
+          "correcta": false
+        },
+        {
+          "texto": "Isóbaro",
+          "correcta": false
+        },
+        {
+          "texto": "Isótopo",
+          "correcta": false
+        },
+        {
+          "texto": "Catión",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Un catión es un ion positivo que se forma cuando un átomo pierde electrones."
+    },
+    {
+      "enunciado": "¿Cómo se denomina un ion con carga eléctrica negativa?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Catión",
+          "correcta": false
+        },
+        {
+          "texto": "Protón",
+          "correcta": false
+        },
+        {
+          "texto": "Anión",
+          "correcta": true
+        },
+        {
+          "texto": "Isótopo",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un anión es un ion negativo que se forma cuando un átomo gana electrones."
+    },
+    {
+      "enunciado": "Un átomo de sodio tiene número másico A = 23 y número atómico Z = 11. ¿Cuántos neutrones posee?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "11 neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "34 neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "23 neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "12 neutrones",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Número de neutrones = A − Z = 23 − 11 = 12."
+    },
+    {
+      "enunciado": "El isótopo carbono-14 tiene 6 protones. ¿Cuántos neutrones contiene su núcleo?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6 neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "8 neutrones",
+          "correcta": true
+        },
+        {
+          "texto": "7 neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "14 neutrones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Neutrones = A − Z = 14 − 6 = 8."
+    },
+    {
+      "enunciado": "Un átomo neutro tiene Z = 17 y A = 35. ¿Cuántos electrones posee?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "17 electrones",
+          "correcta": true
+        },
+        {
+          "texto": "18 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "35 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "52 electrones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En un átomo neutro, electrones = protones = Z = 17."
+    },
+    {
+      "enunciado": "El experimento de la lámina de oro de Rutherford permitió concluir que el átomo posee:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Una distribución uniforme de carga positiva",
+          "correcta": false
+        },
+        {
+          "texto": "Electrones fijos sin movimiento",
+          "correcta": false
+        },
+        {
+          "texto": "Un núcleo pequeño, denso y con carga positiva",
+          "correcta": true
+        },
+        {
+          "texto": "Solo neutrones en su interior",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La desviación de algunas partículas alfa reveló un núcleo central diminuto y positivo, con la masa concentrada allí."
+    },
+    {
+      "enunciado": "¿Qué modelo atómico introdujo la idea de electrones en órbitas circulares con energía cuantizada?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Modelo de Dalton",
+          "correcta": false
+        },
+        {
+          "texto": "Modelo de Bohr",
+          "correcta": true
+        },
+        {
+          "texto": "Modelo de Thomson",
+          "correcta": false
+        },
+        {
+          "texto": "Modelo de Rutherford",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Bohr (1913) propuso niveles de energía definidos en los que los electrones giran sin emitir energía."
+    },
+    {
+      "enunciado": "El catión Na⁺ se forma a partir de un átomo de sodio con 11 protones. ¿Cuántos electrones tiene este ion?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "11 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "12 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "22 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "10 electrones",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Una carga +1 indica la pérdida de un electrón: 11 − 1 = 10 electrones."
+    },
+    {
+      "enunciado": "El anión cloruro Cl⁻ proviene de un átomo con 17 protones. ¿Cuántos electrones posee?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "18 electrones",
+          "correcta": true
+        },
+        {
+          "texto": "16 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "17 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "35 electrones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Una carga −1 indica la ganancia de un electrón: 17 + 1 = 18 electrones."
+    },
+    {
+      "enunciado": "El isótopo uranio-235 tiene número atómico Z = 92. ¿Cuántos neutrones contiene?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "92 neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "235 neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "143 neutrones",
+          "correcta": true
+        },
+        {
+          "texto": "327 neutrones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Neutrones = A − Z = 235 − 92 = 143."
+    },
+    {
+      "enunciado": "Dos átomos se consideran isótopos cuando tienen el mismo número atómico pero distinto:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Número de protones",
+          "correcta": false
+        },
+        {
+          "texto": "Número másico",
+          "correcta": true
+        },
+        {
+          "texto": "Número de electrones de valencia",
+          "correcta": false
+        },
+        {
+          "texto": "Carga eléctrica",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los isótopos tienen igual Z pero diferente número de neutrones, por lo que cambia su número másico A."
+    },
+    {
+      "enunciado": "El ion óxido O²⁻ procede de un átomo de oxígeno con 8 protones. ¿Cuántos electrones tiene?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10 electrones",
+          "correcta": true
+        },
+        {
+          "texto": "6 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "8 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "16 electrones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La carga 2− indica que ganó 2 electrones: 8 + 2 = 10 electrones."
+    },
+    {
+      "enunciado": "Un átomo de litio tiene 3 protones y 4 neutrones en su núcleo. ¿Cuál es su número másico?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "A = 3",
+          "correcta": false
+        },
+        {
+          "texto": "A = 4",
+          "correcta": false
+        },
+        {
+          "texto": "A = 12",
+          "correcta": false
+        },
+        {
+          "texto": "A = 7",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El número másico es la suma de protones y neutrones: A = 3 + 4 = 7."
+    },
+    {
+      "enunciado": "¿Qué científico descubrió el neutrón en 1932?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "J. J. Thomson",
+          "correcta": false
+        },
+        {
+          "texto": "Niels Bohr",
+          "correcta": false
+        },
+        {
+          "texto": "James Chadwick",
+          "correcta": true
+        },
+        {
+          "texto": "Louis de Broglie",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Chadwick identificó el neutrón, partícula sin carga ubicada en el núcleo."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes especies es un catión divalente?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Cl⁻",
+          "correcta": false
+        },
+        {
+          "texto": "Ca²⁺",
+          "correcta": true
+        },
+        {
+          "texto": "Na⁺",
+          "correcta": false
+        },
+        {
+          "texto": "O²⁻",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un catión divalente tiene carga +2; el calcio Ca²⁺ perdió dos electrones."
+    },
+    {
+      "enunciado": "El isótopo más abundante del hidrógeno, llamado protio, tiene número másico 1 y un protón. ¿Cuántos neutrones posee?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "1 neutrón",
+          "correcta": false
+        },
+        {
+          "texto": "2 neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "3 neutrones",
+          "correcta": false
+        },
+        {
+          "texto": "0 neutrones",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Neutrones = A − Z = 1 − 1 = 0; el protio es el único átomo estable sin neutrones."
+    },
+    {
+      "enunciado": "Un átomo gana 2 electrones al formar un ion. ¿Qué carga adquiere el ion resultante?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "−2",
+          "correcta": true
+        },
+        {
+          "texto": "+2",
+          "correcta": false
+        },
+        {
+          "texto": "+1",
+          "correcta": false
+        },
+        {
+          "texto": "0",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los electrones tienen carga negativa; si el átomo gana 2 electrones, se forma un anión con carga −2."
+    },
+    {
+      "enunciado": "El ion Fe³⁺ proviene de un átomo de hierro con Z = 26. ¿Cuántos electrones posee este ion?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "26 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "29 electrones",
+          "correcta": false
+        },
+        {
+          "texto": "23 electrones",
+          "correcta": true
+        },
+        {
+          "texto": "3 electrones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La carga +3 indica la pérdida de 3 electrones: 26 − 3 = 23."
+    },
+    {
+      "enunciado": "¿Cuál de los siguientes pares representa isótopos del mismo elemento?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Un átomo con Z = 6, A = 12 y otro con Z = 7, A = 14",
+          "correcta": false
+        },
+        {
+          "texto": "Un átomo con Z = 6, A = 12 y otro con Z = 6, A = 13",
+          "correcta": true
+        },
+        {
+          "texto": "Un átomo con Z = 8, A = 16 y otro con Z = 9, A = 19",
+          "correcta": false
+        },
+        {
+          "texto": "Un átomo con Z = 11, A = 23 y otro con Z = 12, A = 24",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los isótopos tienen el mismo Z y distinto A; solo el par Z = 6, A = 12 y Z = 6, A = 13 cumple esa condición (son carbono-12 y carbono-13)."
+    },
+    {
+      "enunciado": "Un elemento tiene dos isótopos de masas 35 u (abundancia 75,8 %) y 37 u (abundancia 24,2 %). ¿Cuál es, aproximadamente, su masa atómica promedio?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "36,0 u",
+          "correcta": false
+        },
+        {
+          "texto": "35,0 u",
+          "correcta": false
+        },
+        {
+          "texto": "37,0 u",
+          "correcta": false
+        },
+        {
+          "texto": "35,5 u",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Masa promedio = 0,758(35) + 0,242(37) = 26,53 + 8,95 = 35,5 u, valor característico del cloro."
+    },
+    {
+      "enunciado": "El boro presenta dos isótopos: B-10 (19,9 %, masa 10,01 u) y B-11 (80,1 %, masa 11,01 u). ¿Cuál es su masa atómica promedio?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "10,81 u",
+          "correcta": true
+        },
+        {
+          "texto": "10,50 u",
+          "correcta": false
+        },
+        {
+          "texto": "11,00 u",
+          "correcta": false
+        },
+        {
+          "texto": "10,01 u",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Promedio = 0,199(10,01) + 0,801(11,01) = 1,99 + 8,82 = 10,81 u."
+    },
+    {
+      "enunciado": "Según el modelo mecánico-cuántico, la región del espacio donde existe alta probabilidad de encontrar un electrón se denomina:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Orbital",
+          "correcta": true
+        },
+        {
+          "texto": "Órbita fija",
+          "correcta": false
+        },
+        {
+          "texto": "Núcleo",
+          "correcta": false
+        },
+        {
+          "texto": "Nucleón",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El orbital es una zona de probabilidad electrónica; sustituye la idea de órbita definida del modelo de Bohr."
+    },
+    {
+      "enunciado": "¿Qué principio establece que es imposible conocer simultáneamente con precisión la posición y la velocidad de un electrón?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Principio de exclusión de Pauli",
+          "correcta": false
+        },
+        {
+          "texto": "Regla de Hund",
+          "correcta": false
+        },
+        {
+          "texto": "Principio de Aufbau",
+          "correcta": false
+        },
+        {
+          "texto": "Principio de incertidumbre de Heisenberg",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El principio de incertidumbre de Heisenberg limita la medición simultánea exacta de posición y cantidad de movimiento."
+    },
+    {
+      "enunciado": "¿Qué científico desarrolló la ecuación de onda que describe el comportamiento del electrón en el modelo cuántico?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Ernest Rutherford",
+          "correcta": false
+        },
+        {
+          "texto": "John Dalton",
+          "correcta": false
+        },
+        {
+          "texto": "Erwin Schrödinger",
+          "correcta": true
+        },
+        {
+          "texto": "James Chadwick",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Schrödinger (1926) formuló la ecuación de onda cuya solución describe los orbitales atómicos."
+    },
+    {
+      "enunciado": "La hipótesis de que el electrón posee un comportamiento dual, de onda y de partícula, fue propuesta por:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Niels Bohr",
+          "correcta": false
+        },
+        {
+          "texto": "Louis de Broglie",
+          "correcta": true
+        },
+        {
+          "texto": "J. J. Thomson",
+          "correcta": false
+        },
+        {
+          "texto": "John Dalton",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De Broglie (1924) postuló que toda partícula en movimiento lleva asociada una onda, base del modelo cuántico."
+    },
+    {
+      "enunciado": "Un elemento tiene isótopos de masa 63 u y 65 u. Si el de masa 63 u tiene 69,2 % de abundancia y el de 65 u tiene 30,8 %, ¿cuál es su masa atómica promedio?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "63,6 u",
+          "correcta": true
+        },
+        {
+          "texto": "64,0 u",
+          "correcta": false
+        },
+        {
+          "texto": "65,0 u",
+          "correcta": false
+        },
+        {
+          "texto": "63,0 u",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Promedio = 0,692(63) + 0,308(65) = 43,60 + 20,02 = 63,6 u, valor característico del cobre."
+    },
+    {
+      "enunciado": "Un elemento tiene dos isótopos de masas 10 u y 11 u y su masa atómica promedio es 10,8 u. ¿Cuál es, aproximadamente, el porcentaje de abundancia del isótopo de masa 11 u?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "20 %",
+          "correcta": false
+        },
+        {
+          "texto": "50 %",
+          "correcta": false
+        },
+        {
+          "texto": "80 %",
+          "correcta": true
+        },
+        {
+          "texto": "90 %",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si x es la fracción del isótopo 11: 11x + 10(1 − x) = 10,8, entonces x = 0,8, es decir 80 %."
+    },
+    {
+      "enunciado": "¿Qué número cuántico indica el nivel principal de energía y el tamaño del orbital donde se ubica el electrón?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "El número cuántico azimutal (l)",
+          "correcta": false
+        },
+        {
+          "texto": "El número cuántico magnético (m)",
+          "correcta": false
+        },
+        {
+          "texto": "El número cuántico de espín (s)",
+          "correcta": false
+        },
+        {
+          "texto": "El número cuántico principal (n)",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El número cuántico principal n define el nivel energético y, de forma general, el tamaño del orbital."
+    },
+    {
+      "enunciado": "¿Cuál de las siguientes especies es isoelectrónica con el neón (10 electrones)?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "K⁺",
+          "correcta": false
+        },
+        {
+          "texto": "Na⁺",
+          "correcta": true
+        },
+        {
+          "texto": "Cl⁻",
+          "correcta": false
+        },
+        {
+          "texto": "Be²⁺",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Na⁺ tiene 11 − 1 = 10 electrones, igual que el neón; K⁺ y Cl⁻ tienen 18 electrones y Be²⁺ tiene 2."
+    },
+    {
+      "enunciado": "Según el modelo de Bohr, cuando un electrón salta de un nivel de energía superior a otro inferior, el átomo:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Absorbe energía en forma de luz",
+          "correcta": false
+        },
+        {
+          "texto": "Emite energía en forma de luz",
+          "correcta": true
+        },
+        {
+          "texto": "Gana un protón",
+          "correcta": false
+        },
+        {
+          "texto": "Pierde un neutrón",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Al caer a un nivel inferior, el electrón libera la diferencia de energía como un fotón, originando líneas espectrales."
+    },
+    {
+      "enunciado": "El magnesio tiene tres isótopos: Mg-24 (79,0 %), Mg-25 (10,0 %) y Mg-26 (11,0 %), con masas cercanas a sus números másicos. ¿Cuál es su masa atómica promedio aproximada?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "24,0 u",
+          "correcta": false
+        },
+        {
+          "texto": "25,0 u",
+          "correcta": false
+        },
+        {
+          "texto": "26,0 u",
+          "correcta": false
+        },
+        {
+          "texto": "24,3 u",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Promedio = 0,790(24) + 0,100(25) + 0,110(26) = 18,96 + 2,50 + 2,86 = 24,3 u."
+    },
+    {
+      "enunciado": "El descubrimiento de los isótopos refutó uno de los postulados de Dalton. ¿Cuál de ellos?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Todos los átomos de un mismo elemento son idénticos en masa",
+          "correcta": true
+        },
+        {
+          "texto": "Los átomos se combinan en proporciones de números enteros sencillos",
+          "correcta": false
+        },
+        {
+          "texto": "La materia está formada por átomos",
+          "correcta": false
+        },
+        {
+          "texto": "Los átomos no se crean ni se destruyen en una reacción química",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los isótopos demuestran que átomos de un mismo elemento pueden tener distinta masa, contradiciendo ese postulado de Dalton."
+    },
+    {
+      "enunciado": "Una especie tiene 16 protones, 16 neutrones y 18 electrones. ¿De qué tipo de especie se trata?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Un átomo neutro",
+          "correcta": false
+        },
+        {
+          "texto": "Un catión con carga +2",
+          "correcta": false
+        },
+        {
+          "texto": "Un anión con carga −2",
+          "correcta": true
+        },
+        {
+          "texto": "Un isótopo sin carga",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Carga = protones − electrones = 16 − 18 = −2; es un anión divalente (por ejemplo, el ion sulfuro S²⁻)."
+    },
+    {
+      "enunciado": "Dos átomos distintos, uno con Z=20 y A=40 y otro con Z=18 y A=40, presentan igual número másico pero diferente número atómico. ¿Cómo se denomina esta relación?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Isóbaros",
+          "correcta": true
+        },
+        {
+          "texto": "Isótopos",
+          "correcta": false
+        },
+        {
+          "texto": "Isótonos",
+          "correcta": false
+        },
+        {
+          "texto": "Iones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los isóbaros son átomos de elementos diferentes (distinto Z) que comparten el mismo número másico A."
+    }
+  ]
+}

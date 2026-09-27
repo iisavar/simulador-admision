@@ -1,0 +1,1081 @@
+{
+  "id": "quimica-electroquimica",
+  "materia": "quimica",
+  "tema": "Electroquímica: pilas y electrólisis",
+  "bloque": "Reacciones y estequiometría",
+  "nivel": "avanzado",
+  "clase": null,
+  "repaso": {
+    "idea": "En una reacción redox una especie se oxida (pierde electrones, en el ánodo) y otra se reduce (gana electrones, en el cátodo). Una pila produce electricidad con una reacción espontánea (E° > 0); la electrólisis usa electricidad para forzar una reacción no espontánea.",
+    "ejemplo": {
+      "enunciado": "Calcula el potencial estándar de una pila de níquel y plata: E°(Ni²⁺/Ni) = −0,25 V y E°(Ag⁺/Ag) = +0,80 V.",
+      "pasos": [
+        "El par con mayor E° se reduce: la plata es el cátodo.",
+        "El níquel, con menor E°, se oxida: es el ánodo.",
+        "E°celda = E°cátodo − E°ánodo = 0,80 − (−0,25) = 0,80 + 0,25."
+      ],
+      "resultado": "E°celda = +1,05 V (positivo: la pila funciona de forma espontánea)."
+    },
+    "ojo": "Recuerda «ánodo = oxidación, cátodo = reducción» (vocal con vocal, consonante con consonante), y no multipliques E° por los coeficientes de la ecuación: el potencial no depende de la cantidad."
+  },
+  "preguntas": [
+    {
+      "enunciado": "¿Qué tipo de energía convierte una celda galvánica (o voltaica)?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Energía eléctrica en energía química",
+          "correcta": false
+        },
+        {
+          "texto": "Energía térmica en energía mecánica",
+          "correcta": false
+        },
+        {
+          "texto": "Energía química en energía eléctrica",
+          "correcta": true
+        },
+        {
+          "texto": "Energía luminosa en energía química",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En una celda galvánica una reacción redox espontánea libera energía que se aprovecha como corriente eléctrica."
+    },
+    {
+      "enunciado": "¿En qué electrodo ocurre la oxidación en cualquier celda electroquímica?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "En el ánodo",
+          "correcta": true
+        },
+        {
+          "texto": "En el puente salino",
+          "correcta": false
+        },
+        {
+          "texto": "En el cátodo",
+          "correcta": false
+        },
+        {
+          "texto": "En el electrolito",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por definición, la oxidación (pérdida de electrones) siempre ocurre en el ánodo."
+    },
+    {
+      "enunciado": "La electrólisis es un proceso en el que la corriente eléctrica provoca:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Una reacción redox espontánea",
+          "correcta": false
+        },
+        {
+          "texto": "Una reacción de combustión",
+          "correcta": false
+        },
+        {
+          "texto": "Un cambio físico sin transferencia de electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Una reacción no espontánea",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En la electrólisis se usa energía eléctrica externa para forzar una reacción que no ocurriría espontáneamente."
+    },
+    {
+      "enunciado": "La oxidación se define como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Ganancia de electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Pérdida de electrones",
+          "correcta": true
+        },
+        {
+          "texto": "Ganancia de protones",
+          "correcta": false
+        },
+        {
+          "texto": "Pérdida de neutrones",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Oxidarse significa perder electrones, lo que aumenta el número de oxidación."
+    },
+    {
+      "enunciado": "El agente reductor de una reacción redox es la sustancia que:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Se reduce y gana electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Se oxida y cede electrones",
+          "correcta": true
+        },
+        {
+          "texto": "No participa en la transferencia de electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Solo cambia de estado físico",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El agente reductor cede electrones (se oxida) y provoca la reducción de otra especie."
+    },
+    {
+      "enunciado": "El agente oxidante de una reacción redox es la sustancia que:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Se oxida y cede electrones",
+          "correcta": false
+        },
+        {
+          "texto": "Forma el puente salino",
+          "correcta": false
+        },
+        {
+          "texto": "Se reduce y gana electrones",
+          "correcta": true
+        },
+        {
+          "texto": "Permanece inalterada",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El agente oxidante gana electrones (se reduce) y provoca la oxidación de otra especie."
+    },
+    {
+      "enunciado": "La función principal del puente salino en una celda galvánica es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Aportar los electrones del circuito",
+          "correcta": false
+        },
+        {
+          "texto": "Impedir por completo el paso de iones",
+          "correcta": false
+        },
+        {
+          "texto": "Aumentar la temperatura de la celda",
+          "correcta": false
+        },
+        {
+          "texto": "Mantener la neutralidad eléctrica de las disoluciones",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El puente salino permite el flujo de iones que neutraliza las cargas y cierra el circuito interno."
+    },
+    {
+      "enunciado": "En el circuito externo de una celda galvánica, los electrones fluyen:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Del ánodo al cátodo",
+          "correcta": true
+        },
+        {
+          "texto": "A través del puente salino",
+          "correcta": false
+        },
+        {
+          "texto": "Del cátodo al ánodo",
+          "correcta": false
+        },
+        {
+          "texto": "En ambas direcciones por igual",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Los electrones salen del ánodo (oxidación) y viajan por el alambre externo hasta el cátodo (reducción)."
+    },
+    {
+      "enunciado": "El potencial del electrodo estándar de hidrógeno (EEH) se define convencionalmente como:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "−1,00 V",
+          "correcta": false
+        },
+        {
+          "texto": "+1,00 V",
+          "correcta": false
+        },
+        {
+          "texto": "0,00 V",
+          "correcta": true
+        },
+        {
+          "texto": "+0,76 V",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El electrodo estándar de hidrógeno es la referencia y se le asigna por convención un potencial de 0,00 V."
+    },
+    {
+      "enunciado": "El valor aproximado de la constante de Faraday (F) es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "96500 C/mol",
+          "correcta": true
+        },
+        {
+          "texto": "8,314 C/mol",
+          "correcta": false
+        },
+        {
+          "texto": "9650 C/mol",
+          "correcta": false
+        },
+        {
+          "texto": "6,02 × 10²³ C/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La constante de Faraday es la carga de un mol de electrones: aproximadamente 96500 C/mol."
+    },
+    {
+      "enunciado": "Una reacción redox es espontánea cuando el potencial estándar de celda (E°celda) es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Negativo",
+          "correcta": false
+        },
+        {
+          "texto": "Igual a cero",
+          "correcta": false
+        },
+        {
+          "texto": "Indefinido",
+          "correcta": false
+        },
+        {
+          "texto": "Positivo",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Si E°celda es mayor que cero, la reacción es espontánea y la celda funciona como pila (galvánica)."
+    },
+    {
+      "enunciado": "En la notación abreviada de una celda electroquímica, el ánodo se representa:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "A la derecha",
+          "correcta": false
+        },
+        {
+          "texto": "A la izquierda",
+          "correcta": true
+        },
+        {
+          "texto": "En el centro",
+          "correcta": false
+        },
+        {
+          "texto": "No se representa",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Por convención, la notación de celda escribe el ánodo (oxidación) a la izquierda y el cátodo a la derecha."
+    },
+    {
+      "enunciado": "En una celda galvánica en funcionamiento, el cátodo corresponde al polo:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Negativo",
+          "correcta": false
+        },
+        {
+          "texto": "Neutro",
+          "correcta": false
+        },
+        {
+          "texto": "Alterno",
+          "correcta": false
+        },
+        {
+          "texto": "Positivo",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En una celda galvánica el cátodo, donde ocurre la reducción, es el polo positivo."
+    },
+    {
+      "enunciado": "La unidad en que se mide el potencial eléctrico de una celda es:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "El voltio (V)",
+          "correcta": true
+        },
+        {
+          "texto": "El culombio (C)",
+          "correcta": false
+        },
+        {
+          "texto": "El amperio (A)",
+          "correcta": false
+        },
+        {
+          "texto": "El ohmio (Ω)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El potencial o fuerza electromotriz de la celda se mide en voltios (V)."
+    },
+    {
+      "enunciado": "Las pilas y baterías comerciales son ejemplos de celdas:",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "Electrolíticas",
+          "correcta": false
+        },
+        {
+          "texto": "Galvánicas (voltaicas)",
+          "correcta": true
+        },
+        {
+          "texto": "De combustión interna",
+          "correcta": false
+        },
+        {
+          "texto": "De destilación",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Las pilas aprovechan reacciones espontáneas para producir corriente, por lo que son celdas galvánicas."
+    },
+    {
+      "enunciado": "Para la celda de Daniell, con E°(Cu²⁺/Cu) = +0,34 V y E°(Zn²⁺/Zn) = −0,76 V, el potencial estándar de la celda es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "+0,42 V",
+          "correcta": false
+        },
+        {
+          "texto": "−1,10 V",
+          "correcta": false
+        },
+        {
+          "texto": "+1,10 V",
+          "correcta": true
+        },
+        {
+          "texto": "+0,34 V",
+          "correcta": false
+        }
+      ],
+      "explicacion": "E°celda = E°cátodo − E°ánodo = 0,34 − (−0,76) = 1,10 V."
+    },
+    {
+      "enunciado": "Una celda usa los pares Cu²⁺/Cu (E° = +0,34 V) y Ag⁺/Ag (E° = +0,80 V). ¿Cuál es su potencial estándar?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "+1,14 V",
+          "correcta": false
+        },
+        {
+          "texto": "+0,46 V",
+          "correcta": true
+        },
+        {
+          "texto": "−0,46 V",
+          "correcta": false
+        },
+        {
+          "texto": "+1,06 V",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La plata, con mayor E°, se reduce en el cátodo: E°celda = 0,80 − 0,34 = 0,46 V."
+    },
+    {
+      "enunciado": "En una celda galvánica con un electrodo de zinc y otro de cobre, cada uno sumergido en una disolución de su sal, ¿cuál electrodo actúa como ánodo?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "El electrodo de cobre",
+          "correcta": false
+        },
+        {
+          "texto": "Ambos por igual",
+          "correcta": false
+        },
+        {
+          "texto": "El electrodo de zinc",
+          "correcta": true
+        },
+        {
+          "texto": "El puente salino",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El zinc tiene menor potencial de reducción (−0,76 V), por lo que se oxida y actúa como ánodo."
+    },
+    {
+      "enunciado": "¿Cuántos moles de electrones se requieren para depositar 1 mol de aluminio a partir de iones Al³⁺?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "3 moles",
+          "correcta": true
+        },
+        {
+          "texto": "2 moles",
+          "correcta": false
+        },
+        {
+          "texto": "1 mol",
+          "correcta": false
+        },
+        {
+          "texto": "6 moles",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La semirreacción Al³⁺ + 3e⁻ → Al indica que se necesitan 3 moles de electrones por mol de Al."
+    },
+    {
+      "enunciado": "¿Qué carga eléctrica se necesita para depositar 0,5 mol de plata desde Ag⁺ (Ag⁺ + e⁻ → Ag)? (F = 96500 C/mol)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "96500 C",
+          "correcta": false
+        },
+        {
+          "texto": "193000 C",
+          "correcta": false
+        },
+        {
+          "texto": "24125 C",
+          "correcta": false
+        },
+        {
+          "texto": "48250 C",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Q = n·F = 0,5 mol × 96500 C/mol = 48250 C, pues cada ion Ag⁺ requiere 1 electrón."
+    },
+    {
+      "enunciado": "¿Qué masa de plata se deposita al pasar 9650 C por una solución de AgNO₃? (Ag = 108 g/mol, F = 96500 C/mol)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10,8 g",
+          "correcta": true
+        },
+        {
+          "texto": "108 g",
+          "correcta": false
+        },
+        {
+          "texto": "21,6 g",
+          "correcta": false
+        },
+        {
+          "texto": "5,4 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Moles de e⁻ = 9650/96500 = 0,1; como Ag⁺ + e⁻ → Ag, se forman 0,1 mol × 108 = 10,8 g."
+    },
+    {
+      "enunciado": "¿Cuánto tiempo tarda en depositarse 0,5 mol de cobre (Cu²⁺ + 2e⁻ → Cu) con una corriente de 10 A? (F = 96500 C/mol)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4825 s",
+          "correcta": false
+        },
+        {
+          "texto": "19300 s",
+          "correcta": false
+        },
+        {
+          "texto": "9650 s",
+          "correcta": true
+        },
+        {
+          "texto": "965 s",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Q = 0,5 × 2 × 96500 = 96500 C; t = Q/I = 96500/10 = 9650 s."
+    },
+    {
+      "enunciado": "La ecuación de Nernst a 25 °C que relaciona el potencial de celda con las concentraciones es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "E = E° + (0,0592/n) log Q",
+          "correcta": false
+        },
+        {
+          "texto": "E = E° − (0,0592/n) log Q",
+          "correcta": true
+        },
+        {
+          "texto": "E = E° − n·F·log Q",
+          "correcta": false
+        },
+        {
+          "texto": "E = E° − (n/0,0592) log Q",
+          "correcta": false
+        }
+      ],
+      "explicacion": "A 25 °C la ecuación de Nernst es E = E° − (0,0592/n)·log Q, donde Q es el cociente de reacción."
+    },
+    {
+      "enunciado": "Entre Zn (E° = −0,76 V), Cu (E° = +0,34 V) y Ag (E° = +0,80 V), el mejor agente reductor es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "La plata",
+          "correcta": false
+        },
+        {
+          "texto": "El cobre",
+          "correcta": false
+        },
+        {
+          "texto": "El hidrógeno",
+          "correcta": false
+        },
+        {
+          "texto": "El zinc",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Cuanto más negativo es el potencial de reducción, más fácilmente se oxida el metal; el zinc es el mejor reductor."
+    },
+    {
+      "enunciado": "Entre Cl₂ (E° = +1,36 V), Cu²⁺ (E° = +0,34 V), Zn²⁺ (E° = −0,76 V) y Ag⁺ (E° = +0,80 V), el agente oxidante más fuerte es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "El Cu²⁺",
+          "correcta": false
+        },
+        {
+          "texto": "El Zn²⁺",
+          "correcta": false
+        },
+        {
+          "texto": "El Cl₂",
+          "correcta": true
+        },
+        {
+          "texto": "El Ag⁺",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El mayor potencial de reducción corresponde al mejor oxidante; el Cl₂ (+1,36 V) es el más fuerte."
+    },
+    {
+      "enunciado": "En la electrólisis del cloruro de sodio fundido (NaCl), el producto que se forma en el cátodo es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Sodio metálico (Na)",
+          "correcta": true
+        },
+        {
+          "texto": "Hidrógeno (H₂)",
+          "correcta": false
+        },
+        {
+          "texto": "Cloro gaseoso (Cl₂)",
+          "correcta": false
+        },
+        {
+          "texto": "Oxígeno (O₂)",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En el cátodo ocurre la reducción Na⁺ + e⁻ → Na, produciendo sodio metálico."
+    },
+    {
+      "enunciado": "En la electrólisis del agua, el gas que se libera en el cátodo es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Oxígeno",
+          "correcta": false
+        },
+        {
+          "texto": "Dióxido de carbono",
+          "correcta": false
+        },
+        {
+          "texto": "Ozono",
+          "correcta": false
+        },
+        {
+          "texto": "Hidrógeno",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En el cátodo se reduce el agua liberando hidrógeno: 2H₂O + 2e⁻ → H₂ + 2OH⁻."
+    },
+    {
+      "enunciado": "La relación entre la energía libre estándar y el potencial estándar de celda es:",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "ΔG° = nFE°",
+          "correcta": false
+        },
+        {
+          "texto": "ΔG° = −nFE°",
+          "correcta": true
+        },
+        {
+          "texto": "ΔG° = E°/(nF)",
+          "correcta": false
+        },
+        {
+          "texto": "ΔG° = −nF/E°",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔG° = −nFE°; un E° positivo da ΔG° negativo, lo que indica espontaneidad."
+    },
+    {
+      "enunciado": "¿Cuántos moles de electrones circulan cuando una corriente de 2 A fluye durante 1930 s? (F = 96500 C/mol)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "0,4 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,02 mol",
+          "correcta": false
+        },
+        {
+          "texto": "0,04 mol",
+          "correcta": true
+        },
+        {
+          "texto": "0,08 mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Q = I·t = 2 × 1930 = 3860 C; moles de e⁻ = 3860/96500 = 0,04 mol."
+    },
+    {
+      "enunciado": "Si la misma cantidad de carga atraviesa soluciones de Ag⁺ y Cu²⁺, ¿qué relación hay entre los moles depositados?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Se deposita el doble de moles de Cu que de Ag",
+          "correcta": false
+        },
+        {
+          "texto": "Se deposita igual número de moles de ambos",
+          "correcta": false
+        },
+        {
+          "texto": "Se deposita el triple de moles de Ag que de Cu",
+          "correcta": false
+        },
+        {
+          "texto": "Se deposita el doble de moles de Ag que de Cu",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Ag⁺ requiere 1 e⁻ y Cu²⁺ requiere 2 e⁻; con la misma carga se obtiene el doble de moles de plata."
+    },
+    {
+      "enunciado": "En la celda de Daniell, ¿qué efecto tiene aumentar la concentración de Cu²⁺ (reactivo del cátodo) sobre el potencial de la celda?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Aumenta el potencial",
+          "correcta": true
+        },
+        {
+          "texto": "No lo modifica",
+          "correcta": false
+        },
+        {
+          "texto": "Lo vuelve negativo",
+          "correcta": false
+        },
+        {
+          "texto": "Disminuye el potencial",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Según Nernst, aumentar la concentración del reactivo Cu²⁺ reduce Q y eleva el potencial de la celda."
+    },
+    {
+      "enunciado": "En una celda de Daniell (E° = 1,10 V, n = 2), con [Zn²⁺] = 0,1 M y [Cu²⁺] = 1,0 M, el potencial a 25 °C es aproximadamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,07 V",
+          "correcta": false
+        },
+        {
+          "texto": "1,13 V",
+          "correcta": true
+        },
+        {
+          "texto": "1,10 V",
+          "correcta": false
+        },
+        {
+          "texto": "1,16 V",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Q = [Zn²⁺]/[Cu²⁺] = 0,1; E = 1,10 − (0,0592/2)·log(0,1) = 1,10 + 0,0296 = 1,13 V."
+    },
+    {
+      "enunciado": "En la misma celda de Daniell (E° = 1,10 V, n = 2), si [Zn²⁺] = 1,0 M y [Cu²⁺] = 0,01 M, el potencial a 25 °C es aproximadamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1,16 V",
+          "correcta": false
+        },
+        {
+          "texto": "1,10 V",
+          "correcta": false
+        },
+        {
+          "texto": "1,04 V",
+          "correcta": true
+        },
+        {
+          "texto": "0,98 V",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Q = 1,0/0,01 = 100; E = 1,10 − (0,0592/2)·log(100) = 1,10 − 0,0592 = 1,04 V."
+    },
+    {
+      "enunciado": "¿Qué masa de aluminio se deposita al pasar una corriente de 3 A durante 2 horas por AlCl₃ fundido? (Al = 27 g/mol, F = 96500 C/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "2,01 g",
+          "correcta": true
+        },
+        {
+          "texto": "6,04 g",
+          "correcta": false
+        },
+        {
+          "texto": "1,00 g",
+          "correcta": false
+        },
+        {
+          "texto": "0,67 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Q = 3 × 7200 = 21600 C; mol e⁻ = 0,224; mol Al = 0,224/3 = 0,0746; masa = 0,0746 × 27 ≈ 2,01 g."
+    },
+    {
+      "enunciado": "En la electrólisis del agua, ¿qué volumen de H₂ en condiciones normales se produce con 0,2 mol de electrones? (Vm = 22,4 L/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "4,48 L",
+          "correcta": false
+        },
+        {
+          "texto": "1,12 L",
+          "correcta": false
+        },
+        {
+          "texto": "22,4 L",
+          "correcta": false
+        },
+        {
+          "texto": "2,24 L",
+          "correcta": true
+        }
+      ],
+      "explicacion": "2H⁺ + 2e⁻ → H₂: 0,2 mol e⁻ dan 0,1 mol H₂; volumen = 0,1 × 22,4 = 2,24 L."
+    },
+    {
+      "enunciado": "En la electrólisis del agua, ¿qué carga se requiere para producir 5,6 L de O₂ en condiciones normales en el ánodo? (Vm = 22,4 L/mol, F = 96500 C/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "24125 C",
+          "correcta": false
+        },
+        {
+          "texto": "96500 C",
+          "correcta": true
+        },
+        {
+          "texto": "48250 C",
+          "correcta": false
+        },
+        {
+          "texto": "193000 C",
+          "correcta": false
+        }
+      ],
+      "explicacion": "5,6 L = 0,25 mol O₂; 2H₂O → O₂ + 4H⁺ + 4e⁻ requiere 4 × 0,25 = 1 mol e⁻ = 96500 C."
+    },
+    {
+      "enunciado": "Para la celda de Daniell (n = 2, E° = 1,10 V), la energía libre estándar ΔG° es aproximadamente: (F = 96500 C/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "−212 kJ",
+          "correcta": true
+        },
+        {
+          "texto": "+212 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−106 kJ",
+          "correcta": false
+        },
+        {
+          "texto": "−424 kJ",
+          "correcta": false
+        }
+      ],
+      "explicacion": "ΔG° = −nFE° = −(2)(96500)(1,10) = −212300 J ≈ −212 kJ."
+    },
+    {
+      "enunciado": "Para la celda de Daniell (n = 2, E° = 1,10 V) a 25 °C, el logaritmo de la constante de equilibrio (log K) es aproximadamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "18,6",
+          "correcta": false
+        },
+        {
+          "texto": "2,2",
+          "correcta": false
+        },
+        {
+          "texto": "37,2",
+          "correcta": true
+        },
+        {
+          "texto": "74,3",
+          "correcta": false
+        }
+      ],
+      "explicacion": "log K = nE°/0,0592 = (2 × 1,10)/0,0592 ≈ 37,2, lo que confirma una reacción muy favorecida."
+    },
+    {
+      "enunciado": "Una celda de concentración tiene dos electrodos de cobre en disoluciones de Cu²⁺ 1,0 M y 0,1 M (n = 2). Su potencial a 25 °C es aproximadamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,00 V",
+          "correcta": false
+        },
+        {
+          "texto": "0,03 V",
+          "correcta": true
+        },
+        {
+          "texto": "0,06 V",
+          "correcta": false
+        },
+        {
+          "texto": "0,12 V",
+          "correcta": false
+        }
+      ],
+      "explicacion": "E° = 0; E = (0,0592/2)·log(1,0/0,1) = 0,0296 × 1 ≈ 0,03 V, con el lado concentrado como cátodo."
+    },
+    {
+      "enunciado": "¿Cuánto tiempo se requiere para depositar 2,16 g de plata con una corriente de 0,5 A? (Ag = 108 g/mol, F = 96500 C/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "1930 s",
+          "correcta": false
+        },
+        {
+          "texto": "965 s",
+          "correcta": false
+        },
+        {
+          "texto": "7720 s",
+          "correcta": false
+        },
+        {
+          "texto": "3860 s",
+          "correcta": true
+        }
+      ],
+      "explicacion": "mol Ag = 2,16/108 = 0,02 = mol e⁻; Q = 0,02 × 96500 = 1930 C; t = 1930/0,5 = 3860 s."
+    },
+    {
+      "enunciado": "La misma corriente atraviesa en serie soluciones de AgNO₃ y CuSO₄. Si se depositan 21,6 g de plata, ¿qué masa de cobre se deposita? (Ag = 108, Cu = 63,5 g/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12,7 g",
+          "correcta": false
+        },
+        {
+          "texto": "6,35 g",
+          "correcta": true
+        },
+        {
+          "texto": "21,6 g",
+          "correcta": false
+        },
+        {
+          "texto": "3,18 g",
+          "correcta": false
+        }
+      ],
+      "explicacion": "mol Ag = 21,6/108 = 0,2 = mol e⁻; mol Cu = 0,2/2 = 0,1; masa = 0,1 × 63,5 = 6,35 g."
+    },
+    {
+      "enunciado": "Cuando una celda galvánica (batería) alcanza el equilibrio químico, su potencial es:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "Negativo",
+          "correcta": false
+        },
+        {
+          "texto": "Igual a E°",
+          "correcta": false
+        },
+        {
+          "texto": "Máximo",
+          "correcta": false
+        },
+        {
+          "texto": "Cero",
+          "correcta": true
+        }
+      ],
+      "explicacion": "En el equilibrio Q = K y, según Nernst, E = 0; la batería deja de suministrar corriente porque está agotada."
+    },
+    {
+      "enunciado": "En la electrólisis de NaCl acuoso, ¿qué volumen de Cl₂ en condiciones normales se produce en el ánodo al pasar 2 A durante 1930 s? (Vm = 22,4 L/mol, F = 96500 C/mol)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,896 L",
+          "correcta": false
+        },
+        {
+          "texto": "0,224 L",
+          "correcta": false
+        },
+        {
+          "texto": "0,448 L",
+          "correcta": true
+        },
+        {
+          "texto": "1,12 L",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Q = 3860 C; mol e⁻ = 0,04; 2Cl⁻ → Cl₂ + 2e⁻ da 0,02 mol Cl₂; volumen = 0,02 × 22,4 = 0,448 L."
+    },
+    {
+      "enunciado": "El potencial de reducción de un electrodo de plata (E° = 0,80 V, n = 1) con [Ag⁺] = 0,01 M a 25 °C es aproximadamente:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "0,68 V",
+          "correcta": true
+        },
+        {
+          "texto": "0,80 V",
+          "correcta": false
+        },
+        {
+          "texto": "0,74 V",
+          "correcta": false
+        },
+        {
+          "texto": "0,92 V",
+          "correcta": false
+        }
+      ],
+      "explicacion": "E = 0,80 + 0,0592·log(0,01) = 0,80 − 0,118 ≈ 0,68 V."
+    },
+    {
+      "enunciado": "Si para una reacción redox el potencial estándar de celda es E°celda = −0,46 V, se concluye que:",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "La reacción no es espontánea y requiere energía externa (electrólisis)",
+          "correcta": true
+        },
+        {
+          "texto": "La reacción libera gran cantidad de calor",
+          "correcta": false
+        },
+        {
+          "texto": "La reacción es espontánea tal como está escrita",
+          "correcta": false
+        },
+        {
+          "texto": "La reacción ya está en equilibrio",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Un E°celda negativo implica ΔG° positivo: la reacción directa no es espontánea y necesita electrólisis."
+    },
+    {
+      "enunciado": "Al pasar 96500 C (1 faraday) por la sal fundida de un metal que forma iones M³⁺ se depositan 9 g del metal. ¿Cuál es su masa molar?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "9 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "27 g/mol",
+          "correcta": true
+        },
+        {
+          "texto": "54 g/mol",
+          "correcta": false
+        },
+        {
+          "texto": "3 g/mol",
+          "correcta": false
+        }
+      ],
+      "explicacion": "1 faraday deposita un equivalente = M/n gramos; M/3 = 9, de donde M = 27 g/mol (aluminio)."
+    }
+  ]
+}

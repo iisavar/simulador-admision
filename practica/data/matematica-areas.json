@@ -1,0 +1,1081 @@
+{
+  "id": "matematica-areas",
+  "materia": "matematica",
+  "tema": "Perímetros y áreas de figuras planas",
+  "bloque": "Geometría y trigonometría",
+  "nivel": "basico",
+  "clase": null,
+  "repaso": {
+    "idea": "El perímetro es la medida del contorno (en cm) y el área es la superficie que encierra la figura (en cm²). Rectángulo: A = b × h; triángulo: A = (b × h)/2; círculo: A = πr² y longitud de la circunferencia L = 2πr.",
+    "ejemplo": {
+      "enunciado": "Un trapecio tiene bases de 9 cm y 5 cm y una altura de 4 cm. ¿Cuál es su área?",
+      "pasos": [
+        "Usa la fórmula del trapecio: A = ((B + b)/2) × h.",
+        "Promedia las bases: (9 + 5)/2 = 14/2 = 7 cm.",
+        "Multiplica por la altura: 7 × 4 = 28."
+      ],
+      "resultado": "A = 28 cm²"
+    },
+    "ojo": "Si te dan el diámetro de un círculo, divídelo para 2 antes de usar la fórmula: πr² usa el radio, no el diámetro."
+  },
+  "preguntas": [
+    {
+      "enunciado": "Un rectángulo tiene base de 8 cm y altura de 3 cm. ¿Cuál es su perímetro?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "22 cm",
+          "correcta": true
+        },
+        {
+          "texto": "24 cm",
+          "correcta": false
+        },
+        {
+          "texto": "11 cm",
+          "correcta": false
+        },
+        {
+          "texto": "16 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El perímetro del rectángulo es 2(b+h)=2(8+3)=22 cm."
+    },
+    {
+      "enunciado": "¿Cuál es el área de un rectángulo de 6 cm de base y 4 cm de altura?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "24 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "20 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "10 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "12 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área del rectángulo es base por altura: 6×4=24 cm²."
+    },
+    {
+      "enunciado": "¿Cuál es el área de un cuadrado de 5 cm de lado?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "20 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "15 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "25 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "10 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área del cuadrado es lado al cuadrado: 5²=25 cm²."
+    },
+    {
+      "enunciado": "¿Cuál es el perímetro de un cuadrado de 7 cm de lado?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "14 cm",
+          "correcta": false
+        },
+        {
+          "texto": "49 cm",
+          "correcta": false
+        },
+        {
+          "texto": "28 cm",
+          "correcta": true
+        },
+        {
+          "texto": "21 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El perímetro del cuadrado es 4 veces el lado: 4×7=28 cm."
+    },
+    {
+      "enunciado": "Un triángulo tiene base de 10 cm y altura de 6 cm. ¿Cuál es su área?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "60 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "16 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "30 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "15 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área del triángulo es (base×altura)/2=(10×6)/2=30 cm²."
+    },
+    {
+      "enunciado": "¿Cuál es el perímetro de un triángulo cuyos lados miden 3 cm, 4 cm y 5 cm?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "7 cm",
+          "correcta": false
+        },
+        {
+          "texto": "9 cm",
+          "correcta": false
+        },
+        {
+          "texto": "60 cm",
+          "correcta": false
+        },
+        {
+          "texto": "12 cm",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El perímetro es la suma de los lados: 3+4+5=12 cm."
+    },
+    {
+      "enunciado": "¿Cuál es el área de un círculo de radio 5 cm? (usa π=3,14)",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "78,5 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "15,7 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "31,4 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "157 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área del círculo es πr²=3,14×5²=3,14×25=78,5 cm²."
+    },
+    {
+      "enunciado": "¿Cuál es la longitud de una circunferencia de radio 4 cm? (usa π=3,14)",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "50,24 cm",
+          "correcta": false
+        },
+        {
+          "texto": "25,12 cm",
+          "correcta": true
+        },
+        {
+          "texto": "12,56 cm",
+          "correcta": false
+        },
+        {
+          "texto": "16 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La longitud de la circunferencia es 2πr=2×3,14×4=25,12 cm."
+    },
+    {
+      "enunciado": "Un cuadrado tiene un perímetro de 20 cm. ¿Cuál es su área?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "20 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "25 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "100 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "40 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Si el perímetro es 20 cm, el lado es 20/4=5 cm y el área es 5²=25 cm²."
+    },
+    {
+      "enunciado": "¿Cuál es el perímetro de un rectángulo de 10 cm de base y 5 cm de altura?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "50 cm",
+          "correcta": false
+        },
+        {
+          "texto": "15 cm",
+          "correcta": false
+        },
+        {
+          "texto": "25 cm",
+          "correcta": false
+        },
+        {
+          "texto": "30 cm",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El perímetro es 2(b+h)=2(10+5)=30 cm."
+    },
+    {
+      "enunciado": "Si el radio de un círculo mide 9 cm, ¿cuánto mide su diámetro?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "9 cm",
+          "correcta": false
+        },
+        {
+          "texto": "18 cm",
+          "correcta": true
+        },
+        {
+          "texto": "27 cm",
+          "correcta": false
+        },
+        {
+          "texto": "81 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El diámetro es el doble del radio: 2×9=18 cm."
+    },
+    {
+      "enunciado": "¿Cuál es el perímetro de un triángulo equilátero de 6 cm de lado?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "12 cm",
+          "correcta": false
+        },
+        {
+          "texto": "18 cm",
+          "correcta": true
+        },
+        {
+          "texto": "36 cm",
+          "correcta": false
+        },
+        {
+          "texto": "24 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En un triángulo equilátero los tres lados son iguales: 3×6=18 cm."
+    },
+    {
+      "enunciado": "¿Cuál es el perímetro de un pentágono regular de 4 cm de lado?",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "16 cm",
+          "correcta": false
+        },
+        {
+          "texto": "25 cm",
+          "correcta": false
+        },
+        {
+          "texto": "24 cm",
+          "correcta": false
+        },
+        {
+          "texto": "20 cm",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El pentágono tiene 5 lados iguales: 5×4=20 cm."
+    },
+    {
+      "enunciado": "¿Cuál es el área de un círculo de 6 cm de diámetro? (usa π=3,14)",
+      "dificultad": 1,
+      "opciones": [
+        {
+          "texto": "28,26 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "18,84 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "9,42 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "113,04 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El radio es 6/2=3 cm; el área es πr²=3,14×9=28,26 cm²."
+    },
+    {
+      "enunciado": "Un trapecio tiene bases de 8 cm y 4 cm, y una altura de 5 cm. ¿Cuál es su área?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "30 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "40 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "60 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "17 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área del trapecio es ((B+b)/2)×h=((8+4)/2)×5=6×5=30 cm²."
+    },
+    {
+      "enunciado": "Un triángulo tiene lados de 6 cm, 8 cm y 10 cm. ¿Cuál es su área?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "48 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "30 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "24 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "12 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "Es un triángulo rectángulo (6²+8²=10²); su área es (6×8)/2=24 cm²."
+    },
+    {
+      "enunciado": "Un rectángulo tiene un área de 48 cm² y su base mide 8 cm. ¿Cuánto mide su altura?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8 cm",
+          "correcta": false
+        },
+        {
+          "texto": "40 cm",
+          "correcta": false
+        },
+        {
+          "texto": "6 cm",
+          "correcta": true
+        },
+        {
+          "texto": "16 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La altura es área/base=48/8=6 cm."
+    },
+    {
+      "enunciado": "El radio de un círculo es 7 cm. ¿Cuál es su área? (usa π=22/7)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "44 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "308 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "22 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "154 cm²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El área es πr²=(22/7)×7²=(22/7)×49=154 cm²."
+    },
+    {
+      "enunciado": "Un cuadrado tiene un área de 81 cm². ¿Cuál es su perímetro?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "27 cm",
+          "correcta": false
+        },
+        {
+          "texto": "18 cm",
+          "correcta": false
+        },
+        {
+          "texto": "324 cm",
+          "correcta": false
+        },
+        {
+          "texto": "36 cm",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El lado es √81=9 cm; el perímetro es 4×9=36 cm."
+    },
+    {
+      "enunciado": "Un triángulo tiene un área de 36 cm² y su base mide 9 cm. ¿Cuánto mide su altura?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "4 cm",
+          "correcta": false
+        },
+        {
+          "texto": "8 cm",
+          "correcta": true
+        },
+        {
+          "texto": "9 cm",
+          "correcta": false
+        },
+        {
+          "texto": "72 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De área=(b×h)/2 se despeja h=2×área/b=2×36/9=8 cm."
+    },
+    {
+      "enunciado": "Un rectángulo tiene un área de 60 cm² y su base mide 12 cm. ¿Cuál es su perímetro?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "24 cm",
+          "correcta": false
+        },
+        {
+          "texto": "17 cm",
+          "correcta": false
+        },
+        {
+          "texto": "34 cm",
+          "correcta": true
+        },
+        {
+          "texto": "60 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La altura es 60/12=5 cm; el perímetro es 2(12+5)=34 cm."
+    },
+    {
+      "enunciado": "El área de un círculo es 50,24 cm². ¿Cuál es su radio? (usa π=3,14)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "8 cm",
+          "correcta": false
+        },
+        {
+          "texto": "4 cm",
+          "correcta": true
+        },
+        {
+          "texto": "16 cm",
+          "correcta": false
+        },
+        {
+          "texto": "2 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De πr²=50,24, r²=50,24/3,14=16, por lo que r=4 cm."
+    },
+    {
+      "enunciado": "¿Cuál es el área aproximada de un hexágono regular de 6 cm de lado? (usa √3≈1,732)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "187,1 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "46,8 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "62,4 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "93,5 cm²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El área del hexágono regular es (3√3/2)a²=2,598×36≈93,5 cm²."
+    },
+    {
+      "enunciado": "Un pentágono regular tiene 6 cm de lado y una apotema de 4,13 cm. ¿Cuál es su área?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "61,95 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "123,9 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "30 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "12,39 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área de un polígono regular es (perímetro×apotema)/2=(30×4,13)/2=61,95 cm²."
+    },
+    {
+      "enunciado": "La longitud de una circunferencia es 31,4 cm. ¿Cuál es su radio? (usa π=3,14)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "10 cm",
+          "correcta": false
+        },
+        {
+          "texto": "5 cm",
+          "correcta": true
+        },
+        {
+          "texto": "2,5 cm",
+          "correcta": false
+        },
+        {
+          "texto": "3,14 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De 2πr=31,4, r=31,4/6,28=5 cm."
+    },
+    {
+      "enunciado": "¿Cuál es el área aproximada de un triángulo equilátero de 8 cm de lado? (usa √3≈1,732)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "27,7 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "16 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "32 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "55,4 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área del triángulo equilátero es (√3/4)a²=0,433×64≈27,7 cm²."
+    },
+    {
+      "enunciado": "Un trapecio tiene un área de 48 cm² y bases de 10 cm y 6 cm. ¿Cuál es su altura?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "6 cm",
+          "correcta": true
+        },
+        {
+          "texto": "8 cm",
+          "correcta": false
+        },
+        {
+          "texto": "3 cm",
+          "correcta": false
+        },
+        {
+          "texto": "12 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De área=((10+6)/2)×h=8h=48 se obtiene h=6 cm."
+    },
+    {
+      "enunciado": "¿Cuánto mide aproximadamente la diagonal de un cuadrado de 10 cm de lado? (usa √2≈1,414)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "20 cm",
+          "correcta": false
+        },
+        {
+          "texto": "7,07 cm",
+          "correcta": false
+        },
+        {
+          "texto": "10 cm",
+          "correcta": false
+        },
+        {
+          "texto": "14,14 cm",
+          "correcta": true
+        }
+      ],
+      "explicacion": "La diagonal del cuadrado es lado×√2=10×1,414≈14,14 cm."
+    },
+    {
+      "enunciado": "Un círculo está inscrito en un cuadrado de 10 cm de lado. ¿Cuál es el área de la parte del cuadrado que queda fuera del círculo? (usa π=3,14)",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "78,5 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "21,5 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "100 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "39,25 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El radio del círculo es la mitad del lado, 5 cm; el área que queda fuera es 100 − (3,14 × 25) = 100 − 78,5 = 21,5 cm²."
+    },
+    {
+      "enunciado": "Si se duplica el lado de un cuadrado, ¿cómo cambia su área?",
+      "dificultad": 2,
+      "opciones": [
+        {
+          "texto": "Se duplica",
+          "correcta": false
+        },
+        {
+          "texto": "Se triplica",
+          "correcta": false
+        },
+        {
+          "texto": "Se cuadruplica (se multiplica por 4)",
+          "correcta": true
+        },
+        {
+          "texto": "No cambia",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área depende del lado al cuadrado; si el lado se multiplica por 2, el área se multiplica por 2²=4."
+    },
+    {
+      "enunciado": "Un rectángulo tiene un perímetro de 26 cm y su base mide 8 cm. ¿Cuál es su área?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "40 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "21 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "48 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "65 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "De 2(8+h)=26 se obtiene h=5 cm; el área es 8×5=40 cm²."
+    },
+    {
+      "enunciado": "¿Cuál es el área de un sector circular de 90° en un círculo de radio 4 cm? (usa π=3,14)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12,56 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "25,12 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "6,28 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "50,24 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El sector es (90/360) del círculo: (1/4)×3,14×16=12,56 cm²."
+    },
+    {
+      "enunciado": "Un triángulo isósceles tiene una base de 12 cm y lados iguales de 10 cm. ¿Cuál es su área?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "60 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "96 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "48 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "40 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La altura es √(10²−6²)=√64=8 cm; el área es (12×8)/2=48 cm²."
+    },
+    {
+      "enunciado": "¿Cuál es el área de un círculo inscrito en un cuadrado de 12 cm de lado? (usa π=3,14)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "113,04 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "452,16 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "28,26 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "144 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El diámetro del círculo es igual al lado, así que el radio es 6 cm; área=3,14×36=113,04 cm²."
+    },
+    {
+      "enunciado": "Un hexágono regular está inscrito en una circunferencia de radio 8 cm. ¿Cuál es su perímetro?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "24 cm",
+          "correcta": false
+        },
+        {
+          "texto": "48 cm",
+          "correcta": true
+        },
+        {
+          "texto": "50,24 cm",
+          "correcta": false
+        },
+        {
+          "texto": "96 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "En un hexágono regular el lado es igual al radio (8 cm); el perímetro es 6×8=48 cm."
+    },
+    {
+      "enunciado": "Un trapecio isósceles tiene bases de 14 cm y 6 cm y lados oblicuos de 5 cm. ¿Cuál es su área?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "60 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "50 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "30 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "40 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "La diferencia de bases es 8, su mitad 4; la altura es √(5²−4²)=3 cm y el área es ((14+6)/2)×3=30 cm²."
+    },
+    {
+      "enunciado": "Dos círculos concéntricos tienen radios de 5 cm y 3 cm. ¿Cuál es el área de la corona circular entre ellos? (usa π=3,14)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "25,12 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "50,24 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "78,5 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "28,26 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área de la corona es π(R²−r²)=3,14×(25−9)=3,14×16=50,24 cm²."
+    },
+    {
+      "enunciado": "Un triángulo tiene lados de 7 cm, 8 cm y 9 cm. Usando la fórmula de Herón, ¿cuál es su área aproximada?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "26,83 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "28 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "36 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "24 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El semiperímetro es s=12; A=√(12×5×4×3)=√720≈26,83 cm²."
+    },
+    {
+      "enunciado": "Un octágono regular tiene 5 cm de lado y una apotema de 6,04 cm. ¿Cuál es su área?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "241,6 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "60,4 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "30,2 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "120,8 cm²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El perímetro es 8×5=40 cm; el área es (40×6,04)/2=120,8 cm²."
+    },
+    {
+      "enunciado": "Si el radio de un círculo aumenta un 20%, ¿en qué porcentaje aumenta su área?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "20%",
+          "correcta": false
+        },
+        {
+          "texto": "44%",
+          "correcta": true
+        },
+        {
+          "texto": "40%",
+          "correcta": false
+        },
+        {
+          "texto": "21%",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área se multiplica por 1,2²=1,44; el aumento es del 44%."
+    },
+    {
+      "enunciado": "¿Cuál es la longitud del arco de un sector de 60° en un círculo de radio 6 cm? (usa π=3,14)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "12,56 cm",
+          "correcta": false
+        },
+        {
+          "texto": "3,14 cm",
+          "correcta": false
+        },
+        {
+          "texto": "6,28 cm",
+          "correcta": true
+        },
+        {
+          "texto": "37,68 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El arco es (60/360) de la circunferencia: (1/6)×2×3,14×6=6,28 cm."
+    },
+    {
+      "enunciado": "Un triángulo equilátero tiene un perímetro de 18 cm. ¿Cuál es su área aproximada? (usa √3≈1,732)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "27,71 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "18 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "15,59 cm²",
+          "correcta": true
+        },
+        {
+          "texto": "9 cm²",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El lado es 18/3=6 cm; el área es (√3/4)×6²=0,433×36≈15,59 cm²."
+    },
+    {
+      "enunciado": "Un campo rectangular mide 50 m por 30 m. ¿Cuántos metros de cerca se necesitan para rodearlo dando dos vueltas?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "160 m",
+          "correcta": false
+        },
+        {
+          "texto": "3000 m",
+          "correcta": false
+        },
+        {
+          "texto": "1500 m",
+          "correcta": false
+        },
+        {
+          "texto": "320 m",
+          "correcta": true
+        }
+      ],
+      "explicacion": "El perímetro es 2(50+30)=160 m; dos vueltas requieren 2×160=320 m."
+    },
+    {
+      "enunciado": "La diagonal de un cuadrado mide 8√2 cm. ¿Cuál es su área?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "128 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "32 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "16 cm²",
+          "correcta": false
+        },
+        {
+          "texto": "64 cm²",
+          "correcta": true
+        }
+      ],
+      "explicacion": "Como diagonal=lado×√2, el lado es 8 cm; el área es 8²=64 cm²."
+    },
+    {
+      "enunciado": "El área de un círculo es igual al área de un cuadrado de 5 cm de lado. ¿Cuál es el radio del círculo? (usa π=3,14)",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "5 cm",
+          "correcta": false
+        },
+        {
+          "texto": "2,82 cm",
+          "correcta": true
+        },
+        {
+          "texto": "7,96 cm",
+          "correcta": false
+        },
+        {
+          "texto": "1,41 cm",
+          "correcta": false
+        }
+      ],
+      "explicacion": "El área del cuadrado es 25 cm²; de πr²=25, r=√(25/3,14)=√7,96≈2,82 cm."
+    },
+    {
+      "enunciado": "Un trapecio tiene un área de 90 cm², una altura de 9 cm y una de sus bases mide 12 cm. ¿Cuánto mide la otra base?",
+      "dificultad": 3,
+      "opciones": [
+        {
+          "texto": "10 cm",
+          "correcta": false
+        },
+        {
+          "texto": "20 cm",
+          "correcta": false
+        },
+        {
+          "texto": "12 cm",
+          "correcta": false
+        },
+        {
+          "texto": "8 cm",
+          "correcta": true
+        }
+      ],
+      "explicacion": "De 90=((12+b)/2)×9 se obtiene (12+b)/2=10, así que b=8 cm."
+    }
+  ]
+}
