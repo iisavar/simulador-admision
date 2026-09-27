@@ -6,7 +6,7 @@
 
   // ===== URLs /exec de cada clase (pega aquí la de Química cuando la publiques) =====
   var URL_LEY_DE_SIGNOS = 'https://script.google.com/macros/s/AKfycby5ZWTS6aoA85LeRhHzAaTvD8j4hCRrO9HZ99tnr1Jebfj1fNfSgdoOvSESh5jbSoh8/exec';
-  var URL_QUIMICA = 'https://script.google.com/macros/s/AKfycbzFFwRVWfnyeCpd7nSdVtQVnOIow5F9fiAHNRnYSdYPR2VG2FzKvoXBeLM_zNOwYA/exec';
+  var URL_QUIMICA = '';
 
   // La URL del script CENTRAL (cuentas y «En vivo») se toma de js/cidea-sync.js: se pega una sola vez allí.
   var URL_CENTRAL = (window.CIDEA && window.CIDEA.URL) || '';
