@@ -155,5 +155,21 @@
   setInterval(tick, TICK);
   if (fijarRegistro()) guardar();
 
+
+  // ---------- «En vivo» y avance en la nube (script central de CIDEA Jóvenes) ----------
+  if (window.CIDEA && window.CIDEA.activo()) {
+    const quimica = /quimica/.test(window.location.pathname);
+    function dondeVivo() {
+      try {
+        const s = snapshot();
+        if (s.seccion === 'laminas') return 'Láminas · lámina ' + (s.laminaNum || '?') + (s.laminaTitulo ? ': ' + s.laminaTitulo : '');
+        if (s.seccion === 'juego') return 'Juego · parada ' + Math.max(1, s.juegoParadaMax || 1) + ' de ' + s.juegoTotal;
+        if (s.seccion === 'test') return s.testEstado === 'terminado' ? 'Terminó el examen' : 'Examen · en curso';
+        return 'En el menú de la clase';
+      } catch (e) { return ''; }
+    }
+    window.CIDEA.iniciar({ claves: [quimica ? 'qm_v1' : 'lds_v1'], app: quimica ? 'Química desde cero' : 'Ley de signos', donde: dondeVivo });
+  }
+
   LS.seguimiento = { snapshot, enviarProgreso, tiempos };
 })();

@@ -895,6 +895,28 @@
     render();
   }
 
+  // «En vivo» del panel del tutor y avance en la nube (solo si el central de CIDEA está conectado)
+  if (window.CIDEA && window.CIDEA.activo()) {
+    window.CIDEA.iniciar({
+      claves: [CLAVE],
+      app: 'Práctica libre',
+      donde: function () {
+        try {
+          const r = ruta();
+          if ((r[0] === 'tema' || r[0] === 'practicar') && r[1] && INDICE) {
+            const ref = buscarTema(r[1]);
+            const nombre = ref ? ref.t.tema : r[1];
+            return (r[0] === 'practicar' ? 'Practicando: ' : 'Repasando: ') + nombre;
+          }
+          if (r[0] === 'debilidades') return 'Practicando sus debilidades';
+          if (r[0] === 'boveda') return 'En la bóveda de errores';
+          if (r[0] === 'materia' && r[1]) return 'Viendo los temas de ' + r[1];
+          return 'En el inicio de la práctica';
+        } catch (e) { return ''; }
+      }
+    });
+  }
+
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', iniciar);
   else iniciar();
 })();

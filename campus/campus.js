@@ -170,7 +170,9 @@
     rayo: '<path d="M13 2.5 4.5 13.5H11l-1 8 8.5-11H12z" fill="currentColor" stroke-linejoin="round"/>',
     laminas: '<rect x="3" y="6" width="14" height="12" rx="2"/><path d="M7 3h12a2 2 0 0 1 2 2v10"/>',
     examen: '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3.5V5h6V3.5M8.5 11l1.5 1.5 3-3M8.5 16.5h7"/>',
-    cohete: '<path d="M13.5 4.5c3-1.5 6-1.5 6-1.5s0 3-1.5 6l-6 6-4.5-4.5z"/><path d="M8.5 11.5 5 11l-2 3 4 .5M12.5 15.5 13 19l-3 2-.5-4"/><circle cx="15" cy="9" r="1.3" fill="currentColor"/>'
+    cohete: '<path d="M13.5 4.5c3-1.5 6-1.5 6-1.5s0 3-1.5 6l-6 6-4.5-4.5z"/><path d="M8.5 11.5 5 11l-2 3 4 .5M12.5 15.5 13 19l-3 2-.5-4"/><circle cx="15" cy="9" r="1.3" fill="currentColor"/>',
+    ojo: '<path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/>',
+    nube: '<path d="M7 18.5h10a4 4 0 0 0 .8-7.9A5.5 5.5 0 0 0 7 8.6 4.5 4.5 0 0 0 7 18.5z"/>'
   };
   function ico(n, cls) { return '<svg class="ico' + (cls ? ' ' + cls : '') + '" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' + (P[n] || '') + '</svg>'; }
 
@@ -342,7 +344,12 @@
         '</div>' +
         cta +
       '</div>' +
+      (nube() && !nube().sesion()
+        ? '<button type="button" class="btn-debil" id="btn-crear-cuenta">' + ico('nube') + '<span><b>Crea tu cuenta</b> para guardar tu avance en la nube y seguir desde cualquier dispositivo.</span></button>'
+        : '') +
       botonDebil;
+    const bc = $('#btn-crear-cuenta');
+    if (bc) bc.addEventListener('click', () => { mostrarRegistro(false); try { window.scrollTo(0, 0); } catch (e) { } });
   }
 
   function nodoRuta(a, sig) {
@@ -492,57 +499,123 @@
   }
   const correoValido = (c) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(c);
 
-  function mostrarRegistro(cambiando) {
-    const r = $('#registro');
-    r.innerHTML =
-      '<div class="reg-arte">' +
-        '<img class="reg-cuerpo" src="img/ignacio-cuerpo.webp" width="640" height="640" alt="Ignacio, tu tutor, de cuerpo entero con buzo morado">' +
-        '<img class="reg-busto" src="img/ignacio-busto.webp" width="520" height="520" alt="">' +
-        '<p class="burbuja">' + (cambiando ? '¿Quién va a estudiar ahora? Escribe tus datos.' : '¡Hola! Soy <b>Ignacio</b>. Aquí tienes tu ruta de clases, tu avance y los simuladores en un solo lugar.') + '</p>' +
-      '</div>' +
-      '<div class="reg-form">' +
-        '<h1 id="reg-titulo">' + (cambiando ? 'Cambiar de estudiante' : 'Bienvenido a CIDEA Jóvenes') + '</h1>' +
-        '<p class="reg-intro">Solo te lo pedimos una vez. Con estos datos Ignacio puede ver tu avance y ayudarte.</p>' +
-        '<form id="f-reg" novalidate>' +
-          '<div class="campo"><label for="r-nombre">Tus nombres y apellidos</label><input id="r-nombre" name="nombre" autocomplete="name" required minlength="3" placeholder="María Fernanda López"></div>' +
-          '<div class="campo"><label for="r-correo">Tu correo</label><input id="r-correo" name="correo" type="email" autocomplete="email" inputmode="email" required placeholder="maria.lopez@gmail.com" aria-describedby="r-sug r-err"></div>' +
-          '<p class="sugerencia" id="r-sug" hidden aria-live="polite"></p>' +
-          '<p class="error" id="r-err" role="alert" hidden></p>' +
-          '<button type="submit" class="btn btn-pri btn-ancho btn-grande">Entrar' + ico('flecha') + '</button>' +
-          (cambiando ? '<button type="button" class="btn btn-txt btn-ancho" id="r-cancelar">Cancelar</button>' : '') +
-        '</form>' +
-        '<p class="reg-nota">' + ico('check') + ' Tu avance se guarda en este dispositivo.</p>' +
-      '</div>';
-    r.hidden = false; $('#campus').hidden = true; $('#nav').hidden = true; $('#btn-ajustes').hidden = true;
+  function nube() { return window.CIDEA && window.CIDEA.activo() ? window.CIDEA : null; }
 
-    const f = $('#f-reg'), inN = $('#r-nombre'), inC = $('#r-correo'), sug = $('#r-sug'), err = $('#r-err');
-    function revisar() {
-      const s = sugerirCorreo(inC.value.trim());
-      if (s) {
-        sug.hidden = false;
-        sug.innerHTML = '¿Quisiste decir <b>' + esc(s) + '</b>? <button type="button" class="btn-txt">Sí, corregir</button>';
-        sug.querySelector('button').onclick = () => { inC.value = s; sug.hidden = true; inC.focus(); };
-      } else sug.hidden = true;
-      err.hidden = true;
+  function irAlCampus() {
+    pintarCampus();
+    try { window.scrollTo(0, 0); } catch (e2) { }
+    const h = $('#saludo'); if (h) { h.setAttribute('tabindex', '-1'); try { h.focus({ preventScroll: true }); } catch (e3) { } }
+  }
+
+  function mostrarRegistro(cambiando) {
+    const N = nube();
+    const r = $('#registro');
+    const u0 = campus().usuario || {};
+    let modo = 'crear';                                   // con cuentas: 'crear' | 'entrar'
+    if (N && (cambiando || u0.correo)) modo = 'entrar';   // ya estudió aquí: lo más probable es que ya tenga cuenta
+
+    function pintarFormulario() {
+      const conCuentas = !!N;
+      r.innerHTML =
+        '<div class="reg-arte">' +
+          '<img class="reg-cuerpo" src="img/ignacio-cuerpo.webp" width="640" height="640" alt="Ignacio, tu tutor, de cuerpo entero con buzo morado">' +
+          '<img class="reg-busto" src="img/ignacio-busto.webp" width="520" height="520" alt="">' +
+          '<p class="burbuja">' + (cambiando ? '¿Quién va a estudiar ahora? Escribe tus datos.' : '¡Hola! Soy <b>Ignacio</b>. Aquí tienes tu ruta de clases, tu avance y los simuladores en un solo lugar.') + '</p>' +
+        '</div>' +
+        '<div class="reg-form">' +
+          '<h1 id="reg-titulo">' + (cambiando ? 'Cambiar de estudiante' : 'Bienvenido a CIDEA Jóvenes') + '</h1>' +
+          (conCuentas
+            ? '<div class="reg-tabs" role="tablist"><button type="button" role="tab" data-t="crear" aria-selected="' + (modo === 'crear') + '">Crear mi cuenta</button><button type="button" role="tab" data-t="entrar" aria-selected="' + (modo === 'entrar') + '">Ya tengo cuenta</button></div>'
+            : '<p class="reg-intro">Solo te lo pedimos una vez. Con estos datos Ignacio puede ver tu avance y ayudarte.</p>') +
+          '<form id="f-reg" novalidate>' +
+            (!conCuentas || modo === 'crear'
+              ? '<div class="campo"><label for="r-nombre">Tus nombres y apellidos</label><input id="r-nombre" name="nombre" autocomplete="name" required minlength="3" placeholder="María Fernanda López" value="' + esc(u0.nombre || '') + '"></div>'
+              : '') +
+            '<div class="campo"><label for="r-correo">Tu correo</label><input id="r-correo" name="correo" type="email" autocomplete="email" inputmode="email" required placeholder="maria.lopez@gmail.com" aria-describedby="r-sug r-err" value="' + esc(u0.correo || '') + '"></div>' +
+            (conCuentas
+              ? '<div class="campo"><label for="r-clave">' + (modo === 'crear' ? 'Inventa una contraseña' : 'Tu contraseña') + '</label>' +
+                '<div class="campo-clave"><input id="r-clave" name="clave" type="password" autocomplete="' + (modo === 'crear' ? 'new-password' : 'current-password') + '" required minlength="4" placeholder="Mínimo 4 letras o números">' +
+                '<button type="button" class="btn-ver" id="r-ver" aria-label="Mostrar contraseña" aria-pressed="false">' + ico('ojo') + '</button></div>' +
+                (modo === 'crear' ? '<p class="campo-nota">No uses la contraseña de tu correo: inventa una solo para CIDEA Jóvenes.</p>' : '') + '</div>'
+              : '') +
+            '<p class="sugerencia" id="r-sug" hidden aria-live="polite"></p>' +
+            '<p class="error" id="r-err" role="alert" hidden></p>' +
+            '<button type="submit" class="btn btn-pri btn-ancho btn-grande" id="r-enviar">' + (conCuentas ? (modo === 'crear' ? 'Crear mi cuenta' : 'Entrar') : 'Entrar') + ico('flecha') + '</button>' +
+            ((cambiando || (usuarioValido(u0) && !cambiando && conCuentas)) ? '<button type="button" class="btn btn-txt btn-ancho" id="r-cancelar">' + (cambiando ? 'Cancelar' : 'Ahora no, seguir sin cuenta') + '</button>' : '') +
+          '</form>' +
+          '<p class="reg-nota">' + ico('check') + ' ' + (conCuentas
+            ? (modo === 'entrar' ? '¿Olvidaste tu contraseña? Escríbele a Ignacio y te la restablece sin perder tu avance.' : 'Con tu cuenta, tu avance se guarda en la nube: puedes seguir desde tu celular o cualquier computadora.')
+            : 'Tu avance se guarda en este dispositivo.') + '</p>' +
+        '</div>';
+      r.hidden = false; $('#campus').hidden = true; $('#nav').hidden = true; $('#btn-ajustes').hidden = true;
+      ligarFormulario();
     }
-    inC.addEventListener('blur', revisar);
-    inC.addEventListener('input', () => { err.hidden = true; });
-    f.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const nombre = inN.value.trim().replace(/\s+/g, ' '), correo = inC.value.trim().toLowerCase();
-      if (nombre.length < 3) { err.hidden = false; err.textContent = 'Escribe tu nombre para continuar.'; inN.focus(); return; }
-      if (!correoValido(correo)) { err.hidden = false; err.textContent = 'Revisa tu correo: debe verse como nombre@gmail.com'; inC.focus(); return; }
-      const c = campus();
-      c.usuario = { nombre, correo };
-      if (!c.creado) c.creado = new Date().toISOString();
-      guardarCampus(c);
-      pintarCampus();
-      try { window.scrollTo(0, 0); } catch (e2) { }
-      const h = $('#saludo'); if (h) { h.setAttribute('tabindex', '-1'); try { h.focus({ preventScroll: true }); } catch (e3) { } }
-    });
-    const cancel = $('#r-cancelar');
-    if (cancel) cancel.addEventListener('click', pintarCampus);
-    setTimeout(() => { try { inN.focus({ preventScroll: true }); } catch (e) { } }, 50);
+
+    function ligarFormulario() {
+      const conCuentas = !!N;
+      const f = $('#f-reg'), inN = $('#r-nombre'), inC = $('#r-correo'), inK = $('#r-clave'), sug = $('#r-sug'), err = $('#r-err'), btn = $('#r-enviar');
+      r.querySelectorAll('.reg-tabs button').forEach(b => b.addEventListener('click', () => {
+        if (b.getAttribute('data-t') === modo) return;
+        modo = b.getAttribute('data-t');
+        pintarFormulario();
+        setTimeout(() => { try { ($('#r-nombre') || $('#r-correo')).focus({ preventScroll: true }); } catch (e) { } }, 30);
+      }));
+      const ver = $('#r-ver');
+      if (ver) ver.addEventListener('click', () => {
+        const oculto = inK.type === 'password';
+        inK.type = oculto ? 'text' : 'password';
+        ver.setAttribute('aria-pressed', String(oculto));
+        ver.setAttribute('aria-label', oculto ? 'Ocultar contraseña' : 'Mostrar contraseña');
+        inK.focus();
+      });
+      function fallo(msg, campo) { err.hidden = false; err.textContent = msg; if (campo) campo.focus(); }
+      function revisar() {
+        const s = sugerirCorreo(inC.value.trim());
+        if (s) {
+          sug.hidden = false;
+          sug.innerHTML = '¿Quisiste decir <b>' + esc(s) + '</b>? <button type="button" class="btn-txt">Sí, corregir</button>';
+          sug.querySelector('button').onclick = () => { inC.value = s; sug.hidden = true; inC.focus(); };
+        } else sug.hidden = true;
+        err.hidden = true;
+      }
+      inC.addEventListener('blur', revisar);
+      inC.addEventListener('input', () => { err.hidden = true; });
+      f.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const nombre = inN ? inN.value.trim().replace(/\s+/g, ' ') : '';
+        const correo = inC.value.trim().toLowerCase();
+        if (inN && nombre.length < 3) return fallo('Escribe tu nombre para continuar.', inN);
+        if (!correoValido(correo)) return fallo('Revisa tu correo: debe verse como nombre@gmail.com', inC);
+        if (!conCuentas) {
+          const c = campus();
+          c.usuario = { nombre, correo };
+          if (!c.creado) c.creado = new Date().toISOString();
+          guardarCampus(c);
+          irAlCampus();
+          return;
+        }
+        const clave = inK.value;
+        if (clave.length < 4) return fallo('Tu contraseña necesita al menos 4 letras o números.', inK);
+        btn.disabled = true; btn.textContent = modo === 'crear' ? 'Creando tu cuenta…' : 'Entrando…';
+        const listo = modo === 'crear'
+          ? N.crearCuenta({ nombre, correo, contrasena: clave })
+          : N.entrar({ correo, contrasena: clave });
+        listo.then(irAlCampus).catch((error) => {
+          btn.disabled = false; btn.innerHTML = (modo === 'crear' ? 'Crear mi cuenta' : 'Entrar') + ico('flecha');
+          const m = error && error.message;
+          if (m === 'existe') fallo('Ya hay una cuenta con ese correo. Pasa a «Ya tengo cuenta» y entra con tu contraseña.', inK);
+          else if (m === 'nocuenta') fallo('No encontramos una cuenta con ese correo. Revisa cómo lo escribiste o crea tu cuenta.', inC);
+          else if (m === 'contrasena') fallo(modo === 'crear' ? 'Tu contraseña necesita al menos 4 letras o números.' : 'Esa contraseña no es. Si la olvidaste, escríbele a Ignacio.', inK);
+          else if (m === 'ocupado') fallo('Hay muchas personas entrando a la vez. Espera unos segundos y vuelve a intentar.', null);
+          else fallo('No se pudo conectar. Revisa tu internet y vuelve a intentar.', null);
+        });
+      });
+      const cancel = $('#r-cancelar');
+      if (cancel) cancel.addEventListener('click', irAlCampus);
+    }
+
+    pintarFormulario();
+    setTimeout(() => { try { ($('#r-nombre') || $('#r-correo')).focus({ preventScroll: true }); } catch (e) { } }, 50);
   }
 
   // =====================================================================
@@ -570,6 +643,11 @@
     const dlg = $('#ajustes');
     const t = document.documentElement.getAttribute('data-theme') || 'auto';
     dlg.querySelectorAll('input[name="tema"]').forEach(i => { i.checked = i.value === t; });
+    const N = nube(), conSesion = !!(N && N.sesion());
+    $('#aj-cambiar').textContent = conSesion ? 'Cerrar sesión' : N ? 'Entrar o cambiar de cuenta' : '¿No eres tú? Cambiar';
+    $('#aj-nota').textContent = conSesion
+      ? 'Tu avance se guarda en la nube con tu cuenta: puedes seguir desde cualquier dispositivo.'
+      : 'Tu avance de cada clase se guarda en este celular o computadora. Si cambias de dispositivo, empiezas de nuevo allí.';
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
   }
   function cerrarAjustes() { const dlg = $('#ajustes'); if (dlg.close) dlg.close(); else dlg.removeAttribute('open'); }
@@ -583,7 +661,13 @@
     pintarBotonTema();
     $('#btn-tema').addEventListener('click', () => fijarTema(temaActual() === 'dark' ? 'light' : 'dark'));
     $('#btn-ajustes').addEventListener('click', abrirAjustes);
-    $('#aj-cambiar').addEventListener('click', () => { cerrarAjustes(); mostrarRegistro(true); try { window.scrollTo(0, 0); } catch (e) { } });
+    $('#aj-cambiar').addEventListener('click', () => {
+      cerrarAjustes();
+      const N = nube();
+      if (N && N.sesion()) { try { N.subir(N.CLAVES); } catch (e) { } N.salir(); }
+      mostrarRegistro(true);
+      try { window.scrollTo(0, 0); } catch (e) { }
+    });
     $('#ajustes').addEventListener('change', e => { if (e.target.name === 'tema') fijarTema(e.target.value); });
     $('#ajustes').addEventListener('click', e => { if (e.target === e.currentTarget) cerrarAjustes(); });
     if (window.matchMedia) {
@@ -597,6 +681,8 @@
     window.addEventListener('pageshow', e => { if (e.persisted) repintar(); });
     document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') repintar(); });
     window.addEventListener('storage', repintar);
+    const N = nube();
+    if (N) N.iniciar({ claves: N.CLAVES, app: 'Campus', donde: () => 'En el campus' });
     pintarCampus();
   }
 

@@ -8,7 +8,11 @@
   var URL_LEY_DE_SIGNOS = 'https://script.google.com/macros/s/AKfycby5ZWTS6aoA85LeRhHzAaTvD8j4hCRrO9HZ99tnr1Jebfj1fNfSgdoOvSESh5jbSoh8/exec';
   var URL_QUIMICA = '';
 
+  // La URL del script CENTRAL (cuentas y «En vivo») se toma de js/cidea-sync.js: se pega una sola vez allí.
+  var URL_CENTRAL = (window.CIDEA && window.CIDEA.URL) || '';
+
   var CLASES = [
+    { id: 'vivo', nombre: 'En vivo', url: URL_CENTRAL, vivo: true },
     { id: 'ley-de-signos', nombre: 'Ley de signos', url: URL_LEY_DE_SIGNOS },
     { id: 'quimica-materia', nombre: 'Química desde cero', url: URL_QUIMICA }
   ];
@@ -102,7 +106,7 @@
   var DEMO_VACIO = demoParam === 'vacio';
 
   var est = {
-    claseId: leer('clase') || CLASES[0].id,
+    claseId: leer('clase') || (URL_CENTRAL ? 'vivo' : 'ley-de-signos'),
     cache: {},              // claseId → { lista, generado, cargado }
     peticion: 0,
     cargando: false,
@@ -173,7 +177,7 @@
   }
 
   // ---------- vistas ----------
-  var VISTAS = ['v-login', 'v-noconectada', 'v-cargando', 'v-error', 'v-datos'];
+  var VISTAS = ['v-login', 'v-noconectada', 'v-cargando', 'v-error', 'v-datos', 'v-vivo'];
   function mostrar(id) {
     VISTAS.forEach(function (v) { $(v).hidden = v !== id; });
     $('btn-salir').hidden = DEMO || !leer('clave.' + est.claseId);
@@ -212,6 +216,14 @@
     ocultarAvisoError();
     pintarActualizado();
     var c = clase();
+    if (c.vivo) {
+      if (DEMO) { cargarVivo(); return; }
+      if (!c.url) { $('nc-clase').textContent = 'La vista «En vivo»'; mostrar('v-noconectada'); return; }
+      if (!leer('clave.' + c.id)) { pedirClave(''); return; }
+      if (est.cache[c.id]) { pintarVivo(); mostrar('v-vivo'); }
+      cargarVivo();
+      return;
+    }
     if (DEMO) { cargar(); return; }
     if (!c.url) { $('nc-clase').textContent = '«' + c.nombre + '»'; mostrar('v-noconectada'); return; }
     if (!leer('clave.' + c.id)) { pedirClave(''); return; }
@@ -278,6 +290,151 @@
         manejarError(err, !!claveNueva, previo);
       });
   }
+
+  // ---------- «En vivo» (script central) ----------
+  function cargarVivo(claveNueva) {
+    var c = clase();
+    var id = ++est.peticion;
+    var previo = est.cache[c.id];
+    ponerCargando(true, !previo && !claveNueva);
+
+    if (DEMO) {
+      setTimeout(function () {
+        if (id !== est.peticion) return;
+        est.cache[c.id] = { lista: demoVivo(), cuentas: 24, cargado: new Date() };
+        ponerCargando(false);
+        pintarVivo(); mostrar('v-vivo'); pintarActualizado();
+      }, 350);
+      return;
+    }
+
+    var clave = claveNueva || leer('clave.' + c.id) || '';
+    var ctrl = typeof AbortController === 'function' ? new AbortController() : null;
+    var reloj = setTimeout(function () { if (ctrl) ctrl.abort(); }, TIEMPO_ESPERA);
+    var url = c.url + '?accion=vivo&clave=' + encodeURIComponent(clave) + '&t=' + Date.now();
+
+    fetch(url, ctrl ? { signal: ctrl.signal } : undefined)
+      .then(function (r) { if (!r.ok) throw { tipo: 'http', status: r.status }; return r.text(); })
+      .then(function (txt) {
+        var j;
+        try { j = JSON.parse(txt); } catch (e) { throw { tipo: 'formato' }; }
+        if (j && j.status === 'error' && j.message === 'clave') throw { tipo: 'clave' };
+        if (!j || j.status !== 'ok' || !Array.isArray(j.estudiantes)) throw { tipo: 'servidor', msg: j && j.message };
+        return j;
+      })
+      .then(function (j) {
+        clearTimeout(reloj);
+        if (id !== est.peticion) return;
+        if (claveNueva) guardar('clave.' + c.id, claveNueva);
+        est.cache[c.id] = {
+          lista: j.estudiantes.map(function (e) {
+            return { correo: String(e.correo || ''), nombre: String(e.nombre || ''), app: String(e.app || ''), donde: String(e.donde || ''), fecha: fecha(e.fecha) };
+          }),
+          cuentas: num(j.cuentas) || 0,
+          cargado: new Date()
+        };
+        ponerCargando(false);
+        $('vivo-aviso').hidden = true;
+        pintarVivo(); mostrar('v-vivo'); pintarActualizado();
+      })
+      .catch(function (err) {
+        clearTimeout(reloj);
+        if (id !== est.peticion) return;
+        ponerCargando(false);
+        if (err && err.tipo === 'clave') {
+          guardar('clave.vivo', null);
+          pedirClave(claveNueva ? 'Clave incorrecta. Es la clave de tutor del script CENTRAL (verClavePanel en su hoja).' : 'La clave guardada ya no es válida. Escríbela de nuevo.');
+          return;
+        }
+        var t = textoError(err);
+        if (claveNueva) { $('login-error').textContent = t[0] + '. ' + t[1]; return; }
+        if (previo) {
+          pintarVivo(); mostrar('v-vivo');
+          var a = $('vivo-aviso');
+          vaciar(a); a.appendChild(icono('i-aviso')); a.appendChild(el('span', null, t[0] + '. Se muestra la última carga.'));
+          a.hidden = false;
+          return;
+        }
+        $('error-titulo').textContent = t[0];
+        $('error-texto').textContent = t[1];
+        mostrar('v-error');
+      });
+  }
+
+  function pintarVivo() {
+    var c = est.cache.vivo;
+    if (!c) return;
+    var ahora = Date.now();
+    var MIN2 = 2 * 60000, HORA = 60 * 60000;
+    var lista = c.lista.slice().sort(function (a, b) { return (b.fecha ? b.fecha.getTime() : 0) - (a.fecha ? a.fecha.getTime() : 0); });
+    var enVivo = lista.filter(function (s) { return s.fecha && ahora - s.fecha.getTime() <= MIN2; });
+    var enHora = lista.filter(function (s) { return s.fecha && ahora - s.fecha.getTime() > MIN2 && ahora - s.fecha.getTime() <= HORA; });
+
+    var kpis = $('vivo-kpis');
+    vaciar(kpis);
+    [
+      { lab: 'Ahora mismo', ic: 'i-vivo', cls: 'ic-curso', v: enVivo.length, sub: 'activos en los últimos 2 min' },
+      { lab: 'Última hora', ic: 'i-play', cls: 'ic-todos', v: enVivo.length + enHora.length, sub: 'entraron en los últimos 60 min' },
+      { lab: 'Cuentas creadas', ic: 'i-usuarios', cls: 'ic-fin', v: c.cuentas, sub: 'estudiantes con cuenta' }
+    ].forEach(function (x) {
+      var t = el('div', 'tarjeta kpi');
+      var l = el('div', 'kpi-label');
+      var i = icono(x.ic); i.setAttribute('class', x.cls);
+      l.appendChild(i); l.appendChild(el('span', null, x.lab));
+      t.appendChild(l);
+      t.appendChild(el('div', 'kpi-valor', fmt0.format(x.v)));
+      t.appendChild(el('div', 'kpi-sub', x.sub));
+      kpis.appendChild(t);
+    });
+
+    var cont = $('vivo-lista');
+    vaciar(cont);
+    if (!lista.length) {
+      cont.appendChild(el('p', 'grafico-vacio', 'Todavía nadie se ha conectado con su cuenta. Cuando un estudiante entre, aparecerá aquí al instante.'));
+      return;
+    }
+    function bloque(titulo, filas, activo) {
+      if (!filas.length) return;
+      cont.appendChild(el('h4', 'vivo-titulo', titulo));
+      var box = el('div', 'vivo-filas');
+      filas.forEach(function (s) {
+        var f = el('div', 'vivo-fila' + (activo ? ' activa' : ''));
+        var pt = el('span', 'vivo-punto' + (activo ? ' late' : ''));
+        pt.setAttribute('aria-hidden', 'true');
+        f.appendChild(pt);
+        var tx = el('div', 'vivo-txt');
+        tx.appendChild(el('b', null, s.nombre || s.correo));
+        tx.appendChild(el('span', null, (s.app ? s.app : '') + (s.donde ? ' · ' + s.donde : '')));
+        f.appendChild(tx);
+        f.appendChild(el('span', 'vivo-hace', hace(s.fecha, ahora)));
+        box.appendChild(f);
+      });
+      cont.appendChild(box);
+    }
+    bloque('Ahora mismo', enVivo, true);
+    bloque('En la última hora', enHora, false);
+    bloque('Antes', lista.filter(function (s) { return !s.fecha || ahora - s.fecha.getTime() > HORA; }).slice(0, 30), false);
+  }
+
+  function demoVivo() {
+    var ahora = Date.now();
+    return [
+      { nombre: 'Ana Ejemplo', correo: 'ana@ejemplo.com', app: 'Química desde cero', donde: 'Láminas · lámina 34: Número atómico Z', fecha: new Date(ahora - 20000) },
+      { nombre: 'Bruno Prueba', correo: 'bruno@ejemplo.com', app: 'Ley de signos', donde: 'Examen · en curso', fecha: new Date(ahora - 50000) },
+      { nombre: 'Carla Ficticia', correo: 'carla@ejemplo.com', app: 'Diagnóstico de Química', donde: 'Pregunta 31 de 60', fecha: new Date(ahora - 80000) },
+      { nombre: 'Diego Demo', correo: 'diego@ejemplo.com', app: 'Práctica libre', donde: 'Practicando: El átomo y sus partículas', fecha: new Date(ahora - 12 * 60000) },
+      { nombre: 'Elena Inventada', correo: 'elena@ejemplo.com', app: 'Campus', donde: 'En el campus', fecha: new Date(ahora - 40 * 60000) },
+      { nombre: 'Fabián Muestra', correo: 'fabian@ejemplo.com', app: 'Ley de signos', donde: 'Juego · parada 3 de 6', fecha: new Date(ahora - 5 * 3600000) }
+    ];
+  }
+
+  // La vista «En vivo» se refresca sola cada 30 s mientras la pestaña esté visible.
+  setInterval(function () {
+    if (est.claseId !== 'vivo' || est.cargando) return;
+    if (document.visibilityState && document.visibilityState !== 'visible') return;
+    if ($('v-vivo').hidden || DEMO) return;
+    cargarVivo();
+  }, 30000);
 
   function textoError(err) {
     var t = err && err.tipo;
@@ -831,7 +988,7 @@
     if (!v) { $('login-error').textContent = 'Escribe la clave.'; $('clave').setAttribute('aria-invalid', 'true'); return; }
     $('login-error').textContent = '';
     $('clave').setAttribute('aria-invalid', 'false');
-    cargar(v);
+    if (clase().vivo) cargarVivo(v); else cargar(v);
   });
   $('btn-actualizar').addEventListener('click', function () {
     if (est.cargando) return;

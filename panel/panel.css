@@ -448,3 +448,19 @@ svg { width: 1em; height: 1em; flex: none; }
 @media (forced-colors: active) {
   .seg, .col-bar, .meter span, .hbar-fill.solo { background: CanvasText !important; }
 }
+
+/* ---------- En vivo ---------- */
+.vivo-titulo { font-size: 13px; font-weight: 700; color: var(--ink-2, inherit); text-transform: uppercase; letter-spacing: .08em; margin: 18px 0 8px; opacity: .8; }
+.vivo-filas { display: grid; gap: 6px; }
+.vivo-fila { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border-radius: 12px; background: rgba(128,128,128,.08); }
+.vivo-fila.activa { background: rgba(34, 170, 90, .1); }
+.vivo-punto { width: 10px; height: 10px; border-radius: 50%; background: #9aa0ae; flex: none; }
+.vivo-punto.late { background: #22aa5a; animation: vivo-late 1.6s ease-in-out infinite; }
+@keyframes vivo-late { 0%, 100% { box-shadow: 0 0 0 0 rgba(34, 170, 90, .45); } 55% { box-shadow: 0 0 0 7px rgba(34, 170, 90, 0); } }
+.vivo-txt { display: grid; min-width: 0; flex: 1; }
+.vivo-txt b { font-size: 14.5px; }
+.vivo-txt span { font-size: 12.5px; opacity: .75; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vivo-hace { font-size: 12px; opacity: .7; white-space: nowrap; }
+@media (prefers-reduced-motion: reduce) { .vivo-punto.late { animation: none; } }
+#vivo-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 700px) { #vivo-kpis { grid-template-columns: 1fr; } }

@@ -529,5 +529,19 @@
         });
     }
 
+    // «En vivo» del panel del tutor: en qué pregunta va (solo si el central de CIDEA está conectado)
+    if (window.CIDEA && window.CIDEA.activo()) {
+        const NOMBRE_VIVO = String(CFG.tipo || '').indexOf('quimica') >= 0 ? 'Diagnóstico de Química' : 'Diagnóstico de Matemáticas';
+        window.CIDEA.iniciar({
+            claves: ['ultimo_' + (CFG.tipo || 'diagnostico_matematicas')],
+            app: NOMBRE_VIVO,
+            donde: function () {
+                if (document.querySelector('#screen-results.active')) return 'Terminó · viendo sus resultados';
+                if (document.querySelector('#screen-quiz.active')) return 'Pregunta ' + (current + 1) + ' de ' + TOTAL;
+                return 'En el inicio';
+            }
+        });
+    }
+
     document.addEventListener('DOMContentLoaded', init);
 })();

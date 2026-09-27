@@ -361,5 +361,18 @@
         });
     }
 
+    // «En vivo» del panel del tutor: en qué pregunta va (solo si el central de CIDEA está conectado)
+    if (window.CIDEA && window.CIDEA.activo()) {
+        window.CIDEA.iniciar({
+            claves: ['ultimo_simulador_unemi'],
+            app: 'Simulador UNEMI',
+            donde: function () {
+                if (document.querySelector('#screen-results.active')) return 'Terminó · viendo sus resultados';
+                if (document.querySelector('#screen-quiz.active')) return 'Pregunta ' + (currentIndex + 1) + ' de ' + TOTAL_QUIZ;
+                return 'En el inicio';
+            }
+        });
+    }
+
     document.addEventListener('DOMContentLoaded', init);
 })();
