@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>Panel de seguimiento</title>
+<meta name="description" content="Panel privado del tutor: avance, tiempos y notas de los estudiantes de las clases web.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232a78d6'/%3E%3Crect x='14' y='34' width='8' height='16' rx='2' fill='%23fff'/%3E%3Crect x='28' y='22' width='8' height='28' rx='2' fill='%23fff'/%3E%3Crect x='42' y='14' width='8' height='36' rx='2' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="panel.css?v=1">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M10.2 8.6l5 3.4-5 3.4z" fill="currentColor"/></symbol>
+    <symbol id="i-pausa" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+    <symbol id="i-usuarios" viewBox="0 0 24 24"><circle cx="9" cy="8.5" r="3.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M2.8 19.5c.6-3.3 3.1-5.2 6.2-5.2s5.6 1.9 6.2 5.2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M15.5 5.3a3.4 3.4 0 010 6.4M18 14.6c1.8.7 2.9 2.4 3.2 4.9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-recargar" viewBox="0 0 24 24"><path d="M19.5 12a7.5 7.5 0 11-2.2-5.3M19.5 4.5v4.2h-4.2" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-luna" viewBox="0 0 24 24"><path d="M19.5 14.6A7.8 7.8 0 019.4 4.5a7.8 7.8 0 1010.1 10.1z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-sol" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+    <symbol id="i-salir" viewBox="0 0 24 24"><path d="M14 4.5H6.5a1.5 1.5 0 00-1.5 1.5v12a1.5 1.5 0 001.5 1.5H14M10 12h10M16.5 8.5L20 12l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-candado" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8 10.5V8a4 4 0 018 0v2.5" fill="none" stroke="currentColor" stroke-width="2.2"/></symbol>
+    <symbol id="i-aviso" viewBox="0 0 24 24"><path d="M12 3.5l9.5 16.5h-19z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M12 10v4.2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><circle cx="12" cy="17.2" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-enchufe" viewBox="0 0 24 24"><path d="M9 3.5v4.5M15 3.5v4.5M6.5 8h11v3.5a5.5 5.5 0 01-11 0zM12 17v3.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-buscar" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15 15l5 5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<header class="barra">
+  <div class="barra-in">
+    <div class="marca">
+      <span class="marca-ico" aria-hidden="true"><svg><use href="#i-usuarios"/></svg></span>
+      <div>
+        <h1>Seguimiento de estudiantes</h1>
+        <p class="marca-sub" id="actualizado" aria-live="polite">&nbsp;</p>
+      </div>
+    </div>
+    <div class="acciones">
+      <div class="segmento" role="group" aria-label="Clase" id="selector-clase"></div>
+      <button type="button" class="btn" id="btn-actualizar"><svg aria-hidden="true"><use href="#i-recargar"/></svg><span>Actualizar</span></button>
+      <button type="button" class="btn btn-icono" id="btn-tema" aria-label="Cambiar a tema oscuro" title="Cambiar tema"><svg aria-hidden="true"><use href="#i-luna"/></svg></button>
+      <button type="button" class="btn btn-fantasma" id="btn-salir" hidden><svg aria-hidden="true"><use href="#i-salir"/></svg><span>Cerrar sesión</span></button>
+    </div>
+  </div>
+</header>
+
+<div class="aviso-demo" id="aviso-demo" hidden>
+  <strong>Modo demo.</strong> Todos los estudiantes de esta vista son inventados, para probar el panel sin clave.
+</div>
+
+<main class="contenido" id="contenido">
+
+  <!-- Pedir clave -->
+  <section class="vista vista-centro" id="v-login" hidden aria-labelledby="login-titulo">
+    <form class="tarjeta login" id="form-login" novalidate>
+      <span class="login-ico" aria-hidden="true"><svg><use href="#i-candado"/></svg></span>
+      <h2 id="login-titulo">Clave del panel</h2>
+      <p class="login-txt">Escribe la clave de <strong id="login-clase">la clase</strong>. Solo se pide la primera vez en este dispositivo.</p>
+      <label class="campo-label" for="clave">Clave</label>
+      <input class="campo" id="clave" name="clave" type="password" autocomplete="current-password" autocapitalize="characters" spellcheck="false" required>
+      <p class="login-error" id="login-error" role="alert"></p>
+      <button type="submit" class="btn btn-primario btn-ancho" id="btn-entrar">Ver estudiantes</button>
+      <p class="login-ayuda">¿No la tienes? Abre la hoja de Google de la clase → <em>Extensiones → Apps Script</em>, ejecuta <code>verClavePanel</code> y copia la clave que aparece.</p>
+    </form>
+  </section>
+
+  <!-- Clase sin URL -->
+  <section class="vista vista-centro" id="v-noconectada" hidden>
+    <div class="tarjeta estado-caja">
+      <span class="estado-ico" aria-hidden="true"><svg><use href="#i-enchufe"/></svg></span>
+      <h2>Aún no conectada</h2>
+      <p><strong id="nc-clase">Esta clase</strong> todavía no tiene su hoja de Google enlazada al panel. Cuando publiques su Apps Script, pega la URL <code>/exec</code> en <code>panel/panel.js</code> y aparecerán aquí sus estudiantes.</p>
+    </div>
+  </section>
+
+  <!-- Cargando (primera vez) -->
+  <section class="vista vista-centro" id="v-cargando" hidden>
+    <div class="cargando" role="status"><span class="girar" aria-hidden="true"></span> Cargando estudiantes…</div>
+  </section>
+
+  <!-- Error sin datos previos -->
+  <section class="vista vista-centro" id="v-error" hidden>
+    <div class="tarjeta estado-caja" role="alert">
+      <span class="estado-ico estado-ico--aviso" aria-hidden="true"><svg><use href="#i-aviso"/></svg></span>
+      <h2 id="error-titulo">No se pudieron cargar los datos</h2>
+      <p id="error-texto"></p>
+      <button type="button" class="btn btn-primario" id="btn-reintentar"><svg aria-hidden="true"><use href="#i-recargar"/></svg><span>Reintentar</span></button>
+    </div>
+  </section>
+
+  <!-- Datos -->
+  <section class="vista" id="v-datos" hidden>
+    <div class="aviso-error" id="aviso-error" role="alert" hidden></div>
+
+    <!-- Sin estudiantes -->
+    <div class="tarjeta estado-caja estado-vacio" id="vacio" hidden>
+      <span class="estado-ico" aria-hidden="true"><svg><use href="#i-usuarios"/></svg></span>
+      <h2>Todavía no hay estudiantes</h2>
+      <p>Cuando alguien se registre en <strong id="vacio-clase">la clase</strong>, aparecerá aquí con su avance, sus tiempos y su nota. Comparte el enlace de la clase con tus estudiantes y vuelve a pulsar <em>Actualizar</em>.</p>
+    </div>
+
+    <div id="con-datos">
+      <h2 class="sr-only">Resumen</h2>
+      <div class="kpis" id="kpis"></div>
+
+      <div class="rejilla">
+        <figure class="tarjeta grafico" aria-labelledby="t-embudo">
+          <figcaption>
+            <h3 id="t-embudo">Embudo del curso</h3>
+            <p class="grafico-sub">Cuántos llegan a cada paso, sobre el total de registrados.</p>
+          </figcaption>
+          <div id="g-embudo"></div>
+        </figure>
+
+        <figure class="tarjeta grafico" aria-labelledby="t-tiempos">
+          <figcaption>
+            <h3 id="t-tiempos">Tiempo activo por sección</h3>
+            <p class="grafico-sub">Minutos con la pestaña abierta y el estudiante interactuando. Solo cuenta a quienes entraron a esa sección.</p>
+          </figcaption>
+          <div id="g-tiempos"></div>
+        </figure>
+
+        <figure class="tarjeta grafico" aria-labelledby="t-donde">
+          <figcaption>
+            <h3 id="t-donde">¿Dónde se quedan?</h3>
+            <p class="grafico-sub" id="donde-sub">Estudiantes que aún no terminan el test, según dónde van.</p>
+          </figcaption>
+          <div id="g-donde"></div>
+        </figure>
+
+        <figure class="tarjeta grafico" aria-labelledby="t-notas">
+          <figcaption>
+            <h3 id="t-notas">Notas del test</h3>
+            <p class="grafico-sub">Cuántos estudiantes sacaron cada rango de nota (sobre 25).</p>
+          </figcaption>
+          <div id="g-notas"></div>
+        </figure>
+      </div>
+
+      <section class="tarjeta tabla-caja" aria-labelledby="t-tabla">
+        <div class="tabla-cab">
+          <h3 id="t-tabla">Estudiantes</h3>
+          <p class="grafico-sub" id="tabla-cuenta" aria-live="polite"></p>
+        </div>
+        <div class="filtros">
+          <label class="buscador">
+            <span class="sr-only">Buscar por nombre o correo</span>
+            <svg aria-hidden="true"><use href="#i-buscar"/></svg>
+            <input type="search" id="buscar" placeholder="Buscar por nombre o correo" autocomplete="off">
+          </label>
+          <div class="chips" role="group" aria-label="Filtrar por estado" id="chips"></div>
+          <label class="orden-movil">
+            <span>Ordenar</span>
+            <select id="orden-movil"></select>
+          </label>
+        </div>
+        <div class="tabla-scroll">
+          <table class="tabla" id="tabla">
+            <thead><tr id="tabla-th"></tr></thead>
+            <tbody id="tabla-body"></tbody>
+          </table>
+        </div>
+        <p class="tabla-nada" id="tabla-nada" hidden>Ningún estudiante coincide con la búsqueda o el filtro.</p>
+        <p class="nota-pie">Avance global = láminas 50 % + juego 30 % + test 20 % (el test en curso cuenta la mitad). «Inactivo» = 3 días o más sin entrar.</p>
+      </section>
+    </div>
+  </section>
+</main>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+
+<script src="panel.js?v=1"></script>
+</body>
+</html>

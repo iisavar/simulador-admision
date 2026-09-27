@@ -9,7 +9,7 @@
  * 3. Borra todo lo que aparece y pega ESTE código completo. Guarda (ícono del disquete).
  * 4. Arriba, en el selector de funciones, elige "inicializar" y toca ▶ Ejecutar.
  *    Acepta los permisos (Google avisa que la app no está verificada: "Configuración avanzada" > "Ir a ...").
- *    Se crean las hojas Resultados, Eventos y Pendientes con sus encabezados.
+ *    Se crean las hojas Resultados, Eventos, Pendientes y Panel con sus encabezados.
  * 5. Elige "instalarDisparador" y toca ▶ Ejecutar. Así, los correos que no salieron por el
  *    límite diario de Gmail se envían solos cada hora (función procesarPendientes).
  * 6. Implementar > Nueva implementación > tipo "Aplicación web":
@@ -24,12 +24,25 @@
  *
  * Si cambias este código después: Implementar > Administrar implementaciones > ✏️ >
  * Versión: "Nueva versión" > Implementar (así la URL no cambia).
+ *
+ * PANEL DE SEGUIMIENTO (registro → avance → fin, tiempos y dónde se quedan):
+ * - La hoja «Panel» tiene UNA fila por estudiante y se actualiza sola con cada envío del sitio
+ *   (el sitio manda un «progreso» cada 3 min de actividad y al cerrar la página).
+ *   La columna Estado es una fórmula: «Inactivo» si pasan más de 3 días sin actividad.
+ * - Para el panel de seguimiento: ejecuta verClavePanel y copia la clave.
+ *   Pégala en https://iisavar.github.io/simulador-admision/panel/ (solo para ti, no la compartas).
+ * - Si este script YA estaba publicado: pega el código nuevo, guarda, ejecuta "inicializar"
+ *   (crea la hoja Panel sin tocar tus datos) y "verClavePanel", y luego
+ *   Implementar > Administrar implementaciones > ✏️ > Versión: "Nueva versión" > Implementar.
  */
 
 var URL_SITIO = 'https://iisavar.github.io/simulador-admision/ley-de-signos/';
 var HOJA_RES = 'Resultados';
 var HOJA_EV = 'Eventos';
 var HOJA_PEND = 'Pendientes';
+var HOJA_PANEL = 'Panel';
+var CLASE_PANEL = 'Ley de signos';
+var NCAP_PANEL = 4;   // capítulos numerados de las láminas (el siguiente es el cierre)
 var FIRMA = 'Ignacio Isa';
 
 var TEMAS = {
@@ -48,6 +61,8 @@ ENC_RES = ENC_RES.concat(['Tiempo total', 'Tiempos por pregunta (s)', 'Nivel jue
 var COL_ESTADO = ENC_RES.indexOf('Estado correo') + 1;
 var ENC_EV = ['ID', 'Fecha', 'Nombre', 'Correo', 'Evento', 'Capítulo / nivel', 'Datos (JSON)'];
 var ENC_PEND = ['ID', 'Fecha', 'Nombre', 'Correo', 'Estado', 'Intentos', 'Datos (JSON)'];
+var ENC_PANEL = ['Correo', 'Nombre', 'Registro', 'Última actividad', 'Estado', 'Dónde va', 'Avance láminas %', 'Paradas del juego',
+  'Test', 'Nota /25', 'Nota /10', 'Min láminas', 'Min juego', 'Min test', 'Min total', 'Dispositivo', 'Envíos'];
 
 // ======================================================================
 // Configuración
@@ -57,11 +72,14 @@ function inicializar() {
   prepararHoja_(ss, HOJA_RES, ENC_RES);
   prepararHoja_(ss, HOJA_EV, ENC_EV);
   prepararHoja_(ss, HOJA_PEND, ENC_PEND);
+  hojaPanel_();
+  var clave = clavePanel_();
   var sobrante = ss.getSheetByName('Hoja 1') || ss.getSheetByName('Sheet1') || ss.getSheetByName('Hoja1');
   if (sobrante && ss.getSheets().length > 3 && sobrante.getLastRow() === 0) ss.deleteSheet(sobrante);
   try {
-    SpreadsheetApp.getUi().alert('✅ ¡Hojas listas!\n\nAhora ejecuta "instalarDisparador" y luego ve a Implementar > Nueva implementación para obtener la URL.');
-  } catch (e) { Logger.log('Hojas listas.'); }
+    SpreadsheetApp.getUi().alert('✅ ¡Hojas listas!\n\nAhora ejecuta "instalarDisparador" y luego ve a Implementar > Nueva implementación para obtener la URL.' +
+      '\n\nClave del panel de seguimiento: ' + clave + ' (la ves cuando quieras con "verClavePanel").');
+  } catch (e) { Logger.log('Hojas listas. Clave del panel: ' + clave); }
 }
 
 function prepararHoja_(ss, nombre, enc) {
@@ -89,6 +107,8 @@ function instalarDisparador() {
 // Web app
 // ======================================================================
 function doGet(e) {
+  var p = (e && e.parameter) || {};
+  if (p.accion === 'panel') return json_(datosPanel_(p.clave));
   return json_({ status: 'ok', servicio: 'ley-de-signos', cuotaCorreos: MailApp.getRemainingDailyQuota() });
 }
 
@@ -100,9 +120,10 @@ function doPost(e) {
     if (!d || !d.id) return json_({ status: 'error', message: 'sin id' });
     if (yaExiste_(d.id)) return json_({ status: 'ok', duplicado: true });
 
-    if (d.tipo === 'evento') guardarEvento_(d);
+    if (d.tipo === 'evento') { if (d.evento !== 'progreso') guardarEvento_(d); }   // 'progreso' solo va al Panel
     else if (d.tipo === 'resultado') guardarResultado_(d);
     else return json_({ status: 'error', message: 'tipo desconocido' });
+    try { actualizarPanel_(d); } catch (errP) { Logger.log('actualizarPanel_: ' + errP); }
 
     CacheService.getScriptCache().put('id_' + d.id, '1', 21600);
     return json_({ status: 'ok' });
@@ -137,7 +158,7 @@ function yaExiste_(id) {
 function guardarEvento_(d) {
   var extra = {};
   Object.keys(d).forEach(function (k) {
-    if (['id', 'tipo', 'fecha', 'nombre', 'correo', 'evento'].indexOf(k) < 0) extra[k] = d[k];
+    if (['id', 'tipo', 'fecha', 'nombre', 'correo', 'evento', 'seg'].indexOf(k) < 0) extra[k] = d[k];
   });
   var lugar = d.capitulo != null ? 'Cap. ' + d.capitulo : d.nivel != null ? 'Nivel ' + d.nivel : (d.cap != null ? 'Cap. ' + d.cap : '');
   hoja_(HOJA_EV, ENC_EV).appendRow([d.id, fechaTxt_(d.fecha), d.nombre || '', d.correo || '', d.evento || '', lugar, JSON.stringify(extra)]);
@@ -222,6 +243,169 @@ function marcarEstado_(id, txt) {
   if (sh.getLastRow() < 2) return;
   var f = sh.getRange(2, 1, sh.getLastRow() - 1, 1).createTextFinder(String(id)).matchEntireCell(true).findNext();
   if (f) sh.getRange(f.getRow(), COL_ESTADO).setValue(txt);
+}
+
+// ======================================================================
+// Panel de seguimiento: UNA fila por estudiante (clave = correo en minúsculas)
+// ======================================================================
+function hojaPanel_() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sh = ss.getSheetByName(HOJA_PANEL);
+  if (sh) return sh;
+  sh = prepararHoja_(ss, HOJA_PANEL, ENC_PANEL);
+  sh.setColumnWidth(1, 220);
+  sh.setColumnWidth(6, 340);
+  sh.getRange(2, 3, 999, 2).setNumberFormat('yyyy-mm-dd hh:mm');
+  return sh;
+}
+
+function fechaDe_(v) {
+  if (v && typeof v.getTime === 'function') return isNaN(v.getTime()) ? null : v;
+  if (v == null || v === '') return null;
+  var dt = new Date(v);
+  return isNaN(dt.getTime()) ? null : dt;
+}
+function entero_(v) { var n = Number(v); return isFinite(n) ? Math.round(n) : 0; }
+function notaONull_(v) { return (v === '' || v == null || !isFinite(Number(v))) ? null : Number(v); }
+
+// «Dónde va» en texto legible a partir de la instantánea que manda el sitio.
+function dondeVa_(s) {
+  if (!s) return 'Registrado';
+  if (s.testEstado === 'terminado') return 'Terminó el test';
+  if (s.testEstado === 'en curso') return 'Test en curso';
+  var total = entero_(s.juegoTotal) || 6;
+  if (entero_(s.laminasPct) < 100) {
+    var cap = s.laminaCap == null || s.laminaCap === '' ? null : Number(s.laminaCap);
+    var capTxt = cap == null ? '' : cap === 0 ? 'Inicio · ' : cap > NCAP_PANEL ? 'Cierre · ' : 'Cap. ' + cap + ' · ';
+    var num = s.laminaNum != null && s.laminaNum !== '' ? 'lámina ' + s.laminaNum : 'lámina';
+    return 'Láminas · ' + capTxt + num + (s.laminaTitulo ? ': ' + String(s.laminaTitulo).slice(0, 80) : '');
+  }
+  if (entero_(s.juegoSuperadas) < total) {
+    var p = entero_(s.juegoParadaMax);
+    return p > 0 ? 'Juego · parada ' + p + ' de ' + total : 'Juego · sin empezar';
+  }
+  return 'Terminó el juego · falta el test';
+}
+
+// Upsert de la fila del estudiante con la instantánea (seg) de cada envío.
+function actualizarPanel_(d) {
+  var correo = String(d.correo || '').trim().toLowerCase();
+  if (!correo) return;
+  var s = d.seg || (d.evento === 'progreso' ? d : null);
+  if (s && typeof s === 'object') s = JSON.parse(JSON.stringify(s)); else s = null;
+  var oficial = d.tipo === 'resultado' && d.tipoIntento === 'OFICIAL';
+  if (oficial) {
+    s = s || {};
+    s.testEstado = 'terminado';
+    if (d.nota != null) s.nota = d.nota;
+    if (d.nota10 != null) s.nota10 = d.nota10;
+  }
+
+  var sh = hojaPanel_();
+  var n = sh.getLastRow(), fila = -1, viejo = null;
+  if (n >= 2) {
+    var correos = sh.getRange(2, 1, n - 1, 1).getValues();
+    for (var i = 0; i < correos.length; i++) {
+      if (String(correos[i][0]).trim().toLowerCase() === correo) { fila = i + 2; break; }
+    }
+  }
+  if (fila > 0) viejo = sh.getRange(fila, 1, 1, ENC_PANEL.length).getValues()[0];
+  else fila = Math.max(n, 1) + 1;
+
+  var ahora = new Date();
+  var cuando = fechaDe_(d.fecha) || ahora;
+  if (cuando.getTime() > ahora.getTime()) cuando = ahora;
+  var ultPrev = viejo ? fechaDe_(viejo[3]) : null;
+  var ultima = ultPrev && ultPrev.getTime() > cuando.getTime() ? ultPrev : cuando;
+  // Un envío atrasado (cola sin internet) no pisa datos más nuevos; el test terminado sí se aplica siempre.
+  var esNuevo = !ultPrev || cuando.getTime() >= ultPrev.getTime();
+
+  var regs = [viejo ? fechaDe_(viejo[2]) : null, s ? fechaDe_(s.registro) : null, d.evento === 'registro' ? cuando : null]
+    .filter(function (x) { return !!x; });
+  var registro = regs.length ? regs.reduce(function (a, b) { return a.getTime() <= b.getTime() ? a : b; }) : cuando;
+
+  var f = viejo ? viejo.slice() : [correo, '', '', '', '', 'Registrado', 0, '0/6', 'no', '', '', 0, 0, 0, 0, '', 0];
+  f[0] = correo;
+  f[1] = String(d.nombre || '').trim() || f[1];
+  f[2] = registro;
+  f[3] = ultima;
+  f[4] = '';
+  if (s && (esNuevo || !viejo)) {
+    var total = entero_(s.juegoTotal) || 6;
+    f[5] = dondeVa_(s);
+    f[6] = Math.max(0, Math.min(100, entero_(s.laminasPct)));
+    f[7] = entero_(s.juegoSuperadas) + '/' + total;
+    f[8] = s.testEstado === 'terminado' || s.testEstado === 'en curso' ? s.testEstado : 'no';
+    f[9] = notaONull_(s.nota) == null ? '' : Number(s.nota);
+    f[10] = notaONull_(s.nota10) == null ? '' : Number(s.nota10);
+    f[11] = entero_(s.minLaminas);
+    f[12] = entero_(s.minJuego);
+    f[13] = entero_(s.minTest);
+    f[14] = entero_(s.minTotal);
+    f[15] = [s.dispositivo, s.navegador].filter(function (x) { return !!x; }).join(' · ');
+  }
+  if (oficial) {
+    f[5] = 'Terminó el test';
+    f[8] = 'terminado';
+    if (notaONull_(d.nota) != null) f[9] = Number(d.nota);
+    if (notaONull_(d.nota10) != null) f[10] = Number(d.nota10);
+  }
+  f[16] = entero_(f[16]) + 1;
+
+  sh.getRange(fila, 1, 1, ENC_PANEL.length).setValues([f]);
+  // Estado con fórmula: cambia solo a «Inactivo» cuando pasan 3 días sin actividad
+  sh.getRange(fila, 5).setFormula('=IF(I' + fila + '="terminado","Terminó",IF(NOW()-D' + fila + '>3,"Inactivo","En curso"))');
+  sh.getRange(fila, 3, 1, 2).setNumberFormat('yyyy-mm-dd hh:mm');
+}
+
+// JSON para el panel web (doGet?accion=panel&clave=...)
+function datosPanel_(clave) {
+  var real = PropertiesService.getScriptProperties().getProperty('CLAVE_PANEL');
+  if (!real || !clave || String(clave).trim().toUpperCase() !== String(real).toUpperCase()) return { status: 'error', message: 'clave' };
+  var sh = hojaPanel_(), n = sh.getLastRow(), ahora = new Date(), lista = [];
+  var filas = n >= 2 ? sh.getRange(2, 1, n - 1, ENC_PANEL.length).getValues() : [];
+  filas.forEach(function (f) {
+    var correo = String(f[0] || '').trim();
+    if (!correo) return;
+    var reg = fechaDe_(f[2]), ult = fechaDe_(f[3]);
+    var test = f[8] === 'terminado' || f[8] === 'en curso' ? f[8] : 'no';
+    var estado = test === 'terminado' ? 'Terminó' : (ult && (ahora.getTime() - ult.getTime()) > 3 * 86400000 ? 'Inactivo' : 'En curso');
+    var par = String(f[7] || '0/6').split('/');
+    lista.push({
+      correo: correo, nombre: String(f[1] || ''),
+      registro: reg ? reg.toISOString() : null, ultima: ult ? ult.toISOString() : null,
+      estado: estado, donde: String(f[5] || ''),
+      avanceLaminas: entero_(f[6]), paradas: entero_(par[0]), paradasTotal: entero_(par[1]) || 6,
+      test: test, nota: notaONull_(f[9]), nota10: notaONull_(f[10]),
+      minLaminas: entero_(f[11]), minJuego: entero_(f[12]), minTest: entero_(f[13]), minTotal: entero_(f[14]),
+      dispositivo: String(f[15] || '')
+    });
+  });
+  return { status: 'ok', clase: CLASE_PANEL, generado: ahora.toISOString(), estudiantes: lista };
+}
+
+// Clave del panel: 7 caracteres fáciles de leer (sin 0/O/1/l/I). Se crea una sola vez.
+function clavePanel_() {
+  var props = PropertiesService.getScriptProperties();
+  var c = props.getProperty('CLAVE_PANEL');
+  if (c) return c;
+  var abc = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+  c = '';
+  for (var i = 0; i < 7; i++) c += abc.charAt(Math.floor(Math.random() * abc.length));
+  props.setProperty('CLAVE_PANEL', c);
+  return c;
+}
+
+// Ejecútala desde el editor para ver (o crear) la clave del panel de seguimiento.
+function verClavePanel() {
+  hojaPanel_();
+  var c = clavePanel_();
+  Logger.log('Clave del panel de seguimiento (' + CLASE_PANEL + '): ' + c);
+  try {
+    SpreadsheetApp.getUi().alert('🔑 Clave del panel de seguimiento (' + CLASE_PANEL + '):\n\n' + c +
+      '\n\nCópiala y pégala en el panel: https://iisavar.github.io/simulador-admision/panel/\nNo la compartas con los estudiantes.');
+  } catch (e) { }
+  return c;
 }
 
 // ======================================================================

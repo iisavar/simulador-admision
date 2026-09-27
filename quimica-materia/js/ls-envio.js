@@ -9,8 +9,28 @@
   const oyentes = [];
   function id() { return Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 10); }
 
+  // Cada envío lleva la instantánea del seguimiento (dónde va, tiempos, dispositivo) para la hoja Panel.
+  function conSeg(tipo, datos) {
+    datos = Object.assign({}, datos || {});
+    let seg = null;
+    try { seg = LS.seguimiento && LS.seguimiento.snapshot ? LS.seguimiento.snapshot() : null; } catch (e) { seg = null; }
+    if (!seg) return datos;
+    // el resultado oficial se envía justo antes de marcar el test como terminado
+    if (tipo === 'resultado' && datos.tipoIntento === 'OFICIAL') {
+      seg.testEstado = 'terminado';
+      if (datos.nota != null) seg.nota = datos.nota;
+      if (datos.nota10 != null) seg.nota10 = datos.nota10;
+    }
+    datos.seg = seg;
+    return datos;
+  }
+  const esProgreso = (x) => x && x.tipo === 'evento' && x.datos && x.datos.evento === 'progreso';
+
   function encolar(tipo, datos) {
+    datos = conSeg(tipo, datos);
     const item = { id: id(), tipo, fecha: new Date().toISOString(), datos };
+    // 'progreso' solo importa el último: si hay uno esperando en la cola (sin internet), se reemplaza
+    if (esProgreso(item)) LS.st.colaEnvios = LS.st.colaEnvios.filter((x, i) => !esProgreso(x) || (enCurso && i === 0));
     LS.st.colaEnvios.push(item);
     LS.guardar();
     vaciar();
@@ -60,5 +80,5 @@
   window.addEventListener('online', vaciar);
   document.addEventListener('DOMContentLoaded', () => setTimeout(vaciar, 1500));
 
-  LS.envio = { evento, resultado, vaciar, estado, alCambiar, configurado: () => !!URL_SCRIPT };
+  LS.envio = { evento, resultado, vaciar, estado, alCambiar, configurado: () => !!URL_SCRIPT, url: () => URL_SCRIPT };
 })();
