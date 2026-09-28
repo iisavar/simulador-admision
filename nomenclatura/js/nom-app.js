@@ -257,8 +257,8 @@
     pintar(`
       <div class="hub-cab">
         <div class="hub-cab-txt">
-          <h1>Hola, ${esc(nombre() || 'estudiante')}</h1>
-          <p>Práctica de nomenclatura a tu ritmo. Empieza por el módulo 1 y avanza en orden.</p>
+          <h1>Nomenclatura inorgánica</h1>
+          <p>Práctica libre a tu ritmo. Empieza por el módulo 1 y avanza en orden.</p>
         </div>
         <div class="hub-avance"><b>${hechos}/${MODULOS.length}</b><small>módulos</small></div>
       </div>
@@ -277,8 +277,6 @@
       <p class="pie">Tu avance se guarda solo. Puedes dejarlo y seguir cuando quieras.</p>
     `);
     $$('.modulo').forEach(b => b.addEventListener('click', () => abrirModulo(b.getAttribute('data-k'))));
-    $('#btn-perfil').hidden = false;
-    $('#perfil-ini').textContent = (nombre()[0] || '?').toUpperCase();
   }
 
   // =====================================================================
@@ -378,9 +376,8 @@
     });
 
     // Feedback
-    const nom = nombre();
     const cabecera = ok
-      ? `<div class="fb-cab"><span class="fb-cab-ico">✓</span>${['¡Eso es!', '¡Bien' + (nom ? ', ' + esc(nom) : '') + '!', '¡Perfecto!', 'Correcto.'][contIntentos % 4]}</div>`
+      ? `<div class="fb-cab"><span class="fb-cab-ico">✓</span>${['¡Eso es!', '¡Bien!', '¡Perfecto!', 'Correcto.'][contIntentos % 4]}</div>`
       : `<div class="fb-cab"><span class="fb-cab-ico">✕</span>Casi. Mira:</div>`;
     const explic = ok ? ej.porqueOk : ej.porqueMiss(ej.opciones[i]);
     $('#fb').innerHTML = `<div class="fb ${ok ? 'ok' : 'miss'}">
@@ -582,14 +579,8 @@
       const t = temaEfect() === 'dark' ? 'light' : 'dark';
       fijarTema(t);
     });
-    $('#btn-perfil').addEventListener('click', () => {
-      if (confirm('¿Quieres cerrar sesión y empezar como otro estudiante?')) {
-        st.usuario = { nombre: '', correo: '' }; guardar(); pintarRegistro();
-        $('#btn-perfil').hidden = true;
-      }
-    });
-    if (!st.usuario.nombre || !st.usuario.correo) pintarRegistro();
-    else pintarHub();
+    // Entrar directo al hub (sin registro).
+    pintarHub();
   }
   document.addEventListener('DOMContentLoaded', iniciar);
 })();
