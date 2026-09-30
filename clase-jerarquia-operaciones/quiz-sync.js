@@ -33,7 +33,9 @@
 
   window.QuizSync = {
     activo: function () { return !!URL; },
-    // evento: 'registrado' | 'en-progreso' | 'terminado' | 'tiempo'
-    enviar: function (o) { enviar(o); }
+    // resumen (fila por estudiante): 'registrado' | 'en-progreso' | 'terminado' | 'tiempo'
+    enviar: function (o) { enviar(o); },
+    // detalle por ítem (una fila cada lámina / ronda / pregunta, con su tiempo)
+    detalle: function (o) { o.tipo = 'detalle'; enviar(o); }
   };
 })();

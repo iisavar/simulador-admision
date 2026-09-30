@@ -17,7 +17,8 @@ var NOMBRE_QUIZ = {
   'ley-de-signos': 'Ley de Signos',
   'jerarquia': 'Jerarquía de Operaciones',
   'jerarquia-2': 'Jerarquía · Nivel 2',
-  'jerarquia-3': 'Jerarquía · Nivel 3'
+  'jerarquia-3': 'Jerarquía · Nivel 3',
+  'fracciones': 'Fracciones'
 };
 
 function doPost(e) {
@@ -25,6 +26,16 @@ function doPost(e) {
   try { lock.waitLock(20000); } catch (err) { return _json({ status: 'busy' }); }
   try {
     var d = JSON.parse(e.postData.contents);
+
+    // ---- evento de DETALLE (tiempo por lámina / ronda / pregunta) ----
+    if (d.tipo === 'detalle') {
+      var det = _hojaDetalle();
+      det.appendRow([ new Date(), d.modulo || d.quiz || '', d.nombre || '', d.correo || '',
+                      d.seccion || '', d.item || '', d.segundos || 0,
+                      (d.acierto === 1 || d.acierto === 0) ? d.acierto : '' ]);
+      return _json({ status: 'ok' });
+    }
+
     var sh = _hoja();
     var quiz   = String(d.quiz || '').trim();
     var correo = String(d.correo || '').trim().toLowerCase();
@@ -129,6 +140,18 @@ function _hoja() {
     sh.appendRow(CABECERAS);
     sh.setFrozenRows(1);
     sh.getRange('A1:K1').setFontWeight('bold');
+  }
+  return sh;
+}
+
+function _hojaDetalle() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sh = ss.getSheetByName('Detalle');
+  if (!sh) sh = ss.insertSheet('Detalle');
+  if (sh.getLastRow() === 0) {
+    sh.appendRow(['Marca','Módulo','Nombre','Correo','Sección','Ítem','Segundos','Acierto']);
+    sh.setFrozenRows(1);
+    sh.getRange('A1:H1').setFontWeight('bold');
   }
   return sh;
 }
