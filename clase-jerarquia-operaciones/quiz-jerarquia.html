@@ -83,7 +83,7 @@ h1{font-size:1.7rem;font-weight:900;line-height:1.1}
   <header>
     <span class="badge">🧮 QUIZ DE JERARQUÍA</span>
     <h1>Jerarquía de Operaciones</h1>
-    <div class="sub">15 preguntas · 12 minutos · corrección al instante</div>
+    <div class="sub">15 preguntas · 25 minutos · corrección al instante</div>
   </header>
 
   <!-- INICIO -->
@@ -97,7 +97,7 @@ h1{font-size:1.7rem;font-weight:900;line-height:1.1}
     </div>
     <ul>
       <li>✔ 15 ejercicios aplicando el orden correcto.</li>
-      <li>⏳ Tienes 12 minutos.</li>
+      <li>⏳ Tienes 25 minutos.</li>
       <li>🎯 Recuerda: ( ) → potencias → × ÷ → + −</li>
     </ul>
     <button class="go" id="go">Empezar quiz →</button>
@@ -105,7 +105,7 @@ h1{font-size:1.7rem;font-weight:900;line-height:1.1}
 
   <!-- JUEGO -->
   <div id="game" class="hidden">
-    <div style="text-align:center"><span class="timer" id="timer">⏱ 12:00</span></div>
+    <div style="text-align:center"><span class="timer" id="timer">⏱ 25:00</span></div>
     <div class="bar"><i id="prog"></i></div>
     <div class="meta"><span>Pregunta <b id="qn">1</b>/15</span><span>Aciertos: <b id="sc">0</b></span></div>
     <div class="card">
@@ -129,7 +129,7 @@ h1{font-size:1.7rem;font-weight:900;line-height:1.1}
 
 <script src="quiz-sync.js"></script>
 <script>
-const N=15, MINUTES=12;
+const N=15, MINUTES=25;
 const DATA=[
   {t:"3 + 4 × 2", o:[14,11,10,24], a:1, w:"Primero la ×: 4×2=8. Luego 3+8 = <b>11</b>."},
   {t:"(3 + 4) × 2", o:[14,11,9,10], a:0, w:"El paréntesis manda: 3+4=7. Luego 7×2 = <b>14</b>."},
