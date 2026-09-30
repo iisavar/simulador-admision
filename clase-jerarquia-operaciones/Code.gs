@@ -1,26 +1,23 @@
 /* ============================================================
    Code.gs — Apps Script para los quizzes.
    1) Guarda el avance en vivo en la hoja "Avance".
-   2) Al TERMINAR, envía al estudiante un correo bonito con su
-      resultado.
+   2) Al TERMINAR, envía al estudiante un correo bonito.
 
-   👉 Cómo actualizarlo sin cambiar la URL:
-   - Pega este archivo en tu Apps Script (reemplaza lo anterior).
-   - Guarda 💾.
-   - Implementar ▸ Administrar implementaciones ▸ (lápiz ✏️) ▸
+   👉 Actualizar sin cambiar la URL:
+   - Pega este archivo (reemplaza lo anterior) y Guarda 💾.
+   - Implementar ▸ Administrar implementaciones ▸ ✏️ ▸
      Versión: "Nueva versión" ▸ Implementar.
-     (Así se mantiene la MISMA URL /exec.)
-   - La primera vez te pedirá permiso para enviar correo: acéptalo.
    ============================================================ */
 
 var HOJA = 'Avance';
 var CABECERAS = ['Clave','Primer registro','Quiz','Nombre','Correo',
                  'Estado','Pregunta','Aciertos','Total','%','Actualizado'];
 
-// Nombre bonito de cada quiz (para el correo).
 var NOMBRE_QUIZ = {
+  'ley-de-signos': 'Ley de Signos',
   'jerarquia': 'Jerarquía de Operaciones',
-  'ley-de-signos': 'Ley de Signos'
+  'jerarquia-2': 'Jerarquía · Nivel 2',
+  'jerarquia-3': 'Jerarquía · Nivel 3'
 };
 
 function doPost(e) {
@@ -39,8 +36,7 @@ function doPost(e) {
     var fila = -1;
     for (var r = 1; r < claves.length; r++) { if (claves[r][0] === clave) { fila = r + 1; break; } }
 
-    var primer = ahora;
-    var estadoAnterior = '';
+    var primer = ahora, estadoAnterior = '';
     if (fila > 0) {
       primer = sh.getRange(fila, 2).getValue() || ahora;
       estadoAnterior = String(sh.getRange(fila, 6).getValue() || '');
@@ -52,13 +48,11 @@ function doPost(e) {
       d.estado || '', d.pregunta || 0, d.aciertos || 0, d.total || 0, pct, ahora
     ]]);
 
-    // ---- correo de finalización (solo una vez, al terminar) ----
     var estado = String(d.estado || '');
     var yaTerminado = (estadoAnterior === 'terminado' || estadoAnterior === 'tiempo');
     if ((estado === 'terminado' || estado === 'tiempo') && !yaTerminado) {
       _enviarCorreo(d, quiz, pct);
     }
-
     return _json({ status: 'ok' });
   } catch (err) {
     return _json({ status: 'error', message: String(err) });
@@ -67,54 +61,64 @@ function doPost(e) {
   }
 }
 
-function doGet() {
-  return _json({ status: 'ok', mensaje: 'Endpoint de quizzes activo.' });
-}
+function doGet() { return _json({ status: 'ok', mensaje: 'Endpoint de quizzes activo.' }); }
 
 function _enviarCorreo(d, quiz, pct) {
   try {
     var correo = String(d.correo || '').trim();
-    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) return;   // correo inválido → no envía
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) return;
 
-    var nombre    = String(d.nombre || 'estudiante');
-    var primerNom = nombre.split(' ')[0];
+    var primerNom = String(d.nombre || 'estudiante').split(' ')[0];
     var tituloQuiz = NOMBRE_QUIZ[quiz] || 'Quiz';
     var aciertos = d.aciertos || 0, total = d.total || 0;
 
-    var msg, emoji, color;
-    if (pct >= 90)      { emoji = '🏆'; color = '#3F9A00'; msg = '¡Excelente! Dominaste el tema, sigue así.'; }
-    else if (pct >= 70) { emoji = '🎉'; color = '#3F9A00'; msg = '¡Muy bien! Vas por buen camino.'; }
-    else if (pct >= 50) { emoji = '💪'; color = '#C99E00'; msg = 'Buen esfuerzo. Con un repasito lo dejas perfecto.'; }
-    else                { emoji = '🔁'; color = '#E8503A'; msg = 'No te desanimes: repasa y verás cómo mejoras rápido.'; }
+    var msg, emoji, color, banda;
+    if (pct >= 90)      { emoji='🏆'; color='#3F9A00'; banda='¡NIVEL CRACK!';    msg='Dominaste el tema por completo. ¡Sigue así!'; }
+    else if (pct >= 70) { emoji='🎉'; color='#3F9A00'; banda='¡MUY BIEN!';       msg='Vas por excelente camino. Un empujón más y es perfecto.'; }
+    else if (pct >= 50) { emoji='💪'; color='#E8A400'; banda='¡BUEN ESFUERZO!';  msg='Ya casi. Con un repasito lo dejas redondo.'; }
+    else                { emoji='🔁'; color='#E8503A'; banda='¡A REFORZAR!';     msg='No te desanimes: repasa y verás cómo subes rápido.'; }
+
+    var fill = Math.max(pct, 4); // que siempre se vea algo de barra
 
     var html =
-    '<div style="margin:0;padding:24px;background:#F4F7F5;font-family:Arial,Helvetica,sans-serif">' +
-      '<div style="max-width:520px;margin:0 auto;background:#FFFFFF;border-radius:20px;overflow:hidden;border:1px solid #E3EAE5">' +
-        '<div style="background:#131F24;padding:28px 24px;text-align:center">' +
-          '<div style="color:#58CC02;font-weight:bold;font-size:13px;letter-spacing:2px">MATEMÁTICA DE INGRESO</div>' +
-          '<div style="color:#FFFFFF;font-weight:bold;font-size:24px;margin-top:6px">' + tituloQuiz + '</div>' +
-        '</div>' +
-        '<div style="padding:30px 24px;text-align:center">' +
-          '<div style="font-size:46px;line-height:1">' + emoji + '</div>' +
-          '<div style="color:#131F24;font-size:20px;font-weight:bold;margin-top:10px">¡Terminaste, ' + primerNom + '!</div>' +
-          '<div style="display:inline-block;margin:22px auto 6px;background:' + color + ';color:#FFFFFF;' +
-               'font-size:34px;font-weight:bold;padding:16px 40px;border-radius:16px">' + aciertos + ' / ' + total + '</div>' +
-          '<div style="color:#5B6A70;font-weight:bold;font-size:16px;margin-top:8px">' + pct + '% de aciertos</div>' +
-          '<div style="color:#131F24;font-size:16px;margin-top:18px;line-height:1.5">' + msg + '</div>' +
-        '</div>' +
-        '<div style="background:#F4F7F5;padding:16px 24px;text-align:center;color:#8A97A0;font-size:12px">' +
-          'Este es tu resultado automático del quiz. ¡Nos vemos en la próxima clase! 🚀' +
-        '</div>' +
+'<div style="margin:0;padding:0;background:#EEF2EF;font-family:\'Segoe UI\',Arial,Helvetica,sans-serif">' +
+'<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#EEF2EF;padding:28px 12px"><tr><td align="center">' +
+  '<table role="presentation" width="480" cellpadding="0" cellspacing="0" style="max-width:480px;width:100%;background:#FFFFFF;border-radius:22px;overflow:hidden;box-shadow:0 6px 24px rgba(19,31,36,.12)">' +
+    // header
+    '<tr><td style="background:#131F24;padding:30px 28px 26px;text-align:center">' +
+      '<div style="color:#58CC02;font-size:12px;font-weight:bold;letter-spacing:3px">MATEMÁTICA DE INGRESO</div>' +
+      '<div style="color:#FFFFFF;font-size:23px;font-weight:bold;margin-top:8px;line-height:1.2">' + tituloQuiz + '</div>' +
+    '</td></tr>' +
+    // cuerpo
+    '<tr><td style="padding:32px 30px 8px;text-align:center">' +
+      '<div style="font-size:52px;line-height:1">' + emoji + '</div>' +
+      '<div style="display:inline-block;margin-top:14px;background:' + color + '1A;color:' + color + ';font-size:12px;font-weight:bold;letter-spacing:2px;padding:6px 14px;border-radius:999px">' + banda + '</div>' +
+      '<div style="color:#131F24;font-size:22px;font-weight:bold;margin-top:14px">¡Terminaste, ' + primerNom + '! 👋</div>' +
+      // score
+      '<div style="margin:22px auto 6px;color:' + color + ';font-size:52px;font-weight:bold;line-height:1">' + aciertos + '<span style="color:#9BB0A5;font-size:30px"> / ' + total + '</span></div>' +
+      '<div style="color:#5B6A70;font-size:15px;font-weight:bold;margin-bottom:18px">' + pct + '% de aciertos</div>' +
+      // barra de progreso
+      '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin:0 auto;max-width:360px"><tr><td style="background:#E3EAE5;border-radius:999px;padding:0">' +
+        '<table role="presentation" width="' + fill + '%" cellpadding="0" cellspacing="0" style="min-width:16px"><tr><td style="background:' + color + ';height:12px;border-radius:999px;font-size:0;line-height:0">&nbsp;</td></tr></table>' +
+      '</td></tr></table>' +
+      '<div style="color:#131F24;font-size:16px;line-height:1.55;margin:22px 6px 4px">' + msg + '</div>' +
+    '</td></tr>' +
+    // footer
+    '<tr><td style="padding:22px 30px 26px;text-align:center">' +
+      '<div style="border-top:1px solid #E3EAE5;padding-top:18px;color:#9AA7AE;font-size:12px;line-height:1.6">' +
+        'Resultado automático de tu quiz.<br>¡Nos vemos en la próxima clase! 🚀' +
       '</div>' +
-    '</div>';
+    '</td></tr>' +
+  '</table>' +
+'</td></tr></table></div>';
 
     MailApp.sendEmail({
       to: correo,
-      subject: emoji + ' Tu resultado: ' + tituloQuiz + ' (' + aciertos + '/' + total + ')',
+      subject: emoji + ' ' + primerNom + ', tu resultado: ' + aciertos + '/' + total + ' en ' + tituloQuiz,
       htmlBody: html,
       name: 'Matemática de Ingreso'
     });
-  } catch (err) { /* si el correo falla, no rompe el guardado */ }
+  } catch (err) { }
 }
 
 function _hoja() {
@@ -130,6 +134,5 @@ function _hoja() {
 }
 
 function _json(obj) {
-  return ContentService.createTextOutput(JSON.stringify(obj))
-    .setMimeType(ContentService.MimeType.JSON);
+  return ContentService.createTextOutput(JSON.stringify(obj)).setMimeType(ContentService.MimeType.JSON);
 }
