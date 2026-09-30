@@ -1,26 +1,27 @@
 /* ============================================================
-   Code.gs — Apps Script para registrar en vivo el avance de
-   los quizzes (ley de signos y jerarquía) en una Google Sheet.
+   Code.gs — Apps Script para los quizzes.
+   1) Guarda el avance en vivo en la hoja "Avance".
+   2) Al TERMINAR, envía al estudiante un correo bonito con su
+      resultado.
 
-   Recibe los envíos de quiz-sync.js y mantiene UNA fila por
-   estudiante y quiz, que se va actualizando conforme avanza.
-
-   👉 Cómo publicarlo (una sola vez):
-   1. Ve a https://sheets.google.com y crea una hoja nueva
-      (por ejemplo "Avance quizzes"). Déjala abierta.
-   2. Menú Extensiones ▸ Apps Script.
-   3. Borra lo que haya y pega TODO este archivo. Guarda.
-   4. Implementar ▸ Nueva implementación ▸ tipo "Aplicación web".
-        - Ejecutar como:   Yo
-        - Quién tiene acceso:   Cualquier persona
-   5. Copia la URL que termina en /exec.
-   6. Pégala en quiz-sync.js (variable URL) y vuelve a subir.
-   Listo: abre la hoja y verás las filas actualizarse solas.
+   👉 Cómo actualizarlo sin cambiar la URL:
+   - Pega este archivo en tu Apps Script (reemplaza lo anterior).
+   - Guarda 💾.
+   - Implementar ▸ Administrar implementaciones ▸ (lápiz ✏️) ▸
+     Versión: "Nueva versión" ▸ Implementar.
+     (Así se mantiene la MISMA URL /exec.)
+   - La primera vez te pedirá permiso para enviar correo: acéptalo.
    ============================================================ */
 
-var HOJA = 'Avance';   // nombre de la pestaña donde se guarda todo
+var HOJA = 'Avance';
 var CABECERAS = ['Clave','Primer registro','Quiz','Nombre','Correo',
                  'Estado','Pregunta','Aciertos','Total','%','Actualizado'];
+
+// Nombre bonito de cada quiz (para el correo).
+var NOMBRE_QUIZ = {
+  'jerarquia': 'Jerarquía de Operaciones',
+  'ley-de-signos': 'Ley de Signos'
+};
 
 function doPost(e) {
   var lock = LockService.getScriptLock();
@@ -39,8 +40,10 @@ function doPost(e) {
     for (var r = 1; r < claves.length; r++) { if (claves[r][0] === clave) { fila = r + 1; break; } }
 
     var primer = ahora;
+    var estadoAnterior = '';
     if (fila > 0) {
-      primer = sh.getRange(fila, 2).getValue() || ahora;  // conservar el primer registro
+      primer = sh.getRange(fila, 2).getValue() || ahora;
+      estadoAnterior = String(sh.getRange(fila, 6).getValue() || '');
     } else {
       fila = sh.getLastRow() + 1;
     }
@@ -48,6 +51,14 @@ function doPost(e) {
       clave, primer, quiz, d.nombre || '', d.correo || '',
       d.estado || '', d.pregunta || 0, d.aciertos || 0, d.total || 0, pct, ahora
     ]]);
+
+    // ---- correo de finalización (solo una vez, al terminar) ----
+    var estado = String(d.estado || '');
+    var yaTerminado = (estadoAnterior === 'terminado' || estadoAnterior === 'tiempo');
+    if ((estado === 'terminado' || estado === 'tiempo') && !yaTerminado) {
+      _enviarCorreo(d, quiz, pct);
+    }
+
     return _json({ status: 'ok' });
   } catch (err) {
     return _json({ status: 'error', message: String(err) });
@@ -58,6 +69,52 @@ function doPost(e) {
 
 function doGet() {
   return _json({ status: 'ok', mensaje: 'Endpoint de quizzes activo.' });
+}
+
+function _enviarCorreo(d, quiz, pct) {
+  try {
+    var correo = String(d.correo || '').trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo)) return;   // correo inválido → no envía
+
+    var nombre    = String(d.nombre || 'estudiante');
+    var primerNom = nombre.split(' ')[0];
+    var tituloQuiz = NOMBRE_QUIZ[quiz] || 'Quiz';
+    var aciertos = d.aciertos || 0, total = d.total || 0;
+
+    var msg, emoji, color;
+    if (pct >= 90)      { emoji = '🏆'; color = '#3F9A00'; msg = '¡Excelente! Dominaste el tema, sigue así.'; }
+    else if (pct >= 70) { emoji = '🎉'; color = '#3F9A00'; msg = '¡Muy bien! Vas por buen camino.'; }
+    else if (pct >= 50) { emoji = '💪'; color = '#C99E00'; msg = 'Buen esfuerzo. Con un repasito lo dejas perfecto.'; }
+    else                { emoji = '🔁'; color = '#E8503A'; msg = 'No te desanimes: repasa y verás cómo mejoras rápido.'; }
+
+    var html =
+    '<div style="margin:0;padding:24px;background:#F4F7F5;font-family:Arial,Helvetica,sans-serif">' +
+      '<div style="max-width:520px;margin:0 auto;background:#FFFFFF;border-radius:20px;overflow:hidden;border:1px solid #E3EAE5">' +
+        '<div style="background:#131F24;padding:28px 24px;text-align:center">' +
+          '<div style="color:#58CC02;font-weight:bold;font-size:13px;letter-spacing:2px">MATEMÁTICA DE INGRESO</div>' +
+          '<div style="color:#FFFFFF;font-weight:bold;font-size:24px;margin-top:6px">' + tituloQuiz + '</div>' +
+        '</div>' +
+        '<div style="padding:30px 24px;text-align:center">' +
+          '<div style="font-size:46px;line-height:1">' + emoji + '</div>' +
+          '<div style="color:#131F24;font-size:20px;font-weight:bold;margin-top:10px">¡Terminaste, ' + primerNom + '!</div>' +
+          '<div style="display:inline-block;margin:22px auto 6px;background:' + color + ';color:#FFFFFF;' +
+               'font-size:34px;font-weight:bold;padding:16px 40px;border-radius:16px">' + aciertos + ' / ' + total + '</div>' +
+          '<div style="color:#5B6A70;font-weight:bold;font-size:16px;margin-top:8px">' + pct + '% de aciertos</div>' +
+          '<div style="color:#131F24;font-size:16px;margin-top:18px;line-height:1.5">' + msg + '</div>' +
+        '</div>' +
+        '<div style="background:#F4F7F5;padding:16px 24px;text-align:center;color:#8A97A0;font-size:12px">' +
+          'Este es tu resultado automático del quiz. ¡Nos vemos en la próxima clase! 🚀' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+
+    MailApp.sendEmail({
+      to: correo,
+      subject: emoji + ' Tu resultado: ' + tituloQuiz + ' (' + aciertos + '/' + total + ')',
+      htmlBody: html,
+      name: 'Matemática de Ingreso'
+    });
+  } catch (err) { /* si el correo falla, no rompe el guardado */ }
 }
 
 function _hoja() {
