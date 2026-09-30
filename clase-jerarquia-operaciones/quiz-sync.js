@@ -14,7 +14,7 @@
   'use strict';
 
   // ↓↓↓ PEGA AQUÍ tu URL del Apps Script (termina en /exec) ↓↓↓
-  var URL = '';
+  var URL = 'https://script.google.com/macros/s/AKfycbzlMfvqHyKvLbQlgY7fOXA-FJAmtWPat2A8kk1y-ezKqRosRtLSp-boM04te35cA_GF/exec';
   // ↑↑↑ ------------------------------------------------------ ↑↑↑
 
   function enviar(payload) {
