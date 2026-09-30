@@ -14,7 +14,8 @@
   'use strict';
 
   // ↓↓↓ PEGA AQUÍ tu URL del Apps Script (termina en /exec) ↓↓↓
-  var URL = 'https://script.google.com/macros/s/AKfycbzlMfvqHyKvLbQlgY7fOXA-FJAmtWPat2A8kk1y-ezKqRosRtLSp-boM04te35cA_GF/exec';
+  // (vacía = modo 100% sin conexión: los quizzes funcionan pero no envían nada)
+  var URL = '';
   // ↑↑↑ ------------------------------------------------------ ↑↑↑
 
   function enviar(payload) {
