@@ -1,45 +1,38 @@
 /* ============================================================
-   quiz-motor.js — motor de quizzes interactivos de clase.
-   Tipos de pregunta: mc (elegir), vf (verdadero/falso), unir,
-   ordenar, completar y clasificar.
+   quiz-motor.js — quizzes de clase con estilo de examen.
+   · No revela si una respuesta está bien o mal mientras se responde
+     (así no pueden pasarse las respuestas). La corrección llega en PDF al correo.
+   · Se puede ir y volver entre preguntas y cambiar respuestas antes de entregar.
+   · Tipos: mc (elegir), vf (verdadero/falso), unir, ordenar, completar, clasificar.
 
    Cada quiz define ANTES de cargar este archivo:
-     window.QUIZ_CFG  = { id, nombre, badge, h1, min, emoji, bullets:[], m1, m4 }
-     window.QUIZ_DATA = [ preguntas ]  (formato abajo)
-
-   Formato de preguntas (en mc la PRIMERA opción es la correcta; todo se baraja):
+     window.QUIZ_CFG  = { id, nombre, materia, min }
+     window.QUIZ_DATA = [ preguntas ]
+   Formato (en mc la PRIMERA opción es la correcta; el motor baraja todo):
      {tipo:'mc', t, b?, o:[correcta, ...], w}
      {tipo:'vf', t, a:true|false, w}
      {tipo:'unir', t, pares:[[izq, der], ...], w}
      {tipo:'ordenar', t, items:[en orden correcto], w}
-     {tipo:'completar', t:'texto con ___ huecos', r:[respuestas en orden], extra:[distractores], w}
+     {tipo:'completar', t:'texto con ___ huecos', r:[respuestas], extra:[distractores], w}
      {tipo:'clasificar', t, cats:['A','B'], items:[[texto, índiceCat], ...], w}
 
-   Resultados: si el link trae ?api=ID_DEL_APPS_SCRIPT (o la URL /exec completa),
-   se envían al Apps Script (correo al estudiante + panel en vivo).
-   Sin ?api= el quiz funciona igual, sin enviar nada. El ID se recuerda
-   en este dispositivo, así no hace falta repetirlo en cada quiz.
+   Resultados: el link lleva ?api=ID_DEL_APPS_SCRIPT (o #api=). Sin eso, el quiz
+   funciona igual pero no envía nada. El ID se recuerda en el dispositivo.
    ============================================================ */
 (function () {
   'use strict';
-  var CFG = window.QUIZ_CFG, DATA = window.QUIZ_DATA;
-  var N = DATA.length;
+  var CFG = window.QUIZ_CFG, DATA = window.QUIZ_DATA, N = DATA.length;
   var $ = function (id) { return document.getElementById(id); };
-
-  // ---------- utilidades ----------
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function plano(h) { var d = document.createElement('div'); d.innerHTML = h; return (d.textContent || '').replace(/\s+/g, ' ').trim(); }
   function shuffle(a) { a = a.slice(); for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
   function rango(n) { var a = []; for (var i = 0; i < n; i++) a.push(i); return a; }
-  function mezclaDistinta(n) { // permutación que no sea el orden original
-    var p = shuffle(rango(n)), k = 0;
-    while (n > 1 && k++ < 20 && p.every(function (v, i) { return v === i; })) p = shuffle(rango(n));
-    return p;
-  }
-  function fmt(x) { return String(Math.round(x * 10) / 10).replace('.', ','); }
+  function distinta(n) { var p = shuffle(rango(n)), k = 0; while (n > 1 && k++ < 20 && p.every(function (v, i) { return v === i; })) p = shuffle(rango(n)); return p; }
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }
+  function coma(x) { return String(Math.round(x * 10) / 10).replace('.', ','); }
+  var LETRAS = 'ABCDEFGH';
 
-  // ---------- conexión con el Apps Script ----------
+  // ---------- Apps Script ----------
   var API = (function () {
     var p = null;
     try { p = new URLSearchParams(location.search).get('api') || new URLSearchParams(location.hash.slice(1)).get('api'); } catch (e) {}
@@ -51,338 +44,293 @@
     if (!API) return;
     try {
       o.ts = new Date().toISOString();
-      fetch(API, { method: 'POST', mode: 'no-cors', keepalive: !!keep,
-        headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(o) });
-    } catch (e) { /* si falla, el quiz sigue */ }
+      fetch(API, { method: 'POST', mode: 'no-cors', keepalive: !!keep, headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(o) });
+    } catch (e) {}
   }
 
-  var TIPO = { mc: '🎯 Elige', vf: '✅ Verdadero o falso', unir: '🔗 Une', ordenar: '🔢 Ordena', completar: '✍️ Completa', clasificar: '🗂️ Clasifica' };
-  var PISTA = { unir: 'Toca uno de la izquierda y luego su pareja de la derecha', ordenar: 'Toca en orden, del primero al último',
-    completar: 'Toca las palabras para llenar los espacios', clasificar: 'Elige la categoría de cada uno' };
-  var COLORES = ['#1CB0F6', '#FFC800', '#C58CF0', '#FF8A3D', '#2BAE66', '#FF6FA8'];
+  var TIPO = { mc: 'Opción múltiple', vf: 'Verdadero o falso', unir: 'Unir', ordenar: 'Ordenar', completar: 'Completar', clasificar: 'Clasificar' };
+  var AYUDA = { unir: 'Toca un concepto y luego su pareja. Toca de nuevo para deshacer.', ordenar: 'Toca en orden, del primero al último. Toca uno elegido para quitarlo.',
+    completar: 'Toca las palabras para llenar los espacios. Toca un espacio para vaciarlo.', clasificar: 'Elige la categoría de cada uno.' };
+
+  // ---------- preguntas (barajadas) ----------
+  var Q = shuffle(DATA).map(function (it) {
+    var p = Object.assign({}, it);
+    if (it.tipo === 'mc') p.orden = shuffle(rango(it.o.length));
+    if (it.tipo === 'unir') { p.izq = shuffle(rango(it.pares.length)); p.der = distinta(it.pares.length); }
+    if (it.tipo === 'ordenar') p.pool = distinta(it.items.length);
+    if (it.tipo === 'completar') p.banco = shuffle(it.r.concat(it.extra || []));
+    if (it.tipo === 'clasificar') p.orden = shuffle(rango(it.items.length));
+    return p;
+  });
+  var A = Q.map(function (it) {   // respuesta de cada pregunta
+    if (it.tipo === 'unir') return {};
+    if (it.tipo === 'ordenar') return [];
+    if (it.tipo === 'completar') return it.r.map(function () { return null; });
+    if (it.tipo === 'clasificar') return {};
+    return null;
+  });
+  function completa(k) {
+    var it = Q[k], a = A[k];
+    switch (it.tipo) {
+      case 'mc': case 'vf': return a !== null;
+      case 'unir': return Object.keys(a).length === it.pares.length;
+      case 'ordenar': return a.length === it.items.length;
+      case 'completar': return a.indexOf(null) < 0;
+      case 'clasificar': return Object.keys(a).length === it.items.length;
+    }
+  }
+  function nResp() { var c = 0; for (var k = 0; k < N; k++) if (completa(k)) c++; return c; }
 
   // ---------- pantalla ----------
   document.body.innerHTML =
-    '<div class="wrap">' +
-    '<header><span class="badge">' + CFG.badge + '</span><h1>' + CFG.h1 + '</h1>' +
-    '<div class="sub">' + N + ' preguntas · ' + CFG.min + ' minutos</div></header>' +
-    '<div id="intro" class="card start"><div class="emoji">' + CFG.emoji + '</div><div class="msg">Antes de empezar…</div>' +
-    '<div class="reg"><input id="rNombre" type="text" placeholder="Tu nombre y apellido" autocomplete="name">' +
-    '<input id="rCorreo" type="email" placeholder="Tu correo" autocomplete="email" inputmode="email"><div class="regErr" id="regErr"></div></div>' +
-    '<ul>' + CFG.bullets.map(function (b) { return '<li>' + b + '</li>'; }).join('') +
-    '<li>🧩 Hay preguntas para elegir, verdadero o falso, unir, ordenar, completar y clasificar.</li>' +
-    '<li>👀 No salgas de esta pestaña: cada salida queda registrada.</li>' +
-    (API ? '<li>📧 Al terminar te llega tu nota con la corrección al correo.</li>' : '') +
-    '</ul><button class="go" id="go">Empezar quiz →</button></div>' +
-    '<div id="game" class="hidden"><div class="top"><span class="timer" id="timer"></span></div>' +
-    '<div class="bar"><i id="prog"></i></div>' +
-    '<div class="meta"><span>Pregunta <b id="qn">1</b>/' + N + '</span><span class="tipo" id="tipo"></span><span>Puntos: <b id="sc">0</b></span></div>' +
-    '<div class="card"><div class="q" id="q"></div><div id="area"></div>' +
-    '<button class="check hidden" id="check" disabled>Comprobar ✓</button>' +
-    '<div class="why" id="why"></div><button class="next hidden" id="next">Siguiente →</button></div></div>' +
-    '<div id="final" class="card end hidden"></div>' +
-    '</div><div class="toast" id="toast"></div>';
+    '<div class="wrap" id="wrap">' +
+    '<section id="intro" class="intro"><div class="eyebrow">' + esc(CFG.materia || 'Quiz') + '</div>' +
+    '<h1>' + esc(CFG.nombre) + '</h1><div class="meta">' + N + ' preguntas · ' + CFG.min + ' minutos</div>' +
+    '<div class="panel"><ul class="reglas">' +
+    '<li>Puedes avanzar, volver y cambiar tus respuestas antes de entregar.</li>' +
+    '<li>Al terminar el tiempo, el quiz se entrega solo.</li>' +
+    '<li>No salgas de esta página: cada salida queda registrada.</li>' +
+    (API ? '<li>Tu nota y la corrección completa en PDF llegarán a tu correo.</li>' : '') +
+    '</ul>' +
+    '<label class="campo" for="nom">Nombre y apellido</label><input class="input" id="nom" autocomplete="name">' +
+    '<label class="campo" for="cor">Correo</label><input class="input" id="cor" type="email" inputmode="email" autocomplete="email">' +
+    '<div class="err" id="err"></div><button class="btn btn-1 full" id="go">Comenzar</button></div></section>' +
+    '<section id="exam" class="hidden"><div class="top"><div class="top-row"><span>Pregunta <b id="qn"></b> de ' + N + '</span>' +
+    '<button class="ver" id="ver">Ver todas</button><span class="reloj" id="reloj"></span></div><div class="prog"><i id="prog"></i></div></div>' +
+    '<div class="card" id="card"></div></section>' +
+    '<section id="mapa" class="hidden"><div class="top"><div class="top-row"><span><b>Revisar respuestas</b></span><span class="reloj" id="reloj2"></span></div></div>' +
+    '<div class="card"><div class="leyenda" id="ley"></div><div class="mapa" id="mq"></div><button class="btn btn-1 full" id="entregar">Entregar quiz</button>' +
+    '<button class="btn btn-2 full" id="volver" style="margin-top:10px">Seguir respondiendo</button></div></section>' +
+    '<section id="final" class="final hidden"></section></div>' +
+    '<nav class="nav hidden" id="nav"><div class="nav-in"><button class="btn btn-2" id="ant">Anterior</button><button class="btn btn-1" id="sig">Siguiente</button></div></nav>' +
+    '<div class="aviso" id="aviso"></div>';
 
-  // ---------- preparar preguntas (se barajan preguntas y opciones) ----------
-  var Q = shuffle(DATA).map(function (it) {
-    var p = Object.assign({}, it);
-    if (it.tipo === 'mc') { p.orden = shuffle(rango(it.o.length)); }
-    if (it.tipo === 'unir') { p.izq = shuffle(rango(it.pares.length)); p.der = mezclaDistinta(it.pares.length); }
-    if (it.tipo === 'ordenar') { p.pool = mezclaDistinta(it.items.length); }
-    if (it.tipo === 'completar') { p.banco = shuffle(it.r.concat(it.extra || [])); }
-    if (it.tipo === 'clasificar') { p.orden = shuffle(rango(it.items.length)); }
-    return p;
-  });
-
-  // Texto de la respuesta correcta (para el correo y la corrección)
-  function correctaTxt(it) {
-    switch (it.tipo) {
-      case 'mc': return plano(it.o[0]);
-      case 'vf': return it.a ? 'Verdadero' : 'Falso';
-      case 'unir': return it.pares.map(function (p) { return plano(p[0]) + ' → ' + plano(p[1]); }).join(' · ');
-      case 'ordenar': return it.items.map(function (x, k) { return (k + 1) + '. ' + plano(x); }).join('  ');
-      case 'completar': return llenar(it.t, it.r);
-      case 'clasificar': return it.items.map(function (x) { return plano(x[0]) + ': ' + it.cats[x[1]]; }).join(' · ');
-    }
-    return '';
-  }
-  function llenar(t, vals) { var k = 0; return plano(t.replace(/___/g, function () { var v = vals[k++]; return v == null ? '___' : '[' + v + ']'; })); }
-
-  // ---------- estado ----------
-  var ALUM = { nombre: '', correo: '' }, ID = '';
-  var i = 0, score = 0, perfectas = 0, salidas = 0, timeLeft = CFG.min * 60, tick = null, t0 = 0, enJuego = false;
-  var RES = [];   // una entrada por pregunta, para el correo y el panel
-  var st = {};    // estado de la pregunta actual
+  var ALUM = { nombre: '', correo: '' }, ID = '', cur = 0, timeLeft = CFG.min * 60, tick = null, t0 = 0, enJuego = false, salidas = 0;
   var base = function () { return { id: ID, quiz: CFG.id, quizNombre: CFG.nombre, nombre: ALUM.nombre, correo: ALUM.correo, total: N }; };
+  function avisar(t) { var a = $('aviso'); a.textContent = t; a.classList.add('on'); clearTimeout(avisar.t); avisar.t = setTimeout(function () { a.classList.remove('on'); }, 3200); }
+  function progreso() { var o = base(); o.evento = 'progreso'; o.respondidas = nResp(); o.salidas = salidas; enviar(o, true); }
 
-  function render() {
-    var it = Q[i];
-    st = { listo: false };
-    $('q').innerHTML = (it.b ? '<span class="big">' + it.b + '</span>' : '') + it.t.replace(/___/g, '____') +
-      (PISTA[it.tipo] ? '<span class="hint">' + PISTA[it.tipo] + '</span>' : '');
-    if (it.tipo === 'completar') $('q').innerHTML = (it.b ? '<span class="big">' + it.b + '</span>' : '') + (it.enunciado || 'Completa la frase') + '<span class="hint">' + PISTA.completar + '</span>';
-    $('qn').textContent = i + 1;
-    $('tipo').textContent = TIPO[it.tipo];
-    $('prog').style.width = (i / N * 100) + '%';
-    $('why').innerHTML = '';
-    $('next').classList.add('hidden');
-    $('next').textContent = i === N - 1 ? 'Ver resultado →' : 'Siguiente →';
-    var area = $('area'); area.innerHTML = '';
-    var chk = $('check'); chk.disabled = true;
-    chk.classList.toggle('hidden', it.tipo === 'mc' || it.tipo === 'vf');
-    ({ mc: rMc, vf: rVf, unir: rUnir, ordenar: rOrdenar, completar: rCompletar, clasificar: rClasificar })[it.tipo](it, area);
+  // ---------- dibujar una pregunta ----------
+  function ir(k) {
+    cur = k;
+    $('mapa').classList.add('hidden'); $('exam').classList.remove('hidden'); $('nav').classList.remove('hidden');
+    pintar(); window.scrollTo(0, 0);
   }
+  function pintar() {
+    var it = Q[cur], card = $('card');
+    $('qn').textContent = cur + 1;
+    $('prog').style.width = (nResp() / N * 100) + '%';
+    var enun = it.tipo === 'completar' ? (it.enunciado || 'Completa la frase') : it.t;
+    card.innerHTML = '<div class="tipo">' + TIPO[it.tipo] + '</div>' +
+      '<div class="enun">' + (it.b ? '<span class="dato">' + it.b + '</span>' : '') + enun + '</div>' +
+      (AYUDA[it.tipo] ? '<div class="ayuda">' + AYUDA[it.tipo] + '</div>' : '');
+    var area = el('div', 'area'); card.appendChild(area);
+    ({ mc: rMc, vf: rVf, unir: rUnir, ordenar: rOrdenar, completar: rCompletar, clasificar: rClasificar })[it.tipo](it, A[cur], area);
+    $('ant').disabled = cur === 0;
+    $('sig').textContent = cur === N - 1 ? 'Revisar y entregar' : 'Siguiente';
+  }
+  function cambio() { $('prog').style.width = (nResp() / N * 100) + '%'; }
 
-  // --- opción múltiple ---
-  function rMc(it, area) {
-    var largo = Math.max.apply(null, it.o.map(function (v) { return plano(v).length; }));
-    var box = el('div', 'opts' + (largo > 22 ? ' one' : ''));
-    it.orden.forEach(function (k) {
-      var b = el('button', 'opt', it.o[k]);
-      b.onclick = function () {
-        if (st.listo) return;
-        [].forEach.call(box.children, function (x, j) { x.disabled = true; if (it.orden[j] === 0) x.classList.add('ok'); });
-        if (k !== 0) b.classList.add('no');
-        cerrar(it, k === 0 ? 1 : 0, plano(it.o[k]));
-      };
+  function rMc(it, a, area) {
+    var box = el('div', 'ops');
+    it.orden.forEach(function (k, j) {
+      var b = el('button', 'op' + (A[cur] === k ? ' on' : ''), '<span class="l">' + LETRAS[j] + '</span><span>' + it.o[k] + '</span>');
+      b.onclick = function () { A[cur] = k; pintar(); };
       box.appendChild(b);
     });
     area.appendChild(box);
   }
-  // --- verdadero / falso ---
-  function rVf(it, area) {
-    var box = el('div', 'opts');
+  function rVf(it, a, area) {
+    var box = el('div', 'ops vf');
     [true, false].forEach(function (v) {
-      var b = el('button', 'opt vf', v ? '✅ Verdadero' : '❌ Falso');
-      b.onclick = function () {
-        if (st.listo) return;
-        [].forEach.call(box.children, function (x, j) { x.disabled = true; if ((j === 0) === it.a) x.classList.add('ok'); });
-        if (v !== it.a) b.classList.add('no');
-        cerrar(it, v === it.a ? 1 : 0, v ? 'Verdadero' : 'Falso');
-      };
+      var b = el('button', 'op' + (A[cur] === v ? ' on' : ''), v ? 'Verdadero' : 'Falso');
+      b.onclick = function () { A[cur] = v; pintar(); };
       box.appendChild(b);
     });
     area.appendChild(box);
   }
-  // --- unir ---
-  function rUnir(it, area) {
-    st.par = {}; st.sel = null;
+  var selIzq = null;
+  function rUnir(it, a, area) {
     var w = el('div', 'unir'), L = el('div', 'col'), R = el('div', 'col');
-    L.appendChild(el('div', 'colhead', 'CONCEPTO')); R.appendChild(el('div', 'colhead', 'PAREJA'));
-    var bl = {}, br = {};
-    it.izq.forEach(function (k) { var b = el('button', 'it', it.pares[k][0]); b.onclick = function () { tocaIzq(k); }; bl[k] = b; L.appendChild(b); });
-    it.der.forEach(function (k) { var b = el('button', 'it', it.pares[k][1]); b.onclick = function () { tocaDer(k); }; br[k] = b; R.appendChild(b); });
+    L.appendChild(el('div', 'cab', 'CONCEPTO')); R.appendChild(el('div', 'cab', 'PAREJA'));
+    var num = {}; it.izq.forEach(function (k, pos) { num[k] = pos + 1; });
+    it.izq.forEach(function (k) {
+      var b = el('button', 'it' + (a[k] != null ? ' par' : '') + (selIzq === k ? ' sel' : ''), it.pares[k][0] + (a[k] != null ? '<span class="n">' + num[k] + '</span>' : ''));
+      b.onclick = function () { if (a[k] != null) { delete a[k]; selIzq = null; } else selIzq = (selIzq === k ? null : k); pintar(); };
+      L.appendChild(b);
+    });
+    it.der.forEach(function (r) {
+      var dueno = null; Object.keys(a).forEach(function (l) { if (a[l] === r) dueno = +l; });
+      var b = el('button', 'it' + (dueno != null ? ' par' : ''), it.pares[r][1] + (dueno != null ? '<span class="n">' + num[dueno] + '</span>' : ''));
+      b.onclick = function () {
+        if (selIzq == null) { if (dueno != null) delete a[dueno]; pintar(); return; }
+        if (dueno != null) delete a[dueno];
+        a[selIzq] = r; selIzq = null; pintar();
+      };
+      R.appendChild(b);
+    });
     w.appendChild(L); w.appendChild(R); area.appendChild(w);
-    st.bl = bl; st.br = br;
-    function tocaIzq(k) { if (st.listo) return; if (st.par[k] != null) delete st.par[k]; st.sel = (st.sel === k ? null : k); pintar(); }
-    function tocaDer(r) {
-      if (st.listo) return;
-      var dueno = null; Object.keys(st.par).forEach(function (l) { if (st.par[l] === r) dueno = l; });
-      if (st.sel == null) { if (dueno != null) delete st.par[dueno]; pintar(); return; }
-      if (dueno != null) delete st.par[dueno];
-      st.par[st.sel] = r; st.sel = null; pintar();
-    }
-    function pintar() {
-      it.izq.forEach(function (k, pos) {
-        var b = bl[k], col = COLORES[pos % COLORES.length];
-        b.classList.toggle('sel', st.sel === k);
-        quitarTag(b);
-        if (st.par[k] != null) { b.style.borderColor = col; ponerTag(b, pos + 1, col); ponerTag(br[st.par[k]], pos + 1, col); br[st.par[k]].style.borderColor = col; }
-        else b.style.borderColor = '';
-      });
-      it.der.forEach(function (r) { var usado = Object.keys(st.par).some(function (l) { return st.par[l] === r; }); if (!usado) { quitarTag(br[r]); br[r].style.borderColor = ''; } });
-      $('check').disabled = Object.keys(st.par).length !== it.pares.length;
-    }
-    st.comprobar = function () {
-      var ok = 0;
-      it.izq.forEach(function (k) {
-        var bien = st.par[k] === k; if (bien) ok++;
-        bl[k].classList.add(bien ? 'ok' : 'no'); br[st.par[k]].classList.add(bien ? 'ok' : 'no');
-      });
-      Object.keys(bl).forEach(function (k) { bl[k].disabled = true; }); Object.keys(br).forEach(function (k) { br[k].disabled = true; });
-      var tu = it.pares.map(function (p, k) { return plano(p[0]) + ' → ' + plano(it.pares[st.par[k]][1]); }).join(' · ');
-      cerrar(it, ok / it.pares.length, tu);
-    };
   }
-  function ponerTag(b, n, col) { quitarTag(b); var t = el('span', 'tag', n); t.style.background = col; b.appendChild(t); }
-  function quitarTag(b) { var t = b.querySelector('.tag'); if (t) t.remove(); }
-  // --- ordenar ---
-  function rOrdenar(it, area) {
-    st.elegidos = [];
+  function rOrdenar(it, a, area) {
     var seq = el('div', 'seq'), pool = el('div', 'pool');
+    a.forEach(function (k, pos) {
+      var b = el('button', 'it', '<span class="pos">' + (pos + 1) + '</span><span>' + it.items[k] + '</span>');
+      b.onclick = function () { a.splice(pos, 1); pintar(); };
+      seq.appendChild(b);
+    });
+    it.pool.forEach(function (k) {
+      if (a.indexOf(k) >= 0) return;
+      var b = el('button', 'it', it.items[k]);
+      b.onclick = function () { a.push(k); pintar(); };
+      pool.appendChild(b);
+    });
     area.appendChild(seq); area.appendChild(pool);
-    function pintar() {
-      seq.innerHTML = ''; pool.innerHTML = '';
-      st.elegidos.forEach(function (k, pos) {
-        var b = el('button', 'it', '<span class="num">' + (pos + 1) + '</span><span>' + it.items[k] + '</span>');
-        b.onclick = function () { if (st.listo) return; st.elegidos.splice(pos, 1); pintar(); };
-        b.dataset.k = k; seq.appendChild(b);
-      });
-      it.pool.forEach(function (k) {
-        if (st.elegidos.indexOf(k) >= 0) return;
-        var b = el('button', 'it', it.items[k]);
-        b.onclick = function () { if (st.listo) return; st.elegidos.push(k); pintar(); };
-        pool.appendChild(b);
-      });
-      $('check').disabled = st.elegidos.length !== it.items.length;
-    }
-    pintar();
-    st.comprobar = function () {
-      var ok = 0;
-      [].forEach.call(seq.children, function (b, pos) { var bien = st.elegidos[pos] === pos; if (bien) ok++; b.classList.add(bien ? 'ok' : 'no'); b.disabled = true; });
-      cerrar(it, ok / it.items.length, st.elegidos.map(function (k, pos) { return (pos + 1) + '. ' + plano(it.items[k]); }).join('  '));
-    };
   }
-  // --- completar ---
-  function rCompletar(it, area) {
-    var n = it.r.length; st.fill = []; for (var k = 0; k < n; k++) st.fill.push(null);
-    var frase = el('div', 'frase'), banco = el('div', 'banco');
-    var partes = it.t.split('___'), slots = [];
+  function rCompletar(it, a, area) {
+    var frase = el('div', 'frase'), partes = it.t.split('___');
     partes.forEach(function (p, k) {
       frase.appendChild(document.createTextNode(plano(p)));
-      if (k < n) {
-        var s = el('button', 'slot', '&nbsp;'); s.onclick = function () { if (st.listo) return; st.fill[k] = null; pintar(); };
-        slots.push(s); frase.appendChild(s);
+      if (k < it.r.length) {
+        var h = el('button', 'hueco', a[k] == null ? '&nbsp;' : esc(it.banco[a[k]]));
+        h.onclick = function () { a[k] = null; pintar(); };
+        frase.appendChild(h);
       }
     });
-    var chips = it.banco.map(function (w, j) {
-      var c = el('button', 'chipb', esc(w));
-      c.onclick = function () { if (st.listo) return; var h = st.fill.indexOf(null); if (h < 0) return; st.fill[h] = j; pintar(); };
-      banco.appendChild(c); return c;
+    var banco = el('div', 'banco');
+    it.banco.forEach(function (w, j) {
+      var c = el('button', 'ficha' + (a.indexOf(j) >= 0 ? ' usada' : ''), esc(w));
+      c.onclick = function () { var h = a.indexOf(null); if (h >= 0) { a[h] = j; pintar(); } };
+      banco.appendChild(c);
     });
     area.appendChild(frase); area.appendChild(banco);
-    function pintar() {
-      slots.forEach(function (s, k) { var j = st.fill[k]; s.innerHTML = j == null ? '&nbsp;' : esc(it.banco[j]); s.classList.toggle('lleno', j != null); });
-      chips.forEach(function (c, j) { c.classList.toggle('usado', st.fill.indexOf(j) >= 0); });
-      $('check').disabled = st.fill.indexOf(null) >= 0;
-    }
-    st.comprobar = function () {
-      var ok = 0;
-      slots.forEach(function (s, k) { var bien = it.banco[st.fill[k]] === it.r[k]; if (bien) ok++; s.classList.add(bien ? 'ok' : 'no'); s.disabled = true; });
-      chips.forEach(function (c) { c.disabled = true; });
-      cerrar(it, ok / n, llenar(it.t, st.fill.map(function (j) { return it.banco[j]; })));
-    };
   }
-  // --- clasificar ---
-  function rClasificar(it, area) {
-    st.sel = {};
-    var box = el('div', 'clas'), filas = {};
+  function rClasificar(it, a, area) {
+    var box = el('div', 'clas');
     it.orden.forEach(function (k) {
-      var row = el('div', 'crow'); row.appendChild(el('div', 'ctext', it.items[k][0]));
-      var bs = el('div', 'cbtns');
+      var f = el('div', 'fila'); f.appendChild(el('div', 't', it.items[k][0]));
+      var cs = el('div', 'cats');
       it.cats.forEach(function (c, ci) {
-        var b = el('button', 'cb', esc(c));
-        b.onclick = function () {
-          if (st.listo) return; st.sel[k] = ci;
-          [].forEach.call(bs.children, function (x, xi) { x.classList.toggle('on', xi === ci); });
-          $('check').disabled = Object.keys(st.sel).length !== it.items.length;
-        };
-        bs.appendChild(b);
+        var b = el('button', 'cat' + (a[k] === ci ? ' on' : ''), esc(c));
+        b.onclick = function () { a[k] = ci; pintar(); };
+        cs.appendChild(b);
       });
-      row.appendChild(bs); box.appendChild(row); filas[k] = row;
+      f.appendChild(cs); box.appendChild(f);
     });
     area.appendChild(box);
-    st.comprobar = function () {
-      var ok = 0;
-      it.items.forEach(function (x, k) {
-        var bien = st.sel[k] === x[1]; if (bien) ok++;
-        filas[k].classList.add(bien ? 'ok' : 'no');
-        if (!bien) filas[k].querySelector('.ctext').innerHTML += ' <span style="opacity:.9">→ ' + esc(it.cats[x[1]]) + '</span>';
-        [].forEach.call(filas[k].querySelectorAll('button'), function (b) { b.disabled = true; });
-      });
-      cerrar(it, ok / it.items.length, it.items.map(function (x, k) { return plano(x[0]) + ': ' + it.cats[st.sel[k]]; }).join(' · '));
-    };
   }
 
-  // ---------- calificar ----------
-  $('check').onclick = function () { if (st.comprobar && !st.listo) st.comprobar(); };
-  function cerrar(it, pts, tu) {
-    if (st.listo) return; st.listo = true;
-    score += pts; if (pts === 1) perfectas++;
-    $('sc').textContent = fmt(score);
-    $('check').classList.add('hidden');
-    var cab = pts === 1 ? '<b>¡Correcto! 🎉</b> ' : pts > 0 ? '<b style="color:var(--gold)">Casi: ' + Math.round(pts * 100) + '% bien.</b> ' : '<b style="color:var(--coral)">Mira:</b> ';
-    var sol = (pts < 1 && it.tipo !== 'mc' && it.tipo !== 'vf') ? '<div class="sol">✔ ' + esc(correctaTxt(it)) + '</div>' : '';
-    $('why').innerHTML = cab + it.w + sol;
-    $('next').classList.remove('hidden');
-    RES.push({ n: RES.length + 1, tipo: it.tipo, pregunta: preguntaTxt(it), tu: tu, correcta: correctaTxt(it), puntos: Math.round(pts * 100) / 100, explicacion: plano(it.w) });
-    var o = base(); o.evento = 'progreso'; o.respondidas = RES.length; o.puntos = Math.round(score * 100) / 100; o.salidas = salidas;
-    enviar(o, true);
+  // ---------- navegación ----------
+  $('ant').onclick = function () { if (cur > 0) { selIzq = null; ir(cur - 1); progreso(); } };
+  $('sig').onclick = function () { selIzq = null; if (cur < N - 1) { ir(cur + 1); progreso(); } else verMapa(); };
+  $('ver').onclick = verMapa;
+  $('volver').onclick = function () { ir(cur); };
+  function verMapa() {
+    $('exam').classList.add('hidden'); $('nav').classList.add('hidden'); $('mapa').classList.remove('hidden');
+    var faltan = N - nResp();
+    $('ley').textContent = faltan ? 'Te faltan ' + faltan + ' pregunta' + (faltan > 1 ? 's' : '') + '. Toca un número para ir a esa pregunta.' : 'Respondiste todas. Puedes revisar alguna o entregar.';
+    var m = $('mq'); m.innerHTML = '';
+    for (var k = 0; k < N; k++) (function (k) {
+      var b = el('button', 'mq' + (completa(k) ? ' ok' : '') + (k === cur ? ' cur' : ''), k + 1);
+      b.onclick = function () { ir(k); };
+      m.appendChild(b);
+    })(k);
+    window.scrollTo(0, 0);
   }
-  function preguntaTxt(it) {
-    var b = it.b ? plano(it.b) + ' · ' : '';
-    return it.tipo === 'completar' ? b + (it.enunciado ? plano(it.enunciado) + ': ' : '') + plano(it.t) : b + plano(it.t);
-  }
-  $('next').onclick = function () { i++; if (i >= N) return fin(false); render(); window.scrollTo(0, 0); };
+  $('entregar').onclick = function () {
+    var faltan = N - nResp();
+    if (faltan && !confirm('Te faltan ' + faltan + ' preguntas sin responder. ¿Entregar de todas formas?')) return;
+    fin(false);
+  };
 
   // ---------- tiempo ----------
-  function startTimer() {
-    pintarTiempo();
-    tick = setInterval(function () { timeLeft--; pintarTiempo(); if (timeLeft <= 0) { clearInterval(tick); fin(true); } }, 1000);
-  }
-  function pintarTiempo() {
-    var m = Math.floor(timeLeft / 60), s = timeLeft % 60, t = $('timer');
-    t.textContent = '⏱ ' + m + ':' + String(s).padStart(2, '0');
-    t.classList.toggle('warn', timeLeft <= 90);
+  function reloj() {
+    var m = Math.floor(timeLeft / 60), s = timeLeft % 60, t = m + ':' + String(s).padStart(2, '0');
+    [$('reloj'), $('reloj2')].forEach(function (r) { r.textContent = t; r.classList.toggle('poco', timeLeft <= 120); });
   }
 
-  // ---------- salidas de la pestaña (anti-copia) ----------
+  // ---------- salidas de la página ----------
   document.addEventListener('visibilitychange', function () {
     if (!enJuego) return;
-    if (document.hidden) {
-      salidas++;
-      var o = base(); o.evento = 'progreso'; o.respondidas = RES.length; o.puntos = Math.round(score * 100) / 100; o.salidas = salidas;
-      enviar(o, true);
-    } else {
-      var t = $('toast'); t.textContent = '👀 Saliste del quiz (' + salidas + (salidas === 1 ? ' vez' : ' veces') + '). Queda registrado.';
-      t.classList.add('on'); setTimeout(function () { t.classList.remove('on'); }, 3500);
-    }
+    if (document.hidden) { salidas++; avisar.pend = true; progreso(); }
+    else if (avisar.pend) avisar.pend = false, avisar('Saliste del quiz (' + salidas + (salidas === 1 ? ' vez' : ' veces') + '). Queda registrado.');
   });
 
-  // ---------- registro ----------
-  function correoValido(c) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c); }
-  try { var g = JSON.parse(localStorage.getItem('alumno') || 'null'); if (g && g.correo) { $('rNombre').value = g.nombre || ''; $('rCorreo').value = g.correo || ''; } } catch (e) {}
+  // ---------- inicio ----------
+  try { var g = JSON.parse(localStorage.getItem('alumno') || 'null'); if (g && g.correo) { $('nom').value = g.nombre || ''; $('cor').value = g.correo || ''; } } catch (e) {}
   $('go').onclick = function () {
-    var nombre = $('rNombre').value.trim(), correo = $('rCorreo').value.trim().toLowerCase();
-    if (nombre.length < 3) { $('regErr').textContent = 'Escribe tu nombre completo.'; return; }
-    if (!correoValido(correo)) { $('regErr').textContent = 'Escribe un correo válido.'; return; }
+    var nombre = $('nom').value.trim(), correo = $('cor').value.trim().toLowerCase();
+    if (nombre.length < 3 || nombre.indexOf(' ') < 0) { $('err').textContent = 'Escribe tu nombre y apellido.'; return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(correo)) { $('err').textContent = 'Revisa tu correo: ahí llegará tu nota.'; return; }
     ALUM = { nombre: nombre, correo: correo };
     try { localStorage.setItem('alumno', JSON.stringify(ALUM)); } catch (e) {}
     ID = Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
     var o = base(); o.evento = 'registro'; o.dispositivo = /Mobi|Android|iPhone/i.test(navigator.userAgent) ? 'Celular' : 'Computadora';
     enviar(o, true);
-    $('intro').classList.add('hidden'); $('game').classList.remove('hidden');
-    enJuego = true; t0 = Date.now(); render(); startTimer();
+    $('intro').classList.add('hidden');
+    enJuego = true; t0 = Date.now(); reloj();
+    tick = setInterval(function () { timeLeft--; reloj(); if (timeLeft <= 0) fin(true); }, 1000);
+    ir(0);
   };
+  window.addEventListener('beforeunload', function (e) { if (enJuego) { e.preventDefault(); e.returnValue = ''; } });
 
-  // ---------- final ----------
+  // ---------- calificar ----------
+  function puntos(k) {
+    var it = Q[k], a = A[k], ok = 0;
+    switch (it.tipo) {
+      case 'mc': return a === 0 ? 1 : 0;
+      case 'vf': return a === it.a ? 1 : 0;
+      case 'unir': it.pares.forEach(function (p, i) { if (a[i] === i) ok++; }); return ok / it.pares.length;
+      case 'ordenar': it.items.forEach(function (x, i) { if (a[i] === i) ok++; }); return ok / it.items.length;
+      case 'completar': it.r.forEach(function (r, i) { if (a[i] != null && it.banco[a[i]] === r) ok++; }); return ok / it.r.length;
+      case 'clasificar': it.items.forEach(function (x, i) { if (a[i] === x[1]) ok++; }); return ok / it.items.length;
+    }
+    return 0;
+  }
+  function llenar(t, vals) { var k = 0; return plano(t.replace(/___/g, function () { var v = vals[k++]; return v == null ? '___' : '[' + v + ']'; })); }
+  function txtTu(k) {
+    var it = Q[k], a = A[k];
+    if (!completa(k) && !(it.tipo === 'ordenar' && a.length) && !(it.tipo === 'unir' && Object.keys(a).length) &&
+      !(it.tipo === 'clasificar' && Object.keys(a).length) && !(it.tipo === 'completar' && a.some(function (x) { return x != null; }))) return '(sin responder)';
+    switch (it.tipo) {
+      case 'mc': return plano(it.o[a]);
+      case 'vf': return a ? 'Verdadero' : 'Falso';
+      case 'unir': return it.pares.map(function (p, i) { return plano(p[0]) + ' → ' + (a[i] != null ? plano(it.pares[a[i]][1]) : '—'); }).join(' · ');
+      case 'ordenar': return a.map(function (x, i) { return (i + 1) + '. ' + plano(it.items[x]); }).join(' · ');
+      case 'completar': return llenar(it.t, a.map(function (j) { return j == null ? null : it.banco[j]; }));
+      case 'clasificar': return it.items.map(function (x, i) { return plano(x[0]) + ': ' + (a[i] != null ? it.cats[a[i]] : '—'); }).join(' · ');
+    }
+  }
+  function txtOk(it) {
+    switch (it.tipo) {
+      case 'mc': return plano(it.o[0]);
+      case 'vf': return it.a ? 'Verdadero' : 'Falso';
+      case 'unir': return it.pares.map(function (p) { return plano(p[0]) + ' → ' + plano(p[1]); }).join(' · ');
+      case 'ordenar': return it.items.map(function (x, i) { return (i + 1) + '. ' + plano(x); }).join(' · ');
+      case 'completar': return llenar(it.t, it.r);
+      case 'clasificar': return it.items.map(function (x) { return plano(x[0]) + ': ' + it.cats[x[1]]; }).join(' · ');
+    }
+  }
   function fin(porTiempo) {
     if (!enJuego) return; enJuego = false;
-    if (tick) clearInterval(tick);
-    var respondidas = RES.length;
-    // lo que no alcanzó a responder también va en la corrección
-    for (var k = RES.length; k < N; k++) {
-      var it = Q[k];
-      RES.push({ n: k + 1, tipo: it.tipo, pregunta: preguntaTxt(it), tu: '(sin responder)', correcta: correctaTxt(it), puntos: 0, explicacion: plano(it.w) });
+    clearInterval(tick);
+    var total = 0, correctas = 0, R = [];
+    for (var k = 0; k < N; k++) {
+      var it = Q[k], p = Math.round(puntos(k) * 100) / 100;
+      total += p; if (p >= 1) correctas++;
+      R.push({ n: k + 1, tipo: it.tipo, pregunta: (it.b ? plano(it.b) + ' · ' : '') + (it.tipo === 'completar' ? plano(it.t) : plano(it.t)),
+        tu: txtTu(k), correcta: txtOk(it), puntos: p, explicacion: plano(it.w || '') });
     }
-    var nota = Math.round(score / N * 100) / 10, seg = Math.round((Date.now() - t0) / 1000);
-    var o = base(); o.evento = 'fin'; o.respondidas = respondidas; o.puntos = Math.round(score * 100) / 100;
-    o.nota = nota; o.perfectas = perfectas; o.salidas = salidas; o.segundos = seg; o.porTiempo = !!porTiempo; o.respuestas = RES;
+    var nota = Math.round(total / N * 100) / 10, seg = Math.round((Date.now() - t0) / 1000);
+    var o = base(); o.evento = 'fin'; o.respondidas = nResp(); o.puntos = Math.round(total * 100) / 100; o.nota = nota; o.correctas = correctas;
+    o.salidas = salidas; o.segundos = seg; o.porTiempo = !!porTiempo; o.respuestas = R; o.fecha = new Date().toISOString();
     enviar(o, false);
-
-    $('game').classList.add('hidden');
-    var e, m;
-    if (nota >= 9) { e = '🏆'; m = CFG.m1; } else if (nota >= 7) { e = '🎉'; m = '¡Muy bien! Ya casi al 100%.'; }
-    else if (nota >= 5) { e = '👍'; m = 'Vas bien: repasa lo que fallaste y repite.'; } else { e = '🔁'; m = CFG.m4; }
+    ['exam', 'mapa', 'nav'].forEach(function (x) { $(x).classList.add('hidden'); });
     var f = $('final'); f.classList.remove('hidden');
-    f.innerHTML = '<div class="emoji">' + e + '</div><div class="score">' + fmt(nota) + '<small>/10</small></div>' +
-      '<div class="pct">' + fmt(score) + ' de ' + N + ' puntos' + (porTiempo ? ' · ⏰ se acabó el tiempo' : '') + '</div>' +
-      '<div class="msg">' + m + '</div>' +
-      '<div class="stats"><span class="stat">✅ ' + perfectas + ' perfectas</span><span class="stat">⏱ ' + Math.floor(seg / 60) + ' min ' + (seg % 60) + ' s</span>' +
-      (salidas ? '<span class="stat" style="color:var(--coral)">👀 ' + salidas + ' salida' + (salidas > 1 ? 's' : '') + '</span>' : '') + '</div>' +
-      (API ? '<div class="mail">📧 Te enviamos la corrección completa a <b>' + esc(ALUM.correo) + '</b></div>' : '') +
-      '<div class="tip">Escribe tu nota en el chat 👇</div>' +
-      '<button class="again" onclick="location.reload()">↻ Repetir</button>';
+    f.innerHTML = '<div class="eyebrow">' + (porTiempo ? 'Se acabó el tiempo' : 'Quiz entregado') + '</div>' +
+      '<h1 style="font-size:1.6rem;margin-top:8px">' + esc(CFG.nombre) + '</h1>' +
+      '<div class="nota">' + coma(nota) + '<small> / 10</small></div>' +
+      '<p>' + correctas + ' de ' + N + ' preguntas correctas</p>' +
+      (API ? '<p>La corrección completa llegará en PDF a<br><b style="color:var(--ink)">' + esc(ALUM.correo) + '</b></p>' : '');
     window.scrollTo(0, 0);
   }
 })();
